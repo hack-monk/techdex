@@ -1839,5 +1839,68 @@
     "docs": "https://kotlinlang.org/docs/home.html",
     "tutorial": "https://kotlinlang.org/docs/getting-started.html",
     "added": "2026-06-08"
+  },
+  {
+    "id": "sql",
+    "name": "SQL",
+    "category": "Language",
+    "domain": "Database",
+    "eli5": "A way to ask questions to a database, like 'show me all red toys sorted by size'.",
+    "description": "Structured Query Language \u2014 the universal language for querying and manipulating relational databases. Declarative: you describe what you want, the database engine figures out how. Every major database (Postgres, MySQL, Snowflake, BigQuery) speaks SQL.",
+    "use_cases": [
+      "Querying, filtering, and aggregating data with SELECT, WHERE, GROUP BY",
+      "Joining multiple tables to answer cross-entity questions",
+      "Data transformation and reporting in warehouses (Snowflake, BigQuery, Redshift)",
+      "Schema definition and migrations with DDL (CREATE, ALTER, DROP)",
+      "Analytics engineering with dbt \u2014 models are just SQL SELECT statements"
+    ],
+    "used_by": [
+      "Every company that stores data"
+    ],
+    "docs": "https://www.postgresql.org/docs/current/sql.html",
+    "tutorial": "https://sqlzoo.net/wiki/SQL_Tutorial",
+    "added": "2026-06-08"
+  },
+  {
+    "id": "bash",
+    "name": "Bash",
+    "category": "Language",
+    "domain": "DevOps",
+    "eli5": "A way to give your computer a to-do list and have it do every chore in order.",
+    "description": "Bourne Again Shell \u2014 the default command interpreter on Linux and macOS. Scripts automate sequences of system commands. Ubiquitous in CI/CD pipelines, server provisioning, and DevOps tooling. Not pretty, but runs everywhere UNIX does.",
+    "use_cases": [
+      "CI/CD pipeline steps: build, test, package, deploy scripts",
+      "Server bootstrapping and configuration automation",
+      "Log parsing, file manipulation, and text processing with grep/awk/sed",
+      "Cron job automation for scheduled maintenance tasks",
+      "Docker entrypoint scripts and Kubernetes init containers"
+    ],
+    "used_by": [
+      "Every Linux/macOS-based engineering team"
+    ],
+    "docs": "https://www.gnu.org/software/bash/manual/bash.html",
+    "tutorial": "https://linuxcommand.org/lc3_learning_the_shell.php",
+    "added": "2026-06-08"
+  },
+  {
+    "id": "yaml",
+    "name": "YAML",
+    "category": "Language",
+    "domain": "DevOps",
+    "eli5": "A way to write settings and instructions so computers can read them, using indentation like an outline.",
+    "description": "YAML Ain't Markup Language \u2014 human-readable data serialization format. The config language of cloud-native infrastructure. Used by Kubernetes manifests, Docker Compose, GitHub Actions, Ansible, and almost every modern DevOps tool. Indentation-sensitive.",
+    "use_cases": [
+      "Kubernetes resource definitions (Deployments, Services, ConfigMaps)",
+      "GitHub Actions / GitLab CI pipeline definitions",
+      "Docker Compose multi-service stack configuration",
+      "Ansible playbooks and inventory files",
+      "Helm chart values files and templates"
+    ],
+    "used_by": [
+      "Every cloud-native engineering team"
+    ],
+    "docs": "https://yaml.org/spec/1.2.2/",
+    "tutorial": "https://learnxinyminutes.com/docs/yaml/",
+    "added": "2026-06-08"
   }
 ]

@@ -99,13 +99,11 @@ def build():
         lines += [
             f"## {emoji} {domain}",
             "",
-            "| Name | Category | Description | Use Cases | Used By | Docs | Tutorial |",
-            "|------|----------|-------------|-----------|---------|------|----------|",
+            "| Name | Description | Use Cases | Used By | Docs | Tutorial |",
+            "|------|-------------|-----------|---------|------|----------|",
         ]
         for e in domain_entries:
             name = e["name"]
-            cat_emoji = CATEGORY_EMOJI.get(e["category"], "📌")
-            cat = f"{cat_emoji} {e['category']}"
             # Collapsible description
             desc_full = e["description"].replace("|", "\\|")
             desc_preview = desc_full[:60] + "…" if len(desc_full) > 60 else desc_full
@@ -120,7 +118,7 @@ def build():
             used_by = ", ".join(e.get("used_by", []))
             docs = f"[Docs]({e['docs']})" if e.get("docs") else "—"
             tutorial = f"[Tutorial]({e['tutorial']})" if e.get("tutorial") else "—"
-            lines.append(f"| **{name}** | {cat} | {desc} | {use_cases} | {used_by} | {docs} | {tutorial} |")
+            lines.append(f"| **{name}** | {desc} | {use_cases} | {used_by} | {docs} | {tutorial} |")
         lines += ["", ""]
 
     # Footer

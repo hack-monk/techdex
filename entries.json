@@ -562,5 +562,78 @@
     "docs": "https://www.cockroachlabs.com/docs/",
     "tutorial": "https://www.cockroachlabs.com/docs/stable/start-a-local-cluster.html",
     "added": "2026-06-08"
+  },
+  {
+    "id": "nginx",
+    "name": "Nginx",
+    "category": "Tool",
+    "domain": "Networking",
+    "description": "High-performance web server, reverse proxy, and load balancer. Event-driven, async architecture handles massive concurrent connections with minimal memory. Powers ~34% of the web. Also used as API gateway and static file server.",
+    "use_cases": [
+      "Reverse proxy and load balancer in front of app servers",
+      "TLS termination and HTTP/2 / HTTP/3 offloading",
+      "Static asset serving with efficient sendfile() kernel bypass",
+      "Ingress controller for Kubernetes (ingress-nginx)",
+      "Rate limiting, basic auth, and IP allowlisting at the edge",
+      "API gateway with upstream routing and caching"
+    ],
+    "used_by": ["Dropbox", "Netflix", "WordPress.com", "GitHub", "Cloudflare"],
+    "docs": "https://nginx.org/en/docs/",
+    "tutorial": "https://nginx.org/en/docs/beginners_guide.html",
+    "added": "2026-06-08"
+  },
+  {
+    "id": "istio",
+    "name": "Istio",
+    "category": "Tool",
+    "domain": "Networking",
+    "description": "Open-source service mesh that layers traffic management, security, and observability on top of Kubernetes without changing application code. Uses Envoy as its sidecar data plane. CNCF graduated project.",
+    "use_cases": [
+      "Mutual TLS (mTLS) between all services with zero code changes",
+      "Fine-grained traffic control: canary releases, A/B testing, fault injection",
+      "Distributed tracing and metrics via Envoy sidecar telemetry",
+      "Authorization policies: service-to-service and end-user RBAC",
+      "Multi-cluster and multi-cloud service mesh federation"
+    ],
+    "used_by": ["Google", "Salesforce", "T-Mobile", "Airbus", "Autodesk"],
+    "docs": "https://istio.io/latest/docs/",
+    "tutorial": "https://istio.io/latest/docs/setup/getting-started/",
+    "added": "2026-06-08"
+  },
+  {
+    "id": "hashicorp-vault",
+    "name": "HashiCorp Vault",
+    "category": "Tool",
+    "domain": "Security",
+    "description": "Secrets management and data protection platform. Centrally store, access, and distribute secrets (API keys, passwords, certs) with fine-grained policies and full audit logging. Dynamic secrets eliminate long-lived credentials.",
+    "use_cases": [
+      "Dynamic secrets: on-demand, short-lived DB credentials and cloud IAM tokens",
+      "PKI as a service: issue and rotate TLS certificates automatically",
+      "Kubernetes auth: pods authenticate with ServiceAccount tokens to get secrets",
+      "Encryption as a service (Transit engine) without exposing keys to apps",
+      "Secret leasing and renewal with automatic revocation on expiry"
+    ],
+    "used_by": ["Adobe", "Capital One", "Twitch", "Barclays", "Cisco"],
+    "docs": "https://developer.hashicorp.com/vault/docs",
+    "tutorial": "https://developer.hashicorp.com/vault/tutorials/getting-started",
+    "added": "2026-06-08"
+  },
+  {
+    "id": "hashicorp-consul",
+    "name": "HashiCorp Consul",
+    "category": "Tool",
+    "domain": "Networking",
+    "description": "Service mesh and service discovery platform. Provides a distributed key-value store, health checking, and connect (mTLS service mesh). Works across VMs and containers, on-prem and cloud.",
+    "use_cases": [
+      "Service discovery: services register themselves, clients query DNS/HTTP API",
+      "Health checking and automatic removal of unhealthy instances",
+      "Consul Connect: mTLS service mesh for non-Kubernetes environments",
+      "Distributed KV store for configuration and feature flags",
+      "Multi-datacenter federation with WAN gossip"
+    ],
+    "used_by": ["Stripe", "SAP", "Citrix", "Barclays", "Booz Allen Hamilton"],
+    "docs": "https://developer.hashicorp.com/consul/docs",
+    "tutorial": "https://developer.hashicorp.com/consul/tutorials/get-started-vms",
+    "added": "2026-06-08"
   }
 ]

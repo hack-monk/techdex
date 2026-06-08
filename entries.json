@@ -761,5 +761,59 @@
     "docs": "https://opentelemetry.io/docs/",
     "tutorial": "https://opentelemetry.io/docs/getting-started/",
     "added": "2026-06-08"
+  },
+  {
+    "id": "terraform-cloud",
+    "name": "Terraform Cloud",
+    "category": "Platform",
+    "domain": "DevOps",
+    "description": "Managed SaaS platform for Terraform by HashiCorp. Provides remote state storage, plan/apply execution, team access controls, policy enforcement (Sentinel/OPA), and a private module registry — turning Terraform into a collaborative, governed IaC platform.",
+    "use_cases": [
+      "Remote state backend with locking, versioning, and state history",
+      "Remote plan/apply in ephemeral workers — no local credentials on developer machines",
+      "Policy as Code with Sentinel or OPA to enforce cost/security guardrails before apply",
+      "VCS-driven workflows: PR triggers speculative plan, merge triggers apply",
+      "Private module registry for sharing versioned, reusable Terraform modules across teams"
+    ],
+    "used_by": ["HashiCorp customers", "Slack", "Twitch", "Deliveroo", "Spacelift"],
+    "docs": "https://developer.hashicorp.com/terraform/cloud-docs",
+    "tutorial": "https://developer.hashicorp.com/terraform/tutorials/cloud-get-started",
+    "added": "2026-06-08"
+  },
+  {
+    "id": "pulumi",
+    "name": "Pulumi",
+    "category": "Tool",
+    "domain": "DevOps",
+    "description": "Infrastructure as Code using general-purpose languages — Python, TypeScript, Go, C#, Java. Write cloud infrastructure with real loops, functions, and classes instead of HCL DSL. Same providers as Terraform via Pulumi's bridged provider ecosystem.",
+    "use_cases": [
+      "IaC in TypeScript/Python/Go for teams who find HCL limiting",
+      "Dynamically generating resources with loops and conditionals in real code",
+      "Component resources: reusable, testable infrastructure abstractions as classes",
+      "Pulumi ESC for centralized secrets and environment configuration management",
+      "Pulumi Cloud for state backend, CI/CD integration, and policy enforcement"
+    ],
+    "used_by": ["Mercedes-Benz", "Snowflake", "Cockroach Labs", "Nvidia", "Fauna"],
+    "docs": "https://www.pulumi.com/docs/",
+    "tutorial": "https://www.pulumi.com/docs/get-started/",
+    "added": "2026-06-08"
+  },
+  {
+    "id": "argo-workflows",
+    "name": "Argo Workflows",
+    "category": "Tool",
+    "domain": "CI/CD",
+    "description": "Kubernetes-native workflow engine for orchestrating parallel jobs as DAGs or step sequences. Each step runs as a container. Powers ML pipelines, data engineering, and CI/CD automation on Kubernetes. Part of the Argo project (CNCF graduated).",
+    "use_cases": [
+      "ML training pipelines: data prep → feature engineering → train → evaluate as a DAG",
+      "CI/CD pipelines running directly on Kubernetes without a separate CI server",
+      "Data engineering batch jobs with fan-out parallelism and artifact passing",
+      "Scheduled recurring workflows via CronWorkflow resources",
+      "Event-driven workflow triggers via Argo Events integration"
+    ],
+    "used_by": ["Intuit", "Adobe", "Google", "Alibaba", "BlackRock"],
+    "docs": "https://argo-workflows.readthedocs.io/en/latest/",
+    "tutorial": "https://argo-workflows.readthedocs.io/en/latest/quick-start/",
+    "added": "2026-06-08"
   }
 ]

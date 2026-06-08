@@ -995,5 +995,59 @@
     "docs": "https://docs.snyk.io/",
     "tutorial": "https://docs.snyk.io/getting-started",
     "added": "2026-06-08"
+  },
+  {
+    "id": "keycloak",
+    "name": "Keycloak",
+    "category": "Tool",
+    "domain": "Identity",
+    "description": "Open-source Identity and Access Management (IAM) solution by Red Hat. Provides SSO, OAuth 2.0, OpenID Connect, and SAML out of the box. Self-hosted alternative to Auth0 and Okta for teams needing full control over identity infrastructure.",
+    "use_cases": [
+      "SSO across multiple applications with a single login via OIDC/SAML",
+      "Social login federation (Google, GitHub, LDAP, Active Directory)",
+      "Fine-grained authorization with roles, groups, and resource-based policies",
+      "Token exchange and service account auth for machine-to-machine flows",
+      "Multi-tenant identity with separate realms per customer or environment"
+    ],
+    "used_by": ["Red Hat", "Bosch", "Airbus", "Deutsche Telekom", "Zalando"],
+    "docs": "https://www.keycloak.org/documentation",
+    "tutorial": "https://www.keycloak.org/getting-started/getting-started-docker",
+    "added": "2026-06-08"
+  },
+  {
+    "id": "spiffe",
+    "name": "SPIFFE / SPIRE",
+    "category": "Tool",
+    "domain": "Identity",
+    "description": "SPIFFE (Secure Production Identity Framework For Everyone) is a CNCF standard for workload identity. SPIRE is its reference implementation. Issues short-lived X.509 SVIDs and JWT-SVIDs to workloads — cryptographic identity without secrets or passwords.",
+    "use_cases": [
+      "Workload identity for microservices: every pod/VM gets a cryptographic SPIFFE ID",
+      "mTLS between services using automatically rotated X.509 SVIDs",
+      "Eliminating static credentials: services authenticate by identity, not secrets",
+      "Federation across clouds and on-prem via SPIFFE federation bundles",
+      "Foundation for Istio, Consul Connect, and Envoy SDS identity"
+    ],
+    "used_by": ["Bloomberg", "GitHub", "Square", "Pinterest", "Uber"],
+    "docs": "https://spiffe.io/docs/latest/spiffe-about/overview/",
+    "tutorial": "https://spiffe.io/docs/latest/try/getting-started-linux-macos-x/",
+    "added": "2026-06-08"
+  },
+  {
+    "id": "cert-manager",
+    "name": "cert-manager",
+    "category": "Tool",
+    "domain": "Security",
+    "description": "Kubernetes-native certificate management controller. Automatically provisions, rotates, and renews TLS certificates from ACME (Let's Encrypt), Vault, Venafi, or self-signed CAs. Eliminates manual cert rotation toil in Kubernetes clusters.",
+    "use_cases": [
+      "Automatic Let's Encrypt TLS certificates for Ingress resources (HTTP-01/DNS-01 challenge)",
+      "Vault PKI integration for internal mTLS certificates across services",
+      "Automatic cert rotation before expiry — no more expired cert incidents",
+      "Issuing certificates for Istio/SPIFFE workload identity via external issuers",
+      "Wildcard and SAN certificates for multi-domain Kubernetes workloads"
+    ],
+    "used_by": ["Widely adopted across Kubernetes-based platforms and cloud-native stacks"],
+    "docs": "https://cert-manager.io/docs/",
+    "tutorial": "https://cert-manager.io/docs/tutorials/acme/nginx-ingress/",
+    "added": "2026-06-08"
   }
 ]

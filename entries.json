@@ -1,0 +1,21 @@
+[
+  {
+    "id": "envoy-proxy",
+    "name": "Envoy Proxy",
+    "category": "Tool",
+    "description": "Open-source, high-performance L7 proxy and communication bus built for cloud-native microservices architectures. Originally created at Lyft, now a CNCF graduated project. Runs as a sidecar alongside applications, making network concerns (routing, load balancing, observability, security) transparent to application code.",
+    "use_cases": [
+      "Service mesh data plane (sidecar proxy — backbone of Istio, AWS App Mesh, Consul Connect)",
+      "Edge / ingress gateway for Kubernetes clusters",
+      "L7 load balancing with header/path-aware routing",
+      "Canary deployments and A/B traffic splitting",
+      "mTLS between services, TLS termination at edge",
+      "Distributed tracing and observability (Prometheus, Jaeger, Zipkin)",
+      "Rate limiting and circuit breaking"
+    ],
+    "used_by": ["Lyft", "Google", "Apple", "Airbnb", "Pinterest", "Booking.com", "Dropbox", "Microsoft", "Netflix", "Uber"],
+    "docs": "https://www.envoyproxy.io/docs/envoy/latest/intro/what_is_envoy",
+    "tutorial": "https://www.envoyproxy.io/docs/envoy/latest/start/quick-start/",
+    "added": "2026-06-08"
+  }
+]

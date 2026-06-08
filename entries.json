@@ -635,5 +635,59 @@
     "docs": "https://developer.hashicorp.com/consul/docs",
     "tutorial": "https://developer.hashicorp.com/consul/tutorials/get-started-vms",
     "added": "2026-06-08"
+  },
+  {
+    "id": "grpc",
+    "name": "gRPC",
+    "category": "Framework",
+    "domain": "Backend",
+    "description": "High-performance, open-source RPC framework from Google. Uses HTTP/2 for transport and Protocol Buffers (protobuf) as the IDL and wire format. Enables strongly-typed, code-generated service contracts across polyglot microservices.",
+    "use_cases": [
+      "Low-latency, high-throughput inter-service communication (vs REST+JSON)",
+      "Bidirectional streaming for real-time data (chat, live feeds, telemetry)",
+      "Strongly-typed API contracts via .proto files — catch mismatches at compile time",
+      "Polyglot microservices: generate client/server stubs in 11+ languages",
+      "gRPC-Web for browser clients; gRPC-Gateway to expose REST alongside gRPC"
+    ],
+    "used_by": ["Google", "Netflix", "Square", "CoreOS", "Cockroach Labs", "Cisco"],
+    "docs": "https://grpc.io/docs/",
+    "tutorial": "https://grpc.io/docs/languages/go/quickstart/",
+    "added": "2026-06-08"
+  },
+  {
+    "id": "rabbitmq",
+    "name": "RabbitMQ",
+    "category": "Tool",
+    "domain": "Messaging",
+    "description": "Open-source message broker implementing AMQP, MQTT, and STOMP. Routes messages through exchanges and queues with flexible binding rules. Reliable delivery with acknowledgements, dead-letter queues, and persistence.",
+    "use_cases": [
+      "Task queues for background job processing (Celery, Sidekiq backends)",
+      "Decoupling microservices with publish/subscribe via fanout exchanges",
+      "Priority queues and delayed message delivery",
+      "Dead-letter queues for failed message handling and retry logic",
+      "RPC-over-AMQP pattern for synchronous request-reply messaging"
+    ],
+    "used_by": ["Reddit", "Instagram", "Mozilla", "VMware", "Zalando"],
+    "docs": "https://www.rabbitmq.com/documentation.html",
+    "tutorial": "https://www.rabbitmq.com/tutorials",
+    "added": "2026-06-08"
+  },
+  {
+    "id": "nginx-ingress",
+    "name": "Nginx Ingress Controller",
+    "category": "Tool",
+    "domain": "Networking",
+    "description": "Kubernetes-native ingress controller built on Nginx. Translates Kubernetes Ingress resources into Nginx config, routing external HTTP/S traffic to in-cluster services. Most widely deployed Kubernetes ingress solution.",
+    "use_cases": [
+      "HTTP/S routing to Kubernetes services by host and path rules",
+      "TLS termination with cert-manager for automatic Let's Encrypt certificates",
+      "Rate limiting, IP allowlisting, and basic auth via annotations",
+      "Canary deployments by splitting traffic across two Ingress resources",
+      "WebSocket and gRPC passthrough for long-lived connections"
+    ],
+    "used_by": ["Widely used across Kubernetes deployments in enterprises and startups"],
+    "docs": "https://kubernetes.github.io/ingress-nginx/",
+    "tutorial": "https://kubernetes.github.io/ingress-nginx/deploy/",
+    "added": "2026-06-08"
   }
 ]

@@ -1049,5 +1049,59 @@
     "docs": "https://cert-manager.io/docs/",
     "tutorial": "https://cert-manager.io/docs/tutorials/acme/nginx-ingress/",
     "added": "2026-06-08"
+  },
+  {
+    "id": "apache-spark",
+    "name": "Apache Spark",
+    "category": "Framework",
+    "domain": "Data Engineering",
+    "description": "Unified analytics engine for large-scale data processing. In-memory computation makes it 10-100x faster than MapReduce. Supports batch, streaming (Structured Streaming), SQL, ML (MLlib), and graph (GraphX) workloads in one engine.",
+    "use_cases": [
+      "Large-scale ETL and data transformation across petabytes of data",
+      "Structured Streaming for real-time event processing from Kafka",
+      "Distributed ML training with MLlib on massive datasets",
+      "Interactive SQL analytics via Spark SQL on data lakes (Parquet, Delta, Iceberg)",
+      "Graph analytics and iterative algorithms with GraphX"
+    ],
+    "used_by": ["Netflix", "Uber", "Airbnb", "Apple", "Microsoft", "Databricks"],
+    "docs": "https://spark.apache.org/docs/latest/",
+    "tutorial": "https://spark.apache.org/docs/latest/quick-start.html",
+    "added": "2026-06-08"
+  },
+  {
+    "id": "dbt",
+    "name": "dbt",
+    "category": "Tool",
+    "domain": "Data Engineering",
+    "description": "Data Build Tool — SQL-first transformation framework that brings software engineering practices (version control, testing, documentation, modularity) to analytics engineering. Runs inside your data warehouse; no data moves outside.",
+    "use_cases": [
+      "Transforming raw warehouse data into clean, tested, documented data models",
+      "Defining data lineage DAGs with ref() for dependency-aware execution",
+      "Testing data quality: not-null, uniqueness, referential integrity, custom assertions",
+      "Auto-generating data documentation and lineage graphs from model definitions",
+      "dbt Cloud for managed scheduling, CI checks on PRs, and IDE"
+    ],
+    "used_by": ["Spotify", "Shopify", "HubSpot", "GitLab", "Conde Nast"],
+    "docs": "https://docs.getdbt.com/",
+    "tutorial": "https://docs.getdbt.com/guides",
+    "added": "2026-06-08"
+  },
+  {
+    "id": "apache-airflow",
+    "name": "Apache Airflow",
+    "category": "Tool",
+    "domain": "Data Engineering",
+    "description": "Open-source workflow orchestration platform. Pipelines defined as DAGs in Python — giving full programmatic control over scheduling, branching, retries, and dependencies. De facto standard for data pipeline orchestration.",
+    "use_cases": [
+      "Orchestrating multi-step ETL/ELT pipelines with dependency-aware scheduling",
+      "Triggering Spark jobs, dbt runs, SQL queries, and API calls in sequence",
+      "Backfilling historical data runs with date-parameterized DAGs",
+      "Dynamic DAG generation for multi-tenant or config-driven pipelines",
+      "Managed via MWAA (AWS), Cloud Composer (GCP), or Astronomer"
+    ],
+    "used_by": ["Airbnb", "Twitter", "Lyft", "Robinhood", "Adobe", "PayPal"],
+    "docs": "https://airflow.apache.org/docs/",
+    "tutorial": "https://airflow.apache.org/docs/apache-airflow/stable/tutorial/index.html",
+    "added": "2026-06-08"
   }
 ]

@@ -869,5 +869,59 @@
     "docs": "https://support.pagerduty.com/docs",
     "tutorial": "https://support.pagerduty.com/docs/introduction",
     "added": "2026-06-08"
+  },
+  {
+    "id": "splunk",
+    "name": "Splunk",
+    "category": "Platform",
+    "domain": "SRE/Observability",
+    "description": "Enterprise platform for searching, monitoring, and analyzing machine-generated data — logs, metrics, events, and traces. SPL (Search Processing Language) for ad-hoc investigation. Dominant in enterprise SIEM and SOC workflows.",
+    "use_cases": [
+      "Centralized log aggregation and SPL-powered investigation at petabyte scale",
+      "SIEM: security event correlation, threat detection, and compliance reporting",
+      "IT operations: real-time dashboards and alerting on infrastructure log patterns",
+      "Splunk SOAR for automated security incident response playbooks",
+      "Observability Cloud (formerly SignalFx) for metrics and APM"
+    ],
+    "used_by": ["Domino's", "Carnival", "Booz Allen", "ING", "United States DoD"],
+    "docs": "https://docs.splunk.com/Documentation/Splunk",
+    "tutorial": "https://docs.splunk.com/Documentation/Splunk/latest/SearchTutorial/WelcometotheSearchTutorial",
+    "added": "2026-06-08"
+  },
+  {
+    "id": "sentry",
+    "name": "Sentry",
+    "category": "Platform",
+    "domain": "SRE/Observability",
+    "description": "Application monitoring platform focused on error tracking and performance. Captures exceptions with full stack traces, breadcrumbs, and user context. Helps developers find, triage, and fix production bugs fast. Open-source core, SaaS or self-hosted.",
+    "use_cases": [
+      "Real-time error and exception tracking with full stack trace and release attribution",
+      "Performance monitoring: transaction traces, slow DB queries, N+1 detection",
+      "Source maps for minified JS — see original code in production errors",
+      "Release health: crash-free session rate per deploy version",
+      "Alerts routed to Slack/PagerDuty with issue deduplication and ownership rules"
+    ],
+    "used_by": ["Cloudflare", "Disney", "GitHub", "Stripe", "Atlassian", "Microsoft"],
+    "docs": "https://docs.sentry.io/",
+    "tutorial": "https://docs.sentry.io/platforms/",
+    "added": "2026-06-08"
+  },
+  {
+    "id": "dynatrace",
+    "name": "Dynatrace",
+    "category": "Platform",
+    "domain": "SRE/Observability",
+    "description": "AI-powered full-stack observability platform. OneAgent auto-instruments hosts, containers, and processes with zero config. Davis AI engine automatically detects anomalies, determines root cause, and pinpoints blast radius — reducing MTTR significantly.",
+    "use_cases": [
+      "Auto-instrumented APM across microservices, serverless, and mainframes via OneAgent",
+      "Davis AI: automated root cause analysis without manual alert correlation",
+      "Real user monitoring (RUM) and session replay for web and mobile apps",
+      "Kubernetes observability with automatic workload and dependency discovery",
+      "Dynatrace Grail for unified metrics, logs, traces, and events in one lakehouse"
+    ],
+    "used_by": ["SAP", "Delta Airlines", "Lenovo", "Lufthansa", "BNP Paribas"],
+    "docs": "https://docs.dynatrace.com/docs",
+    "tutorial": "https://docs.dynatrace.com/docs/get-started",
+    "added": "2026-06-08"
   }
 ]

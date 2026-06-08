@@ -1157,5 +1157,59 @@
     "docs": "https://nextjs.org/docs",
     "tutorial": "https://nextjs.org/learn",
     "added": "2026-06-08"
+  },
+  {
+    "id": "vue",
+    "name": "Vue.js",
+    "category": "Framework",
+    "domain": "Frontend",
+    "description": "Progressive JavaScript framework for building UIs. Approachable for beginners yet scales to complex SPAs. Composition API (Vue 3) brings React-like composability while retaining an intuitive single-file component (SFC) model with template, script, and style.",
+    "use_cases": [
+      "SPAs and component-driven UIs with reactive data binding",
+      "Progressive enhancement: drop Vue into existing pages without full rewrite",
+      "Nuxt.js for SSR, SSG, and full-stack Vue applications",
+      "Pinia for lightweight, type-safe state management",
+      "Mobile apps via Ionic Vue or NativeScript-Vue"
+    ],
+    "used_by": ["Alibaba", "GitLab", "Adobe", "Grammarly", "Nintendo", "BMW"],
+    "docs": "https://vuejs.org/guide/introduction.html",
+    "tutorial": "https://vuejs.org/tutorial/",
+    "added": "2026-06-08"
+  },
+  {
+    "id": "angular",
+    "name": "Angular",
+    "category": "Framework",
+    "domain": "Frontend",
+    "description": "Full-featured TypeScript-first frontend framework by Google. Opinionated, batteries-included: routing, forms, HTTP client, dependency injection, and CLI all built in. Suits large enterprise teams needing strong conventions and long-term stability.",
+    "use_cases": [
+      "Large-scale enterprise SPAs with structured module and component architecture",
+      "Reactive forms with built-in validation and two-way data binding",
+      "RxJS-powered async patterns for complex event and data stream handling",
+      "Server-side rendering via Angular Universal for SEO and performance",
+      "Micro-frontends with Module Federation and Angular standalone components"
+    ],
+    "used_by": ["Google", "Microsoft", "Forbes", "UPS", "Samsung", "Deutsche Bank"],
+    "docs": "https://angular.dev/overview",
+    "tutorial": "https://angular.dev/tutorials/learn-angular",
+    "added": "2026-06-08"
+  },
+  {
+    "id": "tailwind-css",
+    "name": "Tailwind CSS",
+    "category": "Framework",
+    "domain": "Frontend",
+    "description": "Utility-first CSS framework — compose designs directly in markup using atomic utility classes instead of writing custom CSS. JIT compiler generates only the CSS classes used, keeping bundle sizes minimal. Pairs with headless UI libraries for accessible components.",
+    "use_cases": [
+      "Rapid UI development without leaving HTML/JSX — no context switching to CSS files",
+      "Design system enforcement via tailwind.config.js tokens (colors, spacing, fonts)",
+      "Dark mode, responsive breakpoints, and state variants via class modifiers",
+      "Component libraries built on Tailwind: shadcn/ui, Headless UI, Radix + Tailwind",
+      "Tailwind UI for pre-built, production-ready component templates"
+    ],
+    "used_by": ["Vercel", "GitHub", "Shopify", "OpenAI", "Stripe", "NASA"],
+    "docs": "https://tailwindcss.com/docs",
+    "tutorial": "https://tailwindcss.com/docs/installation",
+    "added": "2026-06-08"
   }
 ]

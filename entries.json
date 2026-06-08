@@ -360,5 +360,207 @@
     "docs": "https://www.elastic.co/guide/index.html",
     "tutorial": "https://www.elastic.co/guide/en/elasticsearch/reference/current/getting-started.html",
     "added": "2026-06-08"
+  },
+  {
+    "id": "redis",
+    "name": "Redis",
+    "category": "Tool",
+    "domain": "Database",
+    "description": "In-memory data structure store used as cache, message broker, and database. Sub-millisecond latency with rich data types (strings, hashes, lists, sets, sorted sets, streams). Persistence via RDB snapshots and AOF log.",
+    "use_cases": [
+      "Caching: session store, query result cache, CDN token cache",
+      "Pub/Sub and lightweight message queuing (Redis Streams for durable queues)",
+      "Leaderboards and real-time counters with sorted sets",
+      "Distributed locks (Redlock algorithm) for cross-service coordination",
+      "Rate limiting with sliding window counters",
+      "Vector similarity search (Redis Stack) for AI/ML applications"
+    ],
+    "used_by": ["Twitter", "GitHub", "Snapchat", "Craigslist", "Stack Overflow", "Pinterest"],
+    "docs": "https://redis.io/docs/",
+    "tutorial": "https://redis.io/docs/getting-started/",
+    "added": "2026-06-08"
+  },
+  {
+    "id": "apache-kafka",
+    "name": "Apache Kafka",
+    "category": "Tool",
+    "domain": "Messaging",
+    "description": "Distributed event streaming platform designed for high-throughput, fault-tolerant, ordered message delivery. Stores events durably as an immutable log. De facto standard for real-time data pipelines and event-driven architectures.",
+    "use_cases": [
+      "Real-time event streaming between microservices (decoupled producers/consumers)",
+      "Change Data Capture (CDC) from databases via Kafka Connect + Debezium",
+      "Stream processing pipelines with Kafka Streams or Apache Flink",
+      "Activity tracking: clickstreams, metrics, audit logs at massive scale",
+      "Event sourcing and CQRS as the persistent event log",
+      "Multi-datacenter replication with MirrorMaker 2"
+    ],
+    "used_by": ["LinkedIn", "Uber", "Netflix", "Airbnb", "Goldman Sachs", "Cloudflare"],
+    "docs": "https://kafka.apache.org/documentation/",
+    "tutorial": "https://kafka.apache.org/quickstart",
+    "added": "2026-06-08"
+  },
+  {
+    "id": "postgresql",
+    "name": "PostgreSQL",
+    "category": "Tool",
+    "domain": "Database",
+    "description": "Advanced open-source relational database with strong ACID compliance, rich SQL support, and an extensible type system. Often called 'the world's most advanced open source database'. Supports JSON, full-text search, geospatial (PostGIS), and custom extensions.",
+    "use_cases": [
+      "Relational data storage with complex joins, transactions, and constraints",
+      "JSONB columns for hybrid relational/document workloads",
+      "Full-text search with tsvector/tsquery (no separate search engine needed)",
+      "Geospatial queries with PostGIS extension",
+      "Time-series data via TimescaleDB extension",
+      "Logical replication for read replicas and CDC pipelines"
+    ],
+    "used_by": ["Instagram", "Spotify", "Reddit", "Twitch", "Apple", "Stripe"],
+    "docs": "https://www.postgresql.org/docs/",
+    "tutorial": "https://www.postgresql.org/docs/current/tutorial.html",
+    "added": "2026-06-08"
+  },
+  {
+    "id": "mysql",
+    "name": "MySQL",
+    "category": "Tool",
+    "domain": "Database",
+    "description": "World's most popular open-source relational database. Known for reliability, ease of use, and massive ecosystem. Powers much of the web (LAMP stack). InnoDB storage engine provides ACID transactions and row-level locking.",
+    "use_cases": [
+      "Web application backends (WordPress, Magento, countless SaaS apps)",
+      "Read-heavy workloads with read replicas and connection pooling (ProxySQL)",
+      "OLTP transactional workloads with InnoDB",
+      "MySQL Group Replication / InnoDB Cluster for HA",
+      "Managed via AWS RDS, GCP Cloud SQL, PlanetScale"
+    ],
+    "used_by": ["Facebook", "Twitter", "YouTube", "Netflix", "Shopify", "Booking.com"],
+    "docs": "https://dev.mysql.com/doc/",
+    "tutorial": "https://dev.mysql.com/doc/mysql-getting-started/en/",
+    "added": "2026-06-08"
+  },
+  {
+    "id": "mongodb",
+    "name": "MongoDB",
+    "category": "Tool",
+    "domain": "Database",
+    "description": "Leading document-oriented NoSQL database. Stores data as flexible BSON documents (JSON-like). Schema-less by default, enabling rapid iteration. Horizontal sharding, replica sets, and rich aggregation pipeline built-in.",
+    "use_cases": [
+      "Flexible schema storage for rapidly evolving application data models",
+      "Content management: catalogs, user profiles, event logs",
+      "Real-time analytics with aggregation pipelines",
+      "Geospatial queries with 2dsphere indexes",
+      "Atlas Search (Lucene-backed) for full-text search without Elasticsearch",
+      "Multi-document ACID transactions for complex business operations"
+    ],
+    "used_by": ["Uber", "eBay", "Forbes", "SEGA", "Adobe", "Verizon"],
+    "docs": "https://www.mongodb.com/docs/",
+    "tutorial": "https://www.mongodb.com/docs/manual/tutorial/getting-started/",
+    "added": "2026-06-08"
+  },
+  {
+    "id": "apache-cassandra",
+    "name": "Apache Cassandra",
+    "category": "Tool",
+    "domain": "Database",
+    "description": "Distributed wide-column NoSQL database designed for massive scale with no single point of failure. Optimized for write-heavy, globally distributed workloads. Tunable consistency (AP system per CAP theorem). Originally built at Facebook.",
+    "use_cases": [
+      "Time-series data at scale: IoT telemetry, metrics, event logs",
+      "High-write-throughput workloads needing linear horizontal scalability",
+      "Multi-region active-active deployments with zero downtime",
+      "User activity feeds, recommendation data, messaging history",
+      "Netflix-scale personalization data (hundreds of TB)"
+    ],
+    "used_by": ["Netflix", "Apple", "Discord", "Instagram", "Spotify", "Uber"],
+    "docs": "https://cassandra.apache.org/doc/latest/",
+    "tutorial": "https://cassandra.apache.org/doc/latest/cassandra/getting-started/quickstart.html",
+    "added": "2026-06-08"
+  },
+  {
+    "id": "aws-dynamodb",
+    "name": "AWS DynamoDB",
+    "category": "Platform",
+    "domain": "Database",
+    "description": "AWS-managed serverless NoSQL key-value and document database. Single-digit millisecond latency at any scale. No servers to manage; capacity auto-scales. Pairs with DAX (in-memory cache) for microsecond reads.",
+    "use_cases": [
+      "Serverless app backends needing predictable low-latency at any scale",
+      "Session stores, shopping carts, user preferences (key-value access patterns)",
+      "DynamoDB Streams for event-driven triggers to Lambda/Kafka",
+      "Global Tables for multi-region active-active replication",
+      "Single-table design patterns for complex relational data with access-pattern-first modeling"
+    ],
+    "used_by": ["Amazon", "Lyft", "Redfin", "Samsung", "Capital One"],
+    "docs": "https://docs.aws.amazon.com/dynamodb/",
+    "tutorial": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GettingStartedDynamoDB.html",
+    "added": "2026-06-08"
+  },
+  {
+    "id": "clickhouse",
+    "name": "ClickHouse",
+    "category": "Tool",
+    "domain": "Database",
+    "description": "Open-source columnar OLAP database for real-time analytical queries. Blazing fast aggregations over billions of rows via vectorized execution and columnar storage. Used where Elasticsearch or Redshift is too slow or expensive.",
+    "use_cases": [
+      "Real-time analytics dashboards over event/log data (clickstreams, ad metrics)",
+      "Log storage and search as a high-performance alternative to Elasticsearch",
+      "Time-series aggregation: percentiles, histograms over billions of rows in milliseconds",
+      "User-facing analytics (embedded analytics in SaaS products)",
+      "ClickHouse Cloud as managed alternative to Snowflake for real-time workloads"
+    ],
+    "used_by": ["Cloudflare", "ByteDance", "Uber", "eBay", "Contentsquare", "Gitlab"],
+    "docs": "https://clickhouse.com/docs/en/intro",
+    "tutorial": "https://clickhouse.com/docs/en/getting-started/quick-start",
+    "added": "2026-06-08"
+  },
+  {
+    "id": "snowflake",
+    "name": "Snowflake",
+    "category": "Platform",
+    "domain": "Data Engineering",
+    "description": "Cloud data warehouse built for the cloud with separate compute and storage. Scales compute instantly per query, enabling concurrent workloads without contention. Supports structured and semi-structured (JSON, Avro, Parquet) data natively.",
+    "use_cases": [
+      "Enterprise data warehouse replacing on-prem Teradata/Redshift",
+      "Data sharing across organizations without copying data (Snowflake Marketplace)",
+      "ELT pipelines with dbt transformations on top of raw ingested data",
+      "Data lake queries over external S3/GCS/Azure storage via External Tables",
+      "Snowpark for Python/Java/Scala data engineering inside Snowflake"
+    ],
+    "used_by": ["Capital One", "JetBlue", "Instacart", "DoorDash", "Zoom", "Adobe"],
+    "docs": "https://docs.snowflake.com/",
+    "tutorial": "https://docs.snowflake.com/en/user-guide/tutorials/tasty-bytes-introduction",
+    "added": "2026-06-08"
+  },
+  {
+    "id": "neo4j",
+    "name": "Neo4j",
+    "category": "Tool",
+    "domain": "Database",
+    "description": "Leading graph database — stores data as nodes and relationships rather than tables or documents. Cypher query language for expressive graph traversals. Ideal when relationships between entities are as important as the entities themselves.",
+    "use_cases": [
+      "Fraud detection: identifying suspicious transaction rings and identity clusters",
+      "Knowledge graphs and recommendation engines (collaborative filtering)",
+      "Network and IT infrastructure dependency mapping",
+      "Identity and access management graphs (who has access to what via what path)",
+      "Social network analysis and community detection"
+    ],
+    "used_by": ["eBay", "Adobe", "Airbus", "NASA", "UBS", "Volvo"],
+    "docs": "https://neo4j.com/docs/",
+    "tutorial": "https://neo4j.com/docs/getting-started/",
+    "added": "2026-06-08"
+  },
+  {
+    "id": "cockroachdb",
+    "name": "CockroachDB",
+    "category": "Tool",
+    "domain": "Database",
+    "description": "Cloud-native distributed SQL database combining PostgreSQL compatibility with horizontal scalability and multi-region active-active deployment. Survives node/datacenter failures with zero RPO. Built for global applications that outgrow single-node Postgres.",
+    "use_cases": [
+      "Global OLTP apps needing Postgres compatibility + horizontal scale",
+      "Multi-region deployments with data residency controls (GDPR compliance)",
+      "Replacing Postgres when write throughput or availability SLAs exceed single-node limits",
+      "Lift-and-shift from Postgres with minimal query changes",
+      "Financial systems needing serializable isolation at scale"
+    ],
+    "used_by": ["Bose", "Equifax", "Netflix", "Shipt", "SpaceX"],
+    "docs": "https://www.cockroachlabs.com/docs/",
+    "tutorial": "https://www.cockroachlabs.com/docs/stable/start-a-local-cluster.html",
+    "added": "2026-06-08"
   }
 ]

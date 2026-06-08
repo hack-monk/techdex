@@ -20,10 +20,44 @@ CATEGORY_EMOJI = {
     "Other": "📌",
 }
 
+DOMAIN_EMOJI = {
+    "Networking": "🌐",
+    "DevOps": "⚙️",
+    "Cloud": "☁️",
+    "Database": "🗄️",
+    "AI/ML": "🤖",
+    "SRE/Observability": "📡",
+    "Security": "🔒",
+    "Data Engineering": "🔀",
+    "Frontend": "🖥️",
+    "Backend": "🔌",
+    "Messaging": "📨",
+    "Storage": "💾",
+    "CI/CD": "🚀",
+    "Identity": "🪪",
+    "Other": "📌",
+}
+
+# Preferred display order for domains
+DOMAIN_ORDER = [
+    "Networking", "DevOps", "Cloud", "Database", "AI/ML",
+    "SRE/Observability", "Security", "Data Engineering",
+    "Frontend", "Backend", "Messaging", "Storage", "CI/CD", "Identity", "Other",
+]
+
+
+def domain_sort_key(d):
+    try:
+        return DOMAIN_ORDER.index(d)
+    except ValueError:
+        return len(DOMAIN_ORDER)
+
+
 def build():
     entries = json.loads(ENTRIES_FILE.read_text())
-    entries.sort(key=lambda e: (e["category"], e["name"].lower()))
+    entries.sort(key=lambda e: (domain_sort_key(e.get("domain", "Other")), e["name"].lower()))
 
+    domains = sorted(set(e.get("domain", "Other") for e in entries), key=domain_sort_key)
     categories = sorted(set(e["category"] for e in entries))
     total = len(entries)
 
@@ -40,9 +74,9 @@ def build():
         "",
         "## 📊 Stats",
         "",
-        f"| Total Entries | Categories | With Docs | With Tutorials |",
-        f"|:---:|:---:|:---:|:---:|",
-        f"| {total} | {len(categories)} | {sum(1 for e in entries if e.get('docs'))} | {sum(1 for e in entries if e.get('tutorial'))} |",
+        f"| Total Entries | Domains | Categories | With Docs | With Tutorials |",
+        f"|:---:|:---:|:---:|:---:|:---:|",
+        f"| {total} | {len(domains)} | {len(categories)} | {sum(1 for e in entries if e.get('docs'))} | {sum(1 for e in entries if e.get('tutorial'))} |",
         "",
         "---",
         "",
@@ -50,34 +84,43 @@ def build():
         "",
     ]
 
-    # TOC
-    for cat in categories:
-        emoji = CATEGORY_EMOJI.get(cat, "📌")
-        anchor = cat.lower().replace(" ", "-")
-        lines.append(f"- [{emoji} {cat}](#{anchor}s)")
+    # TOC by domain
+    for domain in domains:
+        emoji = DOMAIN_EMOJI.get(domain, "📌")
+        anchor = domain.lower().replace("/", "").replace(" ", "-")
+        lines.append(f"- [{emoji} {domain}](#{anchor})")
     lines += ["", "---", ""]
 
-    # Entries by category
-    for cat in categories:
-        emoji = CATEGORY_EMOJI.get(cat, "📌")
-        cat_entries = [e for e in entries if e["category"] == cat]
+    # Entries by domain
+    for domain in domains:
+        emoji = DOMAIN_EMOJI.get(domain, "📌")
+        anchor = domain.lower().replace("/", "").replace(" ", "-")
+        domain_entries = [e for e in entries if e.get("domain", "Other") == domain]
         lines += [
-            f"## {emoji} {cat}s",
+            f"## {emoji} {domain}",
             "",
-            "| Name | Description | Use Cases | Used By | Docs | Tutorial |",
-            "|------|-------------|-----------|---------|------|----------|",
+            "| Name | Category | Description | Use Cases | Used By | Docs | Tutorial |",
+            "|------|----------|-------------|-----------|---------|------|----------|",
         ]
-        for e in cat_entries:
+        for e in domain_entries:
             name = e["name"]
-            desc = e["description"].replace("|", "\\|")
-            # truncate description for table readability
-            if len(desc) > 120:
-                desc = desc[:117] + "..."
-            use_cases = "<br>".join(f"• {u}" for u in e.get("use_cases", []))
+            cat_emoji = CATEGORY_EMOJI.get(e["category"], "📌")
+            cat = f"{cat_emoji} {e['category']}"
+            # Collapsible description
+            desc_full = e["description"].replace("|", "\\|")
+            desc_preview = desc_full[:60] + "…" if len(desc_full) > 60 else desc_full
+            desc = f"<details><summary>{desc_preview}</summary>{desc_full}</details>"
+            # Collapsible use cases
+            uc_list = e.get("use_cases", [])
+            if uc_list:
+                uc_items = "".join(f"<li>{u}</li>" for u in uc_list)
+                use_cases = f"<details><summary>{len(uc_list)} use cases</summary><ul>{uc_items}</ul></details>"
+            else:
+                use_cases = "—"
             used_by = ", ".join(e.get("used_by", []))
             docs = f"[Docs]({e['docs']})" if e.get("docs") else "—"
             tutorial = f"[Tutorial]({e['tutorial']})" if e.get("tutorial") else "—"
-            lines.append(f"| **{name}** | {desc} | {use_cases} | {used_by} | {docs} | {tutorial} |")
+            lines.append(f"| **{name}** | {cat} | {desc} | {use_cases} | {used_by} | {docs} | {tutorial} |")
         lines += ["", ""]
 
     # Footer
@@ -88,7 +131,8 @@ def build():
     ]
 
     README_FILE.write_text("\n".join(lines))
-    print(f"✅ README.md generated — {total} entr{'y' if total == 1 else 'ies'} across {len(categories)} categor{'y' if len(categories) == 1 else 'ies'}.")
+    print(f"✅ README.md generated — {total} entr{'y' if total == 1 else 'ies'} across {len(domains)} domain{'s' if len(domains) != 1 else ''}, {len(categories)} categor{'y' if len(categories) == 1 else 'ies'}.")
+
 
 if __name__ == "__main__":
     build()

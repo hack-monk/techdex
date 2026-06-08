@@ -3,6 +3,7 @@
     "id": "envoy-proxy",
     "name": "Envoy Proxy",
     "category": "Tool",
+    "domain": "Networking",
     "description": "Open-source, high-performance L7 proxy and communication bus built for cloud-native microservices architectures. Originally created at Lyft, now a CNCF graduated project. Runs as a sidecar alongside applications, making network concerns (routing, load balancing, observability, security) transparent to application code.",
     "use_cases": [
       "Service mesh data plane (sidecar proxy — backbone of Istio, AWS App Mesh, Consul Connect)",
@@ -16,6 +17,348 @@
     "used_by": ["Lyft", "Google", "Apple", "Airbnb", "Pinterest", "Booking.com", "Dropbox", "Microsoft", "Netflix", "Uber"],
     "docs": "https://www.envoyproxy.io/docs/envoy/latest/intro/what_is_envoy",
     "tutorial": "https://www.envoyproxy.io/docs/envoy/latest/start/quick-start/",
+    "added": "2026-06-08"
+  },
+  {
+    "id": "aws-ec2",
+    "name": "AWS EC2",
+    "category": "Platform",
+    "domain": "Cloud",
+    "description": "Amazon Elastic Compute Cloud — scalable virtual machines in AWS. Core compute primitive of AWS; choose instance type, OS, storage, and networking. Pay per second (Linux) or per hour (Windows).",
+    "use_cases": [
+      "Hosting web servers, APIs, and application backends",
+      "Running batch jobs and HPC workloads on GPU/compute-optimized instances",
+      "Autoscaling fleets behind a load balancer (Auto Scaling Groups)",
+      "Running self-managed databases or Kubernetes nodes",
+      "On-demand and Spot instances for cost-optimized workloads"
+    ],
+    "used_by": ["Netflix", "Airbnb", "Stripe", "NASA", "Samsung"],
+    "docs": "https://docs.aws.amazon.com/ec2/",
+    "tutorial": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html",
+    "added": "2026-06-08"
+  },
+  {
+    "id": "aws-s3",
+    "name": "AWS S3",
+    "category": "Platform",
+    "domain": "Storage",
+    "description": "Amazon Simple Storage Service — infinitely scalable object storage with 99.999999999% durability. Store and retrieve any amount of data from anywhere. Foundational AWS service used as a data lake, static site host, and backup store.",
+    "use_cases": [
+      "Data lake storage for analytics pipelines (Athena, Spark, Redshift Spectrum)",
+      "Static website and frontend asset hosting with CloudFront CDN",
+      "Backup, archival, and disaster recovery (S3 Glacier tiers)",
+      "ML training dataset and model artifact storage",
+      "Event-driven pipelines via S3 event notifications to Lambda/SQS"
+    ],
+    "used_by": ["Netflix", "Airbnb", "Dropbox", "Pinterest", "Slack"],
+    "docs": "https://docs.aws.amazon.com/s3/",
+    "tutorial": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/GetStartedWithS3.html",
+    "added": "2026-06-08"
+  },
+  {
+    "id": "aws-lambda",
+    "name": "AWS Lambda",
+    "category": "Platform",
+    "domain": "Cloud",
+    "description": "Serverless compute service — run code without provisioning or managing servers. Pay only for compute time consumed (per-100ms billing). Scales automatically from zero to thousands of concurrent executions.",
+    "use_cases": [
+      "Event-driven processing: S3 uploads, DynamoDB streams, SQS/SNS triggers",
+      "REST/GraphQL API backends via API Gateway",
+      "Scheduled cron jobs and automation tasks",
+      "Real-time data transformation in streaming pipelines (Kinesis)",
+      "Lightweight microservices avoiding always-on server costs"
+    ],
+    "used_by": ["Coca-Cola", "iRobot", "Nordstrom", "Thomson Reuters", "Netflix"],
+    "docs": "https://docs.aws.amazon.com/lambda/",
+    "tutorial": "https://docs.aws.amazon.com/lambda/latest/dg/getting-started.html",
+    "added": "2026-06-08"
+  },
+  {
+    "id": "aws-iam",
+    "name": "AWS IAM",
+    "category": "Platform",
+    "domain": "Identity",
+    "description": "AWS Identity and Access Management — controls who can do what in AWS. Define users, roles, and policies to grant least-privilege access to every AWS resource. Central to AWS security posture.",
+    "use_cases": [
+      "Least-privilege policies for services, users, and cross-account access",
+      "IAM roles for EC2/Lambda/EKS workloads (no long-lived credentials)",
+      "Service Control Policies (SCPs) in AWS Organizations for guardrails",
+      "OIDC federation for GitHub Actions / Kubernetes workload identity",
+      "Auditing access with IAM Access Analyzer and CloudTrail"
+    ],
+    "used_by": ["All AWS customers"],
+    "docs": "https://docs.aws.amazon.com/iam/",
+    "tutorial": "https://docs.aws.amazon.com/IAM/latest/UserGuide/getting-started.html",
+    "added": "2026-06-08"
+  },
+  {
+    "id": "aws-kms",
+    "name": "AWS KMS",
+    "category": "Platform",
+    "domain": "Security",
+    "description": "AWS Key Management Service — managed service for creating and controlling encryption keys. Integrates with nearly every AWS service for envelope encryption. Keys never leave HSM hardware unencrypted.",
+    "use_cases": [
+      "Envelope encryption for S3, EBS, RDS, DynamoDB, Secrets Manager",
+      "Customer-managed keys (CMKs) for compliance and auditability",
+      "Signing and verification (asymmetric keys) for JWT, code signing",
+      "Cross-account and cross-region key policies",
+      "CloudTrail audit trail for every key usage event"
+    ],
+    "used_by": ["All regulated-industry AWS customers", "Financial services", "Healthcare companies"],
+    "docs": "https://docs.aws.amazon.com/kms/",
+    "tutorial": "https://docs.aws.amazon.com/kms/latest/developerguide/getting-started.html",
+    "added": "2026-06-08"
+  },
+  {
+    "id": "aws-vpc",
+    "name": "AWS VPC",
+    "category": "Platform",
+    "domain": "Networking",
+    "description": "AWS Virtual Private Cloud — logically isolated network within AWS where you define IP ranges, subnets, routing, and firewall rules. Every AWS workload lives inside a VPC. Foundation of AWS network security.",
+    "use_cases": [
+      "Isolating production, staging, and dev environments in separate VPCs",
+      "Public/private subnet design: ALB in public, app/DB in private",
+      "VPC peering and Transit Gateway for multi-VPC / multi-account networking",
+      "VPC Endpoints for private S3/DynamoDB access without internet",
+      "Security Groups and NACLs as layered firewall controls"
+    ],
+    "used_by": ["All AWS customers"],
+    "docs": "https://docs.aws.amazon.com/vpc/",
+    "tutorial": "https://docs.aws.amazon.com/vpc/latest/userguide/vpc-getting-started.html",
+    "added": "2026-06-08"
+  },
+  {
+    "id": "aws-eks",
+    "name": "AWS EKS",
+    "category": "Platform",
+    "domain": "Cloud",
+    "description": "Amazon Elastic Kubernetes Service — managed Kubernetes control plane on AWS. AWS handles etcd, API server availability, and upgrades. Run worker nodes on EC2, Fargate, or EKS Anywhere (on-prem).",
+    "use_cases": [
+      "Running production Kubernetes workloads without managing the control plane",
+      "Fargate profiles for serverless pod scheduling (no node management)",
+      "IRSA (IAM Roles for Service Accounts) for pod-level AWS permissions",
+      "Multi-tenant cluster isolation with namespaces and network policies",
+      "Karpenter for intelligent, fast node autoscaling"
+    ],
+    "used_by": ["Snap", "Salesforce", "HSBC", "Intuit", "Delivery Hero"],
+    "docs": "https://docs.aws.amazon.com/eks/",
+    "tutorial": "https://docs.aws.amazon.com/eks/latest/userguide/getting-started.html",
+    "added": "2026-06-08"
+  },
+  {
+    "id": "aws-cloudwatch",
+    "name": "AWS CloudWatch",
+    "category": "Platform",
+    "domain": "SRE/Observability",
+    "description": "AWS CloudWatch — unified observability service for logs, metrics, traces, and alarms across AWS infrastructure. Native integration with every AWS service; single pane of glass for AWS-native monitoring.",
+    "use_cases": [
+      "Metrics collection and dashboards for EC2, Lambda, RDS, EKS",
+      "Log aggregation via CloudWatch Logs and Logs Insights queries",
+      "Alarms and auto-scaling triggers on metric thresholds",
+      "CloudWatch Container Insights for EKS/ECS workload visibility",
+      "Synthetics canaries for endpoint availability monitoring"
+    ],
+    "used_by": ["All AWS customers"],
+    "docs": "https://docs.aws.amazon.com/cloudwatch/",
+    "tutorial": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/GettingStarted.html",
+    "added": "2026-06-08"
+  },
+  {
+    "id": "databricks",
+    "name": "Databricks",
+    "category": "Platform",
+    "domain": "Data Engineering",
+    "description": "Unified analytics platform built on Apache Spark — combines data engineering, ML training, and SQL analytics in one lakehouse. Runs on AWS, Azure, or GCP. Founded by the creators of Apache Spark.",
+    "use_cases": [
+      "Large-scale ETL and data transformation pipelines with Delta Lake",
+      "Distributed ML model training with MLflow experiment tracking",
+      "SQL analytics on data lake via Databricks SQL warehouses",
+      "Streaming pipelines with Structured Streaming on Kafka/Kinesis",
+      "Unity Catalog for governed, multi-cloud data mesh"
+    ],
+    "used_by": ["Comcast", "Regeneron", "Shell", "Conde Nast", "Block"],
+    "docs": "https://docs.databricks.com/",
+    "tutorial": "https://docs.databricks.com/en/getting-started/index.html",
+    "added": "2026-06-08"
+  },
+  {
+    "id": "jenkins",
+    "name": "Jenkins",
+    "category": "Tool",
+    "domain": "CI/CD",
+    "description": "Open-source automation server — the original CI/CD tool, extensible via 1800+ plugins. Self-hosted, runs pipelines defined in Groovy-based Jenkinsfiles. Highly flexible but operationally heavy.",
+    "use_cases": [
+      "Build, test, and deploy pipelines via declarative/scripted Jenkinsfile",
+      "Integration with any VCS, artifact registry, or deployment target via plugins",
+      "Multi-branch pipelines for PR-based workflows",
+      "Distributed builds across master-agent clusters",
+      "Legacy enterprise CI/CD where self-hosted control is required"
+    ],
+    "used_by": ["LinkedIn", "Netflix", "eBay", "Bosch", "IBM"],
+    "docs": "https://www.jenkins.io/doc/",
+    "tutorial": "https://www.jenkins.io/doc/pipeline/tour/getting-started/",
+    "added": "2026-06-08"
+  },
+  {
+    "id": "argocd",
+    "name": "ArgoCD",
+    "category": "Tool",
+    "domain": "CI/CD",
+    "description": "Declarative GitOps continuous delivery tool for Kubernetes. Continuously reconciles cluster state with Git as the source of truth. CNCF graduated project. Pairs with Argo Rollouts for progressive delivery.",
+    "use_cases": [
+      "GitOps deployments: Git PR merge triggers automatic cluster sync",
+      "Multi-cluster application delivery from a single control plane",
+      "Canary and blue/green deployments with Argo Rollouts",
+      "App-of-apps pattern for managing many microservices",
+      "Drift detection and auto-remediation for cluster state"
+    ],
+    "used_by": ["Intuit", "Red Hat", "Tesla", "Alibaba", "Adobe"],
+    "docs": "https://argo-cd.readthedocs.io/en/stable/",
+    "tutorial": "https://argo-cd.readthedocs.io/en/stable/getting_started/",
+    "added": "2026-06-08"
+  },
+  {
+    "id": "github-actions",
+    "name": "GitHub Actions",
+    "category": "Platform",
+    "domain": "CI/CD",
+    "description": "GitHub-native CI/CD and automation platform. Workflows defined in YAML trigger on GitHub events (push, PR, release, schedule). Hosted runners for Linux/macOS/Windows; self-hosted runners for custom environments.",
+    "use_cases": [
+      "CI pipelines: lint, test, build on every PR",
+      "CD pipelines: deploy to cloud on merge to main",
+      "Automated release workflows: semantic versioning, changelog, publish to npm/PyPI",
+      "OIDC-based passwordless auth to AWS, GCP, Azure — no stored credentials",
+      "Matrix builds for cross-platform and multi-version testing"
+    ],
+    "used_by": ["Microsoft", "Google", "Meta", "Stripe", "Vercel"],
+    "docs": "https://docs.github.com/en/actions",
+    "tutorial": "https://docs.github.com/en/actions/quickstart",
+    "added": "2026-06-08"
+  },
+  {
+    "id": "docker",
+    "name": "Docker",
+    "category": "Tool",
+    "domain": "DevOps",
+    "description": "Platform for building, shipping, and running applications in containers. Packages code and dependencies into a portable image that runs identically anywhere. Industry-standard container runtime and image format (OCI).",
+    "use_cases": [
+      "Packaging applications into reproducible, portable container images",
+      "Local development environments with Docker Compose (multi-service stacks)",
+      "Building images in CI pipelines for deployment to Kubernetes/ECS",
+      "Running isolated microservices with controlled resource limits",
+      "Multi-stage builds to produce minimal production images"
+    ],
+    "used_by": ["Spotify", "PayPal", "ADP", "ING", "eBay"],
+    "docs": "https://docs.docker.com/",
+    "tutorial": "https://docs.docker.com/get-started/",
+    "added": "2026-06-08"
+  },
+  {
+    "id": "kubernetes",
+    "name": "Kubernetes",
+    "category": "Platform",
+    "domain": "DevOps",
+    "description": "Open-source container orchestration system for automating deployment, scaling, and management of containerized applications. Originally designed by Google, now CNCF's flagship project. De facto standard for production container workloads.",
+    "use_cases": [
+      "Declarative workload management: Deployments, StatefulSets, DaemonSets",
+      "Horizontal pod autoscaling based on CPU, memory, or custom metrics",
+      "Service discovery and internal load balancing via kube-proxy/Services",
+      "Secrets and ConfigMap management for app configuration",
+      "Rolling updates and rollbacks with zero-downtime deployments"
+    ],
+    "used_by": ["Google", "Spotify", "Shopify", "Airbnb", "Goldman Sachs", "CERN"],
+    "docs": "https://kubernetes.io/docs/home/",
+    "tutorial": "https://kubernetes.io/docs/tutorials/kubernetes-basics/",
+    "added": "2026-06-08"
+  },
+  {
+    "id": "terraform",
+    "name": "Terraform",
+    "category": "Tool",
+    "domain": "DevOps",
+    "description": "Infrastructure as Code tool by HashiCorp — declare cloud resources in HCL, plan changes, and apply. Provider ecosystem covers 3000+ services across AWS, GCP, Azure, and beyond. State file tracks real-world resource status.",
+    "use_cases": [
+      "Provisioning and managing cloud infrastructure declaratively (IaC)",
+      "Multi-cloud and multi-provider resource management from one config",
+      "Remote state in S3/GCS with DynamoDB locking for team collaboration",
+      "Modules for reusable, versioned infrastructure components",
+      "Drift detection and plan-before-apply safety for production changes"
+    ],
+    "used_by": ["Slack", "Twitch", "Starbucks", "Uber", "Barclays"],
+    "docs": "https://developer.hashicorp.com/terraform/docs",
+    "tutorial": "https://developer.hashicorp.com/terraform/tutorials/aws-get-started",
+    "added": "2026-06-08"
+  },
+  {
+    "id": "ansible",
+    "name": "Ansible",
+    "category": "Tool",
+    "domain": "DevOps",
+    "description": "Agentless IT automation tool by Red Hat — uses SSH and YAML playbooks to configure servers, deploy apps, and orchestrate multi-tier workflows. No agent to install on managed nodes; idempotent by design.",
+    "use_cases": [
+      "Server configuration management and hardening at scale",
+      "Application deployment and rolling updates across server fleets",
+      "Provisioning cloud VMs and configuring them in one playbook",
+      "Automated compliance checks and remediation",
+      "Network device configuration (routers, switches via Ansible network modules)"
+    ],
+    "used_by": ["NASA", "Atlassian", "Hootsuite", "Eaton", "WeWork"],
+    "docs": "https://docs.ansible.com/",
+    "tutorial": "https://docs.ansible.com/ansible/latest/getting_started/index.html",
+    "added": "2026-06-08"
+  },
+  {
+    "id": "prometheus",
+    "name": "Prometheus",
+    "category": "Tool",
+    "domain": "SRE/Observability",
+    "description": "Open-source metrics monitoring and alerting system. Scrapes time-series metrics from instrumented targets via HTTP pull model. PromQL for powerful dimensional queries. CNCF graduated project; de facto standard for Kubernetes monitoring.",
+    "use_cases": [
+      "Scraping metrics from apps, Kubernetes nodes, and exporters (node, blackbox, etc.)",
+      "PromQL queries for real-time dashboards and alerting rules",
+      "Kubernetes cluster monitoring via kube-state-metrics and cAdvisor",
+      "Alertmanager integration for routing alerts to PagerDuty, Slack, etc.",
+      "Long-term storage via remote_write to Thanos, Cortex, or Mimir"
+    ],
+    "used_by": ["SoundCloud", "DigitalOcean", "GitLab", "Robinhood", "Cloudflare"],
+    "docs": "https://prometheus.io/docs/introduction/overview/",
+    "tutorial": "https://prometheus.io/docs/prometheus/latest/getting_started/",
+    "added": "2026-06-08"
+  },
+  {
+    "id": "grafana",
+    "name": "Grafana",
+    "category": "Tool",
+    "domain": "SRE/Observability",
+    "description": "Open-source analytics and visualization platform. Connects to 150+ data sources (Prometheus, Loki, Tempo, Elasticsearch, CloudWatch) and renders time-series dashboards, logs, and traces in a unified UI.",
+    "use_cases": [
+      "Building operational dashboards for infrastructure and application metrics",
+      "Unified observability: correlate metrics (Prometheus), logs (Loki), traces (Tempo)",
+      "Alerting with multi-dimensional rules and on-call routing (Grafana OnCall)",
+      "SLO/SLA dashboards with error budget burn rate tracking",
+      "Grafana Cloud as managed observability stack (LGTM: Loki, Grafana, Tempo, Mimir)"
+    ],
+    "used_by": ["eBay", "PayPal", "Bloomberg", "Grafana Labs", "Salesforce"],
+    "docs": "https://grafana.com/docs/grafana/latest/",
+    "tutorial": "https://grafana.com/docs/grafana/latest/getting-started/build-first-dashboard/",
+    "added": "2026-06-08"
+  },
+  {
+    "id": "elk-stack",
+    "name": "ELK Stack",
+    "category": "Tool",
+    "domain": "SRE/Observability",
+    "description": "Elasticsearch + Logstash + Kibana — the classic open-source log management trio. Elasticsearch indexes and searches logs at scale, Logstash ingests and transforms, Kibana visualizes. Often extended with Beats agents (now Elastic Stack).",
+    "use_cases": [
+      "Centralized log aggregation from servers, containers, and applications",
+      "Full-text search and analysis across billions of log events",
+      "Security analytics and SIEM (Elastic Security)",
+      "APM (Application Performance Monitoring) via Elastic APM agents",
+      "Kibana dashboards for log-driven operational intelligence"
+    ],
+    "used_by": ["LinkedIn", "Netflix", "Adobe", "Microsoft", "Walmart"],
+    "docs": "https://www.elastic.co/guide/index.html",
+    "tutorial": "https://www.elastic.co/guide/en/elasticsearch/reference/current/getting-started.html",
     "added": "2026-06-08"
   }
 ]

@@ -12,6 +12,7 @@ Personal Pokédex for tools and technologies (repo: techdex). `entries.json` is 
   "id": "unique-kebab-case-id",
   "name": "Tool Name",
   "category": "Tool | Language | Platform | Framework | Concept | Other",
+  "domain": "Networking | DevOps | Cloud | Database | AI/ML | SRE/Observability | Security | Data Engineering | Frontend | Backend | Messaging | Storage | CI/CD | Identity | Other",
   "description": "One or two sentence description of what it is and why it matters.",
   "use_cases": [
     "Use case 1",
@@ -38,3 +39,21 @@ Find the entry by `id` in `entries.json`, edit the fields, then re-run `python3 
 - **Framework** — application frameworks (FastAPI, React, Spring)
 - **Concept** — architectural/design concepts (Service Mesh, CQRS, Zero Trust)
 - **Other** — anything that doesn't fit above
+
+## Valid domains
+README groups entries by domain. Pick the closest match:
+- **Networking** — proxies, DNS, load balancers, service mesh (Envoy, Nginx, CoreDNS)
+- **DevOps** — IaC, orchestration, packaging (Terraform, Helm, Ansible)
+- **Cloud** — cloud platforms and managed services (AWS, GCP, Azure)
+- **Database** — RDBMS, NoSQL, NewSQL, caches (Postgres, Redis, Cassandra)
+- **AI/ML** — models, inference, ML frameworks (PyTorch, LangChain, Ollama)
+- **SRE/Observability** — monitoring, tracing, alerting (Prometheus, Grafana, Jaeger)
+- **Security** — auth, secrets, scanners, zero trust (Vault, Falco, OPA)
+- **Data Engineering** — pipelines, streaming, warehouses (Kafka, Spark, dbt)
+- **Frontend** — UI frameworks, bundlers, browsers (React, Vite, Tailwind)
+- **Backend** — app servers, RPC, API frameworks (FastAPI, gRPC, Express)
+- **Messaging** — queues, event buses, pub/sub (RabbitMQ, NATS, SQS)
+- **Storage** — object, block, file storage (S3, Ceph, MinIO)
+- **CI/CD** — build, test, deploy pipelines (GitHub Actions, ArgoCD, Tekton)
+- **Identity** — auth providers, SSO, IAM (Keycloak, OIDC, SPIFFE)
+- **Other** — doesn't fit anywhere above

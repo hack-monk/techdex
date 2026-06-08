@@ -923,5 +923,77 @@
     "docs": "https://docs.dynatrace.com/docs",
     "tutorial": "https://docs.dynatrace.com/docs/get-started",
     "added": "2026-06-08"
+  },
+  {
+    "id": "falco",
+    "name": "Falco",
+    "category": "Tool",
+    "domain": "Security",
+    "description": "Cloud-native runtime security tool by Sysdig. Uses eBPF/kernel module to detect anomalous behavior in containers and Kubernetes at the syscall level — privilege escalation, unexpected network connections, file writes to sensitive paths. CNCF graduated.",
+    "use_cases": [
+      "Detecting container escape attempts and privilege escalation at runtime",
+      "Alerting on unexpected shell spawns inside production containers",
+      "Kubernetes audit log monitoring for suspicious API server activity",
+      "Compliance: detecting access to sensitive files (SSH keys, /etc/passwd)",
+      "Integration with SIEM/SOAR via Falcosidekick for alert fanout"
+    ],
+    "used_by": ["Shopify", "Booz Allen Hamilton", "GitLab", "Randstad", "Sysdig"],
+    "docs": "https://falco.org/docs/",
+    "tutorial": "https://falco.org/docs/getting-started/",
+    "added": "2026-06-08"
+  },
+  {
+    "id": "opa",
+    "name": "Open Policy Agent (OPA)",
+    "category": "Tool",
+    "domain": "Security",
+    "description": "General-purpose policy engine that decouples policy decisions from application logic. Policies written in Rego language. Used as Kubernetes admission controller, API gateway authorizer, and Terraform plan enforcer. CNCF graduated.",
+    "use_cases": [
+      "Kubernetes admission control: block non-compliant resources before they land (via Gatekeeper)",
+      "API authorization: fine-grained, attribute-based access control for microservices",
+      "Terraform plan policy enforcement (Conftest) before infrastructure changes",
+      "Data masking and row-level filtering in data access layers",
+      "Centralized policy management across heterogeneous systems"
+    ],
+    "used_by": ["Netflix", "Pinterest", "Goldman Sachs", "Capital One", "Atlassian"],
+    "docs": "https://www.openpolicyagent.org/docs/latest/",
+    "tutorial": "https://www.openpolicyagent.org/docs/latest/#running-opa",
+    "added": "2026-06-08"
+  },
+  {
+    "id": "trivy",
+    "name": "Trivy",
+    "category": "Tool",
+    "domain": "Security",
+    "description": "Comprehensive, fast open-source vulnerability and misconfiguration scanner by Aqua Security. Scans container images, filesystems, Git repos, Kubernetes clusters, and IaC files. Single binary, zero config needed.",
+    "use_cases": [
+      "Container image scanning for OS and language-level CVEs in CI pipelines",
+      "IaC misconfiguration scanning for Terraform, Helm, Dockerfile, and Kubernetes manifests",
+      "Kubernetes cluster scanning for vulnerabilities in running workloads",
+      "SBOM generation (CycloneDX, SPDX) for supply chain compliance",
+      "Secret detection in source code and container layers"
+    ],
+    "used_by": ["Aqua Security", "AWS", "GitLab", "GitHub Actions ecosystem"],
+    "docs": "https://aquasecurity.github.io/trivy/",
+    "tutorial": "https://aquasecurity.github.io/trivy/latest/getting-started/installation/",
+    "added": "2026-06-08"
+  },
+  {
+    "id": "snyk",
+    "name": "Snyk",
+    "category": "Platform",
+    "domain": "Security",
+    "description": "Developer-first security platform for finding and fixing vulnerabilities in code, dependencies, containers, and IaC. Integrates into IDEs, CI/CD, and SCM. Prioritizes by exploitability, not just CVSS score.",
+    "use_cases": [
+      "SCA (Software Composition Analysis): detect vulnerable open-source dependencies",
+      "SAST: static code analysis for security issues in first-party code",
+      "Container image scanning integrated into Docker build and registry workflows",
+      "IaC scanning for Terraform, CloudFormation, and Kubernetes misconfigurations",
+      "License compliance checks across the dependency graph"
+    ],
+    "used_by": ["Google", "Salesforce", "Intuit", "MongoDB", "Atlassian"],
+    "docs": "https://docs.snyk.io/",
+    "tutorial": "https://docs.snyk.io/getting-started",
+    "added": "2026-06-08"
   }
 ]

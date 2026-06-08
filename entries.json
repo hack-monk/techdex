@@ -1103,5 +1103,59 @@
     "docs": "https://airflow.apache.org/docs/",
     "tutorial": "https://airflow.apache.org/docs/apache-airflow/stable/tutorial/index.html",
     "added": "2026-06-08"
+  },
+  {
+    "id": "fastapi",
+    "name": "FastAPI",
+    "category": "Framework",
+    "domain": "Backend",
+    "description": "Modern, high-performance Python web framework for building APIs. Built on Starlette and Pydantic — async by default, auto-generates OpenAPI/Swagger docs, and validates request/response schemas via type hints. One of the fastest Python frameworks.",
+    "use_cases": [
+      "REST and async API backends with automatic OpenAPI docs generation",
+      "ML model serving: wrap a model inference function as an HTTP endpoint",
+      "Data validation and serialization with Pydantic models",
+      "Background tasks and WebSocket support for real-time APIs",
+      "Dependency injection system for auth, DB sessions, and shared resources"
+    ],
+    "used_by": ["Microsoft", "Uber", "Netflix", "Explosion AI", "Hugging Face"],
+    "docs": "https://fastapi.tiangolo.com/",
+    "tutorial": "https://fastapi.tiangolo.com/tutorial/",
+    "added": "2026-06-08"
+  },
+  {
+    "id": "react",
+    "name": "React",
+    "category": "Framework",
+    "domain": "Frontend",
+    "description": "JavaScript library for building user interfaces via a declarative, component-based model. Introduced the virtual DOM and unidirectional data flow. Maintained by Meta. The most widely adopted frontend library — vast ecosystem of tooling and components.",
+    "use_cases": [
+      "Building interactive SPAs with component-driven UI architecture",
+      "Server components (React 19) for streaming HTML with zero client JS",
+      "State management with hooks (useState, useReducer) and Context API",
+      "Universal rendering via Next.js (SSR/SSG) or Remix",
+      "Mobile apps via React Native sharing business logic with web"
+    ],
+    "used_by": ["Meta", "Airbnb", "Netflix", "Atlassian", "Twitter", "Uber"],
+    "docs": "https://react.dev/reference/react",
+    "tutorial": "https://react.dev/learn",
+    "added": "2026-06-08"
+  },
+  {
+    "id": "nextjs",
+    "name": "Next.js",
+    "category": "Framework",
+    "domain": "Frontend",
+    "description": "React framework for production — handles routing, SSR, SSG, ISR, API routes, and image/font optimization out of the box. App Router (Next.js 13+) enables React Server Components and streaming. Developed and maintained by Vercel.",
+    "use_cases": [
+      "Hybrid rendering: SSR for dynamic pages, SSG for static content, ISR for revalidation",
+      "Full-stack apps with API routes or Server Actions colocated with UI",
+      "React Server Components for zero-JS server-rendered UI",
+      "Image optimization, font loading, and script management via built-in components",
+      "Edge middleware for auth, redirects, and A/B testing at the CDN layer"
+    ],
+    "used_by": ["Vercel", "TikTok", "Twitch", "Notion", "Nike", "GitHub"],
+    "docs": "https://nextjs.org/docs",
+    "tutorial": "https://nextjs.org/learn",
+    "added": "2026-06-08"
   }
 ]

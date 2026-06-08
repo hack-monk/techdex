@@ -1683,5 +1683,83 @@
     "tutorial": "https://tailwindcss.com/docs/installation",
     "added": "2026-06-08",
     "eli5": "Pre-mixed paint colors for your website \u2014 pick from a palette instead of mixing yourself."
+  },
+  {
+    "id": "go",
+    "name": "Go",
+    "category": "Language",
+    "domain": "Backend",
+    "eli5": "A language designed so a big team can write the same code without making a mess.",
+    "description": "Statically typed, compiled language designed at Google for simplicity, concurrency, and fast build times. Goroutines and channels make concurrent programming straightforward. Single binary output, minimal runtime \u2014 ideal for cloud-native tools and services.",
+    "use_cases": [
+      "High-throughput microservices and APIs with built-in concurrency via goroutines",
+      "CLI tools and DevOps tooling (Docker, Kubernetes, Terraform are all written in Go)",
+      "Network servers and proxies with low memory footprint",
+      "Cloud-native infrastructure: most CNCF projects are written in Go",
+      "gRPC services with generated Go stubs from protobuf definitions"
+    ],
+    "used_by": [
+      "Google",
+      "Uber",
+      "Dropbox",
+      "Cloudflare",
+      "Docker",
+      "HashiCorp"
+    ],
+    "docs": "https://go.dev/doc/",
+    "tutorial": "https://go.dev/tour/welcome/1",
+    "added": "2026-06-08"
+  },
+  {
+    "id": "rust",
+    "name": "Rust",
+    "category": "Language",
+    "domain": "Backend",
+    "eli5": "A language that won't let you write dangerous code \u2014 like a strict teacher who catches your mistakes before class starts.",
+    "description": "Systems programming language focused on memory safety, performance, and fearless concurrency \u2014 without a garbage collector. The borrow checker catches memory bugs at compile time. Consistently voted most loved language in Stack Overflow surveys.",
+    "use_cases": [
+      "Systems programming: OS components, drivers, embedded firmware",
+      "WebAssembly (WASM) compilation for near-native browser performance",
+      "High-performance networking and proxies (Cloudflare, AWS, Discord)",
+      "CLI tools requiring minimal binary size and zero runtime overhead",
+      "Replacing C/C++ in safety-critical code (Linux kernel, Android, Windows)"
+    ],
+    "used_by": [
+      "Mozilla",
+      "Cloudflare",
+      "Discord",
+      "AWS",
+      "Microsoft",
+      "Linux Foundation"
+    ],
+    "docs": "https://doc.rust-lang.org/book/",
+    "tutorial": "https://rustlings.cool/",
+    "added": "2026-06-08"
+  },
+  {
+    "id": "python",
+    "name": "Python",
+    "category": "Language",
+    "domain": "Backend",
+    "eli5": "A language so easy to read it almost looks like plain English \u2014 the Swiss Army knife of programming.",
+    "description": "High-level, dynamically typed, interpreted language known for readability and a massive ecosystem. Dominant in data science, ML, and scripting. Slower than compiled languages but fast enough when paired with C-extension libraries (NumPy, PyTorch).",
+    "use_cases": [
+      "Data science and ML: NumPy, Pandas, scikit-learn, PyTorch, TensorFlow",
+      "Backend APIs with FastAPI, Django, or Flask",
+      "Automation, scripting, and glue code for DevOps pipelines",
+      "Data engineering: PySpark, Apache Airflow DAGs, dbt Python models",
+      "LLM applications and AI agent frameworks (LangChain, LlamaIndex)"
+    ],
+    "used_by": [
+      "Google",
+      "Instagram",
+      "Spotify",
+      "Netflix",
+      "Dropbox",
+      "NASA"
+    ],
+    "docs": "https://docs.python.org/3/",
+    "tutorial": "https://docs.python.org/3/tutorial/",
+    "added": "2026-06-08"
   }
 ]

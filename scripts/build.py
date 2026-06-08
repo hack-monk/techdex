@@ -98,11 +98,12 @@ def build():
         lines += [
             f"## {emoji} {domain}",
             "",
-            "| Name | Description | Use Cases | Used By | Docs | Tutorial |",
-            "|------|-------------|-----------|---------|------|----------|",
+            "| Name | ELI5 | Description | Use Cases | Used By | Docs | Tutorial |",
+            "|------|------|-------------|-----------|---------|------|----------|",
         ]
         for e in domain_entries:
             name = e["name"]
+            eli5 = e.get("eli5", "")
             # Collapsible description
             desc_full = e["description"].replace("|", "\\|")
             desc_preview = desc_full[:60] + "…" if len(desc_full) > 60 else desc_full
@@ -117,7 +118,7 @@ def build():
             used_by = ", ".join(e.get("used_by", []))
             docs = f"[Docs]({e['docs']})" if e.get("docs") else "—"
             tutorial = f"[Tutorial]({e['tutorial']})" if e.get("tutorial") else "—"
-            lines.append(f"| **{name}** | {desc} | {use_cases} | {used_by} | {docs} | {tutorial} |")
+            lines.append(f"| **{name}** | {eli5} | {desc} | {use_cases} | {used_by} | {docs} | {tutorial} |")
         lines += ["", ""]
 
     # Footer

@@ -13,6 +13,7 @@ Personal Pokédex for tools and technologies (repo: techdex). `entries.json` is 
   "name": "Tool Name",
   "category": "Tool | Language | Platform | Framework | Concept | Other",
   "domain": "Networking | DevOps | Cloud | Database | AI/ML | SRE/Observability | Security | Data Engineering | Frontend | Backend | Messaging | Storage | CI/CD | Identity | Other",
+  "eli5": "One sentence explaining the tool like the reader is 5 years old. Use a concrete analogy.",
   "description": "One or two sentence description of what it is and why it matters.",
   "use_cases": [
     "Use case 1",

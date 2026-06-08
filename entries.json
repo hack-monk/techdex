@@ -689,5 +689,77 @@
     "docs": "https://kubernetes.github.io/ingress-nginx/",
     "tutorial": "https://kubernetes.github.io/ingress-nginx/deploy/",
     "added": "2026-06-08"
+  },
+  {
+    "id": "helm",
+    "name": "Helm",
+    "category": "Tool",
+    "domain": "DevOps",
+    "description": "The package manager for Kubernetes. Bundles Kubernetes manifests into versioned, templatable charts. Manages installs, upgrades, and rollbacks of complex applications as a single unit. CNCF graduated project.",
+    "use_cases": [
+      "Packaging and distributing Kubernetes applications as reusable charts",
+      "Templating manifests with values files for dev/staging/prod environments",
+      "One-command install of complex stacks (Prometheus, Grafana, Cert-Manager)",
+      "Atomic upgrades and rollbacks with helm upgrade / helm rollback",
+      "Helm OCI: store and distribute charts in container registries"
+    ],
+    "used_by": ["Microsoft", "Bitnami", "DataDog", "Elastic", "HashiCorp"],
+    "docs": "https://helm.sh/docs/",
+    "tutorial": "https://helm.sh/docs/intro/quickstart/",
+    "added": "2026-06-08"
+  },
+  {
+    "id": "linkerd",
+    "name": "Linkerd",
+    "category": "Tool",
+    "domain": "Networking",
+    "description": "Ultralight, security-first service mesh for Kubernetes. Uses a Rust-based micro-proxy (linkerd2-proxy) instead of Envoy — lower latency and resource overhead than Istio. CNCF graduated project. Zero-config mTLS by default.",
+    "use_cases": [
+      "Automatic mTLS for all pod-to-pod traffic with zero config changes",
+      "Golden metrics (latency, success rate, RPS) per route via Prometheus",
+      "Traffic splitting for canary deployments with SMI TrafficSplit",
+      "Retries and timeouts at the mesh level without touching app code",
+      "Multi-cluster failover and load balancing across clusters"
+    ],
+    "used_by": ["Buoyant", "Walmart", "H-E-B", "Elkjøp", "Entain"],
+    "docs": "https://linkerd.io/docs/",
+    "tutorial": "https://linkerd.io/2.15/getting-started/",
+    "added": "2026-06-08"
+  },
+  {
+    "id": "jaeger",
+    "name": "Jaeger",
+    "category": "Tool",
+    "domain": "SRE/Observability",
+    "description": "Open-source distributed tracing platform originally built at Uber. Traces requests across microservices to pinpoint latency bottlenecks and failures. Implements OpenTracing/OpenTelemetry standards. CNCF graduated project.",
+    "use_cases": [
+      "End-to-end request tracing across microservices to find latency root causes",
+      "Service dependency graph visualization from live trace data",
+      "Comparing trace samples between deployments for performance regression detection",
+      "Identifying slow DB queries and external API calls in distributed flows",
+      "Ingesting OTel spans via OTLP protocol"
+    ],
+    "used_by": ["Uber", "Red Hat", "Ticketmaster", "Grafana Labs", "Weaveworks"],
+    "docs": "https://www.jaegertracing.io/docs/latest/",
+    "tutorial": "https://www.jaegertracing.io/docs/latest/getting-started/",
+    "added": "2026-06-08"
+  },
+  {
+    "id": "opentelemetry",
+    "name": "OpenTelemetry",
+    "category": "Framework",
+    "domain": "SRE/Observability",
+    "description": "Vendor-neutral observability framework and CNCF standard for generating, collecting, and exporting telemetry (traces, metrics, logs). Single set of APIs and SDKs replaces vendor-specific agents. The future of cloud-native instrumentation.",
+    "use_cases": [
+      "Instrument apps once with OTel SDK; route to any backend (Jaeger, Tempo, Datadog, Honeycomb)",
+      "Auto-instrumentation for popular frameworks (no code changes for basic traces)",
+      "OTel Collector as vendor-agnostic telemetry pipeline with processors and exporters",
+      "Correlating traces, metrics, and logs via shared trace/span context",
+      "Replacing proprietary agents (Datadog, New Relic) to avoid vendor lock-in"
+    ],
+    "used_by": ["Google", "Microsoft", "Splunk", "Datadog", "Honeycomb", "Grafana Labs"],
+    "docs": "https://opentelemetry.io/docs/",
+    "tutorial": "https://opentelemetry.io/docs/getting-started/",
+    "added": "2026-06-08"
   }
 ]

@@ -815,5 +815,59 @@
     "docs": "https://argo-workflows.readthedocs.io/en/latest/",
     "tutorial": "https://argo-workflows.readthedocs.io/en/latest/quick-start/",
     "added": "2026-06-08"
+  },
+  {
+    "id": "datadog",
+    "name": "Datadog",
+    "category": "Platform",
+    "domain": "SRE/Observability",
+    "description": "Cloud-scale monitoring and observability SaaS platform. Unified dashboards for metrics, traces, logs, and synthetics across infrastructure, applications, and third-party services. 600+ integrations out of the box.",
+    "use_cases": [
+      "Infrastructure monitoring: hosts, containers, Kubernetes, serverless",
+      "APM with distributed tracing, flame graphs, and service maps",
+      "Log Management with live tail, parsing pipelines, and archive to S3",
+      "Synthetic monitoring: browser tests and API checks for uptime and performance",
+      "Cloud cost monitoring and anomaly detection with Watchdog AI"
+    ],
+    "used_by": ["Peloton", "Samsung", "Airbnb", "Whole Foods", "Atlassian"],
+    "docs": "https://docs.datadoghq.com/",
+    "tutorial": "https://docs.datadoghq.com/getting_started/",
+    "added": "2026-06-08"
+  },
+  {
+    "id": "new-relic",
+    "name": "New Relic",
+    "category": "Platform",
+    "domain": "SRE/Observability",
+    "description": "Full-stack observability platform with APM, infrastructure monitoring, browser/mobile, logs, and synthetics. NRQL (New Relic Query Language) for ad-hoc telemetry analysis. Offers a generous free tier with 100GB/month data ingest.",
+    "use_cases": [
+      "APM: transaction traces, error rates, slow query detection across all major languages",
+      "Infrastructure monitoring for hosts, Kubernetes, and cloud services",
+      "Browser and mobile real-user monitoring (RUM) with Core Web Vitals",
+      "NRQL dashboards for custom metric exploration and alerting",
+      "OTel-native ingest: send spans and metrics via OTLP without proprietary agents"
+    ],
+    "used_by": ["GitHub", "Epic Games", "DoorDash", "Ticketmaster", "Ford"],
+    "docs": "https://docs.newrelic.com/",
+    "tutorial": "https://docs.newrelic.com/docs/new-relic-solutions/get-started/intro-new-relic/",
+    "added": "2026-06-08"
+  },
+  {
+    "id": "pagerduty",
+    "name": "PagerDuty",
+    "category": "Platform",
+    "domain": "SRE/Observability",
+    "description": "Incident management and on-call alerting platform. Routes alerts from monitoring tools to the right on-call engineer via phone, SMS, Slack, or push. Manages escalation policies, runbooks, and postmortem workflows.",
+    "use_cases": [
+      "On-call scheduling with escalation policies and override management",
+      "Alert routing from Prometheus, Datadog, CloudWatch, and 700+ integrations",
+      "Intelligent alert grouping and noise reduction (Event Intelligence)",
+      "Incident timelines, stakeholder communication, and status page updates",
+      "Postmortem workflows and SLA/SLO reporting for reliability metrics"
+    ],
+    "used_by": ["GE", "Lululemon", "Comcast", "IBM", "Zoom", "Slack"],
+    "docs": "https://support.pagerduty.com/docs",
+    "tutorial": "https://support.pagerduty.com/docs/introduction",
+    "added": "2026-06-08"
   }
 ]

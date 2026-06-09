@@ -1,0 +1,1983 @@
+// Auto-generated from entries.json by scripts/build.py — do not edit.
+window.TECHDEX_ENTRIES = [
+ {
+  "id": "aws-vpc",
+  "name": "AWS VPC",
+  "category": "Platform",
+  "domain": "Networking",
+  "description": "AWS Virtual Private Cloud — logically isolated network within AWS where you define IP ranges, subnets, routing, and firewall rules. Every AWS workload lives inside a VPC. Foundation of AWS network security.",
+  "use_cases": [
+   "Isolating production, staging, and dev environments in separate VPCs",
+   "Public/private subnet design: ALB in public, app/DB in private",
+   "VPC peering and Transit Gateway for multi-VPC / multi-account networking",
+   "VPC Endpoints for private S3/DynamoDB access without internet",
+   "Security Groups and NACLs as layered firewall controls"
+  ],
+  "used_by": [
+   "All AWS customers"
+  ],
+  "docs": "https://docs.aws.amazon.com/vpc/",
+  "tutorial": "https://docs.aws.amazon.com/vpc/latest/userguide/vpc-getting-started.html",
+  "added": "2026-06-08",
+  "eli5": "Your own private neighborhood inside Amazon's giant city.",
+  "dex": 1
+ },
+ {
+  "id": "envoy-proxy",
+  "name": "Envoy Proxy",
+  "category": "Tool",
+  "domain": "Networking",
+  "description": "Open-source, high-performance L7 proxy and communication bus built for cloud-native microservices architectures. Originally created at Lyft, now a CNCF graduated project. Runs as a sidecar alongside applications, making network concerns (routing, load balancing, observability, security) transparent to application code.",
+  "use_cases": [
+   "Service mesh data plane (sidecar proxy — backbone of Istio, AWS App Mesh, Consul Connect)",
+   "Edge / ingress gateway for Kubernetes clusters",
+   "L7 load balancing with header/path-aware routing",
+   "Canary deployments and A/B traffic splitting",
+   "mTLS between services, TLS termination at edge",
+   "Distributed tracing and observability (Prometheus, Jaeger, Zipkin)",
+   "Rate limiting and circuit breaking"
+  ],
+  "used_by": [
+   "Lyft",
+   "Google",
+   "Apple",
+   "Airbnb",
+   "Pinterest",
+   "Booking.com",
+   "Dropbox",
+   "Microsoft",
+   "Netflix",
+   "Uber"
+  ],
+  "docs": "https://www.envoyproxy.io/docs/envoy/latest/intro/what_is_envoy",
+  "tutorial": "https://www.envoyproxy.io/docs/envoy/latest/start/quick-start/",
+  "added": "2026-06-08",
+  "eli5": "A traffic cop between your apps that decides who talks to who and how.",
+  "dex": 2
+ },
+ {
+  "id": "hashicorp-consul",
+  "name": "HashiCorp Consul",
+  "category": "Tool",
+  "domain": "Networking",
+  "description": "Service mesh and service discovery platform. Provides a distributed key-value store, health checking, and connect (mTLS service mesh). Works across VMs and containers, on-prem and cloud.",
+  "use_cases": [
+   "Service discovery: services register themselves, clients query DNS/HTTP API",
+   "Health checking and automatic removal of unhealthy instances",
+   "Consul Connect: mTLS service mesh for non-Kubernetes environments",
+   "Distributed KV store for configuration and feature flags",
+   "Multi-datacenter federation with WAN gossip"
+  ],
+  "used_by": [
+   "Stripe",
+   "SAP",
+   "Citrix",
+   "Barclays",
+   "Booz Allen Hamilton"
+  ],
+  "docs": "https://developer.hashicorp.com/consul/docs",
+  "tutorial": "https://developer.hashicorp.com/consul/tutorials/get-started-vms",
+  "added": "2026-06-08",
+  "eli5": "A phone book that tells your apps where their friends (other services) live today.",
+  "dex": 3
+ },
+ {
+  "id": "istio",
+  "name": "Istio",
+  "category": "Tool",
+  "domain": "Networking",
+  "description": "Open-source service mesh that layers traffic management, security, and observability on top of Kubernetes without changing application code. Uses Envoy as its sidecar data plane. CNCF graduated project.",
+  "use_cases": [
+   "Mutual TLS (mTLS) between all services with zero code changes",
+   "Fine-grained traffic control: canary releases, A/B testing, fault injection",
+   "Distributed tracing and metrics via Envoy sidecar telemetry",
+   "Authorization policies: service-to-service and end-user RBAC",
+   "Multi-cluster and multi-cloud service mesh federation"
+  ],
+  "used_by": [
+   "Google",
+   "Salesforce",
+   "T-Mobile",
+   "Airbus",
+   "Autodesk"
+  ],
+  "docs": "https://istio.io/latest/docs/",
+  "tutorial": "https://istio.io/latest/docs/setup/getting-started/",
+  "added": "2026-06-08",
+  "eli5": "A security guard between every pair of apps so they talk safely without trusting strangers.",
+  "dex": 4
+ },
+ {
+  "id": "linkerd",
+  "name": "Linkerd",
+  "category": "Tool",
+  "domain": "Networking",
+  "description": "Ultralight, security-first service mesh for Kubernetes. Uses a Rust-based micro-proxy (linkerd2-proxy) instead of Envoy — lower latency and resource overhead than Istio. CNCF graduated project. Zero-config mTLS by default.",
+  "use_cases": [
+   "Automatic mTLS for all pod-to-pod traffic with zero config changes",
+   "Golden metrics (latency, success rate, RPS) per route via Prometheus",
+   "Traffic splitting for canary deployments with SMI TrafficSplit",
+   "Retries and timeouts at the mesh level without touching app code",
+   "Multi-cluster failover and load balancing across clusters"
+  ],
+  "used_by": [
+   "Buoyant",
+   "Walmart",
+   "H-E-B",
+   "Elkjøp",
+   "Entain"
+  ],
+  "docs": "https://linkerd.io/docs/",
+  "tutorial": "https://linkerd.io/2.15/getting-started/",
+  "added": "2026-06-08",
+  "eli5": "A lightweight traffic cop between apps that also checks everyone's ID.",
+  "dex": 5
+ },
+ {
+  "id": "nginx",
+  "name": "Nginx",
+  "category": "Tool",
+  "domain": "Networking",
+  "description": "High-performance web server, reverse proxy, and load balancer. Event-driven, async architecture handles massive concurrent connections with minimal memory. Powers ~34% of the web. Also used as API gateway and static file server.",
+  "use_cases": [
+   "Reverse proxy and load balancer in front of app servers",
+   "TLS termination and HTTP/2 / HTTP/3 offloading",
+   "Static asset serving with efficient sendfile() kernel bypass",
+   "Ingress controller for Kubernetes (ingress-nginx)",
+   "Rate limiting, basic auth, and IP allowlisting at the edge",
+   "API gateway with upstream routing and caching"
+  ],
+  "used_by": [
+   "Dropbox",
+   "Netflix",
+   "WordPress.com",
+   "GitHub",
+   "Cloudflare"
+  ],
+  "docs": "https://nginx.org/en/docs/",
+  "tutorial": "https://nginx.org/en/docs/beginners_guide.html",
+  "added": "2026-06-08",
+  "eli5": "A hotel receptionist that greets visitors and sends them to the right room.",
+  "dex": 6
+ },
+ {
+  "id": "nginx-ingress",
+  "name": "Nginx Ingress Controller",
+  "category": "Tool",
+  "domain": "Networking",
+  "description": "Kubernetes-native ingress controller built on Nginx. Translates Kubernetes Ingress resources into Nginx config, routing external HTTP/S traffic to in-cluster services. Most widely deployed Kubernetes ingress solution.",
+  "use_cases": [
+   "HTTP/S routing to Kubernetes services by host and path rules",
+   "TLS termination with cert-manager for automatic Let's Encrypt certificates",
+   "Rate limiting, IP allowlisting, and basic auth via annotations",
+   "Canary deployments by splitting traffic across two Ingress resources",
+   "WebSocket and gRPC passthrough for long-lived connections"
+  ],
+  "used_by": [
+   "Widely used across Kubernetes deployments in enterprises and startups"
+  ],
+  "docs": "https://kubernetes.github.io/ingress-nginx/",
+  "tutorial": "https://kubernetes.github.io/ingress-nginx/deploy/",
+  "added": "2026-06-08",
+  "eli5": "The front door of your Kubernetes building that sends visitors to the right apartment.",
+  "dex": 7
+ },
+ {
+  "id": "ansible",
+  "name": "Ansible",
+  "category": "Tool",
+  "domain": "DevOps",
+  "description": "Agentless IT automation tool by Red Hat — uses SSH and YAML playbooks to configure servers, deploy apps, and orchestrate multi-tier workflows. No agent to install on managed nodes; idempotent by design.",
+  "use_cases": [
+   "Server configuration management and hardening at scale",
+   "Application deployment and rolling updates across server fleets",
+   "Provisioning cloud VMs and configuring them in one playbook",
+   "Automated compliance checks and remediation",
+   "Network device configuration (routers, switches via Ansible network modules)"
+  ],
+  "used_by": [
+   "NASA",
+   "Atlassian",
+   "Hootsuite",
+   "Eaton",
+   "WeWork"
+  ],
+  "docs": "https://docs.ansible.com/",
+  "tutorial": "https://docs.ansible.com/ansible/latest/getting_started/index.html",
+  "added": "2026-06-08",
+  "eli5": "A recipe book that teaches computers how to set themselves up.",
+  "dex": 8
+ },
+ {
+  "id": "bash",
+  "name": "Bash",
+  "category": "Language",
+  "domain": "DevOps",
+  "eli5": "A way to give your computer a to-do list and have it do every chore in order.",
+  "description": "Bourne Again Shell — the default command interpreter on Linux and macOS. Scripts automate sequences of system commands. Ubiquitous in CI/CD pipelines, server provisioning, and DevOps tooling. Not pretty, but runs everywhere UNIX does.",
+  "use_cases": [
+   "CI/CD pipeline steps: build, test, package, deploy scripts",
+   "Server bootstrapping and configuration automation",
+   "Log parsing, file manipulation, and text processing with grep/awk/sed",
+   "Cron job automation for scheduled maintenance tasks",
+   "Docker entrypoint scripts and Kubernetes init containers"
+  ],
+  "used_by": [
+   "Every Linux/macOS-based engineering team"
+  ],
+  "docs": "https://www.gnu.org/software/bash/manual/bash.html",
+  "tutorial": "https://linuxcommand.org/lc3_learning_the_shell.php",
+  "added": "2026-06-08",
+  "dex": 9
+ },
+ {
+  "id": "docker",
+  "name": "Docker",
+  "category": "Tool",
+  "domain": "DevOps",
+  "description": "Platform for building, shipping, and running applications in containers. Packages code and dependencies into a portable image that runs identically anywhere. Industry-standard container runtime and image format (OCI).",
+  "use_cases": [
+   "Packaging applications into reproducible, portable container images",
+   "Local development environments with Docker Compose (multi-service stacks)",
+   "Building images in CI pipelines for deployment to Kubernetes/ECS",
+   "Running isolated microservices with controlled resource limits",
+   "Multi-stage builds to produce minimal production images"
+  ],
+  "used_by": [
+   "Spotify",
+   "PayPal",
+   "ADP",
+   "ING",
+   "eBay"
+  ],
+  "docs": "https://docs.docker.com/",
+  "tutorial": "https://docs.docker.com/get-started/",
+  "added": "2026-06-08",
+  "eli5": "A lunchbox that packs your app with everything it needs to run anywhere.",
+  "dex": 10
+ },
+ {
+  "id": "helm",
+  "name": "Helm",
+  "category": "Tool",
+  "domain": "DevOps",
+  "description": "The package manager for Kubernetes. Bundles Kubernetes manifests into versioned, templatable charts. Manages installs, upgrades, and rollbacks of complex applications as a single unit. CNCF graduated project.",
+  "use_cases": [
+   "Packaging and distributing Kubernetes applications as reusable charts",
+   "Templating manifests with values files for dev/staging/prod environments",
+   "One-command install of complex stacks (Prometheus, Grafana, Cert-Manager)",
+   "Atomic upgrades and rollbacks with helm upgrade / helm rollback",
+   "Helm OCI: store and distribute charts in container registries"
+  ],
+  "used_by": [
+   "Microsoft",
+   "Bitnami",
+   "DataDog",
+   "Elastic",
+   "HashiCorp"
+  ],
+  "docs": "https://helm.sh/docs/",
+  "tutorial": "https://helm.sh/docs/intro/quickstart/",
+  "added": "2026-06-08",
+  "eli5": "An app store for Kubernetes — install big software with one command.",
+  "dex": 11
+ },
+ {
+  "id": "kubernetes",
+  "name": "Kubernetes",
+  "category": "Platform",
+  "domain": "DevOps",
+  "description": "Open-source container orchestration system for automating deployment, scaling, and management of containerized applications. Originally designed by Google, now CNCF's flagship project. De facto standard for production container workloads.",
+  "use_cases": [
+   "Declarative workload management: Deployments, StatefulSets, DaemonSets",
+   "Horizontal pod autoscaling based on CPU, memory, or custom metrics",
+   "Service discovery and internal load balancing via kube-proxy/Services",
+   "Secrets and ConfigMap management for app configuration",
+   "Rolling updates and rollbacks with zero-downtime deployments"
+  ],
+  "used_by": [
+   "Google",
+   "Spotify",
+   "Shopify",
+   "Airbnb",
+   "Goldman Sachs",
+   "CERN"
+  ],
+  "docs": "https://kubernetes.io/docs/home/",
+  "tutorial": "https://kubernetes.io/docs/tutorials/kubernetes-basics/",
+  "added": "2026-06-08",
+  "eli5": "A manager that keeps all your app boxes running and restarts them if they crash.",
+  "dex": 12
+ },
+ {
+  "id": "pulumi",
+  "name": "Pulumi",
+  "category": "Tool",
+  "domain": "DevOps",
+  "description": "Infrastructure as Code using general-purpose languages — Python, TypeScript, Go, C#, Java. Write cloud infrastructure with real loops, functions, and classes instead of HCL DSL. Same providers as Terraform via Pulumi's bridged provider ecosystem.",
+  "use_cases": [
+   "IaC in TypeScript/Python/Go for teams who find HCL limiting",
+   "Dynamically generating resources with loops and conditionals in real code",
+   "Component resources: reusable, testable infrastructure abstractions as classes",
+   "Pulumi ESC for centralized secrets and environment configuration management",
+   "Pulumi Cloud for state backend, CI/CD integration, and policy enforcement"
+  ],
+  "used_by": [
+   "Mercedes-Benz",
+   "Snowflake",
+   "Cockroach Labs",
+   "Nvidia",
+   "Fauna"
+  ],
+  "docs": "https://www.pulumi.com/docs/",
+  "tutorial": "https://www.pulumi.com/docs/get-started/",
+  "added": "2026-06-08",
+  "eli5": "Like Terraform but you write cloud blueprints in Python or Go instead of a special language.",
+  "dex": 13
+ },
+ {
+  "id": "terraform",
+  "name": "Terraform",
+  "category": "Tool",
+  "domain": "DevOps",
+  "description": "Infrastructure as Code tool by HashiCorp — declare cloud resources in HCL, plan changes, and apply. Provider ecosystem covers 3000+ services across AWS, GCP, Azure, and beyond. State file tracks real-world resource status.",
+  "use_cases": [
+   "Provisioning and managing cloud infrastructure declaratively (IaC)",
+   "Multi-cloud and multi-provider resource management from one config",
+   "Remote state in S3/GCS with DynamoDB locking for team collaboration",
+   "Modules for reusable, versioned infrastructure components",
+   "Drift detection and plan-before-apply safety for production changes"
+  ],
+  "used_by": [
+   "Slack",
+   "Twitch",
+   "Starbucks",
+   "Uber",
+   "Barclays"
+  ],
+  "docs": "https://developer.hashicorp.com/terraform/docs",
+  "tutorial": "https://developer.hashicorp.com/terraform/tutorials/aws-get-started",
+  "added": "2026-06-08",
+  "eli5": "A shopping list for cloud stuff — write what you want, it goes and builds it.",
+  "dex": 14
+ },
+ {
+  "id": "terraform-cloud",
+  "name": "Terraform Cloud",
+  "category": "Platform",
+  "domain": "DevOps",
+  "description": "Managed SaaS platform for Terraform by HashiCorp. Provides remote state storage, plan/apply execution, team access controls, policy enforcement (Sentinel/OPA), and a private module registry — turning Terraform into a collaborative, governed IaC platform.",
+  "use_cases": [
+   "Remote state backend with locking, versioning, and state history",
+   "Remote plan/apply in ephemeral workers — no local credentials on developer machines",
+   "Policy as Code with Sentinel or OPA to enforce cost/security guardrails before apply",
+   "VCS-driven workflows: PR triggers speculative plan, merge triggers apply",
+   "Private module registry for sharing versioned, reusable Terraform modules across teams"
+  ],
+  "used_by": [
+   "HashiCorp customers",
+   "Slack",
+   "Twitch",
+   "Deliveroo",
+   "Spacelift"
+  ],
+  "docs": "https://developer.hashicorp.com/terraform/cloud-docs",
+  "tutorial": "https://developer.hashicorp.com/terraform/tutorials/cloud-get-started",
+  "added": "2026-06-08",
+  "eli5": "A shared whiteboard where your whole team draws the same cloud blueprint together.",
+  "dex": 15
+ },
+ {
+  "id": "yaml",
+  "name": "YAML",
+  "category": "Language",
+  "domain": "DevOps",
+  "eli5": "A way to write settings and instructions so computers can read them, using indentation like an outline.",
+  "description": "YAML Ain't Markup Language — human-readable data serialization format. The config language of cloud-native infrastructure. Used by Kubernetes manifests, Docker Compose, GitHub Actions, Ansible, and almost every modern DevOps tool. Indentation-sensitive.",
+  "use_cases": [
+   "Kubernetes resource definitions (Deployments, Services, ConfigMaps)",
+   "GitHub Actions / GitLab CI pipeline definitions",
+   "Docker Compose multi-service stack configuration",
+   "Ansible playbooks and inventory files",
+   "Helm chart values files and templates"
+  ],
+  "used_by": [
+   "Every cloud-native engineering team"
+  ],
+  "docs": "https://yaml.org/spec/1.2.2/",
+  "tutorial": "https://learnxinyminutes.com/docs/yaml/",
+  "added": "2026-06-08",
+  "dex": 16
+ },
+ {
+  "id": "aws-ec2",
+  "name": "AWS EC2",
+  "category": "Platform",
+  "domain": "Cloud",
+  "description": "Amazon Elastic Compute Cloud — scalable virtual machines in AWS. Core compute primitive of AWS; choose instance type, OS, storage, and networking. Pay per second (Linux) or per hour (Windows).",
+  "use_cases": [
+   "Hosting web servers, APIs, and application backends",
+   "Running batch jobs and HPC workloads on GPU/compute-optimized instances",
+   "Autoscaling fleets behind a load balancer (Auto Scaling Groups)",
+   "Running self-managed databases or Kubernetes nodes",
+   "On-demand and Spot instances for cost-optimized workloads"
+  ],
+  "used_by": [
+   "Netflix",
+   "Airbnb",
+   "Stripe",
+   "NASA",
+   "Samsung"
+  ],
+  "docs": "https://docs.aws.amazon.com/ec2/",
+  "tutorial": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html",
+  "added": "2026-06-08",
+  "eli5": "A rental computer in Amazon's giant warehouse you can turn on anytime.",
+  "dex": 17
+ },
+ {
+  "id": "aws-eks",
+  "name": "AWS EKS",
+  "category": "Platform",
+  "domain": "Cloud",
+  "description": "Amazon Elastic Kubernetes Service — managed Kubernetes control plane on AWS. AWS handles etcd, API server availability, and upgrades. Run worker nodes on EC2, Fargate, or EKS Anywhere (on-prem).",
+  "use_cases": [
+   "Running production Kubernetes workloads without managing the control plane",
+   "Fargate profiles for serverless pod scheduling (no node management)",
+   "IRSA (IAM Roles for Service Accounts) for pod-level AWS permissions",
+   "Multi-tenant cluster isolation with namespaces and network policies",
+   "Karpenter for intelligent, fast node autoscaling"
+  ],
+  "used_by": [
+   "Snap",
+   "Salesforce",
+   "HSBC",
+   "Intuit",
+   "Delivery Hero"
+  ],
+  "docs": "https://docs.aws.amazon.com/eks/",
+  "tutorial": "https://docs.aws.amazon.com/eks/latest/userguide/getting-started.html",
+  "added": "2026-06-08",
+  "eli5": "Amazon babysits Kubernetes so you only worry about your apps.",
+  "dex": 18
+ },
+ {
+  "id": "aws-lambda",
+  "name": "AWS Lambda",
+  "category": "Platform",
+  "domain": "Cloud",
+  "description": "Serverless compute service — run code without provisioning or managing servers. Pay only for compute time consumed (per-100ms billing). Scales automatically from zero to thousands of concurrent executions.",
+  "use_cases": [
+   "Event-driven processing: S3 uploads, DynamoDB streams, SQS/SNS triggers",
+   "REST/GraphQL API backends via API Gateway",
+   "Scheduled cron jobs and automation tasks",
+   "Real-time data transformation in streaming pipelines (Kinesis)",
+   "Lightweight microservices avoiding always-on server costs"
+  ],
+  "used_by": [
+   "Coca-Cola",
+   "iRobot",
+   "Nordstrom",
+   "Thomson Reuters",
+   "Netflix"
+  ],
+  "docs": "https://docs.aws.amazon.com/lambda/",
+  "tutorial": "https://docs.aws.amazon.com/lambda/latest/dg/getting-started.html",
+  "added": "2026-06-08",
+  "eli5": "A vending machine for code — drop in a coin (event), your code runs, then stops.",
+  "dex": 19
+ },
+ {
+  "id": "apache-cassandra",
+  "name": "Apache Cassandra",
+  "category": "Tool",
+  "domain": "Database",
+  "description": "Distributed wide-column NoSQL database designed for massive scale with no single point of failure. Optimized for write-heavy, globally distributed workloads. Tunable consistency (AP system per CAP theorem). Originally built at Facebook.",
+  "use_cases": [
+   "Time-series data at scale: IoT telemetry, metrics, event logs",
+   "High-write-throughput workloads needing linear horizontal scalability",
+   "Multi-region active-active deployments with zero downtime",
+   "User activity feeds, recommendation data, messaging history",
+   "Netflix-scale personalization data (hundreds of TB)"
+  ],
+  "used_by": [
+   "Netflix",
+   "Apple",
+   "Discord",
+   "Instagram",
+   "Spotify",
+   "Uber"
+  ],
+  "docs": "https://cassandra.apache.org/doc/latest/",
+  "tutorial": "https://cassandra.apache.org/doc/latest/cassandra/getting-started/quickstart.html",
+  "added": "2026-06-08",
+  "eli5": "A filing cabinet spread across many rooms — still works if one room burns down.",
+  "dex": 20
+ },
+ {
+  "id": "aws-dynamodb",
+  "name": "AWS DynamoDB",
+  "category": "Platform",
+  "domain": "Database",
+  "description": "AWS-managed serverless NoSQL key-value and document database. Single-digit millisecond latency at any scale. No servers to manage; capacity auto-scales. Pairs with DAX (in-memory cache) for microsecond reads.",
+  "use_cases": [
+   "Serverless app backends needing predictable low-latency at any scale",
+   "Session stores, shopping carts, user preferences (key-value access patterns)",
+   "DynamoDB Streams for event-driven triggers to Lambda/Kafka",
+   "Global Tables for multi-region active-active replication",
+   "Single-table design patterns for complex relational data with access-pattern-first modeling"
+  ],
+  "used_by": [
+   "Amazon",
+   "Lyft",
+   "Redfin",
+   "Samsung",
+   "Capital One"
+  ],
+  "docs": "https://docs.aws.amazon.com/dynamodb/",
+  "tutorial": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GettingStartedDynamoDB.html",
+  "added": "2026-06-08",
+  "eli5": "Amazon's magic filing cabinet that grows automatically and is always fast.",
+  "dex": 21
+ },
+ {
+  "id": "clickhouse",
+  "name": "ClickHouse",
+  "category": "Tool",
+  "domain": "Database",
+  "description": "Open-source columnar OLAP database for real-time analytical queries. Blazing fast aggregations over billions of rows via vectorized execution and columnar storage. Used where Elasticsearch or Redshift is too slow or expensive.",
+  "use_cases": [
+   "Real-time analytics dashboards over event/log data (clickstreams, ad metrics)",
+   "Log storage and search as a high-performance alternative to Elasticsearch",
+   "Time-series aggregation: percentiles, histograms over billions of rows in milliseconds",
+   "User-facing analytics (embedded analytics in SaaS products)",
+   "ClickHouse Cloud as managed alternative to Snowflake for real-time workloads"
+  ],
+  "used_by": [
+   "Cloudflare",
+   "ByteDance",
+   "Uber",
+   "eBay",
+   "Contentsquare",
+   "Gitlab"
+  ],
+  "docs": "https://clickhouse.com/docs/en/intro",
+  "tutorial": "https://clickhouse.com/docs/en/getting-started/quick-start",
+  "added": "2026-06-08",
+  "eli5": "A calculator that sums up billions of numbers in milliseconds.",
+  "dex": 22
+ },
+ {
+  "id": "cockroachdb",
+  "name": "CockroachDB",
+  "category": "Tool",
+  "domain": "Database",
+  "description": "Cloud-native distributed SQL database combining PostgreSQL compatibility with horizontal scalability and multi-region active-active deployment. Survives node/datacenter failures with zero RPO. Built for global applications that outgrow single-node Postgres.",
+  "use_cases": [
+   "Global OLTP apps needing Postgres compatibility + horizontal scale",
+   "Multi-region deployments with data residency controls (GDPR compliance)",
+   "Replacing Postgres when write throughput or availability SLAs exceed single-node limits",
+   "Lift-and-shift from Postgres with minimal query changes",
+   "Financial systems needing serializable isolation at scale"
+  ],
+  "used_by": [
+   "Bose",
+   "Equifax",
+   "Netflix",
+   "Shipt",
+   "SpaceX"
+  ],
+  "docs": "https://www.cockroachlabs.com/docs/",
+  "tutorial": "https://www.cockroachlabs.com/docs/stable/start-a-local-cluster.html",
+  "added": "2026-06-08",
+  "eli5": "A filing cabinet that keeps working even if half of it is destroyed.",
+  "dex": 23
+ },
+ {
+  "id": "mongodb",
+  "name": "MongoDB",
+  "category": "Tool",
+  "domain": "Database",
+  "description": "Leading document-oriented NoSQL database. Stores data as flexible BSON documents (JSON-like). Schema-less by default, enabling rapid iteration. Horizontal sharding, replica sets, and rich aggregation pipeline built-in.",
+  "use_cases": [
+   "Flexible schema storage for rapidly evolving application data models",
+   "Content management: catalogs, user profiles, event logs",
+   "Real-time analytics with aggregation pipelines",
+   "Geospatial queries with 2dsphere indexes",
+   "Atlas Search (Lucene-backed) for full-text search without Elasticsearch",
+   "Multi-document ACID transactions for complex business operations"
+  ],
+  "used_by": [
+   "Uber",
+   "eBay",
+   "Forbes",
+   "SEGA",
+   "Adobe",
+   "Verizon"
+  ],
+  "docs": "https://www.mongodb.com/docs/",
+  "tutorial": "https://www.mongodb.com/docs/manual/tutorial/getting-started/",
+  "added": "2026-06-08",
+  "eli5": "A junk drawer where you shove data in any shape with no rules.",
+  "dex": 24
+ },
+ {
+  "id": "mysql",
+  "name": "MySQL",
+  "category": "Tool",
+  "domain": "Database",
+  "description": "World's most popular open-source relational database. Known for reliability, ease of use, and massive ecosystem. Powers much of the web (LAMP stack). InnoDB storage engine provides ACID transactions and row-level locking.",
+  "use_cases": [
+   "Web application backends (WordPress, Magento, countless SaaS apps)",
+   "Read-heavy workloads with read replicas and connection pooling (ProxySQL)",
+   "OLTP transactional workloads with InnoDB",
+   "MySQL Group Replication / InnoDB Cluster for HA",
+   "Managed via AWS RDS, GCP Cloud SQL, PlanetScale"
+  ],
+  "used_by": [
+   "Facebook",
+   "Twitter",
+   "YouTube",
+   "Netflix",
+   "Shopify",
+   "Booking.com"
+  ],
+  "docs": "https://dev.mysql.com/doc/",
+  "tutorial": "https://dev.mysql.com/doc/mysql-getting-started/en/",
+  "added": "2026-06-08",
+  "eli5": "The world's most popular filing cabinet for websites.",
+  "dex": 25
+ },
+ {
+  "id": "neo4j",
+  "name": "Neo4j",
+  "category": "Tool",
+  "domain": "Database",
+  "description": "Leading graph database — stores data as nodes and relationships rather than tables or documents. Cypher query language for expressive graph traversals. Ideal when relationships between entities are as important as the entities themselves.",
+  "use_cases": [
+   "Fraud detection: identifying suspicious transaction rings and identity clusters",
+   "Knowledge graphs and recommendation engines (collaborative filtering)",
+   "Network and IT infrastructure dependency mapping",
+   "Identity and access management graphs (who has access to what via what path)",
+   "Social network analysis and community detection"
+  ],
+  "used_by": [
+   "eBay",
+   "Adobe",
+   "Airbus",
+   "NASA",
+   "UBS",
+   "Volvo"
+  ],
+  "docs": "https://neo4j.com/docs/",
+  "tutorial": "https://neo4j.com/docs/getting-started/",
+  "added": "2026-06-08",
+  "eli5": "A map of who knows who — great for tracing connections between things.",
+  "dex": 26
+ },
+ {
+  "id": "postgresql",
+  "name": "PostgreSQL",
+  "category": "Tool",
+  "domain": "Database",
+  "description": "Advanced open-source relational database with strong ACID compliance, rich SQL support, and an extensible type system. Often called 'the world's most advanced open source database'. Supports JSON, full-text search, geospatial (PostGIS), and custom extensions.",
+  "use_cases": [
+   "Relational data storage with complex joins, transactions, and constraints",
+   "JSONB columns for hybrid relational/document workloads",
+   "Full-text search with tsvector/tsquery (no separate search engine needed)",
+   "Geospatial queries with PostGIS extension",
+   "Time-series data via TimescaleDB extension",
+   "Logical replication for read replicas and CDC pipelines"
+  ],
+  "used_by": [
+   "Instagram",
+   "Spotify",
+   "Reddit",
+   "Twitch",
+   "Apple",
+   "Stripe"
+  ],
+  "docs": "https://www.postgresql.org/docs/",
+  "tutorial": "https://www.postgresql.org/docs/current/tutorial.html",
+  "added": "2026-06-08",
+  "eli5": "A very organized filing cabinet with strict rules — everything in the right drawer.",
+  "dex": 27
+ },
+ {
+  "id": "redis",
+  "name": "Redis",
+  "category": "Tool",
+  "domain": "Database",
+  "description": "In-memory data structure store used as cache, message broker, and database. Sub-millisecond latency with rich data types (strings, hashes, lists, sets, sorted sets, streams). Persistence via RDB snapshots and AOF log.",
+  "use_cases": [
+   "Caching: session store, query result cache, CDN token cache",
+   "Pub/Sub and lightweight message queuing (Redis Streams for durable queues)",
+   "Leaderboards and real-time counters with sorted sets",
+   "Distributed locks (Redlock algorithm) for cross-service coordination",
+   "Rate limiting with sliding window counters",
+   "Vector similarity search (Redis Stack) for AI/ML applications"
+  ],
+  "used_by": [
+   "Twitter",
+   "GitHub",
+   "Snapchat",
+   "Craigslist",
+   "Stack Overflow",
+   "Pinterest"
+  ],
+  "docs": "https://redis.io/docs/",
+  "tutorial": "https://redis.io/docs/getting-started/",
+  "added": "2026-06-08",
+  "eli5": "A whiteboard next to your desk — super fast to read but wiped if unplugged.",
+  "dex": 28
+ },
+ {
+  "id": "sql",
+  "name": "SQL",
+  "category": "Language",
+  "domain": "Database",
+  "eli5": "A way to ask questions to a database, like 'show me all red toys sorted by size'.",
+  "description": "Structured Query Language — the universal language for querying and manipulating relational databases. Declarative: you describe what you want, the database engine figures out how. Every major database (Postgres, MySQL, Snowflake, BigQuery) speaks SQL.",
+  "use_cases": [
+   "Querying, filtering, and aggregating data with SELECT, WHERE, GROUP BY",
+   "Joining multiple tables to answer cross-entity questions",
+   "Data transformation and reporting in warehouses (Snowflake, BigQuery, Redshift)",
+   "Schema definition and migrations with DDL (CREATE, ALTER, DROP)",
+   "Analytics engineering with dbt — models are just SQL SELECT statements"
+  ],
+  "used_by": [
+   "Every company that stores data"
+  ],
+  "docs": "https://www.postgresql.org/docs/current/sql.html",
+  "tutorial": "https://sqlzoo.net/wiki/SQL_Tutorial",
+  "added": "2026-06-08",
+  "dex": 29
+ },
+ {
+  "id": "aws-cloudwatch",
+  "name": "AWS CloudWatch",
+  "category": "Platform",
+  "domain": "SRE/Observability",
+  "description": "AWS CloudWatch — unified observability service for logs, metrics, traces, and alarms across AWS infrastructure. Native integration with every AWS service; single pane of glass for AWS-native monitoring.",
+  "use_cases": [
+   "Metrics collection and dashboards for EC2, Lambda, RDS, EKS",
+   "Log aggregation via CloudWatch Logs and Logs Insights queries",
+   "Alarms and auto-scaling triggers on metric thresholds",
+   "CloudWatch Container Insights for EKS/ECS workload visibility",
+   "Synthetics canaries for endpoint availability monitoring"
+  ],
+  "used_by": [
+   "All AWS customers"
+  ],
+  "docs": "https://docs.aws.amazon.com/cloudwatch/",
+  "tutorial": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/GettingStarted.html",
+  "added": "2026-06-08",
+  "eli5": "A security camera and alarm system for everything in your AWS house.",
+  "dex": 30
+ },
+ {
+  "id": "datadog",
+  "name": "Datadog",
+  "category": "Platform",
+  "domain": "SRE/Observability",
+  "description": "Cloud-scale monitoring and observability SaaS platform. Unified dashboards for metrics, traces, logs, and synthetics across infrastructure, applications, and third-party services. 600+ integrations out of the box.",
+  "use_cases": [
+   "Infrastructure monitoring: hosts, containers, Kubernetes, serverless",
+   "APM with distributed tracing, flame graphs, and service maps",
+   "Log Management with live tail, parsing pipelines, and archive to S3",
+   "Synthetic monitoring: browser tests and API checks for uptime and performance",
+   "Cloud cost monitoring and anomaly detection with Watchdog AI"
+  ],
+  "used_by": [
+   "Peloton",
+   "Samsung",
+   "Airbnb",
+   "Whole Foods",
+   "Atlassian"
+  ],
+  "docs": "https://docs.datadoghq.com/",
+  "tutorial": "https://docs.datadoghq.com/getting_started/",
+  "added": "2026-06-08",
+  "eli5": "A dashboard showing every heartbeat of your apps and servers, all in one place.",
+  "dex": 31
+ },
+ {
+  "id": "dynatrace",
+  "name": "Dynatrace",
+  "category": "Platform",
+  "domain": "SRE/Observability",
+  "description": "AI-powered full-stack observability platform. OneAgent auto-instruments hosts, containers, and processes with zero config. Davis AI engine automatically detects anomalies, determines root cause, and pinpoints blast radius — reducing MTTR significantly.",
+  "use_cases": [
+   "Auto-instrumented APM across microservices, serverless, and mainframes via OneAgent",
+   "Davis AI: automated root cause analysis without manual alert correlation",
+   "Real user monitoring (RUM) and session replay for web and mobile apps",
+   "Kubernetes observability with automatic workload and dependency discovery",
+   "Dynatrace Grail for unified metrics, logs, traces, and events in one lakehouse"
+  ],
+  "used_by": [
+   "SAP",
+   "Delta Airlines",
+   "Lenovo",
+   "Lufthansa",
+   "BNP Paribas"
+  ],
+  "docs": "https://docs.dynatrace.com/docs",
+  "tutorial": "https://docs.dynatrace.com/docs/get-started",
+  "added": "2026-06-08",
+  "eli5": "A smart robot that watches your whole app and spots problems before you do.",
+  "dex": 32
+ },
+ {
+  "id": "elk-stack",
+  "name": "ELK Stack",
+  "category": "Tool",
+  "domain": "SRE/Observability",
+  "description": "Elasticsearch + Logstash + Kibana — the classic open-source log management trio. Elasticsearch indexes and searches logs at scale, Logstash ingests and transforms, Kibana visualizes. Often extended with Beats agents (now Elastic Stack).",
+  "use_cases": [
+   "Centralized log aggregation from servers, containers, and applications",
+   "Full-text search and analysis across billions of log events",
+   "Security analytics and SIEM (Elastic Security)",
+   "APM (Application Performance Monitoring) via Elastic APM agents",
+   "Kibana dashboards for log-driven operational intelligence"
+  ],
+  "used_by": [
+   "LinkedIn",
+   "Netflix",
+   "Adobe",
+   "Microsoft",
+   "Walmart"
+  ],
+  "docs": "https://www.elastic.co/guide/index.html",
+  "tutorial": "https://www.elastic.co/guide/en/elasticsearch/reference/current/getting-started.html",
+  "added": "2026-06-08",
+  "eli5": "A giant diary plus search engine for all your app's log messages.",
+  "dex": 33
+ },
+ {
+  "id": "grafana",
+  "name": "Grafana",
+  "category": "Tool",
+  "domain": "SRE/Observability",
+  "description": "Open-source analytics and visualization platform. Connects to 150+ data sources (Prometheus, Loki, Tempo, Elasticsearch, CloudWatch) and renders time-series dashboards, logs, and traces in a unified UI.",
+  "use_cases": [
+   "Building operational dashboards for infrastructure and application metrics",
+   "Unified observability: correlate metrics (Prometheus), logs (Loki), traces (Tempo)",
+   "Alerting with multi-dimensional rules and on-call routing (Grafana OnCall)",
+   "SLO/SLA dashboards with error budget burn rate tracking",
+   "Grafana Cloud as managed observability stack (LGTM: Loki, Grafana, Tempo, Mimir)"
+  ],
+  "used_by": [
+   "eBay",
+   "PayPal",
+   "Bloomberg",
+   "Grafana Labs",
+   "Salesforce"
+  ],
+  "docs": "https://grafana.com/docs/grafana/latest/",
+  "tutorial": "https://grafana.com/docs/grafana/latest/getting-started/build-first-dashboard/",
+  "added": "2026-06-08",
+  "eli5": "Pretty charts built from Prometheus's notebook so humans can understand things.",
+  "dex": 34
+ },
+ {
+  "id": "jaeger",
+  "name": "Jaeger",
+  "category": "Tool",
+  "domain": "SRE/Observability",
+  "description": "Open-source distributed tracing platform originally built at Uber. Traces requests across microservices to pinpoint latency bottlenecks and failures. Implements OpenTracing/OpenTelemetry standards. CNCF graduated project.",
+  "use_cases": [
+   "End-to-end request tracing across microservices to find latency root causes",
+   "Service dependency graph visualization from live trace data",
+   "Comparing trace samples between deployments for performance regression detection",
+   "Identifying slow DB queries and external API calls in distributed flows",
+   "Ingesting OTel spans via OTLP protocol"
+  ],
+  "used_by": [
+   "Uber",
+   "Red Hat",
+   "Ticketmaster",
+   "Grafana Labs",
+   "Weaveworks"
+  ],
+  "docs": "https://www.jaegertracing.io/docs/latest/",
+  "tutorial": "https://www.jaegertracing.io/docs/latest/getting-started/",
+  "added": "2026-06-08",
+  "eli5": "A detective that follows a request through all your services to find where it slowed down.",
+  "dex": 35
+ },
+ {
+  "id": "new-relic",
+  "name": "New Relic",
+  "category": "Platform",
+  "domain": "SRE/Observability",
+  "description": "Full-stack observability platform with APM, infrastructure monitoring, browser/mobile, logs, and synthetics. NRQL (New Relic Query Language) for ad-hoc telemetry analysis. Offers a generous free tier with 100GB/month data ingest.",
+  "use_cases": [
+   "APM: transaction traces, error rates, slow query detection across all major languages",
+   "Infrastructure monitoring for hosts, Kubernetes, and cloud services",
+   "Browser and mobile real-user monitoring (RUM) with Core Web Vitals",
+   "NRQL dashboards for custom metric exploration and alerting",
+   "OTel-native ingest: send spans and metrics via OTLP without proprietary agents"
+  ],
+  "used_by": [
+   "GitHub",
+   "Epic Games",
+   "DoorDash",
+   "Ticketmaster",
+   "Ford"
+  ],
+  "docs": "https://docs.newrelic.com/",
+  "tutorial": "https://docs.newrelic.com/docs/new-relic-solutions/get-started/intro-new-relic/",
+  "added": "2026-06-08",
+  "eli5": "A doctor for your app — checks its health and explains when and why it got sick.",
+  "dex": 36
+ },
+ {
+  "id": "opentelemetry",
+  "name": "OpenTelemetry",
+  "category": "Framework",
+  "domain": "SRE/Observability",
+  "description": "Vendor-neutral observability framework and CNCF standard for generating, collecting, and exporting telemetry (traces, metrics, logs). Single set of APIs and SDKs replaces vendor-specific agents. The future of cloud-native instrumentation.",
+  "use_cases": [
+   "Instrument apps once with OTel SDK; route to any backend (Jaeger, Tempo, Datadog, Honeycomb)",
+   "Auto-instrumentation for popular frameworks (no code changes for basic traces)",
+   "OTel Collector as vendor-agnostic telemetry pipeline with processors and exporters",
+   "Correlating traces, metrics, and logs via shared trace/span context",
+   "Replacing proprietary agents (Datadog, New Relic) to avoid vendor lock-in"
+  ],
+  "used_by": [
+   "Google",
+   "Microsoft",
+   "Splunk",
+   "Datadog",
+   "Honeycomb",
+   "Grafana Labs"
+  ],
+  "docs": "https://opentelemetry.io/docs/",
+  "tutorial": "https://opentelemetry.io/docs/getting-started/",
+  "added": "2026-06-08",
+  "eli5": "A universal plug that sends your app's health data to any monitoring tool you like.",
+  "dex": 37
+ },
+ {
+  "id": "pagerduty",
+  "name": "PagerDuty",
+  "category": "Platform",
+  "domain": "SRE/Observability",
+  "description": "Incident management and on-call alerting platform. Routes alerts from monitoring tools to the right on-call engineer via phone, SMS, Slack, or push. Manages escalation policies, runbooks, and postmortem workflows.",
+  "use_cases": [
+   "On-call scheduling with escalation policies and override management",
+   "Alert routing from Prometheus, Datadog, CloudWatch, and 700+ integrations",
+   "Intelligent alert grouping and noise reduction (Event Intelligence)",
+   "Incident timelines, stakeholder communication, and status page updates",
+   "Postmortem workflows and SLA/SLO reporting for reliability metrics"
+  ],
+  "used_by": [
+   "GE",
+   "Lululemon",
+   "Comcast",
+   "IBM",
+   "Zoom",
+   "Slack"
+  ],
+  "docs": "https://support.pagerduty.com/docs",
+  "tutorial": "https://support.pagerduty.com/docs/introduction",
+  "added": "2026-06-08",
+  "eli5": "An alarm clock that wakes up the right engineer when something breaks at 3am.",
+  "dex": 38
+ },
+ {
+  "id": "prometheus",
+  "name": "Prometheus",
+  "category": "Tool",
+  "domain": "SRE/Observability",
+  "description": "Open-source metrics monitoring and alerting system. Scrapes time-series metrics from instrumented targets via HTTP pull model. PromQL for powerful dimensional queries. CNCF graduated project; de facto standard for Kubernetes monitoring.",
+  "use_cases": [
+   "Scraping metrics from apps, Kubernetes nodes, and exporters (node, blackbox, etc.)",
+   "PromQL queries for real-time dashboards and alerting rules",
+   "Kubernetes cluster monitoring via kube-state-metrics and cAdvisor",
+   "Alertmanager integration for routing alerts to PagerDuty, Slack, etc.",
+   "Long-term storage via remote_write to Thanos, Cortex, or Mimir"
+  ],
+  "used_by": [
+   "SoundCloud",
+   "DigitalOcean",
+   "GitLab",
+   "Robinhood",
+   "Cloudflare"
+  ],
+  "docs": "https://prometheus.io/docs/introduction/overview/",
+  "tutorial": "https://prometheus.io/docs/prometheus/latest/getting_started/",
+  "added": "2026-06-08",
+  "eli5": "A notebook that writes down how your app is doing every few seconds.",
+  "dex": 39
+ },
+ {
+  "id": "sentry",
+  "name": "Sentry",
+  "category": "Platform",
+  "domain": "SRE/Observability",
+  "description": "Application monitoring platform focused on error tracking and performance. Captures exceptions with full stack traces, breadcrumbs, and user context. Helps developers find, triage, and fix production bugs fast. Open-source core, SaaS or self-hosted.",
+  "use_cases": [
+   "Real-time error and exception tracking with full stack trace and release attribution",
+   "Performance monitoring: transaction traces, slow DB queries, N+1 detection",
+   "Source maps for minified JS — see original code in production errors",
+   "Release health: crash-free session rate per deploy version",
+   "Alerts routed to Slack/PagerDuty with issue deduplication and ownership rules"
+  ],
+  "used_by": [
+   "Cloudflare",
+   "Disney",
+   "GitHub",
+   "Stripe",
+   "Atlassian",
+   "Microsoft"
+  ],
+  "docs": "https://docs.sentry.io/",
+  "tutorial": "https://docs.sentry.io/platforms/",
+  "added": "2026-06-08",
+  "eli5": "A bug catcher that tells you exactly when, where, and why your app crashed.",
+  "dex": 40
+ },
+ {
+  "id": "splunk",
+  "name": "Splunk",
+  "category": "Platform",
+  "domain": "SRE/Observability",
+  "description": "Enterprise platform for searching, monitoring, and analyzing machine-generated data — logs, metrics, events, and traces. SPL (Search Processing Language) for ad-hoc investigation. Dominant in enterprise SIEM and SOC workflows.",
+  "use_cases": [
+   "Centralized log aggregation and SPL-powered investigation at petabyte scale",
+   "SIEM: security event correlation, threat detection, and compliance reporting",
+   "IT operations: real-time dashboards and alerting on infrastructure log patterns",
+   "Splunk SOAR for automated security incident response playbooks",
+   "Observability Cloud (formerly SignalFx) for metrics and APM"
+  ],
+  "used_by": [
+   "Domino's",
+   "Carnival",
+   "Booz Allen",
+   "ING",
+   "United States DoD"
+  ],
+  "docs": "https://docs.splunk.com/Documentation/Splunk",
+  "tutorial": "https://docs.splunk.com/Documentation/Splunk/latest/SearchTutorial/WelcometotheSearchTutorial",
+  "added": "2026-06-08",
+  "eli5": "Google for your logs — find anything in billions of log lines instantly.",
+  "dex": 41
+ },
+ {
+  "id": "aws-kms",
+  "name": "AWS KMS",
+  "category": "Platform",
+  "domain": "Security",
+  "description": "AWS Key Management Service — managed service for creating and controlling encryption keys. Integrates with nearly every AWS service for envelope encryption. Keys never leave HSM hardware unencrypted.",
+  "use_cases": [
+   "Envelope encryption for S3, EBS, RDS, DynamoDB, Secrets Manager",
+   "Customer-managed keys (CMKs) for compliance and auditability",
+   "Signing and verification (asymmetric keys) for JWT, code signing",
+   "Cross-account and cross-region key policies",
+   "CloudTrail audit trail for every key usage event"
+  ],
+  "used_by": [
+   "All regulated-industry AWS customers",
+   "Financial services",
+   "Healthcare companies"
+  ],
+  "docs": "https://docs.aws.amazon.com/kms/",
+  "tutorial": "https://docs.aws.amazon.com/kms/latest/developerguide/getting-started.html",
+  "added": "2026-06-08",
+  "eli5": "A bank vault for your secret keys — lets you use them but never hands them over.",
+  "dex": 42
+ },
+ {
+  "id": "cert-manager",
+  "name": "cert-manager",
+  "category": "Tool",
+  "domain": "Security",
+  "description": "Kubernetes-native certificate management controller. Automatically provisions, rotates, and renews TLS certificates from ACME (Let's Encrypt), Vault, Venafi, or self-signed CAs. Eliminates manual cert rotation toil in Kubernetes clusters.",
+  "use_cases": [
+   "Automatic Let's Encrypt TLS certificates for Ingress resources (HTTP-01/DNS-01 challenge)",
+   "Vault PKI integration for internal mTLS certificates across services",
+   "Automatic cert rotation before expiry — no more expired cert incidents",
+   "Issuing certificates for Istio/SPIFFE workload identity via external issuers",
+   "Wildcard and SAN certificates for multi-domain Kubernetes workloads"
+  ],
+  "used_by": [
+   "Widely adopted across Kubernetes-based platforms and cloud-native stacks"
+  ],
+  "docs": "https://cert-manager.io/docs/",
+  "tutorial": "https://cert-manager.io/docs/tutorials/acme/nginx-ingress/",
+  "added": "2026-06-08",
+  "eli5": "A robot that renews your HTTPS padlock automatically before it ever expires.",
+  "dex": 43
+ },
+ {
+  "id": "falco",
+  "name": "Falco",
+  "category": "Tool",
+  "domain": "Security",
+  "description": "Cloud-native runtime security tool by Sysdig. Uses eBPF/kernel module to detect anomalous behavior in containers and Kubernetes at the syscall level — privilege escalation, unexpected network connections, file writes to sensitive paths. CNCF graduated.",
+  "use_cases": [
+   "Detecting container escape attempts and privilege escalation at runtime",
+   "Alerting on unexpected shell spawns inside production containers",
+   "Kubernetes audit log monitoring for suspicious API server activity",
+   "Compliance: detecting access to sensitive files (SSH keys, /etc/passwd)",
+   "Integration with SIEM/SOAR via Falcosidekick for alert fanout"
+  ],
+  "used_by": [
+   "Shopify",
+   "Booz Allen Hamilton",
+   "GitLab",
+   "Randstad",
+   "Sysdig"
+  ],
+  "docs": "https://falco.org/docs/",
+  "tutorial": "https://falco.org/docs/getting-started/",
+  "added": "2026-06-08",
+  "eli5": "A smoke detector for containers — screams if something suspicious happens inside.",
+  "dex": 44
+ },
+ {
+  "id": "hashicorp-vault",
+  "name": "HashiCorp Vault",
+  "category": "Tool",
+  "domain": "Security",
+  "description": "Secrets management and data protection platform. Centrally store, access, and distribute secrets (API keys, passwords, certs) with fine-grained policies and full audit logging. Dynamic secrets eliminate long-lived credentials.",
+  "use_cases": [
+   "Dynamic secrets: on-demand, short-lived DB credentials and cloud IAM tokens",
+   "PKI as a service: issue and rotate TLS certificates automatically",
+   "Kubernetes auth: pods authenticate with ServiceAccount tokens to get secrets",
+   "Encryption as a service (Transit engine) without exposing keys to apps",
+   "Secret leasing and renewal with automatic revocation on expiry"
+  ],
+  "used_by": [
+   "Adobe",
+   "Capital One",
+   "Twitch",
+   "Barclays",
+   "Cisco"
+  ],
+  "docs": "https://developer.hashicorp.com/vault/docs",
+  "tutorial": "https://developer.hashicorp.com/vault/tutorials/getting-started",
+  "added": "2026-06-08",
+  "eli5": "A really secure safe for all your passwords — only gives them to people it trusts.",
+  "dex": 45
+ },
+ {
+  "id": "opa",
+  "name": "Open Policy Agent (OPA)",
+  "category": "Tool",
+  "domain": "Security",
+  "description": "General-purpose policy engine that decouples policy decisions from application logic. Policies written in Rego language. Used as Kubernetes admission controller, API gateway authorizer, and Terraform plan enforcer. CNCF graduated.",
+  "use_cases": [
+   "Kubernetes admission control: block non-compliant resources before they land (via Gatekeeper)",
+   "API authorization: fine-grained, attribute-based access control for microservices",
+   "Terraform plan policy enforcement (Conftest) before infrastructure changes",
+   "Data masking and row-level filtering in data access layers",
+   "Centralized policy management across heterogeneous systems"
+  ],
+  "used_by": [
+   "Netflix",
+   "Pinterest",
+   "Goldman Sachs",
+   "Capital One",
+   "Atlassian"
+  ],
+  "docs": "https://www.openpolicyagent.org/docs/latest/",
+  "tutorial": "https://www.openpolicyagent.org/docs/latest/#running-opa",
+  "added": "2026-06-08",
+  "eli5": "A rulebook apps must check before doing anything: 'Am I allowed to do this?'",
+  "dex": 46
+ },
+ {
+  "id": "snyk",
+  "name": "Snyk",
+  "category": "Platform",
+  "domain": "Security",
+  "description": "Developer-first security platform for finding and fixing vulnerabilities in code, dependencies, containers, and IaC. Integrates into IDEs, CI/CD, and SCM. Prioritizes by exploitability, not just CVSS score.",
+  "use_cases": [
+   "SCA (Software Composition Analysis): detect vulnerable open-source dependencies",
+   "SAST: static code analysis for security issues in first-party code",
+   "Container image scanning integrated into Docker build and registry workflows",
+   "IaC scanning for Terraform, CloudFormation, and Kubernetes misconfigurations",
+   "License compliance checks across the dependency graph"
+  ],
+  "used_by": [
+   "Google",
+   "Salesforce",
+   "Intuit",
+   "MongoDB",
+   "Atlassian"
+  ],
+  "docs": "https://docs.snyk.io/",
+  "tutorial": "https://docs.snyk.io/getting-started",
+  "added": "2026-06-08",
+  "eli5": "A spell-checker for security — finds dangerous ingredients in your code's recipe.",
+  "dex": 47
+ },
+ {
+  "id": "trivy",
+  "name": "Trivy",
+  "category": "Tool",
+  "domain": "Security",
+  "description": "Comprehensive, fast open-source vulnerability and misconfiguration scanner by Aqua Security. Scans container images, filesystems, Git repos, Kubernetes clusters, and IaC files. Single binary, zero config needed.",
+  "use_cases": [
+   "Container image scanning for OS and language-level CVEs in CI pipelines",
+   "IaC misconfiguration scanning for Terraform, Helm, Dockerfile, and Kubernetes manifests",
+   "Kubernetes cluster scanning for vulnerabilities in running workloads",
+   "SBOM generation (CycloneDX, SPDX) for supply chain compliance",
+   "Secret detection in source code and container layers"
+  ],
+  "used_by": [
+   "Aqua Security",
+   "AWS",
+   "GitLab",
+   "GitHub Actions ecosystem"
+  ],
+  "docs": "https://aquasecurity.github.io/trivy/",
+  "tutorial": "https://aquasecurity.github.io/trivy/latest/getting-started/installation/",
+  "added": "2026-06-08",
+  "eli5": "An X-ray machine for containers that finds hidden diseases (security holes) inside.",
+  "dex": 48
+ },
+ {
+  "id": "apache-airflow",
+  "name": "Apache Airflow",
+  "category": "Tool",
+  "domain": "Data Engineering",
+  "description": "Open-source workflow orchestration platform. Pipelines defined as DAGs in Python — giving full programmatic control over scheduling, branching, retries, and dependencies. De facto standard for data pipeline orchestration.",
+  "use_cases": [
+   "Orchestrating multi-step ETL/ELT pipelines with dependency-aware scheduling",
+   "Triggering Spark jobs, dbt runs, SQL queries, and API calls in sequence",
+   "Backfilling historical data runs with date-parameterized DAGs",
+   "Dynamic DAG generation for multi-tenant or config-driven pipelines",
+   "Managed via MWAA (AWS), Cloud Composer (GCP), or Astronomer"
+  ],
+  "used_by": [
+   "Airbnb",
+   "Twitter",
+   "Lyft",
+   "Robinhood",
+   "Adobe",
+   "PayPal"
+  ],
+  "docs": "https://airflow.apache.org/docs/",
+  "tutorial": "https://airflow.apache.org/docs/apache-airflow/stable/tutorial/index.html",
+  "added": "2026-06-08",
+  "eli5": "A chore chart that runs your data jobs in the right order at the right time.",
+  "dex": 49
+ },
+ {
+  "id": "apache-spark",
+  "name": "Apache Spark",
+  "category": "Framework",
+  "domain": "Data Engineering",
+  "description": "Unified analytics engine for large-scale data processing. In-memory computation makes it 10-100x faster than MapReduce. Supports batch, streaming (Structured Streaming), SQL, ML (MLlib), and graph (GraphX) workloads in one engine.",
+  "use_cases": [
+   "Large-scale ETL and data transformation across petabytes of data",
+   "Structured Streaming for real-time event processing from Kafka",
+   "Distributed ML training with MLlib on massive datasets",
+   "Interactive SQL analytics via Spark SQL on data lakes (Parquet, Delta, Iceberg)",
+   "Graph analytics and iterative algorithms with GraphX"
+  ],
+  "used_by": [
+   "Netflix",
+   "Uber",
+   "Airbnb",
+   "Apple",
+   "Microsoft",
+   "Databricks"
+  ],
+  "docs": "https://spark.apache.org/docs/latest/",
+  "tutorial": "https://spark.apache.org/docs/latest/quick-start.html",
+  "added": "2026-06-08",
+  "eli5": "A team of workers that splits a huge data pile and processes all of it at once.",
+  "dex": 50
+ },
+ {
+  "id": "databricks",
+  "name": "Databricks",
+  "category": "Platform",
+  "domain": "Data Engineering",
+  "description": "Unified analytics platform built on Apache Spark — combines data engineering, ML training, and SQL analytics in one lakehouse. Runs on AWS, Azure, or GCP. Founded by the creators of Apache Spark.",
+  "use_cases": [
+   "Large-scale ETL and data transformation pipelines with Delta Lake",
+   "Distributed ML model training with MLflow experiment tracking",
+   "SQL analytics on data lake via Databricks SQL warehouses",
+   "Streaming pipelines with Structured Streaming on Kafka/Kinesis",
+   "Unity Catalog for governed, multi-cloud data mesh"
+  ],
+  "used_by": [
+   "Comcast",
+   "Regeneron",
+   "Shell",
+   "Conde Nast",
+   "Block"
+  ],
+  "docs": "https://docs.databricks.com/",
+  "tutorial": "https://docs.databricks.com/en/getting-started/index.html",
+  "added": "2026-06-08",
+  "eli5": "A giant playground where data people crunch huge piles of data together.",
+  "dex": 51
+ },
+ {
+  "id": "dbt",
+  "name": "dbt",
+  "category": "Tool",
+  "domain": "Data Engineering",
+  "description": "Data Build Tool — SQL-first transformation framework that brings software engineering practices (version control, testing, documentation, modularity) to analytics engineering. Runs inside your data warehouse; no data moves outside.",
+  "use_cases": [
+   "Transforming raw warehouse data into clean, tested, documented data models",
+   "Defining data lineage DAGs with ref() for dependency-aware execution",
+   "Testing data quality: not-null, uniqueness, referential integrity, custom assertions",
+   "Auto-generating data documentation and lineage graphs from model definitions",
+   "dbt Cloud for managed scheduling, CI checks on PRs, and IDE"
+  ],
+  "used_by": [
+   "Spotify",
+   "Shopify",
+   "HubSpot",
+   "GitLab",
+   "Conde Nast"
+  ],
+  "docs": "https://docs.getdbt.com/",
+  "tutorial": "https://docs.getdbt.com/guides",
+  "added": "2026-06-08",
+  "eli5": "A chef that turns raw data ingredients into clean, tested, ready-to-serve dishes.",
+  "dex": 52
+ },
+ {
+  "id": "snowflake",
+  "name": "Snowflake",
+  "category": "Platform",
+  "domain": "Data Engineering",
+  "description": "Cloud data warehouse built for the cloud with separate compute and storage. Scales compute instantly per query, enabling concurrent workloads without contention. Supports structured and semi-structured (JSON, Avro, Parquet) data natively.",
+  "use_cases": [
+   "Enterprise data warehouse replacing on-prem Teradata/Redshift",
+   "Data sharing across organizations without copying data (Snowflake Marketplace)",
+   "ELT pipelines with dbt transformations on top of raw ingested data",
+   "Data lake queries over external S3/GCS/Azure storage via External Tables",
+   "Snowpark for Python/Java/Scala data engineering inside Snowflake"
+  ],
+  "used_by": [
+   "Capital One",
+   "JetBlue",
+   "Instacart",
+   "DoorDash",
+   "Zoom",
+   "Adobe"
+  ],
+  "docs": "https://docs.snowflake.com/",
+  "tutorial": "https://docs.snowflake.com/en/user-guide/tutorials/tasty-bytes-introduction",
+  "added": "2026-06-08",
+  "eli5": "A shared spreadsheet in the cloud that gets more powerful when you need it.",
+  "dex": 53
+ },
+ {
+  "id": "angular",
+  "name": "Angular",
+  "category": "Framework",
+  "domain": "Frontend",
+  "description": "Full-featured TypeScript-first frontend framework by Google. Opinionated, batteries-included: routing, forms, HTTP client, dependency injection, and CLI all built in. Suits large enterprise teams needing strong conventions and long-term stability.",
+  "use_cases": [
+   "Large-scale enterprise SPAs with structured module and component architecture",
+   "Reactive forms with built-in validation and two-way data binding",
+   "RxJS-powered async patterns for complex event and data stream handling",
+   "Server-side rendering via Angular Universal for SEO and performance",
+   "Micro-frontends with Module Federation and Angular standalone components"
+  ],
+  "used_by": [
+   "Google",
+   "Microsoft",
+   "Forbes",
+   "UPS",
+   "Samsung",
+   "Deutsche Bank"
+  ],
+  "docs": "https://angular.dev/overview",
+  "tutorial": "https://angular.dev/tutorials/learn-angular",
+  "added": "2026-06-08",
+  "eli5": "A complete workshop for building big websites — Google made it with strict rules.",
+  "dex": 54
+ },
+ {
+  "id": "nextjs",
+  "name": "Next.js",
+  "category": "Framework",
+  "domain": "Frontend",
+  "description": "React framework for production — handles routing, SSR, SSG, ISR, API routes, and image/font optimization out of the box. App Router (Next.js 13+) enables React Server Components and streaming. Developed and maintained by Vercel.",
+  "use_cases": [
+   "Hybrid rendering: SSR for dynamic pages, SSG for static content, ISR for revalidation",
+   "Full-stack apps with API routes or Server Actions colocated with UI",
+   "React Server Components for zero-JS server-rendered UI",
+   "Image optimization, font loading, and script management via built-in components",
+   "Edge middleware for auth, redirects, and A/B testing at the CDN layer"
+  ],
+  "used_by": [
+   "Vercel",
+   "TikTok",
+   "Twitch",
+   "Notion",
+   "Nike",
+   "GitHub"
+  ],
+  "docs": "https://nextjs.org/docs",
+  "tutorial": "https://nextjs.org/learn",
+  "added": "2026-06-08",
+  "eli5": "React with superpowers — handles the boring stuff so you just build cool features.",
+  "dex": 55
+ },
+ {
+  "id": "react",
+  "name": "React",
+  "category": "Framework",
+  "domain": "Frontend",
+  "description": "JavaScript library for building user interfaces via a declarative, component-based model. Introduced the virtual DOM and unidirectional data flow. Maintained by Meta. The most widely adopted frontend library — vast ecosystem of tooling and components.",
+  "use_cases": [
+   "Building interactive SPAs with component-driven UI architecture",
+   "Server components (React 19) for streaming HTML with zero client JS",
+   "State management with hooks (useState, useReducer) and Context API",
+   "Universal rendering via Next.js (SSR/SSG) or Remix",
+   "Mobile apps via React Native sharing business logic with web"
+  ],
+  "used_by": [
+   "Meta",
+   "Airbnb",
+   "Netflix",
+   "Atlassian",
+   "Twitter",
+   "Uber"
+  ],
+  "docs": "https://react.dev/reference/react",
+  "tutorial": "https://react.dev/learn",
+  "added": "2026-06-08",
+  "eli5": "Lego blocks for websites — build pieces and snap them together into a full page.",
+  "dex": 56
+ },
+ {
+  "id": "tailwind-css",
+  "name": "Tailwind CSS",
+  "category": "Framework",
+  "domain": "Frontend",
+  "description": "Utility-first CSS framework — compose designs directly in markup using atomic utility classes instead of writing custom CSS. JIT compiler generates only the CSS classes used, keeping bundle sizes minimal. Pairs with headless UI libraries for accessible components.",
+  "use_cases": [
+   "Rapid UI development without leaving HTML/JSX — no context switching to CSS files",
+   "Design system enforcement via tailwind.config.js tokens (colors, spacing, fonts)",
+   "Dark mode, responsive breakpoints, and state variants via class modifiers",
+   "Component libraries built on Tailwind: shadcn/ui, Headless UI, Radix + Tailwind",
+   "Tailwind UI for pre-built, production-ready component templates"
+  ],
+  "used_by": [
+   "Vercel",
+   "GitHub",
+   "Shopify",
+   "OpenAI",
+   "Stripe",
+   "NASA"
+  ],
+  "docs": "https://tailwindcss.com/docs",
+  "tutorial": "https://tailwindcss.com/docs/installation",
+  "added": "2026-06-08",
+  "eli5": "Pre-mixed paint colors for your website — pick from a palette instead of mixing yourself.",
+  "dex": 57
+ },
+ {
+  "id": "typescript",
+  "name": "TypeScript",
+  "category": "Language",
+  "domain": "Frontend",
+  "eli5": "JavaScript but with a spell-checker that catches your mistakes before the code runs.",
+  "description": "Strongly-typed superset of JavaScript developed by Microsoft. Adds static types, interfaces, and generics to JS — compiles down to plain JavaScript. Catches bugs at compile time that would silently fail at runtime. Now the default choice for large JS codebases.",
+  "use_cases": [
+   "Large-scale frontend apps where type safety prevents runtime bugs",
+   "Shared type contracts between frontend and backend in monorepos",
+   "Node.js backends with full type safety end-to-end",
+   "API response typing to catch schema mismatches at compile time",
+   "Library authoring with generated .d.ts declaration files for consumers"
+  ],
+  "used_by": [
+   "Microsoft",
+   "Slack",
+   "Airbnb",
+   "Asana",
+   "Lyft",
+   "Vercel"
+  ],
+  "docs": "https://www.typescriptlang.org/docs/",
+  "tutorial": "https://www.typescriptlang.org/docs/handbook/intro.html",
+  "added": "2026-06-08",
+  "dex": 58
+ },
+ {
+  "id": "vue",
+  "name": "Vue.js",
+  "category": "Framework",
+  "domain": "Frontend",
+  "description": "Progressive JavaScript framework for building UIs. Approachable for beginners yet scales to complex SPAs. Composition API (Vue 3) brings React-like composability while retaining an intuitive single-file component (SFC) model with template, script, and style.",
+  "use_cases": [
+   "SPAs and component-driven UIs with reactive data binding",
+   "Progressive enhancement: drop Vue into existing pages without full rewrite",
+   "Nuxt.js for SSR, SSG, and full-stack Vue applications",
+   "Pinia for lightweight, type-safe state management",
+   "Mobile apps via Ionic Vue or NativeScript-Vue"
+  ],
+  "used_by": [
+   "Alibaba",
+   "GitLab",
+   "Adobe",
+   "Grammarly",
+   "Nintendo",
+   "BMW"
+  ],
+  "docs": "https://vuejs.org/guide/introduction.html",
+  "tutorial": "https://vuejs.org/tutorial/",
+  "added": "2026-06-08",
+  "eli5": "A friendlier version of React — easier to pick up, still very powerful.",
+  "dex": 59
+ },
+ {
+  "id": "fastapi",
+  "name": "FastAPI",
+  "category": "Framework",
+  "domain": "Backend",
+  "description": "Modern, high-performance Python web framework for building APIs. Built on Starlette and Pydantic — async by default, auto-generates OpenAPI/Swagger docs, and validates request/response schemas via type hints. One of the fastest Python frameworks.",
+  "use_cases": [
+   "REST and async API backends with automatic OpenAPI docs generation",
+   "ML model serving: wrap a model inference function as an HTTP endpoint",
+   "Data validation and serialization with Pydantic models",
+   "Background tasks and WebSocket support for real-time APIs",
+   "Dependency injection system for auth, DB sessions, and shared resources"
+  ],
+  "used_by": [
+   "Microsoft",
+   "Uber",
+   "Netflix",
+   "Explosion AI",
+   "Hugging Face"
+  ],
+  "docs": "https://fastapi.tiangolo.com/",
+  "tutorial": "https://fastapi.tiangolo.com/tutorial/",
+  "added": "2026-06-08",
+  "eli5": "A super-fast waiter that takes requests from users and brings back exactly what they asked.",
+  "dex": 60
+ },
+ {
+  "id": "go",
+  "name": "Go",
+  "category": "Language",
+  "domain": "Backend",
+  "eli5": "A language designed so a big team can write the same code without making a mess.",
+  "description": "Statically typed, compiled language designed at Google for simplicity, concurrency, and fast build times. Goroutines and channels make concurrent programming straightforward. Single binary output, minimal runtime — ideal for cloud-native tools and services.",
+  "use_cases": [
+   "High-throughput microservices and APIs with built-in concurrency via goroutines",
+   "CLI tools and DevOps tooling (Docker, Kubernetes, Terraform are all written in Go)",
+   "Network servers and proxies with low memory footprint",
+   "Cloud-native infrastructure: most CNCF projects are written in Go",
+   "gRPC services with generated Go stubs from protobuf definitions"
+  ],
+  "used_by": [
+   "Google",
+   "Uber",
+   "Dropbox",
+   "Cloudflare",
+   "Docker",
+   "HashiCorp"
+  ],
+  "docs": "https://go.dev/doc/",
+  "tutorial": "https://go.dev/tour/welcome/1",
+  "added": "2026-06-08",
+  "dex": 61
+ },
+ {
+  "id": "grpc",
+  "name": "gRPC",
+  "category": "Framework",
+  "domain": "Backend",
+  "description": "High-performance, open-source RPC framework from Google. Uses HTTP/2 for transport and Protocol Buffers (protobuf) as the IDL and wire format. Enables strongly-typed, code-generated service contracts across polyglot microservices.",
+  "use_cases": [
+   "Low-latency, high-throughput inter-service communication (vs REST+JSON)",
+   "Bidirectional streaming for real-time data (chat, live feeds, telemetry)",
+   "Strongly-typed API contracts via .proto files — catch mismatches at compile time",
+   "Polyglot microservices: generate client/server stubs in 11+ languages",
+   "gRPC-Web for browser clients; gRPC-Gateway to expose REST alongside gRPC"
+  ],
+  "used_by": [
+   "Google",
+   "Netflix",
+   "Square",
+   "CoreOS",
+   "Cockroach Labs",
+   "Cisco"
+  ],
+  "docs": "https://grpc.io/docs/",
+  "tutorial": "https://grpc.io/docs/languages/go/quickstart/",
+  "added": "2026-06-08",
+  "eli5": "Two apps talking in a secret, super-fast language only they understand.",
+  "dex": 62
+ },
+ {
+  "id": "java",
+  "name": "Java",
+  "category": "Language",
+  "domain": "Backend",
+  "eli5": "A very reliable, strict language that runs the same everywhere — like a rule-follower who never breaks character.",
+  "description": "Statically typed, object-oriented language running on the JVM. Write once, run anywhere. Massive enterprise ecosystem (Spring, Jakarta EE). Verbose but predictable — dominates banking, telecoms, and large enterprise backends. Long-term support releases make it stable for decades.",
+  "use_cases": [
+   "Enterprise backend services and REST APIs with Spring Boot",
+   "Android app development (alongside Kotlin)",
+   "Big data processing: Hadoop, Spark, Kafka are all JVM-based",
+   "Microservices with Quarkus or Micronaut for low-footprint JVM services",
+   "High-frequency trading and financial systems needing JVM tuning"
+  ],
+  "used_by": [
+   "LinkedIn",
+   "Amazon",
+   "Google",
+   "Netflix",
+   "Uber",
+   "Goldman Sachs"
+  ],
+  "docs": "https://docs.oracle.com/en/java/",
+  "tutorial": "https://dev.java/learn/",
+  "added": "2026-06-08",
+  "dex": 63
+ },
+ {
+  "id": "kotlin",
+  "name": "Kotlin",
+  "category": "Language",
+  "domain": "Backend",
+  "eli5": "Java but way less wordy — like texting instead of writing a formal letter, but just as powerful.",
+  "description": "Statically typed JVM language by JetBrains — fully interoperable with Java but far more concise, null-safe, and expressive. Official language for Android development. Coroutines make async code as readable as synchronous code.",
+  "use_cases": [
+   "Android app development — Google's preferred language since 2019",
+   "Backend services with Ktor or Spring Boot (full Java interop)",
+   "Kotlin Multiplatform for sharing business logic across Android, iOS, and web",
+   "Coroutines for structured concurrency without callback hell",
+   "Replacing Java in existing JVM codebases incrementally"
+  ],
+  "used_by": [
+   "Google",
+   "Pinterest",
+   "Trello",
+   "Evernote",
+   "JetBrains",
+   "Gradle"
+  ],
+  "docs": "https://kotlinlang.org/docs/home.html",
+  "tutorial": "https://kotlinlang.org/docs/getting-started.html",
+  "added": "2026-06-08",
+  "dex": 64
+ },
+ {
+  "id": "python",
+  "name": "Python",
+  "category": "Language",
+  "domain": "Backend",
+  "eli5": "A language so easy to read it almost looks like plain English — the Swiss Army knife of programming.",
+  "description": "High-level, dynamically typed, interpreted language known for readability and a massive ecosystem. Dominant in data science, ML, and scripting. Slower than compiled languages but fast enough when paired with C-extension libraries (NumPy, PyTorch).",
+  "use_cases": [
+   "Data science and ML: NumPy, Pandas, scikit-learn, PyTorch, TensorFlow",
+   "Backend APIs with FastAPI, Django, or Flask",
+   "Automation, scripting, and glue code for DevOps pipelines",
+   "Data engineering: PySpark, Apache Airflow DAGs, dbt Python models",
+   "LLM applications and AI agent frameworks (LangChain, LlamaIndex)"
+  ],
+  "used_by": [
+   "Google",
+   "Instagram",
+   "Spotify",
+   "Netflix",
+   "Dropbox",
+   "NASA"
+  ],
+  "docs": "https://docs.python.org/3/",
+  "tutorial": "https://docs.python.org/3/tutorial/",
+  "added": "2026-06-08",
+  "dex": 65
+ },
+ {
+  "id": "rust",
+  "name": "Rust",
+  "category": "Language",
+  "domain": "Backend",
+  "eli5": "A language that won't let you write dangerous code — like a strict teacher who catches your mistakes before class starts.",
+  "description": "Systems programming language focused on memory safety, performance, and fearless concurrency — without a garbage collector. The borrow checker catches memory bugs at compile time. Consistently voted most loved language in Stack Overflow surveys.",
+  "use_cases": [
+   "Systems programming: OS components, drivers, embedded firmware",
+   "WebAssembly (WASM) compilation for near-native browser performance",
+   "High-performance networking and proxies (Cloudflare, AWS, Discord)",
+   "CLI tools requiring minimal binary size and zero runtime overhead",
+   "Replacing C/C++ in safety-critical code (Linux kernel, Android, Windows)"
+  ],
+  "used_by": [
+   "Mozilla",
+   "Cloudflare",
+   "Discord",
+   "AWS",
+   "Microsoft",
+   "Linux Foundation"
+  ],
+  "docs": "https://doc.rust-lang.org/book/",
+  "tutorial": "https://rustlings.cool/",
+  "added": "2026-06-08",
+  "dex": 66
+ },
+ {
+  "id": "apache-kafka",
+  "name": "Apache Kafka",
+  "category": "Tool",
+  "domain": "Messaging",
+  "description": "Distributed event streaming platform designed for high-throughput, fault-tolerant, ordered message delivery. Stores events durably as an immutable log. De facto standard for real-time data pipelines and event-driven architectures.",
+  "use_cases": [
+   "Real-time event streaming between microservices (decoupled producers/consumers)",
+   "Change Data Capture (CDC) from databases via Kafka Connect + Debezium",
+   "Stream processing pipelines with Kafka Streams or Apache Flink",
+   "Activity tracking: clickstreams, metrics, audit logs at massive scale",
+   "Event sourcing and CQRS as the persistent event log",
+   "Multi-datacenter replication with MirrorMaker 2"
+  ],
+  "used_by": [
+   "LinkedIn",
+   "Uber",
+   "Netflix",
+   "Airbnb",
+   "Goldman Sachs",
+   "Cloudflare"
+  ],
+  "docs": "https://kafka.apache.org/documentation/",
+  "tutorial": "https://kafka.apache.org/quickstart",
+  "added": "2026-06-08",
+  "eli5": "A conveyor belt that carries messages between apps without dropping any.",
+  "dex": 67
+ },
+ {
+  "id": "rabbitmq",
+  "name": "RabbitMQ",
+  "category": "Tool",
+  "domain": "Messaging",
+  "description": "Open-source message broker implementing AMQP, MQTT, and STOMP. Routes messages through exchanges and queues with flexible binding rules. Reliable delivery with acknowledgements, dead-letter queues, and persistence.",
+  "use_cases": [
+   "Task queues for background job processing (Celery, Sidekiq backends)",
+   "Decoupling microservices with publish/subscribe via fanout exchanges",
+   "Priority queues and delayed message delivery",
+   "Dead-letter queues for failed message handling and retry logic",
+   "RPC-over-AMQP pattern for synchronous request-reply messaging"
+  ],
+  "used_by": [
+   "Reddit",
+   "Instagram",
+   "Mozilla",
+   "VMware",
+   "Zalando"
+  ],
+  "docs": "https://www.rabbitmq.com/documentation.html",
+  "tutorial": "https://www.rabbitmq.com/tutorials",
+  "added": "2026-06-08",
+  "eli5": "A post office — apps drop letters in, other apps pick them up later.",
+  "dex": 68
+ },
+ {
+  "id": "aws-s3",
+  "name": "AWS S3",
+  "category": "Platform",
+  "domain": "Storage",
+  "description": "Amazon Simple Storage Service — infinitely scalable object storage with 99.999999999% durability. Store and retrieve any amount of data from anywhere. Foundational AWS service used as a data lake, static site host, and backup store.",
+  "use_cases": [
+   "Data lake storage for analytics pipelines (Athena, Spark, Redshift Spectrum)",
+   "Static website and frontend asset hosting with CloudFront CDN",
+   "Backup, archival, and disaster recovery (S3 Glacier tiers)",
+   "ML training dataset and model artifact storage",
+   "Event-driven pipelines via S3 event notifications to Lambda/SQS"
+  ],
+  "used_by": [
+   "Netflix",
+   "Airbnb",
+   "Dropbox",
+   "Pinterest",
+   "Slack"
+  ],
+  "docs": "https://docs.aws.amazon.com/s3/",
+  "tutorial": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/GetStartedWithS3.html",
+  "added": "2026-06-08",
+  "eli5": "A magic box that holds unlimited files and never loses them.",
+  "dex": 69
+ },
+ {
+  "id": "argo-workflows",
+  "name": "Argo Workflows",
+  "category": "Tool",
+  "domain": "CI/CD",
+  "description": "Kubernetes-native workflow engine for orchestrating parallel jobs as DAGs or step sequences. Each step runs as a container. Powers ML pipelines, data engineering, and CI/CD automation on Kubernetes. Part of the Argo project (CNCF graduated).",
+  "use_cases": [
+   "ML training pipelines: data prep → feature engineering → train → evaluate as a DAG",
+   "CI/CD pipelines running directly on Kubernetes without a separate CI server",
+   "Data engineering batch jobs with fan-out parallelism and artifact passing",
+   "Scheduled recurring workflows via CronWorkflow resources",
+   "Event-driven workflow triggers via Argo Events integration"
+  ],
+  "used_by": [
+   "Intuit",
+   "Adobe",
+   "Google",
+   "Alibaba",
+   "BlackRock"
+  ],
+  "docs": "https://argo-workflows.readthedocs.io/en/latest/",
+  "tutorial": "https://argo-workflows.readthedocs.io/en/latest/quick-start/",
+  "added": "2026-06-08",
+  "eli5": "A flowchart that runs jobs on Kubernetes in the right order, automatically.",
+  "dex": 70
+ },
+ {
+  "id": "argocd",
+  "name": "ArgoCD",
+  "category": "Tool",
+  "domain": "CI/CD",
+  "description": "Declarative GitOps continuous delivery tool for Kubernetes. Continuously reconciles cluster state with Git as the source of truth. CNCF graduated project. Pairs with Argo Rollouts for progressive delivery.",
+  "use_cases": [
+   "GitOps deployments: Git PR merge triggers automatic cluster sync",
+   "Multi-cluster application delivery from a single control plane",
+   "Canary and blue/green deployments with Argo Rollouts",
+   "App-of-apps pattern for managing many microservices",
+   "Drift detection and auto-remediation for cluster state"
+  ],
+  "used_by": [
+   "Intuit",
+   "Red Hat",
+   "Tesla",
+   "Alibaba",
+   "Adobe"
+  ],
+  "docs": "https://argo-cd.readthedocs.io/en/stable/",
+  "tutorial": "https://argo-cd.readthedocs.io/en/stable/getting_started/",
+  "added": "2026-06-08",
+  "eli5": "A robot that watches Git and keeps your cluster looking exactly like the blueprint.",
+  "dex": 71
+ },
+ {
+  "id": "github-actions",
+  "name": "GitHub Actions",
+  "category": "Platform",
+  "domain": "CI/CD",
+  "description": "GitHub-native CI/CD and automation platform. Workflows defined in YAML trigger on GitHub events (push, PR, release, schedule). Hosted runners for Linux/macOS/Windows; self-hosted runners for custom environments.",
+  "use_cases": [
+   "CI pipelines: lint, test, build on every PR",
+   "CD pipelines: deploy to cloud on merge to main",
+   "Automated release workflows: semantic versioning, changelog, publish to npm/PyPI",
+   "OIDC-based passwordless auth to AWS, GCP, Azure — no stored credentials",
+   "Matrix builds for cross-platform and multi-version testing"
+  ],
+  "used_by": [
+   "Microsoft",
+   "Google",
+   "Meta",
+   "Stripe",
+   "Vercel"
+  ],
+  "docs": "https://docs.github.com/en/actions",
+  "tutorial": "https://docs.github.com/en/actions/quickstart",
+  "added": "2026-06-08",
+  "eli5": "A helper that automatically does chores (tests, deploys) whenever you push code.",
+  "dex": 72
+ },
+ {
+  "id": "jenkins",
+  "name": "Jenkins",
+  "category": "Tool",
+  "domain": "CI/CD",
+  "description": "Open-source automation server — the original CI/CD tool, extensible via 1800+ plugins. Self-hosted, runs pipelines defined in Groovy-based Jenkinsfiles. Highly flexible but operationally heavy.",
+  "use_cases": [
+   "Build, test, and deploy pipelines via declarative/scripted Jenkinsfile",
+   "Integration with any VCS, artifact registry, or deployment target via plugins",
+   "Multi-branch pipelines for PR-based workflows",
+   "Distributed builds across master-agent clusters",
+   "Legacy enterprise CI/CD where self-hosted control is required"
+  ],
+  "used_by": [
+   "LinkedIn",
+   "Netflix",
+   "eBay",
+   "Bosch",
+   "IBM"
+  ],
+  "docs": "https://www.jenkins.io/doc/",
+  "tutorial": "https://www.jenkins.io/doc/pipeline/tour/getting-started/",
+  "added": "2026-06-08",
+  "eli5": "A robot that builds and tests your code every time you save a change.",
+  "dex": 73
+ },
+ {
+  "id": "aws-iam",
+  "name": "AWS IAM",
+  "category": "Platform",
+  "domain": "Identity",
+  "description": "AWS Identity and Access Management — controls who can do what in AWS. Define users, roles, and policies to grant least-privilege access to every AWS resource. Central to AWS security posture.",
+  "use_cases": [
+   "Least-privilege policies for services, users, and cross-account access",
+   "IAM roles for EC2/Lambda/EKS workloads (no long-lived credentials)",
+   "Service Control Policies (SCPs) in AWS Organizations for guardrails",
+   "OIDC federation for GitHub Actions / Kubernetes workload identity",
+   "Auditing access with IAM Access Analyzer and CloudTrail"
+  ],
+  "used_by": [
+   "All AWS customers"
+  ],
+  "docs": "https://docs.aws.amazon.com/iam/",
+  "tutorial": "https://docs.aws.amazon.com/IAM/latest/UserGuide/getting-started.html",
+  "added": "2026-06-08",
+  "eli5": "The bouncer who checks IDs and decides who gets into which room.",
+  "dex": 74
+ },
+ {
+  "id": "keycloak",
+  "name": "Keycloak",
+  "category": "Tool",
+  "domain": "Identity",
+  "description": "Open-source Identity and Access Management (IAM) solution by Red Hat. Provides SSO, OAuth 2.0, OpenID Connect, and SAML out of the box. Self-hosted alternative to Auth0 and Okta for teams needing full control over identity infrastructure.",
+  "use_cases": [
+   "SSO across multiple applications with a single login via OIDC/SAML",
+   "Social login federation (Google, GitHub, LDAP, Active Directory)",
+   "Fine-grained authorization with roles, groups, and resource-based policies",
+   "Token exchange and service account auth for machine-to-machine flows",
+   "Multi-tenant identity with separate realms per customer or environment"
+  ],
+  "used_by": [
+   "Red Hat",
+   "Bosch",
+   "Airbus",
+   "Deutsche Telekom",
+   "Zalando"
+  ],
+  "docs": "https://www.keycloak.org/documentation",
+  "tutorial": "https://www.keycloak.org/getting-started/getting-started-docker",
+  "added": "2026-06-08",
+  "eli5": "One front door for all your apps — log in once, get into everything.",
+  "dex": 75
+ },
+ {
+  "id": "spiffe",
+  "name": "SPIFFE / SPIRE",
+  "category": "Tool",
+  "domain": "Identity",
+  "description": "SPIFFE (Secure Production Identity Framework For Everyone) is a CNCF standard for workload identity. SPIRE is its reference implementation. Issues short-lived X.509 SVIDs and JWT-SVIDs to workloads — cryptographic identity without secrets or passwords.",
+  "use_cases": [
+   "Workload identity for microservices: every pod/VM gets a cryptographic SPIFFE ID",
+   "mTLS between services using automatically rotated X.509 SVIDs",
+   "Eliminating static credentials: services authenticate by identity, not secrets",
+   "Federation across clouds and on-prem via SPIFFE federation bundles",
+   "Foundation for Istio, Consul Connect, and Envoy SDS identity"
+  ],
+  "used_by": [
+   "Bloomberg",
+   "GitHub",
+   "Square",
+   "Pinterest",
+   "Uber"
+  ],
+  "docs": "https://spiffe.io/docs/latest/spiffe-about/overview/",
+  "tutorial": "https://spiffe.io/docs/latest/try/getting-started-linux-macos-x/",
+  "added": "2026-06-08",
+  "eli5": "An ID card factory that gives every microservice a passport so they trust each other.",
+  "dex": 76
+ }
+];

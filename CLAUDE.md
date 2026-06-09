@@ -58,3 +58,20 @@ README groups entries by domain. Pick the closest match:
 - **CI/CD** — build, test, deploy pipelines (GitHub Actions, ArgoCD, Tekton)
 - **Identity** — auth providers, SSO, IAM (Keycloak, OIDC, SPIFFE)
 - **Other** — doesn't fit anywhere above
+
+## Web app (`web/`)
+
+A browsable static site for the dex lives in `web/`. Zero dependencies — plain HTML/CSS/JS
+(meowsoot · night dark theme). No npm, no bundler.
+
+- **`web/data/entries.js` is a GENERATED artifact** (like `README.md`). Never edit it by hand.
+  It is regenerated from `entries.json` by `scripts/build.py`.
+- After adding or editing an entry: run `python3 scripts/build.py` — it regenerates **both**
+  `README.md` and `web/data/entries.js`. Commit all changed files.
+- Editable source files: `web/index.html`, `web/app/*.js`, `web/app/*.css`.
+- **Theme / colors:** palette tokens are at the top of `web/app/styles.css`; per-domain accent
+  colors are in `web/app/meta.js` (`DOMAINS[...].color`).
+- **Preview:** `cd web && python3 -m http.server 8000` → http://localhost:8000
+  (a local server is needed because the Tweaks panel loads `.jsx` through Babel).
+- When you add a brand-new `domain` to `entries.json`, also add it to `web/app/meta.js`
+  (`DOMAINS` with a `color`, and `DOMAIN_ORDER` for sort position) or it falls back to a neutral color.

@@ -1,7 +1,10 @@
 #!/usr/bin/env python3
 """
-Generate README.md from entries.json.
+Generate README.md AND web/data/entries.js from entries.json.
 Run: python3 scripts/build.py
+
+entries.json is the single source of truth.
+Both README.md and web/data/entries.js are generated artifacts — never edit them by hand.
 """
 
 import json
@@ -10,6 +13,7 @@ from pathlib import Path
 ROOT = Path(__file__).parent.parent
 ENTRIES_FILE = ROOT / "entries.json"
 README_FILE = ROOT / "README.md"
+WEB_DATA_FILE = ROOT / "web" / "data" / "entries.js"
 
 CATEGORY_EMOJI = {
     "Tool": "🔧",
@@ -53,10 +57,16 @@ def domain_sort_key(d):
         return len(DOMAIN_ORDER)
 
 
-def build():
+def load_entries():
+    """Load + sort entries, then assign stable 'dex' numbers in display order."""
     entries = json.loads(ENTRIES_FILE.read_text())
     entries.sort(key=lambda e: (domain_sort_key(e.get("domain", "Other")), e["name"].lower()))
+    for i, e in enumerate(entries):
+        e["dex"] = i + 1
+    return entries
 
+
+def build_readme(entries):
     domains = sorted(set(e.get("domain", "Other") for e in entries), key=domain_sort_key)
     categories = sorted(set(e["category"] for e in entries))
     total = len(entries)
@@ -129,7 +139,37 @@ def build():
     ]
 
     README_FILE.write_text("\n".join(lines))
-    print(f"✅ README.md generated — {total} entr{'y' if total == 1 else 'ies'} across {len(domains)} domain{'s' if len(domains) != 1 else ''}, {len(categories)} categor{'y' if len(categories) == 1 else 'ies'}.")
+
+
+def build_web_data(entries):
+    """Emit web/data/entries.js — consumed by the browsable site in web/.
+
+    Generated artifact: the site reads window.TECHDEX_ENTRIES from this file.
+    Do not edit by hand; re-run this script after changing entries.json.
+    """
+    WEB_DATA_FILE.parent.mkdir(parents=True, exist_ok=True)
+    payload = json.dumps(entries, ensure_ascii=False, indent=1)
+    WEB_DATA_FILE.write_text(
+        "// Auto-generated from entries.json by scripts/build.py — do not edit.\n"
+        "window.TECHDEX_ENTRIES = " + payload + ";\n"
+    )
+
+
+def build():
+    entries = load_entries()
+    domains = sorted(set(e.get("domain", "Other") for e in entries), key=domain_sort_key)
+    categories = sorted(set(e["category"] for e in entries))
+    total = len(entries)
+
+    build_readme(entries)
+    build_web_data(entries)
+
+    print(
+        f"✅ Generated README.md + web/data/entries.js — "
+        f"{total} entr{'y' if total == 1 else 'ies'} across {len(domains)} "
+        f"domain{'s' if len(domains) != 1 else ''}, {len(categories)} "
+        f"categor{'y' if len(categories) == 1 else 'ies'}."
+    )
 
 
 if __name__ == "__main__":

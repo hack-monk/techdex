@@ -1,0 +1,10 @@
+/* ============================================================
+   TechDex — tty skin (classic terminal). Single direction.
+   ============================================================ */
+
+[data-dir="tty"] { --gut: 22px; }
+[data-dir="tty"] .topbar { background: var(--bg-deep); }
+[data-dir="tty"] .search { border-radius: 6px; }
+[data-dir="tty"] .grid { grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); }
+[data-dir="tty"] .card { border-radius: 8px; }
+[data-dir="tty"] .search input { caret-color: var(--accent); }

@@ -1902,5 +1902,373 @@
     "docs": "https://yaml.org/spec/1.2.2/",
     "tutorial": "https://learnxinyminutes.com/docs/yaml/",
     "added": "2026-06-08"
+  },
+  {
+    "id": "packer",
+    "name": "Packer",
+    "category": "Tool",
+    "domain": "DevOps",
+    "eli5": "A factory that bakes identical machine snapshots so every server starts from the same recipe.",
+    "description": "HashiCorp tool for creating identical machine images (AMIs, Docker images, VMware templates) from a single config. Build once, deploy anywhere. Eliminates 'works on my machine' by baking all dependencies into the image before deployment.",
+    "use_cases": [
+      "Building AWS AMIs pre-baked with app dependencies for faster Auto Scaling Group launches",
+      "Golden image pipelines: base OS \u2192 harden \u2192 install runtime \u2192 snapshot",
+      "Multi-cloud image builds: same config produces AMI + GCP image + Azure VHD",
+      "Immutable infrastructure: replace servers instead of patching in place",
+      "CI/CD integration: Packer build triggered on dependency updates"
+    ],
+    "used_by": [
+      "HashiCorp",
+      "Netflix",
+      "Airbnb",
+      "Stripe",
+      "Atlassian"
+    ],
+    "docs": "https://developer.hashicorp.com/packer/docs",
+    "tutorial": "https://developer.hashicorp.com/packer/tutorials/aws-get-started",
+    "added": "2026-06-08"
+  },
+  {
+    "id": "vagrant",
+    "name": "Vagrant",
+    "category": "Tool",
+    "domain": "DevOps",
+    "eli5": "A magic button that spins up an identical local computer for every developer on the team.",
+    "description": "HashiCorp tool for building and managing reproducible local development environments using VMs. A single Vagrantfile defines the OS, provisioning, and networking \u2014 every team member runs `vagrant up` and gets the same environment.",
+    "use_cases": [
+      "Reproducible local dev environments matching production OS and config",
+      "Onboarding: new engineers run `vagrant up` instead of a 20-step setup doc",
+      "Testing Ansible/Chef/Puppet playbooks locally before applying to production",
+      "Isolated multi-VM topologies (app + DB + load balancer) on one laptop",
+      "Legacy app environments that require specific OS versions"
+    ],
+    "used_by": [
+      "HashiCorp",
+      "GitHub",
+      "Rackspace",
+      "Engine Yard"
+    ],
+    "docs": "https://developer.hashicorp.com/vagrant/docs",
+    "tutorial": "https://developer.hashicorp.com/vagrant/tutorials/getting-started",
+    "added": "2026-06-08"
+  },
+  {
+    "id": "podman",
+    "name": "Podman",
+    "category": "Tool",
+    "domain": "DevOps",
+    "eli5": "Docker but without a big daemon running as root \u2014 safer and works the same way.",
+    "description": "Daemonless, rootless container engine by Red Hat \u2014 OCI-compatible Docker drop-in replacement. Runs containers without a privileged background daemon, improving security posture. Supports Docker Compose files via `podman-compose` and generates systemd units from containers.",
+    "use_cases": [
+      "Rootless container execution in security-sensitive or shared environments",
+      "Drop-in Docker replacement: `alias docker=podman` works for most workflows",
+      "Generating systemd unit files from containers for OS-native service management",
+      "Pod concept (grouping containers) that mirrors Kubernetes Pod model locally",
+      "CI environments where Docker daemon socket access is restricted"
+    ],
+    "used_by": [
+      "Red Hat",
+      "IBM",
+      "CentOS/RHEL users",
+      "OpenShift deployments"
+    ],
+    "docs": "https://docs.podman.io/en/latest/",
+    "tutorial": "https://podman.io/getting-started/",
+    "added": "2026-06-08"
+  },
+  {
+    "id": "kustomize",
+    "name": "Kustomize",
+    "category": "Tool",
+    "domain": "DevOps",
+    "eli5": "A way to take the same Kubernetes YAML and patch it differently for dev, staging, and prod without copy-pasting.",
+    "description": "Kubernetes-native configuration management tool built into `kubectl`. Uses overlays and patches to customize base YAML manifests for different environments \u2014 no templating language, just plain YAML. Part of kubectl since v1.14.",
+    "use_cases": [
+      "Environment overlays: same base manifests, different replicas/images per env",
+      "Patching third-party manifests without forking (strategic merge patches)",
+      "Generating ConfigMaps and Secrets from files or literals",
+      "Name prefixing/suffixing and label injection across all resources",
+      "ArgoCD and Flux integration as native rendering engine"
+    ],
+    "used_by": [
+      "Kubernetes community",
+      "ArgoCD users",
+      "Flux users",
+      "Google",
+      "Red Hat"
+    ],
+    "docs": "https://kubectl.docs.kubernetes.io/references/kustomize/",
+    "tutorial": "https://kubectl.docs.kubernetes.io/guides/introduction/kustomize/",
+    "added": "2026-06-08"
+  },
+  {
+    "id": "harbor",
+    "name": "Harbor",
+    "category": "Tool",
+    "domain": "DevOps",
+    "eli5": "Your own private Docker Hub that you control \u2014 stores your container images safely on your servers.",
+    "description": "Open-source cloud-native container registry by VMware. Extends Docker Registry with security scanning (Trivy/Clair), role-based access, image signing (Notary/Cosign), replication, and a web UI. CNCF graduated project.",
+    "use_cases": [
+      "Self-hosted private container registry with RBAC and audit logs",
+      "Automatic vulnerability scanning of pushed images with Trivy",
+      "Image signing and verification (Cosign) for supply chain security",
+      "Cross-datacenter registry replication for multi-region deployments",
+      "Proxy cache for Docker Hub / GCR to avoid rate limits and reduce egress"
+    ],
+    "used_by": [
+      "VMware",
+      "Alibaba Cloud",
+      "JD.com",
+      "Tencent",
+      "Bytedance"
+    ],
+    "docs": "https://goharbor.io/docs/",
+    "tutorial": "https://goharbor.io/docs/latest/install-config/",
+    "added": "2026-06-08"
+  },
+  {
+    "id": "crossplane",
+    "name": "Crossplane",
+    "category": "Tool",
+    "domain": "DevOps",
+    "eli5": "Terraform but living inside Kubernetes \u2014 declare cloud resources as YAML and the cluster manages them.",
+    "description": "CNCF project that extends Kubernetes to manage cloud infrastructure. Define AWS, GCP, Azure resources as Kubernetes CRDs \u2014 the Crossplane controller reconciles real cloud state. Enables platform teams to build self-service internal developer platforms on top of Kubernetes.",
+    "use_cases": [
+      "Cloud infrastructure as Kubernetes resources (RDS, S3, GKE clusters as CRDs)",
+      "Internal developer platforms: devs request databases via kubectl, platform team controls what's allowed",
+      "Composition: bundle multiple cloud resources into a single reusable abstraction",
+      "GitOps-native IaC \u2014 ArgoCD/Flux manages infrastructure the same way as apps",
+      "Multi-cloud resource management from a single Kubernetes control plane"
+    ],
+    "used_by": [
+      "Upbound",
+      "Deutsche Telekom",
+      "Grupo Botic\u00e1rio",
+      "Nabla"
+    ],
+    "docs": "https://docs.crossplane.io/",
+    "tutorial": "https://docs.crossplane.io/latest/getting-started/",
+    "added": "2026-06-08"
+  },
+  {
+    "id": "backstage",
+    "name": "Backstage",
+    "category": "Platform",
+    "domain": "DevOps",
+    "eli5": "A company's internal website where engineers find all their tools, docs, and services in one place.",
+    "description": "Open-source Internal Developer Platform (IDP) by Spotify. Unifies services, docs, tooling, and infrastructure into a single developer portal. Software catalog, TechDocs, and scaffolding templates reduce cognitive load and enable self-service. CNCF incubating project.",
+    "use_cases": [
+      "Software catalog: single source of truth for all services, APIs, and teams",
+      "TechDocs: auto-generated, git-backed documentation colocated with code",
+      "Scaffolding templates: engineers create new services from golden-path templates",
+      "Infrastructure self-service: provision databases, queues, and resources via UI",
+      "Plugin ecosystem: 200+ plugins for GitHub, PagerDuty, Datadog, Kubernetes"
+    ],
+    "used_by": [
+      "Spotify",
+      "American Airlines",
+      "Box",
+      "Expedia",
+      "LinkedIn",
+      "Zalando"
+    ],
+    "docs": "https://backstage.io/docs/overview/what-is-backstage",
+    "tutorial": "https://backstage.io/docs/getting-started/",
+    "added": "2026-06-08"
+  },
+  {
+    "id": "chef",
+    "name": "Chef",
+    "category": "Tool",
+    "domain": "DevOps",
+    "eli5": "A recipe book for servers \u2014 write instructions once and Chef cooks every server the same way.",
+    "description": "Configuration management platform using Ruby-based DSL 'recipes' and 'cookbooks'. Agent-based: Chef client runs on each node and pulls config from Chef Server. Strong compliance and audit capabilities via InSpec. Acquired by Progress Software.",
+    "use_cases": [
+      "Server configuration management at scale with idempotent recipes",
+      "Compliance as Code with InSpec: define and audit security policies",
+      "Application deployment and lifecycle management on VM fleets",
+      "Multi-platform config: Linux, Windows, AIX via same cookbook",
+      "Chef Habitat for application packaging independent of infrastructure"
+    ],
+    "used_by": [
+      "Facebook",
+      "Nordstrom",
+      "Etsy",
+      "Bloomberg",
+      "General Electric"
+    ],
+    "docs": "https://docs.chef.io/",
+    "tutorial": "https://docs.chef.io/chef_overview/",
+    "added": "2026-06-08"
+  },
+  {
+    "id": "puppet",
+    "name": "Puppet",
+    "category": "Tool",
+    "domain": "DevOps",
+    "eli5": "A puppet master that tells all your servers exactly how to look and keeps them that way automatically.",
+    "description": "Declarative configuration management tool. Define desired system state in Puppet DSL; the Puppet agent enforces and continuously corrects drift. Pull-based model with Puppet Server as the master. Strong at enforcing compliance across large, heterogeneous fleets.",
+    "use_cases": [
+      "Declarative server configuration: define desired state, Puppet enforces it",
+      "Drift correction: auto-remediate unauthorized changes on managed nodes",
+      "Cross-platform fleet management (Linux, Windows, network devices)",
+      "Compliance reporting and enforcement at enterprise scale",
+      "Puppet Forge module ecosystem for common infrastructure patterns"
+    ],
+    "used_by": [
+      "Google",
+      "Salesforce",
+      "PayPal",
+      "Stanford University",
+      "Twitter"
+    ],
+    "docs": "https://www.puppet.com/docs/puppet/latest/puppet_index.html",
+    "tutorial": "https://www.puppet.com/docs/puppet/latest/quick_start_essential_config.html",
+    "added": "2026-06-08"
+  },
+  {
+    "id": "make",
+    "name": "Make",
+    "category": "Tool",
+    "domain": "DevOps",
+    "eli5": "A shortcut sheet where you write long commands once and run them with a short nickname forever.",
+    "description": "Classic Unix build automation tool using Makefiles. Defines targets and their dependencies \u2014 only rebuilds what changed. Ubiquitous as a project task runner even when not compiling C: `make test`, `make deploy`, `make docker-build` are common patterns across all languages.",
+    "use_cases": [
+      "Project task runner: standardize `make test`, `make build`, `make deploy` across repos",
+      "Incremental builds: only recompile changed C/C++/Go files via dependency tracking",
+      "CI/CD entrypoint: Makefile as the canonical interface between humans and pipelines",
+      "Documentation generation, linting, and formatting as named targets",
+      "Multi-step workflows with dependency ordering (target B requires target A)"
+    ],
+    "used_by": [
+      "Linux kernel",
+      "GNU project",
+      "virtually every C/C++ project",
+      "many DevOps teams"
+    ],
+    "docs": "https://www.gnu.org/software/make/manual/make.html",
+    "tutorial": "https://makefiletutorial.com/",
+    "added": "2026-06-08"
+  },
+  {
+    "id": "k9s",
+    "name": "k9s",
+    "category": "Tool",
+    "domain": "DevOps",
+    "eli5": "A cockpit dashboard for Kubernetes in your terminal \u2014 see everything happening in your cluster at a glance.",
+    "description": "Terminal-based Kubernetes UI that provides a real-time dashboard of cluster resources. Navigate pods, deployments, services, logs, and exec into containers \u2014 all with keyboard shortcuts. Dramatically faster than running kubectl commands manually.",
+    "use_cases": [
+      "Real-time pod status, logs, and events without repetitive kubectl commands",
+      "Exec into containers directly from the resource list",
+      "Quickly delete, describe, edit, and port-forward resources",
+      "Filter resources by namespace, label, or name with fuzzy search",
+      "Custom aliases and hotkeys for team-specific cluster workflows"
+    ],
+    "used_by": [
+      "Kubernetes operators everywhere \u2014 one of the most popular kubectl alternatives"
+    ],
+    "docs": "https://k9scli.io/topics/install/",
+    "tutorial": "https://k9scli.io/",
+    "added": "2026-06-08"
+  },
+  {
+    "id": "flux-cd",
+    "name": "Flux CD",
+    "category": "Tool",
+    "domain": "CI/CD",
+    "eli5": "A robot that watches Git and keeps your Kubernetes cluster matching exactly what's in the repo \u2014 like ArgoCD but different.",
+    "description": "GitOps toolkit for Kubernetes by Weaveworks. Continuously reconciles cluster state with Git repositories. Modular design (Source, Kustomize, Helm, Notification controllers). CNCF graduated project. Integrates natively with kustomize and Helm.",
+    "use_cases": [
+      "GitOps: cluster state continuously synced from Git without manual kubectl apply",
+      "Multi-tenancy: separate Flux instances per team with isolated Git repos",
+      "Progressive delivery with Flagger: canary, blue/green, A/B via traffic shifting",
+      "Image automation: auto-update Git when new container images are published",
+      "Multi-cluster GitOps from a single management cluster"
+    ],
+    "used_by": [
+      "Weaveworks",
+      "Deutsche Telekom",
+      "Lunar",
+      "RingCentral",
+      "Digital Ocean"
+    ],
+    "docs": "https://fluxcd.io/flux/",
+    "tutorial": "https://fluxcd.io/flux/get-started/",
+    "added": "2026-06-08"
+  },
+  {
+    "id": "tekton",
+    "name": "Tekton",
+    "category": "Tool",
+    "domain": "CI/CD",
+    "eli5": "A pipeline builder that lives inside Kubernetes \u2014 each step of your CI/CD runs as its own container.",
+    "description": "Cloud-native CI/CD framework for Kubernetes. Defines pipelines as Kubernetes CRDs (Tasks, Pipelines, PipelineRuns). Each step is a container \u2014 portable, reusable, and cloud-agnostic. Foundation of OpenShift Pipelines and many enterprise CI/CD platforms.",
+    "use_cases": [
+      "Kubernetes-native CI/CD where each pipeline step is an OCI container",
+      "Reusable Tasks shared via Tekton Hub across teams and orgs",
+      "Supply chain security: Tekton Chains signs pipeline artifacts with Sigstore",
+      "Multi-cloud pipelines that run identically on any Kubernetes cluster",
+      "Foundation for OpenShift Pipelines and other enterprise CI platforms"
+    ],
+    "used_by": [
+      "Google",
+      "Red Hat",
+      "IBM",
+      "Puppet",
+      "Broadcom"
+    ],
+    "docs": "https://tekton.dev/docs/",
+    "tutorial": "https://tekton.dev/docs/getting-started/",
+    "added": "2026-06-08"
+  },
+  {
+    "id": "gitlab-ci",
+    "name": "GitLab CI/CD",
+    "category": "Platform",
+    "domain": "CI/CD",
+    "eli5": "GitHub Actions but built into GitLab \u2014 your code and your pipelines live in the same house.",
+    "description": "Built-in CI/CD platform in GitLab, configured via `.gitlab-ci.yml`. Tight integration with GitLab's SCM, container registry, security scanning, and deployment environments. Supports self-hosted runners and Auto DevOps for zero-config pipelines.",
+    "use_cases": [
+      "CI/CD pipelines defined as YAML in the same repo as application code",
+      "Auto DevOps: zero-config pipelines for build, test, SAST, DAST, deploy",
+      "GitLab Environments and Deployments for tracking where code is deployed",
+      "Self-managed runners on any infrastructure (Kubernetes, shell, Docker)",
+      "Security scanning (SAST, DAST, dependency, container) built into pipelines"
+    ],
+    "used_by": [
+      "Goldman Sachs",
+      "Airbus",
+      "T-Mobile",
+      "Alibaba",
+      "CERN"
+    ],
+    "docs": "https://docs.gitlab.com/ee/ci/",
+    "tutorial": "https://docs.gitlab.com/ee/ci/quick_start/",
+    "added": "2026-06-08"
+  },
+  {
+    "id": "circleci",
+    "name": "CircleCI",
+    "category": "Platform",
+    "domain": "CI/CD",
+    "eli5": "A cloud service that runs your tests and deploys your code automatically every time you push \u2014 like a robot QA engineer.",
+    "description": "Cloud-native CI/CD platform known for speed and developer experience. Pipelines defined in `.circleci/config.yml`. Offers Docker layer caching, test parallelism, reusable Orbs (pre-built pipeline packages), and self-hosted runners. Strong GitHub/Bitbucket integration.",
+    "use_cases": [
+      "Fast CI with Docker layer caching and test splitting across parallel containers",
+      "Orbs: reusable config packages for AWS, GCP, Slack, Snyk, and 1000+ integrations",
+      "Scheduled pipelines for nightly builds, dependency updates, and reports",
+      "Self-hosted runners for compliance, on-prem, or GPU workloads",
+      "Dynamic config: generate pipeline config at runtime based on changed files"
+    ],
+    "used_by": [
+      "Spotify",
+      "PagerDuty",
+      "Stitch Fix",
+      "Lyft",
+      "Coinbase"
+    ],
+    "docs": "https://circleci.com/docs/",
+    "tutorial": "https://circleci.com/docs/getting-started/",
+    "added": "2026-06-08"
   }
 ]

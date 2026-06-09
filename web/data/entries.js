@@ -335,6 +335,30 @@ window.TECHDEX_ENTRIES = [
   "dex": 13
  },
  {
+  "id": "docker-desktop",
+  "name": "Docker Desktop",
+  "category": "Tool",
+  "domain": "DevOps",
+  "eli5": "An app that lets your Mac or Windows computer run containers and a mini Kubernetes cluster with a simple point-and-click interface.",
+  "description": "GUI application for Mac and Windows that bundles Docker Engine, Docker Compose, Kubernetes, and Dev Environments. Manages a Linux VM under the hood and integrates with Docker Hub, Extensions Marketplace, and WSL 2 on Windows.",
+  "use_cases": [
+   "Run Docker containers and Compose stacks on macOS and Windows without manual VM setup",
+   "Enable a local single-node Kubernetes cluster with one toggle",
+   "Build and push multi-arch images (amd64/arm64) from a single workstation",
+   "Develop inside containers with Dev Environments for reproducible onboarding",
+   "Extend functionality via Docker Extensions (Lens, Portainer, Snyk scanning)"
+  ],
+  "used_by": [
+   "Individual developers",
+   "Startup engineering teams",
+   "Enterprise developer desktops"
+  ],
+  "docs": "https://docs.docker.com/desktop/",
+  "tutorial": "https://docs.docker.com/get-started/",
+  "added": "2026-06-09",
+  "dex": 14
+ },
+ {
   "id": "harbor",
   "name": "Harbor",
   "category": "Tool",
@@ -358,7 +382,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://goharbor.io/docs/",
   "tutorial": "https://goharbor.io/docs/latest/install-config/",
   "added": "2026-06-08",
-  "dex": 14
+  "dex": 15
  },
  {
   "id": "helm",
@@ -384,7 +408,32 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://helm.sh/docs/intro/quickstart/",
   "added": "2026-06-08",
   "eli5": "An app store for Kubernetes — install big software with one command.",
-  "dex": 15
+  "dex": 16
+ },
+ {
+  "id": "k3s",
+  "name": "K3s",
+  "category": "Platform",
+  "domain": "DevOps",
+  "eli5": "A very small version of Kubernetes that fits on a tiny computer like a Raspberry Pi and still does almost everything the big version can.",
+  "description": "Lightweight, CNCF-certified Kubernetes distribution by Rancher/SUSE. Single binary under 100 MB, replaces etcd with SQLite by default, and strips cloud-provider APIs — purpose-built for edge, IoT, ARM, and resource-constrained environments.",
+  "use_cases": [
+   "Deploy Kubernetes on Raspberry Pi and ARM edge devices",
+   "Run production workloads in resource-constrained or air-gapped environments",
+   "Fast cluster bootstrap for CI pipelines (cluster up in under 30 seconds)",
+   "Single-node or small HA clusters for branch offices and retail",
+   "Foundation for Fleet and Rancher edge management"
+  ],
+  "used_by": [
+   "Rancher/SUSE",
+   "Walmart",
+   "Siemens",
+   "Edge and IoT teams globally"
+  ],
+  "docs": "https://docs.k3s.io/",
+  "tutorial": "https://docs.k3s.io/quick-start",
+  "added": "2026-06-09",
+  "dex": 17
  },
  {
   "id": "k9s",
@@ -406,7 +455,103 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://k9scli.io/topics/install/",
   "tutorial": "https://k9scli.io/",
   "added": "2026-06-08",
-  "dex": 16
+  "dex": 18
+ },
+ {
+  "id": "kind",
+  "name": "kind",
+  "category": "Tool",
+  "domain": "DevOps",
+  "eli5": "A way to run a fake Kubernetes cluster entirely inside Docker containers on your computer — like nesting boxes inside boxes.",
+  "description": "Kubernetes IN Docker — spins up multi-node Kubernetes clusters using Docker containers as nodes. Purpose-built for testing Kubernetes itself and for fast, reproducible CI environments without VMs.",
+  "use_cases": [
+   "Run Kubernetes conformance tests in CI without cloud infrastructure",
+   "Test multi-node cluster behavior locally with Docker",
+   "Validate Kubernetes operators and admission webhooks",
+   "Bootstrap ephemeral clusters in GitHub Actions or GitLab CI",
+   "Develop and test Cluster API providers"
+  ],
+  "used_by": [
+   "Kubernetes SIG Testing",
+   "Cluster API teams",
+   "Platform engineers"
+  ],
+  "docs": "https://kind.sigs.k8s.io/",
+  "tutorial": "https://kind.sigs.k8s.io/docs/user/quick-start/",
+  "added": "2026-06-09",
+  "dex": 19
+ },
+ {
+  "id": "kops",
+  "name": "kops",
+  "category": "Tool",
+  "domain": "DevOps",
+  "eli5": "Like Terraform but specifically for creating full Kubernetes clusters on cloud providers — it sets up all the servers, networking, and Kubernetes pieces for you.",
+  "description": "Kubernetes Operations — CLI tool for provisioning, upgrading, and managing production-grade Kubernetes clusters on cloud infrastructure (AWS primary, GCP/Azure in beta). Manages cloud resources (VPCs, ASGs, IAM) alongside the cluster lifecycle.",
+  "use_cases": [
+   "Provision HA Kubernetes clusters on AWS with full control over node groups and networking",
+   "Declarative cluster configuration in YAML with git-ops-friendly state in S3",
+   "Rolling cluster upgrades with zero-downtime node replacement",
+   "Manage instance groups and node pools for mixed spot/on-demand fleets",
+   "Validate cluster config and dry-run changes before applying to production"
+  ],
+  "used_by": [
+   "AWS-heavy Kubernetes teams",
+   "Startups self-hosting on AWS",
+   "Platform engineers avoiding EKS overhead"
+  ],
+  "docs": "https://kops.sigs.k8s.io/",
+  "tutorial": "https://kops.sigs.k8s.io/getting_started/aws/",
+  "added": "2026-06-09",
+  "dex": 20
+ },
+ {
+  "id": "kubeadm",
+  "name": "kubeadm",
+  "category": "Tool",
+  "domain": "DevOps",
+  "eli5": "A setup wizard that takes a bunch of blank computers and turns them into a working Kubernetes cluster with one command.",
+  "description": "Official Kubernetes cluster bootstrapping tool. Handles control plane init, worker node join, certificate generation, and kubeconfig setup. The standard way to stand up a conformant cluster on bare metal or VMs.",
+  "use_cases": [
+   "Bootstrap a production-grade Kubernetes control plane on bare metal or VMs",
+   "Join worker nodes to an existing cluster with a single join command",
+   "Upgrade Kubernetes clusters in place with kubeadm upgrade",
+   "Generate and rotate cluster certificates",
+   "Serve as the foundation layer for higher-level tools like Kubespray and Cluster API"
+  ],
+  "used_by": [
+   "Red Hat",
+   "Canonical",
+   "VMware",
+   "Self-hosted Kubernetes operators"
+  ],
+  "docs": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/",
+  "tutorial": "https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/create-cluster-kubeadm/",
+  "added": "2026-06-09",
+  "dex": 21
+ },
+ {
+  "id": "kubeops",
+  "name": "KubeOps",
+  "category": "Framework",
+  "domain": "DevOps",
+  "eli5": "A toolkit for .NET developers that lets them write Kubernetes operators — programs that automatically manage other programs running in a cluster — using C# instead of Go.",
+  "description": "Kubernetes operator SDK for .NET/C#. Provides code-generation, reconciliation loops, CRD scaffolding, and webhook support so .NET teams can build production operators without leaving the C# ecosystem.",
+  "use_cases": [
+   "Build Kubernetes operators and controllers in C# for .NET-native teams",
+   "Scaffold and register Custom Resource Definitions (CRDs) from C# classes",
+   "Implement reconciliation loops with built-in retry and error handling",
+   "Define validating and mutating admission webhooks in C#",
+   "Automate lifecycle management of complex stateful .NET workloads on Kubernetes"
+  ],
+  "used_by": [
+   "Microsoft ecosystem teams",
+   ".NET Kubernetes adopters"
+  ],
+  "docs": "https://buehler.github.io/dotnet-operator-sdk/",
+  "tutorial": "https://buehler.github.io/dotnet-operator-sdk/docs/getting-started",
+  "added": "2026-06-09",
+  "dex": 22
  },
  {
   "id": "kubernetes",
@@ -433,7 +578,32 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://kubernetes.io/docs/tutorials/kubernetes-basics/",
   "added": "2026-06-08",
   "eli5": "A manager that keeps all your app boxes running and restarts them if they crash.",
-  "dex": 17
+  "dex": 23
+ },
+ {
+  "id": "kubespray",
+  "name": "Kubespray",
+  "category": "Tool",
+  "domain": "DevOps",
+  "eli5": "An Ansible recipe book that automatically installs and configures Kubernetes across a whole fleet of servers for you.",
+  "description": "Ansible-based Kubernetes cluster provisioner maintained under the Kubernetes SIGs umbrella. Supports bare metal, cloud VMs, and on-prem with pluggable CNI, CRI, and ingress options. Wraps kubeadm for production-ready multi-node deployments.",
+  "use_cases": [
+   "Provision multi-node Kubernetes clusters on bare metal or any cloud provider",
+   "Declaratively configure CNI plugins (Calico, Flannel, Cilium) and container runtimes",
+   "Rolling cluster upgrades via idempotent Ansible playbooks",
+   "Air-gapped cluster installs for regulated environments",
+   "Day-2 operations: add nodes, rotate certs, drain and decommission"
+  ],
+  "used_by": [
+   "CERN",
+   "Cloudflare",
+   "Deutsche Telekom",
+   "On-prem Kubernetes teams"
+  ],
+  "docs": "https://kubespray.io/",
+  "tutorial": "https://github.com/kubernetes-sigs/kubespray/blob/master/docs/getting_started/setting-up-your-first-cluster.md",
+  "added": "2026-06-09",
+  "dex": 24
  },
  {
   "id": "kustomize",
@@ -459,7 +629,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://kubectl.docs.kubernetes.io/references/kustomize/",
   "tutorial": "https://kubectl.docs.kubernetes.io/guides/introduction/kustomize/",
   "added": "2026-06-08",
-  "dex": 18
+  "dex": 25
  },
  {
   "id": "make",
@@ -484,7 +654,55 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://www.gnu.org/software/make/manual/make.html",
   "tutorial": "https://makefiletutorial.com/",
   "added": "2026-06-08",
-  "dex": 19
+  "dex": 26
+ },
+ {
+  "id": "microk8s",
+  "name": "MicroK8s",
+  "category": "Platform",
+  "domain": "DevOps",
+  "eli5": "A small, self-contained Kubernetes that installs in one command and works like a full cluster — good for edge devices and laptops.",
+  "description": "Lightweight, single-package Kubernetes distribution by Canonical. Delivered as a snap with built-in add-ons (Istio, Knative, GPU support, registry). Designed for edge, IoT, CI, and developer workstations with zero-ops cluster management.",
+  "use_cases": [
+   "Run production-grade Kubernetes on edge and IoT hardware",
+   "Developer workstation cluster with snap-based lifecycle management",
+   "Enable add-ons (Ingress, MetalLB, GPU, registry) with a single command",
+   "Cluster multiple MicroK8s nodes for HA edge deployments",
+   "CI/CD pipelines on Ubuntu runners without full cluster overhead"
+  ],
+  "used_by": [
+   "Canonical",
+   "Edge computing teams",
+   "Ubuntu-based infrastructure operators"
+  ],
+  "docs": "https://microk8s.io/docs",
+  "tutorial": "https://microk8s.io/docs/getting-started",
+  "added": "2026-06-09",
+  "dex": 27
+ },
+ {
+  "id": "minikube",
+  "name": "Minikube",
+  "category": "Tool",
+  "domain": "DevOps",
+  "eli5": "A tiny pretend Kubernetes cluster that runs on your laptop so you can practice without needing real servers.",
+  "description": "Local Kubernetes cluster tool that spins up a single-node cluster inside a VM or container on your workstation. The canonical way for developers to run and test Kubernetes manifests locally before deploying to production.",
+  "use_cases": [
+   "Local development and testing of Kubernetes workloads",
+   "Learning Kubernetes without cloud costs",
+   "CI pipeline validation of manifests on ephemeral runners",
+   "Testing Helm charts and operators locally",
+   "Rapid iteration on containerized microservices"
+  ],
+  "used_by": [
+   "Individual developers",
+   "Platform engineering teams",
+   "Kubernetes learners"
+  ],
+  "docs": "https://minikube.sigs.k8s.io/docs/",
+  "tutorial": "https://minikube.sigs.k8s.io/docs/start/",
+  "added": "2026-06-09",
+  "dex": 28
  },
  {
   "id": "packer",
@@ -510,7 +728,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://developer.hashicorp.com/packer/docs",
   "tutorial": "https://developer.hashicorp.com/packer/tutorials/aws-get-started",
   "added": "2026-06-08",
-  "dex": 20
+  "dex": 29
  },
  {
   "id": "podman",
@@ -535,7 +753,32 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://docs.podman.io/en/latest/",
   "tutorial": "https://podman.io/getting-started/",
   "added": "2026-06-08",
-  "dex": 21
+  "dex": 30
+ },
+ {
+  "id": "podman",
+  "name": "Podman",
+  "category": "Tool",
+  "domain": "DevOps",
+  "eli5": "Like Docker but without a big background program running as the boss — each container runs on its own, which is safer.",
+  "description": "Daemonless, rootless container engine by Red Hat. OCI-compatible drop-in replacement for Docker CLI with native pod support, systemd integration, and no privileged daemon requirement. Default container runtime on RHEL/Fedora.",
+  "use_cases": [
+   "Run containers without root or a background daemon for better security",
+   "Drop-in Docker replacement on RHEL, Fedora, and air-gapped environments",
+   "Build and push OCI images with Buildah integration",
+   "Run multi-container pods locally that mirror Kubernetes pod semantics",
+   "Generate systemd unit files from running containers for on-host services"
+  ],
+  "used_by": [
+   "Red Hat",
+   "IBM",
+   "Government/regulated industries",
+   "Security-focused teams"
+  ],
+  "docs": "https://docs.podman.io/",
+  "tutorial": "https://podman.io/getting-started/",
+  "added": "2026-06-09",
+  "dex": 31
  },
  {
   "id": "pulumi",
@@ -561,7 +804,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://www.pulumi.com/docs/get-started/",
   "added": "2026-06-08",
   "eli5": "Like Terraform but you write cloud blueprints in Python or Go instead of a special language.",
-  "dex": 22
+  "dex": 32
  },
  {
   "id": "puppet",
@@ -587,7 +830,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://www.puppet.com/docs/puppet/latest/puppet_index.html",
   "tutorial": "https://www.puppet.com/docs/puppet/latest/quick_start_essential_config.html",
   "added": "2026-06-08",
-  "dex": 23
+  "dex": 33
  },
  {
   "id": "terraform",
@@ -613,7 +856,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://developer.hashicorp.com/terraform/tutorials/aws-get-started",
   "added": "2026-06-08",
   "eli5": "A shopping list for cloud stuff — write what you want, it goes and builds it.",
-  "dex": 24
+  "dex": 34
  },
  {
   "id": "terraform-cloud",
@@ -639,7 +882,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://developer.hashicorp.com/terraform/tutorials/cloud-get-started",
   "added": "2026-06-08",
   "eli5": "A shared whiteboard where your whole team draws the same cloud blueprint together.",
-  "dex": 25
+  "dex": 35
  },
  {
   "id": "vagrant",
@@ -664,7 +907,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://developer.hashicorp.com/vagrant/docs",
   "tutorial": "https://developer.hashicorp.com/vagrant/tutorials/getting-started",
   "added": "2026-06-08",
-  "dex": 26
+  "dex": 36
  },
  {
   "id": "yaml",
@@ -686,7 +929,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://yaml.org/spec/1.2.2/",
   "tutorial": "https://learnxinyminutes.com/docs/yaml/",
   "added": "2026-06-08",
-  "dex": 27
+  "dex": 37
  },
  {
   "id": "aws-ec2",
@@ -712,7 +955,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html",
   "added": "2026-06-08",
   "eli5": "A rental computer in Amazon's giant warehouse you can turn on anytime.",
-  "dex": 28
+  "dex": 38
  },
  {
   "id": "aws-eks",
@@ -738,7 +981,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://docs.aws.amazon.com/eks/latest/userguide/getting-started.html",
   "added": "2026-06-08",
   "eli5": "Amazon babysits Kubernetes so you only worry about your apps.",
-  "dex": 29
+  "dex": 39
  },
  {
   "id": "aws-lambda",
@@ -764,7 +1007,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://docs.aws.amazon.com/lambda/latest/dg/getting-started.html",
   "added": "2026-06-08",
   "eli5": "A vending machine for code — drop in a coin (event), your code runs, then stops.",
-  "dex": 30
+  "dex": 40
  },
  {
   "id": "azure-functions",
@@ -790,7 +1033,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://learn.microsoft.com/en-us/azure/azure-functions/",
   "tutorial": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-get-started",
   "added": "2026-06-08",
-  "dex": 31
+  "dex": 41
  },
  {
   "id": "aks",
@@ -816,7 +1059,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://learn.microsoft.com/en-us/azure/aks/",
   "tutorial": "https://learn.microsoft.com/en-us/azure/aks/learn/quick-kubernetes-deploy-portal",
   "added": "2026-06-08",
-  "dex": 32
+  "dex": 42
  },
  {
   "id": "azure-vms",
@@ -842,7 +1085,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://learn.microsoft.com/en-us/azure/virtual-machines/",
   "tutorial": "https://learn.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-portal",
   "added": "2026-06-08",
-  "dex": 33
+  "dex": 43
  },
  {
   "id": "gcp",
@@ -868,7 +1111,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://cloud.google.com/docs",
   "tutorial": "https://cloud.google.com/docs/get-started",
   "added": "2026-06-08",
-  "dex": 34
+  "dex": 44
  },
  {
   "id": "cloud-run",
@@ -894,7 +1137,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://cloud.google.com/run/docs",
   "tutorial": "https://cloud.google.com/run/docs/quickstarts/build-and-deploy/deploy-python-service",
   "added": "2026-06-08",
-  "dex": 35
+  "dex": 45
  },
  {
   "id": "gce",
@@ -920,7 +1163,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://cloud.google.com/compute/docs",
   "tutorial": "https://cloud.google.com/compute/docs/quickstart-linux",
   "added": "2026-06-08",
-  "dex": 36
+  "dex": 46
  },
  {
   "id": "gke",
@@ -946,7 +1189,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://cloud.google.com/kubernetes-engine/docs",
   "tutorial": "https://cloud.google.com/kubernetes-engine/docs/quickstart",
   "added": "2026-06-08",
-  "dex": 37
+  "dex": 47
  },
  {
   "id": "azure",
@@ -972,7 +1215,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://learn.microsoft.com/en-us/azure/",
   "tutorial": "https://learn.microsoft.com/en-us/azure/guides/developer/azure-developer-guide",
   "added": "2026-06-08",
-  "dex": 38
+  "dex": 48
  },
  {
   "id": "apache-cassandra",
@@ -999,7 +1242,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://cassandra.apache.org/doc/latest/cassandra/getting-started/quickstart.html",
   "added": "2026-06-08",
   "eli5": "A filing cabinet spread across many rooms — still works if one room burns down.",
-  "dex": 39
+  "dex": 49
  },
  {
   "id": "aws-dynamodb",
@@ -1025,7 +1268,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GettingStartedDynamoDB.html",
   "added": "2026-06-08",
   "eli5": "Amazon's magic filing cabinet that grows automatically and is always fast.",
-  "dex": 40
+  "dex": 50
  },
  {
   "id": "cosmos-db",
@@ -1051,7 +1294,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://learn.microsoft.com/en-us/azure/cosmos-db/",
   "tutorial": "https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/quickstart-portal",
   "added": "2026-06-08",
-  "dex": 41
+  "dex": 51
  },
  {
   "id": "clickhouse",
@@ -1078,7 +1321,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://clickhouse.com/docs/en/getting-started/quick-start",
   "added": "2026-06-08",
   "eli5": "A calculator that sums up billions of numbers in milliseconds.",
-  "dex": 42
+  "dex": 52
  },
  {
   "id": "cockroachdb",
@@ -1104,7 +1347,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://www.cockroachlabs.com/docs/stable/start-a-local-cluster.html",
   "added": "2026-06-08",
   "eli5": "A filing cabinet that keeps working even if half of it is destroyed.",
-  "dex": 43
+  "dex": 53
  },
  {
   "id": "mongodb",
@@ -1132,7 +1375,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://www.mongodb.com/docs/manual/tutorial/getting-started/",
   "added": "2026-06-08",
   "eli5": "A junk drawer where you shove data in any shape with no rules.",
-  "dex": 44
+  "dex": 54
  },
  {
   "id": "mysql",
@@ -1159,7 +1402,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://dev.mysql.com/doc/mysql-getting-started/en/",
   "added": "2026-06-08",
   "eli5": "The world's most popular filing cabinet for websites.",
-  "dex": 45
+  "dex": 55
  },
  {
   "id": "neo4j",
@@ -1186,7 +1429,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://neo4j.com/docs/getting-started/",
   "added": "2026-06-08",
   "eli5": "A map of who knows who — great for tracing connections between things.",
-  "dex": 46
+  "dex": 56
  },
  {
   "id": "postgresql",
@@ -1214,7 +1457,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://www.postgresql.org/docs/current/tutorial.html",
   "added": "2026-06-08",
   "eli5": "A very organized filing cabinet with strict rules — everything in the right drawer.",
-  "dex": 47
+  "dex": 57
  },
  {
   "id": "redis",
@@ -1242,7 +1485,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://redis.io/docs/getting-started/",
   "added": "2026-06-08",
   "eli5": "A whiteboard next to your desk — super fast to read but wiped if unplugged.",
-  "dex": 48
+  "dex": 58
  },
  {
   "id": "sql",
@@ -1264,7 +1507,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://www.postgresql.org/docs/current/sql.html",
   "tutorial": "https://sqlzoo.net/wiki/SQL_Tutorial",
   "added": "2026-06-08",
-  "dex": 49
+  "dex": 59
  },
  {
   "id": "vertex-ai",
@@ -1290,7 +1533,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://cloud.google.com/vertex-ai/docs",
   "tutorial": "https://cloud.google.com/vertex-ai/docs/start/introduction-unified-platform",
   "added": "2026-06-08",
-  "dex": 50
+  "dex": 60
  },
  {
   "id": "aws-cloudwatch",
@@ -1312,7 +1555,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/GettingStarted.html",
   "added": "2026-06-08",
   "eli5": "A security camera and alarm system for everything in your AWS house.",
-  "dex": 51
+  "dex": 61
  },
  {
   "id": "datadog",
@@ -1338,7 +1581,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://docs.datadoghq.com/getting_started/",
   "added": "2026-06-08",
   "eli5": "A dashboard showing every heartbeat of your apps and servers, all in one place.",
-  "dex": 52
+  "dex": 62
  },
  {
   "id": "dynatrace",
@@ -1364,7 +1607,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://docs.dynatrace.com/docs/get-started",
   "added": "2026-06-08",
   "eli5": "A smart robot that watches your whole app and spots problems before you do.",
-  "dex": 53
+  "dex": 63
  },
  {
   "id": "elk-stack",
@@ -1390,7 +1633,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://www.elastic.co/guide/en/elasticsearch/reference/current/getting-started.html",
   "added": "2026-06-08",
   "eli5": "A giant diary plus search engine for all your app's log messages.",
-  "dex": 54
+  "dex": 64
  },
  {
   "id": "grafana",
@@ -1416,7 +1659,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://grafana.com/docs/grafana/latest/getting-started/build-first-dashboard/",
   "added": "2026-06-08",
   "eli5": "Pretty charts built from Prometheus's notebook so humans can understand things.",
-  "dex": 55
+  "dex": 65
  },
  {
   "id": "jaeger",
@@ -1442,7 +1685,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://www.jaegertracing.io/docs/latest/getting-started/",
   "added": "2026-06-08",
   "eli5": "A detective that follows a request through all your services to find where it slowed down.",
-  "dex": 56
+  "dex": 66
  },
  {
   "id": "new-relic",
@@ -1468,7 +1711,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://docs.newrelic.com/docs/new-relic-solutions/get-started/intro-new-relic/",
   "added": "2026-06-08",
   "eli5": "A doctor for your app — checks its health and explains when and why it got sick.",
-  "dex": 57
+  "dex": 67
  },
  {
   "id": "opentelemetry",
@@ -1495,7 +1738,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://opentelemetry.io/docs/getting-started/",
   "added": "2026-06-08",
   "eli5": "A universal plug that sends your app's health data to any monitoring tool you like.",
-  "dex": 58
+  "dex": 68
  },
  {
   "id": "pagerduty",
@@ -1522,7 +1765,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://support.pagerduty.com/docs/introduction",
   "added": "2026-06-08",
   "eli5": "An alarm clock that wakes up the right engineer when something breaks at 3am.",
-  "dex": 59
+  "dex": 69
  },
  {
   "id": "prometheus",
@@ -1548,7 +1791,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://prometheus.io/docs/prometheus/latest/getting_started/",
   "added": "2026-06-08",
   "eli5": "A notebook that writes down how your app is doing every few seconds.",
-  "dex": 60
+  "dex": 70
  },
  {
   "id": "sentry",
@@ -1575,7 +1818,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://docs.sentry.io/platforms/",
   "added": "2026-06-08",
   "eli5": "A bug catcher that tells you exactly when, where, and why your app crashed.",
-  "dex": 61
+  "dex": 71
  },
  {
   "id": "splunk",
@@ -1601,7 +1844,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://docs.splunk.com/Documentation/Splunk/latest/SearchTutorial/WelcometotheSearchTutorial",
   "added": "2026-06-08",
   "eli5": "Google for your logs — find anything in billions of log lines instantly.",
-  "dex": 62
+  "dex": 72
  },
  {
   "id": "aws-kms",
@@ -1625,7 +1868,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://docs.aws.amazon.com/kms/latest/developerguide/getting-started.html",
   "added": "2026-06-08",
   "eli5": "A bank vault for your secret keys — lets you use them but never hands them over.",
-  "dex": 63
+  "dex": 73
  },
  {
   "id": "cert-manager",
@@ -1647,7 +1890,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://cert-manager.io/docs/tutorials/acme/nginx-ingress/",
   "added": "2026-06-08",
   "eli5": "A robot that renews your HTTPS padlock automatically before it ever expires.",
-  "dex": 64
+  "dex": 74
  },
  {
   "id": "falco",
@@ -1673,7 +1916,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://falco.org/docs/getting-started/",
   "added": "2026-06-08",
   "eli5": "A smoke detector for containers — screams if something suspicious happens inside.",
-  "dex": 65
+  "dex": 75
  },
  {
   "id": "hashicorp-vault",
@@ -1699,7 +1942,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://developer.hashicorp.com/vault/tutorials/getting-started",
   "added": "2026-06-08",
   "eli5": "A really secure safe for all your passwords — only gives them to people it trusts.",
-  "dex": 66
+  "dex": 76
  },
  {
   "id": "opa",
@@ -1725,7 +1968,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://www.openpolicyagent.org/docs/latest/#running-opa",
   "added": "2026-06-08",
   "eli5": "A rulebook apps must check before doing anything: 'Am I allowed to do this?'",
-  "dex": 67
+  "dex": 77
  },
  {
   "id": "snyk",
@@ -1751,7 +1994,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://docs.snyk.io/getting-started",
   "added": "2026-06-08",
   "eli5": "A spell-checker for security — finds dangerous ingredients in your code's recipe.",
-  "dex": 68
+  "dex": 78
  },
  {
   "id": "trivy",
@@ -1776,7 +2019,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://aquasecurity.github.io/trivy/latest/getting-started/installation/",
   "added": "2026-06-08",
   "eli5": "An X-ray machine for containers that finds hidden diseases (security holes) inside.",
-  "dex": 69
+  "dex": 79
  },
  {
   "id": "apache-airflow",
@@ -1803,7 +2046,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://airflow.apache.org/docs/apache-airflow/stable/tutorial/index.html",
   "added": "2026-06-08",
   "eli5": "A chore chart that runs your data jobs in the right order at the right time.",
-  "dex": 70
+  "dex": 80
  },
  {
   "id": "apache-spark",
@@ -1830,7 +2073,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://spark.apache.org/docs/latest/quick-start.html",
   "added": "2026-06-08",
   "eli5": "A team of workers that splits a huge data pile and processes all of it at once.",
-  "dex": 71
+  "dex": 81
  },
  {
   "id": "bigquery",
@@ -1856,7 +2099,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://cloud.google.com/bigquery/docs",
   "tutorial": "https://cloud.google.com/bigquery/docs/quickstarts/load-data-console",
   "added": "2026-06-08",
-  "dex": 72
+  "dex": 82
  },
  {
   "id": "databricks",
@@ -1882,7 +2125,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://docs.databricks.com/en/getting-started/index.html",
   "added": "2026-06-08",
   "eli5": "A giant playground where data people crunch huge piles of data together.",
-  "dex": 73
+  "dex": 83
  },
  {
   "id": "dbt",
@@ -1908,7 +2151,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://docs.getdbt.com/guides",
   "added": "2026-06-08",
   "eli5": "A chef that turns raw data ingredients into clean, tested, ready-to-serve dishes.",
-  "dex": 74
+  "dex": 84
  },
  {
   "id": "snowflake",
@@ -1935,7 +2178,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://docs.snowflake.com/en/user-guide/tutorials/tasty-bytes-introduction",
   "added": "2026-06-08",
   "eli5": "A shared spreadsheet in the cloud that gets more powerful when you need it.",
-  "dex": 75
+  "dex": 85
  },
  {
   "id": "angular",
@@ -1962,7 +2205,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://angular.dev/tutorials/learn-angular",
   "added": "2026-06-08",
   "eli5": "A complete workshop for building big websites — Google made it with strict rules.",
-  "dex": 76
+  "dex": 86
  },
  {
   "id": "nextjs",
@@ -1989,7 +2232,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://nextjs.org/learn",
   "added": "2026-06-08",
   "eli5": "React with superpowers — handles the boring stuff so you just build cool features.",
-  "dex": 77
+  "dex": 87
  },
  {
   "id": "react",
@@ -2016,7 +2259,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://react.dev/learn",
   "added": "2026-06-08",
   "eli5": "Lego blocks for websites — build pieces and snap them together into a full page.",
-  "dex": 78
+  "dex": 88
  },
  {
   "id": "tailwind-css",
@@ -2043,7 +2286,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://tailwindcss.com/docs/installation",
   "added": "2026-06-08",
   "eli5": "Pre-mixed paint colors for your website — pick from a palette instead of mixing yourself.",
-  "dex": 79
+  "dex": 89
  },
  {
   "id": "typescript",
@@ -2070,7 +2313,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://www.typescriptlang.org/docs/",
   "tutorial": "https://www.typescriptlang.org/docs/handbook/intro.html",
   "added": "2026-06-08",
-  "dex": 80
+  "dex": 90
  },
  {
   "id": "vue",
@@ -2097,7 +2340,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://vuejs.org/tutorial/",
   "added": "2026-06-08",
   "eli5": "A friendlier version of React — easier to pick up, still very powerful.",
-  "dex": 81
+  "dex": 91
  },
  {
   "id": "fastapi",
@@ -2123,7 +2366,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://fastapi.tiangolo.com/tutorial/",
   "added": "2026-06-08",
   "eli5": "A super-fast waiter that takes requests from users and brings back exactly what they asked.",
-  "dex": 82
+  "dex": 92
  },
  {
   "id": "go",
@@ -2150,7 +2393,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://go.dev/doc/",
   "tutorial": "https://go.dev/tour/welcome/1",
   "added": "2026-06-08",
-  "dex": 83
+  "dex": 93
  },
  {
   "id": "grpc",
@@ -2177,7 +2420,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://grpc.io/docs/languages/go/quickstart/",
   "added": "2026-06-08",
   "eli5": "Two apps talking in a secret, super-fast language only they understand.",
-  "dex": 84
+  "dex": 94
  },
  {
   "id": "java",
@@ -2204,7 +2447,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://docs.oracle.com/en/java/",
   "tutorial": "https://dev.java/learn/",
   "added": "2026-06-08",
-  "dex": 85
+  "dex": 95
  },
  {
   "id": "kotlin",
@@ -2231,7 +2474,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://kotlinlang.org/docs/home.html",
   "tutorial": "https://kotlinlang.org/docs/getting-started.html",
   "added": "2026-06-08",
-  "dex": 86
+  "dex": 96
  },
  {
   "id": "python",
@@ -2258,7 +2501,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://docs.python.org/3/",
   "tutorial": "https://docs.python.org/3/tutorial/",
   "added": "2026-06-08",
-  "dex": 87
+  "dex": 97
  },
  {
   "id": "rust",
@@ -2285,7 +2528,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://doc.rust-lang.org/book/",
   "tutorial": "https://rustlings.cool/",
   "added": "2026-06-08",
-  "dex": 88
+  "dex": 98
  },
  {
   "id": "apache-kafka",
@@ -2313,7 +2556,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://kafka.apache.org/quickstart",
   "added": "2026-06-08",
   "eli5": "A conveyor belt that carries messages between apps without dropping any.",
-  "dex": 89
+  "dex": 99
  },
  {
   "id": "cloud-pubsub",
@@ -2339,7 +2582,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://cloud.google.com/pubsub/docs",
   "tutorial": "https://cloud.google.com/pubsub/docs/publish-receive-messages-console",
   "added": "2026-06-08",
-  "dex": 90
+  "dex": 100
  },
  {
   "id": "rabbitmq",
@@ -2365,7 +2608,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://www.rabbitmq.com/tutorials",
   "added": "2026-06-08",
   "eli5": "A post office — apps drop letters in, other apps pick them up later.",
-  "dex": 91
+  "dex": 101
  },
  {
   "id": "aws-s3",
@@ -2391,7 +2634,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/GetStartedWithS3.html",
   "added": "2026-06-08",
   "eli5": "A magic box that holds unlimited files and never loses them.",
-  "dex": 92
+  "dex": 102
  },
  {
   "id": "azure-blob",
@@ -2417,7 +2660,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://learn.microsoft.com/en-us/azure/storage/blobs/",
   "tutorial": "https://learn.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal",
   "added": "2026-06-08",
-  "dex": 93
+  "dex": 103
  },
  {
   "id": "gcs",
@@ -2443,7 +2686,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://cloud.google.com/storage/docs",
   "tutorial": "https://cloud.google.com/storage/docs/quickstart-console",
   "added": "2026-06-08",
-  "dex": 94
+  "dex": 104
  },
  {
   "id": "argo-workflows",
@@ -2469,7 +2712,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://argo-workflows.readthedocs.io/en/latest/quick-start/",
   "added": "2026-06-08",
   "eli5": "A flowchart that runs jobs on Kubernetes in the right order, automatically.",
-  "dex": 95
+  "dex": 105
  },
  {
   "id": "argocd",
@@ -2495,7 +2738,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://argo-cd.readthedocs.io/en/stable/getting_started/",
   "added": "2026-06-08",
   "eli5": "A robot that watches Git and keeps your cluster looking exactly like the blueprint.",
-  "dex": 96
+  "dex": 106
  },
  {
   "id": "azure-devops",
@@ -2521,7 +2764,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://learn.microsoft.com/en-us/azure/devops/",
   "tutorial": "https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/pipelines-get-started",
   "added": "2026-06-08",
-  "dex": 97
+  "dex": 107
  },
  {
   "id": "circleci",
@@ -2547,7 +2790,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://circleci.com/docs/",
   "tutorial": "https://circleci.com/docs/getting-started/",
   "added": "2026-06-08",
-  "dex": 98
+  "dex": 108
  },
  {
   "id": "flux-cd",
@@ -2573,7 +2816,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://fluxcd.io/flux/",
   "tutorial": "https://fluxcd.io/flux/get-started/",
   "added": "2026-06-08",
-  "dex": 99
+  "dex": 109
  },
  {
   "id": "github-actions",
@@ -2599,7 +2842,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://docs.github.com/en/actions/quickstart",
   "added": "2026-06-08",
   "eli5": "A helper that automatically does chores (tests, deploys) whenever you push code.",
-  "dex": 100
+  "dex": 110
  },
  {
   "id": "gitlab-ci",
@@ -2625,7 +2868,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://docs.gitlab.com/ee/ci/",
   "tutorial": "https://docs.gitlab.com/ee/ci/quick_start/",
   "added": "2026-06-08",
-  "dex": 101
+  "dex": 111
  },
  {
   "id": "jenkins",
@@ -2651,7 +2894,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://www.jenkins.io/doc/pipeline/tour/getting-started/",
   "added": "2026-06-08",
   "eli5": "A robot that builds and tests your code every time you save a change.",
-  "dex": 102
+  "dex": 112
  },
  {
   "id": "tekton",
@@ -2677,7 +2920,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://tekton.dev/docs/",
   "tutorial": "https://tekton.dev/docs/getting-started/",
   "added": "2026-06-08",
-  "dex": 103
+  "dex": 113
  },
  {
   "id": "aws-iam",
@@ -2699,7 +2942,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://docs.aws.amazon.com/IAM/latest/UserGuide/getting-started.html",
   "added": "2026-06-08",
   "eli5": "The bouncer who checks IDs and decides who gets into which room.",
-  "dex": 104
+  "dex": 114
  },
  {
   "id": "azure-entra-id",
@@ -2724,7 +2967,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://learn.microsoft.com/en-us/entra/identity/",
   "tutorial": "https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-web-app-sign-in",
   "added": "2026-06-08",
-  "dex": 105
+  "dex": 115
  },
  {
   "id": "keycloak",
@@ -2750,7 +2993,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://www.keycloak.org/getting-started/getting-started-docker",
   "added": "2026-06-08",
   "eli5": "One front door for all your apps — log in once, get into everything.",
-  "dex": 106
+  "dex": 116
  },
  {
   "id": "spiffe",
@@ -2776,6 +3019,6 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://spiffe.io/docs/latest/try/getting-started-linux-macos-x/",
   "added": "2026-06-08",
   "eli5": "An ID card factory that gives every microservice a passport so they trust each other.",
-  "dex": 107
+  "dex": 117
  }
 ];

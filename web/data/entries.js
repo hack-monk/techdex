@@ -767,6 +767,214 @@ window.TECHDEX_ENTRIES = [
   "dex": 30
  },
  {
+  "id": "azure-functions",
+  "name": "Azure Functions",
+  "category": "Platform",
+  "domain": "Cloud",
+  "eli5": "Microsoft's version of AWS Lambda — write a function, Azure runs it only when needed.",
+  "description": "Azure's serverless compute service — event-driven functions that scale automatically and bill per execution. Supports C#, Python, Java, Node.js, PowerShell, and more. Durable Functions extension enables stateful, long-running workflows with fan-out/fan-in patterns.",
+  "use_cases": [
+   "Event-driven processing: HTTP, timer, Blob, Queue, Event Hub, Cosmos DB triggers",
+   "Durable Functions for stateful orchestration (approval flows, fan-out/fan-in)",
+   "API backends integrated with Azure API Management",
+   "Real-time data transformation in Azure Event Hubs pipelines",
+   "Scheduled automation and maintenance tasks via timer triggers"
+  ],
+  "used_by": [
+   "KPMG",
+   "Siemens",
+   "HP",
+   "Costco",
+   "Carnival"
+  ],
+  "docs": "https://learn.microsoft.com/en-us/azure/azure-functions/",
+  "tutorial": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-get-started",
+  "added": "2026-06-08",
+  "dex": 31
+ },
+ {
+  "id": "aks",
+  "name": "Azure Kubernetes Service",
+  "category": "Platform",
+  "domain": "Cloud",
+  "eli5": "Microsoft manages Kubernetes for you — just tell it what apps to run, it handles the cluster.",
+  "description": "Azure's managed Kubernetes service. Free control plane; pay only for worker nodes. Deep Azure integration: Azure AD for RBAC, Azure Monitor for observability, Azure CNI for networking, and ACR for container images. Supports Windows node pools alongside Linux.",
+  "use_cases": [
+   "Production Kubernetes with Azure AD Workload Identity for pod-level RBAC",
+   "Windows containers for .NET Framework apps alongside Linux workloads",
+   "KEDA (Kubernetes Event-Driven Autoscaling) for queue/event-driven scaling",
+   "Azure Service Mesh (Istio-based) for mTLS and traffic management",
+   "GitOps with Flux CD as an AKS add-on"
+  ],
+  "used_by": [
+   "ABB",
+   "Siemens",
+   "ING Bank",
+   "KPMG",
+   "Accenture"
+  ],
+  "docs": "https://learn.microsoft.com/en-us/azure/aks/",
+  "tutorial": "https://learn.microsoft.com/en-us/azure/aks/learn/quick-kubernetes-deploy-portal",
+  "added": "2026-06-08",
+  "dex": 32
+ },
+ {
+  "id": "azure-vms",
+  "name": "Azure Virtual Machines",
+  "category": "Platform",
+  "domain": "Cloud",
+  "eli5": "Microsoft's rental computers — pick a size, pay by the hour, run whatever you want on them.",
+  "description": "Azure's IaaS virtual machine service supporting Linux and Windows workloads. Wide range of VM series optimized for compute, memory, storage, and GPU workloads. Spot VMs for fault-tolerant batch jobs at steep discounts. Deep integration with Azure AD and managed disks.",
+  "use_cases": [
+   "Lift-and-shift migration of on-prem Windows Server and SQL Server workloads",
+   "GPU VMs (NC/ND series) for ML training and HPC",
+   "VM Scale Sets for autoscaling application tiers behind Azure Load Balancer",
+   "Spot VMs for cost-optimized batch processing and dev/test environments",
+   "Azure Dedicated Hosts for compliance workloads needing physical isolation"
+  ],
+  "used_by": [
+   "Heineken",
+   "Rolls-Royce",
+   "Toyota",
+   "3M",
+   "ASOS"
+  ],
+  "docs": "https://learn.microsoft.com/en-us/azure/virtual-machines/",
+  "tutorial": "https://learn.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-portal",
+  "added": "2026-06-08",
+  "dex": 33
+ },
+ {
+  "id": "gcp",
+  "name": "Google Cloud Platform",
+  "category": "Platform",
+  "domain": "Cloud",
+  "eli5": "Google's version of Amazon's cloud — renting Google's computers, storage, and AI tools.",
+  "description": "Google's public cloud platform offering 200+ services across compute, storage, data, AI/ML, and networking. Known for leading managed Kubernetes (GKE), BigQuery analytics, and Vertex AI. Strong in data engineering and ML workloads.",
+  "use_cases": [
+   "Running containerized workloads on GKE — the most mature managed Kubernetes service",
+   "Large-scale analytics with BigQuery's serverless data warehouse",
+   "ML training and serving with Vertex AI and TPU access",
+   "Multi-cloud strategy alongside AWS or Azure",
+   "Migrating from on-prem with Anthos for hybrid cloud management"
+  ],
+  "used_by": [
+   "Spotify",
+   "Twitter",
+   "PayPal",
+   "20th Century Fox",
+   "Colgate-Palmolive"
+  ],
+  "docs": "https://cloud.google.com/docs",
+  "tutorial": "https://cloud.google.com/docs/get-started",
+  "added": "2026-06-08",
+  "dex": 34
+ },
+ {
+  "id": "cloud-run",
+  "name": "Google Cloud Run",
+  "category": "Platform",
+  "domain": "Cloud",
+  "eli5": "Deploy any container and Google runs it for you — scales to zero when no one is using it.",
+  "description": "GCP's fully managed serverless container platform. Deploy any OCI container; Cloud Run handles scaling from zero to thousands of instances, HTTPS, and traffic management. No Kubernetes to manage. Ideal for stateless services, APIs, and event-driven workloads.",
+  "use_cases": [
+   "Stateless HTTP APIs and microservices with zero infrastructure management",
+   "Event-driven processing via Pub/Sub, Cloud Tasks, or Eventarc triggers",
+   "Scale-to-zero services for cost-efficient low-traffic or batch workloads",
+   "ML model serving: containerize a model server, Cloud Run handles traffic bursts",
+   "Cloud Run Jobs for batch, cron, and data processing tasks"
+  ],
+  "used_by": [
+   "Delivery Hero",
+   "Ubisoft",
+   "Meredith",
+   "Lush",
+   "Mercado Libre"
+  ],
+  "docs": "https://cloud.google.com/run/docs",
+  "tutorial": "https://cloud.google.com/run/docs/quickstarts/build-and-deploy/deploy-python-service",
+  "added": "2026-06-08",
+  "dex": 35
+ },
+ {
+  "id": "gce",
+  "name": "Google Compute Engine",
+  "category": "Platform",
+  "domain": "Cloud",
+  "eli5": "Google's rental computers in the cloud — like AWS EC2 but on Google's network.",
+  "description": "GCP's IaaS virtual machine service. Offers custom machine types, preemptible/Spot VMs, per-second billing, and live migration during host maintenance. Runs on Google's global fiber network with high-bandwidth, low-latency inter-region connectivity.",
+  "use_cases": [
+   "General-purpose VM workloads with custom vCPU/RAM ratios",
+   "Preemptible VMs for batch jobs and fault-tolerant workloads at 60-90% discount",
+   "GPU instances for ML training and rendering workloads",
+   "Managed instance groups with autoscaling behind a load balancer",
+   "Sole-tenant nodes for compliance workloads requiring physical isolation"
+  ],
+  "used_by": [
+   "Spotify",
+   "HSBC",
+   "Etsy",
+   "Best Buy",
+   "Philips"
+  ],
+  "docs": "https://cloud.google.com/compute/docs",
+  "tutorial": "https://cloud.google.com/compute/docs/quickstart-linux",
+  "added": "2026-06-08",
+  "dex": 36
+ },
+ {
+  "id": "gke",
+  "name": "Google Kubernetes Engine",
+  "category": "Platform",
+  "domain": "Cloud",
+  "eli5": "Google manages your Kubernetes cluster — they invented it, so they know it best.",
+  "description": "GCP's managed Kubernetes service — the most mature and feature-rich managed Kubernetes offering. Autopilot mode fully manages nodes; Standard mode gives full control. Tight integration with GCP IAM, Cloud Logging, Cloud Monitoring, and Artifact Registry.",
+  "use_cases": [
+   "Production Kubernetes with Autopilot for fully managed, serverless node management",
+   "Workload Identity for pod-level GCP IAM permissions without key files",
+   "Binary Authorization for enforcing signed image policies at deploy time",
+   "Multi-cluster deployments with GKE Fleet for unified management",
+   "Config Connector to manage GCP resources as Kubernetes CRDs"
+  ],
+  "used_by": [
+   "Spotify",
+   "Shopify",
+   "Airbus",
+   "Niantic",
+   "HSBC"
+  ],
+  "docs": "https://cloud.google.com/kubernetes-engine/docs",
+  "tutorial": "https://cloud.google.com/kubernetes-engine/docs/quickstart",
+  "added": "2026-06-08",
+  "dex": 37
+ },
+ {
+  "id": "azure",
+  "name": "Microsoft Azure",
+  "category": "Platform",
+  "domain": "Cloud",
+  "eli5": "Microsoft's cloud — like AWS but Microsoft's, and very popular with companies already using Windows and Office.",
+  "description": "Microsoft's public cloud platform with 200+ services. Dominant in enterprise due to deep Microsoft ecosystem integration (Active Directory, Office 365, Windows Server). Strong hybrid cloud story via Azure Arc. Second-largest cloud provider by market share.",
+  "use_cases": [
+   "Enterprise workloads already in the Microsoft ecosystem (Windows, SQL Server, .NET)",
+   "Hybrid cloud with Azure Arc extending Azure management to on-prem and other clouds",
+   "Azure OpenAI Service for GPT-4/Copilot integration in enterprise apps",
+   "SAP, Oracle, and VMware workloads via certified Azure infrastructure",
+   "Government and regulated industries via Azure Government and sovereign regions"
+  ],
+  "used_by": [
+   "Boeing",
+   "BMW",
+   "Walmart",
+   "FedEx",
+   "ExxonMobil"
+  ],
+  "docs": "https://learn.microsoft.com/en-us/azure/",
+  "tutorial": "https://learn.microsoft.com/en-us/azure/guides/developer/azure-developer-guide",
+  "added": "2026-06-08",
+  "dex": 38
+ },
+ {
   "id": "apache-cassandra",
   "name": "Apache Cassandra",
   "category": "Tool",
@@ -791,7 +999,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://cassandra.apache.org/doc/latest/cassandra/getting-started/quickstart.html",
   "added": "2026-06-08",
   "eli5": "A filing cabinet spread across many rooms — still works if one room burns down.",
-  "dex": 31
+  "dex": 39
  },
  {
   "id": "aws-dynamodb",
@@ -817,7 +1025,33 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GettingStartedDynamoDB.html",
   "added": "2026-06-08",
   "eli5": "Amazon's magic filing cabinet that grows automatically and is always fast.",
-  "dex": 32
+  "dex": 40
+ },
+ {
+  "id": "cosmos-db",
+  "name": "Azure Cosmos DB",
+  "category": "Platform",
+  "domain": "Database",
+  "eli5": "Microsoft's database that works in every country at once and is always fast, no matter where you are.",
+  "description": "Microsoft's globally distributed, multi-model NoSQL database. Single-digit millisecond reads and writes anywhere in the world. Multiple APIs: Core SQL, MongoDB, Cassandra, Gremlin, and Table. Turnkey global distribution — add regions with a click.",
+  "use_cases": [
+   "Global apps needing low-latency reads/writes across multiple regions",
+   "Multi-model flexibility: use SQL, MongoDB, or Cassandra API on the same data",
+   "IoT telemetry ingestion with automatic partitioning at massive scale",
+   "Gaming leaderboards, session state, and personalization at planetary scale",
+   "Serverless mode for unpredictable or low-traffic workloads"
+  ],
+  "used_by": [
+   "Microsoft",
+   "Coca-Cola",
+   "Jet.com",
+   "MSN",
+   "Nokia"
+  ],
+  "docs": "https://learn.microsoft.com/en-us/azure/cosmos-db/",
+  "tutorial": "https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/quickstart-portal",
+  "added": "2026-06-08",
+  "dex": 41
  },
  {
   "id": "clickhouse",
@@ -844,7 +1078,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://clickhouse.com/docs/en/getting-started/quick-start",
   "added": "2026-06-08",
   "eli5": "A calculator that sums up billions of numbers in milliseconds.",
-  "dex": 33
+  "dex": 42
  },
  {
   "id": "cockroachdb",
@@ -870,7 +1104,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://www.cockroachlabs.com/docs/stable/start-a-local-cluster.html",
   "added": "2026-06-08",
   "eli5": "A filing cabinet that keeps working even if half of it is destroyed.",
-  "dex": 34
+  "dex": 43
  },
  {
   "id": "mongodb",
@@ -898,7 +1132,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://www.mongodb.com/docs/manual/tutorial/getting-started/",
   "added": "2026-06-08",
   "eli5": "A junk drawer where you shove data in any shape with no rules.",
-  "dex": 35
+  "dex": 44
  },
  {
   "id": "mysql",
@@ -925,7 +1159,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://dev.mysql.com/doc/mysql-getting-started/en/",
   "added": "2026-06-08",
   "eli5": "The world's most popular filing cabinet for websites.",
-  "dex": 36
+  "dex": 45
  },
  {
   "id": "neo4j",
@@ -952,7 +1186,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://neo4j.com/docs/getting-started/",
   "added": "2026-06-08",
   "eli5": "A map of who knows who — great for tracing connections between things.",
-  "dex": 37
+  "dex": 46
  },
  {
   "id": "postgresql",
@@ -980,7 +1214,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://www.postgresql.org/docs/current/tutorial.html",
   "added": "2026-06-08",
   "eli5": "A very organized filing cabinet with strict rules — everything in the right drawer.",
-  "dex": 38
+  "dex": 47
  },
  {
   "id": "redis",
@@ -1008,7 +1242,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://redis.io/docs/getting-started/",
   "added": "2026-06-08",
   "eli5": "A whiteboard next to your desk — super fast to read but wiped if unplugged.",
-  "dex": 39
+  "dex": 48
  },
  {
   "id": "sql",
@@ -1030,7 +1264,33 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://www.postgresql.org/docs/current/sql.html",
   "tutorial": "https://sqlzoo.net/wiki/SQL_Tutorial",
   "added": "2026-06-08",
-  "dex": 40
+  "dex": 49
+ },
+ {
+  "id": "vertex-ai",
+  "name": "Vertex AI",
+  "category": "Platform",
+  "domain": "AI/ML",
+  "eli5": "Google's AI workshop — a place where you train, test, and deploy machine learning models without managing servers.",
+  "description": "GCP's unified ML platform — consolidates AutoML and custom training into one surface. Covers the full ML lifecycle: data prep, training, evaluation, deployment, and monitoring. Integrates with Gemini models, TPUs, and the Vertex AI Model Garden for 100+ foundation models.",
+  "use_cases": [
+   "Training custom ML models with managed compute (GPUs, TPUs) at scale",
+   "Deploying models to managed endpoints with autoscaling and A/B traffic splitting",
+   "Vertex AI Pipelines for reproducible MLOps workflows (Kubeflow-based)",
+   "Gemini API access and fine-tuning for enterprise LLM applications",
+   "Feature Store for sharing, serving, and monitoring ML features across teams"
+  ],
+  "used_by": [
+   "Wayfair",
+   "Levi Strauss",
+   "Ford",
+   "Carrefour",
+   "McLaren"
+  ],
+  "docs": "https://cloud.google.com/vertex-ai/docs",
+  "tutorial": "https://cloud.google.com/vertex-ai/docs/start/introduction-unified-platform",
+  "added": "2026-06-08",
+  "dex": 50
  },
  {
   "id": "aws-cloudwatch",
@@ -1052,7 +1312,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/GettingStarted.html",
   "added": "2026-06-08",
   "eli5": "A security camera and alarm system for everything in your AWS house.",
-  "dex": 41
+  "dex": 51
  },
  {
   "id": "datadog",
@@ -1078,7 +1338,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://docs.datadoghq.com/getting_started/",
   "added": "2026-06-08",
   "eli5": "A dashboard showing every heartbeat of your apps and servers, all in one place.",
-  "dex": 42
+  "dex": 52
  },
  {
   "id": "dynatrace",
@@ -1104,7 +1364,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://docs.dynatrace.com/docs/get-started",
   "added": "2026-06-08",
   "eli5": "A smart robot that watches your whole app and spots problems before you do.",
-  "dex": 43
+  "dex": 53
  },
  {
   "id": "elk-stack",
@@ -1130,7 +1390,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://www.elastic.co/guide/en/elasticsearch/reference/current/getting-started.html",
   "added": "2026-06-08",
   "eli5": "A giant diary plus search engine for all your app's log messages.",
-  "dex": 44
+  "dex": 54
  },
  {
   "id": "grafana",
@@ -1156,7 +1416,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://grafana.com/docs/grafana/latest/getting-started/build-first-dashboard/",
   "added": "2026-06-08",
   "eli5": "Pretty charts built from Prometheus's notebook so humans can understand things.",
-  "dex": 45
+  "dex": 55
  },
  {
   "id": "jaeger",
@@ -1182,7 +1442,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://www.jaegertracing.io/docs/latest/getting-started/",
   "added": "2026-06-08",
   "eli5": "A detective that follows a request through all your services to find where it slowed down.",
-  "dex": 46
+  "dex": 56
  },
  {
   "id": "new-relic",
@@ -1208,7 +1468,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://docs.newrelic.com/docs/new-relic-solutions/get-started/intro-new-relic/",
   "added": "2026-06-08",
   "eli5": "A doctor for your app — checks its health and explains when and why it got sick.",
-  "dex": 47
+  "dex": 57
  },
  {
   "id": "opentelemetry",
@@ -1235,7 +1495,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://opentelemetry.io/docs/getting-started/",
   "added": "2026-06-08",
   "eli5": "A universal plug that sends your app's health data to any monitoring tool you like.",
-  "dex": 48
+  "dex": 58
  },
  {
   "id": "pagerduty",
@@ -1262,7 +1522,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://support.pagerduty.com/docs/introduction",
   "added": "2026-06-08",
   "eli5": "An alarm clock that wakes up the right engineer when something breaks at 3am.",
-  "dex": 49
+  "dex": 59
  },
  {
   "id": "prometheus",
@@ -1288,7 +1548,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://prometheus.io/docs/prometheus/latest/getting_started/",
   "added": "2026-06-08",
   "eli5": "A notebook that writes down how your app is doing every few seconds.",
-  "dex": 50
+  "dex": 60
  },
  {
   "id": "sentry",
@@ -1315,7 +1575,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://docs.sentry.io/platforms/",
   "added": "2026-06-08",
   "eli5": "A bug catcher that tells you exactly when, where, and why your app crashed.",
-  "dex": 51
+  "dex": 61
  },
  {
   "id": "splunk",
@@ -1341,7 +1601,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://docs.splunk.com/Documentation/Splunk/latest/SearchTutorial/WelcometotheSearchTutorial",
   "added": "2026-06-08",
   "eli5": "Google for your logs — find anything in billions of log lines instantly.",
-  "dex": 52
+  "dex": 62
  },
  {
   "id": "aws-kms",
@@ -1365,7 +1625,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://docs.aws.amazon.com/kms/latest/developerguide/getting-started.html",
   "added": "2026-06-08",
   "eli5": "A bank vault for your secret keys — lets you use them but never hands them over.",
-  "dex": 53
+  "dex": 63
  },
  {
   "id": "cert-manager",
@@ -1387,7 +1647,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://cert-manager.io/docs/tutorials/acme/nginx-ingress/",
   "added": "2026-06-08",
   "eli5": "A robot that renews your HTTPS padlock automatically before it ever expires.",
-  "dex": 54
+  "dex": 64
  },
  {
   "id": "falco",
@@ -1413,7 +1673,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://falco.org/docs/getting-started/",
   "added": "2026-06-08",
   "eli5": "A smoke detector for containers — screams if something suspicious happens inside.",
-  "dex": 55
+  "dex": 65
  },
  {
   "id": "hashicorp-vault",
@@ -1439,7 +1699,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://developer.hashicorp.com/vault/tutorials/getting-started",
   "added": "2026-06-08",
   "eli5": "A really secure safe for all your passwords — only gives them to people it trusts.",
-  "dex": 56
+  "dex": 66
  },
  {
   "id": "opa",
@@ -1465,7 +1725,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://www.openpolicyagent.org/docs/latest/#running-opa",
   "added": "2026-06-08",
   "eli5": "A rulebook apps must check before doing anything: 'Am I allowed to do this?'",
-  "dex": 57
+  "dex": 67
  },
  {
   "id": "snyk",
@@ -1491,7 +1751,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://docs.snyk.io/getting-started",
   "added": "2026-06-08",
   "eli5": "A spell-checker for security — finds dangerous ingredients in your code's recipe.",
-  "dex": 58
+  "dex": 68
  },
  {
   "id": "trivy",
@@ -1516,7 +1776,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://aquasecurity.github.io/trivy/latest/getting-started/installation/",
   "added": "2026-06-08",
   "eli5": "An X-ray machine for containers that finds hidden diseases (security holes) inside.",
-  "dex": 59
+  "dex": 69
  },
  {
   "id": "apache-airflow",
@@ -1543,7 +1803,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://airflow.apache.org/docs/apache-airflow/stable/tutorial/index.html",
   "added": "2026-06-08",
   "eli5": "A chore chart that runs your data jobs in the right order at the right time.",
-  "dex": 60
+  "dex": 70
  },
  {
   "id": "apache-spark",
@@ -1570,7 +1830,33 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://spark.apache.org/docs/latest/quick-start.html",
   "added": "2026-06-08",
   "eli5": "A team of workers that splits a huge data pile and processes all of it at once.",
-  "dex": 61
+  "dex": 71
+ },
+ {
+  "id": "bigquery",
+  "name": "BigQuery",
+  "category": "Platform",
+  "domain": "Data Engineering",
+  "eli5": "A Google spreadsheet that holds billions of rows and answers questions about them in seconds.",
+  "description": "GCP's serverless, highly scalable data warehouse. Separates compute from storage — pay per query or flat-rate slots. Columnar storage and Dremel execution engine enable sub-second queries over petabyte datasets. Native ML (BigQuery ML), geospatial, and streaming support.",
+  "use_cases": [
+   "Ad-hoc analytics over petabyte datasets without managing infrastructure",
+   "Real-time streaming inserts via BigQuery Storage Write API",
+   "BigQuery ML: train and serve ML models with SQL — no Python required",
+   "BI dashboards via Looker Studio, Tableau, or Power BI direct connection",
+   "Data sharing across organizations via BigQuery Analytics Hub"
+  ],
+  "used_by": [
+   "Twitter",
+   "Spotify",
+   "The New York Times",
+   "Dow Jones",
+   "UPS"
+  ],
+  "docs": "https://cloud.google.com/bigquery/docs",
+  "tutorial": "https://cloud.google.com/bigquery/docs/quickstarts/load-data-console",
+  "added": "2026-06-08",
+  "dex": 72
  },
  {
   "id": "databricks",
@@ -1596,7 +1882,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://docs.databricks.com/en/getting-started/index.html",
   "added": "2026-06-08",
   "eli5": "A giant playground where data people crunch huge piles of data together.",
-  "dex": 62
+  "dex": 73
  },
  {
   "id": "dbt",
@@ -1622,7 +1908,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://docs.getdbt.com/guides",
   "added": "2026-06-08",
   "eli5": "A chef that turns raw data ingredients into clean, tested, ready-to-serve dishes.",
-  "dex": 63
+  "dex": 74
  },
  {
   "id": "snowflake",
@@ -1649,7 +1935,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://docs.snowflake.com/en/user-guide/tutorials/tasty-bytes-introduction",
   "added": "2026-06-08",
   "eli5": "A shared spreadsheet in the cloud that gets more powerful when you need it.",
-  "dex": 64
+  "dex": 75
  },
  {
   "id": "angular",
@@ -1676,7 +1962,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://angular.dev/tutorials/learn-angular",
   "added": "2026-06-08",
   "eli5": "A complete workshop for building big websites — Google made it with strict rules.",
-  "dex": 65
+  "dex": 76
  },
  {
   "id": "nextjs",
@@ -1703,7 +1989,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://nextjs.org/learn",
   "added": "2026-06-08",
   "eli5": "React with superpowers — handles the boring stuff so you just build cool features.",
-  "dex": 66
+  "dex": 77
  },
  {
   "id": "react",
@@ -1730,7 +2016,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://react.dev/learn",
   "added": "2026-06-08",
   "eli5": "Lego blocks for websites — build pieces and snap them together into a full page.",
-  "dex": 67
+  "dex": 78
  },
  {
   "id": "tailwind-css",
@@ -1757,7 +2043,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://tailwindcss.com/docs/installation",
   "added": "2026-06-08",
   "eli5": "Pre-mixed paint colors for your website — pick from a palette instead of mixing yourself.",
-  "dex": 68
+  "dex": 79
  },
  {
   "id": "typescript",
@@ -1784,7 +2070,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://www.typescriptlang.org/docs/",
   "tutorial": "https://www.typescriptlang.org/docs/handbook/intro.html",
   "added": "2026-06-08",
-  "dex": 69
+  "dex": 80
  },
  {
   "id": "vue",
@@ -1811,7 +2097,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://vuejs.org/tutorial/",
   "added": "2026-06-08",
   "eli5": "A friendlier version of React — easier to pick up, still very powerful.",
-  "dex": 70
+  "dex": 81
  },
  {
   "id": "fastapi",
@@ -1837,7 +2123,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://fastapi.tiangolo.com/tutorial/",
   "added": "2026-06-08",
   "eli5": "A super-fast waiter that takes requests from users and brings back exactly what they asked.",
-  "dex": 71
+  "dex": 82
  },
  {
   "id": "go",
@@ -1864,7 +2150,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://go.dev/doc/",
   "tutorial": "https://go.dev/tour/welcome/1",
   "added": "2026-06-08",
-  "dex": 72
+  "dex": 83
  },
  {
   "id": "grpc",
@@ -1891,7 +2177,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://grpc.io/docs/languages/go/quickstart/",
   "added": "2026-06-08",
   "eli5": "Two apps talking in a secret, super-fast language only they understand.",
-  "dex": 73
+  "dex": 84
  },
  {
   "id": "java",
@@ -1918,7 +2204,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://docs.oracle.com/en/java/",
   "tutorial": "https://dev.java/learn/",
   "added": "2026-06-08",
-  "dex": 74
+  "dex": 85
  },
  {
   "id": "kotlin",
@@ -1945,7 +2231,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://kotlinlang.org/docs/home.html",
   "tutorial": "https://kotlinlang.org/docs/getting-started.html",
   "added": "2026-06-08",
-  "dex": 75
+  "dex": 86
  },
  {
   "id": "python",
@@ -1972,7 +2258,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://docs.python.org/3/",
   "tutorial": "https://docs.python.org/3/tutorial/",
   "added": "2026-06-08",
-  "dex": 76
+  "dex": 87
  },
  {
   "id": "rust",
@@ -1999,7 +2285,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://doc.rust-lang.org/book/",
   "tutorial": "https://rustlings.cool/",
   "added": "2026-06-08",
-  "dex": 77
+  "dex": 88
  },
  {
   "id": "apache-kafka",
@@ -2027,7 +2313,33 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://kafka.apache.org/quickstart",
   "added": "2026-06-08",
   "eli5": "A conveyor belt that carries messages between apps without dropping any.",
-  "dex": 78
+  "dex": 89
+ },
+ {
+  "id": "cloud-pubsub",
+  "name": "Google Cloud Pub/Sub",
+  "category": "Platform",
+  "domain": "Messaging",
+  "eli5": "Google's message bus — apps shout a message, other apps listen and catch it.",
+  "description": "GCP's fully managed real-time messaging service. Decouples producers from consumers with at-least-once delivery, ordering guarantees, and replay. Global by default — messages published in one region can be consumed anywhere with sub-100ms latency.",
+  "use_cases": [
+   "Event-driven microservices: decouple services with async message passing",
+   "Streaming ingest pipeline: Pub/Sub → Dataflow → BigQuery",
+   "Fan-out: one publisher, many independent subscriber services",
+   "Dead letter topics for handling unprocessable messages",
+   "GCS/Cloud Run/Cloud Functions event triggers via Eventarc"
+  ],
+  "used_by": [
+   "Spotify",
+   "The New York Times",
+   "Mercado Libre",
+   "Twitch",
+   "Wix"
+  ],
+  "docs": "https://cloud.google.com/pubsub/docs",
+  "tutorial": "https://cloud.google.com/pubsub/docs/publish-receive-messages-console",
+  "added": "2026-06-08",
+  "dex": 90
  },
  {
   "id": "rabbitmq",
@@ -2053,7 +2365,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://www.rabbitmq.com/tutorials",
   "added": "2026-06-08",
   "eli5": "A post office — apps drop letters in, other apps pick them up later.",
-  "dex": 79
+  "dex": 91
  },
  {
   "id": "aws-s3",
@@ -2079,7 +2391,59 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/GetStartedWithS3.html",
   "added": "2026-06-08",
   "eli5": "A magic box that holds unlimited files and never loses them.",
-  "dex": 80
+  "dex": 92
+ },
+ {
+  "id": "azure-blob",
+  "name": "Azure Blob Storage",
+  "category": "Platform",
+  "domain": "Storage",
+  "eli5": "Microsoft's giant cloud bucket for storing any file — like S3 but Azure's version.",
+  "description": "Azure's massively scalable object storage for unstructured data. Three access tiers (Hot, Cool, Archive) for cost optimization. Supports hierarchical namespace (Azure Data Lake Storage Gen2) for big data analytics. Integrates with Azure CDN, Databricks, and Synapse Analytics.",
+  "use_cases": [
+   "Data lake foundation with ADLS Gen2 hierarchical namespace for analytics",
+   "Backup and disaster recovery with geo-redundant storage options",
+   "Static website hosting with Azure CDN integration",
+   "ML dataset and model storage for Azure Machine Learning pipelines",
+   "Tiered storage lifecycle policies: Hot → Cool → Archive as data ages"
+  ],
+  "used_by": [
+   "Unilever",
+   "3M",
+   "Ecolab",
+   "FedEx",
+   "Walgreens Boots Alliance"
+  ],
+  "docs": "https://learn.microsoft.com/en-us/azure/storage/blobs/",
+  "tutorial": "https://learn.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal",
+  "added": "2026-06-08",
+  "dex": 93
+ },
+ {
+  "id": "gcs",
+  "name": "Google Cloud Storage",
+  "category": "Platform",
+  "domain": "Storage",
+  "eli5": "Google's magic bucket that holds unlimited files — like AWS S3 but made by Google.",
+  "description": "GCP's unified object storage service with 99.999999999% durability. Four storage classes (Standard, Nearline, Coldline, Archive) for tiered cost/access tradeoffs. Strongly consistent, globally accessible, and tightly integrated with BigQuery and Dataflow.",
+  "use_cases": [
+   "Data lake for BigQuery, Dataflow, and Spark/Dataproc analytics pipelines",
+   "ML training dataset and model artifact storage",
+   "Static website hosting and CDN origin via Cloud CDN",
+   "Cross-region replication with dual-region and multi-region buckets",
+   "Backup and archival with Coldline/Archive storage classes"
+  ],
+  "used_by": [
+   "Spotify",
+   "Snap",
+   "New York Times",
+   "Lush",
+   "King"
+  ],
+  "docs": "https://cloud.google.com/storage/docs",
+  "tutorial": "https://cloud.google.com/storage/docs/quickstart-console",
+  "added": "2026-06-08",
+  "dex": 94
  },
  {
   "id": "argo-workflows",
@@ -2105,7 +2469,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://argo-workflows.readthedocs.io/en/latest/quick-start/",
   "added": "2026-06-08",
   "eli5": "A flowchart that runs jobs on Kubernetes in the right order, automatically.",
-  "dex": 81
+  "dex": 95
  },
  {
   "id": "argocd",
@@ -2131,7 +2495,33 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://argo-cd.readthedocs.io/en/stable/getting_started/",
   "added": "2026-06-08",
   "eli5": "A robot that watches Git and keeps your cluster looking exactly like the blueprint.",
-  "dex": 82
+  "dex": 96
+ },
+ {
+  "id": "azure-devops",
+  "name": "Azure DevOps",
+  "category": "Platform",
+  "domain": "CI/CD",
+  "eli5": "Microsoft's all-in-one project tracker, code host, and pipeline runner — like GitHub + Jenkins bundled together.",
+  "description": "Microsoft's integrated DevOps platform: Boards (project tracking), Repos (Git hosting), Pipelines (CI/CD), Test Plans, and Artifacts (package registry). Common in enterprises already using Microsoft tooling. Pipelines support any cloud and self-hosted agents.",
+  "use_cases": [
+   "CI/CD pipelines for .NET, Java, Python, Node via YAML or classic editor",
+   "Azure Boards for Agile/Scrum sprint planning and work item tracking",
+   "Azure Artifacts for NuGet, npm, Maven, Python, and Universal packages",
+   "Self-hosted agents in VNets for builds needing private network access",
+   "Integration with GitHub for source control while using Azure Pipelines for CI/CD"
+  ],
+  "used_by": [
+   "Microsoft",
+   "HP",
+   "3M",
+   "Accenture",
+   "Progressive Insurance"
+  ],
+  "docs": "https://learn.microsoft.com/en-us/azure/devops/",
+  "tutorial": "https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/pipelines-get-started",
+  "added": "2026-06-08",
+  "dex": 97
  },
  {
   "id": "circleci",
@@ -2157,7 +2547,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://circleci.com/docs/",
   "tutorial": "https://circleci.com/docs/getting-started/",
   "added": "2026-06-08",
-  "dex": 83
+  "dex": 98
  },
  {
   "id": "flux-cd",
@@ -2183,7 +2573,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://fluxcd.io/flux/",
   "tutorial": "https://fluxcd.io/flux/get-started/",
   "added": "2026-06-08",
-  "dex": 84
+  "dex": 99
  },
  {
   "id": "github-actions",
@@ -2209,7 +2599,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://docs.github.com/en/actions/quickstart",
   "added": "2026-06-08",
   "eli5": "A helper that automatically does chores (tests, deploys) whenever you push code.",
-  "dex": 85
+  "dex": 100
  },
  {
   "id": "gitlab-ci",
@@ -2235,7 +2625,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://docs.gitlab.com/ee/ci/",
   "tutorial": "https://docs.gitlab.com/ee/ci/quick_start/",
   "added": "2026-06-08",
-  "dex": 86
+  "dex": 101
  },
  {
   "id": "jenkins",
@@ -2261,7 +2651,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://www.jenkins.io/doc/pipeline/tour/getting-started/",
   "added": "2026-06-08",
   "eli5": "A robot that builds and tests your code every time you save a change.",
-  "dex": 87
+  "dex": 102
  },
  {
   "id": "tekton",
@@ -2287,7 +2677,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://tekton.dev/docs/",
   "tutorial": "https://tekton.dev/docs/getting-started/",
   "added": "2026-06-08",
-  "dex": 88
+  "dex": 103
  },
  {
   "id": "aws-iam",
@@ -2309,7 +2699,32 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://docs.aws.amazon.com/IAM/latest/UserGuide/getting-started.html",
   "added": "2026-06-08",
   "eli5": "The bouncer who checks IDs and decides who gets into which room.",
-  "dex": 89
+  "dex": 104
+ },
+ {
+  "id": "azure-entra-id",
+  "name": "Azure Entra ID",
+  "category": "Platform",
+  "domain": "Identity",
+  "eli5": "Microsoft's bouncer that remembers all your company's employees and lets them into all the apps with one password.",
+  "description": "Microsoft's cloud identity platform (formerly Azure Active Directory). Enterprise SSO, MFA, conditional access, and B2B/B2C identity for 500M+ users. The identity backbone of Microsoft 365, Azure, and thousands of SaaS apps. OIDC/SAML/OAuth2 federation hub.",
+  "use_cases": [
+   "Enterprise SSO across Microsoft 365, Azure, and 3000+ pre-integrated SaaS apps",
+   "Conditional access policies: enforce MFA based on user, location, device risk",
+   "B2B collaboration: external partners access internal apps with their own credentials",
+   "B2C identity: customer-facing app login with social providers (Google, Facebook)",
+   "Workload identity federation for GitHub Actions and Kubernetes to access Azure"
+  ],
+  "used_by": [
+   "Fortune 500 companies",
+   "Government agencies",
+   "Universities",
+   "Healthcare systems"
+  ],
+  "docs": "https://learn.microsoft.com/en-us/entra/identity/",
+  "tutorial": "https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-web-app-sign-in",
+  "added": "2026-06-08",
+  "dex": 105
  },
  {
   "id": "keycloak",
@@ -2335,7 +2750,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://www.keycloak.org/getting-started/getting-started-docker",
   "added": "2026-06-08",
   "eli5": "One front door for all your apps — log in once, get into everything.",
-  "dex": 90
+  "dex": 106
  },
  {
   "id": "spiffe",
@@ -2361,6 +2776,6 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://spiffe.io/docs/latest/try/getting-started-linux-macos-x/",
   "added": "2026-06-08",
   "eli5": "An ID card factory that gives every microservice a passport so they trust each other.",
-  "dex": 91
+  "dex": 107
  }
 ];

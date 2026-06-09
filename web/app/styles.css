@@ -83,7 +83,8 @@ a { color: inherit; }
   background: var(--panel);
   position: sticky; top: 0; z-index: 40;
 }
-.brand { display: flex; align-items: baseline; gap: 9px; flex-shrink: 0; user-select: none; }
+.brand { display: flex; align-items: center; gap: 9px; flex-shrink: 0; user-select: none; }
+.brand-icon { width: 28px; height: 28px; display: block; flex-shrink: 0; }
 .brand .bolt { color: var(--accent); font-size: 1.15em; }
 .brand .nm { font-weight: 700; letter-spacing: .04em; font-size: 1.3rem; }
 .brand .nm b { color: var(--accent); }

@@ -1,6 +1,5 @@
 # ⚡ TechDex
 
-Personal Pokédex for tools, technologies, frameworks and concepts — encountered, logged, and ready to reference.
 
 ---
 

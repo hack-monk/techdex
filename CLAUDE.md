@@ -1,7 +1,7 @@
 # Claude Code Instructions — TechDex
 
 ## What this repo is
-Personal Pokédex for tools and technologies (repo: techdex). `entries.json` is the source of truth. `README.md` is auto-generated — never edit it directly. `entries.json` is the source of truth. `README.md` is auto-generated — never edit it directly.
+Catalog of tools and technologies (repo: techdex). `entries.json` is the source of truth. `README.md` and `web/data/entries.js` are auto-generated — never edit them directly.
 
 ## Adding a new entry
 1. Open `entries.json`

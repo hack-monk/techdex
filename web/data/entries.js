@@ -1510,6 +1510,290 @@ window.TECHDEX_ENTRIES = [
   "dex": 59
  },
  {
+  "id": "cuda",
+  "name": "CUDA",
+  "category": "Platform",
+  "domain": "AI/ML",
+  "eli5": "Like a highway system that lets your graphics card do thousands of math problems at the same time instead of one at a time.",
+  "description": "NVIDIA's parallel computing platform and programming model that enables GPU-accelerated computation. Underpins virtually all deep learning training and inference workloads by exposing thousands of GPU cores to general-purpose code.",
+  "use_cases": [
+   "Accelerate neural network training with GPU parallelism",
+   "Run matrix multiplications and tensor operations orders of magnitude faster than CPU",
+   "Custom GPU kernels for novel model architectures",
+   "Inference acceleration for large language models",
+   "Scientific simulations and HPC workloads"
+  ],
+  "used_by": [
+   "OpenAI",
+   "Google DeepMind",
+   "Meta AI",
+   "Hugging Face",
+   "NVIDIA"
+  ],
+  "docs": "https://docs.nvidia.com/cuda/",
+  "tutorial": "https://docs.nvidia.com/cuda/cuda-c-programming-guide/",
+  "added": "2026-06-10",
+  "dex": 60
+ },
+ {
+  "id": "hugging-face",
+  "name": "Hugging Face",
+  "category": "Platform",
+  "domain": "AI/ML",
+  "eli5": "Like GitHub but for AI models — a place where people share, find, and use thousands of ready-made AI brains for free.",
+  "description": "Central hub for open-source ML models, datasets, and Spaces (hosted demos). Hosts the Transformers library — the standard API for loading and running pretrained models — plus model cards, leaderboards, and hosted inference.",
+  "use_cases": [
+   "Browse and download 500k+ pretrained models for NLP, CV, audio",
+   "Fine-tune models with the Trainer API and PEFT/LoRA",
+   "Host and share ML demos with Gradio Spaces",
+   "Dataset versioning and sharing with datasets library",
+   "Inference endpoints for serverless model hosting"
+  ],
+  "used_by": [
+   "Google",
+   "Meta",
+   "Amazon",
+   "Microsoft",
+   "Mistral AI"
+  ],
+  "docs": "https://huggingface.co/docs",
+  "tutorial": "https://huggingface.co/learn",
+  "added": "2026-06-10",
+  "dex": 61
+ },
+ {
+  "id": "langchain",
+  "name": "LangChain",
+  "category": "Framework",
+  "domain": "AI/ML",
+  "eli5": "A toolbox for connecting an AI brain to the real world — like giving it the ability to search the web, read files, or use a calculator.",
+  "description": "Framework for building LLM-powered applications with composable chains, agents, and tool integrations. Provides abstractions for retrieval-augmented generation (RAG), memory, and multi-step agentic workflows across model providers.",
+  "use_cases": [
+   "Build RAG pipelines connecting LLMs to vector databases",
+   "Create autonomous agents that use tools and APIs",
+   "Chain multiple LLM calls into structured workflows",
+   "Standardize prompt templates and output parsers",
+   "Evaluate and trace LLM applications with LangSmith"
+  ],
+  "used_by": [
+   "Airbnb",
+   "Elastic",
+   "Rakuten",
+   "McKinsey",
+   "Riot Games"
+  ],
+  "docs": "https://python.langchain.com/docs/",
+  "tutorial": "https://python.langchain.com/docs/tutorials/",
+  "added": "2026-06-10",
+  "dex": 62
+ },
+ {
+  "id": "mlflow",
+  "name": "MLflow",
+  "category": "Tool",
+  "domain": "AI/ML",
+  "eli5": "A lab notebook for AI experiments — it automatically records what ingredients you used, what settings you tried, and how well each experiment worked.",
+  "description": "Open-source MLOps platform for tracking experiments, packaging models, and managing the ML lifecycle. Provides a UI for comparing runs, a model registry for versioning, and deployment tools across frameworks.",
+  "use_cases": [
+   "Track hyperparameters, metrics, and artifacts across training runs",
+   "Register and version models for staging and production promotion",
+   "Reproduce any experiment from stored parameters and code",
+   "Serve models with mlflow models serve or to Kubernetes",
+   "Integrate with PyTorch, TensorFlow, sklearn, and XGBoost"
+  ],
+  "used_by": [
+   "Databricks",
+   "Microsoft",
+   "LinkedIn",
+   "Accenture",
+   "Zillow"
+  ],
+  "docs": "https://mlflow.org/docs/latest/",
+  "tutorial": "https://mlflow.org/docs/latest/getting-started/",
+  "added": "2026-06-10",
+  "dex": 63
+ },
+ {
+  "id": "ollama",
+  "name": "Ollama",
+  "category": "Tool",
+  "domain": "AI/ML",
+  "eli5": "Like Docker but for AI models — type one command and a full AI brain runs on your own laptop without sending data to anyone.",
+  "description": "CLI tool and local server for running open-source LLMs entirely on your own hardware. Handles model downloads, quantization, and provides an OpenAI-compatible API, making local inference approachable for developers.",
+  "use_cases": [
+   "Run Llama, Mistral, Gemma locally with one command",
+   "Privacy-first AI without data leaving your machine",
+   "Offline development and testing of LLM applications",
+   "Rapid model switching and comparison",
+   "Self-hosted AI for enterprise air-gapped environments"
+  ],
+  "used_by": [
+   "Individual developers",
+   "Privacy-focused enterprises",
+   "AI hobbyists"
+  ],
+  "docs": "https://ollama.com/",
+  "tutorial": "https://github.com/ollama/ollama",
+  "added": "2026-06-10",
+  "dex": 64
+ },
+ {
+  "id": "onnx",
+  "name": "ONNX",
+  "category": "Concept",
+  "domain": "AI/ML",
+  "eli5": "A universal translator for AI models — lets a model trained in one AI toolkit run in a completely different one without starting over.",
+  "description": "Open Neural Network Exchange — an open standard for representing ML models. Enables interoperability between frameworks (PyTorch, TensorFlow, sklearn) and runtimes (ONNX Runtime, TensorRT, CoreML) for portable, optimized inference.",
+  "use_cases": [
+   "Export PyTorch models and run them with ONNX Runtime for faster CPU inference",
+   "Deploy models to edge and mobile (CoreML, TFLite via conversion)",
+   "Hardware-agnostic model optimization with ORT execution providers",
+   "Cross-framework model sharing and reproducibility",
+   "Visualize model graphs with Netron"
+  ],
+  "used_by": [
+   "Microsoft",
+   "NVIDIA",
+   "Intel",
+   "Qualcomm",
+   "AMD"
+  ],
+  "docs": "https://onnx.ai/",
+  "tutorial": "https://onnxruntime.ai/docs/get-started/",
+  "added": "2026-06-10",
+  "dex": 65
+ },
+ {
+  "id": "pytorch",
+  "name": "PyTorch",
+  "category": "Framework",
+  "domain": "AI/ML",
+  "eli5": "A Lego kit for building and training AI brains — you snap pieces together and it figures out how to teach itself from examples.",
+  "description": "Open-source deep learning framework by Meta AI with dynamic computation graphs and Pythonic ergonomics. The dominant choice for ML research and increasingly for production, powering most frontier model development.",
+  "use_cases": [
+   "Train large language models and transformers from scratch",
+   "Fine-tune pretrained models on custom datasets",
+   "Research new architectures with dynamic graphs and eager execution",
+   "Multi-GPU and distributed training with FSDP and DDP",
+   "Export models to TorchScript or ONNX for deployment"
+  ],
+  "used_by": [
+   "Meta",
+   "OpenAI",
+   "Hugging Face",
+   "Tesla",
+   "Microsoft"
+  ],
+  "docs": "https://pytorch.org/docs/",
+  "tutorial": "https://pytorch.org/tutorials/",
+  "added": "2026-06-10",
+  "dex": 66
+ },
+ {
+  "id": "ray",
+  "name": "Ray",
+  "category": "Framework",
+  "domain": "AI/ML",
+  "eli5": "Like a factory manager for AI work — it splits a huge job across many computers and makes sure everything gets done in the right order.",
+  "description": "Open-source distributed computing framework for scaling Python and ML workloads from a laptop to a cluster. Core of the Ray AI Runtime (AIR) — includes Ray Train, Tune, Serve, and Data for end-to-end ML pipelines.",
+  "use_cases": [
+   "Distributed LLM training across hundreds of GPUs",
+   "Hyperparameter tuning at scale with Ray Tune",
+   "Production model serving with Ray Serve and autoscaling",
+   "Parallel data preprocessing pipelines with Ray Data",
+   "Reinforcement learning with RLlib"
+  ],
+  "used_by": [
+   "Shopify",
+   "Uber",
+   "OpenAI",
+   "Cohere",
+   "Instacart"
+  ],
+  "docs": "https://docs.ray.io/",
+  "tutorial": "https://docs.ray.io/en/latest/ray-overview/getting-started.html",
+  "added": "2026-06-10",
+  "dex": 67
+ },
+ {
+  "id": "rocm",
+  "name": "ROCm",
+  "category": "Platform",
+  "domain": "AI/ML",
+  "eli5": "AMD's answer to NVIDIA's CUDA — lets you use AMD graphics cards to train and run AI models, like using a different brand of engine in the same race car.",
+  "description": "AMD's open-source GPU computing platform, providing a full software stack (HIP, MIOpen, rocBLAS) for running ML workloads on AMD GPUs. HIP allows near-direct CUDA code porting to AMD hardware.",
+  "use_cases": [
+   "Train PyTorch and TensorFlow models on AMD Instinct GPUs",
+   "Port CUDA codebases to AMD hardware with HIP",
+   "Run vLLM and Hugging Face models on AMD MI300X clusters",
+   "Cost-competitive alternative to NVIDIA for HPC and ML",
+   "Open-source ML infrastructure without CUDA vendor lock-in"
+  ],
+  "used_by": [
+   "AMD",
+   "Microsoft Azure",
+   "Oracle Cloud",
+   "HPE",
+   "Meta"
+  ],
+  "docs": "https://rocm.docs.amd.com/",
+  "tutorial": "https://rocm.docs.amd.com/en/latest/tutorial/quick-start.html",
+  "added": "2026-06-10",
+  "dex": 68
+ },
+ {
+  "id": "tensorrt",
+  "name": "TensorRT",
+  "category": "Tool",
+  "domain": "AI/ML",
+  "eli5": "A turbocharger for AI models on NVIDIA GPUs — it restructures and compresses the AI so it runs much faster without losing accuracy.",
+  "description": "NVIDIA SDK for high-performance deep learning inference. Optimizes trained models via layer fusion, precision calibration (FP16/INT8), and kernel auto-tuning to minimize latency and maximize GPU throughput at inference time.",
+  "use_cases": [
+   "Reduce LLM and vision model latency for real-time applications",
+   "INT8/FP16 quantization with accuracy calibration",
+   "Deploy optimized models to Jetson edge devices",
+   "Integrate with Triton for production inference pipelines",
+   "Accelerate NLP, CV, and recommendation models"
+  ],
+  "used_by": [
+   "NVIDIA",
+   "Tesla",
+   "Mercedes-Benz",
+   "Salesforce",
+   "Adobe"
+  ],
+  "docs": "https://docs.nvidia.com/deeplearning/tensorrt/",
+  "tutorial": "https://docs.nvidia.com/deeplearning/tensorrt/quick-start-guide/",
+  "added": "2026-06-10",
+  "dex": 69
+ },
+ {
+  "id": "triton-inference-server",
+  "name": "Triton Inference Server",
+  "category": "Tool",
+  "domain": "AI/ML",
+  "eli5": "A professional delivery system for AI models — it takes requests from many users and routes them to the right AI model as fast as possible.",
+  "description": "NVIDIA's open-source inference serving platform supporting multiple ML frameworks (TensorRT, PyTorch, ONNX, TensorFlow) with dynamic batching, model ensembles, and GPU/CPU scheduling optimized for production deployments.",
+  "use_cases": [
+   "Serve multiple model frameworks from a single server",
+   "Dynamic batching to maximize GPU throughput",
+   "Model ensemble pipelines for multi-stage inference",
+   "gRPC and HTTP endpoints with metrics for Prometheus",
+   "Model versioning and A/B testing in production"
+  ],
+  "used_by": [
+   "NVIDIA",
+   "AWS",
+   "Microsoft",
+   "Waymo",
+   "Comcast"
+  ],
+  "docs": "https://docs.nvidia.com/deeplearning/triton-inference-server/",
+  "tutorial": "https://github.com/triton-inference-server/server/blob/main/docs/getting_started/quickstart.md",
+  "added": "2026-06-10",
+  "dex": 70
+ },
+ {
   "id": "vertex-ai",
   "name": "Vertex AI",
   "category": "Platform",
@@ -1533,7 +1817,33 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://cloud.google.com/vertex-ai/docs",
   "tutorial": "https://cloud.google.com/vertex-ai/docs/start/introduction-unified-platform",
   "added": "2026-06-08",
-  "dex": 60
+  "dex": 71
+ },
+ {
+  "id": "vllm",
+  "name": "vLLM",
+  "category": "Tool",
+  "domain": "AI/ML",
+  "eli5": "A super-efficient waiter for AI models — it batches everyone's requests together so the AI can answer many people at once instead of one at a time.",
+  "description": "High-throughput and memory-efficient LLM inference and serving engine. Uses PagedAttention to manage GPU KV-cache like virtual memory, dramatically increasing serving throughput vs. naive implementations.",
+  "use_cases": [
+   "Serve open-source LLMs (Llama, Mistral, Qwen) at production scale",
+   "OpenAI-compatible API endpoint for self-hosted models",
+   "Continuous batching to maximize GPU utilization",
+   "Speculative decoding for faster token generation",
+   "Multi-LoRA serving to host many fine-tuned model variants on one GPU"
+  ],
+  "used_by": [
+   "Mistral AI",
+   "Together AI",
+   "Anyscale",
+   "Replicate",
+   "Nvidia"
+  ],
+  "docs": "https://docs.vllm.ai/",
+  "tutorial": "https://docs.vllm.ai/en/latest/getting_started/quickstart.html",
+  "added": "2026-06-10",
+  "dex": 72
  },
  {
   "id": "aws-cloudwatch",
@@ -1555,7 +1865,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/GettingStarted.html",
   "added": "2026-06-08",
   "eli5": "A security camera and alarm system for everything in your AWS house.",
-  "dex": 61
+  "dex": 73
  },
  {
   "id": "datadog",
@@ -1581,7 +1891,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://docs.datadoghq.com/getting_started/",
   "added": "2026-06-08",
   "eli5": "A dashboard showing every heartbeat of your apps and servers, all in one place.",
-  "dex": 62
+  "dex": 74
  },
  {
   "id": "dynatrace",
@@ -1607,7 +1917,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://docs.dynatrace.com/docs/get-started",
   "added": "2026-06-08",
   "eli5": "A smart robot that watches your whole app and spots problems before you do.",
-  "dex": 63
+  "dex": 75
  },
  {
   "id": "elk-stack",
@@ -1633,7 +1943,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://www.elastic.co/guide/en/elasticsearch/reference/current/getting-started.html",
   "added": "2026-06-08",
   "eli5": "A giant diary plus search engine for all your app's log messages.",
-  "dex": 64
+  "dex": 76
  },
  {
   "id": "grafana",
@@ -1659,7 +1969,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://grafana.com/docs/grafana/latest/getting-started/build-first-dashboard/",
   "added": "2026-06-08",
   "eli5": "Pretty charts built from Prometheus's notebook so humans can understand things.",
-  "dex": 65
+  "dex": 77
  },
  {
   "id": "jaeger",
@@ -1685,7 +1995,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://www.jaegertracing.io/docs/latest/getting-started/",
   "added": "2026-06-08",
   "eli5": "A detective that follows a request through all your services to find where it slowed down.",
-  "dex": 66
+  "dex": 78
  },
  {
   "id": "new-relic",
@@ -1711,7 +2021,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://docs.newrelic.com/docs/new-relic-solutions/get-started/intro-new-relic/",
   "added": "2026-06-08",
   "eli5": "A doctor for your app — checks its health and explains when and why it got sick.",
-  "dex": 67
+  "dex": 79
  },
  {
   "id": "opentelemetry",
@@ -1738,7 +2048,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://opentelemetry.io/docs/getting-started/",
   "added": "2026-06-08",
   "eli5": "A universal plug that sends your app's health data to any monitoring tool you like.",
-  "dex": 68
+  "dex": 80
  },
  {
   "id": "pagerduty",
@@ -1765,7 +2075,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://support.pagerduty.com/docs/introduction",
   "added": "2026-06-08",
   "eli5": "An alarm clock that wakes up the right engineer when something breaks at 3am.",
-  "dex": 69
+  "dex": 81
  },
  {
   "id": "prometheus",
@@ -1791,7 +2101,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://prometheus.io/docs/prometheus/latest/getting_started/",
   "added": "2026-06-08",
   "eli5": "A notebook that writes down how your app is doing every few seconds.",
-  "dex": 70
+  "dex": 82
  },
  {
   "id": "sentry",
@@ -1818,7 +2128,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://docs.sentry.io/platforms/",
   "added": "2026-06-08",
   "eli5": "A bug catcher that tells you exactly when, where, and why your app crashed.",
-  "dex": 71
+  "dex": 83
  },
  {
   "id": "splunk",
@@ -1844,7 +2154,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://docs.splunk.com/Documentation/Splunk/latest/SearchTutorial/WelcometotheSearchTutorial",
   "added": "2026-06-08",
   "eli5": "Google for your logs — find anything in billions of log lines instantly.",
-  "dex": 72
+  "dex": 84
  },
  {
   "id": "aws-kms",
@@ -1868,7 +2178,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://docs.aws.amazon.com/kms/latest/developerguide/getting-started.html",
   "added": "2026-06-08",
   "eli5": "A bank vault for your secret keys — lets you use them but never hands them over.",
-  "dex": 73
+  "dex": 85
  },
  {
   "id": "cert-manager",
@@ -1890,7 +2200,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://cert-manager.io/docs/tutorials/acme/nginx-ingress/",
   "added": "2026-06-08",
   "eli5": "A robot that renews your HTTPS padlock automatically before it ever expires.",
-  "dex": 74
+  "dex": 86
  },
  {
   "id": "falco",
@@ -1916,7 +2226,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://falco.org/docs/getting-started/",
   "added": "2026-06-08",
   "eli5": "A smoke detector for containers — screams if something suspicious happens inside.",
-  "dex": 75
+  "dex": 87
  },
  {
   "id": "hashicorp-vault",
@@ -1942,7 +2252,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://developer.hashicorp.com/vault/tutorials/getting-started",
   "added": "2026-06-08",
   "eli5": "A really secure safe for all your passwords — only gives them to people it trusts.",
-  "dex": 76
+  "dex": 88
  },
  {
   "id": "opa",
@@ -1968,7 +2278,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://www.openpolicyagent.org/docs/latest/#running-opa",
   "added": "2026-06-08",
   "eli5": "A rulebook apps must check before doing anything: 'Am I allowed to do this?'",
-  "dex": 77
+  "dex": 89
  },
  {
   "id": "snyk",
@@ -1994,7 +2304,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://docs.snyk.io/getting-started",
   "added": "2026-06-08",
   "eli5": "A spell-checker for security — finds dangerous ingredients in your code's recipe.",
-  "dex": 78
+  "dex": 90
  },
  {
   "id": "trivy",
@@ -2019,7 +2329,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://aquasecurity.github.io/trivy/latest/getting-started/installation/",
   "added": "2026-06-08",
   "eli5": "An X-ray machine for containers that finds hidden diseases (security holes) inside.",
-  "dex": 79
+  "dex": 91
  },
  {
   "id": "apache-airflow",
@@ -2046,7 +2356,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://airflow.apache.org/docs/apache-airflow/stable/tutorial/index.html",
   "added": "2026-06-08",
   "eli5": "A chore chart that runs your data jobs in the right order at the right time.",
-  "dex": 80
+  "dex": 92
  },
  {
   "id": "apache-spark",
@@ -2073,7 +2383,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://spark.apache.org/docs/latest/quick-start.html",
   "added": "2026-06-08",
   "eli5": "A team of workers that splits a huge data pile and processes all of it at once.",
-  "dex": 81
+  "dex": 93
  },
  {
   "id": "bigquery",
@@ -2099,7 +2409,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://cloud.google.com/bigquery/docs",
   "tutorial": "https://cloud.google.com/bigquery/docs/quickstarts/load-data-console",
   "added": "2026-06-08",
-  "dex": 82
+  "dex": 94
  },
  {
   "id": "databricks",
@@ -2125,7 +2435,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://docs.databricks.com/en/getting-started/index.html",
   "added": "2026-06-08",
   "eli5": "A giant playground where data people crunch huge piles of data together.",
-  "dex": 83
+  "dex": 95
  },
  {
   "id": "dbt",
@@ -2151,7 +2461,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://docs.getdbt.com/guides",
   "added": "2026-06-08",
   "eli5": "A chef that turns raw data ingredients into clean, tested, ready-to-serve dishes.",
-  "dex": 84
+  "dex": 96
  },
  {
   "id": "snowflake",
@@ -2178,7 +2488,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://docs.snowflake.com/en/user-guide/tutorials/tasty-bytes-introduction",
   "added": "2026-06-08",
   "eli5": "A shared spreadsheet in the cloud that gets more powerful when you need it.",
-  "dex": 85
+  "dex": 97
  },
  {
   "id": "angular",
@@ -2205,7 +2515,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://angular.dev/tutorials/learn-angular",
   "added": "2026-06-08",
   "eli5": "A complete workshop for building big websites — Google made it with strict rules.",
-  "dex": 86
+  "dex": 98
  },
  {
   "id": "nextjs",
@@ -2232,7 +2542,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://nextjs.org/learn",
   "added": "2026-06-08",
   "eli5": "React with superpowers — handles the boring stuff so you just build cool features.",
-  "dex": 87
+  "dex": 99
  },
  {
   "id": "react",
@@ -2259,7 +2569,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://react.dev/learn",
   "added": "2026-06-08",
   "eli5": "Lego blocks for websites — build pieces and snap them together into a full page.",
-  "dex": 88
+  "dex": 100
  },
  {
   "id": "tailwind-css",
@@ -2286,7 +2596,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://tailwindcss.com/docs/installation",
   "added": "2026-06-08",
   "eli5": "Pre-mixed paint colors for your website — pick from a palette instead of mixing yourself.",
-  "dex": 89
+  "dex": 101
  },
  {
   "id": "typescript",
@@ -2313,7 +2623,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://www.typescriptlang.org/docs/",
   "tutorial": "https://www.typescriptlang.org/docs/handbook/intro.html",
   "added": "2026-06-08",
-  "dex": 90
+  "dex": 102
  },
  {
   "id": "vue",
@@ -2340,7 +2650,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://vuejs.org/tutorial/",
   "added": "2026-06-08",
   "eli5": "A friendlier version of React — easier to pick up, still very powerful.",
-  "dex": 91
+  "dex": 103
  },
  {
   "id": "fastapi",
@@ -2366,7 +2676,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://fastapi.tiangolo.com/tutorial/",
   "added": "2026-06-08",
   "eli5": "A super-fast waiter that takes requests from users and brings back exactly what they asked.",
-  "dex": 92
+  "dex": 104
  },
  {
   "id": "go",
@@ -2393,7 +2703,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://go.dev/doc/",
   "tutorial": "https://go.dev/tour/welcome/1",
   "added": "2026-06-08",
-  "dex": 93
+  "dex": 105
  },
  {
   "id": "grpc",
@@ -2420,7 +2730,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://grpc.io/docs/languages/go/quickstart/",
   "added": "2026-06-08",
   "eli5": "Two apps talking in a secret, super-fast language only they understand.",
-  "dex": 94
+  "dex": 106
  },
  {
   "id": "java",
@@ -2447,7 +2757,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://docs.oracle.com/en/java/",
   "tutorial": "https://dev.java/learn/",
   "added": "2026-06-08",
-  "dex": 95
+  "dex": 107
  },
  {
   "id": "kotlin",
@@ -2474,7 +2784,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://kotlinlang.org/docs/home.html",
   "tutorial": "https://kotlinlang.org/docs/getting-started.html",
   "added": "2026-06-08",
-  "dex": 96
+  "dex": 108
  },
  {
   "id": "python",
@@ -2501,7 +2811,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://docs.python.org/3/",
   "tutorial": "https://docs.python.org/3/tutorial/",
   "added": "2026-06-08",
-  "dex": 97
+  "dex": 109
  },
  {
   "id": "rust",
@@ -2528,7 +2838,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://doc.rust-lang.org/book/",
   "tutorial": "https://rustlings.cool/",
   "added": "2026-06-08",
-  "dex": 98
+  "dex": 110
  },
  {
   "id": "apache-kafka",
@@ -2556,7 +2866,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://kafka.apache.org/quickstart",
   "added": "2026-06-08",
   "eli5": "A conveyor belt that carries messages between apps without dropping any.",
-  "dex": 99
+  "dex": 111
  },
  {
   "id": "cloud-pubsub",
@@ -2582,7 +2892,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://cloud.google.com/pubsub/docs",
   "tutorial": "https://cloud.google.com/pubsub/docs/publish-receive-messages-console",
   "added": "2026-06-08",
-  "dex": 100
+  "dex": 112
  },
  {
   "id": "rabbitmq",
@@ -2608,7 +2918,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://www.rabbitmq.com/tutorials",
   "added": "2026-06-08",
   "eli5": "A post office — apps drop letters in, other apps pick them up later.",
-  "dex": 101
+  "dex": 113
  },
  {
   "id": "aws-s3",
@@ -2634,7 +2944,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/GetStartedWithS3.html",
   "added": "2026-06-08",
   "eli5": "A magic box that holds unlimited files and never loses them.",
-  "dex": 102
+  "dex": 114
  },
  {
   "id": "azure-blob",
@@ -2660,7 +2970,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://learn.microsoft.com/en-us/azure/storage/blobs/",
   "tutorial": "https://learn.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal",
   "added": "2026-06-08",
-  "dex": 103
+  "dex": 115
  },
  {
   "id": "gcs",
@@ -2686,7 +2996,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://cloud.google.com/storage/docs",
   "tutorial": "https://cloud.google.com/storage/docs/quickstart-console",
   "added": "2026-06-08",
-  "dex": 104
+  "dex": 116
  },
  {
   "id": "argo-workflows",
@@ -2712,7 +3022,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://argo-workflows.readthedocs.io/en/latest/quick-start/",
   "added": "2026-06-08",
   "eli5": "A flowchart that runs jobs on Kubernetes in the right order, automatically.",
-  "dex": 105
+  "dex": 117
  },
  {
   "id": "argocd",
@@ -2738,7 +3048,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://argo-cd.readthedocs.io/en/stable/getting_started/",
   "added": "2026-06-08",
   "eli5": "A robot that watches Git and keeps your cluster looking exactly like the blueprint.",
-  "dex": 106
+  "dex": 118
  },
  {
   "id": "azure-devops",
@@ -2764,7 +3074,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://learn.microsoft.com/en-us/azure/devops/",
   "tutorial": "https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/pipelines-get-started",
   "added": "2026-06-08",
-  "dex": 107
+  "dex": 119
  },
  {
   "id": "circleci",
@@ -2790,7 +3100,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://circleci.com/docs/",
   "tutorial": "https://circleci.com/docs/getting-started/",
   "added": "2026-06-08",
-  "dex": 108
+  "dex": 120
  },
  {
   "id": "flux-cd",
@@ -2816,7 +3126,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://fluxcd.io/flux/",
   "tutorial": "https://fluxcd.io/flux/get-started/",
   "added": "2026-06-08",
-  "dex": 109
+  "dex": 121
  },
  {
   "id": "github-actions",
@@ -2842,7 +3152,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://docs.github.com/en/actions/quickstart",
   "added": "2026-06-08",
   "eli5": "A helper that automatically does chores (tests, deploys) whenever you push code.",
-  "dex": 110
+  "dex": 122
  },
  {
   "id": "gitlab-ci",
@@ -2868,7 +3178,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://docs.gitlab.com/ee/ci/",
   "tutorial": "https://docs.gitlab.com/ee/ci/quick_start/",
   "added": "2026-06-08",
-  "dex": 111
+  "dex": 123
  },
  {
   "id": "jenkins",
@@ -2894,7 +3204,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://www.jenkins.io/doc/pipeline/tour/getting-started/",
   "added": "2026-06-08",
   "eli5": "A robot that builds and tests your code every time you save a change.",
-  "dex": 112
+  "dex": 124
  },
  {
   "id": "tekton",
@@ -2920,7 +3230,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://tekton.dev/docs/",
   "tutorial": "https://tekton.dev/docs/getting-started/",
   "added": "2026-06-08",
-  "dex": 113
+  "dex": 125
  },
  {
   "id": "aws-iam",
@@ -2942,7 +3252,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://docs.aws.amazon.com/IAM/latest/UserGuide/getting-started.html",
   "added": "2026-06-08",
   "eli5": "The bouncer who checks IDs and decides who gets into which room.",
-  "dex": 114
+  "dex": 126
  },
  {
   "id": "azure-entra-id",
@@ -2967,7 +3277,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://learn.microsoft.com/en-us/entra/identity/",
   "tutorial": "https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-web-app-sign-in",
   "added": "2026-06-08",
-  "dex": 115
+  "dex": 127
  },
  {
   "id": "keycloak",
@@ -2993,7 +3303,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://www.keycloak.org/getting-started/getting-started-docker",
   "added": "2026-06-08",
   "eli5": "One front door for all your apps — log in once, get into everything.",
-  "dex": 116
+  "dex": 128
  },
  {
   "id": "spiffe",
@@ -3019,6 +3329,6 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://spiffe.io/docs/latest/try/getting-started-linux-macos-x/",
   "added": "2026-06-08",
   "eli5": "An ID card factory that gives every microservice a passport so they trust each other.",
-  "dex": 117
+  "dex": 129
  }
 ];

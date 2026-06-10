@@ -2684,7 +2684,12 @@
       "Generate and rotate cluster certificates",
       "Serve as the foundation layer for higher-level tools like Kubespray and Cluster API"
     ],
-    "used_by": ["Red Hat", "Canonical", "VMware", "Self-hosted Kubernetes operators"],
+    "used_by": [
+      "Red Hat",
+      "Canonical",
+      "VMware",
+      "Self-hosted Kubernetes operators"
+    ],
     "docs": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/",
     "tutorial": "https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/create-cluster-kubeadm/",
     "added": "2026-06-09"
@@ -2703,7 +2708,12 @@
       "Air-gapped cluster installs for regulated environments",
       "Day-2 operations: add nodes, rotate certs, drain and decommission"
     ],
-    "used_by": ["CERN", "Cloudflare", "Deutsche Telekom", "On-prem Kubernetes teams"],
+    "used_by": [
+      "CERN",
+      "Cloudflare",
+      "Deutsche Telekom",
+      "On-prem Kubernetes teams"
+    ],
     "docs": "https://kubespray.io/",
     "tutorial": "https://github.com/kubernetes-sigs/kubespray/blob/master/docs/getting_started/setting-up-your-first-cluster.md",
     "added": "2026-06-09"
@@ -2713,7 +2723,7 @@
     "name": "KubeOps",
     "category": "Framework",
     "domain": "DevOps",
-    "eli5": "A toolkit for .NET developers that lets them write Kubernetes operators — programs that automatically manage other programs running in a cluster — using C# instead of Go.",
+    "eli5": "A toolkit for .NET developers that lets them write Kubernetes operators \u2014 programs that automatically manage other programs running in a cluster \u2014 using C# instead of Go.",
     "description": "Kubernetes operator SDK for .NET/C#. Provides code-generation, reconciliation loops, CRD scaffolding, and webhook support so .NET teams can build production operators without leaving the C# ecosystem.",
     "use_cases": [
       "Build Kubernetes operators and controllers in C# for .NET-native teams",
@@ -2722,7 +2732,10 @@
       "Define validating and mutating admission webhooks in C#",
       "Automate lifecycle management of complex stateful .NET workloads on Kubernetes"
     ],
-    "used_by": ["Microsoft ecosystem teams", ".NET Kubernetes adopters"],
+    "used_by": [
+      "Microsoft ecosystem teams",
+      ".NET Kubernetes adopters"
+    ],
     "docs": "https://buehler.github.io/dotnet-operator-sdk/",
     "tutorial": "https://buehler.github.io/dotnet-operator-sdk/docs/getting-started",
     "added": "2026-06-09"
@@ -2741,7 +2754,11 @@
       "Testing Helm charts and operators locally",
       "Rapid iteration on containerized microservices"
     ],
-    "used_by": ["Individual developers", "Platform engineering teams", "Kubernetes learners"],
+    "used_by": [
+      "Individual developers",
+      "Platform engineering teams",
+      "Kubernetes learners"
+    ],
     "docs": "https://minikube.sigs.k8s.io/docs/",
     "tutorial": "https://minikube.sigs.k8s.io/docs/start/",
     "added": "2026-06-09"
@@ -2751,8 +2768,8 @@
     "name": "kind",
     "category": "Tool",
     "domain": "DevOps",
-    "eli5": "A way to run a fake Kubernetes cluster entirely inside Docker containers on your computer — like nesting boxes inside boxes.",
-    "description": "Kubernetes IN Docker — spins up multi-node Kubernetes clusters using Docker containers as nodes. Purpose-built for testing Kubernetes itself and for fast, reproducible CI environments without VMs.",
+    "eli5": "A way to run a fake Kubernetes cluster entirely inside Docker containers on your computer \u2014 like nesting boxes inside boxes.",
+    "description": "Kubernetes IN Docker \u2014 spins up multi-node Kubernetes clusters using Docker containers as nodes. Purpose-built for testing Kubernetes itself and for fast, reproducible CI environments without VMs.",
     "use_cases": [
       "Run Kubernetes conformance tests in CI without cloud infrastructure",
       "Test multi-node cluster behavior locally with Docker",
@@ -2760,7 +2777,11 @@
       "Bootstrap ephemeral clusters in GitHub Actions or GitLab CI",
       "Develop and test Cluster API providers"
     ],
-    "used_by": ["Kubernetes SIG Testing", "Cluster API teams", "Platform engineers"],
+    "used_by": [
+      "Kubernetes SIG Testing",
+      "Cluster API teams",
+      "Platform engineers"
+    ],
     "docs": "https://kind.sigs.k8s.io/",
     "tutorial": "https://kind.sigs.k8s.io/docs/user/quick-start/",
     "added": "2026-06-09"
@@ -2770,7 +2791,7 @@
     "name": "Podman",
     "category": "Tool",
     "domain": "DevOps",
-    "eli5": "Like Docker but without a big background program running as the boss — each container runs on its own, which is safer.",
+    "eli5": "Like Docker but without a big background program running as the boss \u2014 each container runs on its own, which is safer.",
     "description": "Daemonless, rootless container engine by Red Hat. OCI-compatible drop-in replacement for Docker CLI with native pod support, systemd integration, and no privileged daemon requirement. Default container runtime on RHEL/Fedora.",
     "use_cases": [
       "Run containers without root or a background daemon for better security",
@@ -2779,7 +2800,12 @@
       "Run multi-container pods locally that mirror Kubernetes pod semantics",
       "Generate systemd unit files from running containers for on-host services"
     ],
-    "used_by": ["Red Hat", "IBM", "Government/regulated industries", "Security-focused teams"],
+    "used_by": [
+      "Red Hat",
+      "IBM",
+      "Government/regulated industries",
+      "Security-focused teams"
+    ],
     "docs": "https://docs.podman.io/",
     "tutorial": "https://podman.io/getting-started/",
     "added": "2026-06-09"
@@ -2789,7 +2815,7 @@
     "name": "MicroK8s",
     "category": "Platform",
     "domain": "DevOps",
-    "eli5": "A small, self-contained Kubernetes that installs in one command and works like a full cluster — good for edge devices and laptops.",
+    "eli5": "A small, self-contained Kubernetes that installs in one command and works like a full cluster \u2014 good for edge devices and laptops.",
     "description": "Lightweight, single-package Kubernetes distribution by Canonical. Delivered as a snap with built-in add-ons (Istio, Knative, GPU support, registry). Designed for edge, IoT, CI, and developer workstations with zero-ops cluster management.",
     "use_cases": [
       "Run production-grade Kubernetes on edge and IoT hardware",
@@ -2798,7 +2824,11 @@
       "Cluster multiple MicroK8s nodes for HA edge deployments",
       "CI/CD pipelines on Ubuntu runners without full cluster overhead"
     ],
-    "used_by": ["Canonical", "Edge computing teams", "Ubuntu-based infrastructure operators"],
+    "used_by": [
+      "Canonical",
+      "Edge computing teams",
+      "Ubuntu-based infrastructure operators"
+    ],
     "docs": "https://microk8s.io/docs",
     "tutorial": "https://microk8s.io/docs/getting-started",
     "added": "2026-06-09"
@@ -2809,7 +2839,7 @@
     "category": "Platform",
     "domain": "DevOps",
     "eli5": "A very small version of Kubernetes that fits on a tiny computer like a Raspberry Pi and still does almost everything the big version can.",
-    "description": "Lightweight, CNCF-certified Kubernetes distribution by Rancher/SUSE. Single binary under 100 MB, replaces etcd with SQLite by default, and strips cloud-provider APIs — purpose-built for edge, IoT, ARM, and resource-constrained environments.",
+    "description": "Lightweight, CNCF-certified Kubernetes distribution by Rancher/SUSE. Single binary under 100 MB, replaces etcd with SQLite by default, and strips cloud-provider APIs \u2014 purpose-built for edge, IoT, ARM, and resource-constrained environments.",
     "use_cases": [
       "Deploy Kubernetes on Raspberry Pi and ARM edge devices",
       "Run production workloads in resource-constrained or air-gapped environments",
@@ -2817,7 +2847,12 @@
       "Single-node or small HA clusters for branch offices and retail",
       "Foundation for Fleet and Rancher edge management"
     ],
-    "used_by": ["Rancher/SUSE", "Walmart", "Siemens", "Edge and IoT teams globally"],
+    "used_by": [
+      "Rancher/SUSE",
+      "Walmart",
+      "Siemens",
+      "Edge and IoT teams globally"
+    ],
     "docs": "https://docs.k3s.io/",
     "tutorial": "https://docs.k3s.io/quick-start",
     "added": "2026-06-09"
@@ -2836,7 +2871,11 @@
       "Develop inside containers with Dev Environments for reproducible onboarding",
       "Extend functionality via Docker Extensions (Lens, Portainer, Snyk scanning)"
     ],
-    "used_by": ["Individual developers", "Startup engineering teams", "Enterprise developer desktops"],
+    "used_by": [
+      "Individual developers",
+      "Startup engineering teams",
+      "Enterprise developer desktops"
+    ],
     "docs": "https://docs.docker.com/desktop/",
     "tutorial": "https://docs.docker.com/get-started/",
     "added": "2026-06-09"
@@ -2846,8 +2885,8 @@
     "name": "kops",
     "category": "Tool",
     "domain": "DevOps",
-    "eli5": "Like Terraform but specifically for creating full Kubernetes clusters on cloud providers — it sets up all the servers, networking, and Kubernetes pieces for you.",
-    "description": "Kubernetes Operations — CLI tool for provisioning, upgrading, and managing production-grade Kubernetes clusters on cloud infrastructure (AWS primary, GCP/Azure in beta). Manages cloud resources (VPCs, ASGs, IAM) alongside the cluster lifecycle.",
+    "eli5": "Like Terraform but specifically for creating full Kubernetes clusters on cloud providers \u2014 it sets up all the servers, networking, and Kubernetes pieces for you.",
+    "description": "Kubernetes Operations \u2014 CLI tool for provisioning, upgrading, and managing production-grade Kubernetes clusters on cloud infrastructure (AWS primary, GCP/Azure in beta). Manages cloud resources (VPCs, ASGs, IAM) alongside the cluster lifecycle.",
     "use_cases": [
       "Provision HA Kubernetes clusters on AWS with full control over node groups and networking",
       "Declarative cluster configuration in YAML with git-ops-friendly state in S3",
@@ -2855,9 +2894,311 @@
       "Manage instance groups and node pools for mixed spot/on-demand fleets",
       "Validate cluster config and dry-run changes before applying to production"
     ],
-    "used_by": ["AWS-heavy Kubernetes teams", "Startups self-hosting on AWS", "Platform engineers avoiding EKS overhead"],
+    "used_by": [
+      "AWS-heavy Kubernetes teams",
+      "Startups self-hosting on AWS",
+      "Platform engineers avoiding EKS overhead"
+    ],
     "docs": "https://kops.sigs.k8s.io/",
     "tutorial": "https://kops.sigs.k8s.io/getting_started/aws/",
     "added": "2026-06-09"
+  },
+  {
+    "id": "cuda",
+    "name": "CUDA",
+    "category": "Platform",
+    "domain": "AI/ML",
+    "eli5": "Like a highway system that lets your graphics card do thousands of math problems at the same time instead of one at a time.",
+    "description": "NVIDIA's parallel computing platform and programming model that enables GPU-accelerated computation. Underpins virtually all deep learning training and inference workloads by exposing thousands of GPU cores to general-purpose code.",
+    "use_cases": [
+      "Accelerate neural network training with GPU parallelism",
+      "Run matrix multiplications and tensor operations orders of magnitude faster than CPU",
+      "Custom GPU kernels for novel model architectures",
+      "Inference acceleration for large language models",
+      "Scientific simulations and HPC workloads"
+    ],
+    "used_by": [
+      "OpenAI",
+      "Google DeepMind",
+      "Meta AI",
+      "Hugging Face",
+      "NVIDIA"
+    ],
+    "docs": "https://docs.nvidia.com/cuda/",
+    "tutorial": "https://docs.nvidia.com/cuda/cuda-c-programming-guide/",
+    "added": "2026-06-10"
+  },
+  {
+    "id": "pytorch",
+    "name": "PyTorch",
+    "category": "Framework",
+    "domain": "AI/ML",
+    "eli5": "A Lego kit for building and training AI brains \u2014 you snap pieces together and it figures out how to teach itself from examples.",
+    "description": "Open-source deep learning framework by Meta AI with dynamic computation graphs and Pythonic ergonomics. The dominant choice for ML research and increasingly for production, powering most frontier model development.",
+    "use_cases": [
+      "Train large language models and transformers from scratch",
+      "Fine-tune pretrained models on custom datasets",
+      "Research new architectures with dynamic graphs and eager execution",
+      "Multi-GPU and distributed training with FSDP and DDP",
+      "Export models to TorchScript or ONNX for deployment"
+    ],
+    "used_by": [
+      "Meta",
+      "OpenAI",
+      "Hugging Face",
+      "Tesla",
+      "Microsoft"
+    ],
+    "docs": "https://pytorch.org/docs/",
+    "tutorial": "https://pytorch.org/tutorials/",
+    "added": "2026-06-10"
+  },
+  {
+    "id": "vllm",
+    "name": "vLLM",
+    "category": "Tool",
+    "domain": "AI/ML",
+    "eli5": "A super-efficient waiter for AI models \u2014 it batches everyone's requests together so the AI can answer many people at once instead of one at a time.",
+    "description": "High-throughput and memory-efficient LLM inference and serving engine. Uses PagedAttention to manage GPU KV-cache like virtual memory, dramatically increasing serving throughput vs. naive implementations.",
+    "use_cases": [
+      "Serve open-source LLMs (Llama, Mistral, Qwen) at production scale",
+      "OpenAI-compatible API endpoint for self-hosted models",
+      "Continuous batching to maximize GPU utilization",
+      "Speculative decoding for faster token generation",
+      "Multi-LoRA serving to host many fine-tuned model variants on one GPU"
+    ],
+    "used_by": [
+      "Mistral AI",
+      "Together AI",
+      "Anyscale",
+      "Replicate",
+      "Nvidia"
+    ],
+    "docs": "https://docs.vllm.ai/",
+    "tutorial": "https://docs.vllm.ai/en/latest/getting_started/quickstart.html",
+    "added": "2026-06-10"
+  },
+  {
+    "id": "ollama",
+    "name": "Ollama",
+    "category": "Tool",
+    "domain": "AI/ML",
+    "eli5": "Like Docker but for AI models \u2014 type one command and a full AI brain runs on your own laptop without sending data to anyone.",
+    "description": "CLI tool and local server for running open-source LLMs entirely on your own hardware. Handles model downloads, quantization, and provides an OpenAI-compatible API, making local inference approachable for developers.",
+    "use_cases": [
+      "Run Llama, Mistral, Gemma locally with one command",
+      "Privacy-first AI without data leaving your machine",
+      "Offline development and testing of LLM applications",
+      "Rapid model switching and comparison",
+      "Self-hosted AI for enterprise air-gapped environments"
+    ],
+    "used_by": [
+      "Individual developers",
+      "Privacy-focused enterprises",
+      "AI hobbyists"
+    ],
+    "docs": "https://ollama.com/",
+    "tutorial": "https://github.com/ollama/ollama",
+    "added": "2026-06-10"
+  },
+  {
+    "id": "triton-inference-server",
+    "name": "Triton Inference Server",
+    "category": "Tool",
+    "domain": "AI/ML",
+    "eli5": "A professional delivery system for AI models \u2014 it takes requests from many users and routes them to the right AI model as fast as possible.",
+    "description": "NVIDIA's open-source inference serving platform supporting multiple ML frameworks (TensorRT, PyTorch, ONNX, TensorFlow) with dynamic batching, model ensembles, and GPU/CPU scheduling optimized for production deployments.",
+    "use_cases": [
+      "Serve multiple model frameworks from a single server",
+      "Dynamic batching to maximize GPU throughput",
+      "Model ensemble pipelines for multi-stage inference",
+      "gRPC and HTTP endpoints with metrics for Prometheus",
+      "Model versioning and A/B testing in production"
+    ],
+    "used_by": [
+      "NVIDIA",
+      "AWS",
+      "Microsoft",
+      "Waymo",
+      "Comcast"
+    ],
+    "docs": "https://docs.nvidia.com/deeplearning/triton-inference-server/",
+    "tutorial": "https://github.com/triton-inference-server/server/blob/main/docs/getting_started/quickstart.md",
+    "added": "2026-06-10"
+  },
+  {
+    "id": "tensorrt",
+    "name": "TensorRT",
+    "category": "Tool",
+    "domain": "AI/ML",
+    "eli5": "A turbocharger for AI models on NVIDIA GPUs \u2014 it restructures and compresses the AI so it runs much faster without losing accuracy.",
+    "description": "NVIDIA SDK for high-performance deep learning inference. Optimizes trained models via layer fusion, precision calibration (FP16/INT8), and kernel auto-tuning to minimize latency and maximize GPU throughput at inference time.",
+    "use_cases": [
+      "Reduce LLM and vision model latency for real-time applications",
+      "INT8/FP16 quantization with accuracy calibration",
+      "Deploy optimized models to Jetson edge devices",
+      "Integrate with Triton for production inference pipelines",
+      "Accelerate NLP, CV, and recommendation models"
+    ],
+    "used_by": [
+      "NVIDIA",
+      "Tesla",
+      "Mercedes-Benz",
+      "Salesforce",
+      "Adobe"
+    ],
+    "docs": "https://docs.nvidia.com/deeplearning/tensorrt/",
+    "tutorial": "https://docs.nvidia.com/deeplearning/tensorrt/quick-start-guide/",
+    "added": "2026-06-10"
+  },
+  {
+    "id": "hugging-face",
+    "name": "Hugging Face",
+    "category": "Platform",
+    "domain": "AI/ML",
+    "eli5": "Like GitHub but for AI models \u2014 a place where people share, find, and use thousands of ready-made AI brains for free.",
+    "description": "Central hub for open-source ML models, datasets, and Spaces (hosted demos). Hosts the Transformers library \u2014 the standard API for loading and running pretrained models \u2014 plus model cards, leaderboards, and hosted inference.",
+    "use_cases": [
+      "Browse and download 500k+ pretrained models for NLP, CV, audio",
+      "Fine-tune models with the Trainer API and PEFT/LoRA",
+      "Host and share ML demos with Gradio Spaces",
+      "Dataset versioning and sharing with datasets library",
+      "Inference endpoints for serverless model hosting"
+    ],
+    "used_by": [
+      "Google",
+      "Meta",
+      "Amazon",
+      "Microsoft",
+      "Mistral AI"
+    ],
+    "docs": "https://huggingface.co/docs",
+    "tutorial": "https://huggingface.co/learn",
+    "added": "2026-06-10"
+  },
+  {
+    "id": "langchain",
+    "name": "LangChain",
+    "category": "Framework",
+    "domain": "AI/ML",
+    "eli5": "A toolbox for connecting an AI brain to the real world \u2014 like giving it the ability to search the web, read files, or use a calculator.",
+    "description": "Framework for building LLM-powered applications with composable chains, agents, and tool integrations. Provides abstractions for retrieval-augmented generation (RAG), memory, and multi-step agentic workflows across model providers.",
+    "use_cases": [
+      "Build RAG pipelines connecting LLMs to vector databases",
+      "Create autonomous agents that use tools and APIs",
+      "Chain multiple LLM calls into structured workflows",
+      "Standardize prompt templates and output parsers",
+      "Evaluate and trace LLM applications with LangSmith"
+    ],
+    "used_by": [
+      "Airbnb",
+      "Elastic",
+      "Rakuten",
+      "McKinsey",
+      "Riot Games"
+    ],
+    "docs": "https://python.langchain.com/docs/",
+    "tutorial": "https://python.langchain.com/docs/tutorials/",
+    "added": "2026-06-10"
+  },
+  {
+    "id": "ray",
+    "name": "Ray",
+    "category": "Framework",
+    "domain": "AI/ML",
+    "eli5": "Like a factory manager for AI work \u2014 it splits a huge job across many computers and makes sure everything gets done in the right order.",
+    "description": "Open-source distributed computing framework for scaling Python and ML workloads from a laptop to a cluster. Core of the Ray AI Runtime (AIR) \u2014 includes Ray Train, Tune, Serve, and Data for end-to-end ML pipelines.",
+    "use_cases": [
+      "Distributed LLM training across hundreds of GPUs",
+      "Hyperparameter tuning at scale with Ray Tune",
+      "Production model serving with Ray Serve and autoscaling",
+      "Parallel data preprocessing pipelines with Ray Data",
+      "Reinforcement learning with RLlib"
+    ],
+    "used_by": [
+      "Shopify",
+      "Uber",
+      "OpenAI",
+      "Cohere",
+      "Instacart"
+    ],
+    "docs": "https://docs.ray.io/",
+    "tutorial": "https://docs.ray.io/en/latest/ray-overview/getting-started.html",
+    "added": "2026-06-10"
+  },
+  {
+    "id": "mlflow",
+    "name": "MLflow",
+    "category": "Tool",
+    "domain": "AI/ML",
+    "eli5": "A lab notebook for AI experiments \u2014 it automatically records what ingredients you used, what settings you tried, and how well each experiment worked.",
+    "description": "Open-source MLOps platform for tracking experiments, packaging models, and managing the ML lifecycle. Provides a UI for comparing runs, a model registry for versioning, and deployment tools across frameworks.",
+    "use_cases": [
+      "Track hyperparameters, metrics, and artifacts across training runs",
+      "Register and version models for staging and production promotion",
+      "Reproduce any experiment from stored parameters and code",
+      "Serve models with mlflow models serve or to Kubernetes",
+      "Integrate with PyTorch, TensorFlow, sklearn, and XGBoost"
+    ],
+    "used_by": [
+      "Databricks",
+      "Microsoft",
+      "LinkedIn",
+      "Accenture",
+      "Zillow"
+    ],
+    "docs": "https://mlflow.org/docs/latest/",
+    "tutorial": "https://mlflow.org/docs/latest/getting-started/",
+    "added": "2026-06-10"
+  },
+  {
+    "id": "onnx",
+    "name": "ONNX",
+    "category": "Concept",
+    "domain": "AI/ML",
+    "eli5": "A universal translator for AI models \u2014 lets a model trained in one AI toolkit run in a completely different one without starting over.",
+    "description": "Open Neural Network Exchange \u2014 an open standard for representing ML models. Enables interoperability between frameworks (PyTorch, TensorFlow, sklearn) and runtimes (ONNX Runtime, TensorRT, CoreML) for portable, optimized inference.",
+    "use_cases": [
+      "Export PyTorch models and run them with ONNX Runtime for faster CPU inference",
+      "Deploy models to edge and mobile (CoreML, TFLite via conversion)",
+      "Hardware-agnostic model optimization with ORT execution providers",
+      "Cross-framework model sharing and reproducibility",
+      "Visualize model graphs with Netron"
+    ],
+    "used_by": [
+      "Microsoft",
+      "NVIDIA",
+      "Intel",
+      "Qualcomm",
+      "AMD"
+    ],
+    "docs": "https://onnx.ai/",
+    "tutorial": "https://onnxruntime.ai/docs/get-started/",
+    "added": "2026-06-10"
+  },
+  {
+    "id": "rocm",
+    "name": "ROCm",
+    "category": "Platform",
+    "domain": "AI/ML",
+    "eli5": "AMD's answer to NVIDIA's CUDA \u2014 lets you use AMD graphics cards to train and run AI models, like using a different brand of engine in the same race car.",
+    "description": "AMD's open-source GPU computing platform, providing a full software stack (HIP, MIOpen, rocBLAS) for running ML workloads on AMD GPUs. HIP allows near-direct CUDA code porting to AMD hardware.",
+    "use_cases": [
+      "Train PyTorch and TensorFlow models on AMD Instinct GPUs",
+      "Port CUDA codebases to AMD hardware with HIP",
+      "Run vLLM and Hugging Face models on AMD MI300X clusters",
+      "Cost-competitive alternative to NVIDIA for HPC and ML",
+      "Open-source ML infrastructure without CUDA vendor lock-in"
+    ],
+    "used_by": [
+      "AMD",
+      "Microsoft Azure",
+      "Oracle Cloud",
+      "HPE",
+      "Meta"
+    ],
+    "docs": "https://rocm.docs.amd.com/",
+    "tutorial": "https://rocm.docs.amd.com/en/latest/tutorial/quick-start.html",
+    "added": "2026-06-10"
   }
 ]

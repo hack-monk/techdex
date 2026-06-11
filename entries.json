@@ -3200,5 +3200,275 @@
     "docs": "https://rocm.docs.amd.com/",
     "tutorial": "https://rocm.docs.amd.com/en/latest/tutorial/quick-start.html",
     "added": "2026-06-10"
+  },
+  {
+    "id": "cilium",
+    "name": "Cilium",
+    "category": "Tool",
+    "domain": "Networking",
+    "eli5": "Cilium is like a super-smart traffic cop for your Kubernetes cluster that understands what apps are talking about, not just where packets are going.",
+    "description": "eBPF-based networking, observability, and security for Kubernetes. Provides high-performance networking with deep visibility into application traffic at the kernel level.",
+    "use_cases": [
+      "Kubernetes CNI plugin with eBPF dataplane",
+      "Network policy enforcement at L3/L4/L7",
+      "Service mesh replacement (Cilium Mesh)",
+      "Hubble-based flow observability"
+    ],
+    "used_by": ["Google", "AWS", "Adobe", "GitLab", "Bell Canada"],
+    "docs": "https://docs.cilium.io/",
+    "tutorial": "https://docs.cilium.io/en/stable/gettingstarted/",
+    "added": "2026-06-11"
+  },
+  {
+    "id": "traefik",
+    "name": "Traefik",
+    "category": "Tool",
+    "domain": "Networking",
+    "eli5": "Traefik is like a hotel concierge that automatically knows which room (service) every guest (request) should go to, even as rooms change.",
+    "description": "Cloud-native reverse proxy and load balancer that auto-discovers service configuration from Docker, Kubernetes, and other orchestrators with zero manual config.",
+    "use_cases": [
+      "Kubernetes ingress controller",
+      "Automatic TLS via Let's Encrypt",
+      "Dynamic routing for microservices",
+      "Docker Swarm and Nomad edge routing"
+    ],
+    "used_by": ["Containous", "BlaBlaCar", "Gitlab", "The New York Times"],
+    "docs": "https://doc.traefik.io/traefik/",
+    "tutorial": "https://doc.traefik.io/traefik/getting-started/quick-start/",
+    "added": "2026-06-11"
+  },
+  {
+    "id": "nats",
+    "name": "NATS",
+    "category": "Tool",
+    "domain": "Messaging",
+    "eli5": "NATS is like a super-fast walkie-talkie system where any app can shout a message and anyone listening on that channel instantly hears it.",
+    "description": "High-performance, lightweight messaging system for cloud-native applications, IoT, and microservices. Supports pub/sub, request/reply, and durable JetStream streaming.",
+    "use_cases": [
+      "Microservice-to-microservice messaging",
+      "IoT telemetry ingestion",
+      "Event-driven architectures",
+      "Distributed systems coordination"
+    ],
+    "used_by": ["Apcera", "Netlify", "Mastercard", "Synadia"],
+    "docs": "https://docs.nats.io/",
+    "tutorial": "https://docs.nats.io/nats-concepts/overview",
+    "added": "2026-06-11"
+  },
+  {
+    "id": "apache-flink",
+    "name": "Apache Flink",
+    "category": "Framework",
+    "domain": "Data Engineering",
+    "eli5": "Flink is like a factory assembly line that processes items the moment they arrive, rather than waiting to collect a big pile before starting.",
+    "description": "Distributed stream and batch processing engine with exactly-once semantics, stateful computations, and event-time processing at massive scale.",
+    "use_cases": [
+      "Real-time fraud detection",
+      "Streaming ETL pipelines",
+      "Event-driven applications",
+      "CDC (change data capture) processing"
+    ],
+    "used_by": ["Alibaba", "Netflix", "Uber", "LinkedIn", "AWS"],
+    "docs": "https://nightlies.apache.org/flink/flink-docs-stable/",
+    "tutorial": "https://nightlies.apache.org/flink/flink-docs-stable/docs/try-flink/local_installation/",
+    "added": "2026-06-11"
+  },
+  {
+    "id": "trino",
+    "name": "Trino",
+    "category": "Tool",
+    "domain": "Data Engineering",
+    "eli5": "Trino is like a universal translator that lets you ask questions across many different databases at once without moving all the data to one place.",
+    "description": "Distributed SQL query engine for big data analytics across heterogeneous data sources including S3, HDFS, Kafka, and relational databases — formerly known as PrestoSQL.",
+    "use_cases": [
+      "Federated queries across data lakes and warehouses",
+      "Ad-hoc analytics on S3/Hive tables",
+      "Replacing ETL with in-place querying",
+      "Interactive data exploration at petabyte scale"
+    ],
+    "used_by": ["Meta", "Netflix", "LinkedIn", "Lyft", "Airbnb"],
+    "docs": "https://trino.io/docs/current/",
+    "tutorial": "https://trino.io/docs/current/installation/deployment.html",
+    "added": "2026-06-11"
+  },
+  {
+    "id": "minio",
+    "name": "MinIO",
+    "category": "Tool",
+    "domain": "Storage",
+    "eli5": "MinIO is like having your own private Amazon S3 in your own data center — same interface, your rules.",
+    "description": "High-performance, S3-compatible object storage designed for on-premises and private cloud deployments. Supports erasure coding and runs on commodity hardware.",
+    "use_cases": [
+      "On-premises object storage with S3 API",
+      "Data lake storage tier",
+      "Backup and archival for Kubernetes workloads",
+      "ML training data and model artifact storage"
+    ],
+    "used_by": ["Verizon", "CERN", "NVIDIA", "Goldman Sachs"],
+    "docs": "https://min.io/docs/minio/",
+    "tutorial": "https://min.io/docs/minio/linux/operations/install-deploy-manage/deploy-minio-single-node-single-drive.html",
+    "added": "2026-06-11"
+  },
+  {
+    "id": "kyverno",
+    "name": "Kyverno",
+    "category": "Tool",
+    "domain": "Security",
+    "eli5": "Kyverno is like a strict school hall monitor for Kubernetes — it checks every deployment against the rules and turns away anything that breaks them.",
+    "description": "Kubernetes-native policy engine that validates, mutates, and generates resources using policies written as Kubernetes resources — no Rego required.",
+    "use_cases": [
+      "Enforcing pod security standards",
+      "Auto-injecting labels and sidecars",
+      "Blocking privileged containers in CI/CD",
+      "Generating default NetworkPolicies"
+    ],
+    "used_by": ["Fidelity", "CNCF projects", "Rabobank", "Vodafone"],
+    "docs": "https://kyverno.io/docs/",
+    "tutorial": "https://kyverno.io/docs/installation/",
+    "added": "2026-06-11"
+  },
+  {
+    "id": "grafana-loki",
+    "name": "Grafana Loki",
+    "category": "Tool",
+    "domain": "SRE/Observability",
+    "eli5": "Loki is like a filing cabinet for all your app logs — it only reads the label on the folder to find them fast, not every single word inside.",
+    "description": "Horizontally scalable log aggregation system inspired by Prometheus. Indexes only metadata (labels), not log content, making it far cheaper than full-text search solutions.",
+    "use_cases": [
+      "Kubernetes pod log aggregation",
+      "Correlated log + metric + trace exploration in Grafana",
+      "Cost-efficient alternative to Elasticsearch for logs",
+      "Long-term log retention with object storage backend"
+    ],
+    "used_by": ["Grafana Labs", "Digital Ocean", "Gojek", "Adidas"],
+    "docs": "https://grafana.com/docs/loki/latest/",
+    "tutorial": "https://grafana.com/docs/loki/latest/get-started/",
+    "added": "2026-06-11"
+  },
+  {
+    "id": "grafana-tempo",
+    "name": "Grafana Tempo",
+    "category": "Tool",
+    "domain": "SRE/Observability",
+    "eli5": "Tempo is like a GPS trip recorder for your requests — it saves every route a request took through your services so you can replay it later.",
+    "description": "Scalable, cost-efficient distributed tracing backend that stores traces in object storage and integrates natively with Grafana, Loki, and Prometheus for correlated observability.",
+    "use_cases": [
+      "Distributed trace storage at scale",
+      "Correlating traces with logs and metrics in Grafana",
+      "Root cause analysis for latency spikes",
+      "OpenTelemetry and Jaeger trace ingestion"
+    ],
+    "used_by": ["Grafana Labs", "Shopify", "Weaveworks"],
+    "docs": "https://grafana.com/docs/tempo/latest/",
+    "tutorial": "https://grafana.com/docs/tempo/latest/getting-started/",
+    "added": "2026-06-11"
+  },
+  {
+    "id": "vite",
+    "name": "Vite",
+    "category": "Tool",
+    "domain": "Frontend",
+    "eli5": "Vite is like a chef who preps only the dish you ordered right now instead of cooking the entire menu in advance.",
+    "description": "Next-generation frontend build tool that uses native ES modules for near-instant dev server startup and Rollup for optimized production builds.",
+    "use_cases": [
+      "Development server with sub-millisecond HMR",
+      "Building React, Vue, and Svelte apps",
+      "Library bundling with ESM/CJS output",
+      "Replacing Create React App and webpack"
+    ],
+    "used_by": ["Vue core team", "Shopify", "Astro", "SvelteKit"],
+    "docs": "https://vite.dev/guide/",
+    "tutorial": "https://vite.dev/guide/",
+    "added": "2026-06-11"
+  },
+  {
+    "id": "svelte",
+    "name": "Svelte",
+    "category": "Framework",
+    "domain": "Frontend",
+    "eli5": "Svelte is like a magic compiler that turns your code into tiny, fast instructions the browser understands directly — no middleman needed.",
+    "description": "Compile-time UI framework that shifts work to the build step, producing vanilla JS with no runtime overhead. SvelteKit provides full-stack capabilities.",
+    "use_cases": [
+      "Highly interactive UIs with minimal bundle size",
+      "Full-stack apps with SvelteKit",
+      "Embedded widgets with zero runtime dependency",
+      "Animations and transitions with built-in directives"
+    ],
+    "used_by": ["Apple", "Spotify", "The New York Times", "Razorpay"],
+    "docs": "https://svelte.dev/docs",
+    "tutorial": "https://learn.svelte.dev/",
+    "added": "2026-06-11"
+  },
+  {
+    "id": "nestjs",
+    "name": "NestJS",
+    "category": "Framework",
+    "domain": "Backend",
+    "eli5": "NestJS is like LEGO for building Node.js servers — each piece snaps together in a structured way so your code stays organized as the project grows.",
+    "description": "Progressive Node.js framework for building scalable server-side applications. Uses TypeScript and Angular-inspired decorators to enforce modularity and testability.",
+    "use_cases": [
+      "REST and GraphQL API servers",
+      "Microservices with built-in transport adapters (Kafka, NATS, Redis)",
+      "Enterprise-grade Node.js backends",
+      "CLI tools and background workers"
+    ],
+    "used_by": ["Adidas", "Roche", "Capgemini", "Autodesk"],
+    "docs": "https://docs.nestjs.com/",
+    "tutorial": "https://docs.nestjs.com/first-steps",
+    "added": "2026-06-11"
+  },
+  {
+    "id": "weights-and-biases",
+    "name": "Weights & Biases",
+    "category": "Tool",
+    "domain": "AI/ML",
+    "eli5": "Weights & Biases is like a detailed science notebook that automatically records every experiment you run so you can compare what worked and what didn't.",
+    "description": "MLOps platform for experiment tracking, model versioning, dataset management, and hyperparameter optimization. Provides dashboards for comparing runs across teams.",
+    "use_cases": [
+      "Tracking loss curves and metrics across training runs",
+      "Hyperparameter sweep automation",
+      "Model artifact versioning and registry",
+      "Collaborative ML experiment sharing"
+    ],
+    "used_by": ["OpenAI", "NVIDIA", "Toyota Research", "Hugging Face"],
+    "docs": "https://docs.wandb.ai/",
+    "tutorial": "https://docs.wandb.ai/quickstart",
+    "added": "2026-06-11"
+  },
+  {
+    "id": "timescaledb",
+    "name": "TimescaleDB",
+    "category": "Tool",
+    "domain": "Database",
+    "eli5": "TimescaleDB is like a regular notebook that got a special time-travel index — it can flip to any date's entries instantly without flipping through every page.",
+    "description": "PostgreSQL extension purpose-built for time-series data. Adds automatic partitioning (hypertables), continuous aggregates, and compression while staying fully SQL-compatible.",
+    "use_cases": [
+      "IoT sensor data storage and querying",
+      "Financial tick data and OHLCV aggregation",
+      "Infrastructure metrics retention beyond Prometheus",
+      "Event logging with complex analytical queries"
+    ],
+    "used_by": ["Hubspot", "Outbrain", "Teleport", "Volvo"],
+    "docs": "https://docs.timescale.com/",
+    "tutorial": "https://docs.timescale.com/getting-started/latest/",
+    "added": "2026-06-11"
+  },
+  {
+    "id": "opentofu",
+    "name": "OpenTofu",
+    "category": "Tool",
+    "domain": "DevOps",
+    "eli5": "OpenTofu is like Terraform's open-source twin — does all the same infrastructure tricks but is community-owned and free forever.",
+    "description": "Open-source fork of Terraform under the Linux Foundation, maintained by the community after HashiCorp's BSL license change. Fully compatible with existing Terraform modules and providers.",
+    "use_cases": [
+      "Drop-in Terraform replacement under open license",
+      "Infrastructure as code for AWS, GCP, Azure",
+      "Managing Kubernetes, databases, and DNS",
+      "Organizations avoiding BSL license restrictions"
+    ],
+    "used_by": ["Gruntwork", "Spacelift", "Scalr", "env0"],
+    "docs": "https://opentofu.org/docs/",
+    "tutorial": "https://opentofu.org/docs/intro/",
+    "added": "2026-06-11"
   }
 ]

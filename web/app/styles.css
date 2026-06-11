@@ -111,6 +111,19 @@ a { color: inherit; }
 .search .clr { color: var(--muted); cursor: pointer; flex-shrink: 0; padding: 0 4px; }
 .search .clr:hover { color: var(--accent); }
 
+/* AI semantic search button */
+.ai-btn {
+  font: inherit; font-size: .78em; font-weight: 700; letter-spacing: .06em;
+  color: var(--accent); background: color-mix(in oklch, var(--accent) 12%, transparent);
+  border: 1px solid color-mix(in oklch, var(--accent) 40%, transparent);
+  border-radius: 5px; padding: 2px 9px; cursor: pointer; flex-shrink: 0;
+  transition: all var(--speed) var(--ease); white-space: nowrap;
+}
+.ai-btn:hover { background: color-mix(in oklch, var(--accent) 22%, transparent); border-color: var(--accent); }
+.ai-btn:disabled { opacity: .5; cursor: default; }
+.ai-btn.loading { animation: ai-pulse 1s ease-in-out infinite; }
+@keyframes ai-pulse { 0%,100% { opacity: 1; } 50% { opacity: .4; } }
+
 .topbtns { display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
 .tbtn {
   font: inherit; font-size: .86em;
@@ -244,6 +257,19 @@ a { color: inherit; }
 
 .empty { color: var(--muted); padding: 60px 0; text-align: center; }
 .empty b { color: var(--accent); }
+
+/* relevance bar — shown on cards during AI semantic search results */
+.rel-bar {
+  position: absolute; bottom: 0; left: 0; right: 0; height: 2px;
+  background: color-mix(in oklch, var(--dc) 20%, transparent);
+}
+.rel-bar::after {
+  content: ""; position: absolute; left: 0; top: 0; bottom: 0;
+  width: var(--rel, 0%);
+  background: var(--dc);
+  box-shadow: 0 0 8px color-mix(in oklch, var(--dc) 60%, transparent);
+  transition: width 400ms var(--ease);
+}
 
 /* ===================== STATUSBAR ===================== */
 .statusbar {

@@ -24,7 +24,7 @@
   function persist() { if (embed) return; try { localStorage.setItem(LS, JSON.stringify(prefs)); } catch {} }
 
   // ---------- runtime state ----------
-  const state = { q: "", domain: startDomain || null, cats: new Set(), list: [], sel: -1 };
+  const state = { q: "", domain: startDomain || null, cats: new Set(), list: [], sel: -1, aiResults: null };
 
   // ---------- accent palettes (meowsoot night accents) ----------
   const ACCENTS = {
@@ -86,12 +86,15 @@
     const m = M.domainMeta(domain);
     return `<span class="badge" style="--dc:${m.color}">${m.code}</span>`;
   }
-  function cardHTML(e) {
+  function cardHTML(e, relevance) {
     const m = M.domainMeta(e.domain);
     const cat = M.CATEGORIES[e.category] || e.category.toLowerCase();
     const uses = (e.used_by || []).slice(0, 3).join(", ");
     const more = (e.used_by || []).length > 3 ? ` +${e.used_by.length - 3}` : "";
+    const relBar = relevance != null
+      ? `<div class="rel-bar" style="--rel:${relevance}%" title="relevance: ${relevance}%"></div>` : "";
     return `<div class="card" data-dex="${e.dex}" style="--dc:${m.color}" tabindex="0" role="button">
+      ${relBar}
       <div class="cmain">
         <div class="row1">
           <span class="nm">${esc(e.name)}</span>
@@ -105,13 +108,30 @@
     </div>`;
   }
   function renderGrid() {
+    const total = ALL.length;
+
+    // ---------- AI semantic results path ----------
+    if (state.aiResults) {
+      const results = state.aiResults;
+      const maxScore = results[0]?.score || 1;
+      elGrid.innerHTML = results.length
+        ? results.map(({ entry: e, score }) =>
+            cardHTML(e, Math.round((score / maxScore) * 100))
+          ).join("")
+        : `<div class="empty">no semantic matches for <b>${esc(state.q)}</b><br><span style="font-size:.85em">try rephrasing your description</span></div>`;
+      elTitle.innerHTML = `✦ <span class="accent">semantic</span> results`;
+      elSub.innerHTML = `<b>${results.length}</b> matches · &ldquo;${esc(state.q)}&rdquo;`;
+      renderStatus(results.length, total);
+      return;
+    }
+
+    // ---------- normal keyword path ----------
     if (!state.list.length) {
       elGrid.innerHTML = `<div class="empty">no entries match <b>${esc(state.q) || "this filter"}</b><br><span style="font-size:.85em">try a different term or clear filters</span></div>`;
     } else {
-      elGrid.innerHTML = state.list.map(cardHTML).join("");
+      elGrid.innerHTML = state.list.map(e => cardHTML(e)).join("");
     }
-    // count + title + status
-    const total = ALL.length, shown = state.list.length;
+    const shown = state.list.length;
     elTitle.innerHTML = state.domain
       ? `<span class="accent">${M.domainMeta(state.domain).code}</span> ${esc(state.domain)}`
       : `all <span class="accent">entries</span>`;
@@ -199,10 +219,14 @@
 
   elInput.addEventListener("input", () => {
     state.q = elInput.value;
+    state.aiResults = null;   // typing resets AI results → back to keyword mode
     elClear.style.display = state.q ? "" : "none";
     compute(); renderGrid();
   });
-  elClear.addEventListener("click", () => { elInput.value = ""; state.q = ""; elClear.style.display = "none"; compute(); renderGrid(); elInput.focus(); });
+  elClear.addEventListener("click", () => {
+    elInput.value = ""; state.q = ""; state.aiResults = null;
+    elClear.style.display = "none"; compute(); renderGrid(); elInput.focus();
+  });
 
   elDomains.addEventListener("click", ev => {
     const d = ev.target.closest(".dom"); if (!d) return;
@@ -225,6 +249,36 @@
   scrim.addEventListener("click", closeDetail);
   $("#drawerClose").addEventListener("click", closeDetail);
 
+  // ---------- AI semantic search ----------
+  const elAiBtn = document.getElementById("aiBtn");
+  let aiSearching = false;
+
+  async function runAiSearch() {
+    const q = state.q.trim();
+    if (!q) { elInput.focus(); return; }
+    if (aiSearching) return;
+    aiSearching = true;
+    elAiBtn.classList.add("loading");
+    elAiBtn.disabled = true;
+    try {
+      await window.TechDexSemantic.init(ALL, msg => { elSub.textContent = msg; });
+      const results = await window.TechDexSemantic.search(q, ALL);
+      state.aiResults = results;
+      renderGrid();
+    } catch (err) {
+      elSub.textContent = "AI search error: " + err.message;
+    } finally {
+      aiSearching = false;
+      elAiBtn.classList.remove("loading");
+      elAiBtn.disabled = false;
+    }
+  }
+
+  elAiBtn.addEventListener("click", runAiSearch);
+  elInput.addEventListener("keydown", ev => {
+    if ((ev.ctrlKey || ev.metaKey) && ev.key === "Enter") { ev.preventDefault(); runAiSearch(); }
+  });
+
   // chrome controls
   document.querySelectorAll("[data-setsort]").forEach(b => b.addEventListener("click", () => {
     prefs.sort = b.dataset.setsort; applyPrefs(); compute(); renderGrid(); persist();
@@ -234,7 +288,7 @@
     if (ev.key === "/" && document.activeElement !== elInput) { ev.preventDefault(); elInput.focus(); elInput.select(); }
     else if (ev.key === "Escape") {
       if (drawer.classList.contains("open")) closeDetail();
-      else if (state.q || state.domain || state.cats.size) { state.q = ""; elInput.value = ""; state.domain = null; state.cats.clear(); elClear.style.display = "none"; full(); }
+      else if (state.q || state.domain || state.cats.size || state.aiResults) { state.q = ""; elInput.value = ""; state.domain = null; state.cats.clear(); state.aiResults = null; elClear.style.display = "none"; full(); }
       else elInput.blur();
     }
     else if (drawer.classList.contains("open")) {

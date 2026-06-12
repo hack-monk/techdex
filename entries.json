@@ -3848,5 +3848,365 @@
     "docs": "https://skaffold.dev/docs/",
     "tutorial": "https://skaffold.dev/docs/quickstart/",
     "added": "2026-06-12"
+  },
+  {
+    "id": "caddy",
+    "name": "Caddy",
+    "category": "Tool",
+    "domain": "Networking",
+    "eli5": "Caddy is like a web server that automatically gets its own security certificate and sets it up for you — no manual HTTPS configuration needed.",
+    "description": "Modern web server with automatic HTTPS via Let's Encrypt. Written in Go, zero config TLS, with a simple Caddyfile DSL and a JSON API for dynamic configuration.",
+    "use_cases": [
+      "Automatic TLS for local and production services",
+      "Reverse proxy with zero-config HTTPS",
+      "Static file serving and PHP applications",
+      "API gateway with dynamic config via Admin API"
+    ],
+    "used_by": ["Tailscale", "Replicate", "Acme Corp deployments"],
+    "docs": "https://caddyserver.com/docs/",
+    "tutorial": "https://caddyserver.com/docs/getting-started",
+    "added": "2026-06-12"
+  },
+  {
+    "id": "vitess",
+    "name": "Vitess",
+    "category": "Tool",
+    "domain": "Database",
+    "eli5": "Vitess is like a smart traffic director for MySQL — it splits one giant database across many servers and makes them look like one to your app.",
+    "description": "Database clustering system for horizontal scaling of MySQL. Provides sharding, connection pooling, and query routing. Powers YouTube's database layer.",
+    "use_cases": [
+      "Horizontal sharding for MySQL at scale",
+      "Connection pooling to reduce MySQL overhead",
+      "Zero-downtime schema migrations",
+      "Multi-region MySQL topologies"
+    ],
+    "used_by": ["YouTube", "Slack", "GitHub", "Square"],
+    "docs": "https://vitess.io/docs/",
+    "tutorial": "https://vitess.io/docs/get-started/local/",
+    "added": "2026-06-12"
+  },
+  {
+    "id": "weaviate",
+    "name": "Weaviate",
+    "category": "Tool",
+    "domain": "Database",
+    "eli5": "Weaviate is a database that understands meaning — you can store objects and search by what they're about, not just by their exact words.",
+    "description": "Open-source vector database with built-in ML model inference. Supports hybrid search (vector + keyword), GraphQL API, and multi-tenancy for AI-native applications.",
+    "use_cases": [
+      "Semantic search over documents and images",
+      "RAG pipelines with built-in embedding models",
+      "Hybrid vector + BM25 search",
+      "Multi-tenant AI applications"
+    ],
+    "used_by": ["Stack Overflow", "Instabase", "AstraZeneca"],
+    "docs": "https://weaviate.io/developers/weaviate",
+    "tutorial": "https://weaviate.io/developers/weaviate/quickstart",
+    "added": "2026-06-12"
+  },
+  {
+    "id": "chromadb",
+    "name": "ChromaDB",
+    "category": "Tool",
+    "domain": "Database",
+    "eli5": "ChromaDB is like a sticky-note board for AI — you paste in documents, it remembers their meaning, and later the AI can find the most relevant ones instantly.",
+    "description": "Open-source embedding database designed for LLM applications. Runs in-process or as a server, with a simple Python API for storing, querying, and managing embeddings.",
+    "use_cases": [
+      "Local RAG prototyping with LLMs",
+      "Storing and querying document embeddings",
+      "Long-term memory for AI agents",
+      "Lightweight vector store for small to mid-scale apps"
+    ],
+    "used_by": ["LangChain (default)", "AutoGPT", "various LLM app builders"],
+    "docs": "https://docs.trychroma.com/",
+    "tutorial": "https://docs.trychroma.com/getting-started",
+    "added": "2026-06-12"
+  },
+  {
+    "id": "kubeflow",
+    "name": "Kubeflow",
+    "category": "Platform",
+    "domain": "AI/ML",
+    "eli5": "Kubeflow is like a factory floor for machine learning on Kubernetes — it handles training jobs, experiment tracking, and model serving all in one place.",
+    "description": "ML toolkit for Kubernetes that makes deploying scalable ML workflows simple. Includes Pipelines, Training Operator, KServe for model serving, and Katib for hyperparameter tuning.",
+    "use_cases": [
+      "End-to-end ML pipelines on Kubernetes",
+      "Distributed training for PyTorch and TensorFlow",
+      "Hyperparameter optimization with Katib",
+      "Model serving with KServe"
+    ],
+    "used_by": ["Google", "Spotify", "Bloomberg", "Cisco"],
+    "docs": "https://www.kubeflow.org/docs/",
+    "tutorial": "https://www.kubeflow.org/docs/started/introduction/",
+    "added": "2026-06-12"
+  },
+  {
+    "id": "bentoml",
+    "name": "BentoML",
+    "category": "Framework",
+    "domain": "AI/ML",
+    "eli5": "BentoML is like a shipping container for ML models — it packages your model with everything it needs so it runs the same way everywhere.",
+    "description": "Framework for building, shipping, and scaling AI applications. Turns any ML model into a production-ready API with batching, runners, and cloud deployment built in.",
+    "use_cases": [
+      "Packaging models as REST/gRPC inference APIs",
+      "Adaptive batching for throughput optimization",
+      "Multi-model inference pipelines",
+      "Deploying to Kubernetes, AWS, or GCP"
+    ],
+    "used_by": ["Baidu", "trivago", "Picsellia"],
+    "docs": "https://docs.bentoml.com/",
+    "tutorial": "https://docs.bentoml.com/en/latest/get-started/quickstart.html",
+    "added": "2026-06-12"
+  },
+  {
+    "id": "okta",
+    "name": "Okta",
+    "category": "Platform",
+    "domain": "Identity",
+    "eli5": "Okta is like a master keycard for enterprise apps — employees log in once and Okta silently opens every door they're allowed through.",
+    "description": "Enterprise identity and access management platform. Provides SSO, MFA, lifecycle management, and API security for workforce and customer identity use cases.",
+    "use_cases": [
+      "Workforce SSO across SaaS apps",
+      "Customer identity and access management (CIAM)",
+      "Zero-trust policy enforcement",
+      "SCIM-based user provisioning and deprovisioning"
+    ],
+    "used_by": ["FedEx", "T-Mobile", "jetBlue", "Nordstrom"],
+    "docs": "https://developer.okta.com/docs/",
+    "tutorial": "https://developer.okta.com/docs/guides/",
+    "added": "2026-06-12"
+  },
+  {
+    "id": "thanos",
+    "name": "Thanos",
+    "category": "Tool",
+    "domain": "SRE/Observability",
+    "eli5": "Thanos is like a backup brain for Prometheus — it copies all the metrics to cheap cloud storage and lets multiple Prometheus servers act as one.",
+    "description": "Highly available Prometheus setup with long-term storage. Extends Prometheus with global query view, unlimited retention via object storage, and multi-cluster deduplication.",
+    "use_cases": [
+      "Long-term Prometheus metrics retention (S3/GCS/Azure Blob)",
+      "Global query view across multiple Prometheus instances",
+      "HA Prometheus with deduplication",
+      "Cross-cluster metric federation"
+    ],
+    "used_by": ["Cloudflare", "Improbable", "Banzai Cloud", "Shopify"],
+    "docs": "https://thanos.io/tip/thanos/getting-started.md/",
+    "tutorial": "https://thanos.io/tip/tutorials/quick-tutorial.md/",
+    "added": "2026-06-12"
+  },
+  {
+    "id": "opensearch",
+    "name": "OpenSearch",
+    "category": "Tool",
+    "domain": "Database",
+    "eli5": "OpenSearch is like a free, open version of Elasticsearch — same powerful search engine, but community-owned and without licensing restrictions.",
+    "description": "Community-driven fork of Elasticsearch and Kibana, maintained by AWS under the Apache 2.0 license. Provides full-text search, analytics, and observability dashboards.",
+    "use_cases": [
+      "Log analytics and SIEM (open-source ELK replacement)",
+      "Full-text application search",
+      "Security analytics and threat detection",
+      "Observability dashboards with OpenSearch Dashboards"
+    ],
+    "used_by": ["AWS (Amazon OpenSearch Service)", "SAP", "Aiven"],
+    "docs": "https://opensearch.org/docs/latest/",
+    "tutorial": "https://opensearch.org/docs/latest/getting-started/",
+    "added": "2026-06-12"
+  },
+  {
+    "id": "celery",
+    "name": "Celery",
+    "category": "Framework",
+    "domain": "Messaging",
+    "eli5": "Celery is like a restaurant ticket system — the server hands off orders to kitchen workers in the background so the front desk stays fast and free.",
+    "description": "Distributed task queue for Python. Executes async and scheduled tasks in background workers, backed by brokers like Redis or RabbitMQ. Essential for offloading slow work from web requests.",
+    "use_cases": [
+      "Async task processing (email, image resize, PDF generation)",
+      "Periodic/scheduled jobs (cron replacement)",
+      "Distributed computation across multiple workers",
+      "Rate-limited API call queuing"
+    ],
+    "used_by": ["Instagram", "Mozilla", "Coursera", "Robinhood"],
+    "docs": "https://docs.celeryq.dev/",
+    "tutorial": "https://docs.celeryq.dev/en/stable/getting-started/first-steps-with-celery.html",
+    "added": "2026-06-12"
+  },
+  {
+    "id": "gin",
+    "name": "Gin",
+    "category": "Framework",
+    "domain": "Backend",
+    "eli5": "Gin is like a Formula 1 car for building web APIs in Go — extremely fast, very light, and gets out of your way.",
+    "description": "High-performance HTTP web framework for Go. Features a martini-like API with up to 40x better performance, middleware support, and JSON validation.",
+    "use_cases": [
+      "High-throughput REST APIs in Go",
+      "Microservices with minimal memory footprint",
+      "Middleware chains for auth, logging, rate limiting",
+      "JSON API servers with request binding and validation"
+    ],
+    "used_by": ["ByteDance", "Docker", "Kubernetes ecosystem tools"],
+    "docs": "https://gin-gonic.com/docs/",
+    "tutorial": "https://gin-gonic.com/docs/quickstart/",
+    "added": "2026-06-12"
+  },
+  {
+    "id": "bun",
+    "name": "Bun",
+    "category": "Tool",
+    "domain": "Frontend",
+    "eli5": "Bun is like a turbocharged Node.js — it runs JavaScript much faster and also replaces npm, webpack, and Jest all in one tool.",
+    "description": "Fast all-in-one JavaScript runtime, bundler, test runner, and package manager built with Zig. Drop-in Node.js compatible with 3x faster startup and built-in TypeScript support.",
+    "use_cases": [
+      "Drop-in Node.js replacement for faster backends",
+      "Faster CI pipelines (install + test + build)",
+      "Edge and serverless JS workloads",
+      "Monorepo tooling with built-in workspace support"
+    ],
+    "used_by": ["Vercel", "Cloudflare", "various JS toolchain teams"],
+    "docs": "https://bun.sh/docs",
+    "tutorial": "https://bun.sh/docs/quickstart",
+    "added": "2026-06-12"
+  },
+  {
+    "id": "storybook",
+    "name": "Storybook",
+    "category": "Tool",
+    "domain": "Frontend",
+    "eli5": "Storybook is like a showroom for your UI components — you can see every button, card, and form in isolation without running the whole app.",
+    "description": "Frontend workshop for building, documenting, and testing UI components in isolation. Supports React, Vue, Angular, Svelte, and more with addons for accessibility and visual testing.",
+    "use_cases": [
+      "Component-driven development and documentation",
+      "Visual regression testing with Chromatic",
+      "Design system documentation and sharing",
+      "Isolated component debugging without app context"
+    ],
+    "used_by": ["Shopify", "Microsoft", "BBC", "Airbnb"],
+    "docs": "https://storybook.js.org/docs",
+    "tutorial": "https://storybook.js.org/tutorials/intro-to-storybook/",
+    "added": "2026-06-12"
+  },
+  {
+    "id": "renovate",
+    "name": "Renovate",
+    "category": "Tool",
+    "domain": "CI/CD",
+    "eli5": "Renovate is like a robot assistant that automatically opens pull requests whenever your dependencies have updates, so you never fall behind.",
+    "description": "Automated dependency update tool that creates PRs for outdated packages across npm, Docker, Helm, Terraform, and 100+ package managers. Highly configurable update policies.",
+    "use_cases": [
+      "Automated dependency updates across all package ecosystems",
+      "Scheduled batching of minor/patch updates",
+      "Security patch automation",
+      "Monorepo dependency management"
+    ],
+    "used_by": ["WhiteSource", "GitLab", "Mend", "HashiCorp"],
+    "docs": "https://docs.renovatebot.com/",
+    "tutorial": "https://docs.renovatebot.com/getting-started/installing-onboarding/",
+    "added": "2026-06-12"
+  },
+  {
+    "id": "cosign",
+    "name": "Cosign",
+    "category": "Tool",
+    "domain": "Security",
+    "eli5": "Cosign is like a digital wax seal for container images — it proves the image you're running is exactly what the publisher shipped and nobody tampered with it.",
+    "description": "Container image signing and verification tool from the Sigstore project. Enables keyless signing via OIDC, attestation storage in OCI registries, and supply chain security.",
+    "use_cases": [
+      "Signing container images in CI/CD pipelines",
+      "Verifying image provenance before deployment",
+      "Keyless signing with GitHub Actions OIDC",
+      "SLSA attestation and SBOM attachment"
+    ],
+    "used_by": ["Chainguard", "Google", "Red Hat", "GitHub"],
+    "docs": "https://docs.sigstore.dev/cosign/overview/",
+    "tutorial": "https://docs.sigstore.dev/cosign/signing/quickstart/",
+    "added": "2026-06-12"
+  },
+  {
+    "id": "apache-beam",
+    "name": "Apache Beam",
+    "category": "Framework",
+    "domain": "Data Engineering",
+    "eli5": "Beam is like writing one recipe that works whether you cook on a gas stove, electric, or campfire — your data pipeline runs on Spark, Flink, or Dataflow unchanged.",
+    "description": "Unified programming model for batch and streaming data pipelines. Write once, run on any execution engine (Spark, Flink, Google Dataflow) via pluggable runners.",
+    "use_cases": [
+      "Portable ETL pipelines across multiple runners",
+      "Streaming data processing with event-time semantics",
+      "ML inference pipelines at scale",
+      "Google Dataflow-native batch and stream jobs"
+    ],
+    "used_by": ["Google", "LinkedIn", "PayPal", "Lyft"],
+    "docs": "https://beam.apache.org/documentation/",
+    "tutorial": "https://beam.apache.org/get-started/wordcount-example/",
+    "added": "2026-06-12"
+  },
+  {
+    "id": "delta-lake",
+    "name": "Delta Lake",
+    "category": "Tool",
+    "domain": "Data Engineering",
+    "eli5": "Delta Lake is like adding a save history to your data lake — you can undo mistakes, read yesterday's data, and write reliably without corrupting anything.",
+    "description": "Open-source storage layer bringing ACID transactions to Apache Spark and big data workloads. Provides time travel, schema enforcement, and unified batch/streaming.",
+    "use_cases": [
+      "ACID transactions on Spark data lakes",
+      "Upserts and deletes on Parquet tables",
+      "CDC pipeline targets with merge operations",
+      "Data versioning and audit trails"
+    ],
+    "used_by": ["Databricks", "Microsoft", "Comcast", "AT&T"],
+    "docs": "https://docs.delta.io/latest/",
+    "tutorial": "https://docs.delta.io/latest/quick-start.html",
+    "added": "2026-06-12"
+  },
+  {
+    "id": "buildkite",
+    "name": "Buildkite",
+    "category": "Tool",
+    "domain": "CI/CD",
+    "eli5": "Buildkite is like a CI system where the build machines are yours — Buildkite just tells them what to do, so your code never leaves your infrastructure.",
+    "description": "Hybrid CI/CD platform where the orchestration is SaaS but build agents run on your own infrastructure. Enables fast, scalable pipelines without sending code to a third party.",
+    "use_cases": [
+      "Fast parallel test suites on self-hosted agents",
+      "CI/CD for security-sensitive regulated environments",
+      "Large monorepo pipelines with dynamic step generation",
+      "GPU and specialized hardware build agents"
+    ],
+    "used_by": ["Shopify", "Airbnb", "PagerDuty", "Canva"],
+    "docs": "https://buildkite.com/docs/",
+    "tutorial": "https://buildkite.com/docs/tutorials/getting-started",
+    "added": "2026-06-12"
+  },
+  {
+    "id": "tilt",
+    "name": "Tilt",
+    "category": "Tool",
+    "domain": "DevOps",
+    "eli5": "Tilt is like a smart live-reload for your entire microservices stack — change a file and only the affected service rebuilds and redeploys in seconds.",
+    "description": "Local development environment orchestrator for Kubernetes microservices. Uses a Tiltfile (Python-like) to define smart rebuilds, dependency tracking, and a real-time dev dashboard.",
+    "use_cases": [
+      "Local multi-service Kubernetes development",
+      "Smart incremental builds (only rebuild what changed)",
+      "Unified dev dashboard for logs, builds, and health",
+      "Consistent dev environments across teams"
+    ],
+    "used_by": ["Docker", "Grafana Labs", "Netlify", "Cockroach Labs"],
+    "docs": "https://docs.tilt.dev/",
+    "tutorial": "https://docs.tilt.dev/tutorial/index.html",
+    "added": "2026-06-12"
+  },
+  {
+    "id": "ory",
+    "name": "Ory",
+    "category": "Platform",
+    "domain": "Identity",
+    "eli5": "Ory is like Auth0 but open-source — a complete identity toolkit you can self-host or use as a cloud service, covering login, permissions, and API security.",
+    "description": "Open-source identity infrastructure stack: Kratos (user management), Hydra (OAuth2/OIDC), Keto (permissions), and Oathkeeper (API gateway). Cloud-native and self-hostable.",
+    "use_cases": [
+      "Self-hosted OAuth2 and OpenID Connect server",
+      "User registration, login, and 2FA flows",
+      "Fine-grained permissions with Google Zanzibar model",
+      "Zero-trust API access control"
+    ],
+    "used_by": ["Segment", "Sainsbury's", "various open-source projects"],
+    "docs": "https://www.ory.sh/docs/",
+    "tutorial": "https://www.ory.sh/docs/getting-started/overview",
+    "added": "2026-06-12"
   }
 ]

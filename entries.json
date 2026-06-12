@@ -3470,5 +3470,383 @@
     "docs": "https://opentofu.org/docs/",
     "tutorial": "https://opentofu.org/docs/intro/",
     "added": "2026-06-11"
+  },
+  {
+    "id": "haproxy",
+    "name": "HAProxy",
+    "category": "Tool",
+    "domain": "Networking",
+    "eli5": "HAProxy is like a traffic cop at a busy intersection who splits cars evenly across many roads so no single road gets jammed.",
+    "description": "Battle-tested open-source TCP/HTTP load balancer and proxy. Industry standard for high-availability setups, used in front of databases, APIs, and web clusters.",
+    "use_cases": [
+      "L4/L7 load balancing for APIs and databases",
+      "SSL termination and health-check-based failover",
+      "Rate limiting and ACL-based routing",
+      "High-availability database clusters (MySQL, PostgreSQL)"
+    ],
+    "used_by": ["GitHub", "Reddit", "Airbnb", "Stack Overflow"],
+    "docs": "https://docs.haproxy.org/",
+    "tutorial": "https://www.haproxy.com/documentation/haproxy-configuration-tutorials/",
+    "added": "2026-06-12"
+  },
+  {
+    "id": "coredns",
+    "name": "CoreDNS",
+    "category": "Tool",
+    "domain": "Networking",
+    "eli5": "CoreDNS is like the phone book inside your Kubernetes cluster — it translates service names into IP addresses so apps can find each other.",
+    "description": "Flexible, plugin-based DNS server written in Go. Default DNS server for Kubernetes since v1.13, handling service discovery and internal name resolution.",
+    "use_cases": [
+      "Kubernetes cluster-internal DNS",
+      "Service discovery in microservices",
+      "Custom DNS rewrites and forwarding",
+      "Split-horizon DNS for on-prem/cloud hybrid"
+    ],
+    "used_by": ["Kubernetes (default)", "Red Hat OpenShift", "Rancher"],
+    "docs": "https://coredns.io/manual/toc/",
+    "tutorial": "https://coredns.io/2017/05/08/custom-dns-entries-for-kubernetes/",
+    "added": "2026-06-12"
+  },
+  {
+    "id": "cloudflare",
+    "name": "Cloudflare",
+    "category": "Platform",
+    "domain": "Networking",
+    "eli5": "Cloudflare is like a bodyguard and speed booster for your website — it blocks attacks and makes pages load faster by storing copies closer to users.",
+    "description": "Global CDN, DDoS protection, DNS, and edge compute platform. Sits in front of web properties to improve performance, security, and availability at scale.",
+    "use_cases": [
+      "DDoS mitigation and WAF",
+      "Global CDN and static asset caching",
+      "Authoritative DNS with anycast routing",
+      "Edge compute with Cloudflare Workers"
+    ],
+    "used_by": ["Discord", "Shopify", "DoorDash", "Canva"],
+    "docs": "https://developers.cloudflare.com/",
+    "tutorial": "https://developers.cloudflare.com/fundamentals/get-started/",
+    "added": "2026-06-12"
+  },
+  {
+    "id": "redpanda",
+    "name": "Redpanda",
+    "category": "Tool",
+    "domain": "Messaging",
+    "eli5": "Redpanda is like Kafka but without the complicated setup — it does the same job of passing messages between apps, just simpler and faster.",
+    "description": "Kafka-compatible streaming data platform written in C++. No ZooKeeper, no JVM — delivers 10x lower latency and simpler operations than Apache Kafka.",
+    "use_cases": [
+      "Drop-in Kafka replacement with lower ops overhead",
+      "High-throughput event streaming",
+      "Real-time analytics ingestion",
+      "Embedded streaming in edge or IoT deployments"
+    ],
+    "used_by": ["Loft Labs", "Aiven", "Forma.ai", "Starburst"],
+    "docs": "https://docs.redpanda.com/",
+    "tutorial": "https://docs.redpanda.com/current/get-started/quick-start/",
+    "added": "2026-06-12"
+  },
+  {
+    "id": "apache-pulsar",
+    "name": "Apache Pulsar",
+    "category": "Tool",
+    "domain": "Messaging",
+    "eli5": "Pulsar is like a post office that can hold letters forever and deliver them to any subscriber at any time — even ones who weren't listening when the letter arrived.",
+    "description": "Cloud-native distributed messaging and streaming platform with multi-tenancy, geo-replication, and built-in tiered storage. Decouples compute from storage.",
+    "use_cases": [
+      "Multi-tenant event streaming across teams",
+      "Long-term message retention with tiered storage",
+      "Geo-replicated pub/sub for global deployments",
+      "Serverless stream processing with Pulsar Functions"
+    ],
+    "used_by": ["Yahoo", "Tencent", "Overstock", "Narvar"],
+    "docs": "https://pulsar.apache.org/docs/",
+    "tutorial": "https://pulsar.apache.org/docs/getting-started-standalone/",
+    "added": "2026-06-12"
+  },
+  {
+    "id": "elasticsearch",
+    "name": "Elasticsearch",
+    "category": "Tool",
+    "domain": "Database",
+    "eli5": "Elasticsearch is like a super-fast librarian who can search every word in every book in seconds and tell you exactly which books match your question.",
+    "description": "Distributed search and analytics engine built on Apache Lucene. Powers full-text search, log analytics, and observability at scale. Core of the ELK Stack.",
+    "use_cases": [
+      "Full-text search for applications",
+      "Log and metric aggregation (ELK/EFK stack)",
+      "E-commerce product search",
+      "Security event analytics (SIEM)"
+    ],
+    "used_by": ["Netflix", "Uber", "GitHub", "Wikipedia"],
+    "docs": "https://www.elastic.co/guide/en/elasticsearch/reference/current/",
+    "tutorial": "https://www.elastic.co/guide/en/elasticsearch/reference/current/getting-started.html",
+    "added": "2026-06-12"
+  },
+  {
+    "id": "scylladb",
+    "name": "ScyllaDB",
+    "category": "Tool",
+    "domain": "Database",
+    "eli5": "ScyllaDB is like Cassandra on steroids — it does the same distributed database job but squeezes 10x more speed out of your hardware.",
+    "description": "High-performance NoSQL database compatible with Apache Cassandra and DynamoDB APIs. Written in C++ using the Seastar framework for predictable low latency.",
+    "use_cases": [
+      "High-throughput time-series and IoT data",
+      "Drop-in Cassandra replacement for latency-sensitive apps",
+      "Ad tech and real-time personalization",
+      "Gaming leaderboards and session stores"
+    ],
+    "used_by": ["Discord", "Comcast", "Palo Alto Networks", "FireEye"],
+    "docs": "https://docs.scylladb.com/",
+    "tutorial": "https://docs.scylladb.com/stable/getting-started/",
+    "added": "2026-06-12"
+  },
+  {
+    "id": "pinecone",
+    "name": "Pinecone",
+    "category": "Tool",
+    "domain": "Database",
+    "eli5": "Pinecone is like a filing cabinet that stores meaning instead of words — you search by describing a concept and it finds everything similar, not just exact matches.",
+    "description": "Managed vector database for storing and querying high-dimensional embeddings. Enables semantic search, recommendation engines, and RAG pipelines at scale.",
+    "use_cases": [
+      "Retrieval-augmented generation (RAG) for LLMs",
+      "Semantic similarity search",
+      "Recommendation and personalization systems",
+      "Image and document similarity matching"
+    ],
+    "used_by": ["Hubspot", "Zapier", "monday.com", "Notion"],
+    "docs": "https://docs.pinecone.io/",
+    "tutorial": "https://docs.pinecone.io/guides/get-started/quickstart",
+    "added": "2026-06-12"
+  },
+  {
+    "id": "ceph",
+    "name": "Ceph",
+    "category": "Tool",
+    "domain": "Storage",
+    "eli5": "Ceph is like building your own private S3 in your data center from regular hard drives — it spreads your files across many disks so nothing gets lost.",
+    "description": "Open-source distributed storage system providing object, block, and file storage in a single cluster. Designed for self-healing and no single point of failure.",
+    "use_cases": [
+      "On-premises object storage (S3-compatible via RadosGW)",
+      "Persistent block storage for Kubernetes (via Rook)",
+      "OpenStack Cinder backend",
+      "Large-scale petabyte storage clusters"
+    ],
+    "used_by": ["CERN", "Red Hat", "Deutsche Telekom", "Bloomberg"],
+    "docs": "https://docs.ceph.com/",
+    "tutorial": "https://docs.ceph.com/en/latest/install/",
+    "added": "2026-06-12"
+  },
+  {
+    "id": "express",
+    "name": "Express.js",
+    "category": "Framework",
+    "domain": "Backend",
+    "eli5": "Express is like a thin layer of helpful tools on top of Node.js — it makes building web servers and APIs way less tedious without getting in your way.",
+    "description": "Minimal, unopinionated Node.js web framework. The de-facto standard for building HTTP servers and REST APIs in JavaScript/TypeScript with a huge middleware ecosystem.",
+    "use_cases": [
+      "REST API servers",
+      "Middleware pipelines for auth, logging, rate limiting",
+      "Server-side rendering backends",
+      "BFF (backend for frontend) layers"
+    ],
+    "used_by": ["IBM", "Accenture", "Fox Sports", "Uber"],
+    "docs": "https://expressjs.com/",
+    "tutorial": "https://expressjs.com/en/starter/hello-world.html",
+    "added": "2026-06-12"
+  },
+  {
+    "id": "spring-boot",
+    "name": "Spring Boot",
+    "category": "Framework",
+    "domain": "Backend",
+    "eli5": "Spring Boot is like a pre-configured Java starter kit — it sets up all the boring boilerplate so you can start writing business logic on day one.",
+    "description": "Convention-over-configuration Java framework for building production-ready microservices and web apps. Embeds Tomcat/Jetty and auto-configures the Spring ecosystem.",
+    "use_cases": [
+      "Enterprise REST APIs and microservices",
+      "Event-driven applications with Spring Kafka/RabbitMQ",
+      "Batch processing pipelines",
+      "Cloud-native apps with Spring Cloud"
+    ],
+    "used_by": ["Netflix", "Amazon", "Google", "Microsoft"],
+    "docs": "https://docs.spring.io/spring-boot/docs/current/reference/html/",
+    "tutorial": "https://spring.io/quickstart",
+    "added": "2026-06-12"
+  },
+  {
+    "id": "django",
+    "name": "Django",
+    "category": "Framework",
+    "domain": "Backend",
+    "eli5": "Django is like a fully-stocked kitchen for building websites in Python — everything from database to login pages to admin panels comes included.",
+    "description": "High-level Python web framework that follows the 'batteries included' philosophy. Includes ORM, auth, admin, and templating out of the box.",
+    "use_cases": [
+      "Full-stack web applications with server-side rendering",
+      "REST APIs (with Django REST Framework)",
+      "Admin dashboards and CMS backends",
+      "Rapid prototyping for data-heavy apps"
+    ],
+    "used_by": ["Instagram", "Mozilla", "Disqus", "Pinterest"],
+    "docs": "https://docs.djangoproject.com/",
+    "tutorial": "https://docs.djangoproject.com/en/stable/intro/tutorial01/",
+    "added": "2026-06-12"
+  },
+  {
+    "id": "graphql",
+    "name": "GraphQL",
+    "category": "Concept",
+    "domain": "Backend",
+    "eli5": "GraphQL is like ordering exactly what you want from a menu instead of getting a fixed combo — you ask for the specific fields you need and nothing more.",
+    "description": "Query language and runtime for APIs that lets clients request exactly the data they need. Developed by Facebook, replaces multiple REST endpoints with a single typed schema.",
+    "use_cases": [
+      "Flexible APIs for mobile and web clients",
+      "Aggregating data from multiple microservices (schema federation)",
+      "Reducing over-fetching and under-fetching",
+      "Real-time data with GraphQL subscriptions"
+    ],
+    "used_by": ["GitHub", "Shopify", "Twitter", "Airbnb"],
+    "docs": "https://graphql.org/learn/",
+    "tutorial": "https://graphql.org/learn/",
+    "added": "2026-06-12"
+  },
+  {
+    "id": "auth0",
+    "name": "Auth0",
+    "category": "Platform",
+    "domain": "Identity",
+    "eli5": "Auth0 is like hiring a professional security guard for your app — you don't build the login system yourself, you let experts handle it.",
+    "description": "Managed identity platform providing authentication, authorization, and user management as a service. Supports social login, MFA, SSO, and enterprise federation.",
+    "use_cases": [
+      "Outsourcing authentication to a managed service",
+      "Social login (Google, GitHub, Facebook)",
+      "B2B SSO with SAML and OIDC",
+      "Role-based access control (RBAC)"
+    ],
+    "used_by": ["Mozilla", "Siemens", "AMD", "Atlassian"],
+    "docs": "https://auth0.com/docs/",
+    "tutorial": "https://auth0.com/docs/quickstarts",
+    "added": "2026-06-12"
+  },
+  {
+    "id": "sonarqube",
+    "name": "SonarQube",
+    "category": "Tool",
+    "domain": "Security",
+    "eli5": "SonarQube is like a spell-checker for your code but also checks for security holes, bad practices, and code smells before you ship anything.",
+    "description": "Platform for continuous code quality and security inspection. Detects bugs, vulnerabilities, and code smells across 30+ languages. Integrates into CI/CD pipelines.",
+    "use_cases": [
+      "Static application security testing (SAST)",
+      "Code quality gates in CI/CD",
+      "Technical debt tracking across large codebases",
+      "Compliance enforcement (OWASP, CERT)"
+    ],
+    "used_by": ["Microsoft", "NASA", "Bosch", "T-Mobile"],
+    "docs": "https://docs.sonarsource.com/sonarqube/",
+    "tutorial": "https://docs.sonarsource.com/sonarqube/latest/try-out-sonarqube/",
+    "added": "2026-06-12"
+  },
+  {
+    "id": "victoriametrics",
+    "name": "VictoriaMetrics",
+    "category": "Tool",
+    "domain": "SRE/Observability",
+    "eli5": "VictoriaMetrics is like a turbocharged Prometheus that stores way more metrics for way less disk space and doesn't break a sweat under load.",
+    "description": "High-performance, cost-efficient time-series database and monitoring solution. Drop-in Prometheus-compatible with 10x better compression and horizontal scalability.",
+    "use_cases": [
+      "Long-term Prometheus metrics storage",
+      "High-cardinality metrics from large Kubernetes clusters",
+      "Replacing Thanos/Cortex for simpler HA Prometheus",
+      "Multi-tenant monitoring platforms"
+    ],
+    "used_by": ["Grammarly", "Adidas", "Wix", "Roblox"],
+    "docs": "https://docs.victoriametrics.com/",
+    "tutorial": "https://docs.victoriametrics.com/quick-start/",
+    "added": "2026-06-12"
+  },
+  {
+    "id": "prefect",
+    "name": "Prefect",
+    "category": "Tool",
+    "domain": "Data Engineering",
+    "eli5": "Prefect is like a smart to-do list manager for your data pipelines — it schedules tasks, retries failures, and tells you exactly what went wrong.",
+    "description": "Modern workflow orchestration platform for data pipelines. Python-native, with automatic retries, observability, and a hosted UI. Positioned as a simpler Airflow alternative.",
+    "use_cases": [
+      "ETL/ELT pipeline orchestration",
+      "ML training pipeline scheduling",
+      "Data quality checks and alerting",
+      "Event-triggered and cron-based data workflows"
+    ],
+    "used_by": ["Doordash", "Accenture", "Labcorp", "Raft"],
+    "docs": "https://docs.prefect.io/",
+    "tutorial": "https://docs.prefect.io/v3/get-started/quickstart",
+    "added": "2026-06-12"
+  },
+  {
+    "id": "apache-iceberg",
+    "name": "Apache Iceberg",
+    "category": "Tool",
+    "domain": "Data Engineering",
+    "eli5": "Iceberg is like a version-controlled spreadsheet for petabytes of data — you can time-travel to yesterday's data, roll back mistakes, and add columns without breaking anything.",
+    "description": "Open table format for huge analytic datasets. Brings ACID transactions, schema evolution, and time-travel queries to data lakes stored in S3, HDFS, or GCS.",
+    "use_cases": [
+      "ACID transactions on data lake tables",
+      "Schema evolution without breaking queries",
+      "Time-travel and incremental reads for CDC",
+      "Multi-engine interoperability (Spark, Flink, Trino)"
+    ],
+    "used_by": ["Netflix", "Apple", "LinkedIn", "Adobe"],
+    "docs": "https://iceberg.apache.org/docs/latest/",
+    "tutorial": "https://iceberg.apache.org/spark-quickstart/",
+    "added": "2026-06-12"
+  },
+  {
+    "id": "llamaindex",
+    "name": "LlamaIndex",
+    "category": "Framework",
+    "domain": "AI/ML",
+    "eli5": "LlamaIndex is like a filing system that helps AI read and remember your documents — it indexes them so the AI can find the right info before answering.",
+    "description": "Data framework for connecting LLMs to external data sources. Provides tools for ingestion, indexing, and retrieval to build RAG pipelines and AI agents.",
+    "use_cases": [
+      "Retrieval-augmented generation (RAG) over private docs",
+      "Building knowledge assistants over internal wikis",
+      "Structured data querying with natural language",
+      "Multi-step AI agents with tool use"
+    ],
+    "used_by": ["Replit", "MongoDB", "Figma", "Uber"],
+    "docs": "https://docs.llamaindex.ai/",
+    "tutorial": "https://docs.llamaindex.ai/en/stable/getting_started/starter_example/",
+    "added": "2026-06-12"
+  },
+  {
+    "id": "astro",
+    "name": "Astro",
+    "category": "Framework",
+    "domain": "Frontend",
+    "eli5": "Astro is like a website builder that sends zero JavaScript to your users by default — pages load super fast because there's nothing extra to download.",
+    "description": "Content-focused web framework that ships zero JS by default using an 'islands' architecture. Supports React, Vue, Svelte, and Solid components side-by-side.",
+    "use_cases": [
+      "Marketing sites and blogs with minimal JS",
+      "Documentation sites with fast page loads",
+      "E-commerce storefronts with selective hydration",
+      "Mixing multiple UI frameworks in one project"
+    ],
+    "used_by": ["Google", "Microsoft", "Netlify", "The Guardian"],
+    "docs": "https://docs.astro.build/",
+    "tutorial": "https://docs.astro.build/en/tutorial/0-introduction/",
+    "added": "2026-06-12"
+  },
+  {
+    "id": "skaffold",
+    "name": "Skaffold",
+    "category": "Tool",
+    "domain": "DevOps",
+    "eli5": "Skaffold is like a live-reload button for Kubernetes — every time you save code, it automatically builds a container and deploys it to your cluster.",
+    "description": "CLI tool for continuous development against Kubernetes. Handles build, push, and deploy automatically on file changes, with support for Helm, Kustomize, and kubectl.",
+    "use_cases": [
+      "Inner-loop dev with hot reload on Kubernetes",
+      "CI pipeline with consistent build + deploy steps",
+      "Multi-service local development with minikube/kind",
+      "GitOps-friendly deploy pipelines"
+    ],
+    "used_by": ["Google", "Spotify", "Weaveworks", "JFrog"],
+    "docs": "https://skaffold.dev/docs/",
+    "tutorial": "https://skaffold.dev/docs/quickstart/",
+    "added": "2026-06-12"
   }
 ]

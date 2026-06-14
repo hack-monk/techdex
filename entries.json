@@ -5051,5 +5051,120 @@
     "docs": "https://buf.build/docs",
     "tutorial": "https://buf.build/docs/tour/getting-started",
     "added": "2026-06-14"
+  },
+  {
+    "id": "unocss",
+    "name": "UnoCSS",
+    "category": "Framework",
+    "domain": "Frontend",
+    "eli5": "It's like a smart shortcut maker for decorating web pages \u2014 instead of writing long style rules, you use tiny magic words that instantly make things look good.",
+    "description": "UnoCSS is an instant on-demand atomic CSS engine that provides a highly customizable and performant utility-first CSS framework. It offers better performance and flexibility compared to traditional approaches like Tailwind CSS through its instant mode and plugin system.",
+    "use_cases": [
+      "Building responsive web applications with minimal CSS bundle size",
+      "Creating design systems with customizable utility tokens",
+      "Rapid prototyping with pre-built component utilities",
+      "Integrating CSS-in-JS solutions with zero runtime overhead"
+    ],
+    "used_by": [
+      "Nuxt",
+      "VueUse",
+      "Slidev",
+      "Windicss"
+    ],
+    "docs": "https://unocss.dev/",
+    "tutorial": "https://unocss.dev/guide/",
+    "added": "2026-06-14"
+  },
+  {
+    "id": "mermaid",
+    "name": "Mermaid",
+    "category": "Tool",
+    "domain": "Other",
+    "eli5": "It's like a magic notebook where you can write simple instructions and it automatically draws diagrams, flowcharts, and pictures for you.",
+    "description": "Mermaid is a JavaScript-based diagramming and charting tool that uses a simple, markdown-inspired syntax to create and modify diagrams dynamically. It enables developers to document architecture, workflows, and systems as code within their projects.",
+    "use_cases": [
+      "Creating system architecture and flowchart documentation in version control",
+      "Embedding diagrams directly in markdown documentation and README files",
+      "Visualizing database schemas, user journeys, and deployment workflows",
+      "Generating sequence diagrams and Gantt charts for project planning"
+    ],
+    "used_by": [
+      "GitHub",
+      "GitLab",
+      "Notion",
+      "Confluence"
+    ],
+    "docs": "https://mermaid.js.org/",
+    "tutorial": "https://mermaid.js.org/ecosystem/integrations.html",
+    "added": "2026-06-14"
+  },
+  {
+    "id": "wiz",
+    "name": "Wiz",
+    "category": "Tool",
+    "domain": "Security",
+    "eli5": "It's like a security guard for your cloud who walks around and checks every corner to make sure nothing dangerous was left behind or forgotten.",
+    "description": "Wiz is a cloud security platform that provides runtime threat detection, vulnerability management, and compliance monitoring across multi-cloud environments. It uses runtime intelligence to identify and prioritize security risks in cloud workloads and infrastructure.",
+    "use_cases": [
+      "Detecting and remediating cloud misconfigurations and vulnerabilities in real-time",
+      "Identifying runtime threats and anomalous behavior in containerized workloads",
+      "Meeting compliance requirements across AWS, Azure, and GCP environments",
+      "Prioritizing security issues based on actual runtime context and exploitability"
+    ],
+    "used_by": [
+      "SailPoint",
+      "Figma",
+      "Canva",
+      "Scale AI"
+    ],
+    "docs": "https://docs.wiz.io/",
+    "tutorial": "https://docs.wiz.io/wiz-docs/docs/getting-started",
+    "added": "2026-06-14"
+  },
+  {
+    "id": "astrojs",
+    "name": "Astro",
+    "category": "Framework",
+    "domain": "Frontend",
+    "eli5": "It's a super-smart web builder that only sends the exact code you need to visitors, making websites load incredibly fast like a speed racer.",
+    "description": "Astro is a modern web framework designed for building fast, content-focused websites with minimal JavaScript. It supports multiple UI frameworks and uses island architecture to optimize performance by shipping zero JavaScript by default.",
+    "use_cases": [
+      "Building high-performance static sites and blogs with dynamic content",
+      "Creating documentation websites that load instantly",
+      "Developing content-heavy applications with optimal Core Web Vitals",
+      "Mixing multiple UI frameworks (React, Vue, Svelte) in a single project"
+    ],
+    "used_by": [
+      "Docusaurus",
+      "the Astro community",
+      "various tech blogs",
+      "documentation sites"
+    ],
+    "docs": "https://docs.astro.build/",
+    "tutorial": "https://docs.astro.build/en/getting-started/",
+    "added": "2026-06-14"
+  },
+  {
+    "id": "duckdb",
+    "name": "DuckDB",
+    "category": "Tool",
+    "domain": "Database",
+    "eli5": "It's like a tiny, super-fast database that lives in your application instead of on a separate server, perfect for analyzing data quickly without setup.",
+    "description": "DuckDB is an in-process SQL OLAP database engine optimized for analytical queries on large datasets with minimal overhead. It provides native support for Parquet, CSV, and other formats, making it ideal for data analysis workflows and embedding in applications.",
+    "use_cases": [
+      "Fast data analysis and querying on local files and Parquet datasets",
+      "Building analytical dashboards and reports without a centralized database",
+      "Embedded analytics in applications and Python/R notebooks",
+      "Processing and transforming large datasets in data pipelines with minimal resource usage"
+    ],
+    "used_by": [
+      "Evidence",
+      "Ibis",
+      "data scientists worldwide",
+      "analytics companies"
+    ],
+    "docs": "https://duckdb.org/docs/",
+    "tutorial": "https://duckdb.org/docs/guides/index",
+    "added": "2026-06-14"
   }
 ]

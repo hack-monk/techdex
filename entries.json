@@ -3214,7 +3214,13 @@
       "Service mesh replacement (Cilium Mesh)",
       "Hubble-based flow observability"
     ],
-    "used_by": ["Google", "AWS", "Adobe", "GitLab", "Bell Canada"],
+    "used_by": [
+      "Google",
+      "AWS",
+      "Adobe",
+      "GitLab",
+      "Bell Canada"
+    ],
     "docs": "https://docs.cilium.io/",
     "tutorial": "https://docs.cilium.io/en/stable/gettingstarted/",
     "added": "2026-06-11"
@@ -3232,7 +3238,12 @@
       "Dynamic routing for microservices",
       "Docker Swarm and Nomad edge routing"
     ],
-    "used_by": ["Containous", "BlaBlaCar", "Gitlab", "The New York Times"],
+    "used_by": [
+      "Containous",
+      "BlaBlaCar",
+      "Gitlab",
+      "The New York Times"
+    ],
     "docs": "https://doc.traefik.io/traefik/",
     "tutorial": "https://doc.traefik.io/traefik/getting-started/quick-start/",
     "added": "2026-06-11"
@@ -3250,7 +3261,12 @@
       "Event-driven architectures",
       "Distributed systems coordination"
     ],
-    "used_by": ["Apcera", "Netlify", "Mastercard", "Synadia"],
+    "used_by": [
+      "Apcera",
+      "Netlify",
+      "Mastercard",
+      "Synadia"
+    ],
     "docs": "https://docs.nats.io/",
     "tutorial": "https://docs.nats.io/nats-concepts/overview",
     "added": "2026-06-11"
@@ -3268,7 +3284,13 @@
       "Event-driven applications",
       "CDC (change data capture) processing"
     ],
-    "used_by": ["Alibaba", "Netflix", "Uber", "LinkedIn", "AWS"],
+    "used_by": [
+      "Alibaba",
+      "Netflix",
+      "Uber",
+      "LinkedIn",
+      "AWS"
+    ],
     "docs": "https://nightlies.apache.org/flink/flink-docs-stable/",
     "tutorial": "https://nightlies.apache.org/flink/flink-docs-stable/docs/try-flink/local_installation/",
     "added": "2026-06-11"
@@ -3279,14 +3301,20 @@
     "category": "Tool",
     "domain": "Data Engineering",
     "eli5": "Trino is like a universal translator that lets you ask questions across many different databases at once without moving all the data to one place.",
-    "description": "Distributed SQL query engine for big data analytics across heterogeneous data sources including S3, HDFS, Kafka, and relational databases — formerly known as PrestoSQL.",
+    "description": "Distributed SQL query engine for big data analytics across heterogeneous data sources including S3, HDFS, Kafka, and relational databases \u2014 formerly known as PrestoSQL.",
     "use_cases": [
       "Federated queries across data lakes and warehouses",
       "Ad-hoc analytics on S3/Hive tables",
       "Replacing ETL with in-place querying",
       "Interactive data exploration at petabyte scale"
     ],
-    "used_by": ["Meta", "Netflix", "LinkedIn", "Lyft", "Airbnb"],
+    "used_by": [
+      "Meta",
+      "Netflix",
+      "LinkedIn",
+      "Lyft",
+      "Airbnb"
+    ],
     "docs": "https://trino.io/docs/current/",
     "tutorial": "https://trino.io/docs/current/installation/deployment.html",
     "added": "2026-06-11"
@@ -3296,7 +3324,7 @@
     "name": "MinIO",
     "category": "Tool",
     "domain": "Storage",
-    "eli5": "MinIO is like having your own private Amazon S3 in your own data center — same interface, your rules.",
+    "eli5": "MinIO is like having your own private Amazon S3 in your own data center \u2014 same interface, your rules.",
     "description": "High-performance, S3-compatible object storage designed for on-premises and private cloud deployments. Supports erasure coding and runs on commodity hardware.",
     "use_cases": [
       "On-premises object storage with S3 API",
@@ -3304,7 +3332,12 @@
       "Backup and archival for Kubernetes workloads",
       "ML training data and model artifact storage"
     ],
-    "used_by": ["Verizon", "CERN", "NVIDIA", "Goldman Sachs"],
+    "used_by": [
+      "Verizon",
+      "CERN",
+      "NVIDIA",
+      "Goldman Sachs"
+    ],
     "docs": "https://min.io/docs/minio/",
     "tutorial": "https://min.io/docs/minio/linux/operations/install-deploy-manage/deploy-minio-single-node-single-drive.html",
     "added": "2026-06-11"
@@ -3314,15 +3347,20 @@
     "name": "Kyverno",
     "category": "Tool",
     "domain": "Security",
-    "eli5": "Kyverno is like a strict school hall monitor for Kubernetes — it checks every deployment against the rules and turns away anything that breaks them.",
-    "description": "Kubernetes-native policy engine that validates, mutates, and generates resources using policies written as Kubernetes resources — no Rego required.",
+    "eli5": "Kyverno is like a strict school hall monitor for Kubernetes \u2014 it checks every deployment against the rules and turns away anything that breaks them.",
+    "description": "Kubernetes-native policy engine that validates, mutates, and generates resources using policies written as Kubernetes resources \u2014 no Rego required.",
     "use_cases": [
       "Enforcing pod security standards",
       "Auto-injecting labels and sidecars",
       "Blocking privileged containers in CI/CD",
       "Generating default NetworkPolicies"
     ],
-    "used_by": ["Fidelity", "CNCF projects", "Rabobank", "Vodafone"],
+    "used_by": [
+      "Fidelity",
+      "CNCF projects",
+      "Rabobank",
+      "Vodafone"
+    ],
     "docs": "https://kyverno.io/docs/",
     "tutorial": "https://kyverno.io/docs/installation/",
     "added": "2026-06-11"
@@ -3332,7 +3370,7 @@
     "name": "Grafana Loki",
     "category": "Tool",
     "domain": "SRE/Observability",
-    "eli5": "Loki is like a filing cabinet for all your app logs — it only reads the label on the folder to find them fast, not every single word inside.",
+    "eli5": "Loki is like a filing cabinet for all your app logs \u2014 it only reads the label on the folder to find them fast, not every single word inside.",
     "description": "Horizontally scalable log aggregation system inspired by Prometheus. Indexes only metadata (labels), not log content, making it far cheaper than full-text search solutions.",
     "use_cases": [
       "Kubernetes pod log aggregation",
@@ -3340,7 +3378,12 @@
       "Cost-efficient alternative to Elasticsearch for logs",
       "Long-term log retention with object storage backend"
     ],
-    "used_by": ["Grafana Labs", "Digital Ocean", "Gojek", "Adidas"],
+    "used_by": [
+      "Grafana Labs",
+      "Digital Ocean",
+      "Gojek",
+      "Adidas"
+    ],
     "docs": "https://grafana.com/docs/loki/latest/",
     "tutorial": "https://grafana.com/docs/loki/latest/get-started/",
     "added": "2026-06-11"
@@ -3350,7 +3393,7 @@
     "name": "Grafana Tempo",
     "category": "Tool",
     "domain": "SRE/Observability",
-    "eli5": "Tempo is like a GPS trip recorder for your requests — it saves every route a request took through your services so you can replay it later.",
+    "eli5": "Tempo is like a GPS trip recorder for your requests \u2014 it saves every route a request took through your services so you can replay it later.",
     "description": "Scalable, cost-efficient distributed tracing backend that stores traces in object storage and integrates natively with Grafana, Loki, and Prometheus for correlated observability.",
     "use_cases": [
       "Distributed trace storage at scale",
@@ -3358,7 +3401,11 @@
       "Root cause analysis for latency spikes",
       "OpenTelemetry and Jaeger trace ingestion"
     ],
-    "used_by": ["Grafana Labs", "Shopify", "Weaveworks"],
+    "used_by": [
+      "Grafana Labs",
+      "Shopify",
+      "Weaveworks"
+    ],
     "docs": "https://grafana.com/docs/tempo/latest/",
     "tutorial": "https://grafana.com/docs/tempo/latest/getting-started/",
     "added": "2026-06-11"
@@ -3376,7 +3423,12 @@
       "Library bundling with ESM/CJS output",
       "Replacing Create React App and webpack"
     ],
-    "used_by": ["Vue core team", "Shopify", "Astro", "SvelteKit"],
+    "used_by": [
+      "Vue core team",
+      "Shopify",
+      "Astro",
+      "SvelteKit"
+    ],
     "docs": "https://vite.dev/guide/",
     "tutorial": "https://vite.dev/guide/",
     "added": "2026-06-11"
@@ -3386,7 +3438,7 @@
     "name": "Svelte",
     "category": "Framework",
     "domain": "Frontend",
-    "eli5": "Svelte is like a magic compiler that turns your code into tiny, fast instructions the browser understands directly — no middleman needed.",
+    "eli5": "Svelte is like a magic compiler that turns your code into tiny, fast instructions the browser understands directly \u2014 no middleman needed.",
     "description": "Compile-time UI framework that shifts work to the build step, producing vanilla JS with no runtime overhead. SvelteKit provides full-stack capabilities.",
     "use_cases": [
       "Highly interactive UIs with minimal bundle size",
@@ -3394,7 +3446,12 @@
       "Embedded widgets with zero runtime dependency",
       "Animations and transitions with built-in directives"
     ],
-    "used_by": ["Apple", "Spotify", "The New York Times", "Razorpay"],
+    "used_by": [
+      "Apple",
+      "Spotify",
+      "The New York Times",
+      "Razorpay"
+    ],
     "docs": "https://svelte.dev/docs",
     "tutorial": "https://learn.svelte.dev/",
     "added": "2026-06-11"
@@ -3404,7 +3461,7 @@
     "name": "NestJS",
     "category": "Framework",
     "domain": "Backend",
-    "eli5": "NestJS is like LEGO for building Node.js servers — each piece snaps together in a structured way so your code stays organized as the project grows.",
+    "eli5": "NestJS is like LEGO for building Node.js servers \u2014 each piece snaps together in a structured way so your code stays organized as the project grows.",
     "description": "Progressive Node.js framework for building scalable server-side applications. Uses TypeScript and Angular-inspired decorators to enforce modularity and testability.",
     "use_cases": [
       "REST and GraphQL API servers",
@@ -3412,7 +3469,12 @@
       "Enterprise-grade Node.js backends",
       "CLI tools and background workers"
     ],
-    "used_by": ["Adidas", "Roche", "Capgemini", "Autodesk"],
+    "used_by": [
+      "Adidas",
+      "Roche",
+      "Capgemini",
+      "Autodesk"
+    ],
     "docs": "https://docs.nestjs.com/",
     "tutorial": "https://docs.nestjs.com/first-steps",
     "added": "2026-06-11"
@@ -3430,7 +3492,12 @@
       "Model artifact versioning and registry",
       "Collaborative ML experiment sharing"
     ],
-    "used_by": ["OpenAI", "NVIDIA", "Toyota Research", "Hugging Face"],
+    "used_by": [
+      "OpenAI",
+      "NVIDIA",
+      "Toyota Research",
+      "Hugging Face"
+    ],
     "docs": "https://docs.wandb.ai/",
     "tutorial": "https://docs.wandb.ai/quickstart",
     "added": "2026-06-11"
@@ -3440,7 +3507,7 @@
     "name": "TimescaleDB",
     "category": "Tool",
     "domain": "Database",
-    "eli5": "TimescaleDB is like a regular notebook that got a special time-travel index — it can flip to any date's entries instantly without flipping through every page.",
+    "eli5": "TimescaleDB is like a regular notebook that got a special time-travel index \u2014 it can flip to any date's entries instantly without flipping through every page.",
     "description": "PostgreSQL extension purpose-built for time-series data. Adds automatic partitioning (hypertables), continuous aggregates, and compression while staying fully SQL-compatible.",
     "use_cases": [
       "IoT sensor data storage and querying",
@@ -3448,7 +3515,12 @@
       "Infrastructure metrics retention beyond Prometheus",
       "Event logging with complex analytical queries"
     ],
-    "used_by": ["Hubspot", "Outbrain", "Teleport", "Volvo"],
+    "used_by": [
+      "Hubspot",
+      "Outbrain",
+      "Teleport",
+      "Volvo"
+    ],
     "docs": "https://docs.timescale.com/",
     "tutorial": "https://docs.timescale.com/getting-started/latest/",
     "added": "2026-06-11"
@@ -3458,7 +3530,7 @@
     "name": "OpenTofu",
     "category": "Tool",
     "domain": "DevOps",
-    "eli5": "OpenTofu is like Terraform's open-source twin — does all the same infrastructure tricks but is community-owned and free forever.",
+    "eli5": "OpenTofu is like Terraform's open-source twin \u2014 does all the same infrastructure tricks but is community-owned and free forever.",
     "description": "Open-source fork of Terraform under the Linux Foundation, maintained by the community after HashiCorp's BSL license change. Fully compatible with existing Terraform modules and providers.",
     "use_cases": [
       "Drop-in Terraform replacement under open license",
@@ -3466,7 +3538,12 @@
       "Managing Kubernetes, databases, and DNS",
       "Organizations avoiding BSL license restrictions"
     ],
-    "used_by": ["Gruntwork", "Spacelift", "Scalr", "env0"],
+    "used_by": [
+      "Gruntwork",
+      "Spacelift",
+      "Scalr",
+      "env0"
+    ],
     "docs": "https://opentofu.org/docs/",
     "tutorial": "https://opentofu.org/docs/intro/",
     "added": "2026-06-11"
@@ -3484,7 +3561,12 @@
       "Rate limiting and ACL-based routing",
       "High-availability database clusters (MySQL, PostgreSQL)"
     ],
-    "used_by": ["GitHub", "Reddit", "Airbnb", "Stack Overflow"],
+    "used_by": [
+      "GitHub",
+      "Reddit",
+      "Airbnb",
+      "Stack Overflow"
+    ],
     "docs": "https://docs.haproxy.org/",
     "tutorial": "https://www.haproxy.com/documentation/haproxy-configuration-tutorials/",
     "added": "2026-06-12"
@@ -3494,7 +3576,7 @@
     "name": "CoreDNS",
     "category": "Tool",
     "domain": "Networking",
-    "eli5": "CoreDNS is like the phone book inside your Kubernetes cluster — it translates service names into IP addresses so apps can find each other.",
+    "eli5": "CoreDNS is like the phone book inside your Kubernetes cluster \u2014 it translates service names into IP addresses so apps can find each other.",
     "description": "Flexible, plugin-based DNS server written in Go. Default DNS server for Kubernetes since v1.13, handling service discovery and internal name resolution.",
     "use_cases": [
       "Kubernetes cluster-internal DNS",
@@ -3502,7 +3584,11 @@
       "Custom DNS rewrites and forwarding",
       "Split-horizon DNS for on-prem/cloud hybrid"
     ],
-    "used_by": ["Kubernetes (default)", "Red Hat OpenShift", "Rancher"],
+    "used_by": [
+      "Kubernetes (default)",
+      "Red Hat OpenShift",
+      "Rancher"
+    ],
     "docs": "https://coredns.io/manual/toc/",
     "tutorial": "https://coredns.io/2017/05/08/custom-dns-entries-for-kubernetes/",
     "added": "2026-06-12"
@@ -3512,7 +3598,7 @@
     "name": "Cloudflare",
     "category": "Platform",
     "domain": "Networking",
-    "eli5": "Cloudflare is like a bodyguard and speed booster for your website — it blocks attacks and makes pages load faster by storing copies closer to users.",
+    "eli5": "Cloudflare is like a bodyguard and speed booster for your website \u2014 it blocks attacks and makes pages load faster by storing copies closer to users.",
     "description": "Global CDN, DDoS protection, DNS, and edge compute platform. Sits in front of web properties to improve performance, security, and availability at scale.",
     "use_cases": [
       "DDoS mitigation and WAF",
@@ -3520,7 +3606,12 @@
       "Authoritative DNS with anycast routing",
       "Edge compute with Cloudflare Workers"
     ],
-    "used_by": ["Discord", "Shopify", "DoorDash", "Canva"],
+    "used_by": [
+      "Discord",
+      "Shopify",
+      "DoorDash",
+      "Canva"
+    ],
     "docs": "https://developers.cloudflare.com/",
     "tutorial": "https://developers.cloudflare.com/fundamentals/get-started/",
     "added": "2026-06-12"
@@ -3530,15 +3621,20 @@
     "name": "Redpanda",
     "category": "Tool",
     "domain": "Messaging",
-    "eli5": "Redpanda is like Kafka but without the complicated setup — it does the same job of passing messages between apps, just simpler and faster.",
-    "description": "Kafka-compatible streaming data platform written in C++. No ZooKeeper, no JVM — delivers 10x lower latency and simpler operations than Apache Kafka.",
+    "eli5": "Redpanda is like Kafka but without the complicated setup \u2014 it does the same job of passing messages between apps, just simpler and faster.",
+    "description": "Kafka-compatible streaming data platform written in C++. No ZooKeeper, no JVM \u2014 delivers 10x lower latency and simpler operations than Apache Kafka.",
     "use_cases": [
       "Drop-in Kafka replacement with lower ops overhead",
       "High-throughput event streaming",
       "Real-time analytics ingestion",
       "Embedded streaming in edge or IoT deployments"
     ],
-    "used_by": ["Loft Labs", "Aiven", "Forma.ai", "Starburst"],
+    "used_by": [
+      "Loft Labs",
+      "Aiven",
+      "Forma.ai",
+      "Starburst"
+    ],
     "docs": "https://docs.redpanda.com/",
     "tutorial": "https://docs.redpanda.com/current/get-started/quick-start/",
     "added": "2026-06-12"
@@ -3548,7 +3644,7 @@
     "name": "Apache Pulsar",
     "category": "Tool",
     "domain": "Messaging",
-    "eli5": "Pulsar is like a post office that can hold letters forever and deliver them to any subscriber at any time — even ones who weren't listening when the letter arrived.",
+    "eli5": "Pulsar is like a post office that can hold letters forever and deliver them to any subscriber at any time \u2014 even ones who weren't listening when the letter arrived.",
     "description": "Cloud-native distributed messaging and streaming platform with multi-tenancy, geo-replication, and built-in tiered storage. Decouples compute from storage.",
     "use_cases": [
       "Multi-tenant event streaming across teams",
@@ -3556,7 +3652,12 @@
       "Geo-replicated pub/sub for global deployments",
       "Serverless stream processing with Pulsar Functions"
     ],
-    "used_by": ["Yahoo", "Tencent", "Overstock", "Narvar"],
+    "used_by": [
+      "Yahoo",
+      "Tencent",
+      "Overstock",
+      "Narvar"
+    ],
     "docs": "https://pulsar.apache.org/docs/",
     "tutorial": "https://pulsar.apache.org/docs/getting-started-standalone/",
     "added": "2026-06-12"
@@ -3574,7 +3675,12 @@
       "E-commerce product search",
       "Security event analytics (SIEM)"
     ],
-    "used_by": ["Netflix", "Uber", "GitHub", "Wikipedia"],
+    "used_by": [
+      "Netflix",
+      "Uber",
+      "GitHub",
+      "Wikipedia"
+    ],
     "docs": "https://www.elastic.co/guide/en/elasticsearch/reference/current/",
     "tutorial": "https://www.elastic.co/guide/en/elasticsearch/reference/current/getting-started.html",
     "added": "2026-06-12"
@@ -3584,7 +3690,7 @@
     "name": "ScyllaDB",
     "category": "Tool",
     "domain": "Database",
-    "eli5": "ScyllaDB is like Cassandra on steroids — it does the same distributed database job but squeezes 10x more speed out of your hardware.",
+    "eli5": "ScyllaDB is like Cassandra on steroids \u2014 it does the same distributed database job but squeezes 10x more speed out of your hardware.",
     "description": "High-performance NoSQL database compatible with Apache Cassandra and DynamoDB APIs. Written in C++ using the Seastar framework for predictable low latency.",
     "use_cases": [
       "High-throughput time-series and IoT data",
@@ -3592,7 +3698,12 @@
       "Ad tech and real-time personalization",
       "Gaming leaderboards and session stores"
     ],
-    "used_by": ["Discord", "Comcast", "Palo Alto Networks", "FireEye"],
+    "used_by": [
+      "Discord",
+      "Comcast",
+      "Palo Alto Networks",
+      "FireEye"
+    ],
     "docs": "https://docs.scylladb.com/",
     "tutorial": "https://docs.scylladb.com/stable/getting-started/",
     "added": "2026-06-12"
@@ -3602,7 +3713,7 @@
     "name": "Pinecone",
     "category": "Tool",
     "domain": "Database",
-    "eli5": "Pinecone is like a filing cabinet that stores meaning instead of words — you search by describing a concept and it finds everything similar, not just exact matches.",
+    "eli5": "Pinecone is like a filing cabinet that stores meaning instead of words \u2014 you search by describing a concept and it finds everything similar, not just exact matches.",
     "description": "Managed vector database for storing and querying high-dimensional embeddings. Enables semantic search, recommendation engines, and RAG pipelines at scale.",
     "use_cases": [
       "Retrieval-augmented generation (RAG) for LLMs",
@@ -3610,7 +3721,12 @@
       "Recommendation and personalization systems",
       "Image and document similarity matching"
     ],
-    "used_by": ["Hubspot", "Zapier", "monday.com", "Notion"],
+    "used_by": [
+      "Hubspot",
+      "Zapier",
+      "monday.com",
+      "Notion"
+    ],
     "docs": "https://docs.pinecone.io/",
     "tutorial": "https://docs.pinecone.io/guides/get-started/quickstart",
     "added": "2026-06-12"
@@ -3620,7 +3736,7 @@
     "name": "Ceph",
     "category": "Tool",
     "domain": "Storage",
-    "eli5": "Ceph is like building your own private S3 in your data center from regular hard drives — it spreads your files across many disks so nothing gets lost.",
+    "eli5": "Ceph is like building your own private S3 in your data center from regular hard drives \u2014 it spreads your files across many disks so nothing gets lost.",
     "description": "Open-source distributed storage system providing object, block, and file storage in a single cluster. Designed for self-healing and no single point of failure.",
     "use_cases": [
       "On-premises object storage (S3-compatible via RadosGW)",
@@ -3628,7 +3744,12 @@
       "OpenStack Cinder backend",
       "Large-scale petabyte storage clusters"
     ],
-    "used_by": ["CERN", "Red Hat", "Deutsche Telekom", "Bloomberg"],
+    "used_by": [
+      "CERN",
+      "Red Hat",
+      "Deutsche Telekom",
+      "Bloomberg"
+    ],
     "docs": "https://docs.ceph.com/",
     "tutorial": "https://docs.ceph.com/en/latest/install/",
     "added": "2026-06-12"
@@ -3638,7 +3759,7 @@
     "name": "Express.js",
     "category": "Framework",
     "domain": "Backend",
-    "eli5": "Express is like a thin layer of helpful tools on top of Node.js — it makes building web servers and APIs way less tedious without getting in your way.",
+    "eli5": "Express is like a thin layer of helpful tools on top of Node.js \u2014 it makes building web servers and APIs way less tedious without getting in your way.",
     "description": "Minimal, unopinionated Node.js web framework. The de-facto standard for building HTTP servers and REST APIs in JavaScript/TypeScript with a huge middleware ecosystem.",
     "use_cases": [
       "REST API servers",
@@ -3646,7 +3767,12 @@
       "Server-side rendering backends",
       "BFF (backend for frontend) layers"
     ],
-    "used_by": ["IBM", "Accenture", "Fox Sports", "Uber"],
+    "used_by": [
+      "IBM",
+      "Accenture",
+      "Fox Sports",
+      "Uber"
+    ],
     "docs": "https://expressjs.com/",
     "tutorial": "https://expressjs.com/en/starter/hello-world.html",
     "added": "2026-06-12"
@@ -3656,7 +3782,7 @@
     "name": "Spring Boot",
     "category": "Framework",
     "domain": "Backend",
-    "eli5": "Spring Boot is like a pre-configured Java starter kit — it sets up all the boring boilerplate so you can start writing business logic on day one.",
+    "eli5": "Spring Boot is like a pre-configured Java starter kit \u2014 it sets up all the boring boilerplate so you can start writing business logic on day one.",
     "description": "Convention-over-configuration Java framework for building production-ready microservices and web apps. Embeds Tomcat/Jetty and auto-configures the Spring ecosystem.",
     "use_cases": [
       "Enterprise REST APIs and microservices",
@@ -3664,7 +3790,12 @@
       "Batch processing pipelines",
       "Cloud-native apps with Spring Cloud"
     ],
-    "used_by": ["Netflix", "Amazon", "Google", "Microsoft"],
+    "used_by": [
+      "Netflix",
+      "Amazon",
+      "Google",
+      "Microsoft"
+    ],
     "docs": "https://docs.spring.io/spring-boot/docs/current/reference/html/",
     "tutorial": "https://spring.io/quickstart",
     "added": "2026-06-12"
@@ -3674,7 +3805,7 @@
     "name": "Django",
     "category": "Framework",
     "domain": "Backend",
-    "eli5": "Django is like a fully-stocked kitchen for building websites in Python — everything from database to login pages to admin panels comes included.",
+    "eli5": "Django is like a fully-stocked kitchen for building websites in Python \u2014 everything from database to login pages to admin panels comes included.",
     "description": "High-level Python web framework that follows the 'batteries included' philosophy. Includes ORM, auth, admin, and templating out of the box.",
     "use_cases": [
       "Full-stack web applications with server-side rendering",
@@ -3682,7 +3813,12 @@
       "Admin dashboards and CMS backends",
       "Rapid prototyping for data-heavy apps"
     ],
-    "used_by": ["Instagram", "Mozilla", "Disqus", "Pinterest"],
+    "used_by": [
+      "Instagram",
+      "Mozilla",
+      "Disqus",
+      "Pinterest"
+    ],
     "docs": "https://docs.djangoproject.com/",
     "tutorial": "https://docs.djangoproject.com/en/stable/intro/tutorial01/",
     "added": "2026-06-12"
@@ -3692,7 +3828,7 @@
     "name": "GraphQL",
     "category": "Concept",
     "domain": "Backend",
-    "eli5": "GraphQL is like ordering exactly what you want from a menu instead of getting a fixed combo — you ask for the specific fields you need and nothing more.",
+    "eli5": "GraphQL is like ordering exactly what you want from a menu instead of getting a fixed combo \u2014 you ask for the specific fields you need and nothing more.",
     "description": "Query language and runtime for APIs that lets clients request exactly the data they need. Developed by Facebook, replaces multiple REST endpoints with a single typed schema.",
     "use_cases": [
       "Flexible APIs for mobile and web clients",
@@ -3700,7 +3836,12 @@
       "Reducing over-fetching and under-fetching",
       "Real-time data with GraphQL subscriptions"
     ],
-    "used_by": ["GitHub", "Shopify", "Twitter", "Airbnb"],
+    "used_by": [
+      "GitHub",
+      "Shopify",
+      "Twitter",
+      "Airbnb"
+    ],
     "docs": "https://graphql.org/learn/",
     "tutorial": "https://graphql.org/learn/",
     "added": "2026-06-12"
@@ -3710,7 +3851,7 @@
     "name": "Auth0",
     "category": "Platform",
     "domain": "Identity",
-    "eli5": "Auth0 is like hiring a professional security guard for your app — you don't build the login system yourself, you let experts handle it.",
+    "eli5": "Auth0 is like hiring a professional security guard for your app \u2014 you don't build the login system yourself, you let experts handle it.",
     "description": "Managed identity platform providing authentication, authorization, and user management as a service. Supports social login, MFA, SSO, and enterprise federation.",
     "use_cases": [
       "Outsourcing authentication to a managed service",
@@ -3718,7 +3859,12 @@
       "B2B SSO with SAML and OIDC",
       "Role-based access control (RBAC)"
     ],
-    "used_by": ["Mozilla", "Siemens", "AMD", "Atlassian"],
+    "used_by": [
+      "Mozilla",
+      "Siemens",
+      "AMD",
+      "Atlassian"
+    ],
     "docs": "https://auth0.com/docs/",
     "tutorial": "https://auth0.com/docs/quickstarts",
     "added": "2026-06-12"
@@ -3736,7 +3882,12 @@
       "Technical debt tracking across large codebases",
       "Compliance enforcement (OWASP, CERT)"
     ],
-    "used_by": ["Microsoft", "NASA", "Bosch", "T-Mobile"],
+    "used_by": [
+      "Microsoft",
+      "NASA",
+      "Bosch",
+      "T-Mobile"
+    ],
     "docs": "https://docs.sonarsource.com/sonarqube/",
     "tutorial": "https://docs.sonarsource.com/sonarqube/latest/try-out-sonarqube/",
     "added": "2026-06-12"
@@ -3754,7 +3905,12 @@
       "Replacing Thanos/Cortex for simpler HA Prometheus",
       "Multi-tenant monitoring platforms"
     ],
-    "used_by": ["Grammarly", "Adidas", "Wix", "Roblox"],
+    "used_by": [
+      "Grammarly",
+      "Adidas",
+      "Wix",
+      "Roblox"
+    ],
     "docs": "https://docs.victoriametrics.com/",
     "tutorial": "https://docs.victoriametrics.com/quick-start/",
     "added": "2026-06-12"
@@ -3764,7 +3920,7 @@
     "name": "Prefect",
     "category": "Tool",
     "domain": "Data Engineering",
-    "eli5": "Prefect is like a smart to-do list manager for your data pipelines — it schedules tasks, retries failures, and tells you exactly what went wrong.",
+    "eli5": "Prefect is like a smart to-do list manager for your data pipelines \u2014 it schedules tasks, retries failures, and tells you exactly what went wrong.",
     "description": "Modern workflow orchestration platform for data pipelines. Python-native, with automatic retries, observability, and a hosted UI. Positioned as a simpler Airflow alternative.",
     "use_cases": [
       "ETL/ELT pipeline orchestration",
@@ -3772,7 +3928,12 @@
       "Data quality checks and alerting",
       "Event-triggered and cron-based data workflows"
     ],
-    "used_by": ["Doordash", "Accenture", "Labcorp", "Raft"],
+    "used_by": [
+      "Doordash",
+      "Accenture",
+      "Labcorp",
+      "Raft"
+    ],
     "docs": "https://docs.prefect.io/",
     "tutorial": "https://docs.prefect.io/v3/get-started/quickstart",
     "added": "2026-06-12"
@@ -3782,7 +3943,7 @@
     "name": "Apache Iceberg",
     "category": "Tool",
     "domain": "Data Engineering",
-    "eli5": "Iceberg is like a version-controlled spreadsheet for petabytes of data — you can time-travel to yesterday's data, roll back mistakes, and add columns without breaking anything.",
+    "eli5": "Iceberg is like a version-controlled spreadsheet for petabytes of data \u2014 you can time-travel to yesterday's data, roll back mistakes, and add columns without breaking anything.",
     "description": "Open table format for huge analytic datasets. Brings ACID transactions, schema evolution, and time-travel queries to data lakes stored in S3, HDFS, or GCS.",
     "use_cases": [
       "ACID transactions on data lake tables",
@@ -3790,7 +3951,12 @@
       "Time-travel and incremental reads for CDC",
       "Multi-engine interoperability (Spark, Flink, Trino)"
     ],
-    "used_by": ["Netflix", "Apple", "LinkedIn", "Adobe"],
+    "used_by": [
+      "Netflix",
+      "Apple",
+      "LinkedIn",
+      "Adobe"
+    ],
     "docs": "https://iceberg.apache.org/docs/latest/",
     "tutorial": "https://iceberg.apache.org/spark-quickstart/",
     "added": "2026-06-12"
@@ -3800,7 +3966,7 @@
     "name": "LlamaIndex",
     "category": "Framework",
     "domain": "AI/ML",
-    "eli5": "LlamaIndex is like a filing system that helps AI read and remember your documents — it indexes them so the AI can find the right info before answering.",
+    "eli5": "LlamaIndex is like a filing system that helps AI read and remember your documents \u2014 it indexes them so the AI can find the right info before answering.",
     "description": "Data framework for connecting LLMs to external data sources. Provides tools for ingestion, indexing, and retrieval to build RAG pipelines and AI agents.",
     "use_cases": [
       "Retrieval-augmented generation (RAG) over private docs",
@@ -3808,7 +3974,12 @@
       "Structured data querying with natural language",
       "Multi-step AI agents with tool use"
     ],
-    "used_by": ["Replit", "MongoDB", "Figma", "Uber"],
+    "used_by": [
+      "Replit",
+      "MongoDB",
+      "Figma",
+      "Uber"
+    ],
     "docs": "https://docs.llamaindex.ai/",
     "tutorial": "https://docs.llamaindex.ai/en/stable/getting_started/starter_example/",
     "added": "2026-06-12"
@@ -3818,7 +3989,7 @@
     "name": "Astro",
     "category": "Framework",
     "domain": "Frontend",
-    "eli5": "Astro is like a website builder that sends zero JavaScript to your users by default — pages load super fast because there's nothing extra to download.",
+    "eli5": "Astro is like a website builder that sends zero JavaScript to your users by default \u2014 pages load super fast because there's nothing extra to download.",
     "description": "Content-focused web framework that ships zero JS by default using an 'islands' architecture. Supports React, Vue, Svelte, and Solid components side-by-side.",
     "use_cases": [
       "Marketing sites and blogs with minimal JS",
@@ -3826,7 +3997,12 @@
       "E-commerce storefronts with selective hydration",
       "Mixing multiple UI frameworks in one project"
     ],
-    "used_by": ["Google", "Microsoft", "Netlify", "The Guardian"],
+    "used_by": [
+      "Google",
+      "Microsoft",
+      "Netlify",
+      "The Guardian"
+    ],
     "docs": "https://docs.astro.build/",
     "tutorial": "https://docs.astro.build/en/tutorial/0-introduction/",
     "added": "2026-06-12"
@@ -3836,7 +4012,7 @@
     "name": "Skaffold",
     "category": "Tool",
     "domain": "DevOps",
-    "eli5": "Skaffold is like a live-reload button for Kubernetes — every time you save code, it automatically builds a container and deploys it to your cluster.",
+    "eli5": "Skaffold is like a live-reload button for Kubernetes \u2014 every time you save code, it automatically builds a container and deploys it to your cluster.",
     "description": "CLI tool for continuous development against Kubernetes. Handles build, push, and deploy automatically on file changes, with support for Helm, Kustomize, and kubectl.",
     "use_cases": [
       "Inner-loop dev with hot reload on Kubernetes",
@@ -3844,7 +4020,12 @@
       "Multi-service local development with minikube/kind",
       "GitOps-friendly deploy pipelines"
     ],
-    "used_by": ["Google", "Spotify", "Weaveworks", "JFrog"],
+    "used_by": [
+      "Google",
+      "Spotify",
+      "Weaveworks",
+      "JFrog"
+    ],
     "docs": "https://skaffold.dev/docs/",
     "tutorial": "https://skaffold.dev/docs/quickstart/",
     "added": "2026-06-12"
@@ -3854,7 +4035,7 @@
     "name": "Caddy",
     "category": "Tool",
     "domain": "Networking",
-    "eli5": "Caddy is like a web server that automatically gets its own security certificate and sets it up for you — no manual HTTPS configuration needed.",
+    "eli5": "Caddy is like a web server that automatically gets its own security certificate and sets it up for you \u2014 no manual HTTPS configuration needed.",
     "description": "Modern web server with automatic HTTPS via Let's Encrypt. Written in Go, zero config TLS, with a simple Caddyfile DSL and a JSON API for dynamic configuration.",
     "use_cases": [
       "Automatic TLS for local and production services",
@@ -3862,7 +4043,11 @@
       "Static file serving and PHP applications",
       "API gateway with dynamic config via Admin API"
     ],
-    "used_by": ["Tailscale", "Replicate", "Acme Corp deployments"],
+    "used_by": [
+      "Tailscale",
+      "Replicate",
+      "Acme Corp deployments"
+    ],
     "docs": "https://caddyserver.com/docs/",
     "tutorial": "https://caddyserver.com/docs/getting-started",
     "added": "2026-06-12"
@@ -3872,7 +4057,7 @@
     "name": "Vitess",
     "category": "Tool",
     "domain": "Database",
-    "eli5": "Vitess is like a smart traffic director for MySQL — it splits one giant database across many servers and makes them look like one to your app.",
+    "eli5": "Vitess is like a smart traffic director for MySQL \u2014 it splits one giant database across many servers and makes them look like one to your app.",
     "description": "Database clustering system for horizontal scaling of MySQL. Provides sharding, connection pooling, and query routing. Powers YouTube's database layer.",
     "use_cases": [
       "Horizontal sharding for MySQL at scale",
@@ -3880,7 +4065,12 @@
       "Zero-downtime schema migrations",
       "Multi-region MySQL topologies"
     ],
-    "used_by": ["YouTube", "Slack", "GitHub", "Square"],
+    "used_by": [
+      "YouTube",
+      "Slack",
+      "GitHub",
+      "Square"
+    ],
     "docs": "https://vitess.io/docs/",
     "tutorial": "https://vitess.io/docs/get-started/local/",
     "added": "2026-06-12"
@@ -3890,7 +4080,7 @@
     "name": "Weaviate",
     "category": "Tool",
     "domain": "Database",
-    "eli5": "Weaviate is a database that understands meaning — you can store objects and search by what they're about, not just by their exact words.",
+    "eli5": "Weaviate is a database that understands meaning \u2014 you can store objects and search by what they're about, not just by their exact words.",
     "description": "Open-source vector database with built-in ML model inference. Supports hybrid search (vector + keyword), GraphQL API, and multi-tenancy for AI-native applications.",
     "use_cases": [
       "Semantic search over documents and images",
@@ -3898,7 +4088,11 @@
       "Hybrid vector + BM25 search",
       "Multi-tenant AI applications"
     ],
-    "used_by": ["Stack Overflow", "Instabase", "AstraZeneca"],
+    "used_by": [
+      "Stack Overflow",
+      "Instabase",
+      "AstraZeneca"
+    ],
     "docs": "https://weaviate.io/developers/weaviate",
     "tutorial": "https://weaviate.io/developers/weaviate/quickstart",
     "added": "2026-06-12"
@@ -3908,7 +4102,7 @@
     "name": "ChromaDB",
     "category": "Tool",
     "domain": "Database",
-    "eli5": "ChromaDB is like a sticky-note board for AI — you paste in documents, it remembers their meaning, and later the AI can find the most relevant ones instantly.",
+    "eli5": "ChromaDB is like a sticky-note board for AI \u2014 you paste in documents, it remembers their meaning, and later the AI can find the most relevant ones instantly.",
     "description": "Open-source embedding database designed for LLM applications. Runs in-process or as a server, with a simple Python API for storing, querying, and managing embeddings.",
     "use_cases": [
       "Local RAG prototyping with LLMs",
@@ -3916,7 +4110,11 @@
       "Long-term memory for AI agents",
       "Lightweight vector store for small to mid-scale apps"
     ],
-    "used_by": ["LangChain (default)", "AutoGPT", "various LLM app builders"],
+    "used_by": [
+      "LangChain (default)",
+      "AutoGPT",
+      "various LLM app builders"
+    ],
     "docs": "https://docs.trychroma.com/",
     "tutorial": "https://docs.trychroma.com/getting-started",
     "added": "2026-06-12"
@@ -3926,7 +4124,7 @@
     "name": "Kubeflow",
     "category": "Platform",
     "domain": "AI/ML",
-    "eli5": "Kubeflow is like a factory floor for machine learning on Kubernetes — it handles training jobs, experiment tracking, and model serving all in one place.",
+    "eli5": "Kubeflow is like a factory floor for machine learning on Kubernetes \u2014 it handles training jobs, experiment tracking, and model serving all in one place.",
     "description": "ML toolkit for Kubernetes that makes deploying scalable ML workflows simple. Includes Pipelines, Training Operator, KServe for model serving, and Katib for hyperparameter tuning.",
     "use_cases": [
       "End-to-end ML pipelines on Kubernetes",
@@ -3934,7 +4132,12 @@
       "Hyperparameter optimization with Katib",
       "Model serving with KServe"
     ],
-    "used_by": ["Google", "Spotify", "Bloomberg", "Cisco"],
+    "used_by": [
+      "Google",
+      "Spotify",
+      "Bloomberg",
+      "Cisco"
+    ],
     "docs": "https://www.kubeflow.org/docs/",
     "tutorial": "https://www.kubeflow.org/docs/started/introduction/",
     "added": "2026-06-12"
@@ -3944,7 +4147,7 @@
     "name": "BentoML",
     "category": "Framework",
     "domain": "AI/ML",
-    "eli5": "BentoML is like a shipping container for ML models — it packages your model with everything it needs so it runs the same way everywhere.",
+    "eli5": "BentoML is like a shipping container for ML models \u2014 it packages your model with everything it needs so it runs the same way everywhere.",
     "description": "Framework for building, shipping, and scaling AI applications. Turns any ML model into a production-ready API with batching, runners, and cloud deployment built in.",
     "use_cases": [
       "Packaging models as REST/gRPC inference APIs",
@@ -3952,7 +4155,11 @@
       "Multi-model inference pipelines",
       "Deploying to Kubernetes, AWS, or GCP"
     ],
-    "used_by": ["Baidu", "trivago", "Picsellia"],
+    "used_by": [
+      "Baidu",
+      "trivago",
+      "Picsellia"
+    ],
     "docs": "https://docs.bentoml.com/",
     "tutorial": "https://docs.bentoml.com/en/latest/get-started/quickstart.html",
     "added": "2026-06-12"
@@ -3962,7 +4169,7 @@
     "name": "Okta",
     "category": "Platform",
     "domain": "Identity",
-    "eli5": "Okta is like a master keycard for enterprise apps — employees log in once and Okta silently opens every door they're allowed through.",
+    "eli5": "Okta is like a master keycard for enterprise apps \u2014 employees log in once and Okta silently opens every door they're allowed through.",
     "description": "Enterprise identity and access management platform. Provides SSO, MFA, lifecycle management, and API security for workforce and customer identity use cases.",
     "use_cases": [
       "Workforce SSO across SaaS apps",
@@ -3970,7 +4177,12 @@
       "Zero-trust policy enforcement",
       "SCIM-based user provisioning and deprovisioning"
     ],
-    "used_by": ["FedEx", "T-Mobile", "jetBlue", "Nordstrom"],
+    "used_by": [
+      "FedEx",
+      "T-Mobile",
+      "jetBlue",
+      "Nordstrom"
+    ],
     "docs": "https://developer.okta.com/docs/",
     "tutorial": "https://developer.okta.com/docs/guides/",
     "added": "2026-06-12"
@@ -3980,7 +4192,7 @@
     "name": "Thanos",
     "category": "Tool",
     "domain": "SRE/Observability",
-    "eli5": "Thanos is like a backup brain for Prometheus — it copies all the metrics to cheap cloud storage and lets multiple Prometheus servers act as one.",
+    "eli5": "Thanos is like a backup brain for Prometheus \u2014 it copies all the metrics to cheap cloud storage and lets multiple Prometheus servers act as one.",
     "description": "Highly available Prometheus setup with long-term storage. Extends Prometheus with global query view, unlimited retention via object storage, and multi-cluster deduplication.",
     "use_cases": [
       "Long-term Prometheus metrics retention (S3/GCS/Azure Blob)",
@@ -3988,7 +4200,12 @@
       "HA Prometheus with deduplication",
       "Cross-cluster metric federation"
     ],
-    "used_by": ["Cloudflare", "Improbable", "Banzai Cloud", "Shopify"],
+    "used_by": [
+      "Cloudflare",
+      "Improbable",
+      "Banzai Cloud",
+      "Shopify"
+    ],
     "docs": "https://thanos.io/tip/thanos/getting-started.md/",
     "tutorial": "https://thanos.io/tip/tutorials/quick-tutorial.md/",
     "added": "2026-06-12"
@@ -3998,7 +4215,7 @@
     "name": "OpenSearch",
     "category": "Tool",
     "domain": "Database",
-    "eli5": "OpenSearch is like a free, open version of Elasticsearch — same powerful search engine, but community-owned and without licensing restrictions.",
+    "eli5": "OpenSearch is like a free, open version of Elasticsearch \u2014 same powerful search engine, but community-owned and without licensing restrictions.",
     "description": "Community-driven fork of Elasticsearch and Kibana, maintained by AWS under the Apache 2.0 license. Provides full-text search, analytics, and observability dashboards.",
     "use_cases": [
       "Log analytics and SIEM (open-source ELK replacement)",
@@ -4006,7 +4223,11 @@
       "Security analytics and threat detection",
       "Observability dashboards with OpenSearch Dashboards"
     ],
-    "used_by": ["AWS (Amazon OpenSearch Service)", "SAP", "Aiven"],
+    "used_by": [
+      "AWS (Amazon OpenSearch Service)",
+      "SAP",
+      "Aiven"
+    ],
     "docs": "https://opensearch.org/docs/latest/",
     "tutorial": "https://opensearch.org/docs/latest/getting-started/",
     "added": "2026-06-12"
@@ -4016,7 +4237,7 @@
     "name": "Celery",
     "category": "Framework",
     "domain": "Messaging",
-    "eli5": "Celery is like a restaurant ticket system — the server hands off orders to kitchen workers in the background so the front desk stays fast and free.",
+    "eli5": "Celery is like a restaurant ticket system \u2014 the server hands off orders to kitchen workers in the background so the front desk stays fast and free.",
     "description": "Distributed task queue for Python. Executes async and scheduled tasks in background workers, backed by brokers like Redis or RabbitMQ. Essential for offloading slow work from web requests.",
     "use_cases": [
       "Async task processing (email, image resize, PDF generation)",
@@ -4024,7 +4245,12 @@
       "Distributed computation across multiple workers",
       "Rate-limited API call queuing"
     ],
-    "used_by": ["Instagram", "Mozilla", "Coursera", "Robinhood"],
+    "used_by": [
+      "Instagram",
+      "Mozilla",
+      "Coursera",
+      "Robinhood"
+    ],
     "docs": "https://docs.celeryq.dev/",
     "tutorial": "https://docs.celeryq.dev/en/stable/getting-started/first-steps-with-celery.html",
     "added": "2026-06-12"
@@ -4034,7 +4260,7 @@
     "name": "Gin",
     "category": "Framework",
     "domain": "Backend",
-    "eli5": "Gin is like a Formula 1 car for building web APIs in Go — extremely fast, very light, and gets out of your way.",
+    "eli5": "Gin is like a Formula 1 car for building web APIs in Go \u2014 extremely fast, very light, and gets out of your way.",
     "description": "High-performance HTTP web framework for Go. Features a martini-like API with up to 40x better performance, middleware support, and JSON validation.",
     "use_cases": [
       "High-throughput REST APIs in Go",
@@ -4042,7 +4268,11 @@
       "Middleware chains for auth, logging, rate limiting",
       "JSON API servers with request binding and validation"
     ],
-    "used_by": ["ByteDance", "Docker", "Kubernetes ecosystem tools"],
+    "used_by": [
+      "ByteDance",
+      "Docker",
+      "Kubernetes ecosystem tools"
+    ],
     "docs": "https://gin-gonic.com/docs/",
     "tutorial": "https://gin-gonic.com/docs/quickstart/",
     "added": "2026-06-12"
@@ -4052,7 +4282,7 @@
     "name": "Bun",
     "category": "Tool",
     "domain": "Frontend",
-    "eli5": "Bun is like a turbocharged Node.js — it runs JavaScript much faster and also replaces npm, webpack, and Jest all in one tool.",
+    "eli5": "Bun is like a turbocharged Node.js \u2014 it runs JavaScript much faster and also replaces npm, webpack, and Jest all in one tool.",
     "description": "Fast all-in-one JavaScript runtime, bundler, test runner, and package manager built with Zig. Drop-in Node.js compatible with 3x faster startup and built-in TypeScript support.",
     "use_cases": [
       "Drop-in Node.js replacement for faster backends",
@@ -4060,7 +4290,11 @@
       "Edge and serverless JS workloads",
       "Monorepo tooling with built-in workspace support"
     ],
-    "used_by": ["Vercel", "Cloudflare", "various JS toolchain teams"],
+    "used_by": [
+      "Vercel",
+      "Cloudflare",
+      "various JS toolchain teams"
+    ],
     "docs": "https://bun.sh/docs",
     "tutorial": "https://bun.sh/docs/quickstart",
     "added": "2026-06-12"
@@ -4070,7 +4304,7 @@
     "name": "Storybook",
     "category": "Tool",
     "domain": "Frontend",
-    "eli5": "Storybook is like a showroom for your UI components — you can see every button, card, and form in isolation without running the whole app.",
+    "eli5": "Storybook is like a showroom for your UI components \u2014 you can see every button, card, and form in isolation without running the whole app.",
     "description": "Frontend workshop for building, documenting, and testing UI components in isolation. Supports React, Vue, Angular, Svelte, and more with addons for accessibility and visual testing.",
     "use_cases": [
       "Component-driven development and documentation",
@@ -4078,7 +4312,12 @@
       "Design system documentation and sharing",
       "Isolated component debugging without app context"
     ],
-    "used_by": ["Shopify", "Microsoft", "BBC", "Airbnb"],
+    "used_by": [
+      "Shopify",
+      "Microsoft",
+      "BBC",
+      "Airbnb"
+    ],
     "docs": "https://storybook.js.org/docs",
     "tutorial": "https://storybook.js.org/tutorials/intro-to-storybook/",
     "added": "2026-06-12"
@@ -4096,7 +4335,12 @@
       "Security patch automation",
       "Monorepo dependency management"
     ],
-    "used_by": ["WhiteSource", "GitLab", "Mend", "HashiCorp"],
+    "used_by": [
+      "WhiteSource",
+      "GitLab",
+      "Mend",
+      "HashiCorp"
+    ],
     "docs": "https://docs.renovatebot.com/",
     "tutorial": "https://docs.renovatebot.com/getting-started/installing-onboarding/",
     "added": "2026-06-12"
@@ -4106,7 +4350,7 @@
     "name": "Cosign",
     "category": "Tool",
     "domain": "Security",
-    "eli5": "Cosign is like a digital wax seal for container images — it proves the image you're running is exactly what the publisher shipped and nobody tampered with it.",
+    "eli5": "Cosign is like a digital wax seal for container images \u2014 it proves the image you're running is exactly what the publisher shipped and nobody tampered with it.",
     "description": "Container image signing and verification tool from the Sigstore project. Enables keyless signing via OIDC, attestation storage in OCI registries, and supply chain security.",
     "use_cases": [
       "Signing container images in CI/CD pipelines",
@@ -4114,7 +4358,12 @@
       "Keyless signing with GitHub Actions OIDC",
       "SLSA attestation and SBOM attachment"
     ],
-    "used_by": ["Chainguard", "Google", "Red Hat", "GitHub"],
+    "used_by": [
+      "Chainguard",
+      "Google",
+      "Red Hat",
+      "GitHub"
+    ],
     "docs": "https://docs.sigstore.dev/cosign/overview/",
     "tutorial": "https://docs.sigstore.dev/cosign/signing/quickstart/",
     "added": "2026-06-12"
@@ -4124,7 +4373,7 @@
     "name": "Apache Beam",
     "category": "Framework",
     "domain": "Data Engineering",
-    "eli5": "Beam is like writing one recipe that works whether you cook on a gas stove, electric, or campfire — your data pipeline runs on Spark, Flink, or Dataflow unchanged.",
+    "eli5": "Beam is like writing one recipe that works whether you cook on a gas stove, electric, or campfire \u2014 your data pipeline runs on Spark, Flink, or Dataflow unchanged.",
     "description": "Unified programming model for batch and streaming data pipelines. Write once, run on any execution engine (Spark, Flink, Google Dataflow) via pluggable runners.",
     "use_cases": [
       "Portable ETL pipelines across multiple runners",
@@ -4132,7 +4381,12 @@
       "ML inference pipelines at scale",
       "Google Dataflow-native batch and stream jobs"
     ],
-    "used_by": ["Google", "LinkedIn", "PayPal", "Lyft"],
+    "used_by": [
+      "Google",
+      "LinkedIn",
+      "PayPal",
+      "Lyft"
+    ],
     "docs": "https://beam.apache.org/documentation/",
     "tutorial": "https://beam.apache.org/get-started/wordcount-example/",
     "added": "2026-06-12"
@@ -4142,7 +4396,7 @@
     "name": "Delta Lake",
     "category": "Tool",
     "domain": "Data Engineering",
-    "eli5": "Delta Lake is like adding a save history to your data lake — you can undo mistakes, read yesterday's data, and write reliably without corrupting anything.",
+    "eli5": "Delta Lake is like adding a save history to your data lake \u2014 you can undo mistakes, read yesterday's data, and write reliably without corrupting anything.",
     "description": "Open-source storage layer bringing ACID transactions to Apache Spark and big data workloads. Provides time travel, schema enforcement, and unified batch/streaming.",
     "use_cases": [
       "ACID transactions on Spark data lakes",
@@ -4150,7 +4404,12 @@
       "CDC pipeline targets with merge operations",
       "Data versioning and audit trails"
     ],
-    "used_by": ["Databricks", "Microsoft", "Comcast", "AT&T"],
+    "used_by": [
+      "Databricks",
+      "Microsoft",
+      "Comcast",
+      "AT&T"
+    ],
     "docs": "https://docs.delta.io/latest/",
     "tutorial": "https://docs.delta.io/latest/quick-start.html",
     "added": "2026-06-12"
@@ -4160,7 +4419,7 @@
     "name": "Buildkite",
     "category": "Tool",
     "domain": "CI/CD",
-    "eli5": "Buildkite is like a CI system where the build machines are yours — Buildkite just tells them what to do, so your code never leaves your infrastructure.",
+    "eli5": "Buildkite is like a CI system where the build machines are yours \u2014 Buildkite just tells them what to do, so your code never leaves your infrastructure.",
     "description": "Hybrid CI/CD platform where the orchestration is SaaS but build agents run on your own infrastructure. Enables fast, scalable pipelines without sending code to a third party.",
     "use_cases": [
       "Fast parallel test suites on self-hosted agents",
@@ -4168,7 +4427,12 @@
       "Large monorepo pipelines with dynamic step generation",
       "GPU and specialized hardware build agents"
     ],
-    "used_by": ["Shopify", "Airbnb", "PagerDuty", "Canva"],
+    "used_by": [
+      "Shopify",
+      "Airbnb",
+      "PagerDuty",
+      "Canva"
+    ],
     "docs": "https://buildkite.com/docs/",
     "tutorial": "https://buildkite.com/docs/tutorials/getting-started",
     "added": "2026-06-12"
@@ -4178,7 +4442,7 @@
     "name": "Tilt",
     "category": "Tool",
     "domain": "DevOps",
-    "eli5": "Tilt is like a smart live-reload for your entire microservices stack — change a file and only the affected service rebuilds and redeploys in seconds.",
+    "eli5": "Tilt is like a smart live-reload for your entire microservices stack \u2014 change a file and only the affected service rebuilds and redeploys in seconds.",
     "description": "Local development environment orchestrator for Kubernetes microservices. Uses a Tiltfile (Python-like) to define smart rebuilds, dependency tracking, and a real-time dev dashboard.",
     "use_cases": [
       "Local multi-service Kubernetes development",
@@ -4186,7 +4450,12 @@
       "Unified dev dashboard for logs, builds, and health",
       "Consistent dev environments across teams"
     ],
-    "used_by": ["Docker", "Grafana Labs", "Netlify", "Cockroach Labs"],
+    "used_by": [
+      "Docker",
+      "Grafana Labs",
+      "Netlify",
+      "Cockroach Labs"
+    ],
     "docs": "https://docs.tilt.dev/",
     "tutorial": "https://docs.tilt.dev/tutorial/index.html",
     "added": "2026-06-12"
@@ -4196,7 +4465,7 @@
     "name": "Ory",
     "category": "Platform",
     "domain": "Identity",
-    "eli5": "Ory is like Auth0 but open-source — a complete identity toolkit you can self-host or use as a cloud service, covering login, permissions, and API security.",
+    "eli5": "Ory is like Auth0 but open-source \u2014 a complete identity toolkit you can self-host or use as a cloud service, covering login, permissions, and API security.",
     "description": "Open-source identity infrastructure stack: Kratos (user management), Hydra (OAuth2/OIDC), Keto (permissions), and Oathkeeper (API gateway). Cloud-native and self-hostable.",
     "use_cases": [
       "Self-hosted OAuth2 and OpenID Connect server",
@@ -4204,7 +4473,11 @@
       "Fine-grained permissions with Google Zanzibar model",
       "Zero-trust API access control"
     ],
-    "used_by": ["Segment", "Sainsbury's", "various open-source projects"],
+    "used_by": [
+      "Segment",
+      "Sainsbury's",
+      "various open-source projects"
+    ],
     "docs": "https://www.ory.sh/docs/",
     "tutorial": "https://www.ory.sh/docs/getting-started/overview",
     "added": "2026-06-12"
@@ -4214,7 +4487,7 @@
     "name": "InfluxDB",
     "category": "Tool",
     "domain": "Database",
-    "eli5": "InfluxDB is like a fitness tracker for your infrastructure — it records millions of measurements per second and lets you query them by time instantly.",
+    "eli5": "InfluxDB is like a fitness tracker for your infrastructure \u2014 it records millions of measurements per second and lets you query them by time instantly.",
     "description": "Purpose-built time-series database optimized for high-write workloads. Native support for metrics, events, and traces with a SQL-like query language (Flux/InfluxQL).",
     "use_cases": [
       "Infrastructure and application metrics storage",
@@ -4222,7 +4495,12 @@
       "Real-time analytics dashboards with Grafana",
       "Financial tick data and market monitoring"
     ],
-    "used_by": ["Tesla", "IBM", "Cisco", "Hulu"],
+    "used_by": [
+      "Tesla",
+      "IBM",
+      "Cisco",
+      "Hulu"
+    ],
     "docs": "https://docs.influxdata.com/influxdb/v2/",
     "tutorial": "https://docs.influxdata.com/influxdb/v2/get-started/",
     "added": "2026-06-14"
@@ -4232,7 +4510,7 @@
     "name": "Supabase",
     "category": "Platform",
     "domain": "Database",
-    "eli5": "Supabase is like Firebase but built on Postgres — you get a real database, auto-generated APIs, auth, and file storage all wired up out of the box.",
+    "eli5": "Supabase is like Firebase but built on Postgres \u2014 you get a real database, auto-generated APIs, auth, and file storage all wired up out of the box.",
     "description": "Open-source Firebase alternative built on PostgreSQL. Provides auto-generated REST and GraphQL APIs, realtime subscriptions, auth, edge functions, and S3-compatible storage.",
     "use_cases": [
       "Full-stack apps with instant REST/GraphQL APIs",
@@ -4240,7 +4518,12 @@
       "Auth with social login, MFA, and RLS policies",
       "Self-hostable Firebase replacement"
     ],
-    "used_by": ["Mozilla", "PwC", "Pika", "Mobbin"],
+    "used_by": [
+      "Mozilla",
+      "PwC",
+      "Pika",
+      "Mobbin"
+    ],
     "docs": "https://supabase.com/docs",
     "tutorial": "https://supabase.com/docs/guides/getting-started",
     "added": "2026-06-14"
@@ -4250,7 +4533,7 @@
     "name": "TiDB",
     "category": "Tool",
     "domain": "Database",
-    "eli5": "TiDB is like MySQL that never runs out of space — it automatically splits your data across many machines as it grows, with no downtime.",
+    "eli5": "TiDB is like MySQL that never runs out of space \u2014 it automatically splits your data across many machines as it grows, with no downtime.",
     "description": "Open-source distributed SQL database compatible with MySQL protocol. Combines OLTP and OLAP in one system (HTAP), with horizontal scaling and strong consistency.",
     "use_cases": [
       "MySQL-compatible workloads that outgrow a single node",
@@ -4258,7 +4541,12 @@
       "Financial applications requiring strong consistency",
       "Replacing sharded MySQL with a single endpoint"
     ],
-    "used_by": ["PingCAP", "Shopee", "Square", "ZaloPay"],
+    "used_by": [
+      "PingCAP",
+      "Shopee",
+      "Square",
+      "ZaloPay"
+    ],
     "docs": "https://docs.pingcap.com/tidb/stable",
     "tutorial": "https://docs.pingcap.com/tidb/stable/quick-start-with-tidb",
     "added": "2026-06-14"
@@ -4276,7 +4564,12 @@
       "Site-to-site networking without VPN appliances",
       "Kubernetes cluster access via Tailscale operator"
     ],
-    "used_by": ["GitHub", "Mullvad", "Notion", "ReadMe"],
+    "used_by": [
+      "GitHub",
+      "Mullvad",
+      "Notion",
+      "ReadMe"
+    ],
     "docs": "https://tailscale.com/kb/",
     "tutorial": "https://tailscale.com/kb/1017/install/",
     "added": "2026-06-14"
@@ -4286,7 +4579,7 @@
     "name": "OpenAI API",
     "category": "Platform",
     "domain": "AI/ML",
-    "eli5": "The OpenAI API is like renting a super-smart brain — your app sends questions or tasks, and it sends back intelligent answers, code, or images.",
+    "eli5": "The OpenAI API is like renting a super-smart brain \u2014 your app sends questions or tasks, and it sends back intelligent answers, code, or images.",
     "description": "Cloud API providing access to GPT-4, o1, embeddings, image generation (DALL-E), speech, and fine-tuning. The most widely adopted LLM API in production applications.",
     "use_cases": [
       "Chat and assistant features in applications",
@@ -4294,7 +4587,12 @@
       "Embeddings for semantic search and RAG",
       "Structured data extraction from unstructured text"
     ],
-    "used_by": ["Microsoft", "Snap", "Salesforce", "Duolingo"],
+    "used_by": [
+      "Microsoft",
+      "Snap",
+      "Salesforce",
+      "Duolingo"
+    ],
     "docs": "https://platform.openai.com/docs/",
     "tutorial": "https://platform.openai.com/docs/quickstart",
     "added": "2026-06-14"
@@ -4304,7 +4602,7 @@
     "name": "LangGraph",
     "category": "Framework",
     "domain": "AI/ML",
-    "eli5": "LangGraph is like a flowchart engine for AI — it lets your AI make decisions, use tools, loop back on itself, and hand off to other agents in a controlled way.",
+    "eli5": "LangGraph is like a flowchart engine for AI \u2014 it lets your AI make decisions, use tools, loop back on itself, and hand off to other agents in a controlled way.",
     "description": "Framework for building stateful, multi-step AI agents as directed graphs. Built on LangChain, enables cycles, branching, human-in-the-loop, and multi-agent coordination.",
     "use_cases": [
       "Multi-step AI agents with tool use and memory",
@@ -4312,7 +4610,12 @@
       "Multi-agent systems with supervisor/subagent patterns",
       "Long-running agentic workflows with persistence"
     ],
-    "used_by": ["LinkedIn", "Replit", "Elastic", "LangChain"],
+    "used_by": [
+      "LinkedIn",
+      "Replit",
+      "Elastic",
+      "LangChain"
+    ],
     "docs": "https://langchain-ai.github.io/langgraph/",
     "tutorial": "https://langchain-ai.github.io/langgraph/tutorials/introduction/",
     "added": "2026-06-14"
@@ -4322,7 +4625,7 @@
     "name": "Dagger",
     "category": "Tool",
     "domain": "DevOps",
-    "eli5": "Dagger is like Docker Compose for your CI/CD pipelines — you write your build steps in code, and they run the same way on your laptop and in any CI system.",
+    "eli5": "Dagger is like Docker Compose for your CI/CD pipelines \u2014 you write your build steps in code, and they run the same way on your laptop and in any CI system.",
     "description": "Portable CI/CD engine where pipelines are written as code (Go, Python, TypeScript). Runs locally and in any CI system via containers, eliminating YAML and environment drift.",
     "use_cases": [
       "Portable pipelines that run identically on CI and locally",
@@ -4330,7 +4633,12 @@
       "Reusable build/test/deploy modules across projects",
       "Programmatic pipeline composition with real language features"
     ],
-    "used_by": ["Grafana Labs", "Gitlab", "Shopify", "GitHub"],
+    "used_by": [
+      "Grafana Labs",
+      "Gitlab",
+      "Shopify",
+      "GitHub"
+    ],
     "docs": "https://docs.dagger.io/",
     "tutorial": "https://docs.dagger.io/quickstart",
     "added": "2026-06-14"
@@ -4340,7 +4648,7 @@
     "name": "Turborepo",
     "category": "Tool",
     "domain": "DevOps",
-    "eli5": "Turborepo is like a smart build system that only rebuilds the parts of your monorepo that actually changed — skipping everything else to save time.",
+    "eli5": "Turborepo is like a smart build system that only rebuilds the parts of your monorepo that actually changed \u2014 skipping everything else to save time.",
     "description": "High-performance build system for JavaScript/TypeScript monorepos. Provides task caching, parallel execution, and remote cache sharing to dramatically speed up CI and local builds.",
     "use_cases": [
       "Monorepo build and test acceleration",
@@ -4348,7 +4656,12 @@
       "Incremental builds (only rebuild changed packages)",
       "Task pipeline dependency management"
     ],
-    "used_by": ["Vercel", "Microsoft", "HashiCorp", "Linear"],
+    "used_by": [
+      "Vercel",
+      "Microsoft",
+      "HashiCorp",
+      "Linear"
+    ],
     "docs": "https://turbo.build/repo/docs",
     "tutorial": "https://turbo.build/repo/docs/getting-started/add-to-project",
     "added": "2026-06-14"
@@ -4358,7 +4671,7 @@
     "name": "Velero",
     "category": "Tool",
     "domain": "DevOps",
-    "eli5": "Velero is like a backup and restore button for your entire Kubernetes cluster — it saves everything to cloud storage so you can recover or move it anywhere.",
+    "eli5": "Velero is like a backup and restore button for your entire Kubernetes cluster \u2014 it saves everything to cloud storage so you can recover or move it anywhere.",
     "description": "Open-source tool for backing up and restoring Kubernetes cluster resources and persistent volumes. Supports disaster recovery, cluster migration, and namespace-level snapshots.",
     "use_cases": [
       "Kubernetes cluster disaster recovery",
@@ -4366,7 +4679,12 @@
       "Scheduled namespace/cluster backups to S3/GCS/Azure",
       "Pre-upgrade snapshots for rollback safety"
     ],
-    "used_by": ["VMware", "Red Hat", "Replicated", "D2iQ"],
+    "used_by": [
+      "VMware",
+      "Red Hat",
+      "Replicated",
+      "D2iQ"
+    ],
     "docs": "https://velero.io/docs/",
     "tutorial": "https://velero.io/docs/main/contributions/ibm-ci/",
     "added": "2026-06-14"
@@ -4376,7 +4694,7 @@
     "name": "Ruby on Rails",
     "category": "Framework",
     "domain": "Backend",
-    "eli5": "Rails is like a fully-assembled LEGO kit for building web apps — the pieces are already connected in the right way so you can build fast without reading a manual.",
+    "eli5": "Rails is like a fully-assembled LEGO kit for building web apps \u2014 the pieces are already connected in the right way so you can build fast without reading a manual.",
     "description": "Full-stack web framework for Ruby following convention over configuration. Includes ORM (ActiveRecord), routing, templating, mailers, and a strong developer productivity focus.",
     "use_cases": [
       "Rapid full-stack web application development",
@@ -4384,7 +4702,12 @@
       "REST and GraphQL API backends",
       "Startups and MVPs with fast time-to-market"
     ],
-    "used_by": ["GitHub", "Shopify", "Airbnb", "Basecamp"],
+    "used_by": [
+      "GitHub",
+      "Shopify",
+      "Airbnb",
+      "Basecamp"
+    ],
     "docs": "https://guides.rubyonrails.org/",
     "tutorial": "https://guides.rubyonrails.org/getting_started.html",
     "added": "2026-06-14"
@@ -4394,7 +4717,7 @@
     "name": "Hono",
     "category": "Framework",
     "domain": "Backend",
-    "eli5": "Hono is like an ultra-light Express for the edge — it runs anywhere JavaScript runs, including Cloudflare Workers, Deno, and Bun, with almost no overhead.",
+    "eli5": "Hono is like an ultra-light Express for the edge \u2014 it runs anywhere JavaScript runs, including Cloudflare Workers, Deno, and Bun, with almost no overhead.",
     "description": "Ultra-fast, lightweight web framework for edge runtimes. Works on Cloudflare Workers, Deno, Bun, and Node.js with a familiar Express-like API and zero dependencies.",
     "use_cases": [
       "Edge API routes on Cloudflare Workers",
@@ -4402,7 +4725,11 @@
       "TypeScript-first backend with end-to-end types",
       "Serverless functions with minimal cold start"
     ],
-    "used_by": ["Cloudflare", "Deno", "various edge-native startups"],
+    "used_by": [
+      "Cloudflare",
+      "Deno",
+      "various edge-native startups"
+    ],
     "docs": "https://hono.dev/docs/",
     "tutorial": "https://hono.dev/docs/getting-started/basic",
     "added": "2026-06-14"
@@ -4412,7 +4739,7 @@
     "name": "tRPC",
     "category": "Framework",
     "domain": "Backend",
-    "eli5": "tRPC is like an API where you never have to write documentation — your frontend automatically knows the exact types of every function your backend exposes.",
+    "eli5": "tRPC is like an API where you never have to write documentation \u2014 your frontend automatically knows the exact types of every function your backend exposes.",
     "description": "TypeScript RPC framework that gives end-to-end type safety between client and server with zero code generation. Eliminates REST/GraphQL schemas for TypeScript full-stack apps.",
     "use_cases": [
       "Full-stack TypeScript apps with shared types",
@@ -4420,7 +4747,11 @@
       "Replacing REST or GraphQL in mono-repo TS stacks",
       "Type-safe subscriptions and streaming"
     ],
-    "used_by": ["Cal.com", "Ping.gg", "Newline"],
+    "used_by": [
+      "Cal.com",
+      "Ping.gg",
+      "Newline"
+    ],
     "docs": "https://trpc.io/docs",
     "tutorial": "https://trpc.io/docs/quickstart",
     "added": "2026-06-14"
@@ -4430,7 +4761,7 @@
     "name": "Deno",
     "category": "Tool",
     "domain": "Backend",
-    "eli5": "Deno is like Node.js fixed — it runs JavaScript and TypeScript securely by default, with built-in tools so you don't need npm for most things.",
+    "eli5": "Deno is like Node.js fixed \u2014 it runs JavaScript and TypeScript securely by default, with built-in tools so you don't need npm for most things.",
     "description": "Secure JavaScript/TypeScript runtime built on V8 and Rust. Permissions-first security model, native TypeScript support, built-in formatter/linter/test runner, and Web API compatibility.",
     "use_cases": [
       "Secure scripting with explicit permission grants",
@@ -4438,7 +4769,11 @@
       "Edge functions on Deno Deploy",
       "CLI tools with single-binary compilation"
     ],
-    "used_by": ["Deno Deploy", "Netlify Edge Functions", "Supabase Edge Functions"],
+    "used_by": [
+      "Deno Deploy",
+      "Netlify Edge Functions",
+      "Supabase Edge Functions"
+    ],
     "docs": "https://docs.deno.com/",
     "tutorial": "https://docs.deno.com/runtime/",
     "added": "2026-06-14"
@@ -4448,7 +4783,7 @@
     "name": "Remix",
     "category": "Framework",
     "domain": "Frontend",
-    "eli5": "Remix is like Next.js but designed around web fundamentals — it handles loading and submitting data the way browsers always did, making apps fast and resilient.",
+    "eli5": "Remix is like Next.js but designed around web fundamentals \u2014 it handles loading and submitting data the way browsers always did, making apps fast and resilient.",
     "description": "Full-stack React framework built on web standards (fetch, forms, HTTP). Nested routing, parallel data loading, and progressive enhancement for fast, resilient user experiences.",
     "use_cases": [
       "Full-stack React apps with server-side data loading",
@@ -4456,7 +4791,12 @@
       "Nested layout routing with parallel data fetching",
       "Deploying to edge runtimes and traditional Node"
     ],
-    "used_by": ["Shopify", "NASA", "Adobe", "Chance the Rapper"],
+    "used_by": [
+      "Shopify",
+      "NASA",
+      "Adobe",
+      "Chance the Rapper"
+    ],
     "docs": "https://remix.run/docs",
     "tutorial": "https://remix.run/docs/en/main/start/tutorial",
     "added": "2026-06-14"
@@ -4466,7 +4806,7 @@
     "name": "shadcn/ui",
     "category": "Tool",
     "domain": "Frontend",
-    "eli5": "shadcn/ui is like a box of beautiful, pre-built UI components that you copy into your own project and own completely — no library to update or fight with.",
+    "eli5": "shadcn/ui is like a box of beautiful, pre-built UI components that you copy into your own project and own completely \u2014 no library to update or fight with.",
     "description": "Collection of accessible, composable React components built on Radix UI and Tailwind CSS. Components are copied into your codebase rather than installed as a dependency.",
     "use_cases": [
       "Accessible component primitives for design systems",
@@ -4474,7 +4814,12 @@
       "Rapid UI development with full customization",
       "Consistent UI across Next.js and Vite projects"
     ],
-    "used_by": ["Vercel", "Clerk", "Cal.com", "Liveblocks"],
+    "used_by": [
+      "Vercel",
+      "Clerk",
+      "Cal.com",
+      "Liveblocks"
+    ],
     "docs": "https://ui.shadcn.com/docs",
     "tutorial": "https://ui.shadcn.com/docs/installation",
     "added": "2026-06-14"
@@ -4484,7 +4829,7 @@
     "name": "Semgrep",
     "category": "Tool",
     "domain": "Security",
-    "eli5": "Semgrep is like grep but it understands code structure — it finds security bugs and bad patterns that look different on the surface but mean the same dangerous thing.",
+    "eli5": "Semgrep is like grep but it understands code structure \u2014 it finds security bugs and bad patterns that look different on the surface but mean the same dangerous thing.",
     "description": "Fast, open-source static analysis tool for finding bugs and security vulnerabilities. Uses pattern matching on ASTs across 30+ languages, with a large community rule registry.",
     "use_cases": [
       "SAST in CI/CD pipelines",
@@ -4492,7 +4837,12 @@
       "Enforcing custom code standards at scale",
       "Secrets detection and dependency scanning"
     ],
-    "used_by": ["Dropbox", "Figma", "Trail of Bits", "GitLab"],
+    "used_by": [
+      "Dropbox",
+      "Figma",
+      "Trail of Bits",
+      "GitLab"
+    ],
     "docs": "https://semgrep.dev/docs/",
     "tutorial": "https://semgrep.dev/docs/getting-started/",
     "added": "2026-06-14"
@@ -4502,7 +4852,7 @@
     "name": "Checkov",
     "category": "Tool",
     "domain": "Security",
-    "eli5": "Checkov is like a building code inspector for your infrastructure files — it reads your Terraform and Kubernetes configs before you deploy and flags anything unsafe.",
+    "eli5": "Checkov is like a building code inspector for your infrastructure files \u2014 it reads your Terraform and Kubernetes configs before you deploy and flags anything unsafe.",
     "description": "Static analysis tool for IaC security and compliance. Scans Terraform, CloudFormation, Kubernetes, Helm, and Dockerfiles against 1000+ built-in security and compliance checks.",
     "use_cases": [
       "IaC security scanning in CI/CD",
@@ -4510,7 +4860,12 @@
       "Detecting misconfigurations before deployment",
       "HIPAA, SOC2, PCI policy enforcement on infra code"
     ],
-    "used_by": ["Bridgecrew (Palo Alto)", "Wix", "Etsy", "Monday.com"],
+    "used_by": [
+      "Bridgecrew (Palo Alto)",
+      "Wix",
+      "Etsy",
+      "Monday.com"
+    ],
     "docs": "https://www.checkov.io/1.Welcome/What%20is%20Checkov.html",
     "tutorial": "https://www.checkov.io/1.Welcome/Quick%20Start.html",
     "added": "2026-06-14"
@@ -4520,7 +4875,7 @@
     "name": "Rook",
     "category": "Tool",
     "domain": "Storage",
-    "eli5": "Rook is like a translator between Kubernetes and Ceph — it makes your cluster automatically manage its own distributed storage without any manual disk wrangling.",
+    "eli5": "Rook is like a translator between Kubernetes and Ceph \u2014 it makes your cluster automatically manage its own distributed storage without any manual disk wrangling.",
     "description": "Cloud-native storage orchestrator for Kubernetes. Turns Ceph into a self-managing, self-scaling distributed storage system via Kubernetes operators and CRDs.",
     "use_cases": [
       "Persistent block storage for stateful Kubernetes workloads",
@@ -4528,7 +4883,12 @@
       "Shared filesystem for multi-pod access (CephFS)",
       "Database persistent volumes on bare metal"
     ],
-    "used_by": ["CERN", "Roblox", "Red Hat OpenShift", "Giantswarm"],
+    "used_by": [
+      "CERN",
+      "Roblox",
+      "Red Hat OpenShift",
+      "Giantswarm"
+    ],
     "docs": "https://rook.io/docs/rook/latest-release/",
     "tutorial": "https://rook.io/docs/rook/latest-release/Getting-Started/intro/",
     "added": "2026-06-14"
@@ -4538,7 +4898,7 @@
     "name": "Dex",
     "category": "Tool",
     "domain": "Identity",
-    "eli5": "Dex is like a universal translator for logins — it sits in front of your apps and lets users sign in with GitHub, LDAP, or SAML, giving your app a single clean OIDC interface.",
+    "eli5": "Dex is like a universal translator for logins \u2014 it sits in front of your apps and lets users sign in with GitHub, LDAP, or SAML, giving your app a single clean OIDC interface.",
     "description": "Federated OpenID Connect provider that bridges OIDC/OAuth2 to upstream identity providers like LDAP, SAML, GitHub, and Google. Acts as an identity hub for Kubernetes and apps.",
     "use_cases": [
       "OIDC front-end for Kubernetes kubectl authentication",
@@ -4546,7 +4906,11 @@
       "Single OIDC provider aggregating multiple IdPs",
       "GitOps tooling auth (ArgoCD, Flux)"
     ],
-    "used_by": ["Red Hat", "Kubernetes community", "Argo Project"],
+    "used_by": [
+      "Red Hat",
+      "Kubernetes community",
+      "Argo Project"
+    ],
     "docs": "https://dexidp.io/docs/",
     "tutorial": "https://dexidp.io/docs/getting-started/",
     "added": "2026-06-14"
@@ -4556,7 +4920,7 @@
     "name": "Alertmanager",
     "category": "Tool",
     "domain": "SRE/Observability",
-    "eli5": "Alertmanager is like the on-call coordinator for your monitoring system — it groups noisy alerts, silences duplicates, and routes them to the right team on Slack or PagerDuty.",
+    "eli5": "Alertmanager is like the on-call coordinator for your monitoring system \u2014 it groups noisy alerts, silences duplicates, and routes them to the right team on Slack or PagerDuty.",
     "description": "Alert routing and management component of the Prometheus ecosystem. Handles deduplication, grouping, silencing, and routing of alerts to receivers like PagerDuty, Slack, and email.",
     "use_cases": [
       "Routing Prometheus alerts to Slack/PagerDuty/email",
@@ -4564,9 +4928,128 @@
       "Silencing alerts during maintenance windows",
       "Inhibiting child alerts when parent is already firing"
     ],
-    "used_by": ["Anyone running Prometheus", "SoundCloud", "DigitalOcean"],
+    "used_by": [
+      "Anyone running Prometheus",
+      "SoundCloud",
+      "DigitalOcean"
+    ],
     "docs": "https://prometheus.io/docs/alerting/latest/alertmanager/",
     "tutorial": "https://prometheus.io/docs/alerting/latest/configuration/",
+    "added": "2026-06-14"
+  },
+  {
+    "id": "sqlc",
+    "name": "sqlc",
+    "category": "Tool",
+    "domain": "Backend",
+    "eli5": "It's like a translator that reads your SQL queries and automatically writes the boring code to use them safely in your program.",
+    "description": "sqlc generates type-safe code from SQL queries without an ORM. It parses SQL queries and produces strongly-typed, idiomatic Go, Python, or other language code that prevents SQL injection and type mismatches at compile time.",
+    "use_cases": [
+      "Building type-safe database layers in Go microservices",
+      "Generating Python database clients from SQL migrations",
+      "Replacing ORM boilerplate with raw SQL safety guarantees",
+      "Enforcing schema correctness across database operations"
+    ],
+    "used_by": [
+      "Stripe",
+      "Vercel",
+      "GitLab",
+      "Segment"
+    ],
+    "docs": "https://docs.sqlc.dev/",
+    "tutorial": "https://docs.sqlc.dev/en/stable/tutorials/getting-started.html",
+    "added": "2026-06-14"
+  },
+  {
+    "id": "infisical",
+    "name": "Infisical",
+    "category": "Platform",
+    "domain": "Security",
+    "eli5": "It's like a locked safe for all your passwords and secret codes that your applications can grab whenever they need them, but only the apps you trust.",
+    "description": "Infisical is an open-source secrets management platform that stores, encrypts, and syncs environment variables and secrets across development, staging, and production environments. It provides a centralized alternative to HashiCorp Vault with simpler setup and team collaboration features.",
+    "use_cases": [
+      "Managing API keys and database passwords across CI/CD pipelines",
+      "Syncing secrets to Kubernetes clusters and serverless functions",
+      "Preventing secrets from being committed to version control",
+      "Auditing and rotating credentials across multiple environments"
+    ],
+    "used_by": [
+      "Shopify",
+      "Figma",
+      "Mercury",
+      "Zapier"
+    ],
+    "docs": "https://infisical.com/docs",
+    "tutorial": "https://infisical.com/docs/getting-started/introduction",
+    "added": "2026-06-14"
+  },
+  {
+    "id": "uv",
+    "name": "uv",
+    "category": "Tool",
+    "domain": "Backend",
+    "eli5": "It's a super fast assistant that organizes all your Python project's ingredients and makes sure everyone gets the right versions.",
+    "description": "uv is an extremely fast Python package installer and dependency resolver written in Rust. It replaces pip, pip-tools, and virtualenv with a single blazingly fast tool that significantly reduces Python project setup and dependency resolution time.",
+    "use_cases": [
+      "Accelerating CI/CD pipelines for Python projects",
+      "Managing Python dependencies in monorepos",
+      "Replacing pip for faster local development iteration",
+      "Building reproducible Python environments with lock files"
+    ],
+    "used_by": [
+      "Anthropic",
+      "Hugging Face",
+      "Astronomer",
+      "Glyph"
+    ],
+    "docs": "https://docs.astral.sh/uv/",
+    "tutorial": "https://docs.astral.sh/uv/getting-started/",
+    "added": "2026-06-14"
+  },
+  {
+    "id": "milvus",
+    "name": "Milvus",
+    "category": "Platform",
+    "domain": "Database",
+    "eli5": "It's a super smart filing cabinet that remembers the meaning of things and can instantly find similar items, perfect for AI applications.",
+    "description": "Milvus is an open-source vector database designed to store, index, and search vector embeddings at massive scale. It enables semantic search and similarity matching for AI/ML applications, supporting billions of vectors with millisecond latency.",
+    "use_cases": [
+      "Building semantic search systems for document retrieval",
+      "Implementing RAG (Retrieval-Augmented Generation) pipelines for LLMs",
+      "Content recommendation engines using embedding similarity",
+      "Image and video similarity search at production scale"
+    ],
+    "used_by": [
+      "Shopify",
+      "Alibaba",
+      "Hugging Face",
+      "Alibaba Cloud"
+    ],
+    "docs": "https://milvus.io/docs",
+    "tutorial": "https://milvus.io/docs/quickstart.md",
+    "added": "2026-06-14"
+  },
+  {
+    "id": "buf",
+    "name": "Buf",
+    "category": "Tool",
+    "domain": "Backend",
+    "eli5": "It's a quality checker and organizer for the language that computers use to talk to each other over the internet.",
+    "description": "Buf is a CLI tool for working with Protocol Buffers (protobuf) that provides linting, code generation, and breaking change detection. It simplifies protobuf workflows with modern tooling and manages dependency versioning for proto files.",
+    "use_cases": [
+      "Detecting breaking changes in gRPC service definitions before deployment",
+      "Enforcing API design standards across proto files",
+      "Managing protobuf dependencies and versions in large monorepos",
+      "Generating idiomatic code in multiple languages from proto definitions"
+    ],
+    "used_by": [
+      "Google",
+      "Uber",
+      "Lyft",
+      "Netflix"
+    ],
+    "docs": "https://buf.build/docs",
+    "tutorial": "https://buf.build/docs/tour/getting-started",
     "added": "2026-06-14"
   }
 ]

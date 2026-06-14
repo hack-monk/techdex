@@ -89,6 +89,7 @@ a { color: inherit; }
 .brand .nm { font-weight: 700; letter-spacing: .04em; font-size: 1.3rem; }
 .brand .nm b { color: var(--accent); }
 .brand .ver { color: var(--faint); font-size: .78em; letter-spacing: .02em; white-space: nowrap; }
+.brand .site-url { display: block; color: var(--faint); font-size: .72em; letter-spacing: .04em; line-height: 1; margin-top: 1px; }
 
 .search {
   flex: 1; min-width: 0;

@@ -1,5 +1,8 @@
 # ⚡ TechDex
 
+**🌐 Live site: [techdex.dev](https://www.techdex.dev/)**
+
+A living catalog of industry-standard tools, platforms, and frameworks — explained in plain English. Semantic AI search included. Grows automatically every day.
 
 ---
 

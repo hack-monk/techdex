@@ -302,6 +302,30 @@ window.TECHDEX_ENTRIES = [
   "dex": 12
  },
  {
+  "id": "tailscale",
+  "name": "Tailscale",
+  "category": "Tool",
+  "domain": "Networking",
+  "eli5": "Tailscale is like a magic tunnel that connects all your devices and servers into one private network, no matter where they are in the world.",
+  "description": "Zero-config VPN built on WireGuard with a control plane. Devices join a mesh network automatically via SSO, enabling secure access to private services without firewall rules.",
+  "use_cases": [
+   "Secure remote access to internal services",
+   "Zero-config VPN for distributed teams",
+   "Site-to-site networking without VPN appliances",
+   "Kubernetes cluster access via Tailscale operator"
+  ],
+  "used_by": [
+   "GitHub",
+   "Mullvad",
+   "Notion",
+   "ReadMe"
+  ],
+  "docs": "https://tailscale.com/kb/",
+  "tutorial": "https://tailscale.com/kb/1017/install/",
+  "added": "2026-06-14",
+  "dex": 13
+ },
+ {
   "id": "traefik",
   "name": "Traefik",
   "category": "Tool",
@@ -323,7 +347,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://doc.traefik.io/traefik/",
   "tutorial": "https://doc.traefik.io/traefik/getting-started/quick-start/",
   "added": "2026-06-11",
-  "dex": 13
+  "dex": 14
  },
  {
   "id": "ansible",
@@ -349,7 +373,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://docs.ansible.com/ansible/latest/getting_started/index.html",
   "added": "2026-06-08",
   "eli5": "A recipe book that teaches computers how to set themselves up.",
-  "dex": 14
+  "dex": 15
  },
  {
   "id": "backstage",
@@ -376,7 +400,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://backstage.io/docs/overview/what-is-backstage",
   "tutorial": "https://backstage.io/docs/getting-started/",
   "added": "2026-06-08",
-  "dex": 15
+  "dex": 16
  },
  {
   "id": "bash",
@@ -398,7 +422,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://www.gnu.org/software/bash/manual/bash.html",
   "tutorial": "https://linuxcommand.org/lc3_learning_the_shell.php",
   "added": "2026-06-08",
-  "dex": 16
+  "dex": 17
  },
  {
   "id": "chef",
@@ -424,7 +448,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://docs.chef.io/",
   "tutorial": "https://docs.chef.io/chef_overview/",
   "added": "2026-06-08",
-  "dex": 17
+  "dex": 18
  },
  {
   "id": "crossplane",
@@ -449,7 +473,31 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://docs.crossplane.io/",
   "tutorial": "https://docs.crossplane.io/latest/getting-started/",
   "added": "2026-06-08",
-  "dex": 18
+  "dex": 19
+ },
+ {
+  "id": "dagger",
+  "name": "Dagger",
+  "category": "Tool",
+  "domain": "DevOps",
+  "eli5": "Dagger is like Docker Compose for your CI/CD pipelines — you write your build steps in code, and they run the same way on your laptop and in any CI system.",
+  "description": "Portable CI/CD engine where pipelines are written as code (Go, Python, TypeScript). Runs locally and in any CI system via containers, eliminating YAML and environment drift.",
+  "use_cases": [
+   "Portable pipelines that run identically on CI and locally",
+   "Eliminating YAML-based CI configuration",
+   "Reusable build/test/deploy modules across projects",
+   "Programmatic pipeline composition with real language features"
+  ],
+  "used_by": [
+   "Grafana Labs",
+   "Gitlab",
+   "Shopify",
+   "GitHub"
+  ],
+  "docs": "https://docs.dagger.io/",
+  "tutorial": "https://docs.dagger.io/quickstart",
+  "added": "2026-06-14",
+  "dex": 20
  },
  {
   "id": "docker",
@@ -475,7 +523,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://docs.docker.com/get-started/",
   "added": "2026-06-08",
   "eli5": "A lunchbox that packs your app with everything it needs to run anywhere.",
-  "dex": 19
+  "dex": 21
  },
  {
   "id": "docker-desktop",
@@ -499,7 +547,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://docs.docker.com/desktop/",
   "tutorial": "https://docs.docker.com/get-started/",
   "added": "2026-06-09",
-  "dex": 20
+  "dex": 22
  },
  {
   "id": "harbor",
@@ -525,7 +573,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://goharbor.io/docs/",
   "tutorial": "https://goharbor.io/docs/latest/install-config/",
   "added": "2026-06-08",
-  "dex": 21
+  "dex": 23
  },
  {
   "id": "helm",
@@ -551,7 +599,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://helm.sh/docs/intro/quickstart/",
   "added": "2026-06-08",
   "eli5": "An app store for Kubernetes — install big software with one command.",
-  "dex": 22
+  "dex": 24
  },
  {
   "id": "k3s",
@@ -576,7 +624,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://docs.k3s.io/",
   "tutorial": "https://docs.k3s.io/quick-start",
   "added": "2026-06-09",
-  "dex": 23
+  "dex": 25
  },
  {
   "id": "k9s",
@@ -598,7 +646,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://k9scli.io/topics/install/",
   "tutorial": "https://k9scli.io/",
   "added": "2026-06-08",
-  "dex": 24
+  "dex": 26
  },
  {
   "id": "kind",
@@ -622,7 +670,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://kind.sigs.k8s.io/",
   "tutorial": "https://kind.sigs.k8s.io/docs/user/quick-start/",
   "added": "2026-06-09",
-  "dex": 25
+  "dex": 27
  },
  {
   "id": "kops",
@@ -646,7 +694,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://kops.sigs.k8s.io/",
   "tutorial": "https://kops.sigs.k8s.io/getting_started/aws/",
   "added": "2026-06-09",
-  "dex": 26
+  "dex": 28
  },
  {
   "id": "kubeadm",
@@ -671,7 +719,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://kubernetes.io/docs/reference/setup-tools/kubeadm/",
   "tutorial": "https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/create-cluster-kubeadm/",
   "added": "2026-06-09",
-  "dex": 27
+  "dex": 29
  },
  {
   "id": "kubeops",
@@ -694,7 +742,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://buehler.github.io/dotnet-operator-sdk/",
   "tutorial": "https://buehler.github.io/dotnet-operator-sdk/docs/getting-started",
   "added": "2026-06-09",
-  "dex": 28
+  "dex": 30
  },
  {
   "id": "kubernetes",
@@ -721,7 +769,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://kubernetes.io/docs/tutorials/kubernetes-basics/",
   "added": "2026-06-08",
   "eli5": "A manager that keeps all your app boxes running and restarts them if they crash.",
-  "dex": 29
+  "dex": 31
  },
  {
   "id": "kubespray",
@@ -746,7 +794,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://kubespray.io/",
   "tutorial": "https://github.com/kubernetes-sigs/kubespray/blob/master/docs/getting_started/setting-up-your-first-cluster.md",
   "added": "2026-06-09",
-  "dex": 30
+  "dex": 32
  },
  {
   "id": "kustomize",
@@ -772,7 +820,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://kubectl.docs.kubernetes.io/references/kustomize/",
   "tutorial": "https://kubectl.docs.kubernetes.io/guides/introduction/kustomize/",
   "added": "2026-06-08",
-  "dex": 31
+  "dex": 33
  },
  {
   "id": "make",
@@ -797,7 +845,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://www.gnu.org/software/make/manual/make.html",
   "tutorial": "https://makefiletutorial.com/",
   "added": "2026-06-08",
-  "dex": 32
+  "dex": 34
  },
  {
   "id": "microk8s",
@@ -821,7 +869,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://microk8s.io/docs",
   "tutorial": "https://microk8s.io/docs/getting-started",
   "added": "2026-06-09",
-  "dex": 33
+  "dex": 35
  },
  {
   "id": "minikube",
@@ -845,7 +893,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://minikube.sigs.k8s.io/docs/",
   "tutorial": "https://minikube.sigs.k8s.io/docs/start/",
   "added": "2026-06-09",
-  "dex": 34
+  "dex": 36
  },
  {
   "id": "opentofu",
@@ -869,7 +917,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://opentofu.org/docs/",
   "tutorial": "https://opentofu.org/docs/intro/",
   "added": "2026-06-11",
-  "dex": 35
+  "dex": 37
  },
  {
   "id": "packer",
@@ -895,7 +943,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://developer.hashicorp.com/packer/docs",
   "tutorial": "https://developer.hashicorp.com/packer/tutorials/aws-get-started",
   "added": "2026-06-08",
-  "dex": 36
+  "dex": 38
  },
  {
   "id": "podman",
@@ -920,7 +968,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://docs.podman.io/en/latest/",
   "tutorial": "https://podman.io/getting-started/",
   "added": "2026-06-08",
-  "dex": 37
+  "dex": 39
  },
  {
   "id": "podman",
@@ -945,7 +993,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://docs.podman.io/",
   "tutorial": "https://podman.io/getting-started/",
   "added": "2026-06-09",
-  "dex": 38
+  "dex": 40
  },
  {
   "id": "pulumi",
@@ -971,7 +1019,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://www.pulumi.com/docs/get-started/",
   "added": "2026-06-08",
   "eli5": "Like Terraform but you write cloud blueprints in Python or Go instead of a special language.",
-  "dex": 39
+  "dex": 41
  },
  {
   "id": "puppet",
@@ -997,7 +1045,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://www.puppet.com/docs/puppet/latest/puppet_index.html",
   "tutorial": "https://www.puppet.com/docs/puppet/latest/quick_start_essential_config.html",
   "added": "2026-06-08",
-  "dex": 40
+  "dex": 42
  },
  {
   "id": "skaffold",
@@ -1021,7 +1069,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://skaffold.dev/docs/",
   "tutorial": "https://skaffold.dev/docs/quickstart/",
   "added": "2026-06-12",
-  "dex": 41
+  "dex": 43
  },
  {
   "id": "terraform",
@@ -1047,7 +1095,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://developer.hashicorp.com/terraform/tutorials/aws-get-started",
   "added": "2026-06-08",
   "eli5": "A shopping list for cloud stuff — write what you want, it goes and builds it.",
-  "dex": 42
+  "dex": 44
  },
  {
   "id": "terraform-cloud",
@@ -1073,7 +1121,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://developer.hashicorp.com/terraform/tutorials/cloud-get-started",
   "added": "2026-06-08",
   "eli5": "A shared whiteboard where your whole team draws the same cloud blueprint together.",
-  "dex": 43
+  "dex": 45
  },
  {
   "id": "tilt",
@@ -1097,7 +1145,31 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://docs.tilt.dev/",
   "tutorial": "https://docs.tilt.dev/tutorial/index.html",
   "added": "2026-06-12",
-  "dex": 44
+  "dex": 46
+ },
+ {
+  "id": "turborepo",
+  "name": "Turborepo",
+  "category": "Tool",
+  "domain": "DevOps",
+  "eli5": "Turborepo is like a smart build system that only rebuilds the parts of your monorepo that actually changed — skipping everything else to save time.",
+  "description": "High-performance build system for JavaScript/TypeScript monorepos. Provides task caching, parallel execution, and remote cache sharing to dramatically speed up CI and local builds.",
+  "use_cases": [
+   "Monorepo build and test acceleration",
+   "Remote caching to share build artifacts across CI runs",
+   "Incremental builds (only rebuild changed packages)",
+   "Task pipeline dependency management"
+  ],
+  "used_by": [
+   "Vercel",
+   "Microsoft",
+   "HashiCorp",
+   "Linear"
+  ],
+  "docs": "https://turbo.build/repo/docs",
+  "tutorial": "https://turbo.build/repo/docs/getting-started/add-to-project",
+  "added": "2026-06-14",
+  "dex": 47
  },
  {
   "id": "vagrant",
@@ -1122,7 +1194,31 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://developer.hashicorp.com/vagrant/docs",
   "tutorial": "https://developer.hashicorp.com/vagrant/tutorials/getting-started",
   "added": "2026-06-08",
-  "dex": 45
+  "dex": 48
+ },
+ {
+  "id": "velero",
+  "name": "Velero",
+  "category": "Tool",
+  "domain": "DevOps",
+  "eli5": "Velero is like a backup and restore button for your entire Kubernetes cluster — it saves everything to cloud storage so you can recover or move it anywhere.",
+  "description": "Open-source tool for backing up and restoring Kubernetes cluster resources and persistent volumes. Supports disaster recovery, cluster migration, and namespace-level snapshots.",
+  "use_cases": [
+   "Kubernetes cluster disaster recovery",
+   "Migrating workloads between clusters or cloud providers",
+   "Scheduled namespace/cluster backups to S3/GCS/Azure",
+   "Pre-upgrade snapshots for rollback safety"
+  ],
+  "used_by": [
+   "VMware",
+   "Red Hat",
+   "Replicated",
+   "D2iQ"
+  ],
+  "docs": "https://velero.io/docs/",
+  "tutorial": "https://velero.io/docs/main/contributions/ibm-ci/",
+  "added": "2026-06-14",
+  "dex": 49
  },
  {
   "id": "yaml",
@@ -1144,7 +1240,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://yaml.org/spec/1.2.2/",
   "tutorial": "https://learnxinyminutes.com/docs/yaml/",
   "added": "2026-06-08",
-  "dex": 46
+  "dex": 50
  },
  {
   "id": "aws-ec2",
@@ -1170,7 +1266,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EC2_GetStarted.html",
   "added": "2026-06-08",
   "eli5": "A rental computer in Amazon's giant warehouse you can turn on anytime.",
-  "dex": 47
+  "dex": 51
  },
  {
   "id": "aws-eks",
@@ -1196,7 +1292,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://docs.aws.amazon.com/eks/latest/userguide/getting-started.html",
   "added": "2026-06-08",
   "eli5": "Amazon babysits Kubernetes so you only worry about your apps.",
-  "dex": 48
+  "dex": 52
  },
  {
   "id": "aws-lambda",
@@ -1222,7 +1318,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://docs.aws.amazon.com/lambda/latest/dg/getting-started.html",
   "added": "2026-06-08",
   "eli5": "A vending machine for code — drop in a coin (event), your code runs, then stops.",
-  "dex": 49
+  "dex": 53
  },
  {
   "id": "azure-functions",
@@ -1248,7 +1344,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://learn.microsoft.com/en-us/azure/azure-functions/",
   "tutorial": "https://learn.microsoft.com/en-us/azure/azure-functions/functions-get-started",
   "added": "2026-06-08",
-  "dex": 50
+  "dex": 54
  },
  {
   "id": "aks",
@@ -1274,7 +1370,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://learn.microsoft.com/en-us/azure/aks/",
   "tutorial": "https://learn.microsoft.com/en-us/azure/aks/learn/quick-kubernetes-deploy-portal",
   "added": "2026-06-08",
-  "dex": 51
+  "dex": 55
  },
  {
   "id": "azure-vms",
@@ -1300,7 +1396,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://learn.microsoft.com/en-us/azure/virtual-machines/",
   "tutorial": "https://learn.microsoft.com/en-us/azure/virtual-machines/linux/quick-create-portal",
   "added": "2026-06-08",
-  "dex": 52
+  "dex": 56
  },
  {
   "id": "gcp",
@@ -1326,7 +1422,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://cloud.google.com/docs",
   "tutorial": "https://cloud.google.com/docs/get-started",
   "added": "2026-06-08",
-  "dex": 53
+  "dex": 57
  },
  {
   "id": "cloud-run",
@@ -1352,7 +1448,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://cloud.google.com/run/docs",
   "tutorial": "https://cloud.google.com/run/docs/quickstarts/build-and-deploy/deploy-python-service",
   "added": "2026-06-08",
-  "dex": 54
+  "dex": 58
  },
  {
   "id": "gce",
@@ -1378,7 +1474,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://cloud.google.com/compute/docs",
   "tutorial": "https://cloud.google.com/compute/docs/quickstart-linux",
   "added": "2026-06-08",
-  "dex": 55
+  "dex": 59
  },
  {
   "id": "gke",
@@ -1404,7 +1500,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://cloud.google.com/kubernetes-engine/docs",
   "tutorial": "https://cloud.google.com/kubernetes-engine/docs/quickstart",
   "added": "2026-06-08",
-  "dex": 56
+  "dex": 60
  },
  {
   "id": "azure",
@@ -1430,7 +1526,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://learn.microsoft.com/en-us/azure/",
   "tutorial": "https://learn.microsoft.com/en-us/azure/guides/developer/azure-developer-guide",
   "added": "2026-06-08",
-  "dex": 57
+  "dex": 61
  },
  {
   "id": "apache-cassandra",
@@ -1457,7 +1553,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://cassandra.apache.org/doc/latest/cassandra/getting-started/quickstart.html",
   "added": "2026-06-08",
   "eli5": "A filing cabinet spread across many rooms — still works if one room burns down.",
-  "dex": 58
+  "dex": 62
  },
  {
   "id": "aws-dynamodb",
@@ -1483,7 +1579,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GettingStartedDynamoDB.html",
   "added": "2026-06-08",
   "eli5": "Amazon's magic filing cabinet that grows automatically and is always fast.",
-  "dex": 59
+  "dex": 63
  },
  {
   "id": "cosmos-db",
@@ -1509,7 +1605,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://learn.microsoft.com/en-us/azure/cosmos-db/",
   "tutorial": "https://learn.microsoft.com/en-us/azure/cosmos-db/nosql/quickstart-portal",
   "added": "2026-06-08",
-  "dex": 60
+  "dex": 64
  },
  {
   "id": "chromadb",
@@ -1532,7 +1628,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://docs.trychroma.com/",
   "tutorial": "https://docs.trychroma.com/getting-started",
   "added": "2026-06-12",
-  "dex": 61
+  "dex": 65
  },
  {
   "id": "clickhouse",
@@ -1559,7 +1655,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://clickhouse.com/docs/en/getting-started/quick-start",
   "added": "2026-06-08",
   "eli5": "A calculator that sums up billions of numbers in milliseconds.",
-  "dex": 62
+  "dex": 66
  },
  {
   "id": "cockroachdb",
@@ -1585,7 +1681,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://www.cockroachlabs.com/docs/stable/start-a-local-cluster.html",
   "added": "2026-06-08",
   "eli5": "A filing cabinet that keeps working even if half of it is destroyed.",
-  "dex": 63
+  "dex": 67
  },
  {
   "id": "elasticsearch",
@@ -1609,7 +1705,31 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://www.elastic.co/guide/en/elasticsearch/reference/current/",
   "tutorial": "https://www.elastic.co/guide/en/elasticsearch/reference/current/getting-started.html",
   "added": "2026-06-12",
-  "dex": 64
+  "dex": 68
+ },
+ {
+  "id": "influxdb",
+  "name": "InfluxDB",
+  "category": "Tool",
+  "domain": "Database",
+  "eli5": "InfluxDB is like a fitness tracker for your infrastructure — it records millions of measurements per second and lets you query them by time instantly.",
+  "description": "Purpose-built time-series database optimized for high-write workloads. Native support for metrics, events, and traces with a SQL-like query language (Flux/InfluxQL).",
+  "use_cases": [
+   "Infrastructure and application metrics storage",
+   "IoT sensor data at high cardinality",
+   "Real-time analytics dashboards with Grafana",
+   "Financial tick data and market monitoring"
+  ],
+  "used_by": [
+   "Tesla",
+   "IBM",
+   "Cisco",
+   "Hulu"
+  ],
+  "docs": "https://docs.influxdata.com/influxdb/v2/",
+  "tutorial": "https://docs.influxdata.com/influxdb/v2/get-started/",
+  "added": "2026-06-14",
+  "dex": 69
  },
  {
   "id": "mongodb",
@@ -1637,7 +1757,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://www.mongodb.com/docs/manual/tutorial/getting-started/",
   "added": "2026-06-08",
   "eli5": "A junk drawer where you shove data in any shape with no rules.",
-  "dex": 65
+  "dex": 70
  },
  {
   "id": "mysql",
@@ -1664,7 +1784,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://dev.mysql.com/doc/mysql-getting-started/en/",
   "added": "2026-06-08",
   "eli5": "The world's most popular filing cabinet for websites.",
-  "dex": 66
+  "dex": 71
  },
  {
   "id": "neo4j",
@@ -1691,7 +1811,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://neo4j.com/docs/getting-started/",
   "added": "2026-06-08",
   "eli5": "A map of who knows who — great for tracing connections between things.",
-  "dex": 67
+  "dex": 72
  },
  {
   "id": "opensearch",
@@ -1714,7 +1834,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://opensearch.org/docs/latest/",
   "tutorial": "https://opensearch.org/docs/latest/getting-started/",
   "added": "2026-06-12",
-  "dex": 68
+  "dex": 73
  },
  {
   "id": "pinecone",
@@ -1738,7 +1858,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://docs.pinecone.io/",
   "tutorial": "https://docs.pinecone.io/guides/get-started/quickstart",
   "added": "2026-06-12",
-  "dex": 69
+  "dex": 74
  },
  {
   "id": "postgresql",
@@ -1766,7 +1886,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://www.postgresql.org/docs/current/tutorial.html",
   "added": "2026-06-08",
   "eli5": "A very organized filing cabinet with strict rules — everything in the right drawer.",
-  "dex": 70
+  "dex": 75
  },
  {
   "id": "redis",
@@ -1794,7 +1914,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://redis.io/docs/getting-started/",
   "added": "2026-06-08",
   "eli5": "A whiteboard next to your desk — super fast to read but wiped if unplugged.",
-  "dex": 71
+  "dex": 76
  },
  {
   "id": "scylladb",
@@ -1818,7 +1938,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://docs.scylladb.com/",
   "tutorial": "https://docs.scylladb.com/stable/getting-started/",
   "added": "2026-06-12",
-  "dex": 72
+  "dex": 77
  },
  {
   "id": "sql",
@@ -1840,7 +1960,55 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://www.postgresql.org/docs/current/sql.html",
   "tutorial": "https://sqlzoo.net/wiki/SQL_Tutorial",
   "added": "2026-06-08",
-  "dex": 73
+  "dex": 78
+ },
+ {
+  "id": "supabase",
+  "name": "Supabase",
+  "category": "Platform",
+  "domain": "Database",
+  "eli5": "Supabase is like Firebase but built on Postgres — you get a real database, auto-generated APIs, auth, and file storage all wired up out of the box.",
+  "description": "Open-source Firebase alternative built on PostgreSQL. Provides auto-generated REST and GraphQL APIs, realtime subscriptions, auth, edge functions, and S3-compatible storage.",
+  "use_cases": [
+   "Full-stack apps with instant REST/GraphQL APIs",
+   "Realtime collaboration features via Postgres replication",
+   "Auth with social login, MFA, and RLS policies",
+   "Self-hostable Firebase replacement"
+  ],
+  "used_by": [
+   "Mozilla",
+   "PwC",
+   "Pika",
+   "Mobbin"
+  ],
+  "docs": "https://supabase.com/docs",
+  "tutorial": "https://supabase.com/docs/guides/getting-started",
+  "added": "2026-06-14",
+  "dex": 79
+ },
+ {
+  "id": "tidb",
+  "name": "TiDB",
+  "category": "Tool",
+  "domain": "Database",
+  "eli5": "TiDB is like MySQL that never runs out of space — it automatically splits your data across many machines as it grows, with no downtime.",
+  "description": "Open-source distributed SQL database compatible with MySQL protocol. Combines OLTP and OLAP in one system (HTAP), with horizontal scaling and strong consistency.",
+  "use_cases": [
+   "MySQL-compatible workloads that outgrow a single node",
+   "HTAP: mixed analytical + transactional queries",
+   "Financial applications requiring strong consistency",
+   "Replacing sharded MySQL with a single endpoint"
+  ],
+  "used_by": [
+   "PingCAP",
+   "Shopee",
+   "Square",
+   "ZaloPay"
+  ],
+  "docs": "https://docs.pingcap.com/tidb/stable",
+  "tutorial": "https://docs.pingcap.com/tidb/stable/quick-start-with-tidb",
+  "added": "2026-06-14",
+  "dex": 80
  },
  {
   "id": "timescaledb",
@@ -1864,7 +2032,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://docs.timescale.com/",
   "tutorial": "https://docs.timescale.com/getting-started/latest/",
   "added": "2026-06-11",
-  "dex": 74
+  "dex": 81
  },
  {
   "id": "vitess",
@@ -1888,7 +2056,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://vitess.io/docs/",
   "tutorial": "https://vitess.io/docs/get-started/local/",
   "added": "2026-06-12",
-  "dex": 75
+  "dex": 82
  },
  {
   "id": "weaviate",
@@ -1911,7 +2079,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://weaviate.io/developers/weaviate",
   "tutorial": "https://weaviate.io/developers/weaviate/quickstart",
   "added": "2026-06-12",
-  "dex": 76
+  "dex": 83
  },
  {
   "id": "bentoml",
@@ -1934,7 +2102,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://docs.bentoml.com/",
   "tutorial": "https://docs.bentoml.com/en/latest/get-started/quickstart.html",
   "added": "2026-06-12",
-  "dex": 77
+  "dex": 84
  },
  {
   "id": "cuda",
@@ -1960,7 +2128,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://docs.nvidia.com/cuda/",
   "tutorial": "https://docs.nvidia.com/cuda/cuda-c-programming-guide/",
   "added": "2026-06-10",
-  "dex": 78
+  "dex": 85
  },
  {
   "id": "hugging-face",
@@ -1986,7 +2154,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://huggingface.co/docs",
   "tutorial": "https://huggingface.co/learn",
   "added": "2026-06-10",
-  "dex": 79
+  "dex": 86
  },
  {
   "id": "kubeflow",
@@ -2010,7 +2178,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://www.kubeflow.org/docs/",
   "tutorial": "https://www.kubeflow.org/docs/started/introduction/",
   "added": "2026-06-12",
-  "dex": 80
+  "dex": 87
  },
  {
   "id": "langchain",
@@ -2036,7 +2204,31 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://python.langchain.com/docs/",
   "tutorial": "https://python.langchain.com/docs/tutorials/",
   "added": "2026-06-10",
-  "dex": 81
+  "dex": 88
+ },
+ {
+  "id": "langgraph",
+  "name": "LangGraph",
+  "category": "Framework",
+  "domain": "AI/ML",
+  "eli5": "LangGraph is like a flowchart engine for AI — it lets your AI make decisions, use tools, loop back on itself, and hand off to other agents in a controlled way.",
+  "description": "Framework for building stateful, multi-step AI agents as directed graphs. Built on LangChain, enables cycles, branching, human-in-the-loop, and multi-agent coordination.",
+  "use_cases": [
+   "Multi-step AI agents with tool use and memory",
+   "Human-in-the-loop approval workflows",
+   "Multi-agent systems with supervisor/subagent patterns",
+   "Long-running agentic workflows with persistence"
+  ],
+  "used_by": [
+   "LinkedIn",
+   "Replit",
+   "Elastic",
+   "LangChain"
+  ],
+  "docs": "https://langchain-ai.github.io/langgraph/",
+  "tutorial": "https://langchain-ai.github.io/langgraph/tutorials/introduction/",
+  "added": "2026-06-14",
+  "dex": 89
  },
  {
   "id": "llamaindex",
@@ -2060,7 +2252,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://docs.llamaindex.ai/",
   "tutorial": "https://docs.llamaindex.ai/en/stable/getting_started/starter_example/",
   "added": "2026-06-12",
-  "dex": 82
+  "dex": 90
  },
  {
   "id": "mlflow",
@@ -2086,7 +2278,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://mlflow.org/docs/latest/",
   "tutorial": "https://mlflow.org/docs/latest/getting-started/",
   "added": "2026-06-10",
-  "dex": 83
+  "dex": 91
  },
  {
   "id": "ollama",
@@ -2110,7 +2302,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://ollama.com/",
   "tutorial": "https://github.com/ollama/ollama",
   "added": "2026-06-10",
-  "dex": 84
+  "dex": 92
  },
  {
   "id": "onnx",
@@ -2136,7 +2328,31 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://onnx.ai/",
   "tutorial": "https://onnxruntime.ai/docs/get-started/",
   "added": "2026-06-10",
-  "dex": 85
+  "dex": 93
+ },
+ {
+  "id": "openai-api",
+  "name": "OpenAI API",
+  "category": "Platform",
+  "domain": "AI/ML",
+  "eli5": "The OpenAI API is like renting a super-smart brain — your app sends questions or tasks, and it sends back intelligent answers, code, or images.",
+  "description": "Cloud API providing access to GPT-4, o1, embeddings, image generation (DALL-E), speech, and fine-tuning. The most widely adopted LLM API in production applications.",
+  "use_cases": [
+   "Chat and assistant features in applications",
+   "Code generation and review automation",
+   "Embeddings for semantic search and RAG",
+   "Structured data extraction from unstructured text"
+  ],
+  "used_by": [
+   "Microsoft",
+   "Snap",
+   "Salesforce",
+   "Duolingo"
+  ],
+  "docs": "https://platform.openai.com/docs/",
+  "tutorial": "https://platform.openai.com/docs/quickstart",
+  "added": "2026-06-14",
+  "dex": 94
  },
  {
   "id": "pytorch",
@@ -2162,7 +2378,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://pytorch.org/docs/",
   "tutorial": "https://pytorch.org/tutorials/",
   "added": "2026-06-10",
-  "dex": 86
+  "dex": 95
  },
  {
   "id": "ray",
@@ -2188,7 +2404,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://docs.ray.io/",
   "tutorial": "https://docs.ray.io/en/latest/ray-overview/getting-started.html",
   "added": "2026-06-10",
-  "dex": 87
+  "dex": 96
  },
  {
   "id": "rocm",
@@ -2214,7 +2430,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://rocm.docs.amd.com/",
   "tutorial": "https://rocm.docs.amd.com/en/latest/tutorial/quick-start.html",
   "added": "2026-06-10",
-  "dex": 88
+  "dex": 97
  },
  {
   "id": "tensorrt",
@@ -2240,7 +2456,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://docs.nvidia.com/deeplearning/tensorrt/",
   "tutorial": "https://docs.nvidia.com/deeplearning/tensorrt/quick-start-guide/",
   "added": "2026-06-10",
-  "dex": 89
+  "dex": 98
  },
  {
   "id": "triton-inference-server",
@@ -2266,7 +2482,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://docs.nvidia.com/deeplearning/triton-inference-server/",
   "tutorial": "https://github.com/triton-inference-server/server/blob/main/docs/getting_started/quickstart.md",
   "added": "2026-06-10",
-  "dex": 90
+  "dex": 99
  },
  {
   "id": "vertex-ai",
@@ -2292,7 +2508,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://cloud.google.com/vertex-ai/docs",
   "tutorial": "https://cloud.google.com/vertex-ai/docs/start/introduction-unified-platform",
   "added": "2026-06-08",
-  "dex": 91
+  "dex": 100
  },
  {
   "id": "vllm",
@@ -2318,7 +2534,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://docs.vllm.ai/",
   "tutorial": "https://docs.vllm.ai/en/latest/getting_started/quickstart.html",
   "added": "2026-06-10",
-  "dex": 92
+  "dex": 101
  },
  {
   "id": "weights-and-biases",
@@ -2342,7 +2558,30 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://docs.wandb.ai/",
   "tutorial": "https://docs.wandb.ai/quickstart",
   "added": "2026-06-11",
-  "dex": 93
+  "dex": 102
+ },
+ {
+  "id": "alertmanager",
+  "name": "Alertmanager",
+  "category": "Tool",
+  "domain": "SRE/Observability",
+  "eli5": "Alertmanager is like the on-call coordinator for your monitoring system — it groups noisy alerts, silences duplicates, and routes them to the right team on Slack or PagerDuty.",
+  "description": "Alert routing and management component of the Prometheus ecosystem. Handles deduplication, grouping, silencing, and routing of alerts to receivers like PagerDuty, Slack, and email.",
+  "use_cases": [
+   "Routing Prometheus alerts to Slack/PagerDuty/email",
+   "Deduplicating and grouping related alerts",
+   "Silencing alerts during maintenance windows",
+   "Inhibiting child alerts when parent is already firing"
+  ],
+  "used_by": [
+   "Anyone running Prometheus",
+   "SoundCloud",
+   "DigitalOcean"
+  ],
+  "docs": "https://prometheus.io/docs/alerting/latest/alertmanager/",
+  "tutorial": "https://prometheus.io/docs/alerting/latest/configuration/",
+  "added": "2026-06-14",
+  "dex": 103
  },
  {
   "id": "aws-cloudwatch",
@@ -2364,7 +2603,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/GettingStarted.html",
   "added": "2026-06-08",
   "eli5": "A security camera and alarm system for everything in your AWS house.",
-  "dex": 94
+  "dex": 104
  },
  {
   "id": "datadog",
@@ -2390,7 +2629,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://docs.datadoghq.com/getting_started/",
   "added": "2026-06-08",
   "eli5": "A dashboard showing every heartbeat of your apps and servers, all in one place.",
-  "dex": 95
+  "dex": 105
  },
  {
   "id": "dynatrace",
@@ -2416,7 +2655,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://docs.dynatrace.com/docs/get-started",
   "added": "2026-06-08",
   "eli5": "A smart robot that watches your whole app and spots problems before you do.",
-  "dex": 96
+  "dex": 106
  },
  {
   "id": "elk-stack",
@@ -2442,7 +2681,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://www.elastic.co/guide/en/elasticsearch/reference/current/getting-started.html",
   "added": "2026-06-08",
   "eli5": "A giant diary plus search engine for all your app's log messages.",
-  "dex": 97
+  "dex": 107
  },
  {
   "id": "grafana",
@@ -2468,7 +2707,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://grafana.com/docs/grafana/latest/getting-started/build-first-dashboard/",
   "added": "2026-06-08",
   "eli5": "Pretty charts built from Prometheus's notebook so humans can understand things.",
-  "dex": 98
+  "dex": 108
  },
  {
   "id": "grafana-loki",
@@ -2492,7 +2731,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://grafana.com/docs/loki/latest/",
   "tutorial": "https://grafana.com/docs/loki/latest/get-started/",
   "added": "2026-06-11",
-  "dex": 99
+  "dex": 109
  },
  {
   "id": "grafana-tempo",
@@ -2515,7 +2754,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://grafana.com/docs/tempo/latest/",
   "tutorial": "https://grafana.com/docs/tempo/latest/getting-started/",
   "added": "2026-06-11",
-  "dex": 100
+  "dex": 110
  },
  {
   "id": "jaeger",
@@ -2541,7 +2780,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://www.jaegertracing.io/docs/latest/getting-started/",
   "added": "2026-06-08",
   "eli5": "A detective that follows a request through all your services to find where it slowed down.",
-  "dex": 101
+  "dex": 111
  },
  {
   "id": "new-relic",
@@ -2567,7 +2806,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://docs.newrelic.com/docs/new-relic-solutions/get-started/intro-new-relic/",
   "added": "2026-06-08",
   "eli5": "A doctor for your app — checks its health and explains when and why it got sick.",
-  "dex": 102
+  "dex": 112
  },
  {
   "id": "opentelemetry",
@@ -2594,7 +2833,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://opentelemetry.io/docs/getting-started/",
   "added": "2026-06-08",
   "eli5": "A universal plug that sends your app's health data to any monitoring tool you like.",
-  "dex": 103
+  "dex": 113
  },
  {
   "id": "pagerduty",
@@ -2621,7 +2860,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://support.pagerduty.com/docs/introduction",
   "added": "2026-06-08",
   "eli5": "An alarm clock that wakes up the right engineer when something breaks at 3am.",
-  "dex": 104
+  "dex": 114
  },
  {
   "id": "prometheus",
@@ -2647,7 +2886,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://prometheus.io/docs/prometheus/latest/getting_started/",
   "added": "2026-06-08",
   "eli5": "A notebook that writes down how your app is doing every few seconds.",
-  "dex": 105
+  "dex": 115
  },
  {
   "id": "sentry",
@@ -2674,7 +2913,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://docs.sentry.io/platforms/",
   "added": "2026-06-08",
   "eli5": "A bug catcher that tells you exactly when, where, and why your app crashed.",
-  "dex": 106
+  "dex": 116
  },
  {
   "id": "splunk",
@@ -2700,7 +2939,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://docs.splunk.com/Documentation/Splunk/latest/SearchTutorial/WelcometotheSearchTutorial",
   "added": "2026-06-08",
   "eli5": "Google for your logs — find anything in billions of log lines instantly.",
-  "dex": 107
+  "dex": 117
  },
  {
   "id": "thanos",
@@ -2724,7 +2963,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://thanos.io/tip/thanos/getting-started.md/",
   "tutorial": "https://thanos.io/tip/tutorials/quick-tutorial.md/",
   "added": "2026-06-12",
-  "dex": 108
+  "dex": 118
  },
  {
   "id": "victoriametrics",
@@ -2748,7 +2987,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://docs.victoriametrics.com/",
   "tutorial": "https://docs.victoriametrics.com/quick-start/",
   "added": "2026-06-12",
-  "dex": 109
+  "dex": 119
  },
  {
   "id": "aws-kms",
@@ -2772,7 +3011,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://docs.aws.amazon.com/kms/latest/developerguide/getting-started.html",
   "added": "2026-06-08",
   "eli5": "A bank vault for your secret keys — lets you use them but never hands them over.",
-  "dex": 110
+  "dex": 120
  },
  {
   "id": "cert-manager",
@@ -2794,7 +3033,31 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://cert-manager.io/docs/tutorials/acme/nginx-ingress/",
   "added": "2026-06-08",
   "eli5": "A robot that renews your HTTPS padlock automatically before it ever expires.",
-  "dex": 111
+  "dex": 121
+ },
+ {
+  "id": "checkov",
+  "name": "Checkov",
+  "category": "Tool",
+  "domain": "Security",
+  "eli5": "Checkov is like a building code inspector for your infrastructure files — it reads your Terraform and Kubernetes configs before you deploy and flags anything unsafe.",
+  "description": "Static analysis tool for IaC security and compliance. Scans Terraform, CloudFormation, Kubernetes, Helm, and Dockerfiles against 1000+ built-in security and compliance checks.",
+  "use_cases": [
+   "IaC security scanning in CI/CD",
+   "CIS benchmark compliance for cloud configs",
+   "Detecting misconfigurations before deployment",
+   "HIPAA, SOC2, PCI policy enforcement on infra code"
+  ],
+  "used_by": [
+   "Bridgecrew (Palo Alto)",
+   "Wix",
+   "Etsy",
+   "Monday.com"
+  ],
+  "docs": "https://www.checkov.io/1.Welcome/What%20is%20Checkov.html",
+  "tutorial": "https://www.checkov.io/1.Welcome/Quick%20Start.html",
+  "added": "2026-06-14",
+  "dex": 122
  },
  {
   "id": "cosign",
@@ -2818,7 +3081,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://docs.sigstore.dev/cosign/overview/",
   "tutorial": "https://docs.sigstore.dev/cosign/signing/quickstart/",
   "added": "2026-06-12",
-  "dex": 112
+  "dex": 123
  },
  {
   "id": "falco",
@@ -2844,7 +3107,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://falco.org/docs/getting-started/",
   "added": "2026-06-08",
   "eli5": "A smoke detector for containers — screams if something suspicious happens inside.",
-  "dex": 113
+  "dex": 124
  },
  {
   "id": "hashicorp-vault",
@@ -2870,7 +3133,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://developer.hashicorp.com/vault/tutorials/getting-started",
   "added": "2026-06-08",
   "eli5": "A really secure safe for all your passwords — only gives them to people it trusts.",
-  "dex": 114
+  "dex": 125
  },
  {
   "id": "kyverno",
@@ -2894,7 +3157,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://kyverno.io/docs/",
   "tutorial": "https://kyverno.io/docs/installation/",
   "added": "2026-06-11",
-  "dex": 115
+  "dex": 126
  },
  {
   "id": "opa",
@@ -2920,7 +3183,31 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://www.openpolicyagent.org/docs/latest/#running-opa",
   "added": "2026-06-08",
   "eli5": "A rulebook apps must check before doing anything: 'Am I allowed to do this?'",
-  "dex": 116
+  "dex": 127
+ },
+ {
+  "id": "semgrep",
+  "name": "Semgrep",
+  "category": "Tool",
+  "domain": "Security",
+  "eli5": "Semgrep is like grep but it understands code structure — it finds security bugs and bad patterns that look different on the surface but mean the same dangerous thing.",
+  "description": "Fast, open-source static analysis tool for finding bugs and security vulnerabilities. Uses pattern matching on ASTs across 30+ languages, with a large community rule registry.",
+  "use_cases": [
+   "SAST in CI/CD pipelines",
+   "Detecting OWASP Top 10 vulnerabilities",
+   "Enforcing custom code standards at scale",
+   "Secrets detection and dependency scanning"
+  ],
+  "used_by": [
+   "Dropbox",
+   "Figma",
+   "Trail of Bits",
+   "GitLab"
+  ],
+  "docs": "https://semgrep.dev/docs/",
+  "tutorial": "https://semgrep.dev/docs/getting-started/",
+  "added": "2026-06-14",
+  "dex": 128
  },
  {
   "id": "snyk",
@@ -2946,7 +3233,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://docs.snyk.io/getting-started",
   "added": "2026-06-08",
   "eli5": "A spell-checker for security — finds dangerous ingredients in your code's recipe.",
-  "dex": 117
+  "dex": 129
  },
  {
   "id": "sonarqube",
@@ -2970,7 +3257,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://docs.sonarsource.com/sonarqube/",
   "tutorial": "https://docs.sonarsource.com/sonarqube/latest/try-out-sonarqube/",
   "added": "2026-06-12",
-  "dex": 118
+  "dex": 130
  },
  {
   "id": "trivy",
@@ -2995,7 +3282,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://aquasecurity.github.io/trivy/latest/getting-started/installation/",
   "added": "2026-06-08",
   "eli5": "An X-ray machine for containers that finds hidden diseases (security holes) inside.",
-  "dex": 119
+  "dex": 131
  },
  {
   "id": "apache-airflow",
@@ -3022,7 +3309,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://airflow.apache.org/docs/apache-airflow/stable/tutorial/index.html",
   "added": "2026-06-08",
   "eli5": "A chore chart that runs your data jobs in the right order at the right time.",
-  "dex": 120
+  "dex": 132
  },
  {
   "id": "apache-beam",
@@ -3046,7 +3333,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://beam.apache.org/documentation/",
   "tutorial": "https://beam.apache.org/get-started/wordcount-example/",
   "added": "2026-06-12",
-  "dex": 121
+  "dex": 133
  },
  {
   "id": "apache-flink",
@@ -3071,7 +3358,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://nightlies.apache.org/flink/flink-docs-stable/",
   "tutorial": "https://nightlies.apache.org/flink/flink-docs-stable/docs/try-flink/local_installation/",
   "added": "2026-06-11",
-  "dex": 122
+  "dex": 134
  },
  {
   "id": "apache-iceberg",
@@ -3095,7 +3382,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://iceberg.apache.org/docs/latest/",
   "tutorial": "https://iceberg.apache.org/spark-quickstart/",
   "added": "2026-06-12",
-  "dex": 123
+  "dex": 135
  },
  {
   "id": "apache-spark",
@@ -3122,7 +3409,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://spark.apache.org/docs/latest/quick-start.html",
   "added": "2026-06-08",
   "eli5": "A team of workers that splits a huge data pile and processes all of it at once.",
-  "dex": 124
+  "dex": 136
  },
  {
   "id": "bigquery",
@@ -3148,7 +3435,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://cloud.google.com/bigquery/docs",
   "tutorial": "https://cloud.google.com/bigquery/docs/quickstarts/load-data-console",
   "added": "2026-06-08",
-  "dex": 125
+  "dex": 137
  },
  {
   "id": "databricks",
@@ -3174,7 +3461,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://docs.databricks.com/en/getting-started/index.html",
   "added": "2026-06-08",
   "eli5": "A giant playground where data people crunch huge piles of data together.",
-  "dex": 126
+  "dex": 138
  },
  {
   "id": "dbt",
@@ -3200,7 +3487,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://docs.getdbt.com/guides",
   "added": "2026-06-08",
   "eli5": "A chef that turns raw data ingredients into clean, tested, ready-to-serve dishes.",
-  "dex": 127
+  "dex": 139
  },
  {
   "id": "delta-lake",
@@ -3224,7 +3511,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://docs.delta.io/latest/",
   "tutorial": "https://docs.delta.io/latest/quick-start.html",
   "added": "2026-06-12",
-  "dex": 128
+  "dex": 140
  },
  {
   "id": "prefect",
@@ -3248,7 +3535,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://docs.prefect.io/",
   "tutorial": "https://docs.prefect.io/v3/get-started/quickstart",
   "added": "2026-06-12",
-  "dex": 129
+  "dex": 141
  },
  {
   "id": "snowflake",
@@ -3275,7 +3562,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://docs.snowflake.com/en/user-guide/tutorials/tasty-bytes-introduction",
   "added": "2026-06-08",
   "eli5": "A shared spreadsheet in the cloud that gets more powerful when you need it.",
-  "dex": 130
+  "dex": 142
  },
  {
   "id": "trino",
@@ -3300,7 +3587,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://trino.io/docs/current/",
   "tutorial": "https://trino.io/docs/current/installation/deployment.html",
   "added": "2026-06-11",
-  "dex": 131
+  "dex": 143
  },
  {
   "id": "angular",
@@ -3327,7 +3614,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://angular.dev/tutorials/learn-angular",
   "added": "2026-06-08",
   "eli5": "A complete workshop for building big websites — Google made it with strict rules.",
-  "dex": 132
+  "dex": 144
  },
  {
   "id": "astro",
@@ -3351,7 +3638,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://docs.astro.build/",
   "tutorial": "https://docs.astro.build/en/tutorial/0-introduction/",
   "added": "2026-06-12",
-  "dex": 133
+  "dex": 145
  },
  {
   "id": "bun",
@@ -3374,7 +3661,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://bun.sh/docs",
   "tutorial": "https://bun.sh/docs/quickstart",
   "added": "2026-06-12",
-  "dex": 134
+  "dex": 146
  },
  {
   "id": "nextjs",
@@ -3401,7 +3688,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://nextjs.org/learn",
   "added": "2026-06-08",
   "eli5": "React with superpowers — handles the boring stuff so you just build cool features.",
-  "dex": 135
+  "dex": 147
  },
  {
   "id": "react",
@@ -3428,7 +3715,55 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://react.dev/learn",
   "added": "2026-06-08",
   "eli5": "Lego blocks for websites — build pieces and snap them together into a full page.",
-  "dex": 136
+  "dex": 148
+ },
+ {
+  "id": "remix",
+  "name": "Remix",
+  "category": "Framework",
+  "domain": "Frontend",
+  "eli5": "Remix is like Next.js but designed around web fundamentals — it handles loading and submitting data the way browsers always did, making apps fast and resilient.",
+  "description": "Full-stack React framework built on web standards (fetch, forms, HTTP). Nested routing, parallel data loading, and progressive enhancement for fast, resilient user experiences.",
+  "use_cases": [
+   "Full-stack React apps with server-side data loading",
+   "Progressive enhancement for form-heavy apps",
+   "Nested layout routing with parallel data fetching",
+   "Deploying to edge runtimes and traditional Node"
+  ],
+  "used_by": [
+   "Shopify",
+   "NASA",
+   "Adobe",
+   "Chance the Rapper"
+  ],
+  "docs": "https://remix.run/docs",
+  "tutorial": "https://remix.run/docs/en/main/start/tutorial",
+  "added": "2026-06-14",
+  "dex": 149
+ },
+ {
+  "id": "shadcn-ui",
+  "name": "shadcn/ui",
+  "category": "Tool",
+  "domain": "Frontend",
+  "eli5": "shadcn/ui is like a box of beautiful, pre-built UI components that you copy into your own project and own completely — no library to update or fight with.",
+  "description": "Collection of accessible, composable React components built on Radix UI and Tailwind CSS. Components are copied into your codebase rather than installed as a dependency.",
+  "use_cases": [
+   "Accessible component primitives for design systems",
+   "Admin dashboards and SaaS UIs",
+   "Rapid UI development with full customization",
+   "Consistent UI across Next.js and Vite projects"
+  ],
+  "used_by": [
+   "Vercel",
+   "Clerk",
+   "Cal.com",
+   "Liveblocks"
+  ],
+  "docs": "https://ui.shadcn.com/docs",
+  "tutorial": "https://ui.shadcn.com/docs/installation",
+  "added": "2026-06-14",
+  "dex": 150
  },
  {
   "id": "storybook",
@@ -3452,7 +3787,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://storybook.js.org/docs",
   "tutorial": "https://storybook.js.org/tutorials/intro-to-storybook/",
   "added": "2026-06-12",
-  "dex": 137
+  "dex": 151
  },
  {
   "id": "svelte",
@@ -3476,7 +3811,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://svelte.dev/docs",
   "tutorial": "https://learn.svelte.dev/",
   "added": "2026-06-11",
-  "dex": 138
+  "dex": 152
  },
  {
   "id": "tailwind-css",
@@ -3503,7 +3838,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://tailwindcss.com/docs/installation",
   "added": "2026-06-08",
   "eli5": "Pre-mixed paint colors for your website — pick from a palette instead of mixing yourself.",
-  "dex": 139
+  "dex": 153
  },
  {
   "id": "typescript",
@@ -3530,7 +3865,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://www.typescriptlang.org/docs/",
   "tutorial": "https://www.typescriptlang.org/docs/handbook/intro.html",
   "added": "2026-06-08",
-  "dex": 140
+  "dex": 154
  },
  {
   "id": "vite",
@@ -3554,7 +3889,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://vite.dev/guide/",
   "tutorial": "https://vite.dev/guide/",
   "added": "2026-06-11",
-  "dex": 141
+  "dex": 155
  },
  {
   "id": "vue",
@@ -3581,7 +3916,30 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://vuejs.org/tutorial/",
   "added": "2026-06-08",
   "eli5": "A friendlier version of React — easier to pick up, still very powerful.",
-  "dex": 142
+  "dex": 156
+ },
+ {
+  "id": "deno",
+  "name": "Deno",
+  "category": "Tool",
+  "domain": "Backend",
+  "eli5": "Deno is like Node.js fixed — it runs JavaScript and TypeScript securely by default, with built-in tools so you don't need npm for most things.",
+  "description": "Secure JavaScript/TypeScript runtime built on V8 and Rust. Permissions-first security model, native TypeScript support, built-in formatter/linter/test runner, and Web API compatibility.",
+  "use_cases": [
+   "Secure scripting with explicit permission grants",
+   "TypeScript backend servers without build steps",
+   "Edge functions on Deno Deploy",
+   "CLI tools with single-binary compilation"
+  ],
+  "used_by": [
+   "Deno Deploy",
+   "Netlify Edge Functions",
+   "Supabase Edge Functions"
+  ],
+  "docs": "https://docs.deno.com/",
+  "tutorial": "https://docs.deno.com/runtime/",
+  "added": "2026-06-14",
+  "dex": 157
  },
  {
   "id": "django",
@@ -3605,7 +3963,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://docs.djangoproject.com/",
   "tutorial": "https://docs.djangoproject.com/en/stable/intro/tutorial01/",
   "added": "2026-06-12",
-  "dex": 143
+  "dex": 158
  },
  {
   "id": "express",
@@ -3629,7 +3987,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://expressjs.com/",
   "tutorial": "https://expressjs.com/en/starter/hello-world.html",
   "added": "2026-06-12",
-  "dex": 144
+  "dex": 159
  },
  {
   "id": "fastapi",
@@ -3655,7 +4013,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://fastapi.tiangolo.com/tutorial/",
   "added": "2026-06-08",
   "eli5": "A super-fast waiter that takes requests from users and brings back exactly what they asked.",
-  "dex": 145
+  "dex": 160
  },
  {
   "id": "gin",
@@ -3678,7 +4036,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://gin-gonic.com/docs/",
   "tutorial": "https://gin-gonic.com/docs/quickstart/",
   "added": "2026-06-12",
-  "dex": 146
+  "dex": 161
  },
  {
   "id": "go",
@@ -3705,7 +4063,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://go.dev/doc/",
   "tutorial": "https://go.dev/tour/welcome/1",
   "added": "2026-06-08",
-  "dex": 147
+  "dex": 162
  },
  {
   "id": "graphql",
@@ -3729,7 +4087,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://graphql.org/learn/",
   "tutorial": "https://graphql.org/learn/",
   "added": "2026-06-12",
-  "dex": 148
+  "dex": 163
  },
  {
   "id": "grpc",
@@ -3756,7 +4114,30 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://grpc.io/docs/languages/go/quickstart/",
   "added": "2026-06-08",
   "eli5": "Two apps talking in a secret, super-fast language only they understand.",
-  "dex": 149
+  "dex": 164
+ },
+ {
+  "id": "hono",
+  "name": "Hono",
+  "category": "Framework",
+  "domain": "Backend",
+  "eli5": "Hono is like an ultra-light Express for the edge — it runs anywhere JavaScript runs, including Cloudflare Workers, Deno, and Bun, with almost no overhead.",
+  "description": "Ultra-fast, lightweight web framework for edge runtimes. Works on Cloudflare Workers, Deno, Bun, and Node.js with a familiar Express-like API and zero dependencies.",
+  "use_cases": [
+   "Edge API routes on Cloudflare Workers",
+   "Lightweight REST APIs with Bun or Deno",
+   "TypeScript-first backend with end-to-end types",
+   "Serverless functions with minimal cold start"
+  ],
+  "used_by": [
+   "Cloudflare",
+   "Deno",
+   "various edge-native startups"
+  ],
+  "docs": "https://hono.dev/docs/",
+  "tutorial": "https://hono.dev/docs/getting-started/basic",
+  "added": "2026-06-14",
+  "dex": 165
  },
  {
   "id": "java",
@@ -3783,7 +4164,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://docs.oracle.com/en/java/",
   "tutorial": "https://dev.java/learn/",
   "added": "2026-06-08",
-  "dex": 150
+  "dex": 166
  },
  {
   "id": "kotlin",
@@ -3810,7 +4191,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://kotlinlang.org/docs/home.html",
   "tutorial": "https://kotlinlang.org/docs/getting-started.html",
   "added": "2026-06-08",
-  "dex": 151
+  "dex": 167
  },
  {
   "id": "nestjs",
@@ -3834,7 +4215,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://docs.nestjs.com/",
   "tutorial": "https://docs.nestjs.com/first-steps",
   "added": "2026-06-11",
-  "dex": 152
+  "dex": 168
  },
  {
   "id": "python",
@@ -3861,7 +4242,31 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://docs.python.org/3/",
   "tutorial": "https://docs.python.org/3/tutorial/",
   "added": "2026-06-08",
-  "dex": 153
+  "dex": 169
+ },
+ {
+  "id": "rails",
+  "name": "Ruby on Rails",
+  "category": "Framework",
+  "domain": "Backend",
+  "eli5": "Rails is like a fully-assembled LEGO kit for building web apps — the pieces are already connected in the right way so you can build fast without reading a manual.",
+  "description": "Full-stack web framework for Ruby following convention over configuration. Includes ORM (ActiveRecord), routing, templating, mailers, and a strong developer productivity focus.",
+  "use_cases": [
+   "Rapid full-stack web application development",
+   "Monolithic apps with built-in admin and auth",
+   "REST and GraphQL API backends",
+   "Startups and MVPs with fast time-to-market"
+  ],
+  "used_by": [
+   "GitHub",
+   "Shopify",
+   "Airbnb",
+   "Basecamp"
+  ],
+  "docs": "https://guides.rubyonrails.org/",
+  "tutorial": "https://guides.rubyonrails.org/getting_started.html",
+  "added": "2026-06-14",
+  "dex": 170
  },
  {
   "id": "rust",
@@ -3888,7 +4293,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://doc.rust-lang.org/book/",
   "tutorial": "https://rustlings.cool/",
   "added": "2026-06-08",
-  "dex": 154
+  "dex": 171
  },
  {
   "id": "spring-boot",
@@ -3912,7 +4317,30 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://docs.spring.io/spring-boot/docs/current/reference/html/",
   "tutorial": "https://spring.io/quickstart",
   "added": "2026-06-12",
-  "dex": 155
+  "dex": 172
+ },
+ {
+  "id": "trpc",
+  "name": "tRPC",
+  "category": "Framework",
+  "domain": "Backend",
+  "eli5": "tRPC is like an API where you never have to write documentation — your frontend automatically knows the exact types of every function your backend exposes.",
+  "description": "TypeScript RPC framework that gives end-to-end type safety between client and server with zero code generation. Eliminates REST/GraphQL schemas for TypeScript full-stack apps.",
+  "use_cases": [
+   "Full-stack TypeScript apps with shared types",
+   "Next.js and Remix API layers without REST overhead",
+   "Replacing REST or GraphQL in mono-repo TS stacks",
+   "Type-safe subscriptions and streaming"
+  ],
+  "used_by": [
+   "Cal.com",
+   "Ping.gg",
+   "Newline"
+  ],
+  "docs": "https://trpc.io/docs",
+  "tutorial": "https://trpc.io/docs/quickstart",
+  "added": "2026-06-14",
+  "dex": 173
  },
  {
   "id": "apache-kafka",
@@ -3940,7 +4368,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://kafka.apache.org/quickstart",
   "added": "2026-06-08",
   "eli5": "A conveyor belt that carries messages between apps without dropping any.",
-  "dex": 156
+  "dex": 174
  },
  {
   "id": "apache-pulsar",
@@ -3964,7 +4392,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://pulsar.apache.org/docs/",
   "tutorial": "https://pulsar.apache.org/docs/getting-started-standalone/",
   "added": "2026-06-12",
-  "dex": 157
+  "dex": 175
  },
  {
   "id": "celery",
@@ -3988,7 +4416,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://docs.celeryq.dev/",
   "tutorial": "https://docs.celeryq.dev/en/stable/getting-started/first-steps-with-celery.html",
   "added": "2026-06-12",
-  "dex": 158
+  "dex": 176
  },
  {
   "id": "cloud-pubsub",
@@ -4014,7 +4442,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://cloud.google.com/pubsub/docs",
   "tutorial": "https://cloud.google.com/pubsub/docs/publish-receive-messages-console",
   "added": "2026-06-08",
-  "dex": 159
+  "dex": 177
  },
  {
   "id": "nats",
@@ -4038,7 +4466,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://docs.nats.io/",
   "tutorial": "https://docs.nats.io/nats-concepts/overview",
   "added": "2026-06-11",
-  "dex": 160
+  "dex": 178
  },
  {
   "id": "rabbitmq",
@@ -4064,7 +4492,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://www.rabbitmq.com/tutorials",
   "added": "2026-06-08",
   "eli5": "A post office — apps drop letters in, other apps pick them up later.",
-  "dex": 161
+  "dex": 179
  },
  {
   "id": "redpanda",
@@ -4088,7 +4516,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://docs.redpanda.com/",
   "tutorial": "https://docs.redpanda.com/current/get-started/quick-start/",
   "added": "2026-06-12",
-  "dex": 162
+  "dex": 180
  },
  {
   "id": "aws-s3",
@@ -4114,7 +4542,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/GetStartedWithS3.html",
   "added": "2026-06-08",
   "eli5": "A magic box that holds unlimited files and never loses them.",
-  "dex": 163
+  "dex": 181
  },
  {
   "id": "azure-blob",
@@ -4140,7 +4568,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://learn.microsoft.com/en-us/azure/storage/blobs/",
   "tutorial": "https://learn.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal",
   "added": "2026-06-08",
-  "dex": 164
+  "dex": 182
  },
  {
   "id": "ceph",
@@ -4164,7 +4592,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://docs.ceph.com/",
   "tutorial": "https://docs.ceph.com/en/latest/install/",
   "added": "2026-06-12",
-  "dex": 165
+  "dex": 183
  },
  {
   "id": "gcs",
@@ -4190,7 +4618,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://cloud.google.com/storage/docs",
   "tutorial": "https://cloud.google.com/storage/docs/quickstart-console",
   "added": "2026-06-08",
-  "dex": 166
+  "dex": 184
  },
  {
   "id": "minio",
@@ -4214,7 +4642,31 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://min.io/docs/minio/",
   "tutorial": "https://min.io/docs/minio/linux/operations/install-deploy-manage/deploy-minio-single-node-single-drive.html",
   "added": "2026-06-11",
-  "dex": 167
+  "dex": 185
+ },
+ {
+  "id": "rook",
+  "name": "Rook",
+  "category": "Tool",
+  "domain": "Storage",
+  "eli5": "Rook is like a translator between Kubernetes and Ceph — it makes your cluster automatically manage its own distributed storage without any manual disk wrangling.",
+  "description": "Cloud-native storage orchestrator for Kubernetes. Turns Ceph into a self-managing, self-scaling distributed storage system via Kubernetes operators and CRDs.",
+  "use_cases": [
+   "Persistent block storage for stateful Kubernetes workloads",
+   "Self-healing distributed object storage (S3-compatible)",
+   "Shared filesystem for multi-pod access (CephFS)",
+   "Database persistent volumes on bare metal"
+  ],
+  "used_by": [
+   "CERN",
+   "Roblox",
+   "Red Hat OpenShift",
+   "Giantswarm"
+  ],
+  "docs": "https://rook.io/docs/rook/latest-release/",
+  "tutorial": "https://rook.io/docs/rook/latest-release/Getting-Started/intro/",
+  "added": "2026-06-14",
+  "dex": 186
  },
  {
   "id": "argo-workflows",
@@ -4240,7 +4692,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://argo-workflows.readthedocs.io/en/latest/quick-start/",
   "added": "2026-06-08",
   "eli5": "A flowchart that runs jobs on Kubernetes in the right order, automatically.",
-  "dex": 168
+  "dex": 187
  },
  {
   "id": "argocd",
@@ -4266,7 +4718,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://argo-cd.readthedocs.io/en/stable/getting_started/",
   "added": "2026-06-08",
   "eli5": "A robot that watches Git and keeps your cluster looking exactly like the blueprint.",
-  "dex": 169
+  "dex": 188
  },
  {
   "id": "azure-devops",
@@ -4292,7 +4744,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://learn.microsoft.com/en-us/azure/devops/",
   "tutorial": "https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/pipelines-get-started",
   "added": "2026-06-08",
-  "dex": 170
+  "dex": 189
  },
  {
   "id": "buildkite",
@@ -4316,7 +4768,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://buildkite.com/docs/",
   "tutorial": "https://buildkite.com/docs/tutorials/getting-started",
   "added": "2026-06-12",
-  "dex": 171
+  "dex": 190
  },
  {
   "id": "circleci",
@@ -4342,7 +4794,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://circleci.com/docs/",
   "tutorial": "https://circleci.com/docs/getting-started/",
   "added": "2026-06-08",
-  "dex": 172
+  "dex": 191
  },
  {
   "id": "flux-cd",
@@ -4368,7 +4820,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://fluxcd.io/flux/",
   "tutorial": "https://fluxcd.io/flux/get-started/",
   "added": "2026-06-08",
-  "dex": 173
+  "dex": 192
  },
  {
   "id": "github-actions",
@@ -4394,7 +4846,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://docs.github.com/en/actions/quickstart",
   "added": "2026-06-08",
   "eli5": "A helper that automatically does chores (tests, deploys) whenever you push code.",
-  "dex": 174
+  "dex": 193
  },
  {
   "id": "gitlab-ci",
@@ -4420,7 +4872,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://docs.gitlab.com/ee/ci/",
   "tutorial": "https://docs.gitlab.com/ee/ci/quick_start/",
   "added": "2026-06-08",
-  "dex": 175
+  "dex": 194
  },
  {
   "id": "jenkins",
@@ -4446,7 +4898,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://www.jenkins.io/doc/pipeline/tour/getting-started/",
   "added": "2026-06-08",
   "eli5": "A robot that builds and tests your code every time you save a change.",
-  "dex": 176
+  "dex": 195
  },
  {
   "id": "renovate",
@@ -4470,7 +4922,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://docs.renovatebot.com/",
   "tutorial": "https://docs.renovatebot.com/getting-started/installing-onboarding/",
   "added": "2026-06-12",
-  "dex": 177
+  "dex": 196
  },
  {
   "id": "tekton",
@@ -4496,7 +4948,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://tekton.dev/docs/",
   "tutorial": "https://tekton.dev/docs/getting-started/",
   "added": "2026-06-08",
-  "dex": 178
+  "dex": 197
  },
  {
   "id": "auth0",
@@ -4520,7 +4972,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://auth0.com/docs/",
   "tutorial": "https://auth0.com/docs/quickstarts",
   "added": "2026-06-12",
-  "dex": 179
+  "dex": 198
  },
  {
   "id": "aws-iam",
@@ -4542,7 +4994,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://docs.aws.amazon.com/IAM/latest/UserGuide/getting-started.html",
   "added": "2026-06-08",
   "eli5": "The bouncer who checks IDs and decides who gets into which room.",
-  "dex": 180
+  "dex": 199
  },
  {
   "id": "azure-entra-id",
@@ -4567,7 +5019,30 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://learn.microsoft.com/en-us/entra/identity/",
   "tutorial": "https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-web-app-sign-in",
   "added": "2026-06-08",
-  "dex": 181
+  "dex": 200
+ },
+ {
+  "id": "dex",
+  "name": "Dex",
+  "category": "Tool",
+  "domain": "Identity",
+  "eli5": "Dex is like a universal translator for logins — it sits in front of your apps and lets users sign in with GitHub, LDAP, or SAML, giving your app a single clean OIDC interface.",
+  "description": "Federated OpenID Connect provider that bridges OIDC/OAuth2 to upstream identity providers like LDAP, SAML, GitHub, and Google. Acts as an identity hub for Kubernetes and apps.",
+  "use_cases": [
+   "OIDC front-end for Kubernetes kubectl authentication",
+   "Federating LDAP/Active Directory into OIDC",
+   "Single OIDC provider aggregating multiple IdPs",
+   "GitOps tooling auth (ArgoCD, Flux)"
+  ],
+  "used_by": [
+   "Red Hat",
+   "Kubernetes community",
+   "Argo Project"
+  ],
+  "docs": "https://dexidp.io/docs/",
+  "tutorial": "https://dexidp.io/docs/getting-started/",
+  "added": "2026-06-14",
+  "dex": 201
  },
  {
   "id": "keycloak",
@@ -4593,7 +5068,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://www.keycloak.org/getting-started/getting-started-docker",
   "added": "2026-06-08",
   "eli5": "One front door for all your apps — log in once, get into everything.",
-  "dex": 182
+  "dex": 202
  },
  {
   "id": "okta",
@@ -4617,7 +5092,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://developer.okta.com/docs/",
   "tutorial": "https://developer.okta.com/docs/guides/",
   "added": "2026-06-12",
-  "dex": 183
+  "dex": 203
  },
  {
   "id": "ory",
@@ -4640,7 +5115,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://www.ory.sh/docs/",
   "tutorial": "https://www.ory.sh/docs/getting-started/overview",
   "added": "2026-06-12",
-  "dex": 184
+  "dex": 204
  },
  {
   "id": "spiffe",
@@ -4666,6 +5141,6 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://spiffe.io/docs/latest/try/getting-started-linux-macos-x/",
   "added": "2026-06-08",
   "eli5": "An ID card factory that gives every microservice a passport so they trust each other.",
-  "dex": 185
+  "dex": 205
  }
 ];

@@ -4208,5 +4208,365 @@
     "docs": "https://www.ory.sh/docs/",
     "tutorial": "https://www.ory.sh/docs/getting-started/overview",
     "added": "2026-06-12"
+  },
+  {
+    "id": "influxdb",
+    "name": "InfluxDB",
+    "category": "Tool",
+    "domain": "Database",
+    "eli5": "InfluxDB is like a fitness tracker for your infrastructure — it records millions of measurements per second and lets you query them by time instantly.",
+    "description": "Purpose-built time-series database optimized for high-write workloads. Native support for metrics, events, and traces with a SQL-like query language (Flux/InfluxQL).",
+    "use_cases": [
+      "Infrastructure and application metrics storage",
+      "IoT sensor data at high cardinality",
+      "Real-time analytics dashboards with Grafana",
+      "Financial tick data and market monitoring"
+    ],
+    "used_by": ["Tesla", "IBM", "Cisco", "Hulu"],
+    "docs": "https://docs.influxdata.com/influxdb/v2/",
+    "tutorial": "https://docs.influxdata.com/influxdb/v2/get-started/",
+    "added": "2026-06-14"
+  },
+  {
+    "id": "supabase",
+    "name": "Supabase",
+    "category": "Platform",
+    "domain": "Database",
+    "eli5": "Supabase is like Firebase but built on Postgres — you get a real database, auto-generated APIs, auth, and file storage all wired up out of the box.",
+    "description": "Open-source Firebase alternative built on PostgreSQL. Provides auto-generated REST and GraphQL APIs, realtime subscriptions, auth, edge functions, and S3-compatible storage.",
+    "use_cases": [
+      "Full-stack apps with instant REST/GraphQL APIs",
+      "Realtime collaboration features via Postgres replication",
+      "Auth with social login, MFA, and RLS policies",
+      "Self-hostable Firebase replacement"
+    ],
+    "used_by": ["Mozilla", "PwC", "Pika", "Mobbin"],
+    "docs": "https://supabase.com/docs",
+    "tutorial": "https://supabase.com/docs/guides/getting-started",
+    "added": "2026-06-14"
+  },
+  {
+    "id": "tidb",
+    "name": "TiDB",
+    "category": "Tool",
+    "domain": "Database",
+    "eli5": "TiDB is like MySQL that never runs out of space — it automatically splits your data across many machines as it grows, with no downtime.",
+    "description": "Open-source distributed SQL database compatible with MySQL protocol. Combines OLTP and OLAP in one system (HTAP), with horizontal scaling and strong consistency.",
+    "use_cases": [
+      "MySQL-compatible workloads that outgrow a single node",
+      "HTAP: mixed analytical + transactional queries",
+      "Financial applications requiring strong consistency",
+      "Replacing sharded MySQL with a single endpoint"
+    ],
+    "used_by": ["PingCAP", "Shopee", "Square", "ZaloPay"],
+    "docs": "https://docs.pingcap.com/tidb/stable",
+    "tutorial": "https://docs.pingcap.com/tidb/stable/quick-start-with-tidb",
+    "added": "2026-06-14"
+  },
+  {
+    "id": "tailscale",
+    "name": "Tailscale",
+    "category": "Tool",
+    "domain": "Networking",
+    "eli5": "Tailscale is like a magic tunnel that connects all your devices and servers into one private network, no matter where they are in the world.",
+    "description": "Zero-config VPN built on WireGuard with a control plane. Devices join a mesh network automatically via SSO, enabling secure access to private services without firewall rules.",
+    "use_cases": [
+      "Secure remote access to internal services",
+      "Zero-config VPN for distributed teams",
+      "Site-to-site networking without VPN appliances",
+      "Kubernetes cluster access via Tailscale operator"
+    ],
+    "used_by": ["GitHub", "Mullvad", "Notion", "ReadMe"],
+    "docs": "https://tailscale.com/kb/",
+    "tutorial": "https://tailscale.com/kb/1017/install/",
+    "added": "2026-06-14"
+  },
+  {
+    "id": "openai-api",
+    "name": "OpenAI API",
+    "category": "Platform",
+    "domain": "AI/ML",
+    "eli5": "The OpenAI API is like renting a super-smart brain — your app sends questions or tasks, and it sends back intelligent answers, code, or images.",
+    "description": "Cloud API providing access to GPT-4, o1, embeddings, image generation (DALL-E), speech, and fine-tuning. The most widely adopted LLM API in production applications.",
+    "use_cases": [
+      "Chat and assistant features in applications",
+      "Code generation and review automation",
+      "Embeddings for semantic search and RAG",
+      "Structured data extraction from unstructured text"
+    ],
+    "used_by": ["Microsoft", "Snap", "Salesforce", "Duolingo"],
+    "docs": "https://platform.openai.com/docs/",
+    "tutorial": "https://platform.openai.com/docs/quickstart",
+    "added": "2026-06-14"
+  },
+  {
+    "id": "langgraph",
+    "name": "LangGraph",
+    "category": "Framework",
+    "domain": "AI/ML",
+    "eli5": "LangGraph is like a flowchart engine for AI — it lets your AI make decisions, use tools, loop back on itself, and hand off to other agents in a controlled way.",
+    "description": "Framework for building stateful, multi-step AI agents as directed graphs. Built on LangChain, enables cycles, branching, human-in-the-loop, and multi-agent coordination.",
+    "use_cases": [
+      "Multi-step AI agents with tool use and memory",
+      "Human-in-the-loop approval workflows",
+      "Multi-agent systems with supervisor/subagent patterns",
+      "Long-running agentic workflows with persistence"
+    ],
+    "used_by": ["LinkedIn", "Replit", "Elastic", "LangChain"],
+    "docs": "https://langchain-ai.github.io/langgraph/",
+    "tutorial": "https://langchain-ai.github.io/langgraph/tutorials/introduction/",
+    "added": "2026-06-14"
+  },
+  {
+    "id": "dagger",
+    "name": "Dagger",
+    "category": "Tool",
+    "domain": "DevOps",
+    "eli5": "Dagger is like Docker Compose for your CI/CD pipelines — you write your build steps in code, and they run the same way on your laptop and in any CI system.",
+    "description": "Portable CI/CD engine where pipelines are written as code (Go, Python, TypeScript). Runs locally and in any CI system via containers, eliminating YAML and environment drift.",
+    "use_cases": [
+      "Portable pipelines that run identically on CI and locally",
+      "Eliminating YAML-based CI configuration",
+      "Reusable build/test/deploy modules across projects",
+      "Programmatic pipeline composition with real language features"
+    ],
+    "used_by": ["Grafana Labs", "Gitlab", "Shopify", "GitHub"],
+    "docs": "https://docs.dagger.io/",
+    "tutorial": "https://docs.dagger.io/quickstart",
+    "added": "2026-06-14"
+  },
+  {
+    "id": "turborepo",
+    "name": "Turborepo",
+    "category": "Tool",
+    "domain": "DevOps",
+    "eli5": "Turborepo is like a smart build system that only rebuilds the parts of your monorepo that actually changed — skipping everything else to save time.",
+    "description": "High-performance build system for JavaScript/TypeScript monorepos. Provides task caching, parallel execution, and remote cache sharing to dramatically speed up CI and local builds.",
+    "use_cases": [
+      "Monorepo build and test acceleration",
+      "Remote caching to share build artifacts across CI runs",
+      "Incremental builds (only rebuild changed packages)",
+      "Task pipeline dependency management"
+    ],
+    "used_by": ["Vercel", "Microsoft", "HashiCorp", "Linear"],
+    "docs": "https://turbo.build/repo/docs",
+    "tutorial": "https://turbo.build/repo/docs/getting-started/add-to-project",
+    "added": "2026-06-14"
+  },
+  {
+    "id": "velero",
+    "name": "Velero",
+    "category": "Tool",
+    "domain": "DevOps",
+    "eli5": "Velero is like a backup and restore button for your entire Kubernetes cluster — it saves everything to cloud storage so you can recover or move it anywhere.",
+    "description": "Open-source tool for backing up and restoring Kubernetes cluster resources and persistent volumes. Supports disaster recovery, cluster migration, and namespace-level snapshots.",
+    "use_cases": [
+      "Kubernetes cluster disaster recovery",
+      "Migrating workloads between clusters or cloud providers",
+      "Scheduled namespace/cluster backups to S3/GCS/Azure",
+      "Pre-upgrade snapshots for rollback safety"
+    ],
+    "used_by": ["VMware", "Red Hat", "Replicated", "D2iQ"],
+    "docs": "https://velero.io/docs/",
+    "tutorial": "https://velero.io/docs/main/contributions/ibm-ci/",
+    "added": "2026-06-14"
+  },
+  {
+    "id": "rails",
+    "name": "Ruby on Rails",
+    "category": "Framework",
+    "domain": "Backend",
+    "eli5": "Rails is like a fully-assembled LEGO kit for building web apps — the pieces are already connected in the right way so you can build fast without reading a manual.",
+    "description": "Full-stack web framework for Ruby following convention over configuration. Includes ORM (ActiveRecord), routing, templating, mailers, and a strong developer productivity focus.",
+    "use_cases": [
+      "Rapid full-stack web application development",
+      "Monolithic apps with built-in admin and auth",
+      "REST and GraphQL API backends",
+      "Startups and MVPs with fast time-to-market"
+    ],
+    "used_by": ["GitHub", "Shopify", "Airbnb", "Basecamp"],
+    "docs": "https://guides.rubyonrails.org/",
+    "tutorial": "https://guides.rubyonrails.org/getting_started.html",
+    "added": "2026-06-14"
+  },
+  {
+    "id": "hono",
+    "name": "Hono",
+    "category": "Framework",
+    "domain": "Backend",
+    "eli5": "Hono is like an ultra-light Express for the edge — it runs anywhere JavaScript runs, including Cloudflare Workers, Deno, and Bun, with almost no overhead.",
+    "description": "Ultra-fast, lightweight web framework for edge runtimes. Works on Cloudflare Workers, Deno, Bun, and Node.js with a familiar Express-like API and zero dependencies.",
+    "use_cases": [
+      "Edge API routes on Cloudflare Workers",
+      "Lightweight REST APIs with Bun or Deno",
+      "TypeScript-first backend with end-to-end types",
+      "Serverless functions with minimal cold start"
+    ],
+    "used_by": ["Cloudflare", "Deno", "various edge-native startups"],
+    "docs": "https://hono.dev/docs/",
+    "tutorial": "https://hono.dev/docs/getting-started/basic",
+    "added": "2026-06-14"
+  },
+  {
+    "id": "trpc",
+    "name": "tRPC",
+    "category": "Framework",
+    "domain": "Backend",
+    "eli5": "tRPC is like an API where you never have to write documentation — your frontend automatically knows the exact types of every function your backend exposes.",
+    "description": "TypeScript RPC framework that gives end-to-end type safety between client and server with zero code generation. Eliminates REST/GraphQL schemas for TypeScript full-stack apps.",
+    "use_cases": [
+      "Full-stack TypeScript apps with shared types",
+      "Next.js and Remix API layers without REST overhead",
+      "Replacing REST or GraphQL in mono-repo TS stacks",
+      "Type-safe subscriptions and streaming"
+    ],
+    "used_by": ["Cal.com", "Ping.gg", "Newline"],
+    "docs": "https://trpc.io/docs",
+    "tutorial": "https://trpc.io/docs/quickstart",
+    "added": "2026-06-14"
+  },
+  {
+    "id": "deno",
+    "name": "Deno",
+    "category": "Tool",
+    "domain": "Backend",
+    "eli5": "Deno is like Node.js fixed — it runs JavaScript and TypeScript securely by default, with built-in tools so you don't need npm for most things.",
+    "description": "Secure JavaScript/TypeScript runtime built on V8 and Rust. Permissions-first security model, native TypeScript support, built-in formatter/linter/test runner, and Web API compatibility.",
+    "use_cases": [
+      "Secure scripting with explicit permission grants",
+      "TypeScript backend servers without build steps",
+      "Edge functions on Deno Deploy",
+      "CLI tools with single-binary compilation"
+    ],
+    "used_by": ["Deno Deploy", "Netlify Edge Functions", "Supabase Edge Functions"],
+    "docs": "https://docs.deno.com/",
+    "tutorial": "https://docs.deno.com/runtime/",
+    "added": "2026-06-14"
+  },
+  {
+    "id": "remix",
+    "name": "Remix",
+    "category": "Framework",
+    "domain": "Frontend",
+    "eli5": "Remix is like Next.js but designed around web fundamentals — it handles loading and submitting data the way browsers always did, making apps fast and resilient.",
+    "description": "Full-stack React framework built on web standards (fetch, forms, HTTP). Nested routing, parallel data loading, and progressive enhancement for fast, resilient user experiences.",
+    "use_cases": [
+      "Full-stack React apps with server-side data loading",
+      "Progressive enhancement for form-heavy apps",
+      "Nested layout routing with parallel data fetching",
+      "Deploying to edge runtimes and traditional Node"
+    ],
+    "used_by": ["Shopify", "NASA", "Adobe", "Chance the Rapper"],
+    "docs": "https://remix.run/docs",
+    "tutorial": "https://remix.run/docs/en/main/start/tutorial",
+    "added": "2026-06-14"
+  },
+  {
+    "id": "shadcn-ui",
+    "name": "shadcn/ui",
+    "category": "Tool",
+    "domain": "Frontend",
+    "eli5": "shadcn/ui is like a box of beautiful, pre-built UI components that you copy into your own project and own completely — no library to update or fight with.",
+    "description": "Collection of accessible, composable React components built on Radix UI and Tailwind CSS. Components are copied into your codebase rather than installed as a dependency.",
+    "use_cases": [
+      "Accessible component primitives for design systems",
+      "Admin dashboards and SaaS UIs",
+      "Rapid UI development with full customization",
+      "Consistent UI across Next.js and Vite projects"
+    ],
+    "used_by": ["Vercel", "Clerk", "Cal.com", "Liveblocks"],
+    "docs": "https://ui.shadcn.com/docs",
+    "tutorial": "https://ui.shadcn.com/docs/installation",
+    "added": "2026-06-14"
+  },
+  {
+    "id": "semgrep",
+    "name": "Semgrep",
+    "category": "Tool",
+    "domain": "Security",
+    "eli5": "Semgrep is like grep but it understands code structure — it finds security bugs and bad patterns that look different on the surface but mean the same dangerous thing.",
+    "description": "Fast, open-source static analysis tool for finding bugs and security vulnerabilities. Uses pattern matching on ASTs across 30+ languages, with a large community rule registry.",
+    "use_cases": [
+      "SAST in CI/CD pipelines",
+      "Detecting OWASP Top 10 vulnerabilities",
+      "Enforcing custom code standards at scale",
+      "Secrets detection and dependency scanning"
+    ],
+    "used_by": ["Dropbox", "Figma", "Trail of Bits", "GitLab"],
+    "docs": "https://semgrep.dev/docs/",
+    "tutorial": "https://semgrep.dev/docs/getting-started/",
+    "added": "2026-06-14"
+  },
+  {
+    "id": "checkov",
+    "name": "Checkov",
+    "category": "Tool",
+    "domain": "Security",
+    "eli5": "Checkov is like a building code inspector for your infrastructure files — it reads your Terraform and Kubernetes configs before you deploy and flags anything unsafe.",
+    "description": "Static analysis tool for IaC security and compliance. Scans Terraform, CloudFormation, Kubernetes, Helm, and Dockerfiles against 1000+ built-in security and compliance checks.",
+    "use_cases": [
+      "IaC security scanning in CI/CD",
+      "CIS benchmark compliance for cloud configs",
+      "Detecting misconfigurations before deployment",
+      "HIPAA, SOC2, PCI policy enforcement on infra code"
+    ],
+    "used_by": ["Bridgecrew (Palo Alto)", "Wix", "Etsy", "Monday.com"],
+    "docs": "https://www.checkov.io/1.Welcome/What%20is%20Checkov.html",
+    "tutorial": "https://www.checkov.io/1.Welcome/Quick%20Start.html",
+    "added": "2026-06-14"
+  },
+  {
+    "id": "rook",
+    "name": "Rook",
+    "category": "Tool",
+    "domain": "Storage",
+    "eli5": "Rook is like a translator between Kubernetes and Ceph — it makes your cluster automatically manage its own distributed storage without any manual disk wrangling.",
+    "description": "Cloud-native storage orchestrator for Kubernetes. Turns Ceph into a self-managing, self-scaling distributed storage system via Kubernetes operators and CRDs.",
+    "use_cases": [
+      "Persistent block storage for stateful Kubernetes workloads",
+      "Self-healing distributed object storage (S3-compatible)",
+      "Shared filesystem for multi-pod access (CephFS)",
+      "Database persistent volumes on bare metal"
+    ],
+    "used_by": ["CERN", "Roblox", "Red Hat OpenShift", "Giantswarm"],
+    "docs": "https://rook.io/docs/rook/latest-release/",
+    "tutorial": "https://rook.io/docs/rook/latest-release/Getting-Started/intro/",
+    "added": "2026-06-14"
+  },
+  {
+    "id": "dex",
+    "name": "Dex",
+    "category": "Tool",
+    "domain": "Identity",
+    "eli5": "Dex is like a universal translator for logins — it sits in front of your apps and lets users sign in with GitHub, LDAP, or SAML, giving your app a single clean OIDC interface.",
+    "description": "Federated OpenID Connect provider that bridges OIDC/OAuth2 to upstream identity providers like LDAP, SAML, GitHub, and Google. Acts as an identity hub for Kubernetes and apps.",
+    "use_cases": [
+      "OIDC front-end for Kubernetes kubectl authentication",
+      "Federating LDAP/Active Directory into OIDC",
+      "Single OIDC provider aggregating multiple IdPs",
+      "GitOps tooling auth (ArgoCD, Flux)"
+    ],
+    "used_by": ["Red Hat", "Kubernetes community", "Argo Project"],
+    "docs": "https://dexidp.io/docs/",
+    "tutorial": "https://dexidp.io/docs/getting-started/",
+    "added": "2026-06-14"
+  },
+  {
+    "id": "alertmanager",
+    "name": "Alertmanager",
+    "category": "Tool",
+    "domain": "SRE/Observability",
+    "eli5": "Alertmanager is like the on-call coordinator for your monitoring system — it groups noisy alerts, silences duplicates, and routes them to the right team on Slack or PagerDuty.",
+    "description": "Alert routing and management component of the Prometheus ecosystem. Handles deduplication, grouping, silencing, and routing of alerts to receivers like PagerDuty, Slack, and email.",
+    "use_cases": [
+      "Routing Prometheus alerts to Slack/PagerDuty/email",
+      "Deduplicating and grouping related alerts",
+      "Silencing alerts during maintenance windows",
+      "Inhibiting child alerts when parent is already firing"
+    ],
+    "used_by": ["Anyone running Prometheus", "SoundCloud", "DigitalOcean"],
+    "docs": "https://prometheus.io/docs/alerting/latest/alertmanager/",
+    "tutorial": "https://prometheus.io/docs/alerting/latest/configuration/",
+    "added": "2026-06-14"
   }
 ]

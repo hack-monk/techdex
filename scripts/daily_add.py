@@ -93,6 +93,7 @@ def main() -> None:
         entries: list[dict] = json.load(f)
 
     existing_ids: set[str] = {e["id"] for e in entries}
+    existing_names: set[str] = {e["name"].lower() for e in entries}
     today = date.today().isoformat()
 
     print(f"Current catalog: {len(entries)} entries")
@@ -100,12 +101,14 @@ def main() -> None:
 
     # ── Build prompt ───────────────────────────────────────────────────────
     id_list = sorted(existing_ids)
+    name_list = sorted(existing_names)
     prompt = f"""You are maintaining TechDex, a catalog of widely-used software engineering tools and technologies.
 
 Today's date: {today}
 
-These tool IDs are already in the catalog — do NOT suggest any of them:
-{json.dumps(id_list, indent=2)}
+These tools are already in the catalog — do NOT suggest any of them (checked by both ID and name):
+IDs:   {json.dumps(id_list, indent=2)}
+Names: {json.dumps(name_list, indent=2)}
 
 Your task: suggest exactly 5 NEW tools that are:
 - Widely adopted in the software industry (used in real production systems)
@@ -159,9 +162,10 @@ Rules:
 
     for tool in new_tools:
         tid = tool.get("id", "")
+        tname = tool.get("name", "").lower()
 
-        # Skip duplicates
-        if tid in existing_ids:
+        # Skip duplicates by ID or name
+        if tid in existing_ids or tname in existing_names:
             skipped.append(f"{tid} (duplicate)")
             continue
 
@@ -174,6 +178,7 @@ Rules:
 
         entries.append(tool)
         existing_ids.add(tid)
+        existing_names.add(tname)
         added_names.append(tool["name"])
         print(f"  + {tool['name']} ({tool['domain']})")
 

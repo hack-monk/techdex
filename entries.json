@@ -2787,30 +2787,6 @@
     "added": "2026-06-09"
   },
   {
-    "id": "podman",
-    "name": "Podman",
-    "category": "Tool",
-    "domain": "DevOps",
-    "eli5": "Like Docker but without a big background program running as the boss \u2014 each container runs on its own, which is safer.",
-    "description": "Daemonless, rootless container engine by Red Hat. OCI-compatible drop-in replacement for Docker CLI with native pod support, systemd integration, and no privileged daemon requirement. Default container runtime on RHEL/Fedora.",
-    "use_cases": [
-      "Run containers without root or a background daemon for better security",
-      "Drop-in Docker replacement on RHEL, Fedora, and air-gapped environments",
-      "Build and push OCI images with Buildah integration",
-      "Run multi-container pods locally that mirror Kubernetes pod semantics",
-      "Generate systemd unit files from running containers for on-host services"
-    ],
-    "used_by": [
-      "Red Hat",
-      "IBM",
-      "Government/regulated industries",
-      "Security-focused teams"
-    ],
-    "docs": "https://docs.podman.io/",
-    "tutorial": "https://podman.io/getting-started/",
-    "added": "2026-06-09"
-  },
-  {
     "id": "microk8s",
     "name": "MicroK8s",
     "category": "Platform",
@@ -5119,29 +5095,6 @@
     ],
     "docs": "https://docs.wiz.io/",
     "tutorial": "https://docs.wiz.io/wiz-docs/docs/getting-started",
-    "added": "2026-06-14"
-  },
-  {
-    "id": "astrojs",
-    "name": "Astro",
-    "category": "Framework",
-    "domain": "Frontend",
-    "eli5": "It's a super-smart web builder that only sends the exact code you need to visitors, making websites load incredibly fast like a speed racer.",
-    "description": "Astro is a modern web framework designed for building fast, content-focused websites with minimal JavaScript. It supports multiple UI frameworks and uses island architecture to optimize performance by shipping zero JavaScript by default.",
-    "use_cases": [
-      "Building high-performance static sites and blogs with dynamic content",
-      "Creating documentation websites that load instantly",
-      "Developing content-heavy applications with optimal Core Web Vitals",
-      "Mixing multiple UI frameworks (React, Vue, Svelte) in a single project"
-    ],
-    "used_by": [
-      "Docusaurus",
-      "the Astro community",
-      "various tech blogs",
-      "documentation sites"
-    ],
-    "docs": "https://docs.astro.build/",
-    "tutorial": "https://docs.astro.build/en/getting-started/",
     "added": "2026-06-14"
   },
   {

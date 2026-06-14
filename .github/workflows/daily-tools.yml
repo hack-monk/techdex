@@ -1,0 +1,57 @@
+name: Daily Tool Addition
+
+# ── Triggers ──────────────────────────────────────────────────────────────
+on:
+  schedule:
+    - cron: '0 9 * * *'   # every day at 9:00 AM UTC
+  workflow_dispatch:        # allow manual run from GitHub UI anytime
+
+# ── Permissions ───────────────────────────────────────────────────────────
+# "contents: write" lets the workflow commit and push back to the repo.
+permissions:
+  contents: write
+
+jobs:
+  add-tools:
+    name: Add 5 new tools via Claude
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Check out the repo with a token that has push rights
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # 2. Set up the Python version needed to run our script and build.py
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      # 3. Install the Anthropic SDK (the only dependency)
+      - name: Install dependencies
+        run: pip install anthropic
+
+      # 4. Run the script — it reads entries.json, asks Claude, validates,
+      #    appends new tools, and runs build.py to regenerate artifacts.
+      - name: Generate and add new tools
+        id: add_tools
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python3 scripts/daily_add.py
+
+      # 5. Commit and push only if something actually changed.
+      #    `git diff --staged --quiet` exits 0 (nothing staged) → skip commit.
+      #    The commit message includes the tool names from the script output.
+      - name: Commit and push changes
+        run: |
+          git config user.name  "TechDex Bot"
+          git config user.email "techdex-bot@users.noreply.github.com"
+          git add entries.json README.md web/data/entries.js
+          if git diff --staged --quiet; then
+            echo "Nothing to commit — no new tools were added."
+          else
+            git commit -m "feat: daily tools — ${{ steps.add_tools.outputs.tool_names }}"
+            git push
+          fi

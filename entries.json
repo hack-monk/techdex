@@ -5234,5 +5234,93 @@
     "docs": "https://zod.dev/",
     "tutorial": "https://zod.dev/?id=basic-usage",
     "added": "2026-06-15"
+  },
+  {
+    "id": "earthly",
+    "name": "Earthly",
+    "category": "Tool",
+    "domain": "CI/CD",
+    "eli5": "Earthly is like a recipe book that tells computers exactly how to build your software the same way every time, whether you're cooking at home or in a restaurant.",
+    "description": "Earthly is a build automation tool that creates reproducible builds using a simple, Docker-based syntax. It simplifies CI/CD pipelines by allowing developers to define builds once and run them consistently across local machines and CI systems.",
+    "use_cases": [
+      "Creating reproducible Docker images and artifacts",
+      "Simplifying multi-language monorepo builds",
+      "Running the same build locally as in CI/CD pipelines",
+      "Reducing CI/CD configuration complexity"
+    ],
+    "used_by": [
+      "Stripe",
+      "Shopify",
+      "Segment"
+    ],
+    "docs": "https://docs.earthly.dev/",
+    "tutorial": "https://docs.earthly.dev/basics/part-1-a-simple-earthfile",
+    "added": "2026-06-15"
+  },
+  {
+    "id": "pydantic",
+    "name": "Pydantic",
+    "category": "Framework",
+    "domain": "Backend",
+    "eli5": "Pydantic is like a strict teacher that checks if your homework has all the right answers in the right format before accepting it.",
+    "description": "Pydantic is a Python library for data validation and settings management using Python type annotations. It ensures data is correct, well-typed, and serializable, becoming essential infrastructure for FastAPI applications and data pipelines.",
+    "use_cases": [
+      "API request/response validation in FastAPI applications",
+      "Configuration management with type safety",
+      "Data pipeline validation and transformation",
+      "JSON schema generation and documentation"
+    ],
+    "used_by": [
+      "Uber",
+      "Microsoft",
+      "Amazon"
+    ],
+    "docs": "https://docs.pydantic.dev/",
+    "tutorial": "https://docs.pydantic.dev/latest/getting-started/",
+    "added": "2026-06-15"
+  },
+  {
+    "id": "sigstore",
+    "name": "Sigstore",
+    "category": "Tool",
+    "domain": "Security",
+    "eli5": "Sigstore is like a tamper-evident seal on a package that proves nobody opened it and that it really came from who it says it came from.",
+    "description": "Sigstore is a Linux Foundation project that provides free, easy-to-use signing, verification, and transparency for software artifacts. It enables keyless signing using OIDC identity providers, removing the need to manage long-lived cryptographic keys.",
+    "use_cases": [
+      "Signing and verifying container images and software artifacts",
+      "Establishing supply chain security for open-source projects",
+      "Auditable software provenance tracking",
+      "Keyless signing without managing private keys"
+    ],
+    "used_by": [
+      "Google",
+      "Red Hat",
+      "GitHub"
+    ],
+    "docs": "https://docs.sigstore.dev/",
+    "tutorial": "https://docs.sigstore.dev/signing/quickstart/",
+    "added": "2026-06-15"
+  },
+  {
+    "id": "shadowing",
+    "name": "Tinybird",
+    "category": "Platform",
+    "domain": "Data Engineering",
+    "eli5": "Tinybird is like a magic notebook that instantly transforms messy notes into beautiful charts and answers questions about what happened, all without waiting.",
+    "description": "Tinybird is a serverless real-time analytics platform that ingests, processes, and serves analytics data at scale without infrastructure management. It enables teams to build real-time dashboards and APIs on streaming data with sub-second latency.",
+    "use_cases": [
+      "Real-time product analytics and dashboards",
+      "Building real-time APIs that serve analytics queries",
+      "Event streaming analysis and monitoring",
+      "Time-series data aggregation without managing databases"
+    ],
+    "used_by": [
+      "Auth0",
+      "Vercel",
+      "Notion"
+    ],
+    "docs": "https://www.tinybird.co/docs/",
+    "tutorial": "https://www.tinybird.co/docs/concepts/data-sources/",
+    "added": "2026-06-15"
   }
 ]

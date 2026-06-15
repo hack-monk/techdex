@@ -5119,5 +5119,120 @@
     "docs": "https://duckdb.org/docs/",
     "tutorial": "https://duckdb.org/docs/guides/index",
     "added": "2026-06-14"
+  },
+  {
+    "id": "localstack",
+    "name": "LocalStack",
+    "category": "Tool",
+    "domain": "Cloud",
+    "eli5": "LocalStack is like a fake AWS on your computer that lets you practice building things without spending real money.",
+    "description": "LocalStack is a fully functional local AWS cloud stack that emulates AWS services on your machine for development and testing. It allows developers to build and test cloud applications locally without incurring AWS costs or needing internet connectivity.",
+    "use_cases": [
+      "Local development of AWS-dependent applications",
+      "Integration testing of cloud infrastructure code",
+      "CI/CD pipeline testing without cloud resource consumption",
+      "Teaching and training on AWS services"
+    ],
+    "used_by": [
+      "Atlassian",
+      "Volkswagen",
+      "Shopify",
+      "HashiCorp"
+    ],
+    "docs": "https://docs.localstack.cloud/",
+    "tutorial": "https://docs.localstack.cloud/getting-started/",
+    "added": "2026-06-15"
+  },
+  {
+    "id": "anthropic-claude",
+    "name": "Anthropic Claude",
+    "category": "Tool",
+    "domain": "AI/ML",
+    "eli5": "Claude is like a very smart robot friend you can talk to through code to ask questions, write things, or solve problems.",
+    "description": "Claude is a large language model API by Anthropic that provides state-of-the-art natural language understanding and generation capabilities. It's widely used for building AI-powered applications, content generation, code analysis, and conversational interfaces.",
+    "use_cases": [
+      "Building AI chatbots and conversational assistants",
+      "Code generation and software development assistance",
+      "Content creation and summarization",
+      "Automated code review and analysis"
+    ],
+    "used_by": [
+      "Notion",
+      "DuckDuckGo",
+      "Bridgewater Associates",
+      "Canva"
+    ],
+    "docs": "https://docs.anthropic.com/",
+    "tutorial": "https://docs.anthropic.com/quickstart",
+    "added": "2026-06-15"
+  },
+  {
+    "id": "temporal",
+    "name": "Temporal",
+    "category": "Platform",
+    "domain": "Backend",
+    "eli5": "Temporal is like a very reliable calendar and task manager for computers that remembers what they need to do, even if the power goes off.",
+    "description": "Temporal is an open-source workflow orchestration platform that allows developers to build resilient, scalable applications with complex business logic using a durable execution model. It handles retries, timeouts, and state management automatically.",
+    "use_cases": [
+      "Order processing and fulfillment workflows",
+      "Payment processing and financial transactions",
+      "User onboarding and provisioning workflows",
+      "Long-running asynchronous job orchestration"
+    ],
+    "used_by": [
+      "Stripe",
+      "Databricks",
+      "Instacart",
+      "Uber"
+    ],
+    "docs": "https://docs.temporal.io/",
+    "tutorial": "https://docs.temporal.io/getting-started",
+    "added": "2026-06-15"
+  },
+  {
+    "id": "neon",
+    "name": "Neon",
+    "category": "Platform",
+    "domain": "Database",
+    "eli5": "Neon is like a PostgreSQL database that lives in the cloud and automatically grows or shrinks based on how much data you store, so you only pay for what you use.",
+    "description": "Neon is a serverless PostgreSQL platform that provides automatic scaling, branching, and managed infrastructure. It offers a developer-friendly alternative to managing PostgreSQL instances with features like instant provisioning and connection pooling.",
+    "use_cases": [
+      "Building serverless web applications with PostgreSQL",
+      "Development and staging database management",
+      "Low-cost relational database hosting for startups",
+      "Applications requiring automatic scaling without capacity planning"
+    ],
+    "used_by": [
+      "Vercel",
+      "Retool",
+      "Cal.com",
+      "Imploy"
+    ],
+    "docs": "https://neon.tech/docs/introduction",
+    "tutorial": "https://neon.tech/docs/quickstart/console",
+    "added": "2026-06-15"
+  },
+  {
+    "id": "zod",
+    "name": "Zod",
+    "category": "Framework",
+    "domain": "Frontend",
+    "eli5": "Zod is like a bouncer at a club who checks that everyone's ID is real before they can enter, making sure your data is exactly what you expect.",
+    "description": "Zod is a TypeScript-first schema validation library that provides runtime type checking and data validation with an intuitive API. It's essential for ensuring data integrity in JavaScript/TypeScript applications without external dependencies.",
+    "use_cases": [
+      "Validating API request and response payloads",
+      "Form validation in web applications",
+      "TypeScript type inference from runtime schemas",
+      "Building type-safe API clients and servers"
+    ],
+    "used_by": [
+      "Vercel",
+      "Shopify",
+      "tRPC",
+      "Prisma"
+    ],
+    "docs": "https://zod.dev/",
+    "tutorial": "https://zod.dev/?id=basic-usage",
+    "added": "2026-06-15"
   }
 ]

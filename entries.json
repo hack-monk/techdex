@@ -5322,5 +5322,120 @@
     "docs": "https://www.tinybird.co/docs/",
     "tutorial": "https://www.tinybird.co/docs/concepts/data-sources/",
     "added": "2026-06-15"
+  },
+  {
+    "id": "zookeeper",
+    "name": "Apache ZooKeeper",
+    "category": "Tool",
+    "domain": "Messaging",
+    "eli5": "ZooKeeper is like a referee who keeps track of all the rules and makes sure every player in a big game follows them.",
+    "description": "Apache ZooKeeper is a centralized service for maintaining configuration information, naming, providing distributed synchronization, and group services over large clusters. It's critical for coordinating distributed systems like Kafka, HBase, and Hadoop.",
+    "use_cases": [
+      "Coordinating leader election in distributed databases",
+      "Managing configuration across Kafka brokers",
+      "Service discovery and health checking",
+      "Distributed locking and synchronization"
+    ],
+    "used_by": [
+      "Netflix",
+      "Yahoo",
+      "Twitter",
+      "Salesforce"
+    ],
+    "docs": "https://zookeeper.apache.org/",
+    "tutorial": "https://zookeeper.apache.org/doc/current/zookeeperStarted.html",
+    "added": "2026-06-16"
+  },
+  {
+    "id": "litellm",
+    "name": "LiteLLM",
+    "category": "Tool",
+    "domain": "AI/ML",
+    "eli5": "LiteLLM is like a universal translator that lets you use any AI language model with the same language, switching between them without changing your code.",
+    "description": "LiteLLM is a lightweight library that standardizes API calls across major LLM providers (OpenAI, Anthropic, Gemini, Cohere, etc.). It reduces vendor lock-in and simplifies switching between language models.",
+    "use_cases": [
+      "Building AI applications agnostic to underlying LLM provider",
+      "Cost optimization by comparing different model providers",
+      "Fallback mechanisms when one provider is unavailable",
+      "Load balancing across multiple LLM APIs"
+    ],
+    "used_by": [
+      "Vercel",
+      "Mint AI",
+      "Composio",
+      "Voiceflow"
+    ],
+    "docs": "https://docs.litellm.ai/",
+    "tutorial": "https://docs.litellm.ai/docs/getting_started/quick_start",
+    "added": "2026-06-16"
+  },
+  {
+    "id": "opensearch-dashboards",
+    "name": "OpenSearch Dashboards",
+    "category": "Tool",
+    "domain": "SRE/Observability",
+    "eli5": "OpenSearch Dashboards is like a control panel with colorful displays that shows you everything happening inside your computer system in real time.",
+    "description": "OpenSearch Dashboards is the visualization and exploration platform for OpenSearch, providing real-time insights into logs, metrics, and security data. It enables rapid problem diagnosis and operational intelligence.",
+    "use_cases": [
+      "Log analysis and troubleshooting",
+      "Real-time security monitoring and threat detection",
+      "Application performance monitoring and debugging",
+      "Business analytics and metrics visualization"
+    ],
+    "used_by": [
+      "Capital One",
+      "Cisco",
+      "Samsung",
+      "Expedia"
+    ],
+    "docs": "https://opensearch.org/docs/latest/dashboards/",
+    "tutorial": "https://opensearch.org/docs/latest/dashboards/get-started/",
+    "added": "2026-06-16"
+  },
+  {
+    "id": "mitmproxy",
+    "name": "mitmproxy",
+    "category": "Tool",
+    "domain": "Security",
+    "eli5": "mitmproxy is like a mail inspector that can read and modify letters going between two people before delivering them, for testing and debugging.",
+    "description": "mitmproxy is an interactive HTTPS/HTTP proxy that allows developers to inspect, modify, and replay network traffic for debugging, testing, and security analysis. It's essential for API testing and understanding application behavior.",
+    "use_cases": [
+      "API endpoint debugging and testing",
+      "Mobile app network traffic inspection",
+      "Security testing and vulnerability scanning",
+      "Request/response modification for testing edge cases"
+    ],
+    "used_by": [
+      "Uber",
+      "Airbnb",
+      "Slack",
+      "Square"
+    ],
+    "docs": "https://docs.mitmproxy.org/",
+    "tutorial": "https://docs.mitmproxy.org/stable/overview-getting-started/",
+    "added": "2026-06-16"
+  },
+  {
+    "id": "fivetran",
+    "name": "Fivetran",
+    "category": "Tool",
+    "domain": "Data Engineering",
+    "eli5": "Fivetran is like an automatic conveyor belt that moves data from many different stores into one big warehouse without you having to manually carry each box.",
+    "description": "Fivetran is a cloud-native data integration platform that automates ETL/ELT pipelines, connecting hundreds of data sources to cloud data warehouses. It reduces manual data pipeline work and ensures data quality through pre-built connectors.",
+    "use_cases": [
+      "Consolidating data from SaaS applications into data warehouses",
+      "Real-time data synchronization across platforms",
+      "Building self-service analytics infrastructure",
+      "Enabling DataOps with automated data quality checks"
+    ],
+    "used_by": [
+      "SurveyMonkey",
+      "Nextdoor",
+      "Notion",
+      "Retool"
+    ],
+    "docs": "https://fivetran.com/docs",
+    "tutorial": "https://fivetran.com/docs/getting-started",
+    "added": "2026-06-16"
   }
 ]

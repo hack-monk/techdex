@@ -5437,5 +5437,97 @@
     "docs": "https://fivetran.com/docs",
     "tutorial": "https://fivetran.com/docs/getting-started",
     "added": "2026-06-16"
+  },
+  {
+    "id": "openobserve",
+    "name": "OpenObserve",
+    "category": "Tool",
+    "domain": "SRE/Observability",
+    "eli5": "It's like a giant notebook that records everything happening in your computer system so you can look back and figure out what went wrong.",
+    "description": "OpenObserve is a cloud-native observability platform designed as a lightweight alternative to Elasticsearch for logs, metrics, and traces. It provides high-performance data ingestion and search capabilities with a significantly lower resource footprint.",
+    "use_cases": [
+      "Centralized log aggregation and analysis across microservices",
+      "Real-time monitoring of application performance and infrastructure metrics",
+      "Distributed tracing for debugging complex request flows",
+      "Cost-effective observability for resource-constrained environments"
+    ],
+    "used_by": [
+      "Cisco",
+      "SAP",
+      "Broadcom",
+      "OpenObserve Community"
+    ],
+    "docs": "https://openobserve.ai/docs/",
+    "tutorial": "https://openobserve.ai/docs/quickstart/",
+    "added": "2026-06-17"
+  },
+  {
+    "id": "nix",
+    "name": "Nix",
+    "category": "Tool",
+    "domain": "DevOps",
+    "eli5": "It's like a recipe book that guarantees your meal will taste exactly the same every time because it specifies every ingredient down to the exact version.",
+    "description": "Nix is a declarative package manager and build system that enables reproducible, portable development environments and deployments across different machines. It uses a functional approach to ensure bit-for-bit reproducibility.",
+    "use_cases": [
+      "Creating reproducible development environments across teams",
+      "Managing complex multi-language project dependencies",
+      "Building immutable infrastructure and container images",
+      "Enabling seamless collaboration with guaranteed environment consistency"
+    ],
+    "used_by": [
+      "Target",
+      "Tweag",
+      "GitHub",
+      "Shopify"
+    ],
+    "docs": "https://nixos.org/learn.html",
+    "tutorial": "https://nix.dev/",
+    "added": "2026-06-17"
+  },
+  {
+    "id": "zitadel",
+    "name": "ZITADEL",
+    "category": "Platform",
+    "domain": "Identity",
+    "eli5": "It's like a security guard at a club who checks your ID, remembers who you are, and decides what you're allowed to access without asking again.",
+    "description": "ZITADEL is an open-source identity and access management (IAM) platform that provides authentication, authorization, and user management capabilities. It offers enterprise-grade security features with a cloud-native, Kubernetes-ready architecture.",
+    "use_cases": [
+      "Enterprise authentication and single sign-on (SSO) for applications",
+      "Managing user roles, permissions, and access control policies",
+      "Integrating OAuth 2.0 and OpenID Connect authentication",
+      "Implementing multi-tenant identity management at scale"
+    ],
+    "used_by": [
+      "Roche",
+      "Boehringer Ingelheim",
+      "Multiple enterprises",
+      "Open-source community"
+    ],
+    "docs": "https://zitadel.com/docs",
+    "tutorial": "https://zitadel.com/docs/quickstarts/start-coding",
+    "added": "2026-06-17"
+  },
+  {
+    "id": "materialized",
+    "name": "Materialize",
+    "category": "Platform",
+    "domain": "Data Engineering",
+    "eli5": "It's like having a smart worker who continuously updates a whiteboard with the latest information from your data streams so you always see what's happening right now.",
+    "description": "Materialize is a SQL-powered streaming database that enables real-time analytics by computing incremental views over streaming data. It uses computational differential dataflow to provide low-latency, consistent results for complex analytical queries on continuously changing data.",
+    "use_cases": [
+      "Real-time analytics dashboards and monitoring systems",
+      "Streaming data transformation and enrichment pipelines",
+      "Complex event processing and anomaly detection",
+      "Building operational intelligence systems from event streams"
+    ],
+    "used_by": [
+      "Figma",
+      "Pagerduty",
+      "Jamio",
+      "Various fintech firms"
+    ],
+    "docs": "https://materialize.com/docs/",
+    "tutorial": "https://materialize.com/docs/get-started/",
+    "added": "2026-06-17"
   }
 ]

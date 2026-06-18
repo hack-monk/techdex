@@ -5529,5 +5529,120 @@
     "docs": "https://materialize.com/docs/",
     "tutorial": "https://materialize.com/docs/get-started/",
     "added": "2026-06-17"
+  },
+  {
+    "id": "stripe",
+    "name": "Stripe",
+    "category": "Platform",
+    "domain": "Backend",
+    "eli5": "Stripe is like a digital cash register that lets your online store accept and manage money from customers all over the world.",
+    "description": "Stripe is a payment processing platform that enables businesses to accept payments online and in-person. It provides APIs for payment collection, subscription management, and financial operations at scale.",
+    "use_cases": [
+      "E-commerce checkout and payment processing",
+      "Subscription and recurring billing management",
+      "Marketplace and platform payouts",
+      "Global payment processing with multi-currency support"
+    ],
+    "used_by": [
+      "Amazon",
+      "Shopify",
+      "Lyft",
+      "DoorDash"
+    ],
+    "docs": "https://stripe.com/docs",
+    "tutorial": "https://stripe.com/docs/payments/quickstart",
+    "added": "2026-06-18"
+  },
+  {
+    "id": "mermaid-live",
+    "name": "Mermaid Live",
+    "category": "Tool",
+    "domain": "Other",
+    "eli5": "Mermaid is like a magic sketchpad where you write simple words and it automatically draws charts, flowcharts, and diagrams for you.",
+    "description": "Mermaid is a JavaScript-based diagramming and charting tool that uses a Markdown-inspired syntax to create and modify diagrams dynamically. It's widely used for documentation, architecture diagrams, and workflow visualization.",
+    "use_cases": [
+      "Creating architecture and system design diagrams",
+      "Generating flowcharts and process workflows",
+      "Documenting user journey and sequence flows",
+      "Building organizational charts and timeline diagrams"
+    ],
+    "used_by": [
+      "GitHub",
+      "GitLab",
+      "Notion",
+      "Confluence"
+    ],
+    "docs": "https://mermaid.js.org/",
+    "tutorial": "https://mermaid.live/",
+    "added": "2026-06-18"
+  },
+  {
+    "id": "surrealdb",
+    "name": "SurrealDB",
+    "category": "Platform",
+    "domain": "Database",
+    "eli5": "SurrealDB is like a super-smart filing cabinet that can store and find information using different languages and works everywhere from your phone to the cloud.",
+    "description": "SurrealDB is a multi-model, edge-first database that supports SQL queries, graph relationships, and document storage all in one. It can run from the edge to cloud deployments with built-in authentication and real-time capabilities.",
+    "use_cases": [
+      "Building edge-first applications with offline-first sync",
+      "Graph-based relationship queries on document data",
+      "Real-time collaborative applications",
+      "IoT and mobile backend with cloud synchronization"
+    ],
+    "used_by": [
+      "Datadog",
+      "Freshworks",
+      "Roblox",
+      "Twitch"
+    ],
+    "docs": "https://surrealdb.com/docs",
+    "tutorial": "https://surrealdb.com/learn",
+    "added": "2026-06-18"
+  },
+  {
+    "id": "wasm-bindgen",
+    "name": "wasm-bindgen",
+    "category": "Tool",
+    "domain": "Frontend",
+    "eli5": "wasm-bindgen is like a translator that lets you write super-fast code in Rust and use it directly in web browsers like JavaScript.",
+    "description": "wasm-bindgen is a Rust library that facilitates high-level interactions between WebAssembly modules and JavaScript. It enables developers to write performance-critical frontend code in Rust and seamlessly integrate it with JavaScript applications.",
+    "use_cases": [
+      "Building high-performance frontend components in Rust",
+      "Creating browser-based graphics and game engines",
+      "Implementing cryptographic operations in WebAssembly",
+      "Porting existing Rust libraries to run in browsers"
+    ],
+    "used_by": [
+      "Figma",
+      "Cloudflare Workers",
+      "Mozilla",
+      "Discord"
+    ],
+    "docs": "https://rustwasm.org/docs/wasm-bindgen/",
+    "tutorial": "https://rustwasm.org/docs/wasm-bindgen/examples/index.html",
+    "added": "2026-06-18"
+  },
+  {
+    "id": "torq",
+    "name": "Torq",
+    "category": "Platform",
+    "domain": "Security",
+    "eli5": "Torq is like a smart traffic controller for security alerts that automatically decides what to do with them so security teams don't have to handle every single one manually.",
+    "description": "Torq is a no-code security automation and orchestration platform that connects security tools and automates incident response workflows. It enables security teams to respond faster to threats by automating repetitive tasks and integrating disparate security systems.",
+    "use_cases": [
+      "Automating security incident response workflows",
+      "Integrating multiple security tools into unified workflows",
+      "Enriching and correlating security alerts automatically",
+      "Reducing mean time to respond (MTTR) for security incidents"
+    ],
+    "used_by": [
+      "Palo Alto Networks",
+      "Accenture",
+      "Shopify",
+      "Barclays"
+    ],
+    "docs": "https://docs.torq.io/",
+    "tutorial": "https://torq.io/platform-tour/",
+    "added": "2026-06-18"
   }
 ]

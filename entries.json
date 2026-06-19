@@ -5644,5 +5644,118 @@
     "docs": "https://docs.torq.io/",
     "tutorial": "https://torq.io/platform-tour/",
     "added": "2026-06-18"
+  },
+  {
+    "id": "open-webui",
+    "name": "Open WebUI",
+    "category": "Tool",
+    "domain": "AI/ML",
+    "eli5": "It's like a friendly chat interface where you can talk to different AI assistants, kind of like having multiple tutors you can switch between.",
+    "description": "Open WebUI is a self-hosted web interface for interacting with large language models like Ollama, OpenAI, and other LLM providers. It provides a ChatGPT-like experience with features like conversation management, model switching, and local deployment capabilities.",
+    "use_cases": [
+      "Running private AI chatbots without cloud dependencies",
+      "Multi-model LLM experimentation and comparison",
+      "Enterprise AI deployments with data privacy requirements",
+      "Custom knowledge base integration with document upload"
+    ],
+    "used_by": [
+      "Hugging Face",
+      "Replicate",
+      "Anyscale",
+      "individual ML engineers"
+    ],
+    "docs": "https://docs.openwebui.com",
+    "tutorial": "https://github.com/open-webui/open-webui",
+    "added": "2026-06-19"
+  },
+  {
+    "id": "warp",
+    "name": "Warp",
+    "category": "Tool",
+    "domain": "DevOps",
+    "eli5": "It's like a super-powered command line terminal that remembers what you did, suggests commands, and explains errors to you automatically.",
+    "description": "Warp is a modern terminal emulator built in Rust that replaces traditional shells like bash with AI-assisted command suggestions, command history search, and built-in collaboration features. It improves developer productivity through intelligent autocomplete and error explanation.",
+    "use_cases": [
+      "Faster command discovery and reduced manual lookup time",
+      "Team collaboration on terminal sessions",
+      "Automated workflows with command history and bookmarks",
+      "Linux and macOS development environments"
+    ],
+    "used_by": [
+      "Stripe",
+      "Notion",
+      "PagerDuty",
+      "various Fortune 500 tech teams"
+    ],
+    "docs": "https://docs.warp.dev",
+    "tutorial": "https://www.warp.dev/blog/getting-started-with-warp",
+    "added": "2026-06-19"
+  },
+  {
+    "id": "mojo",
+    "name": "Mojo",
+    "category": "Language",
+    "domain": "AI/ML",
+    "eli5": "It's like Python's faster, stronger older sibling that still feels easy to write but runs super quick.",
+    "description": "Mojo is a compiled programming language that combines Python's ease of use with C/C++-level performance, designed specifically for AI and systems programming. It allows developers to write high-performance AI workloads without abandoning Python's simplicity.",
+    "use_cases": [
+      "High-performance machine learning model inference",
+      "Systems programming with Python-like syntax",
+      "Numerical computing and scientific simulations",
+      "Edge AI and embedded systems optimization"
+    ],
+    "used_by": [
+      "Modular",
+      "various AI research labs",
+      "performance-critical ML teams"
+    ],
+    "docs": "https://docs.modular.com/mojo",
+    "tutorial": "https://docs.modular.com/mojo/manual/get-started",
+    "added": "2026-06-19"
+  },
+  {
+    "id": "forgejo",
+    "name": "Forgejo",
+    "category": "Platform",
+    "domain": "CI/CD",
+    "eli5": "It's like GitHub but you can run it on your own computer or server, so you own all your code instead of renting space.",
+    "description": "Forgejo is a lightweight, self-hosted Git service forked from Gitea that provides a GitHub-like experience without cloud dependency. It's ideal for organizations needing on-premise source code management with integrated CI/CD capabilities.",
+    "use_cases": [
+      "Self-hosted source code management for regulated industries",
+      "Organizations avoiding cloud vendor lock-in",
+      "Integrated CI/CD pipelines on private infrastructure",
+      "Small to medium teams requiring GitHub-like features without SaaS costs"
+    ],
+    "used_by": [
+      "Various government agencies",
+      "financial institutions",
+      "privacy-focused companies"
+    ],
+    "docs": "https://forgejo.org/docs",
+    "tutorial": "https://forgejo.org/docs/latest/admin/",
+    "added": "2026-06-19"
+  },
+  {
+    "id": "seaweedfs",
+    "name": "SeaweedFS",
+    "category": "Tool",
+    "domain": "Storage",
+    "eli5": "It's like having a really smart filing system that stores lots of files across many computers and finds them super fast.",
+    "description": "SeaweedFS is a fast distributed object storage system written in Go that scales horizontally and handles massive amounts of unstructured data. It provides object storage capabilities similar to S3 but with simpler architecture and superior performance for many use cases.",
+    "use_cases": [
+      "Distributed image and media storage for content platforms",
+      "Replacement for expensive S3-like services in private clouds",
+      "High-throughput file serving in IoT and edge computing",
+      "Cost-effective backup and archival systems"
+    ],
+    "used_by": [
+      "Allegro",
+      "Roblox",
+      "large media platforms",
+      "enterprise data centers"
+    ],
+    "docs": "https://github.com/seaweedfs/seaweedfs/wiki",
+    "tutorial": "https://github.com/seaweedfs/seaweedfs/wiki/Getting-Started",
+    "added": "2026-06-19"
   }
 ]

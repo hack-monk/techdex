@@ -5757,5 +5757,97 @@
     "docs": "https://github.com/seaweedfs/seaweedfs/wiki",
     "tutorial": "https://github.com/seaweedfs/seaweedfs/wiki/Getting-Started",
     "added": "2026-06-19"
+  },
+  {
+    "id": "opensearch-ingestion",
+    "name": "OpenSearch Ingestion",
+    "category": "Tool",
+    "domain": "Data Engineering",
+    "eli5": "OpenSearch Ingestion is like a mail sorting center that takes data from lots of different places and organizes it into a searchable library.",
+    "description": "OpenSearch Ingestion is a fully managed data collection and processing service that enables users to ingest, parse, and enrich data from multiple sources before indexing into OpenSearch clusters. It simplifies log aggregation and data pipeline construction without managing infrastructure.",
+    "use_cases": [
+      "Log aggregation from distributed systems",
+      "Real-time data enrichment pipelines",
+      "Metrics collection from multiple sources",
+      "Security event correlation and analysis"
+    ],
+    "used_by": [
+      "Amazon",
+      "BMW",
+      "Equinix",
+      "Overstock"
+    ],
+    "docs": "https://opensearch.org/docs/latest/data-prepper/",
+    "tutorial": "https://opensearch.org/docs/latest/data-prepper/getting-started/",
+    "added": "2026-06-20"
+  },
+  {
+    "id": "hurl",
+    "name": "Hurl",
+    "category": "Tool",
+    "domain": "Backend",
+    "eli5": "Hurl is like a testing checklist for websites that lets you verify your web services are working correctly by running through a series of requests.",
+    "description": "Hurl is a command-line tool for running and testing HTTP requests defined in plain text files, supporting assertions, captures, and dynamic value injection. It streamlines API testing, integration testing, and debugging of web services.",
+    "use_cases": [
+      "API endpoint testing and validation",
+      "Integration testing in CI/CD pipelines",
+      "Load testing and performance benchmarking",
+      "API documentation and examples"
+    ],
+    "used_by": [
+      "Mozilla",
+      "Datadog",
+      "GitHub",
+      "GitLab"
+    ],
+    "docs": "https://hurl.dev/docs/",
+    "tutorial": "https://hurl.dev/docs/tutorial/",
+    "added": "2026-06-20"
+  },
+  {
+    "id": "step-ca",
+    "name": "Step CA",
+    "category": "Tool",
+    "domain": "Security",
+    "eli5": "Step CA is like a trusted teacher who gives out digital ID cards that prove who you are online and makes sure only the right people can talk to each other.",
+    "description": "Step Certificates (Step CA) is an open-source online certificate authority that simplifies certificate management and automation for internal infrastructure and applications. It provides easy certificate provisioning, renewal, and revocation without operational complexity.",
+    "use_cases": [
+      "Internal PKI and certificate management",
+      "Mutual TLS (mTLS) authentication",
+      "HTTPS certificate automation",
+      "Zero-trust security implementations"
+    ],
+    "used_by": [
+      "Google",
+      "GitHub",
+      "HashiCorp",
+      "Smallstep Labs"
+    ],
+    "docs": "https://smallstep.com/docs/step-ca/",
+    "tutorial": "https://smallstep.com/docs/step-ca/getting-started/",
+    "added": "2026-06-20"
+  },
+  {
+    "id": "qemu",
+    "name": "QEMU",
+    "category": "Tool",
+    "domain": "DevOps",
+    "eli5": "QEMU is like a computer inside your computer that can run any operating system, letting you test software on different systems without buying new hardware.",
+    "description": "QEMU is a free and open-source machine emulator and virtualizer that enables running multiple operating systems and architectures on a single host system. It is widely used for development, testing, and production virtualization across diverse infrastructure environments.",
+    "use_cases": [
+      "Cross-architecture development and testing",
+      "Lightweight virtualization for CI/CD pipelines",
+      "Embedded systems development and debugging",
+      "System-level software testing and simulation"
+    ],
+    "used_by": [
+      "Red Hat",
+      "Ubuntu",
+      "SUSE",
+      "Fedora Project"
+    ],
+    "docs": "https://www.qemu.org/docs/master/",
+    "tutorial": "https://www.qemu.org/docs/master/system/quickstart.html",
+    "added": "2026-06-20"
   }
 ]

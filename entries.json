@@ -5849,5 +5849,120 @@
     "docs": "https://www.qemu.org/docs/master/",
     "tutorial": "https://www.qemu.org/docs/master/system/quickstart.html",
     "added": "2026-06-20"
+  },
+  {
+    "id": "anthropic-claude-api",
+    "name": "Claude API",
+    "category": "Tool",
+    "domain": "AI/ML",
+    "eli5": "It's like having a very smart helper that can read and write things for you, similar to how a teacher can explain homework or write a summary.",
+    "description": "Anthropic's Claude API provides access to advanced large language models through a REST API for building AI-powered applications. It's widely used for content generation, code assistance, and complex reasoning tasks in production systems.",
+    "use_cases": [
+      "Building AI chatbots and virtual assistants",
+      "Code generation and technical documentation",
+      "Content analysis and document summarization",
+      "Complex reasoning and problem-solving automation"
+    ],
+    "used_by": [
+      "DuckDuckGo",
+      "Slack",
+      "Notion",
+      "Figma"
+    ],
+    "docs": "https://docs.anthropic.com/",
+    "tutorial": "https://docs.anthropic.com/en/docs/quickstart",
+    "added": "2026-06-21"
+  },
+  {
+    "id": "nix-package-manager",
+    "name": "Nix Package Manager",
+    "category": "Tool",
+    "domain": "DevOps",
+    "eli5": "It's like a recipe book that remembers exactly which ingredients and amounts you used to bake a cake, so you can always bake the same cake the same way.",
+    "description": "Nix is a purely functional package manager and OS configuration tool that enables reproducible, declarative system configurations. It's increasingly adopted for development environments and infrastructure-as-code to eliminate 'works on my machine' problems.",
+    "use_cases": [
+      "Creating reproducible development environments",
+      "Managing system configurations declaratively",
+      "Building immutable deployment artifacts",
+      "Cross-platform development environment consistency"
+    ],
+    "used_by": [
+      "Tweag",
+      "Replit",
+      "Input Output Global",
+      "Shopify"
+    ],
+    "docs": "https://nixos.org/guides/nix-pills/",
+    "tutorial": "https://nix.dev/tutorials/first-steps",
+    "added": "2026-06-21"
+  },
+  {
+    "id": "quickwit",
+    "name": "Quickwit",
+    "category": "Tool",
+    "domain": "SRE/Observability",
+    "eli5": "It's like a super-fast library card catalog that can instantly find millions of log entries you're looking for, much faster than searching through boxes of paper.",
+    "description": "Quickwit is a cloud-native search and analytics engine optimized for log and trace data with sub-second latency and cost efficiency. It's designed as a lighter alternative to Elasticsearch for organizations seeking lower infrastructure costs.",
+    "use_cases": [
+      "Searching and analyzing application logs at scale",
+      "Real-time distributed tracing and debugging",
+      "Cost-effective log aggregation and retention",
+      "Security and compliance log analysis"
+    ],
+    "used_by": [
+      "Datadog",
+      "Stripe",
+      "Segment",
+      "Grafana Labs"
+    ],
+    "docs": "https://quickwit.io/docs/",
+    "tutorial": "https://quickwit.io/docs/get-started/",
+    "added": "2026-06-21"
+  },
+  {
+    "id": "cerbos",
+    "name": "Cerbos",
+    "category": "Tool",
+    "domain": "Security",
+    "eli5": "It's like a security guard at a theme park who checks your ticket and decides which rides you're allowed to go on based on the rules.",
+    "description": "Cerbos is an open-source, language-agnostic authorization engine that separates access control logic from application code. It enables fine-grained, policy-based authorization across microservices and cloud applications.",
+    "use_cases": [
+      "Implementing role-based and attribute-based access control",
+      "Centralizing authorization policies across microservices",
+      "Managing complex permission hierarchies and relationships",
+      "Enforcing compliance and audit requirements"
+    ],
+    "used_by": [
+      "Cerbos Enterprise",
+      "Cerbos Cloud",
+      "GitBook",
+      "AppDirect"
+    ],
+    "docs": "https://docs.cerbos.dev/",
+    "tutorial": "https://docs.cerbos.dev/cerbos/latest/get-started",
+    "added": "2026-06-21"
+  },
+  {
+    "id": "meilisearch",
+    "name": "Meilisearch",
+    "category": "Tool",
+    "domain": "Database",
+    "eli5": "It's like a super-fast search box on a website that shows you results as you type, giving you instant answers without making you wait.",
+    "description": "Meilisearch is a lightweight, open-source search engine optimized for relevant, typo-tolerant search experiences with minimal configuration. It's widely used in production for product search, documentation search, and real-time filtering.",
+    "use_cases": [
+      "E-commerce product search and filtering",
+      "Documentation and knowledge base search",
+      "Real-time search with typo tolerance",
+      "Full-text search across application data"
+    ],
+    "used_by": [
+      "Vercel",
+      "Mailchimp",
+      "Shopify",
+      "YCombinator"
+    ],
+    "docs": "https://docs.meilisearch.com/",
+    "tutorial": "https://docs.meilisearch.com/learn/getting_started/installation.html",
+    "added": "2026-06-21"
   }
 ]

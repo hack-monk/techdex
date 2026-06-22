@@ -5964,5 +5964,115 @@
     "docs": "https://docs.meilisearch.com/",
     "tutorial": "https://docs.meilisearch.com/learn/getting_started/installation.html",
     "added": "2026-06-21"
+  },
+  {
+    "id": "axle",
+    "name": "Axle",
+    "category": "Tool",
+    "domain": "Data Engineering",
+    "eli5": "Axle is like a smart librarian that automatically organizes and transforms messy data into neat, usable formats without you having to write complicated instructions.",
+    "description": "Axle is a data integration and transformation platform that uses AI to automatically generate data pipelines and mappings. It reduces the time needed to build ETL workflows by intelligently understanding data schemas and relationships.",
+    "use_cases": [
+      "Automated data pipeline generation between disparate data sources",
+      "Schema mapping and data transformation without manual coding",
+      "Data quality monitoring and anomaly detection",
+      "Cross-platform data integration for enterprise systems"
+    ],
+    "used_by": [
+      "Databricks",
+      "Stripe",
+      "Notion"
+    ],
+    "docs": "https://docs.axle.so/",
+    "tutorial": "https://axle.so/docs/getting-started",
+    "added": "2026-06-22"
+  },
+  {
+    "id": "netbird",
+    "name": "Netbird",
+    "category": "Platform",
+    "domain": "Networking",
+    "eli5": "Netbird is like a magical tunnel that lets all your computers and phones talk to each other securely, no matter where they are in the world, without needing complicated setup.",
+    "description": "Netbird is an open-source VPN and network management platform that uses WireGuard under the hood to create secure mesh networks between devices. It simplifies secure remote access and private networking without the complexity of traditional VPN infrastructure.",
+    "use_cases": [
+      "Zero-trust network access for remote development teams",
+      "Secure mesh networking between microservices across cloud regions",
+      "Private network connectivity for distributed teams without VPN appliances",
+      "Device-to-device secure communication in IoT deployments"
+    ],
+    "used_by": [
+      "GitLab",
+      "Elastic",
+      "Teleport"
+    ],
+    "docs": "https://docs.netbird.io/",
+    "tutorial": "https://docs.netbird.io/getting-started",
+    "added": "2026-06-22"
+  },
+  {
+    "id": "dria",
+    "name": "Dria",
+    "category": "Tool",
+    "domain": "AI/ML",
+    "eli5": "Dria is like having a personal assistant that reads through tons of documents and learns facts from them, so it can answer your questions accurately about what it learned.",
+    "description": "Dria is a decentralized AI data platform that enables building, managing, and monetizing training datasets for large language models. It combines community contribution with blockchain verification to create high-quality, trustworthy ML datasets.",
+    "use_cases": [
+      "Creating labeled datasets for fine-tuning domain-specific language models",
+      "Crowdsourcing and verifying training data for ML projects",
+      "Building high-quality datasets while maintaining data privacy and ownership",
+      "Monetizing proprietary data through verified dataset marketplace"
+    ],
+    "used_by": [
+      "OpenAI",
+      "Hugging Face",
+      "Anthropic partners"
+    ],
+    "docs": "https://docs.dria.co/",
+    "tutorial": "https://docs.dria.co/getting-started",
+    "added": "2026-06-22"
+  },
+  {
+    "id": "supabase-realtime",
+    "name": "Supabase Realtime",
+    "category": "Tool",
+    "domain": "Backend",
+    "eli5": "Supabase Realtime is like a magic bulletin board that instantly tells everyone watching it whenever something new gets posted, so everyone sees updates at the same time.",
+    "description": "Supabase Realtime is a PostgreSQL-native pub/sub system that enables real-time data synchronization across connected clients. It powers instant updates for collaborative applications, live notifications, and reactive features without additional infrastructure.",
+    "use_cases": [
+      "Real-time collaborative editing and presence tracking",
+      "Live notifications and activity feeds for user dashboards",
+      "Instant data synchronization across web and mobile clients",
+      "Live multiplayer features in web applications"
+    ],
+    "used_by": [
+      "Slack",
+      "Figma integrations",
+      "Vercel"
+    ],
+    "docs": "https://supabase.com/docs/guides/realtime",
+    "tutorial": "https://supabase.com/docs/guides/realtime/quickstart",
+    "added": "2026-06-22"
+  },
+  {
+    "id": "teleport",
+    "name": "Teleport",
+    "category": "Platform",
+    "domain": "Security",
+    "eli5": "Teleport is like a bouncer at a club who checks IDs and keeps a record of who went where, making sure only the right people access sensitive computers and servers.",
+    "description": "Teleport is an identity-native infrastructure access platform that consolidates SSH, Kubernetes, database, and application access under a unified zero-trust framework. It eliminates shared credentials and provides detailed audit logs for compliance and security investigations.",
+    "use_cases": [
+      "Zero-trust SSH and database access management across infrastructure",
+      "Kubernetes cluster access control with audit logging",
+      "Just-in-time privilege escalation and access requests",
+      "Unified identity and access management for hybrid cloud environments"
+    ],
+    "used_by": [
+      "Stripe",
+      "Cloudflare",
+      "Figma"
+    ],
+    "docs": "https://goteleport.com/docs/",
+    "tutorial": "https://goteleport.com/docs/getting-started/",
+    "added": "2026-06-22"
   }
 ]

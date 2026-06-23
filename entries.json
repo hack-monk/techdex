@@ -6074,5 +6074,27 @@
     "docs": "https://goteleport.com/docs/",
     "tutorial": "https://goteleport.com/docs/getting-started/",
     "added": "2026-06-22"
+  },
+  {
+    "id": "bytebase-database",
+    "name": "Bytebase",
+    "category": "Tool",
+    "domain": "DevOps",
+    "eli5": "It's like a version control system for your database, so you can track changes, review updates, and safely update your data like you do with code.",
+    "description": "Bytebase is a database DevOps platform that brings GitOps principles to database management with schema versioning, change approval workflows, and multi-environment deployment. It integrates with CI/CD pipelines to automate and govern database changes.",
+    "use_cases": [
+      "Database schema version control and migration management",
+      "Change approval workflows for database modifications",
+      "Multi-environment database synchronization",
+      "Compliance and audit trails for database changes"
+    ],
+    "used_by": [
+      "Databricks",
+      "HashiCorp",
+      "Enterprise development teams"
+    ],
+    "docs": "https://www.bytebase.com/docs",
+    "tutorial": "https://www.bytebase.com/docs/get-started",
+    "added": "2026-06-23"
   }
 ]

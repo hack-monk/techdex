@@ -6096,5 +6096,74 @@
     "docs": "https://www.bytebase.com/docs",
     "tutorial": "https://www.bytebase.com/docs/get-started",
     "added": "2026-06-23"
+  },
+  {
+    "id": "anthropic-claude-sonnet",
+    "name": "Claude Sonnet",
+    "category": "Tool",
+    "domain": "AI/ML",
+    "eli5": "Claude Sonnet is like having a super-smart robot assistant that can read long documents and answer questions about them really quickly.",
+    "description": "Claude Sonnet is Anthropic's fastest and most compact large language model, optimized for high-throughput tasks and extended context windows. It balances speed and capability for production AI applications requiring rapid inference and cost efficiency.",
+    "use_cases": [
+      "Real-time customer support chatbots",
+      "Batch document analysis and summarization",
+      "Code generation and technical documentation",
+      "Content moderation at scale"
+    ],
+    "used_by": [
+      "DuckDuckGo",
+      "Notion",
+      "Replit",
+      "GitLab"
+    ],
+    "docs": "https://docs.anthropic.com/en/docs/about-claude/models/latest",
+    "tutorial": "https://docs.anthropic.com/en/docs/quickstart",
+    "added": "2026-06-24"
+  },
+  {
+    "id": "postgres-ai-extension",
+    "name": "pgvector",
+    "category": "Tool",
+    "domain": "Database",
+    "eli5": "pgvector is like giving PostgreSQL the ability to understand pictures and text in a way that helps you find similar things really fast.",
+    "description": "pgvector is a PostgreSQL extension enabling vector similarity search and embedding storage directly within the database. It allows AI/ML applications to perform semantic searches without external vector databases.",
+    "use_cases": [
+      "Semantic search in RAG applications",
+      "Recommendation systems based on embeddings",
+      "Image and document similarity matching",
+      "Hybrid search combining SQL and vector queries"
+    ],
+    "used_by": [
+      "OpenAI",
+      "Vercel",
+      "Perplexity AI",
+      "Supabase"
+    ],
+    "docs": "https://github.com/pgvector/pgvector",
+    "tutorial": "https://supabase.com/docs/guides/database/extensions/pgvector",
+    "added": "2026-06-24"
+  },
+  {
+    "id": "penpot",
+    "name": "Penpot",
+    "category": "Tool",
+    "domain": "Frontend",
+    "eli5": "Penpot is like Figma but free and open-source, so teams can design websites and apps together without paying a subscription.",
+    "description": "Penpot is an open-source design and prototyping tool providing vector graphics, wireframing, and interactive prototypes with real-time collaboration. It offers a Figma alternative with no vendor lock-in and self-hosting options.",
+    "use_cases": [
+      "Collaborative UI/UX design and prototyping",
+      "Design system documentation and governance",
+      "Wireframing and user journey mapping",
+      "Self-hosted design infrastructure for enterprises"
+    ],
+    "used_by": [
+      "Mozilla",
+      "Telefonica",
+      "Liferay",
+      "Several EU government agencies"
+    ],
+    "docs": "https://penpot.app/docs",
+    "tutorial": "https://penpot.app/view/getting-started",
+    "added": "2026-06-24"
   }
 ]

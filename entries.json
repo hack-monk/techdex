@@ -6165,5 +6165,118 @@
     "docs": "https://penpot.app/docs",
     "tutorial": "https://penpot.app/view/getting-started",
     "added": "2026-06-24"
+  },
+  {
+    "id": "colima",
+    "name": "Colima",
+    "category": "Tool",
+    "domain": "DevOps",
+    "eli5": "It's like Docker Desktop but lighter and faster, like choosing a scooter instead of a car to get around your neighborhood.",
+    "description": "Colima is a container runtime for macOS and Linux that provides Docker and Kubernetes functionality without the overhead of Docker Desktop. It uses Lima to manage lightweight VMs and is optimized for developer workflows on resource-constrained machines.",
+    "use_cases": [
+      "Local development on MacBooks with limited resources",
+      "Running Kubernetes clusters locally without Docker Desktop licensing",
+      "Testing containerized applications in Linux environments on macOS",
+      "CI/CD pipelines in resource-constrained environments"
+    ],
+    "used_by": [
+      "Individual developers",
+      "Startups",
+      "Open source projects"
+    ],
+    "docs": "https://github.com/abiosoft/colima",
+    "tutorial": "https://github.com/abiosoft/colima#quick-start",
+    "added": "2026-06-25"
+  },
+  {
+    "id": "mcp",
+    "name": "Model Context Protocol",
+    "category": "Framework",
+    "domain": "AI/ML",
+    "eli5": "It's like a universal translator that lets AI assistants talk to any tool or database, like giving them access to every book in a library instead of just one.",
+    "description": "Model Context Protocol (MCP) is an open standard developed by Anthropic that enables AI models to securely interact with external data sources and tools through a standardized interface. It allows seamless integration of context and capabilities into LLM applications.",
+    "use_cases": [
+      "Connecting AI assistants to enterprise databases and knowledge bases",
+      "Building AI-powered code generation tools with access to version control",
+      "Creating AI agents that interact with APIs and business systems",
+      "Enabling retrieval-augmented generation (RAG) with custom data sources"
+    ],
+    "used_by": [
+      "Anthropic",
+      "Integration partners",
+      "Enterprise AI teams"
+    ],
+    "docs": "https://modelcontextprotocol.io/",
+    "tutorial": "https://modelcontextprotocol.io/quickstart",
+    "added": "2026-06-25"
+  },
+  {
+    "id": "etcd",
+    "name": "etcd",
+    "category": "Tool",
+    "domain": "Database",
+    "eli5": "It's like a tiny but super reliable address book that everyone in your house checks before doing anything, making sure everyone knows what's happening.",
+    "description": "etcd is a distributed, strongly-consistent key-value store used for shared configuration and service discovery in distributed systems. It's the backbone of Kubernetes cluster state management and is critical for maintaining consistency across multiple machines.",
+    "use_cases": [
+      "Kubernetes cluster state and configuration management",
+      "Service discovery in microservices architectures",
+      "Distributed locks and leader election",
+      "Configuration management for distributed applications"
+    ],
+    "used_by": [
+      "Kubernetes",
+      "CoreOS",
+      "Red Hat",
+      "Cloud Foundry"
+    ],
+    "docs": "https://etcd.io/docs/",
+    "tutorial": "https://etcd.io/docs/v3.5/quickstart/",
+    "added": "2026-06-25"
+  },
+  {
+    "id": "vault-secrets",
+    "name": "Vault (Secrets Management)",
+    "category": "Tool",
+    "domain": "Security",
+    "eli5": "It's like a super-secure safe that only opens when you prove who you are, and it remembers to change the combination automatically.",
+    "description": "HashiCorp Vault is an identity-based secrets and encryption management system that centralizes and secures access to secrets, certificates, and encryption keys across distributed infrastructure. It provides dynamic secret generation, encryption-as-a-service, and detailed audit logging.",
+    "use_cases": [
+      "Managing database credentials and API tokens in production",
+      "Generating dynamic database passwords that rotate automatically",
+      "Encrypting sensitive data at rest and in transit",
+      "Auditing all access to secrets and compliance reporting"
+    ],
+    "used_by": [
+      "HashiCorp",
+      "Google",
+      "GitHub",
+      "Uber"
+    ],
+    "docs": "https://www.vaultproject.io/docs",
+    "tutorial": "https://learn.hashicorp.com/tutorials/vault/getting-started",
+    "added": "2026-06-25"
+  },
+  {
+    "id": "parquet",
+    "name": "Apache Parquet",
+    "category": "Tool",
+    "domain": "Data Engineering",
+    "eli5": "It's like organizing your toy box by color and size so you can find exactly what you need without dumping everything out on the floor.",
+    "description": "Apache Parquet is a columnar storage format optimized for analytical queries on large datasets. It provides efficient compression, encoding, and nested data support, making it the standard format for data lakes and analytical workloads.",
+    "use_cases": [
+      "Storing large datasets in cloud data lakes (S3, GCS, Azure)",
+      "Improving query performance in analytical databases like BigQuery and Snowflake",
+      "Data pipeline processing with Apache Spark and Dask",
+      "Cost reduction through better compression and selective column access"
+    ],
+    "used_by": [
+      "Netflix",
+      "Uber",
+      "Meta",
+      "Twitter"
+    ],
+    "docs": "https://parquet.apache.org/docs/overview/",
+    "tutorial": "https://parquet.apache.org/docs/file-format/",
+    "added": "2026-06-25"
   }
 ]

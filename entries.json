@@ -6278,5 +6278,118 @@
     "docs": "https://parquet.apache.org/docs/overview/",
     "tutorial": "https://parquet.apache.org/docs/file-format/",
     "added": "2026-06-25"
+  },
+  {
+    "id": "anthropic-tokens",
+    "name": "Anthropic Tokens",
+    "category": "Tool",
+    "domain": "AI/ML",
+    "eli5": "It's like buying game tokens at an arcade\u2014you pay for how many words Claude reads and writes, not a monthly pass.",
+    "description": "Anthropic's token-based pricing and usage system for Claude API, allowing granular billing based on input and output tokens consumed. It enables developers to optimize costs while managing model usage at scale.",
+    "use_cases": [
+      "Cost optimization for high-volume API applications",
+      "Fine-tuned billing allocation across teams and projects",
+      "Budgeting and forecasting for AI infrastructure",
+      "Usage monitoring and quota management"
+    ],
+    "used_by": [
+      "Scale AI",
+      "Notion",
+      "DuckDuckGo"
+    ],
+    "docs": "https://docs.anthropic.com/en/docs/resources/tokens",
+    "tutorial": "https://docs.anthropic.com/en/docs/build-a-chatbot-with-claude",
+    "added": "2026-06-26"
+  },
+  {
+    "id": "moto",
+    "name": "Moto",
+    "category": "Tool",
+    "domain": "CI/CD",
+    "eli5": "It's a fake AWS service that lives in your computer so you can test cloud code without paying real money.",
+    "description": "Moto is a library that mocks AWS services for testing purposes, allowing developers to test AWS-dependent code locally without incurring costs. It supports hundreds of AWS services and is essential for CI/CD pipelines testing infrastructure as code.",
+    "use_cases": [
+      "Unit and integration testing of AWS-dependent applications",
+      "Local development without AWS credentials",
+      "CI/CD pipeline testing before deployment",
+      "Cost reduction by avoiding test infrastructure charges"
+    ],
+    "used_by": [
+      "Amazon",
+      "Segment",
+      "Twilio",
+      "CloudFormation users"
+    ],
+    "docs": "https://docs.getmoto.org/",
+    "tutorial": "https://docs.getmoto.org/en/latest/docs/getting_started.html",
+    "added": "2026-06-26"
+  },
+  {
+    "id": "bitnami",
+    "name": "Bitnami",
+    "category": "Platform",
+    "domain": "Cloud",
+    "eli5": "It's like pre-made LEGO kits for the cloud\u2014software that's already assembled and ready to run instead of building from scratch.",
+    "description": "Bitnami provides pre-built, production-ready application stacks and container images for deploying popular open-source software on cloud platforms. It simplifies deployment and reduces time-to-production for applications like WordPress, Kubernetes, and databases.",
+    "use_cases": [
+      "One-click deployment of web applications to cloud platforms",
+      "Containerized application distribution via Docker and Kubernetes",
+      "Enterprise software stack provisioning",
+      "Multi-cloud application deployment consistency"
+    ],
+    "used_by": [
+      "VMware",
+      "AWS Marketplace",
+      "Azure Marketplace",
+      "Google Cloud"
+    ],
+    "docs": "https://bitnami.com/",
+    "tutorial": "https://bitnami.com/get-started",
+    "added": "2026-06-26"
+  },
+  {
+    "id": "open-source-observability",
+    "name": "OpenObservability Alliance",
+    "category": "Concept",
+    "domain": "SRE/Observability",
+    "eli5": "It's like having multiple doctors (logging, metrics, and traces) working together to understand what your app is doing, instead of each one working separately.",
+    "description": "The OpenObservability Alliance standardizes open-source observability tools and practices through specifications like OpenTelemetry. It enables unified metrics, logs, and traces collection across distributed systems without vendor lock-in.",
+    "use_cases": [
+      "Unified observability across microservices architectures",
+      "Multi-vendor observability platform integration",
+      "Standardized instrumentation across polyglot codebases",
+      "Cost-effective observability with open-source tools"
+    ],
+    "used_by": [
+      "Datadog",
+      "New Relic",
+      "Splunk",
+      "Grafana Labs"
+    ],
+    "docs": "https://openobservability.io/",
+    "tutorial": "https://opentelemetry.io/docs/getting-started/",
+    "added": "2026-06-26"
+  },
+  {
+    "id": "walrus",
+    "name": "Walrus",
+    "category": "Platform",
+    "domain": "DevOps",
+    "eli5": "It's like a smart assistant that manages your infrastructure code and keeps everything running the same way every time, automatically.",
+    "description": "Walrus is an open-source Infrastructure as Code (IaC) management platform that simplifies Terraform and other IaC workflows with a user-friendly interface and automation capabilities. It reduces complexity for teams managing cloud infrastructure at scale.",
+    "use_cases": [
+      "Self-service infrastructure provisioning for development teams",
+      "Infrastructure state management and compliance tracking",
+      "Multi-environment infrastructure deployment automation",
+      "Cost optimization through centralized IaC governance"
+    ],
+    "used_by": [
+      "Seal Software",
+      "Cloud-native enterprises",
+      "DevOps teams"
+    ],
+    "docs": "https://walrus.seal.io/docs",
+    "tutorial": "https://walrus.seal.io/docs/guides/quickstart",
+    "added": "2026-06-26"
   }
 ]

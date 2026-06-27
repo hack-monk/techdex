@@ -6391,5 +6391,115 @@
     "docs": "https://walrus.seal.io/docs",
     "tutorial": "https://walrus.seal.io/docs/guides/quickstart",
     "added": "2026-06-26"
+  },
+  {
+    "id": "anthropic-claude-tokens",
+    "name": "Anthropic Claude Tokens",
+    "category": "Tool",
+    "domain": "AI/ML",
+    "eli5": "Claude Tokens are like coins you spend to use Claude's brain to read and write things for you.",
+    "description": "A token-based billing and usage system for Anthropic's Claude API, enabling developers to measure and optimize API consumption. Tokens represent units of text processed by Claude models, with distinct pricing for input and output tokens.",
+    "use_cases": [
+      "Cost tracking and optimization for large-scale Claude API deployments",
+      "Implementing token budgets and rate limiting in multi-tenant applications",
+      "Monitoring API usage patterns and forecasting costs",
+      "Building cost-aware applications that adapt query complexity based on token budgets"
+    ],
+    "used_by": [
+      "Notion",
+      "DuckDuckGo",
+      "Zapier"
+    ],
+    "docs": "https://docs.anthropic.com/en/docs/about-claude/models/overview",
+    "tutorial": "https://docs.anthropic.com/en/docs/guides/tokens",
+    "added": "2026-06-27"
+  },
+  {
+    "id": "supabase-auth",
+    "name": "Supabase Auth",
+    "category": "Tool",
+    "domain": "Identity",
+    "eli5": "Supabase Auth is like a bouncer at a nightclub who checks your ID and remembers you so you don't have to prove who you are every time.",
+    "description": "An open-source authentication and authorization system built on PostgreSQL Row Level Security (RLS), providing email/password, OAuth, magic links, and multi-factor authentication out of the box. It eliminates the need for external identity providers while maintaining enterprise-grade security.",
+    "use_cases": [
+      "Building modern web and mobile applications with built-in user authentication",
+      "Implementing fine-grained row-level access control directly in the database",
+      "Enabling social login through OAuth providers without third-party IAM platforms",
+      "Securing real-time applications with token-based authentication"
+    ],
+    "used_by": [
+      "Vercel",
+      "Figma",
+      "ProductHunt"
+    ],
+    "docs": "https://supabase.com/docs/guides/auth",
+    "tutorial": "https://supabase.com/docs/guides/auth/quickstarts",
+    "added": "2026-06-27"
+  },
+  {
+    "id": "mcp-server",
+    "name": "Model Context Protocol Server",
+    "category": "Tool",
+    "domain": "AI/ML",
+    "eli5": "MCP Server is like a translator that lets AI assistants talk to your tools and files just like you do, but in their own language.",
+    "description": "The Model Context Protocol (MCP) is an open standard for connecting AI models to external data sources and tools through a unified interface. It enables Claude and other LLMs to safely access databases, APIs, and file systems with standardized communication.",
+    "use_cases": [
+      "Integrating AI assistants with enterprise databases and knowledge systems",
+      "Building secure bridges between LLMs and internal tools without exposing credentials",
+      "Creating agentic workflows where AI can read and modify application state",
+      "Standardizing how multiple AI services access company data and APIs"
+    ],
+    "used_by": [
+      "Anthropic",
+      "Figma",
+      "Raycast"
+    ],
+    "docs": "https://modelcontextprotocol.io/introduction",
+    "tutorial": "https://modelcontextprotocol.io/quickstart",
+    "added": "2026-06-27"
+  },
+  {
+    "id": "qdrant",
+    "name": "Qdrant",
+    "category": "Tool",
+    "domain": "Database",
+    "eli5": "Qdrant is like a super-smart library that organizes information by meaning instead of alphabetically, so it finds similar ideas really fast.",
+    "description": "A vector database optimized for storing and searching high-dimensional embeddings with sub-millisecond latency at scale. It enables similarity search, recommendation systems, and semantic retrieval for AI/ML applications with built-in filtering and scalability.",
+    "use_cases": [
+      "Powering semantic search and RAG (Retrieval-Augmented Generation) systems",
+      "Building recommendation engines based on content similarity",
+      "Implementing vector similarity search for image and text matching",
+      "Scaling embeddings-based applications from development to production"
+    ],
+    "used_by": [
+      "Booking.com",
+      "Activision",
+      "Deutsche Bank"
+    ],
+    "docs": "https://qdrant.tech/documentation/",
+    "tutorial": "https://qdrant.tech/documentation/quick-start/",
+    "added": "2026-06-27"
+  },
+  {
+    "id": "pocketbase",
+    "name": "PocketBase",
+    "category": "Tool",
+    "domain": "Backend",
+    "eli5": "PocketBase is like having a complete backend in a single file that you can carry in your pocket and run anywhere.",
+    "description": "A lightweight self-hosted backend-as-a-service written in Go that provides a REST/realtime API, built-in database (SQLite), user authentication, and admin dashboard in a single executable. It eliminates the complexity of deploying traditional backends for small to medium projects.",
+    "use_cases": [
+      "Building full-stack applications without separate backend infrastructure",
+      "Rapid prototyping and MVPs with instant API and admin panel",
+      "Self-hosted alternative to Firebase or Supabase with minimal dependencies",
+      "Embedded backend for desktop and mobile applications"
+    ],
+    "used_by": [
+      "Indie developers",
+      "Startups",
+      "Educational institutions"
+    ],
+    "docs": "https://pocketbase.io/docs/",
+    "tutorial": "https://pocketbase.io/docs/getting-started/",
+    "added": "2026-06-27"
   }
 ]

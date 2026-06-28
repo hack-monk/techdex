@@ -6501,5 +6501,115 @@
     "docs": "https://pocketbase.io/docs/",
     "tutorial": "https://pocketbase.io/docs/getting-started/",
     "added": "2026-06-27"
+  },
+  {
+    "id": "ollama-embed",
+    "name": "Ollama Embeddings",
+    "category": "Tool",
+    "domain": "AI/ML",
+    "eli5": "It's like a translator that turns words into special number patterns that computers understand, so they can find similar ideas quickly.",
+    "description": "Ollama provides a simple way to run and embed large language models locally without needing expensive cloud APIs. It enables developers to create semantic search and RAG applications with models like Mistral, Llama, and others running on their own hardware.",
+    "use_cases": [
+      "Building local semantic search engines",
+      "Creating retrieval-augmented generation (RAG) pipelines",
+      "Privacy-first chatbot applications",
+      "Offline text embedding and similarity matching"
+    ],
+    "used_by": [
+      "Anthropic",
+      "Scale AI",
+      "Hugging Face"
+    ],
+    "docs": "https://github.com/ollama/ollama",
+    "tutorial": "https://ollama.ai/library",
+    "added": "2026-06-28"
+  },
+  {
+    "id": "firecracker",
+    "name": "Firecracker",
+    "category": "Tool",
+    "domain": "Cloud",
+    "eli5": "It's like a super-fast toy factory that can spin up a brand new machine in milliseconds instead of seconds, so you can run lots of things at once.",
+    "description": "Firecracker is a lightweight virtualization technology developed by AWS that enables microVMs to start in milliseconds with minimal overhead. It powers AWS Lambda and is used for serverless computing at massive scale with high density and security isolation.",
+    "use_cases": [
+      "Serverless function execution platforms",
+      "Multi-tenant container isolation",
+      "Edge computing and IoT deployments",
+      "Function-as-a-Service (FaaS) infrastructure"
+    ],
+    "used_by": [
+      "Amazon Web Services",
+      "Fly.io",
+      "Netlify"
+    ],
+    "docs": "https://github.com/firecracker-microvm/firecracker",
+    "tutorial": "https://github.com/firecracker-microvm/firecracker/tree/main/docs",
+    "added": "2026-06-28"
+  },
+  {
+    "id": "scarf",
+    "name": "Scarf",
+    "category": "Tool",
+    "domain": "DevOps",
+    "eli5": "It's like a counter at a store that quietly tracks when people download your product so you know how many people are using it.",
+    "description": "Scarf provides package analytics and insights for open source projects and commercial software by transparently tracking downloads and usage patterns. It helps maintainers understand adoption without compromising user privacy through its lightweight pixel-based tracking.",
+    "use_cases": [
+      "Measuring open source project adoption",
+      "Tracking software download metrics",
+      "Understanding user distribution by geography",
+      "Monetizing open source projects ethically"
+    ],
+    "used_by": [
+      "Docker",
+      "HashiCorp",
+      "JFrog"
+    ],
+    "docs": "https://docs.scarf.sh",
+    "tutorial": "https://scarf.sh/",
+    "added": "2026-06-28"
+  },
+  {
+    "id": "sqlglot",
+    "name": "sqlglot",
+    "category": "Tool",
+    "domain": "Data Engineering",
+    "eli5": "It's like a translator that converts recipes written in one restaurant's style into another restaurant's style so both kitchens can cook the same meal.",
+    "description": "sqlglot is a SQL parser, transpiler, and optimizer that can parse and generate SQL across different databases (PostgreSQL, BigQuery, Snowflake, etc.). It enables data engineers to write database-agnostic SQL and automatically translate queries between different SQL dialects.",
+    "use_cases": [
+      "Cross-database query translation and migration",
+      "SQL validation and formatting",
+      "Query optimization across multiple platforms",
+      "Building data pipeline orchestration tools"
+    ],
+    "used_by": [
+      "Databricks",
+      "Stripe",
+      "dbt Labs"
+    ],
+    "docs": "https://sqlglot.com/",
+    "tutorial": "https://github.com/tobymao/sqlglot",
+    "added": "2026-06-28"
+  },
+  {
+    "id": "pion",
+    "name": "Pion WebRTC",
+    "category": "Tool",
+    "domain": "Networking",
+    "eli5": "It's like a direct phone line between two people that works through the internet without needing a central operator, so you can chat with really low delay.",
+    "description": "Pion is a pure Go implementation of the WebRTC protocol that enables peer-to-peer audio, video, and data communication directly in browsers and applications. It provides a simple API for building real-time communication systems without external dependencies.",
+    "use_cases": [
+      "Video conferencing and screen sharing applications",
+      "Live streaming with ultra-low latency",
+      "Real-time multiplayer gaming",
+      "Peer-to-peer data transfer and collaboration tools"
+    ],
+    "used_by": [
+      "Jitsi",
+      "LiveKit",
+      "Loom"
+    ],
+    "docs": "https://pion.ly/",
+    "tutorial": "https://github.com/pion/webrtc/wiki/Getting-Started",
+    "added": "2026-06-28"
   }
 ]

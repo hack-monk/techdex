@@ -6611,5 +6611,120 @@
     "docs": "https://pion.ly/",
     "tutorial": "https://github.com/pion/webrtc/wiki/Getting-Started",
     "added": "2026-06-28"
+  },
+  {
+    "id": "rustls",
+    "name": "Rustls",
+    "category": "Tool",
+    "domain": "Security",
+    "eli5": "Rustls is like a safer lock for internet messages that's written in a language that prevents accidentally leaving doors open.",
+    "description": "Rustls is a modern TLS library written in Rust that provides cryptographic security for network communications without the memory safety vulnerabilities of traditional implementations like OpenSSL. It's becoming the default choice for projects prioritizing both security and performance.",
+    "use_cases": [
+      "Securing HTTPS connections in web servers and reverse proxies",
+      "Protecting gRPC and service-to-service communication",
+      "Encrypting database connections and APIs",
+      "Building secure networking layers in cloud-native applications"
+    ],
+    "used_by": [
+      "Cloudflare",
+      "Mozilla",
+      "Brave",
+      "Tokio"
+    ],
+    "docs": "https://docs.rs/rustls/",
+    "tutorial": "https://rustls.dev/",
+    "added": "2026-06-29"
+  },
+  {
+    "id": "pydantic-v2",
+    "name": "Pydantic V2",
+    "category": "Framework",
+    "domain": "Backend",
+    "eli5": "Pydantic is like a bouncer at a club that checks if your data looks correct before letting it into your Python program.",
+    "description": "Pydantic V2 is a data validation and serialization library for Python that uses type hints to ensure data integrity and convert between different formats. It powers FastAPI and is essential for building robust APIs and data pipelines.",
+    "use_cases": [
+      "API request/response validation in FastAPI applications",
+      "Configuration management and environment variable parsing",
+      "Data transformation and serialization in ML pipelines",
+      "Type-safe database model definitions"
+    ],
+    "used_by": [
+      "Shopify",
+      "Microsoft",
+      "Databricks",
+      "Stripe"
+    ],
+    "docs": "https://docs.pydantic.dev/latest/",
+    "tutorial": "https://docs.pydantic.dev/latest/concepts/models/",
+    "added": "2026-06-29"
+  },
+  {
+    "id": "milvus-vector-db",
+    "name": "Milvus Vector Database",
+    "category": "Tool",
+    "domain": "Database",
+    "eli5": "Milvus is like a super-smart filing system that finds similar pictures or ideas really fast, instead of looking at every single file one by one.",
+    "description": "Milvus is an open-source vector database optimized for similarity search and AI applications, enabling scalable semantic search and retrieval-augmented generation (RAG) systems. It handles billions of vectors with millisecond latency across distributed deployments.",
+    "use_cases": [
+      "Building RAG (Retrieval-Augmented Generation) systems for LLMs",
+      "Semantic search in recommendation systems",
+      "Image and video similarity matching at scale",
+      "Powering AI-powered search and personalization features"
+    ],
+    "used_by": [
+      "Alibaba",
+      "eBay",
+      "Shopee",
+      "TikTok"
+    ],
+    "docs": "https://milvus.io/docs",
+    "tutorial": "https://milvus.io/docs/quickstart.md",
+    "added": "2026-06-29"
+  },
+  {
+    "id": "cadence-workflow",
+    "name": "Cadence Workflow Engine",
+    "category": "Platform",
+    "domain": "Backend",
+    "eli5": "Cadence is like a reliable assistant that remembers exactly where you left off in a task, even if the office catches fire and restarts.",
+    "description": "Cadence is a distributed workflow orchestration engine created by Uber that ensures long-running, asynchronous business processes execute reliably with automatic retries and state recovery. It powers mission-critical workflows in finance, e-commerce, and infrastructure automation.",
+    "use_cases": [
+      "Orchestrating multi-step financial transaction processes",
+      "Managing complex order processing and fulfillment workflows",
+      "Coordinating microservice interactions with guaranteed delivery",
+      "Implementing saga patterns for distributed transactions"
+    ],
+    "used_by": [
+      "Uber",
+      "Box",
+      "Square",
+      "DoorDash"
+    ],
+    "docs": "https://cadenceworkflow.io/docs/",
+    "tutorial": "https://cadenceworkflow.io/docs/quick-start/",
+    "added": "2026-06-29"
+  },
+  {
+    "id": "openbsd-pf",
+    "name": "OpenBSD PF Firewall",
+    "category": "Tool",
+    "domain": "Networking",
+    "eli5": "PF is like a security guard at a gate who can look at every package passing through and decide whether to let it in or throw it back out.",
+    "description": "PF (Packet Filter) is a stateful firewall and network address translator included in OpenBSD, known for its clarity, expressiveness, and minimal memory footprint. It's widely deployed in high-performance networking environments and has been ported to other systems like FreeBSD and pfSense.",
+    "use_cases": [
+      "Protecting servers and networks at the perimeter firewall level",
+      "Implementing advanced routing and traffic shaping",
+      "Building ultra-reliable edge gateways for cloud infrastructure",
+      "Creating transparent proxies and load balancing layers"
+    ],
+    "used_by": [
+      "Cloudflare",
+      "OpenBSD Foundation",
+      "pfSense Project",
+      "Netflix"
+    ],
+    "docs": "https://man.openbsd.org/pf",
+    "tutorial": "https://www.openbsd.org/faq/pf/",
+    "added": "2026-06-29"
   }
 ]

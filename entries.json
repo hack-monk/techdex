@@ -6726,5 +6726,71 @@
     "docs": "https://man.openbsd.org/pf",
     "tutorial": "https://www.openbsd.org/faq/pf/",
     "added": "2026-06-29"
+  },
+  {
+    "id": "mise",
+    "name": "Mise",
+    "category": "Tool",
+    "domain": "DevOps",
+    "eli5": "It's like a magic box that automatically gives you the right version of each tool when you work on different projects, so you don't have to manually switch things.",
+    "description": "Mise is a fast, polyglot runtime version manager that replaces asdf, nvm, and pyenv. It manages multiple language runtimes and tools with a single configuration file and automatic version switching per project.",
+    "use_cases": [
+      "Managing Node.js, Python, Ruby, and Go versions across projects",
+      "Team development environment standardization",
+      "CI/CD pipeline tool versioning",
+      "Multi-language monorepo development"
+    ],
+    "used_by": [
+      "Craft.do",
+      "Various open-source projects",
+      "Development teams"
+    ],
+    "docs": "https://mise.jdx.dev/",
+    "tutorial": "https://mise.jdx.dev/getting-started.html",
+    "added": "2026-06-30"
+  },
+  {
+    "id": "opendevin",
+    "name": "OpenDevin",
+    "category": "Tool",
+    "domain": "AI/ML",
+    "eli5": "It's like having a helpful robot assistant that can read and write code, run programs, and fix things when you tell it what to do.",
+    "description": "OpenDevin is an open-source autonomous AI agent for software development that can write code, run tests, browse files, and complete programming tasks end-to-end. It integrates with popular IDEs and development workflows to provide AI-assisted development.",
+    "use_cases": [
+      "Automated bug fixing and code debugging",
+      "Scaffolding new features and boilerplate generation",
+      "Test generation and coverage improvement",
+      "Code refactoring and technical debt reduction"
+    ],
+    "used_by": [
+      "OpenDevin contributors",
+      "AI-first development teams",
+      "Research institutions"
+    ],
+    "docs": "https://github.com/All-Hands-AI/OpenDevin",
+    "tutorial": "https://github.com/All-Hands-AI/OpenDevin/blob/main/README.md",
+    "added": "2026-06-30"
+  },
+  {
+    "id": "attestation-powered-security",
+    "name": "Witness",
+    "category": "Tool",
+    "domain": "Security",
+    "eli5": "It's like a detailed receipt that proves who did what and when in your software factory, so you can trace back exactly how each piece was made.",
+    "description": "Witness is an open-source framework for creating cryptographic attestations of software artifact provenance and supply chain security. It integrates with CI/CD pipelines to record and verify every step of the build and deployment process.",
+    "use_cases": [
+      "Software supply chain security and provenance tracking",
+      "CI/CD pipeline integrity verification",
+      "Compliance and audit trail requirements",
+      "Container image and artifact attestation"
+    ],
+    "used_by": [
+      "Enterprise security teams",
+      "Cloud-native projects",
+      "SLSA-focused organizations"
+    ],
+    "docs": "https://github.com/testifysec/witness",
+    "tutorial": "https://github.com/testifysec/witness/blob/main/README.md",
+    "added": "2026-06-30"
   }
 ]

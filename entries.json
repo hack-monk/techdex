@@ -6792,5 +6792,120 @@
     "docs": "https://github.com/testifysec/witness",
     "tutorial": "https://github.com/testifysec/witness/blob/main/README.md",
     "added": "2026-06-30"
+  },
+  {
+    "id": "builtins",
+    "name": "Builtins",
+    "category": "Tool",
+    "domain": "Backend",
+    "eli5": "It's like a toolbox that comes with your programming language so you don't have to buy tools separately.",
+    "description": "Builtins are the core functions and objects that come pre-loaded in programming languages like Python, JavaScript, and Go. They provide essential functionality without requiring external dependencies.",
+    "use_cases": [
+      "Data type operations and conversions",
+      "String and collection manipulation",
+      "File I/O and system interactions",
+      "Math and type checking operations"
+    ],
+    "used_by": [
+      "Google",
+      "Facebook",
+      "Spotify",
+      "Netflix"
+    ],
+    "docs": "https://docs.python.org/3/library/functions.html",
+    "tutorial": "https://www.w3schools.com/python/python_ref_functions.asp",
+    "added": "2026-07-01"
+  },
+  {
+    "id": "gitleaks",
+    "name": "GitLeaks",
+    "category": "Tool",
+    "domain": "Security",
+    "eli5": "It's like a security guard that checks your code before you upload it to make sure you didn't accidentally leave your house keys in plain sight.",
+    "description": "GitLeaks is a SAST tool that scans git repositories to detect secrets and sensitive information like API keys, passwords, and tokens before they're committed. It prevents credential leaks in source control.",
+    "use_cases": [
+      "Pre-commit hooks to prevent secret leaks",
+      "CI/CD pipeline scanning for credentials",
+      "Repository auditing and compliance",
+      "Developer security training and awareness"
+    ],
+    "used_by": [
+      "Snyk",
+      "GitHub",
+      "GitLab",
+      "Uber"
+    ],
+    "docs": "https://github.com/gitleaks/gitleaks",
+    "tutorial": "https://gitleaks.io/",
+    "added": "2026-07-01"
+  },
+  {
+    "id": "mattermost",
+    "name": "Mattermost",
+    "category": "Platform",
+    "domain": "Other",
+    "eli5": "It's like Slack, but you can install it on your own computer instead of trusting someone else to keep your messages safe.",
+    "description": "Mattermost is an open-source team collaboration and messaging platform that can be self-hosted, providing Slack-like functionality with full control over data and infrastructure. It's widely used in enterprises requiring on-premise solutions.",
+    "use_cases": [
+      "Internal team communication and chat",
+      "DevOps and incident response coordination",
+      "Compliance-requiring organizations needing data control",
+      "Integration with development tools and workflows"
+    ],
+    "used_by": [
+      "AWS",
+      "SolarWinds",
+      "OpenStack",
+      "Hitachi Vantara"
+    ],
+    "docs": "https://docs.mattermost.com/",
+    "tutorial": "https://docs.mattermost.com/guides/deployment.html",
+    "added": "2026-07-01"
+  },
+  {
+    "id": "opensearch-vector-search",
+    "name": "OpenSearch Vector Search",
+    "category": "Tool",
+    "domain": "Database",
+    "eli5": "It's like a librarian who doesn't just match exact words but understands the meaning of what you're looking for and finds similar books.",
+    "description": "OpenSearch Vector Search enables semantic search and similarity matching using vector embeddings, allowing applications to find contextually relevant results rather than just keyword matches. It integrates vector databases with full-text search capabilities.",
+    "use_cases": [
+      "Semantic search in e-commerce and content discovery",
+      "RAG (Retrieval-Augmented Generation) systems",
+      "Recommendation engines and personalization",
+      "Image and document similarity matching"
+    ],
+    "used_by": [
+      "Netflix",
+      "Amazon",
+      "Expedia",
+      "Stripe"
+    ],
+    "docs": "https://opensearch.org/docs/latest/search-plugins/vector-search/",
+    "tutorial": "https://opensearch.org/blog/improving-search-with-vector-search/",
+    "added": "2026-07-01"
+  },
+  {
+    "id": "weave",
+    "name": "Weave",
+    "category": "Tool",
+    "domain": "AI/ML",
+    "eli5": "It's like a notebook that watches what your AI does and remembers every step so you can see if it made any mistakes.",
+    "description": "Weave is an AI observability and evaluation platform that tracks, evaluates, and debugs AI applications including LLM chains and agentic systems. It provides production monitoring and testing tools for generative AI systems.",
+    "use_cases": [
+      "LLM application monitoring and debugging",
+      "Prompt engineering and optimization",
+      "AI model evaluation and quality assurance",
+      "Production observability for agentic AI systems"
+    ],
+    "used_by": [
+      "OpenAI partners",
+      "Anthropic ecosystem",
+      "Scale AI",
+      "Hugging Face"
+    ],
+    "docs": "https://docs.wandb.ai/guides/weave",
+    "tutorial": "https://github.com/wandb/weave",
+    "added": "2026-07-01"
   }
 ]

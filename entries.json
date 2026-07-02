@@ -6907,5 +6907,97 @@
     "docs": "https://docs.wandb.ai/guides/weave",
     "tutorial": "https://github.com/wandb/weave",
     "added": "2026-07-01"
+  },
+  {
+    "id": "rustlings",
+    "name": "Rustlings",
+    "category": "Tool",
+    "domain": "Backend",
+    "eli5": "It's like a interactive workbook that teaches you Rust programming by fixing small broken exercises, like a game where you solve puzzles to learn.",
+    "description": "Rustlings is a collection of small exercises to get you used to reading and writing Rust code. It's designed as a hands-on learning tool for developers learning the Rust language through practical, incremental challenges.",
+    "use_cases": [
+      "Onboarding developers to Rust programming",
+      "Teaching Rust language fundamentals in team environments",
+      "Self-paced learning for individual developers",
+      "Building confidence with Rust syntax and ownership rules"
+    ],
+    "used_by": [
+      "Mozilla",
+      "Google",
+      "Amazon",
+      "Microsoft"
+    ],
+    "docs": "https://github.com/rust-lang/rustlings",
+    "tutorial": "https://github.com/rust-lang/rustlings#readme",
+    "added": "2026-07-02"
+  },
+  {
+    "id": "brev",
+    "name": "Brev",
+    "category": "Tool",
+    "domain": "DevOps",
+    "eli5": "It's like a magic button that sets up your entire development environment in the cloud instead of on your computer, so you can work from anywhere instantly.",
+    "description": "Brev is a cloud development environment platform that allows developers to spin up pre-configured workspaces in seconds. It eliminates local machine setup time and enables developers to write code from anywhere with consistent development environments.",
+    "use_cases": [
+      "Instant developer onboarding without local setup",
+      "Contributing to projects on any device or browser",
+      "Collaborative development in ephemeral environments",
+      "Standardizing development environments across teams"
+    ],
+    "used_by": [
+      "Y Combinator",
+      "Replit",
+      "Stripe",
+      "Notion"
+    ],
+    "docs": "https://docs.brev.dev/",
+    "tutorial": "https://www.brev.dev/",
+    "added": "2026-07-02"
+  },
+  {
+    "id": "hydra",
+    "name": "Hydra",
+    "category": "Framework",
+    "domain": "AI/ML",
+    "eli5": "It's like a smart assistant for machine learning experiments that remembers all your settings and lets you change them without touching the code.",
+    "description": "Hydra is a framework for configuring complex applications built by Facebook Research, particularly useful for machine learning. It simplifies managing configuration hierarchies, experiment tracking, and hyperparameter management through YAML-based configuration.",
+    "use_cases": [
+      "Managing hyperparameter configurations for ML experiments",
+      "Running multiple experiment variations systematically",
+      "Organizing and overriding nested configuration structures",
+      "Reproducible machine learning pipelines"
+    ],
+    "used_by": [
+      "Meta",
+      "NVIDIA",
+      "Microsoft Research",
+      "DeepMind"
+    ],
+    "docs": "https://hydra.cc/",
+    "tutorial": "https://hydra.cc/docs/tutorials/basic/running_your_app/",
+    "added": "2026-07-02"
+  },
+  {
+    "id": "wrangler",
+    "name": "Wrangler",
+    "category": "Tool",
+    "domain": "Frontend",
+    "eli5": "It's like a helper tool that lets you write and run code on Cloudflare's global servers instead of just your own computer, making your apps super fast everywhere.",
+    "description": "Wrangler is a CLI tool for building, testing, and deploying Cloudflare Workers applications. It enables developers to write serverless functions that run on Cloudflare's edge network globally with minimal latency.",
+    "use_cases": [
+      "Building edge functions and APIs that run globally",
+      "Creating serverless middleware for content transformation",
+      "Deploying applications closer to users for reduced latency",
+      "Testing and debugging Workers locally before deployment"
+    ],
+    "used_by": [
+      "Cloudflare",
+      "Discord",
+      "Notion",
+      "SoundCloud"
+    ],
+    "docs": "https://developers.cloudflare.com/workers/wrangler/",
+    "tutorial": "https://developers.cloudflare.com/workers/get-started/guide/",
+    "added": "2026-07-02"
   }
 ]

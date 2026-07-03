@@ -6999,5 +6999,120 @@
     "docs": "https://developers.cloudflare.com/workers/wrangler/",
     "tutorial": "https://developers.cloudflare.com/workers/get-started/guide/",
     "added": "2026-07-02"
+  },
+  {
+    "id": "bitwarden",
+    "name": "Bitwarden",
+    "category": "Tool",
+    "domain": "Security",
+    "eli5": "Bitwarden is like a super-secure locker where you keep all your passwords locked up, and only you have the key to open it.",
+    "description": "Bitwarden is an open-source password manager and secrets vault that securely stores and manages credentials, API keys, and sensitive data across teams and organizations. It provides end-to-end encryption and can be self-hosted or cloud-managed.",
+    "use_cases": [
+      "Team credential management and password sharing",
+      "Secure storage of API keys and database credentials",
+      "Self-hosted secrets management for enterprises",
+      "Integration with CI/CD pipelines for secret injection"
+    ],
+    "used_by": [
+      "Mozilla",
+      "DuckDuckGo",
+      "Basecamp",
+      "Stack Overflow"
+    ],
+    "docs": "https://bitwarden.com/help/",
+    "tutorial": "https://bitwarden.com/blog/getting-started-with-bitwarden/",
+    "added": "2026-07-03"
+  },
+  {
+    "id": "langsmith",
+    "name": "LangSmith",
+    "category": "Tool",
+    "domain": "AI/ML",
+    "eli5": "LangSmith is like a laboratory notebook for AI assistants, where you write down what they say, test if their answers are good, and make them smarter.",
+    "description": "LangSmith is a platform by LangChain for monitoring, evaluating, and debugging large language model applications in production. It provides tracing, testing, and analytics tools to optimize AI application performance and reliability.",
+    "use_cases": [
+      "LLM application debugging and performance monitoring",
+      "Evaluation and testing of AI model outputs",
+      "Production monitoring and alerting for AI systems",
+      "Cost tracking and token usage optimization"
+    ],
+    "used_by": [
+      "Stripe",
+      "Hubspot",
+      "Zoom",
+      "Anduril"
+    ],
+    "docs": "https://docs.smith.langchain.com/",
+    "tutorial": "https://smith.langchain.com/",
+    "added": "2026-07-03"
+  },
+  {
+    "id": "resend",
+    "name": "Resend",
+    "category": "Tool",
+    "domain": "Backend",
+    "eli5": "Resend is like a postman service for emails that helps developers send beautiful, reliable emails from their apps without worrying about spam filters.",
+    "description": "Resend is a modern email API designed for developers, providing reliable email delivery with built-in templates, previews, and easy integration. It focuses on developer experience with intuitive SDKs and high deliverability rates.",
+    "use_cases": [
+      "Transactional email delivery for web and mobile applications",
+      "Marketing and notification emails with templates",
+      "Email verification and authentication workflows",
+      "Batch email campaigns with detailed analytics"
+    ],
+    "used_by": [
+      "Vercel",
+      "Figma",
+      "Stripe",
+      "Notion"
+    ],
+    "docs": "https://resend.com/docs",
+    "tutorial": "https://resend.com/blog/getting-started",
+    "added": "2026-07-03"
+  },
+  {
+    "id": "ollama-llm-runner",
+    "name": "Ollama LLM Runner",
+    "category": "Tool",
+    "domain": "AI/ML",
+    "eli5": "Ollama is like a recipe card that lets you run powerful AI brains right on your computer without needing to send your data to the internet.",
+    "description": "Ollama is a lightweight tool for running large language models locally on consumer hardware, making it easy to run models like Llama 2, Mistral, and others without cloud dependencies. It provides a simple CLI and API for local LLM inference.",
+    "use_cases": [
+      "Local LLM inference without cloud API costs",
+      "Development and testing of AI applications offline",
+      "Privacy-focused applications requiring on-device AI",
+      "Edge deployment of AI models on limited hardware"
+    ],
+    "used_by": [
+      "OpenUI",
+      "Continue IDE",
+      "Anythingllm",
+      "LocalAI"
+    ],
+    "docs": "https://github.com/ollama/ollama",
+    "tutorial": "https://ollama.ai/blog/getting-started-with-ollama",
+    "added": "2026-07-03"
+  },
+  {
+    "id": "axiom",
+    "name": "Axiom",
+    "category": "Tool",
+    "domain": "SRE/Observability",
+    "eli5": "Axiom is like a massive event recorder that watches everything happening in your app and lets you search through it all super fast to find problems.",
+    "description": "Axiom is a serverless data analytics platform purpose-built for log and event data, offering high-volume ingestion with sub-second query performance and cost efficiency. It eliminates the need for complex log aggregation infrastructure.",
+    "use_cases": [
+      "Real-time log aggregation and analysis",
+      "Event streaming and debugging for distributed systems",
+      "Security and compliance audit logging",
+      "Cost-effective high-volume metric and trace storage"
+    ],
+    "used_by": [
+      "Vercel",
+      "Supabase",
+      "Webflow",
+      "Retool"
+    ],
+    "docs": "https://axiom.co/docs",
+    "tutorial": "https://axiom.co/docs/getting-started",
+    "added": "2026-07-03"
   }
 ]

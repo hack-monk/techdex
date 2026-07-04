@@ -7114,5 +7114,74 @@
     "docs": "https://axiom.co/docs",
     "tutorial": "https://axiom.co/docs/getting-started",
     "added": "2026-07-03"
+  },
+  {
+    "id": "anthropic-claude-3-5-sonnet",
+    "name": "Claude 3.5 Sonnet",
+    "category": "Tool",
+    "domain": "AI/ML",
+    "eli5": "It's like having a super smart robot friend who can read, write, and answer almost any question you ask it.",
+    "description": "Anthropic's advanced large language model that excels at reasoning, code generation, and complex analysis tasks. It's widely used for AI-powered development tools, content generation, and enterprise automation.",
+    "use_cases": [
+      "AI-assisted code generation and debugging",
+      "Technical documentation and API reference generation",
+      "Customer service chatbot implementations",
+      "Data analysis and insight extraction"
+    ],
+    "used_by": [
+      "Anthropic",
+      "Scale AI",
+      "Notion",
+      "DuckDuckGo"
+    ],
+    "docs": "https://docs.anthropic.com/en/api/getting-started",
+    "tutorial": "https://docs.anthropic.com/en/api/getting-started-with-the-api",
+    "added": "2026-07-04"
+  },
+  {
+    "id": "firestore",
+    "name": "Google Cloud Firestore",
+    "category": "Platform",
+    "domain": "Database",
+    "eli5": "It's like a magical notebook that automatically saves your data to the cloud and instantly syncs changes to all your devices.",
+    "description": "A serverless, NoSQL document database that automatically syncs data in real-time across devices and scales seamlessly without infrastructure management. It's a core backend-as-a-service offering for mobile and web applications.",
+    "use_cases": [
+      "Real-time collaborative applications and shared documents",
+      "Mobile app backend with offline support",
+      "IoT data collection and management",
+      "Multi-player gaming state synchronization"
+    ],
+    "used_by": [
+      "Google",
+      "Slack",
+      "Spotify",
+      "Duolingo"
+    ],
+    "docs": "https://firebase.google.com/docs/firestore",
+    "tutorial": "https://firebase.google.com/docs/firestore/quickstart",
+    "added": "2026-07-04"
+  },
+  {
+    "id": "supabase-vector-search",
+    "name": "Supabase Vector (pgvector)",
+    "category": "Tool",
+    "domain": "Database",
+    "eli5": "It's like having a librarian who can find books not just by their title, but by how similar they are in meaning to what you're looking for.",
+    "description": "Supabase's integration of pgvector extension for PostgreSQL enabling semantic search and vector similarity queries within a managed database. It powers AI-driven search features, recommendation engines, and similarity detection systems.",
+    "use_cases": [
+      "Semantic search for documents and content",
+      "Recommendation systems based on embeddings",
+      "AI-powered chatbot memory and retrieval",
+      "Image and product similarity matching"
+    ],
+    "used_by": [
+      "Supabase",
+      "Vercel",
+      "Hugging Face",
+      "Replit"
+    ],
+    "docs": "https://supabase.com/docs/guides/database/extensions/pgvector",
+    "tutorial": "https://supabase.com/docs/guides/database/vector-search",
+    "added": "2026-07-04"
   }
 ]

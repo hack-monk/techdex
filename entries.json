@@ -7183,5 +7183,93 @@
     "docs": "https://supabase.com/docs/guides/database/extensions/pgvector",
     "tutorial": "https://supabase.com/docs/guides/database/vector-search",
     "added": "2026-07-04"
+  },
+  {
+    "id": "anthropic-claude-opus",
+    "name": "Claude 3 Opus",
+    "category": "Tool",
+    "domain": "AI/ML",
+    "eli5": "Claude Opus is like having a super smart robot assistant that can read long books and answer really hard questions about them.",
+    "description": "Claude 3 Opus is Anthropic's most capable large language model, designed for complex reasoning tasks and long-context analysis. It excels at handling multi-step problems, research tasks, and generating high-quality technical documentation.",
+    "use_cases": [
+      "Complex code generation and debugging",
+      "Long-document analysis and summarization",
+      "Multi-step reasoning and problem solving",
+      "Technical writing and documentation"
+    ],
+    "used_by": [
+      "Anthropic",
+      "scale.com",
+      "various Fortune 500 companies"
+    ],
+    "docs": "https://docs.anthropic.com/claude/reference/getting-started-with-the-api",
+    "tutorial": "https://docs.anthropic.com/claude/docs/intro-to-claude",
+    "added": "2026-07-05"
+  },
+  {
+    "id": "firefly",
+    "name": "Firefly",
+    "category": "Tool",
+    "domain": "DevOps",
+    "eli5": "Firefly is like a detective that watches your cloud to find things you're paying for but not using, so you can stop wasting money.",
+    "description": "Firefly is a cloud asset management and cost optimization platform that automatically discovers, tracks, and manages cloud resources across AWS, Azure, and GCP. It identifies unused resources and provides remediation recommendations to reduce cloud spending.",
+    "use_cases": [
+      "Cloud cost optimization and waste reduction",
+      "Automated discovery of cloud infrastructure",
+      "Compliance and security posture management",
+      "FinOps and chargeback automation"
+    ],
+    "used_by": [
+      "Cloudflare",
+      "Notion",
+      "SailPoint"
+    ],
+    "docs": "https://docs.firefly.ai/",
+    "tutorial": "https://docs.firefly.ai/getting-started",
+    "added": "2026-07-05"
+  },
+  {
+    "id": "svix",
+    "name": "Svix",
+    "category": "Platform",
+    "domain": "Backend",
+    "eli5": "Svix is like a reliable postal service that makes sure your messages about important events get delivered to all the right places.",
+    "description": "Svix is a webhook platform as a service that provides reliable event delivery, automatic retries, and webhook management for developers. It handles the complexity of building and maintaining webhooks at scale with built-in security, monitoring, and testing tools.",
+    "use_cases": [
+      "Event-driven architecture and webhooks",
+      "Third-party integrations and notifications",
+      "Real-time data synchronization",
+      "Payment and transactional notifications"
+    ],
+    "used_by": [
+      "Slack",
+      "Zapier",
+      "Stripe"
+    ],
+    "docs": "https://docs.svix.com/",
+    "tutorial": "https://docs.svix.com/getting-started",
+    "added": "2026-07-05"
+  },
+  {
+    "id": "runwayml",
+    "name": "Runway ML",
+    "category": "Platform",
+    "domain": "AI/ML",
+    "eli5": "Runway ML is like a magic tool that lets artists and creators use powerful AI to generate videos and images without needing to be computer scientists.",
+    "description": "Runway ML is a generative AI platform offering video and image generation, editing, and AI-powered creative tools accessible through an intuitive interface. It enables content creators and developers to leverage cutting-edge machine learning models without deep technical expertise.",
+    "use_cases": [
+      "AI video generation and editing",
+      "Image synthesis and manipulation",
+      "Content creation automation",
+      "Motion tracking and visual effects"
+    ],
+    "used_by": [
+      "Adobe",
+      "Getty Images",
+      "major production studios"
+    ],
+    "docs": "https://docs.runwayml.com/",
+    "tutorial": "https://learn.runwayml.com/",
+    "added": "2026-07-05"
   }
 ]

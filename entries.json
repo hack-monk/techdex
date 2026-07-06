@@ -7271,5 +7271,115 @@
     "docs": "https://docs.runwayml.com/",
     "tutorial": "https://learn.runwayml.com/",
     "added": "2026-07-05"
+  },
+  {
+    "id": "serf",
+    "name": "Serf",
+    "category": "Tool",
+    "domain": "DevOps",
+    "eli5": "Serf is like a group chat for your computers where they automatically tell each other when someone joins, leaves, or has a problem.",
+    "description": "Serf is a decentralized solution for cluster membership, failure detection, and orchestration that uses gossip protocols to communicate between nodes. It's lighter than Consul and ideal for dynamic infrastructure environments.",
+    "use_cases": [
+      "Detecting node failures and triggering automatic remediation",
+      "Coordinating service deployments across distributed clusters",
+      "Building custom orchestration logic on top of cluster state",
+      "Implementing dynamic service discovery in microservices"
+    ],
+    "used_by": [
+      "HashiCorp",
+      "SoundCloud",
+      "Orbitz"
+    ],
+    "docs": "https://www.serf.io/docs/",
+    "tutorial": "https://www.serf.io/intro/getting-started/",
+    "added": "2026-07-06"
+  },
+  {
+    "id": "litestream",
+    "name": "Litestream",
+    "category": "Tool",
+    "domain": "Database",
+    "eli5": "Litestream is like having a backup camera that constantly watches your SQLite database and sends copies to the cloud so you never lose data.",
+    "description": "Litestream is a streaming replication tool for SQLite that continuously backs up your database to cloud storage (S3, Azure, GCS). It enables you to run SQLite in production with disaster recovery and high availability.",
+    "use_cases": [
+      "Replicating SQLite databases to cloud storage for disaster recovery",
+      "Running stateful applications on serverless platforms with persistent storage",
+      "Implementing read replicas of SQLite databases",
+      "Migrating from traditional databases to SQLite with safety guarantees"
+    ],
+    "used_by": [
+      "Fly.io",
+      "Render",
+      "Railway"
+    ],
+    "docs": "https://litestream.io/",
+    "tutorial": "https://litestream.io/getting-started/",
+    "added": "2026-07-06"
+  },
+  {
+    "id": "frpc",
+    "name": "Frp (Fast Reverse Proxy)",
+    "category": "Tool",
+    "domain": "Networking",
+    "eli5": "Frp is like a secret tunnel that lets you safely access a computer hidden behind a firewall from the internet without opening ports.",
+    "description": "Frp is a fast reverse proxy written in Go that exposes local servers behind NAT or firewalls to the internet via a public server. It's widely used for exposing internal services, port forwarding, and creating secure tunnels.",
+    "use_cases": [
+      "Exposing local development servers for webhook testing",
+      "Accessing internal services from outside networks securely",
+      "Creating reverse tunnels for remote access to IoT devices",
+      "Load balancing and multiplexing connections across multiple clients"
+    ],
+    "used_by": [
+      "Alibaba Cloud",
+      "Tencent",
+      "ByteDance"
+    ],
+    "docs": "https://github.com/fatedier/frp",
+    "tutorial": "https://gofrp.org/docs/setup/",
+    "added": "2026-07-06"
+  },
+  {
+    "id": "marimo",
+    "name": "Marimo",
+    "category": "Framework",
+    "domain": "Frontend",
+    "eli5": "Marimo is like a smart notebook that lets you write Python code that automatically updates everything when you change something, kind of like a spreadsheet but more powerful.",
+    "description": "Marimo is a reactive Python notebook that automatically re-runs cells when dependencies change, providing an Excel-like reactive programming experience. It's designed to be reproducible, version-controllable, and deployable as web applications.",
+    "use_cases": [
+      "Building interactive data science dashboards and reports",
+      "Creating reproducible computational notebooks for research",
+      "Deploying Python analyses as standalone web applications",
+      "Teaching programming with immediate visual feedback"
+    ],
+    "used_by": [
+      "Google Research",
+      "Meta AI",
+      "Stanford University"
+    ],
+    "docs": "https://docs.marooml.io/",
+    "tutorial": "https://marooml.io/#getting-started",
+    "added": "2026-07-06"
+  },
+  {
+    "id": "sparrow",
+    "name": "Sparrow",
+    "category": "Tool",
+    "domain": "AI/ML",
+    "eli5": "Sparrow is like a smart robot that reads documents and tables and can answer questions about them by finding and understanding the information inside.",
+    "description": "Sparrow is Google's research tool for document understanding and table question-answering powered by foundation models. It demonstrates advanced capabilities in extracting information from complex layouts and answering questions about document content.",
+    "use_cases": [
+      "Automated extraction of information from unstructured documents",
+      "Question-answering over tables and semi-structured data",
+      "Document classification and information retrieval",
+      "Processing invoices, forms, and business documents at scale"
+    ],
+    "used_by": [
+      "Google Cloud",
+      "Enterprise AI platforms",
+      "Document processing startups"
+    ],
+    "docs": "https://github.com/google-research/sparrow",
+    "tutorial": "https://github.com/google-research/sparrow/blob/main/README.md",
+    "added": "2026-07-06"
   }
 ]

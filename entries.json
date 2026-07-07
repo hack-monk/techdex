@@ -7381,5 +7381,120 @@
     "docs": "https://github.com/google-research/sparrow",
     "tutorial": "https://github.com/google-research/sparrow/blob/main/README.md",
     "added": "2026-07-06"
+  },
+  {
+    "id": "playwright",
+    "name": "Playwright",
+    "category": "Tool",
+    "domain": "Frontend",
+    "eli5": "It's like a robot that can click buttons and fill out forms on websites automatically, so you can test if your website works correctly.",
+    "description": "Playwright is a cross-browser automation framework that enables testing and automation of web applications across Chromium, Firefox, and WebKit. It's widely used for end-to-end testing, web scraping, and performance testing in modern development pipelines.",
+    "use_cases": [
+      "End-to-end testing of web applications",
+      "Cross-browser compatibility testing",
+      "Web scraping and data extraction",
+      "Automated visual regression testing"
+    ],
+    "used_by": [
+      "Microsoft",
+      "Google",
+      "Meta",
+      "Stripe"
+    ],
+    "docs": "https://playwright.dev/",
+    "tutorial": "https://playwright.dev/docs/intro",
+    "added": "2026-07-07"
+  },
+  {
+    "id": "consul-template",
+    "name": "Consul Template",
+    "category": "Tool",
+    "domain": "DevOps",
+    "eli5": "It's like a mail-merge program that automatically fills in a template with information that changes, so your configuration files always stay up-to-date.",
+    "description": "Consul Template is a lightweight tool that uses Consul service registry data to dynamically render configuration files and restart services. It enables zero-downtime deployments and automatic service discovery integration without requiring application code changes.",
+    "use_cases": [
+      "Dynamic load balancer configuration management",
+      "Certificate rotation and renewal automation",
+      "Service discovery-driven application configuration",
+      "Multi-datacenter deployment orchestration"
+    ],
+    "used_by": [
+      "HashiCorp",
+      "AWS",
+      "Netflix",
+      "Uber"
+    ],
+    "docs": "https://github.com/hashicorp/consul-template",
+    "tutorial": "https://learn.hashicorp.com/tutorials/consul/consul-template",
+    "added": "2026-07-07"
+  },
+  {
+    "id": "weaviate-search",
+    "name": "Weaviate Vector Search",
+    "category": "Platform",
+    "domain": "AI/ML",
+    "eli5": "It's like a super-smart librarian who organizes books not just by title, but by meaning, so you can find what you're looking for even if you describe it in different words.",
+    "description": "Weaviate is an open-source vector database and AI-native search engine that enables semantic search, similarity matching, and retrieval-augmented generation (RAG) applications. It's designed to scale vector embeddings with built-in support for large language models and real-time indexing.",
+    "use_cases": [
+      "Semantic search and recommendation systems",
+      "Retrieval-augmented generation (RAG) for LLM applications",
+      "Similarity-based product and content discovery",
+      "Vector-based image and document search"
+    ],
+    "used_by": [
+      "Neon",
+      "Canva",
+      "GetApp",
+      "Siemens"
+    ],
+    "docs": "https://weaviate.io/developers/weaviate",
+    "tutorial": "https://weaviate.io/learn",
+    "added": "2026-07-07"
+  },
+  {
+    "id": "vault-secrets-auth",
+    "name": "Vault Secrets Auth",
+    "category": "Tool",
+    "domain": "Security",
+    "eli5": "It's like a super-secure safe that keeps your passwords and secret keys locked up, and only lets the right people or programs access them when needed.",
+    "description": "HashiCorp Vault Secrets Auth is an identity and access management solution that provides dynamic secret generation, encryption, and audit logging for credentials across infrastructure. It eliminates hardcoded secrets and enables fine-grained access control for applications and teams.",
+    "use_cases": [
+      "Centralized secrets management for microservices",
+      "Dynamic database credential generation",
+      "PKI and certificate lifecycle management",
+      "Audit logging and compliance reporting"
+    ],
+    "used_by": [
+      "Citrix",
+      "Expedia",
+      "DuckDuckGo",
+      "Deloitte"
+    ],
+    "docs": "https://www.vaultproject.io/docs",
+    "tutorial": "https://learn.hashicorp.com/collections/vault/getting-started",
+    "added": "2026-07-07"
+  },
+  {
+    "id": "dbt-semantic-layer",
+    "name": "dbt Semantic Layer",
+    "category": "Tool",
+    "domain": "Data Engineering",
+    "eli5": "It's like creating a standardized translator between your data warehouse and all your business tools, so everyone gets the same answer when they ask about your metrics.",
+    "description": "dbt Semantic Layer is a centralized metrics platform that defines business metrics once and makes them available across analytics tools and applications. It ensures consistency in metric definitions and enables self-service analytics while maintaining data governance and quality standards.",
+    "use_cases": [
+      "Centralized business metrics definition and governance",
+      "Self-service analytics for non-technical users",
+      "Multi-tool metric consistency and reconciliation",
+      "Data lineage and impact analysis for metrics"
+    ],
+    "used_by": [
+      "Shopify",
+      "Figma",
+      "DoorDash",
+      "Glossier"
+    ],
+    "docs": "https://docs.getdbt.com/docs/use-cases/semantic-layer",
+    "tutorial": "https://docs.getdbt.com/guides/dbt-semantic-layer",
+    "added": "2026-07-07"
   }
 ]

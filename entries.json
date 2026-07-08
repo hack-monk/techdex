@@ -7496,5 +7496,74 @@
     "docs": "https://docs.getdbt.com/docs/use-cases/semantic-layer",
     "tutorial": "https://docs.getdbt.com/guides/dbt-semantic-layer",
     "added": "2026-07-07"
+  },
+  {
+    "id": "apache-superset",
+    "name": "Apache Superset",
+    "category": "Tool",
+    "domain": "Data Engineering",
+    "eli5": "It's like a magic coloring book where you tell it what questions to ask your data, and it automatically draws pretty pictures to show you the answers.",
+    "description": "Apache Superset is an open-source data visualization and business intelligence platform that allows users to create interactive dashboards and explore datasets through a web interface. It supports multiple database backends and provides SQL query capabilities alongside drag-and-drop dashboard creation.",
+    "use_cases": [
+      "Building interactive business intelligence dashboards for stakeholders",
+      "Exploring and querying data without writing complex SQL",
+      "Creating real-time monitoring dashboards for metrics and KPIs",
+      "Sharing data insights across departments with role-based access control"
+    ],
+    "used_by": [
+      "Airbnb",
+      "Lyft",
+      "Cisco",
+      "Twitter"
+    ],
+    "docs": "https://superset.apache.org/",
+    "tutorial": "https://superset.apache.org/docs/intro",
+    "added": "2026-07-08"
+  },
+  {
+    "id": "bigeye",
+    "name": "Bigeye",
+    "category": "Tool",
+    "domain": "Data Engineering",
+    "eli5": "It's like having a quality inspector at a restaurant who watches the kitchen and tells you immediately if something looks wrong with the food being prepared.",
+    "description": "Bigeye is a data observability platform that monitors data quality, schema changes, and anomalies in real-time across data warehouses and pipelines. It helps teams detect and resolve data issues before they impact downstream analytics and business decisions.",
+    "use_cases": [
+      "Monitoring data quality metrics and detecting anomalies automatically",
+      "Alerting on schema changes and breaking data contracts",
+      "Tracing data lineage to identify root causes of quality issues",
+      "Building data trust scorecards for business stakeholders"
+    ],
+    "used_by": [
+      "SiriusXM",
+      "Toast",
+      "Yelp",
+      "DoorDash"
+    ],
+    "docs": "https://docs.bigeye.com/",
+    "tutorial": "https://docs.bigeye.com/docs/getting-started",
+    "added": "2026-07-08"
+  },
+  {
+    "id": "zerossl",
+    "name": "ZeroSSL",
+    "category": "Tool",
+    "domain": "Security",
+    "eli5": "It's like a digital bouncer that checks if you're really who you say you are when you visit a website, and it doesn't charge you money for the checking service.",
+    "description": "ZeroSSL is an automated SSL/TLS certificate provider and management platform offering free and paid certificates with easy integration for ACME protocol support. It simplifies certificate lifecycle management for websites and APIs at scale.",
+    "use_cases": [
+      "Obtaining free SSL/TLS certificates for websites and APIs",
+      "Automating certificate renewal and deployment pipelines",
+      "Managing multi-domain and wildcard certificates with flexibility",
+      "Compliance with HTTPS requirements for e-commerce and sensitive applications"
+    ],
+    "used_by": [
+      "Automattic",
+      "Yext",
+      "Protocol Labs",
+      "Namecheap"
+    ],
+    "docs": "https://zerossl.com/documentation/",
+    "tutorial": "https://zerossl.com/documentation/getting-started/",
+    "added": "2026-07-08"
   }
 ]

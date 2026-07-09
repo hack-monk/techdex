@@ -7565,5 +7565,51 @@
     "docs": "https://zerossl.com/documentation/",
     "tutorial": "https://zerossl.com/documentation/getting-started/",
     "added": "2026-07-08"
+  },
+  {
+    "id": "openstack",
+    "name": "OpenStack",
+    "category": "Platform",
+    "domain": "Cloud",
+    "eli5": "It's like a recipe that lets you build your own private cloud computer, just like how you can make your own pizza instead of ordering from a restaurant.",
+    "description": "OpenStack is an open-source cloud computing platform that allows organizations to build and manage large pools of computing, storage, and networking resources. It provides an alternative to public cloud providers by enabling on-premises or hybrid cloud infrastructure.",
+    "use_cases": [
+      "Building private cloud infrastructure for large enterprises",
+      "Hybrid cloud deployments combining on-premises and public cloud",
+      "Telecommunications and service provider cloud platforms",
+      "High-performance computing and research computing clusters"
+    ],
+    "used_by": [
+      "CERN",
+      "PayPal",
+      "Best Buy",
+      "Walmart"
+    ],
+    "docs": "https://docs.openstack.org/",
+    "tutorial": "https://docs.openstack.org/install/",
+    "added": "2026-07-09"
+  },
+  {
+    "id": "apache-iceberg-catalog",
+    "name": "Apache Iceberg Catalog",
+    "category": "Tool",
+    "domain": "Data Engineering",
+    "eli5": "It's like a super-organized filing cabinet for your data that remembers every version of every file, so you can go back in time to see what things looked like before.",
+    "description": "Apache Iceberg is an open-table format designed for large-scale, analytic datasets that provides ACID transactions, time travel, and hidden partitioning. It solves problems with traditional data lake formats by offering schema evolution and reliable concurrent writes.",
+    "use_cases": [
+      "Data lakehouse implementations with ACID guarantees",
+      "Time-travel queries to audit data changes and rollback corruptions",
+      "Schema evolution without breaking existing queries",
+      "Multi-engine analytics with consistent data views across Spark, Trino, and Flink"
+    ],
+    "used_by": [
+      "Netflix",
+      "Adobe",
+      "Apple",
+      "Booking.com"
+    ],
+    "docs": "https://iceberg.apache.org/",
+    "tutorial": "https://iceberg.apache.org/docs/latest/getting-started/",
+    "added": "2026-07-09"
   }
 ]

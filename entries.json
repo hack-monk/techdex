@@ -7611,5 +7611,71 @@
     "docs": "https://iceberg.apache.org/",
     "tutorial": "https://iceberg.apache.org/docs/latest/getting-started/",
     "added": "2026-07-09"
+  },
+  {
+    "id": "sablier",
+    "name": "Sablier",
+    "category": "Tool",
+    "domain": "Other",
+    "eli5": "It's like a smart piggy bank for cryptocurrency that automatically releases money over time, like getting a paycheck spread out into tiny daily deposits.",
+    "description": "Sablier is a protocol for streaming payments on blockchain, enabling continuous money flows instead of lump-sum transfers. It's widely used for salary automation, vesting schedules, and continuous funding mechanisms in Web3.",
+    "use_cases": [
+      "Automating token vesting for employees and investors",
+      "Creating continuous salary or subscription payments on-chain",
+      "Setting up real-time revenue sharing between parties",
+      "Managing grant disbursements with time-based release schedules"
+    ],
+    "used_by": [
+      "Aave",
+      "Uniswap",
+      "Yearn Finance"
+    ],
+    "docs": "https://docs.sablier.com",
+    "tutorial": "https://github.com/sablier-labs/v2-core",
+    "added": "2026-07-10"
+  },
+  {
+    "id": "neon-serverless-postgres",
+    "name": "Neon Serverless Postgres",
+    "category": "Platform",
+    "domain": "Database",
+    "eli5": "It's like having a PostgreSQL database that magically appears when you need it and disappears when you don't, so you only pay for what you actually use.",
+    "description": "Neon is a serverless PostgreSQL platform that auto-scales and branches like Git, enabling developers to build with PostgreSQL without managing infrastructure. It provides instant provisioning, automated scaling, and database branching for development workflows.",
+    "use_cases": [
+      "Building serverless applications with PostgreSQL backend",
+      "Creating database branches for feature development and testing",
+      "Reducing database infrastructure costs with auto-scaling",
+      "Enabling rapid prototyping without infrastructure setup"
+    ],
+    "used_by": [
+      "Vercel",
+      "Prisma",
+      "Supabase developers"
+    ],
+    "docs": "https://neon.tech/docs",
+    "tutorial": "https://neon.tech/docs/get-started-with-neon",
+    "added": "2026-07-10"
+  },
+  {
+    "id": "ollama-vision",
+    "name": "Ollama Vision",
+    "category": "Tool",
+    "domain": "AI/ML",
+    "eli5": "It's like giving AI the ability to see pictures, so you can show it images and ask questions about what's in them, all running on your own computer.",
+    "description": "Ollama Vision extends the Ollama platform with multimodal capabilities, allowing vision language models to process and understand images locally without cloud dependencies. It enables private, on-device image analysis and visual reasoning.",
+    "use_cases": [
+      "Building document processing and OCR applications locally",
+      "Creating image analysis features without cloud API costs",
+      "Enabling privacy-preserving visual search applications",
+      "Developing computer vision features with open-source models"
+    ],
+    "used_by": [
+      "Anthropic partners",
+      "Open-source communities",
+      "Enterprise AI teams"
+    ],
+    "docs": "https://github.com/ollama/ollama",
+    "tutorial": "https://github.com/ollama/ollama/blob/main/README.md",
+    "added": "2026-07-10"
   }
 ]

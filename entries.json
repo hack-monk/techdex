@@ -7757,5 +7757,120 @@
     "docs": "https://docs.shuttle.rs/",
     "tutorial": "https://docs.shuttle.rs/getting-started",
     "added": "2026-07-11"
+  },
+  {
+    "id": "oxc",
+    "name": "OXC",
+    "category": "Tool",
+    "domain": "Frontend",
+    "eli5": "It's like a super-fast spell checker for JavaScript code that catches mistakes before you run it.",
+    "description": "OXC is a high-performance JavaScript linter and parser written in Rust, designed as a faster alternative to ESLint. It provides comprehensive code quality checks with significantly improved speed for large codebases.",
+    "use_cases": [
+      "Linting monorepos with thousands of files",
+      "Pre-commit hooks requiring sub-second feedback",
+      "IDE integration for real-time code analysis",
+      "CI/CD pipelines with strict performance requirements"
+    ],
+    "used_by": [
+      "Alibaba",
+      "Shopify",
+      "Vercel",
+      "Datadog"
+    ],
+    "docs": "https://oxc.rs/",
+    "tutorial": "https://oxc.rs/docs/guide/",
+    "added": "2026-07-12"
+  },
+  {
+    "id": "neon-branching",
+    "name": "Neon Branching",
+    "category": "Platform",
+    "domain": "Database",
+    "eli5": "It's like making instant copies of your entire database so you can safely test changes without touching the real one.",
+    "description": "Neon provides serverless PostgreSQL with built-in branching capabilities, enabling developers to create isolated database copies for testing, staging, and feature development. Each branch is a full, independent database instance that can be created and destroyed instantly.",
+    "use_cases": [
+      "Preview environments for pull requests",
+      "Running parallel integration tests",
+      "Safe database schema migrations",
+      "Feature development in isolated database environments"
+    ],
+    "used_by": [
+      "Vercel",
+      "Retool",
+      "Raycast",
+      "Linear"
+    ],
+    "docs": "https://neon.tech/docs/guides/branching",
+    "tutorial": "https://neon.tech/docs/introduction",
+    "added": "2026-07-12"
+  },
+  {
+    "id": "attestation",
+    "name": "Attestation",
+    "category": "Tool",
+    "domain": "Security",
+    "eli5": "It's like a tamper-proof badge that proves your software came from a trusted source and wasn't modified.",
+    "description": "Software attestation uses cryptographic signatures to prove the provenance and integrity of builds, enabling secure supply chain verification. Tools like Sigstore make attestation accessible for verifying that binaries were built as claimed.",
+    "use_cases": [
+      "Verifying software supply chain security",
+      "Proving build artifact authenticity",
+      "Compliance with SLSA framework requirements",
+      "Detecting and preventing compromised dependencies"
+    ],
+    "used_by": [
+      "Google",
+      "Red Hat",
+      "Chainguard",
+      "Linux Foundation"
+    ],
+    "docs": "https://slsa.dev/",
+    "tutorial": "https://docs.sigstore.dev/",
+    "added": "2026-07-12"
+  },
+  {
+    "id": "mcp-client",
+    "name": "MCP Client",
+    "category": "Framework",
+    "domain": "AI/ML",
+    "eli5": "It's like a universal remote control that lets AI assistants use any tool or program you connect to it.",
+    "description": "Model Context Protocol (MCP) Client enables AI models and applications to securely interact with external tools, data sources, and services through a standardized interface. It's used in Claude, various IDEs, and agent frameworks.",
+    "use_cases": [
+      "Connecting AI assistants to internal company tools",
+      "Enabling code editors with AI-powered capabilities",
+      "Building multi-tool AI agents",
+      "Secure API access for language models"
+    ],
+    "used_by": [
+      "Anthropic",
+      "Cline",
+      "Continue",
+      "Jetbrains"
+    ],
+    "docs": "https://modelcontextprotocol.io/introduction",
+    "tutorial": "https://modelcontextprotocol.io/quickstart/server",
+    "added": "2026-07-12"
+  },
+  {
+    "id": "openfga",
+    "name": "OpenFGA",
+    "category": "Tool",
+    "domain": "Identity",
+    "eli5": "It's like a permission system that decides who can do what, written as simple sentences that are easy to understand.",
+    "description": "OpenFGA is an open-source authorization engine using the Relationship-Based Access Control (ReBAC) model, enabling scalable fine-grained permission management. It can handle complex permission hierarchies and is used by companies needing sophisticated access control.",
+    "use_cases": [
+      "Multi-tenant SaaS permission systems",
+      "Hierarchical team and role management",
+      "Marketplace platforms with complex sharing rules",
+      "Document collaboration with granular permissions"
+    ],
+    "used_by": [
+      "Auth0",
+      "Okta",
+      "Slack",
+      "Figma"
+    ],
+    "docs": "https://openfga.dev/docs",
+    "tutorial": "https://openfga.dev/docs/getting-started",
+    "added": "2026-07-12"
   }
 ]

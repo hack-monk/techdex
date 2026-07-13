@@ -7872,5 +7872,94 @@
     "docs": "https://openfga.dev/docs",
     "tutorial": "https://openfga.dev/docs/getting-started",
     "added": "2026-07-12"
+  },
+  {
+    "id": "anthropic-compute",
+    "name": "Anthropic Compute",
+    "category": "Platform",
+    "domain": "AI/ML",
+    "eli5": "It's like renting a super-powerful brain in the cloud that can think through really hard problems for you.",
+    "description": "Anthropic Compute is an API platform that provides access to Claude models with extended thinking capabilities for complex reasoning tasks. It enables developers to leverage advanced AI reasoning without managing their own infrastructure.",
+    "use_cases": [
+      "Research analysis and literature review automation",
+      "Complex problem-solving and algorithm design",
+      "Mathematical proofs and verification",
+      "Strategic planning and decision-making support"
+    ],
+    "used_by": [
+      "Anthropic",
+      "Y Combinator startups",
+      "Enterprise research teams"
+    ],
+    "docs": "https://docs.anthropic.com/",
+    "tutorial": "https://docs.anthropic.com/quickstart",
+    "added": "2026-07-13"
+  },
+  {
+    "id": "elyra",
+    "name": "Elyra",
+    "category": "Tool",
+    "domain": "Data Engineering",
+    "eli5": "It's like a visual puzzle builder where you can drag-and-drop pieces to create data pipelines without writing code.",
+    "description": "Elyra is an open-source JupyterLab extension that provides visual tools for building and running data science and machine learning pipelines. It simplifies workflow orchestration by enabling both code-based and visual pipeline creation.",
+    "use_cases": [
+      "Rapid prototyping of ML workflows",
+      "Visual data pipeline orchestration",
+      "Kubeflow and Apache Airflow integration",
+      "Notebook-to-production pipeline conversion"
+    ],
+    "used_by": [
+      "IBM",
+      "Red Hat",
+      "Open Data Foundation"
+    ],
+    "docs": "https://elyra.readthedocs.io/",
+    "tutorial": "https://elyra.readthedocs.io/en/latest/getting_started/overview.html",
+    "added": "2026-07-13"
+  },
+  {
+    "id": "openwrt",
+    "name": "OpenWrt",
+    "category": "Platform",
+    "domain": "Networking",
+    "eli5": "It's like replacing the simple brain in your WiFi router with a super-smart custom one that can do way more tricks.",
+    "description": "OpenWrt is a free and open-source operating system for embedded devices and network routers. It provides advanced networking capabilities, custom firmware, and extensibility beyond vendor-supplied router software.",
+    "use_cases": [
+      "Custom router firmware deployment",
+      "Network traffic management and QoS",
+      "VPN and VPN server setup",
+      "IoT gateway and edge computing"
+    ],
+    "used_by": [
+      "TP-Link",
+      "Netgear",
+      "ASUS",
+      "Various ISPs and enterprises"
+    ],
+    "docs": "https://openwrt.org/docs/start",
+    "tutorial": "https://openwrt.org/docs/guide-user/start",
+    "added": "2026-07-13"
+  },
+  {
+    "id": "unleash",
+    "name": "Unleash",
+    "category": "Tool",
+    "domain": "DevOps",
+    "eli5": "It's like a light switch that lets you turn features on or off for different users without redeploying your app.",
+    "description": "Unleash is an open-source feature management platform that enables teams to control feature rollouts, A/B testing, and gradual deployments without code changes. It provides a centralized dashboard for managing feature flags across multiple applications.",
+    "use_cases": [
+      "Canary deployments and gradual feature rollouts",
+      "A/B testing and experimentation",
+      "Kill switches for emergency feature disabling",
+      "Permission-based feature access control"
+    ],
+    "used_by": [
+      "Spotify",
+      "Yara",
+      "Various enterprise teams"
+    ],
+    "docs": "https://docs.getunleash.io/",
+    "tutorial": "https://docs.getunleash.io/getting-started",
+    "added": "2026-07-13"
   }
 ]

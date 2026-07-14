@@ -7961,5 +7961,93 @@
     "docs": "https://docs.getunleash.io/",
     "tutorial": "https://docs.getunleash.io/getting-started",
     "added": "2026-07-13"
+  },
+  {
+    "id": "astria",
+    "name": "Astria",
+    "category": "Platform",
+    "domain": "Cloud",
+    "eli5": "Astria is like a shared kitchen where different restaurants can cook at the same time without getting in each other's way, making it cheaper and faster than each having their own kitchen.",
+    "description": "Astria is a modular blockchain platform that separates consensus from execution, allowing applications to run on shared sequencers while maintaining sovereign rollups. It enables developers to launch custom blockchains with lower infrastructure costs and faster time-to-market.",
+    "use_cases": [
+      "Building sovereign rollups without maintaining full consensus infrastructure",
+      "Running high-throughput applications on shared sequencers",
+      "Reducing blockchain infrastructure costs for startups",
+      "Creating interoperable rollup ecosystems"
+    ],
+    "used_by": [
+      "Celestia ecosystem projects",
+      "Various Cosmos developers",
+      "Rollup startups"
+    ],
+    "docs": "https://docs.astria.org",
+    "tutorial": "https://docs.astria.org/overview",
+    "added": "2026-07-14"
+  },
+  {
+    "id": "river",
+    "name": "River",
+    "category": "Tool",
+    "domain": "Backend",
+    "eli5": "River is like a reliable mailbox for your computer tasks\u2014it makes sure every job gets delivered and done even if things go wrong temporarily.",
+    "description": "River is a fast, reliable job queue for Go and Python that provides guaranteed job delivery, automatic retries, and job expiration. It simplifies background job processing with minimal configuration while maintaining high throughput and low latency.",
+    "use_cases": [
+      "Processing asynchronous background jobs reliably",
+      "Sending scheduled notifications and emails",
+      "Coordinating multi-step workflows with retries",
+      "Handling time-sensitive batch processing tasks"
+    ],
+    "used_by": [
+      "Various Go/Python startups",
+      "Fintech applications",
+      "SaaS platforms"
+    ],
+    "docs": "https://riverqueue.com/docs",
+    "tutorial": "https://riverqueue.com/docs/getting-started",
+    "added": "2026-07-14"
+  },
+  {
+    "id": "zarf",
+    "name": "Zarf",
+    "category": "Tool",
+    "domain": "DevOps",
+    "eli5": "Zarf is like a magic box that puts everything your application needs inside it so you can carry it anywhere\u2014even places with no internet.",
+    "description": "Zarf is an open-source tool by the U.S. Department of Defense that packages Kubernetes applications and dependencies into portable bundles for air-gapped and disconnected environments. It simplifies deploying complex systems in restricted networks without external package repositories.",
+    "use_cases": [
+      "Deploying applications in air-gapped/disconnected environments",
+      "Packaging Kubernetes clusters with all dependencies included",
+      "Defense and government infrastructure deployments",
+      "Reducing deployment complexity in restricted network environments"
+    ],
+    "used_by": [
+      "U.S. Department of Defense",
+      "Enterprise security teams",
+      "Air-gapped deployment specialists"
+    ],
+    "docs": "https://docs.zarf.dev",
+    "tutorial": "https://docs.zarf.dev/getting-started",
+    "added": "2026-07-14"
+  },
+  {
+    "id": "syntaxe",
+    "name": "Syntaxe",
+    "category": "Tool",
+    "domain": "Security",
+    "eli5": "Syntaxe is like a security guard for your code that checks every line to find hidden problems before hackers can exploit them.",
+    "description": "Syntaxe is a static application security testing (SAST) platform that scans source code to identify vulnerabilities, misconfigurations, and security patterns using AI-enhanced analysis. It integrates into CI/CD pipelines to catch security issues early in the development lifecycle.",
+    "use_cases": [
+      "Continuous security scanning in CI/CD pipelines",
+      "Identifying OWASP Top 10 vulnerabilities in code",
+      "Detecting infrastructure-as-code misconfigurations",
+      "Compliance and security posture management"
+    ],
+    "used_by": [
+      "Enterprise software companies",
+      "Financial institutions",
+      "Healthcare technology providers"
+    ],
+    "docs": "https://syntaxe.io/docs",
+    "tutorial": "https://syntaxe.io/docs/getting-started",
+    "added": "2026-07-14"
   }
 ]

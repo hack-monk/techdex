@@ -8049,5 +8049,51 @@
     "docs": "https://syntaxe.io/docs",
     "tutorial": "https://syntaxe.io/docs/getting-started",
     "added": "2026-07-14"
+  },
+  {
+    "id": "anthropic-bedrock",
+    "name": "Amazon Bedrock",
+    "category": "Platform",
+    "domain": "AI/ML",
+    "eli5": "It's like a playground where you can play with different AI toys without having to buy each one separately.",
+    "description": "Amazon Bedrock is a fully managed service that provides access to foundation models from various providers including Anthropic, Meta, and Cohere through a single API. It enables developers to build generative AI applications without managing infrastructure.",
+    "use_cases": [
+      "Building chatbots and conversational AI applications",
+      "Text generation and content creation workflows",
+      "Document analysis and summarization at scale",
+      "Retrieval-augmented generation (RAG) systems"
+    ],
+    "used_by": [
+      "Amazon",
+      "Accenture",
+      "BMW",
+      "GE"
+    ],
+    "docs": "https://docs.aws.amazon.com/bedrock/",
+    "tutorial": "https://aws.amazon.com/bedrock/getting-started/",
+    "added": "2026-07-15"
+  },
+  {
+    "id": "spacelift-iac",
+    "name": "Spacelift",
+    "category": "Platform",
+    "domain": "DevOps",
+    "eli5": "It's like a smart controller that safely manages changes to your entire infrastructure, checking everything before making updates.",
+    "description": "Spacelift is a CI/CD platform purpose-built for infrastructure-as-code workflows supporting Terraform, CloudFormation, Pulumi, and other IaC tools. It provides drift detection, policy as code, cost estimation, and collaborative workflows for infrastructure management.",
+    "use_cases": [
+      "Terraform automation and drift detection across multiple environments",
+      "Infrastructure change approvals and policy enforcement",
+      "Multi-cloud infrastructure orchestration and cost estimation",
+      "GitOps-based infrastructure provisioning and compliance"
+    ],
+    "used_by": [
+      "Stripe",
+      "Figma",
+      "Vercel",
+      "Wise"
+    ],
+    "docs": "https://docs.spacelift.io/",
+    "tutorial": "https://docs.spacelift.io/getting-started",
+    "added": "2026-07-15"
   }
 ]

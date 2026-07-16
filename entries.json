@@ -8095,5 +8095,28 @@
     "docs": "https://docs.spacelift.io/",
     "tutorial": "https://docs.spacelift.io/getting-started",
     "added": "2026-07-15"
+  },
+  {
+    "id": "cloudflare-workers",
+    "name": "Cloudflare Workers",
+    "category": "Platform",
+    "domain": "Backend",
+    "eli5": "Tiny computers spread all over the world that instantly process your website requests without needing a big server.",
+    "description": "Cloudflare Workers is a serverless computing platform that runs JavaScript/TypeScript code on Cloudflare's global edge network with sub-50ms latency worldwide. It enables developers to build full-stack applications without managing infrastructure.",
+    "use_cases": [
+      "API gateways and middleware",
+      "Real-time data processing at the edge",
+      "Personalized content delivery",
+      "Request routing and authentication"
+    ],
+    "used_by": [
+      "Discord",
+      "Shopify",
+      "Figma",
+      "Patreon"
+    ],
+    "docs": "https://developers.cloudflare.com/workers/",
+    "tutorial": "https://developers.cloudflare.com/workers/get-started/guide/",
+    "added": "2026-07-16"
   }
 ]

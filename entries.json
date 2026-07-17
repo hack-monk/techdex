@@ -8118,5 +8118,96 @@
     "docs": "https://developers.cloudflare.com/workers/",
     "tutorial": "https://developers.cloudflare.com/workers/get-started/guide/",
     "added": "2026-07-16"
+  },
+  {
+    "id": "tailcall",
+    "name": "Tailcall",
+    "category": "Framework",
+    "domain": "Backend",
+    "eli5": "Tailcall is like a super-smart mail sorter that combines letters from many different mailboxes into one organized pile so you only have to pick it up once.",
+    "description": "Tailcall is an open-source GraphQL engine that efficiently composes multiple data sources and APIs into a single GraphQL schema. It enables rapid API composition and data aggregation with built-in caching and performance optimization.",
+    "use_cases": [
+      "Aggregating data from multiple microservices into a unified GraphQL API",
+      "Reducing latency by composing REST APIs without writing backend code",
+      "Building API gateways that combine internal and third-party APIs",
+      "Creating real-time data pipelines that fetch from heterogeneous sources"
+    ],
+    "used_by": [
+      "Shopify",
+      "Hasura customers",
+      "Enterprise API teams"
+    ],
+    "docs": "https://tailcall.run/docs",
+    "tutorial": "https://tailcall.run/docs/getting-started",
+    "added": "2026-07-17"
+  },
+  {
+    "id": "neon-postgres",
+    "name": "Neon Postgres",
+    "category": "Platform",
+    "domain": "Database",
+    "eli5": "Neon Postgres is like a magic notebook that automatically saves copies of your work and can grow bigger whenever you need more pages, and you only pay for the pages you actually use.",
+    "description": "Neon is a serverless PostgreSQL platform that offers instant provisioning, branching for development, and consumption-based pricing. It eliminates the need to manage database infrastructure while maintaining full PostgreSQL compatibility.",
+    "use_cases": [
+      "Building serverless applications without managing database capacity",
+      "Creating isolated development and staging environments with database branching",
+      "Reducing database infrastructure costs with auto-scaling and pay-per-use pricing",
+      "Rapid prototyping and MVP development with instant PostgreSQL setup"
+    ],
+    "used_by": [
+      "Vercel",
+      "Supabase",
+      "Stripe",
+      "Hasura"
+    ],
+    "docs": "https://neon.tech/docs",
+    "tutorial": "https://neon.tech/docs/get-started-with-neon",
+    "added": "2026-07-17"
+  },
+  {
+    "id": "axiom-data",
+    "name": "Axiom Data",
+    "category": "Tool",
+    "domain": "SRE/Observability",
+    "eli5": "Axiom is like a super-fast record keeper that remembers everything that happens in your computer and lets you search through it instantly to find problems.",
+    "description": "Axiom is a serverless log management and analytics platform designed for modern cloud applications with unlimited cardinality and sub-second query performance. It provides log ingestion, storage, and analysis without the complexity of traditional observability stacks.",
+    "use_cases": [
+      "Ingesting and searching high-volume application logs at scale",
+      "Debugging production issues with full-text search across all log data",
+      "Building custom dashboards and alerts for operational metrics",
+      "Streaming logs from serverless functions and microservices"
+    ],
+    "used_by": [
+      "Vercel",
+      "Railway",
+      "Cloud providers",
+      "SaaS platforms"
+    ],
+    "docs": "https://axiom.co/docs",
+    "tutorial": "https://axiom.co/docs/getting-started",
+    "added": "2026-07-17"
+  },
+  {
+    "id": "runwayml-gen2",
+    "name": "Runway Gen-2",
+    "category": "Tool",
+    "domain": "AI/ML",
+    "eli5": "Runway Gen-2 is like having a magic artist who can watch a video you show them and then create new videos that continue the story or change what happens in the video.",
+    "description": "Runway Gen-2 is an AI-powered video generation and editing tool that can create, extend, and manipulate videos using natural language prompts. It's built for creators, filmmakers, and content producers who need fast, accessible AI-driven video production.",
+    "use_cases": [
+      "Generating short-form video content for social media from text descriptions",
+      "Extending or editing video sequences without manual frame-by-frame work",
+      "Creating visual effects and motion graphics through natural language commands",
+      "Prototyping video ideas and storyboards at speed"
+    ],
+    "used_by": [
+      "Adobe",
+      "TikTok creators",
+      "Independent filmmakers",
+      "Marketing agencies"
+    ],
+    "docs": "https://runwayml.com/research/gen-2",
+    "tutorial": "https://runwayml.com/guides",
+    "added": "2026-07-17"
   }
 ]

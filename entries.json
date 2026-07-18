@@ -8209,5 +8209,27 @@
     "docs": "https://runwayml.com/research/gen-2",
     "tutorial": "https://runwayml.com/guides",
     "added": "2026-07-17"
+  },
+  {
+    "id": "astro-db",
+    "name": "Astro DB",
+    "category": "Platform",
+    "domain": "Database",
+    "eli5": "It's like a notebook that lives in the cloud where your website can quickly write down and look up information without having to run your own filing cabinet.",
+    "description": "Astro DB is a fully managed SQL database built for the Astro framework, providing serverless PostgreSQL databases with built-in replication and backup. It's designed to seamlessly integrate with Astro applications for fast, reliable data persistence.",
+    "use_cases": [
+      "Building serverless web applications with Astro",
+      "Storing user data and content for static site generators",
+      "Managing application state without managing database infrastructure",
+      "Rapid prototyping and MVP development"
+    ],
+    "used_by": [
+      "Vercel ecosystem users",
+      "Astro community projects",
+      "Early-stage startups"
+    ],
+    "docs": "https://docs.astro.build/en/guides/astro-db/",
+    "tutorial": "https://docs.astro.build/en/guides/astro-db/",
+    "added": "2026-07-18"
   }
 ]

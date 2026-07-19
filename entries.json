@@ -8231,5 +8231,120 @@
     "docs": "https://docs.astro.build/en/guides/astro-db/",
     "tutorial": "https://docs.astro.build/en/guides/astro-db/",
     "added": "2026-07-18"
+  },
+  {
+    "id": "vitest",
+    "name": "Vitest",
+    "category": "Tool",
+    "domain": "Frontend",
+    "eli5": "It's like a teacher who checks your homework instantly while you're writing it, making sure everything is correct right away.",
+    "description": "Vitest is a blazing fast unit test framework powered by Vite, designed for modern JavaScript and TypeScript projects. It offers native ESM support, instant feedback, and compatibility with Jest, making it ideal for testing in the Vite ecosystem.",
+    "use_cases": [
+      "Unit testing Vue.js and React components",
+      "Testing TypeScript applications with instant HMR feedback",
+      "Running tests in parallel with minimal configuration",
+      "Migrating from Jest while maintaining compatibility"
+    ],
+    "used_by": [
+      "Nuxt",
+      "Vue.js",
+      "Vite",
+      "Element Plus"
+    ],
+    "docs": "https://vitest.dev/",
+    "tutorial": "https://vitest.dev/guide/",
+    "added": "2026-07-19"
+  },
+  {
+    "id": "restic",
+    "name": "Restic",
+    "category": "Tool",
+    "domain": "Storage",
+    "eli5": "It's like taking snapshots of your files and storing them in a secure locker that you can open from anywhere to restore what you lost.",
+    "description": "Restic is a modern backup program that is fast, secure, and efficient for backing up files to various backends including AWS S3, Google Cloud Storage, and self-hosted repositories. It provides incremental backups, deduplication, and end-to-end encryption out of the box.",
+    "use_cases": [
+      "Automated backup of application data to cloud storage",
+      "Server disaster recovery with encrypted backups",
+      "Personal and enterprise data archival",
+      "Multi-destination backup strategies with deduplication"
+    ],
+    "used_by": [
+      "Proxmox",
+      "Home Assistant",
+      "Enterprise backup users",
+      "Open-source projects"
+    ],
+    "docs": "https://restic.readthedocs.io/",
+    "tutorial": "https://restic.readthedocs.io/en/stable/030_preparing_a_new_repo.html",
+    "added": "2026-07-19"
+  },
+  {
+    "id": "milvus-lite",
+    "name": "Milvus Lite",
+    "category": "Platform",
+    "domain": "AI/ML",
+    "eli5": "It's like a smart filing cabinet that remembers not just the exact words you wrote, but the meaning and spirit of what you said.",
+    "description": "Milvus Lite is a lightweight, serverless vector database perfect for embedding search and AI applications, deployable in a single Python file without external dependencies. It powers semantic search, RAG systems, and recommendation engines with high performance and ease of use.",
+    "use_cases": [
+      "Building RAG (Retrieval-Augmented Generation) pipelines",
+      "Semantic search and similarity matching",
+      "AI chatbot knowledge base management",
+      "Recommendation systems with vector embeddings"
+    ],
+    "used_by": [
+      "Alibaba",
+      "Microsoft",
+      "Shopify",
+      "DuckDuckGo"
+    ],
+    "docs": "https://milvus.io/docs/milvus_lite.md",
+    "tutorial": "https://milvus.io/docs/quickstart.md",
+    "added": "2026-07-19"
+  },
+  {
+    "id": "lima",
+    "name": "Lima",
+    "category": "Tool",
+    "domain": "DevOps",
+    "eli5": "It's like having a virtual Linux computer running on your Mac that works just like the real thing, making your development feel natural.",
+    "description": "Lima launches Linux virtual machines with automatic file sharing and port forwarding, providing seamless Linux development environments on macOS and other platforms. It replaces Docker Desktop and Colima for many use cases with better performance and native integration.",
+    "use_cases": [
+      "Running Linux workloads natively on macOS",
+      "Development environment consistency across teams",
+      "Alternative to Docker Desktop for resource efficiency",
+      "Kubernetes cluster development and testing"
+    ],
+    "used_by": [
+      "Rancher",
+      "GitLab",
+      "CNCF projects",
+      "Enterprise development teams"
+    ],
+    "docs": "https://github.com/lima-vm/lima",
+    "tutorial": "https://github.com/lima-vm/lima#quick-start",
+    "added": "2026-07-19"
+  },
+  {
+    "id": "litestar",
+    "name": "Litestar",
+    "category": "Framework",
+    "domain": "Backend",
+    "eli5": "It's like a super-fast recipe for building web applications that writes boring parts for you while staying out of your way.",
+    "description": "Litestar (formerly Starlite) is a modern, fast ASGI framework for building scalable APIs and web applications in Python with exceptional developer experience. It provides automatic OpenAPI documentation, dependency injection, validation, and serialization out of the box.",
+    "use_cases": [
+      "Building high-performance REST and GraphQL APIs",
+      "Microservices architecture with automatic documentation",
+      "Real-time applications with WebSocket support",
+      "Data validation and serialization with Pydantic integration"
+    ],
+    "used_by": [
+      "TikTok",
+      "Alibaba",
+      "Bytes",
+      "Various fintech startups"
+    ],
+    "docs": "https://docs.litestar.dev/",
+    "tutorial": "https://docs.litestar.dev/latest/topics/getting-started.html",
+    "added": "2026-07-19"
   }
 ]

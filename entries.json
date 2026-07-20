@@ -8346,5 +8346,97 @@
     "docs": "https://docs.litestar.dev/",
     "tutorial": "https://docs.litestar.dev/latest/topics/getting-started.html",
     "added": "2026-07-19"
+  },
+  {
+    "id": "rustdesk",
+    "name": "RustDesk",
+    "category": "Tool",
+    "domain": "Networking",
+    "eli5": "It's like having a magic remote control that lets you see and control someone else's computer from yours, even if they're far away.",
+    "description": "RustDesk is an open-source remote desktop software written in Rust that provides secure, fast remote access and control. It offers an alternative to commercial solutions like TeamViewer with self-hosting capabilities and no bandwidth limits.",
+    "use_cases": [
+      "Remote IT support and helpdesk operations",
+      "System administrator access to servers and workstations",
+      "Educational remote classroom sessions",
+      "Self-hosted remote work infrastructure"
+    ],
+    "used_by": [
+      "Canonical",
+      "NixOS",
+      "System integrators worldwide",
+      "Enterprise IT departments"
+    ],
+    "docs": "https://rustdesk.com/docs",
+    "tutorial": "https://rustdesk.com/docs/en/self-host/",
+    "added": "2026-07-20"
+  },
+  {
+    "id": "milvus-cloud",
+    "name": "Zilliz Cloud (Milvus Cloud)",
+    "category": "Platform",
+    "domain": "Database",
+    "eli5": "It's like a giant library that organizes millions of pictures by how similar they look, so you can instantly find the ones most like your photo.",
+    "description": "Zilliz Cloud is a managed vector database platform purpose-built for AI applications, offering fully-hosted Milvus with enterprise features. It enables semantic search and similarity matching at scale for LLM applications, RAG systems, and AI-powered recommendation engines.",
+    "use_cases": [
+      "Semantic search over documents and embeddings",
+      "Recommendation systems powered by vector similarity",
+      "LLM retrieval-augmented generation (RAG) backends",
+      "Image and audio similarity search applications"
+    ],
+    "used_by": [
+      "Alibaba",
+      "Tencent",
+      "Microsoft",
+      "Various AI startups"
+    ],
+    "docs": "https://docs.zilliz.com/docs",
+    "tutorial": "https://docs.zilliz.com/docs/quick-start",
+    "added": "2026-07-20"
+  },
+  {
+    "id": "huggingface-transformers",
+    "name": "Hugging Face Transformers",
+    "category": "Framework",
+    "domain": "AI/ML",
+    "eli5": "It's like a toolbox that comes with pre-built AI brains you can use or teach to do things like understanding language or seeing pictures.",
+    "description": "Hugging Face Transformers is an open-source library providing state-of-the-art transformer models and easy-to-use APIs for natural language processing, computer vision, and speech tasks. It abstracts complex model architectures with simple interfaces and hosts 500,000+ pre-trained models.",
+    "use_cases": [
+      "Fine-tuning pre-trained models for custom NLP tasks",
+      "Building chatbots and question-answering systems",
+      "Text classification, sentiment analysis, and named entity recognition",
+      "Vision tasks like image classification and object detection"
+    ],
+    "used_by": [
+      "Google",
+      "Meta",
+      "OpenAI",
+      "Databricks"
+    ],
+    "docs": "https://huggingface.co/docs/transformers/",
+    "tutorial": "https://huggingface.co/docs/transformers/quicktour",
+    "added": "2026-07-20"
+  },
+  {
+    "id": "buf-schema",
+    "name": "Buf Schema Registry",
+    "category": "Tool",
+    "domain": "Data Engineering",
+    "eli5": "It's like a shared rulebook that tells all your applications exactly how to talk to each other using special message formats, and it remembers every version.",
+    "description": "Buf is a platform for managing Protocol Buffers and gRPC services with schema versioning, linting, and breaking change detection. It provides centralized schema management with CLI tools and a managed registry to ensure API compatibility across distributed teams.",
+    "use_cases": [
+      "Protocol Buffers and gRPC API schema management",
+      "API versioning and breaking change detection",
+      "Code generation automation for multiple languages",
+      "Microservices contract enforcement"
+    ],
+    "used_by": [
+      "Stripe",
+      "Lyft",
+      "Square",
+      "Confluence"
+    ],
+    "docs": "https://buf.build/docs",
+    "tutorial": "https://buf.build/docs/tour/getting-started-with-buf-cli",
+    "added": "2026-07-20"
   }
 ]

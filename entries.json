@@ -8438,5 +8438,120 @@
     "docs": "https://buf.build/docs",
     "tutorial": "https://buf.build/docs/tour/getting-started-with-buf-cli",
     "added": "2026-07-20"
+  },
+  {
+    "id": "stripe-cli",
+    "name": "Stripe CLI",
+    "category": "Tool",
+    "domain": "Backend",
+    "eli5": "It's like a telephone that lets your computer talk to Stripe's payment computers so you can test sending money without using real money.",
+    "description": "Stripe CLI is a command-line tool that enables developers to interact with Stripe's API locally, test webhooks, trigger events, and manage resources from the terminal. It's essential for payment integration development and testing without hitting production systems.",
+    "use_cases": [
+      "Testing webhook events during local development",
+      "Debugging payment flows in non-production environments",
+      "Triggering test charges and subscription events",
+      "Managing API keys and authentication securely"
+    ],
+    "used_by": [
+      "Shopify",
+      "Slack",
+      "DoorDash",
+      "Lyft"
+    ],
+    "docs": "https://stripe.com/docs/stripe-cli",
+    "tutorial": "https://stripe.com/docs/stripe-cli/get-started",
+    "added": "2026-07-21"
+  },
+  {
+    "id": "localstack-edge",
+    "name": "LocalStack Edge",
+    "category": "Platform",
+    "domain": "Cloud",
+    "eli5": "It's like having a tiny fake Amazon cloud on your computer that pretends to be the real thing, so you can practice without spending money.",
+    "description": "LocalStack is a fully functional local AWS cloud stack that runs in Docker, allowing developers to develop and test AWS applications offline without AWS costs. LocalStack Edge extends this with real-time cloud connectivity and advanced mocking capabilities.",
+    "use_cases": [
+      "Local AWS service testing (S3, DynamoDB, Lambda, SQS)",
+      "CI/CD pipeline testing without cloud provider costs",
+      "Integration testing with multiple AWS services",
+      "Offline development and rapid iteration on cloud applications"
+    ],
+    "used_by": [
+      "Netflix",
+      "Amazon",
+      "HashiCorp",
+      "Grab"
+    ],
+    "docs": "https://docs.localstack.cloud/",
+    "tutorial": "https://docs.localstack.cloud/getting-started/installation/",
+    "added": "2026-07-21"
+  },
+  {
+    "id": "sqlalchemy",
+    "name": "SQLAlchemy",
+    "category": "Framework",
+    "domain": "Backend",
+    "eli5": "It's like a translator that lets your Python code talk to databases in a simpler way without writing raw database language.",
+    "description": "SQLAlchemy is a mature Python SQL toolkit and Object-Relational Mapping (ORM) library that provides a full suite of patterns for accessing databases, from simple queries to complex relationships. It supports multiple database backends and is the standard for database interaction in Python.",
+    "use_cases": [
+      "Building data models and relationships in Python web applications",
+      "Abstracting database logic from application code",
+      "Writing database-agnostic code that works across PostgreSQL, MySQL, SQLite",
+      "Complex query building and optimization with expressions"
+    ],
+    "used_by": [
+      "Uber",
+      "Instacart",
+      "Airbnb",
+      "Spotify"
+    ],
+    "docs": "https://docs.sqlalchemy.org/",
+    "tutorial": "https://docs.sqlalchemy.org/en/20/tutorial/",
+    "added": "2026-07-21"
+  },
+  {
+    "id": "wireshark",
+    "name": "Wireshark",
+    "category": "Tool",
+    "domain": "Networking",
+    "eli5": "It's like a spy camera for internet traffic that shows you exactly what data is traveling between your computer and others.",
+    "description": "Wireshark is a network protocol analyzer that captures and displays packet data in real-time, allowing engineers to debug network issues, analyze security threats, and understand application communication. It's the industry standard for network troubleshooting and packet inspection.",
+    "use_cases": [
+      "Debugging network connectivity and protocol issues",
+      "Analyzing suspicious network traffic for security threats",
+      "Capturing and inspecting API calls between services",
+      "Performance analysis and latency troubleshooting"
+    ],
+    "used_by": [
+      "Google",
+      "Microsoft",
+      "Cisco",
+      "Red Hat"
+    ],
+    "docs": "https://www.wireshark.org/docs/",
+    "tutorial": "https://www.wireshark.org/download/docs/Wireshark_User's_Guide.pdf",
+    "added": "2026-07-21"
+  },
+  {
+    "id": "langfuse",
+    "name": "Langfuse",
+    "category": "Platform",
+    "domain": "AI/ML",
+    "eli5": "It's like a notebook that records everything your AI assistant does and says so you can see if it's working well and fix problems.",
+    "description": "Langfuse is an open-source LLM engineering platform providing observability, analytics, and debugging tools for language model applications. It captures prompts, completions, latency, costs, and user feedback to help teams improve LLM application quality and performance.",
+    "use_cases": [
+      "Monitoring LLM application performance and token usage",
+      "Debugging prompt chains and multi-step LLM workflows",
+      "Collecting user feedback to improve model outputs",
+      "Cost analysis and optimization for LLM API spending"
+    ],
+    "used_by": [
+      "Hugging Face",
+      "Together AI",
+      "Vercel",
+      "Amplitude"
+    ],
+    "docs": "https://langfuse.com/docs",
+    "tutorial": "https://langfuse.com/docs/get-started",
+    "added": "2026-07-21"
   }
 ]

@@ -8553,5 +8553,28 @@
     "docs": "https://langfuse.com/docs",
     "tutorial": "https://langfuse.com/docs/get-started",
     "added": "2026-07-21"
+  },
+  {
+    "id": "partytown",
+    "name": "Partytown",
+    "category": "Framework",
+    "domain": "Frontend",
+    "eli5": "It's like sending your website's annoying chores to a worker in another room so they don't slow down your main page.",
+    "description": "Partytown is a JavaScript library that runs third-party scripts (analytics, ads, trackers) in a web worker to prevent them from blocking the main thread. This significantly improves Core Web Vitals and user experience without removing required scripts.",
+    "use_cases": [
+      "Improving website performance with analytics",
+      "Running ads without blocking page interactions",
+      "Serving tracking pixels and marketing scripts",
+      "Enhancing Core Web Vitals scores"
+    ],
+    "used_by": [
+      "Shopify",
+      "Zapier",
+      "BuilderIO",
+      "Various e-commerce sites"
+    ],
+    "docs": "https://partytown.builder.io/docs",
+    "tutorial": "https://partytown.builder.io/docs/getting-started",
+    "added": "2026-07-22"
   }
 ]

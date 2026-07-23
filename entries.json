@@ -8576,5 +8576,28 @@
     "docs": "https://partytown.builder.io/docs",
     "tutorial": "https://partytown.builder.io/docs/getting-started",
     "added": "2026-07-22"
+  },
+  {
+    "id": "zilliz-cloud",
+    "name": "Zilliz Cloud",
+    "category": "Platform",
+    "domain": "AI/ML",
+    "eli5": "Zilliz Cloud is like a super-smart memory for AI that instantly finds the most similar things you're looking for from billions of possibilities.",
+    "description": "Zilliz Cloud is a managed vector database service providing scalable and high-performance vector search capabilities for AI/ML applications. It's the commercial offering built on Milvus, optimized for semantic search, RAG, and similarity matching workloads.",
+    "use_cases": [
+      "Building semantic search systems for retrieval-augmented generation (RAG)",
+      "Implementing AI recommendation engines with embeddings",
+      "Powering AI chatbots with long-term memory and context retrieval",
+      "Duplicate detection and anomaly detection in large datasets"
+    ],
+    "used_by": [
+      "Capital One",
+      "Citi",
+      "Thomson Reuters",
+      "ZTE"
+    ],
+    "docs": "https://docs.zilliz.com/",
+    "tutorial": "https://docs.zilliz.com/docs/quickstart",
+    "added": "2026-07-23"
   }
 ]

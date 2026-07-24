@@ -8599,5 +8599,74 @@
     "docs": "https://docs.zilliz.com/",
     "tutorial": "https://docs.zilliz.com/docs/quickstart",
     "added": "2026-07-23"
+  },
+  {
+    "id": "anthropic-computer-vision",
+    "name": "Claude Computer Vision",
+    "category": "Tool",
+    "domain": "AI/ML",
+    "eli5": "Claude's ability to look at pictures and understand what's in them, like when you point at a photo and ask your smart friend what they see.",
+    "description": "Claude's multimodal capabilities enable vision understanding for tasks like document analysis, image classification, and visual content extraction. It processes images alongside text in a single API call for comprehensive document and visual intelligence applications.",
+    "use_cases": [
+      "Document digitization and data extraction from PDFs and images",
+      "Content moderation and visual compliance checking",
+      "Product image analysis for e-commerce platforms",
+      "Accessibility enhancement through image description generation"
+    ],
+    "used_by": [
+      "Notion",
+      "Figma",
+      "Scale AI",
+      "Anthropic"
+    ],
+    "docs": "https://docs.anthropic.com/vision/vision-overview",
+    "tutorial": "https://docs.anthropic.com/vision/vision-overview",
+    "added": "2026-07-24"
+  },
+  {
+    "id": "anthropic-batch-api",
+    "name": "Anthropic Batch API",
+    "category": "Tool",
+    "domain": "AI/ML",
+    "eli5": "A way to send lots of questions to Claude all at once in the evening and get all the answers back the next morning for cheaper than asking one question at a time.",
+    "description": "The Anthropic Batch API processes large volumes of API requests asynchronously at 50% lower cost than standard pricing, ideal for non-time-sensitive workloads. It accepts batches of up to 10,000 requests and returns results within 24 hours.",
+    "use_cases": [
+      "Large-scale document processing and analysis",
+      "Batch content generation for marketing and product teams",
+      "Research and data extraction projects with delayed deadlines",
+      "Cost-optimized model fine-tuning and training data preparation"
+    ],
+    "used_by": [
+      "Notion",
+      "Canva",
+      "DuckDuckGo",
+      "Scale AI"
+    ],
+    "docs": "https://docs.anthropic.com/batch/overview",
+    "tutorial": "https://docs.anthropic.com/batch/getting-started-with-batch-api",
+    "added": "2026-07-24"
+  },
+  {
+    "id": "cursor-ai-editor",
+    "name": "Cursor",
+    "category": "Tool",
+    "domain": "Frontend",
+    "eli5": "A code editor where you can chat with an AI helper to write and fix code for you, like having a really smart programming partner sitting next to you.",
+    "description": "Cursor is an AI-powered code editor built on VS Code that integrates Claude and GPT-4 for inline code generation, refactoring, and debugging. It provides context-aware code suggestions and allows developers to iterate on code through natural language commands.",
+    "use_cases": [
+      "Accelerated development with AI-assisted code generation",
+      "Rapid prototyping and boilerplate code scaffolding",
+      "Bug detection and code refactoring assistance",
+      "Learning and understanding unfamiliar codebases"
+    ],
+    "used_by": [
+      "Vercel",
+      "Stack Overflow",
+      "Y Combinator startups",
+      "Individual developers"
+    ],
+    "docs": "https://docs.cursor.sh/",
+    "tutorial": "https://docs.cursor.sh/getting-started/quick-start",
+    "added": "2026-07-24"
   }
 ]

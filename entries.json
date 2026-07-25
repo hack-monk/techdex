@@ -8668,5 +8668,115 @@
     "docs": "https://docs.cursor.sh/",
     "tutorial": "https://docs.cursor.sh/getting-started/quick-start",
     "added": "2026-07-24"
+  },
+  {
+    "id": "anthropic-files-api",
+    "name": "Anthropic Files API",
+    "category": "Tool",
+    "domain": "AI/ML",
+    "eli5": "It's like giving Claude a folder of documents to read before answering your questions, instead of having to paste everything in the message each time.",
+    "description": "The Anthropic Files API enables developers to upload files (documents, images, PDFs) that Claude can reference across multiple API calls without re-uploading. This reduces latency, costs, and simplifies handling of large documents in production systems.",
+    "use_cases": [
+      "Processing large document collections for legal or financial analysis",
+      "Enabling multi-turn conversations with persistent file context",
+      "Building document search and Q&A applications",
+      "Reducing API costs for applications that reference the same files repeatedly"
+    ],
+    "used_by": [
+      "Scale AI",
+      "Anthropic customers",
+      "Enterprise AI teams"
+    ],
+    "docs": "https://docs.anthropic.com/en/docs/build-a-classifier#files-api",
+    "tutorial": "https://docs.anthropic.com/en/docs/build-a-classifier",
+    "added": "2026-07-25"
+  },
+  {
+    "id": "litedb",
+    "name": "LiteDB",
+    "category": "Platform",
+    "domain": "Database",
+    "eli5": "It's like a SQLite database but designed for .NET applications, storing data in JSON-like documents instead of rigid tables.",
+    "description": "LiteDB is a lightweight, serverless, self-contained .NET document database that runs embedded in applications without requiring a separate database server. It supports LINQ queries, transactions, and full-text search while maintaining minimal resource footprint.",
+    "use_cases": [
+      "Desktop and mobile applications requiring local data persistence",
+      "Embedded analytics and reporting in standalone applications",
+      "Development and testing environments with minimal infrastructure",
+      "IoT and edge computing scenarios with limited resources"
+    ],
+    "used_by": [
+      "Jetbrains",
+      ".NET developers",
+      "Enterprise desktop applications"
+    ],
+    "docs": "https://www.litedb.org/",
+    "tutorial": "https://www.litedb.org/docs/getting-started/",
+    "added": "2026-07-25"
+  },
+  {
+    "id": "axiom-serverless",
+    "name": "Axiom Serverless Queryable State",
+    "category": "Tool",
+    "domain": "Backend",
+    "eli5": "It's like a notebook that serverless functions can write notes to and read from each other, so they can remember things between runs without needing a database.",
+    "description": "Axiom provides queryable serverless state storage that allows functions to persist and query data without managing infrastructure or external databases. It's designed for event-driven workloads and offers real-time data ingestion with SQL query capabilities.",
+    "use_cases": [
+      "Tracking application state in serverless/FaaS architectures",
+      "Real-time event aggregation and analytics",
+      "Building stateful workflows on serverless platforms",
+      "Debugging and observability for distributed functions"
+    ],
+    "used_by": [
+      "Vercel partners",
+      "Serverless startups",
+      "Event-driven platforms"
+    ],
+    "docs": "https://axiom.co/docs",
+    "tutorial": "https://axiom.co/docs/getting-started",
+    "added": "2026-07-25"
+  },
+  {
+    "id": "modyssey",
+    "name": "Modyssey",
+    "category": "Tool",
+    "domain": "DevOps",
+    "eli5": "It's like a smart map that shows you all the connections between your microservices and tells you when something breaks one of those connections.",
+    "description": "Modyssey is a dependency mapping and API contract validation tool for microservices architectures that automatically discovers service relationships and detects breaking changes. It helps teams maintain governance and prevent integration failures across distributed systems.",
+    "use_cases": [
+      "Microservices dependency visualization and relationship mapping",
+      "Detecting breaking API changes before they reach production",
+      "Enforcing API contracts across teams",
+      "Migration planning and refactoring complex service meshes"
+    ],
+    "used_by": [
+      "Tech startups",
+      "Microservices teams",
+      "Enterprise API governance"
+    ],
+    "docs": "https://modyssey.io/docs",
+    "tutorial": "https://modyssey.io/docs/quickstart",
+    "added": "2026-07-25"
+  },
+  {
+    "id": "keto",
+    "name": "Keto",
+    "category": "Tool",
+    "domain": "Identity",
+    "eli5": "It's like a rulebook that decides who is allowed to do what in your application, based on relationships like 'Alice manages Bob' or 'admins can delete users'.",
+    "description": "Keto is an open-source, cloud-native authorization service that implements fine-grained access control through relation-based access control (ReBAC) and Zanzibar-inspired permission graphs. It decouples authorization logic from applications, enabling scalable and maintainable permission systems.",
+    "use_cases": [
+      "Multi-tenant SaaS applications with complex permission hierarchies",
+      "Role-based and attribute-based access control implementations",
+      "Building permission systems that scale with organizational complexity",
+      "Authorization as a dedicated microservice in zero-trust architectures"
+    ],
+    "used_by": [
+      "Ory ecosystem",
+      "Enterprise SaaS platforms",
+      "Zero-trust initiatives"
+    ],
+    "docs": "https://docs.ory.sh/keto/",
+    "tutorial": "https://docs.ory.sh/keto/quickstart",
+    "added": "2026-07-25"
   }
 ]

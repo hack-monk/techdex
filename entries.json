@@ -8778,5 +8778,115 @@
     "docs": "https://docs.ory.sh/keto/",
     "tutorial": "https://docs.ory.sh/keto/quickstart",
     "added": "2026-07-25"
+  },
+  {
+    "id": "axion",
+    "name": "Axion",
+    "category": "Tool",
+    "domain": "Database",
+    "eli5": "Axion is like a special notebook that lets your database remember things even when the power goes out, and it does it super fast.",
+    "description": "Axion is an embeddable SQL database engine written in Rust that provides ACID-compliant transactions with persistent storage. It's designed for applications that need reliable local data storage with SQL querying capabilities.",
+    "use_cases": [
+      "Embedded database for desktop and mobile applications",
+      "Local data persistence in edge computing devices",
+      "Testing and development environments requiring SQL compliance",
+      "Applications needing offline-first capabilities with sync"
+    ],
+    "used_by": [
+      "Various Rust-based startups",
+      "Edge computing platforms",
+      "Desktop application developers"
+    ],
+    "docs": "https://github.com/axion-db/axion",
+    "tutorial": "https://github.com/axion-db/axion#getting-started",
+    "added": "2026-07-26"
+  },
+  {
+    "id": "greptimedb",
+    "name": "GreptimeDB",
+    "category": "Platform",
+    "domain": "Database",
+    "eli5": "GreptimeDB is like a super-fast filing cabinet that's really good at storing measurements over time, like temperature readings or stock prices.",
+    "description": "GreptimeDB is an open-source time-series database built for metrics and observability workloads, offering high performance ingestion, storage efficiency, and SQL/PromQL query compatibility. It's optimized for handling billions of time-series data points with minimal resource overhead.",
+    "use_cases": [
+      "Real-time metrics collection for infrastructure monitoring",
+      "IoT sensor data aggregation and analysis",
+      "Financial market data processing and analysis",
+      "Application performance monitoring at scale"
+    ],
+    "used_by": [
+      "Huawei Cloud",
+      "Zhihu",
+      "Various fintech companies"
+    ],
+    "docs": "https://docs.greptime.com/",
+    "tutorial": "https://docs.greptime.com/getting-started/overview",
+    "added": "2026-07-26"
+  },
+  {
+    "id": "speakeasy",
+    "name": "Speakeasy",
+    "category": "Tool",
+    "domain": "DevOps",
+    "eli5": "Speakeasy is like a translator that automatically creates instruction manuals and example code for your API so other developers can use it easily.",
+    "description": "Speakeasy is an SDK generation and API documentation platform that automatically creates production-quality SDKs and API docs from OpenAPI specifications. It enables teams to maintain consistent API experiences across multiple programming languages.",
+    "use_cases": [
+      "Automated SDK generation from OpenAPI schemas",
+      "Multi-language API client library maintenance",
+      "API documentation generation and versioning",
+      "Developer experience and adoption acceleration"
+    ],
+    "used_by": [
+      "Mercury Bank",
+      "Stripe integration partners",
+      "Various fintech startups"
+    ],
+    "docs": "https://docs.speakeasyapi.dev/",
+    "tutorial": "https://docs.speakeasyapi.dev/docs/getting-started",
+    "added": "2026-07-26"
+  },
+  {
+    "id": "dolt",
+    "name": "Dolt",
+    "category": "Platform",
+    "domain": "Database",
+    "eli5": "Dolt is like Git for your database \u2014 you can save different versions, see what changed, and merge updates just like with code.",
+    "description": "Dolt is a SQL database with Git-like version control built in, allowing teams to branch, merge, and diff their data just like they would with code. It's compatible with MySQL and enables collaborative data workflows with full audit trails.",
+    "use_cases": [
+      "Data versioning and lineage tracking",
+      "Collaborative data workflows with branching and merging",
+      "Reproducible analytics with data snapshots",
+      "Compliance and audit requirements with change history"
+    ],
+    "used_by": [
+      "Lattice",
+      "DoltHub ecosystem",
+      "Data-intensive startups"
+    ],
+    "docs": "https://docs.dolthub.com/",
+    "tutorial": "https://docs.dolthub.com/getting-started/installation",
+    "added": "2026-07-26"
+  },
+  {
+    "id": "valibot",
+    "name": "Valibot",
+    "category": "Framework",
+    "domain": "Frontend",
+    "eli5": "Valibot is like a very careful bouncer at a club who checks that everyone coming in meets the exact requirements before letting them in.",
+    "description": "Valibot is a modular and lightweight schema validation library for TypeScript that provides runtime validation with minimal bundle size overhead. It's designed as a faster, more tree-shakeable alternative to Zod for validating data structures in JavaScript applications.",
+    "use_cases": [
+      "Form validation in web applications",
+      "API request and response validation",
+      "Configuration file parsing and validation",
+      "Type-safe data transformation pipelines"
+    ],
+    "used_by": [
+      "Vercel ecosystem",
+      "TypeScript-first startups",
+      "Frontend-focused teams"
+    ],
+    "docs": "https://valibot.dev/",
+    "tutorial": "https://valibot.dev/guides/introduction/",
+    "added": "2026-07-26"
   }
 ]

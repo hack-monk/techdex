@@ -8888,5 +8888,93 @@
     "docs": "https://valibot.dev/",
     "tutorial": "https://valibot.dev/guides/introduction/",
     "added": "2026-07-26"
+  },
+  {
+    "id": "opensearch-vector-db",
+    "name": "OpenSearch Vector Engine",
+    "category": "Tool",
+    "domain": "Database",
+    "eli5": "It's like a librarian who can find books not just by their title, but by understanding what they're about and finding similar ones.",
+    "description": "OpenSearch's vector database capability enables semantic search and similarity matching for unstructured data like text and images. It integrates native vector indexing with full-text search, making it ideal for RAG applications and hybrid search workloads.",
+    "use_cases": [
+      "Building semantic search for documentation and knowledge bases",
+      "Implementing retrieval-augmented generation (RAG) pipelines",
+      "Hybrid search combining keyword and vector-based queries",
+      "Product recommendation systems using embeddings"
+    ],
+    "used_by": [
+      "DuckDuckGo",
+      "Lyft",
+      "Capital One"
+    ],
+    "docs": "https://opensearch.org/docs/latest/search-plugins/vector-search/",
+    "tutorial": "https://opensearch.org/blog/semantic-search/",
+    "added": "2026-07-27"
+  },
+  {
+    "id": "buf-connect",
+    "name": "Buf Connect",
+    "category": "Framework",
+    "domain": "Backend",
+    "eli5": "It's like having a universal translator that lets different programs talk to each other easily, no matter what language they use.",
+    "description": "Buf Connect is a library for building better services with Protocol Buffers and gRPC, providing simplified APIs for request/response patterns across multiple languages. It reduces boilerplate code and makes it easier to build connected microservices.",
+    "use_cases": [
+      "Building gRPC services with less ceremony and configuration",
+      "Creating language-agnostic microservice frameworks",
+      "Implementing request-response patterns with schema validation",
+      "Modernizing REST APIs with performance benefits of gRPC"
+    ],
+    "used_by": [
+      "Stripe",
+      "Square",
+      "Google"
+    ],
+    "docs": "https://buf.build/docs/connect/overview",
+    "tutorial": "https://buf.build/docs/tutorials/getting-started-with-connect",
+    "added": "2026-07-27"
+  },
+  {
+    "id": "reverse-proxy-caddy",
+    "name": "Caddy Web Server",
+    "category": "Tool",
+    "domain": "Networking",
+    "eli5": "It's like a smart mail sorter at the post office that automatically routes all your letters to the right houses and even adds special protective envelopes.",
+    "description": "Caddy is a production-ready web server that automatically manages HTTPS certificates, supports HTTP/2 and HTTP/3, and provides dynamic configuration without downtime. It simplifies certificate management and serves as a reverse proxy, load balancer, and static file server.",
+    "use_cases": [
+      "Reverse proxying and load balancing with automatic SSL/TLS",
+      "Serving static websites with automatic HTTPS setup",
+      "API gateway functionality with dynamic configuration",
+      "Edge computing and content delivery with automatic certificate renewal"
+    ],
+    "used_by": [
+      "CloudFlare",
+      "Fastly",
+      "1.1.1.1"
+    ],
+    "docs": "https://caddyserver.com/docs/",
+    "tutorial": "https://caddyserver.com/docs/quick-start",
+    "added": "2026-07-27"
+  },
+  {
+    "id": "grafana-alloy",
+    "name": "Grafana Alloy",
+    "category": "Tool",
+    "domain": "SRE/Observability",
+    "eli5": "It's like a universal data collector that gathers information from everywhere in your systems and organizes it so you can understand what's happening.",
+    "description": "Grafana Alloy (formerly Grafana Agent Flow) is a declarative observability pipeline distribution that collects, processes, and exports metrics, logs, and traces. It unifies observability data collection with flexible configuration and no performance penalties.",
+    "use_cases": [
+      "Collecting metrics, logs, and traces from hybrid infrastructure",
+      "Processing and transforming observability data before ingestion",
+      "Multi-backend observability pipeline (Prometheus, Loki, Tempo, others)",
+      "Reducing vendor lock-in with flexible data routing"
+    ],
+    "used_by": [
+      "Grafana Labs",
+      "Canonical",
+      "DigitalOcean"
+    ],
+    "docs": "https://grafana.com/docs/alloy/latest/",
+    "tutorial": "https://grafana.com/docs/alloy/latest/get-started/install/",
+    "added": "2026-07-27"
   }
 ]

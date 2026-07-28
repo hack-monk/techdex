@@ -8976,5 +8976,120 @@
     "docs": "https://grafana.com/docs/alloy/latest/",
     "tutorial": "https://grafana.com/docs/alloy/latest/get-started/install/",
     "added": "2026-07-27"
+  },
+  {
+    "id": "colcon",
+    "name": "Colcon",
+    "category": "Tool",
+    "domain": "DevOps",
+    "eli5": "It's like a smart organizer that builds all your LEGO projects in the right order so they don't break.",
+    "description": "Colcon is a command line tool for building, testing, and publishing multiple software packages in a specified order. It's widely used in robotics and ROS 2 ecosystems to manage complex multi-package projects with dependency resolution.",
+    "use_cases": [
+      "Building ROS 2 robotics projects with multiple interdependent packages",
+      "Managing large monorepos with complex build dependencies",
+      "Running parallel builds and tests across packages",
+      "Automating CI/CD pipelines for distributed software systems"
+    ],
+    "used_by": [
+      "Boston Dynamics",
+      "ABB Robotics",
+      "Open Robotics",
+      "Clearpath Robotics"
+    ],
+    "docs": "https://colcon.readthedocs.io/",
+    "tutorial": "https://docs.ros.org/en/humble/Tutorials/Beginner-Client-Libraries/Colcon-Tutorial.html",
+    "added": "2026-07-28"
+  },
+  {
+    "id": "pgadmin",
+    "name": "pgAdmin",
+    "category": "Tool",
+    "domain": "Database",
+    "eli5": "It's like a remote control for your PostgreSQL database that lets you see and change everything from a web browser.",
+    "description": "pgAdmin is a feature-rich open-source management and development platform for PostgreSQL. It provides a web-based GUI for administering PostgreSQL databases, running queries, and managing users across development and production environments.",
+    "use_cases": [
+      "Database administration and user management for PostgreSQL",
+      "Visual query building and SQL script execution",
+      "Backup and restoration of PostgreSQL databases",
+      "Performance monitoring and optimization of database operations"
+    ],
+    "used_by": [
+      "Zalando",
+      "Booking.com",
+      "Spotify",
+      "IBM"
+    ],
+    "docs": "https://www.pgadmin.org/docs/",
+    "tutorial": "https://www.pgadmin.org/docs/pgadmin4/latest/getting_started/index.html",
+    "added": "2026-07-28"
+  },
+  {
+    "id": "httpie",
+    "name": "HTTPie",
+    "category": "Tool",
+    "domain": "Backend",
+    "eli5": "It's like a friendly way to talk to web servers, easier than using curl because it shows you colorful readable messages.",
+    "description": "HTTPie is a command-line HTTP client that makes testing APIs and debugging HTTP requests simple and intuitive. It's designed as a user-friendly alternative to curl with better defaults, colorized output, and a more readable syntax.",
+    "use_cases": [
+      "Testing RESTful APIs during development and debugging",
+      "Making ad-hoc HTTP requests without complex curl syntax",
+      "Automating API testing in scripts and CI/CD pipelines",
+      "Learning HTTP concepts through interactive request/response inspection"
+    ],
+    "used_by": [
+      "Stripe",
+      "GitHub",
+      "Netflix",
+      "Mozilla"
+    ],
+    "docs": "https://httpie.io/docs",
+    "tutorial": "https://httpie.io/cli",
+    "added": "2026-07-28"
+  },
+  {
+    "id": "cadaver",
+    "name": "Cadaver",
+    "category": "Tool",
+    "domain": "Storage",
+    "eli5": "It's like a file browser that works over the internet, letting you upload, download, and organize files on a WebDAV server.",
+    "description": "Cadaver is a command-line WebDAV client that enables users to access and manage files on WebDAV servers through an interactive shell interface. It's widely used for remote file synchronization and management in enterprise environments.",
+    "use_cases": [
+      "Managing files on WebDAV-enabled collaboration servers",
+      "Automating file uploads and downloads to remote repositories",
+      "Synchronizing document management systems with local systems",
+      "Scripting batch operations on centralized file storage"
+    ],
+    "used_by": [
+      "Apache Foundation",
+      "SugarCRM",
+      "Alfresco",
+      "ownCloud"
+    ],
+    "docs": "https://www.webdav.org/cadaver/",
+    "tutorial": "http://www.webdav.org/cadaver/guide/using.html",
+    "added": "2026-07-28"
+  },
+  {
+    "id": "vault-cli",
+    "name": "Vault CLI (Python)",
+    "category": "Tool",
+    "domain": "Security",
+    "eli5": "It's like a secure lockbox for your passwords and secrets that you can open from the command line without ever showing the secrets on your screen.",
+    "description": "Vault CLI is a Python-based command-line interface for interacting with secret management backends, enabling developers to securely retrieve and manage credentials in automated workflows. It abstracts the complexity of multiple secret backends into a simple, unified interface.",
+    "use_cases": [
+      "Retrieving database credentials in CI/CD pipelines without exposing them",
+      "Managing API keys and secrets across development, staging, and production",
+      "Automating secret rotation and lifecycle management",
+      "Integrating secret management into application startup scripts"
+    ],
+    "used_by": [
+      "GitLab",
+      "Databricks",
+      "Okta",
+      "HashiCorp"
+    ],
+    "docs": "https://python-hvac.readthedocs.io/",
+    "tutorial": "https://python-hvac.readthedocs.io/en/stable/usage/auth_methods/index.html",
+    "added": "2026-07-28"
   }
 ]

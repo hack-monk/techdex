@@ -9091,5 +9091,51 @@
     "docs": "https://python-hvac.readthedocs.io/",
     "tutorial": "https://python-hvac.readthedocs.io/en/stable/usage/auth_methods/index.html",
     "added": "2026-07-28"
+  },
+  {
+    "id": "cadence",
+    "name": "Cadence",
+    "category": "Platform",
+    "domain": "Backend",
+    "eli5": "Cadence is like a smart planner that remembers what your app was doing even if the computer crashes, so it can pick up where it left off.",
+    "description": "Cadence is a distributed workflow orchestration platform that enables reliable execution of asynchronous, long-running business logic. It provides fault-tolerant workflow execution with automatic retries, timeouts, and state persistence across service failures.",
+    "use_cases": [
+      "Orchestrating complex payment processing workflows with retry logic",
+      "Managing multi-step onboarding processes that span multiple services",
+      "Coordinating batch jobs and data pipelines with automatic recovery",
+      "Building reliable order fulfillment systems across microservices"
+    ],
+    "used_by": [
+      "Uber",
+      "Box",
+      "DoorDash",
+      "Stripe"
+    ],
+    "docs": "https://cadenceworkflow.io/docs/",
+    "tutorial": "https://cadenceworkflow.io/docs/01-starting/",
+    "added": "2026-07-29"
+  },
+  {
+    "id": "vscode-remote",
+    "name": "VS Code Remote Development",
+    "category": "Tool",
+    "domain": "DevOps",
+    "eli5": "VS Code Remote is like having a magical tunnel that lets you edit files on a faraway computer as if they were right in front of you on your desk.",
+    "description": "VS Code Remote Development enables developers to use VS Code to develop against code hosted on remote machines, containers, or WSL environments. It provides full IDE capabilities with extensions and debugging directly against remote systems.",
+    "use_cases": [
+      "Developing inside containerized environments without local setup complexity",
+      "Collaborating on shared development servers with consistent environments",
+      "Building and testing applications in production-like cloud environments",
+      "Developing on Kubernetes clusters or remote VMs with full IDE support"
+    ],
+    "used_by": [
+      "Microsoft",
+      "Google",
+      "GitHub",
+      "Amazon"
+    ],
+    "docs": "https://code.visualstudio.com/docs/remote/remote-overview",
+    "tutorial": "https://code.visualstudio.com/docs/remote/containers-tutorial",
+    "added": "2026-07-29"
   }
 ]

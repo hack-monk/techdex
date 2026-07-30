@@ -9137,5 +9137,28 @@
     "docs": "https://code.visualstudio.com/docs/remote/remote-overview",
     "tutorial": "https://code.visualstudio.com/docs/remote/containers-tutorial",
     "added": "2026-07-29"
+  },
+  {
+    "id": "vector-io",
+    "name": "Vector",
+    "category": "Tool",
+    "domain": "SRE/Observability",
+    "eli5": "Vector is like a smart mail sorting machine that takes logs and metrics from everywhere in your house and delivers them to exactly where they need to go.",
+    "description": "Vector is a lightweight, ultra-fast tool for building observability pipelines that collect, transform, and route logs, metrics, and traces from any source to any destination. It replaces multiple specialized tools with a single, composable runtime written in Rust.",
+    "use_cases": [
+      "Collecting and normalizing logs from Kubernetes clusters to multiple backends",
+      "Building cost-effective observability pipelines by filtering and sampling high-volume metrics",
+      "Transforming and enriching application telemetry before sending to SaaS platforms",
+      "Aggregating traces and metrics from distributed systems with minimal performance overhead"
+    ],
+    "used_by": [
+      "Datadog",
+      "New Relic",
+      "Fastly",
+      "Segment"
+    ],
+    "docs": "https://vector.dev/docs/",
+    "tutorial": "https://vector.dev/guides/getting-started/",
+    "added": "2026-07-30"
   }
 ]

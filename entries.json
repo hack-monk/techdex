@@ -9160,5 +9160,97 @@
     "docs": "https://vector.dev/docs/",
     "tutorial": "https://vector.dev/guides/getting-started/",
     "added": "2026-07-30"
+  },
+  {
+    "id": "starship",
+    "name": "Starship",
+    "category": "Tool",
+    "domain": "DevOps",
+    "eli5": "Starship is like a smart dashboard for your terminal that shows you useful information about what you're working on, instantly.",
+    "description": "Starship is a minimal, blazing-fast, and customizable shell prompt written in Rust that displays relevant context like Git branch, language versions, and build status. It works across all major shells (Bash, Zsh, Fish, PowerShell) and significantly improves developer experience.",
+    "use_cases": [
+      "Accelerating developer workflows with fast, informative prompts",
+      "Displaying project context (language, version, git status) at a glance",
+      "Customizing terminal appearance across different machines and shells",
+      "Integration with CI/CD pipelines and development container environments"
+    ],
+    "used_by": [
+      "Vercel",
+      "npm",
+      "Netlify",
+      "GitLab"
+    ],
+    "docs": "https://starship.rs/",
+    "tutorial": "https://starship.rs/guide/",
+    "added": "2026-07-31"
+  },
+  {
+    "id": "couchbase",
+    "name": "Couchbase",
+    "category": "Platform",
+    "domain": "Database",
+    "eli5": "Couchbase is like a super-fast notebook that keeps copies in multiple places so you can always access your data even if one copy gets damaged.",
+    "description": "Couchbase is a distributed NoSQL database that combines the flexibility of document storage with the performance of in-memory caching and built-in search capabilities. It provides high availability, horizontal scalability, and real-time sync across geographically distributed clusters.",
+    "use_cases": [
+      "High-performance mobile and edge computing with offline-first sync",
+      "Real-time personalization and recommendation engines",
+      "IoT data ingestion and analytics at scale",
+      "Session management and user profile caching for high-traffic applications"
+    ],
+    "used_by": [
+      "LinkedIn",
+      "Expedia",
+      "Cisco",
+      "Marriott"
+    ],
+    "docs": "https://docs.couchbase.com/",
+    "tutorial": "https://docs.couchbase.com/tutorials/",
+    "added": "2026-07-31"
+  },
+  {
+    "id": "cortex",
+    "name": "Cortex",
+    "category": "Platform",
+    "domain": "AI/ML",
+    "eli5": "Cortex is like a lending library for AI models that lets you check out pre-trained models and run them on your own computer without needing to train them from scratch.",
+    "description": "Cortex is an open-source platform that makes it easy to run any open-source language model locally with a simple CLI and API, providing GPU acceleration and model management without cloud dependencies. It abstracts away the complexity of managing dependencies, memory, and inference optimization.",
+    "use_cases": [
+      "Running open-source LLMs locally for privacy-sensitive applications",
+      "Building offline-capable AI features for desktop and mobile apps",
+      "Cost-effective inference without cloud provider lock-in",
+      "Fine-tuning and customizing models for specific domain tasks"
+    ],
+    "used_by": [
+      "Anthropic",
+      "Hugging Face",
+      "independent developers",
+      "enterprises"
+    ],
+    "docs": "https://cortexcpp.com/docs",
+    "tutorial": "https://cortexcpp.com/docs/getting-started",
+    "added": "2026-07-31"
+  },
+  {
+    "id": "authelia",
+    "name": "Authelia",
+    "category": "Tool",
+    "domain": "Identity",
+    "eli5": "Authelia is like a bouncer at a club who checks your ID and makes sure you're allowed in, and remembers you so you don't have to show your ID every time.",
+    "description": "Authelia is an open-source single sign-on and authorization server that provides multi-factor authentication, session management, and fine-grained access control for protecting internal applications and APIs. It integrates seamlessly with reverse proxies like Nginx and Traefik.",
+    "use_cases": [
+      "Centralized authentication and authorization for internal tools and applications",
+      "Implementing multi-factor authentication without proprietary services",
+      "Fine-grained access control based on user groups and policies",
+      "Session management and single sign-on across multiple applications"
+    ],
+    "used_by": [
+      "self-hosted communities",
+      "enterprises",
+      "open-source projects",
+      "ISPs"
+    ],
+    "docs": "https://www.authelia.com/",
+    "tutorial": "https://www.authelia.com/integration/deployment/supported-proxies/nginx/",
+    "added": "2026-07-31"
   }
 ]

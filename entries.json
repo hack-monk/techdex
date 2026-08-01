@@ -9252,5 +9252,120 @@
     "docs": "https://www.authelia.com/",
     "tutorial": "https://www.authelia.com/integration/deployment/supported-proxies/nginx/",
     "added": "2026-07-31"
+  },
+  {
+    "id": "apptainer",
+    "name": "Apptainer",
+    "category": "Tool",
+    "domain": "DevOps",
+    "eli5": "Apptainer is like a portable lunchbox for your scientific programs that keeps all the ingredients together so they work the same way on any computer.",
+    "description": "Apptainer (formerly Singularity) is a container runtime designed for high-performance computing and scientific workloads, enabling secure and portable execution of applications across diverse HPC environments. It's widely used in research institutions and national labs for reproducible computational science.",
+    "use_cases": [
+      "Running scientific simulations across different HPC clusters",
+      "Packaging bioinformatics pipelines for reproducible research",
+      "Distributing complex multi-dependency applications to supercomputers",
+      "Creating portable computational workflows for academic research"
+    ],
+    "used_by": [
+      "NERSC",
+      "Sandia National Labs",
+      "CERN",
+      "Purdue University"
+    ],
+    "docs": "https://apptainer.org/docs/",
+    "tutorial": "https://apptainer.org/docs/user/latest/quick-start.html",
+    "added": "2026-08-01"
+  },
+  {
+    "id": "liteflow",
+    "name": "LiteFlow",
+    "category": "Framework",
+    "domain": "Backend",
+    "eli5": "LiteFlow is like a recipe that tells your computer exactly what steps to follow in order, making sure complex tasks happen one after another correctly.",
+    "description": "LiteFlow is a Java-based workflow orchestration framework that simplifies building complex business logic through declarative configuration. It's designed for rule engines and workflow automation with minimal boilerplate code.",
+    "use_cases": [
+      "Building business rule engines for financial systems",
+      "Orchestrating multi-step approval workflows",
+      "Implementing complex conditional logic in microservices",
+      "Creating reusable workflow patterns for enterprise applications"
+    ],
+    "used_by": [
+      "Alibaba",
+      "Baidu",
+      "NetEase",
+      "ByteDance"
+    ],
+    "docs": "https://liteflow.yomahub.com/",
+    "tutorial": "https://liteflow.yomahub.com/pages/detail?id=4e81cfc3b3dd44f19f6e27fe2f7c5c37",
+    "added": "2026-08-01"
+  },
+  {
+    "id": "milvus-standalone",
+    "name": "Milvus Standalone",
+    "category": "Tool",
+    "domain": "Database",
+    "eli5": "Milvus Standalone is like a filing cabinet that's really good at remembering what things look like and quickly finding similar-looking items among millions of files.",
+    "description": "Milvus Standalone is a lightweight, open-source vector database optimized for similarity search and AI applications, deployable as a single-node instance. It's increasingly used for powering semantic search and RAG systems in production.",
+    "use_cases": [
+      "Building semantic search engines for documentation",
+      "Powering recommendation systems with vector embeddings",
+      "Implementing retrieval-augmented generation (RAG) for LLM applications",
+      "Similarity matching for images and media content"
+    ],
+    "used_by": [
+      "Canva",
+      "Shopify",
+      "Hugging Face",
+      "Alibaba"
+    ],
+    "docs": "https://milvus.io/docs/standalone_deploy.md",
+    "tutorial": "https://milvus.io/docs/quickstart.md",
+    "added": "2026-08-01"
+  },
+  {
+    "id": "boundary",
+    "name": "HashiCorp Boundary",
+    "category": "Tool",
+    "domain": "Security",
+    "eli5": "Boundary is like a security guard at the entrance of your office building who checks that you're allowed to go in and keeps track of everyone coming and going.",
+    "description": "HashiCorp Boundary is a zero-trust access management platform that provides secure, auditable access to critical systems without requiring VPNs. It enables organizations to enforce fine-grained access controls and session recording for compliance.",
+    "use_cases": [
+      "Providing secure remote access to databases without VPN",
+      "Implementing zero-trust access for cloud infrastructure",
+      "Session recording and audit logging for compliance requirements",
+      "Managing access to on-premise resources from remote workers"
+    ],
+    "used_by": [
+      "HashiCorp customers",
+      "enterprise infrastructure teams",
+      "government agencies",
+      "healthcare systems"
+    ],
+    "docs": "https://www.boundaryproject.io/docs",
+    "tutorial": "https://www.boundaryproject.io/docs/getting-started",
+    "added": "2026-08-01"
+  },
+  {
+    "id": "typesense",
+    "name": "Typesense",
+    "category": "Tool",
+    "domain": "Database",
+    "eli5": "Typesense is like a super-fast librarian who instantly finds books matching what you're searching for, even if you misspell the title.",
+    "description": "Typesense is an open-source search engine optimized for fast, typo-tolerant search experiences with minimal setup. It provides sub-50ms search latency and is designed as a drop-in alternative to Elasticsearch for modern search applications.",
+    "use_cases": [
+      "Powering e-commerce product search with typo tolerance",
+      "Building instant-as-you-type search interfaces",
+      "Full-text search for SaaS platforms and content management",
+      "Geographic and faceted search for real estate and classified listings"
+    ],
+    "used_by": [
+      "Uber Eats",
+      "Adidas",
+      "Airbnb",
+      "Microsoft"
+    ],
+    "docs": "https://typesense.org/docs/",
+    "tutorial": "https://typesense.org/docs/guide/",
+    "added": "2026-08-01"
   }
 ]

@@ -9367,5 +9367,119 @@
     "docs": "https://typesense.org/docs/",
     "tutorial": "https://typesense.org/docs/guide/",
     "added": "2026-08-01"
+  },
+  {
+    "id": "anthropic-files-batch-api",
+    "name": "Anthropic Files API with Batch Processing",
+    "category": "Tool",
+    "domain": "AI/ML",
+    "eli5": "It's like giving Claude a stack of documents to read all at once, and then asking questions about all of them together instead of one at a time.",
+    "description": "Anthropic's Files API enables efficient handling of document uploads and batch processing with Claude, allowing developers to process large volumes of files at lower cost with asynchronous batch operations. It's essential for document-heavy AI applications requiring cost optimization and throughput.",
+    "use_cases": [
+      "Batch processing of contract documents for legal analysis",
+      "Large-scale research paper summarization and analysis",
+      "Bulk customer feedback classification and sentiment analysis",
+      "Document extraction and structured data generation from thousands of PDFs"
+    ],
+    "used_by": [
+      "Scale AI",
+      "Anthropic customers",
+      "Enterprise document processing firms"
+    ],
+    "docs": "https://docs.anthropic.com/en/docs/build-a-chatbot-with-claude",
+    "tutorial": "https://docs.anthropic.com/en/docs/build-a-chatbot-with-claude",
+    "added": "2026-08-02"
+  },
+  {
+    "id": "llama-cpp",
+    "name": "llama.cpp",
+    "category": "Tool",
+    "domain": "AI/ML",
+    "eli5": "It's like a translator that lets you run really smart AI models on your personal computer instead of needing a giant server.",
+    "description": "llama.cpp is a C++ implementation that enables efficient inference of large language models on consumer hardware with minimal memory requirements. It's widely used for running quantized models locally with superior performance compared to Python-based alternatives.",
+    "use_cases": [
+      "Running open-source LLMs locally on laptops and edge devices",
+      "Building privacy-preserving AI applications without cloud dependencies",
+      "Deploying language models in resource-constrained environments",
+      "Creating low-latency inference servers for production use"
+    ],
+    "used_by": [
+      "Ollama",
+      "LM Studio",
+      "Hugging Face ecosystem",
+      "Individual developers and startups"
+    ],
+    "docs": "https://github.com/ggerganov/llama.cpp",
+    "tutorial": "https://github.com/ggerganov/llama.cpp#usage",
+    "added": "2026-08-02"
+  },
+  {
+    "id": "duckdb-iceberg",
+    "name": "DuckDB with Apache Iceberg",
+    "category": "Tool",
+    "domain": "Data Engineering",
+    "eli5": "It's like having a super-smart filing cabinet that organizes your data really efficiently and lets you query it incredibly fast without needing a whole team of database administrators.",
+    "description": "DuckDB's integration with Apache Iceberg provides a modern analytical database experience with versioning, time-travel, and reliable ACID transactions. This combination is transforming data lakehouses by enabling efficient SQL analytics directly on cloud object storage.",
+    "use_cases": [
+      "Building cost-effective data lakehouses on S3/GCS without Spark",
+      "Time-travel analytics and data debugging with Iceberg table versioning",
+      "Real-time OLAP workloads with sub-second query latency",
+      "Data governance and compliance with Iceberg's schema evolution and retention policies"
+    ],
+    "used_by": [
+      "Databricks customers",
+      "Netflix (Iceberg creators)",
+      "Stripe",
+      "Apple"
+    ],
+    "docs": "https://duckdb.org/docs/extensions/iceberg",
+    "tutorial": "https://duckdb.org/docs/extensions/iceberg#creating-iceberg-tables",
+    "added": "2026-08-02"
+  },
+  {
+    "id": "sigstore-fulcio",
+    "name": "Fulcio (Sigstore PKI)",
+    "category": "Tool",
+    "domain": "Security",
+    "eli5": "It's like a digital notary that instantly creates unforgeable certificates for software to prove who created it, without anyone needing to manage secret keys.",
+    "description": "Fulcio is the root certification authority in Sigstore that issues short-lived certificates using OIDC-based identity verification, eliminating the need for traditional key management in supply chain security. It's the foundation enabling practical zero-trust software signing at scale.",
+    "use_cases": [
+      "Signing container images and artifacts in CI/CD pipelines without key management",
+      "Verifying provenance of open-source packages to prevent supply chain attacks",
+      "Securing software supply chains for regulated industries with automatic audit trails",
+      "Enabling developers to cryptographically sign commits without managing long-lived keys"
+    ],
+    "used_by": [
+      "GitHub",
+      "Google Cloud",
+      "Red Hat",
+      "CNCF projects"
+    ],
+    "docs": "https://docs.sigstore.dev/fulcio/overview/",
+    "tutorial": "https://docs.sigstore.dev/fulcio/certificate-issuing-flow/",
+    "added": "2026-08-02"
+  },
+  {
+    "id": "goreleaser",
+    "name": "GoReleaser",
+    "category": "Tool",
+    "domain": "CI/CD",
+    "eli5": "It's like a automated factory that takes your code and packages it up perfectly for every different computer (Mac, Windows, Linux) and publishes it everywhere at once.",
+    "description": "GoReleaser automates the entire release process for Go applications, handling cross-compilation, artifact creation, changelog generation, and multi-repository publishing. It's become the standard for Go project maintainers to deliver high-quality releases reliably.",
+    "use_cases": [
+      "Automating releases of Go CLI tools across Linux, macOS, and Windows",
+      "Publishing binaries to multiple repositories (GitHub, GitLab, Artifactory) in one workflow",
+      "Generating and managing changelogs with conventional commits",
+      "Creating Docker images and signing artifacts for secure distribution"
+    ],
+    "used_by": [
+      "Kubernetes project ecosystem",
+      "Docker",
+      "CNCF projects",
+      "Numerous open-source Go projects"
+    ],
+    "docs": "https://goreleaser.com/intro/",
+    "tutorial": "https://goreleaser.com/quick-start/",
+    "added": "2026-08-02"
   }
 ]

@@ -9481,5 +9481,97 @@
     "docs": "https://goreleaser.com/intro/",
     "tutorial": "https://goreleaser.com/quick-start/",
     "added": "2026-08-02"
+  },
+  {
+    "id": "spicedb",
+    "name": "SpiceDB",
+    "category": "Tool",
+    "domain": "Identity",
+    "eli5": "SpiceDB is like a permission rulebook that instantly tells you who can do what, just like a bouncer checks a VIP list at a club.",
+    "description": "SpiceDB is an open-source, Google Zanzibar-inspired authorization system that stores and evaluates fine-grained permissions at scale. It enables applications to implement complex access control policies with millisecond-latency permission checks.",
+    "use_cases": [
+      "Multi-tenant SaaS platforms with complex role-based access control",
+      "Real-time permission evaluation for APIs and microservices",
+      "Organizations migrating from policy-as-code to graph-based authorization",
+      "Enterprise applications requiring audit trails for permission decisions"
+    ],
+    "used_by": [
+      "Auth0",
+      "Okta",
+      "Cisco",
+      "Carta"
+    ],
+    "docs": "https://docs.authzed.com/",
+    "tutorial": "https://docs.authzed.com/getting-started",
+    "added": "2026-08-03"
+  },
+  {
+    "id": "axum",
+    "name": "Axum",
+    "category": "Framework",
+    "domain": "Backend",
+    "eli5": "Axum is like a Lego set for building super-fast web applications in Rust, where each block snaps together easily.",
+    "description": "Axum is a modular and composable web framework built on top of Tokio that prioritizes ergonomics and modularity for building high-performance async web services in Rust. It's developed and maintained by the Tokio team and has become the de facto standard for Rust web APIs.",
+    "use_cases": [
+      "Building high-performance REST APIs and microservices",
+      "Real-time WebSocket applications with low latency requirements",
+      "Cloud-native applications requiring minimal resource overhead",
+      "Async-first backend services with complex middleware requirements"
+    ],
+    "used_by": [
+      "Fly.io",
+      "Figma",
+      "Discord",
+      "1Password"
+    ],
+    "docs": "https://docs.rs/axum/",
+    "tutorial": "https://github.com/tokio-rs/axum/tree/main/examples",
+    "added": "2026-08-03"
+  },
+  {
+    "id": "exareme",
+    "name": "Exareme AI",
+    "category": "Tool",
+    "domain": "AI/ML",
+    "eli5": "Exareme is like a smart calculator that can learn from medical data without ever seeing the actual patient records, keeping everything private.",
+    "description": "Exareme AI is a federated learning platform that enables machine learning model training across decentralized, sensitive data sources without centralizing the raw data. It's particularly valuable in healthcare, finance, and regulated industries where data cannot leave its source.",
+    "use_cases": [
+      "Federated learning across hospital networks for drug discovery",
+      "Training financial risk models across multiple institutions",
+      "Privacy-preserving machine learning in regulated industries",
+      "Collaborative AI model development without data centralization"
+    ],
+    "used_by": [
+      "Novartis",
+      "Philips Healthcare",
+      "European Commission",
+      "Banco Santander"
+    ],
+    "docs": "https://www.exareme.ai/docs/",
+    "tutorial": "https://www.exareme.ai/getting-started/",
+    "added": "2026-08-03"
+  },
+  {
+    "id": "neon-serverless",
+    "name": "Neon Serverless Driver",
+    "category": "Tool",
+    "domain": "Database",
+    "eli5": "The Neon Serverless Driver is like having a taxi waiting outside your house that only charges you when you actually use it, instead of paying for a car sitting in your garage all day.",
+    "description": "Neon's serverless driver provides a low-latency, low-overhead JavaScript/TypeScript driver for PostgreSQL that's optimized for serverless and edge computing environments. It eliminates connection pooling overhead while maintaining compatibility with standard PostgreSQL connections.",
+    "use_cases": [
+      "Serverless function databases (AWS Lambda, Vercel, Cloudflare Workers)",
+      "Edge computing applications requiring millisecond connection times",
+      "Cost-optimized development and staging environments",
+      "Ephemeral compute environments with unpredictable workloads"
+    ],
+    "used_by": [
+      "Vercel",
+      "Cloudflare",
+      "Supabase",
+      "Replicate"
+    ],
+    "docs": "https://neon.tech/docs/serverless/serverless-driver",
+    "tutorial": "https://neon.tech/docs/serverless/serverless-driver-tutorial",
+    "added": "2026-08-03"
   }
 ]

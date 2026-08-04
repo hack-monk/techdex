@@ -9573,5 +9573,93 @@
     "docs": "https://neon.tech/docs/serverless/serverless-driver",
     "tutorial": "https://neon.tech/docs/serverless/serverless-driver-tutorial",
     "added": "2026-08-03"
+  },
+  {
+    "id": "pglite",
+    "name": "PGlite",
+    "category": "Platform",
+    "domain": "Database",
+    "eli5": "It's like having a tiny PostgreSQL database that lives inside your web browser, so your app can work even without internet.",
+    "description": "PGlite is a lightweight, in-process PostgreSQL database compiled to WebAssembly that runs in browsers and edge environments. It provides full SQL compatibility without requiring a separate database server.",
+    "use_cases": [
+      "Building offline-first web applications with local persistence",
+      "Edge computing and serverless database requirements",
+      "Progressive web apps that need relational data without network dependency",
+      "Development and testing environments without infrastructure overhead"
+    ],
+    "used_by": [
+      "Vercel",
+      "Expo",
+      "Replit"
+    ],
+    "docs": "https://pglite.dev/",
+    "tutorial": "https://pglite.dev/docs/getting-started",
+    "added": "2026-08-04"
+  },
+  {
+    "id": "par",
+    "name": "Par",
+    "category": "Tool",
+    "domain": "Data Engineering",
+    "eli5": "It's like a smart librarian that organizes massive amounts of data into neat shelves so computers can find what they need super fast.",
+    "description": "Par is a columnar data format and query engine designed for analytical workloads at massive scale with superior compression and query performance. It optimizes storage efficiency and read performance for OLAP operations.",
+    "use_cases": [
+      "Data warehousing and analytical queries on large datasets",
+      "Time-series data analysis and metrics storage",
+      "Scientific data processing and research computing",
+      "Cost optimization for cloud-based data analytics"
+    ],
+    "used_by": [
+      "DuckDB community",
+      "Analytics engineers",
+      "Data scientists"
+    ],
+    "docs": "https://duckdb.org/docs/guides/file_formats/parquet",
+    "tutorial": "https://duckdb.org/docs/guides/file_formats/parquet",
+    "added": "2026-08-04"
+  },
+  {
+    "id": "ryot",
+    "name": "Ryot",
+    "category": "Tool",
+    "domain": "SRE/Observability",
+    "eli5": "It's like a personal diary that automatically remembers everything you watched, read, or listened to, so you can look back anytime.",
+    "description": "Ryot is an open-source media tracking application that helps users document and organize their consumption of movies, TV shows, books, music, and games. It provides insights and statistics about media habits with social features.",
+    "use_cases": [
+      "Personal media library management and discovery",
+      "Tracking viewing and reading habits over time",
+      "Social media integration to share watched content",
+      "Generating insights and statistics about consumption patterns"
+    ],
+    "used_by": [
+      "Media enthusiasts",
+      "Self-hosted communities",
+      "Individual users"
+    ],
+    "docs": "https://ryot.io/docs",
+    "tutorial": "https://ryot.io/docs/getting-started",
+    "added": "2026-08-04"
+  },
+  {
+    "id": "openyurt",
+    "name": "OpenYurt",
+    "category": "Platform",
+    "domain": "Cloud",
+    "eli5": "It's like extending your cloud's power to the edge of the network, so devices far away from the main cloud can still work smoothly.",
+    "description": "OpenYurt is a Kubernetes-based platform for managing cloud-native applications across edge nodes, fog computing, and on-premises infrastructure. It extends Kubernetes to provide seamless orchestration at the edge with improved network resilience.",
+    "use_cases": [
+      "Kubernetes deployment and management at the network edge",
+      "IoT device orchestration and cloud-edge integration",
+      "Reducing latency for distributed applications",
+      "Infrastructure spanning cloud, fog, and edge locations"
+    ],
+    "used_by": [
+      "Alibaba Cloud",
+      "Enterprise edge computing teams",
+      "IoT operators"
+    ],
+    "docs": "https://openyurt.io/docs/",
+    "tutorial": "https://openyurt.io/docs/tutorial/",
+    "added": "2026-08-04"
   }
 ]

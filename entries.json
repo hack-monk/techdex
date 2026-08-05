@@ -9661,5 +9661,93 @@
     "docs": "https://openyurt.io/docs/",
     "tutorial": "https://openyurt.io/docs/tutorial/",
     "added": "2026-08-04"
+  },
+  {
+    "id": "anthropic-model-context-protocol",
+    "name": "Anthropic Model Context Protocol",
+    "category": "Framework",
+    "domain": "AI/ML",
+    "eli5": "It's like a universal translator that lets Claude talk to any tool on your computer, the same way a telephone operator connects calls between different phone systems.",
+    "description": "An open protocol that enables Claude and other AI models to connect with external tools, databases, and services through a standardized interface. It simplifies integration between AI applications and enterprise systems by defining how models request information from and act on external resources.",
+    "use_cases": [
+      "Connecting Claude to enterprise databases for real-time data retrieval",
+      "Building AI agents that can interact with APIs and internal tools",
+      "Enabling models to access file systems and knowledge bases dynamically",
+      "Creating reproducible AI workflows across different organizations"
+    ],
+    "used_by": [
+      "Anthropic",
+      "Replit",
+      "DuckDB"
+    ],
+    "docs": "https://modelcontextprotocol.io/docs",
+    "tutorial": "https://modelcontextprotocol.io/quickstart",
+    "added": "2026-08-05"
+  },
+  {
+    "id": "polar",
+    "name": "Polar",
+    "category": "Platform",
+    "domain": "Other",
+    "eli5": "It's like a payment processor for open-source developers, similar to how a store handles credit cards so customers can buy things without giving money directly to the shopkeeper.",
+    "description": "A platform that enables open-source developers and creators to monetize their work through sponsorships, product sales, and subscriptions while maintaining their open-source commitment. It handles payments, licensing, and community management in one integrated system.",
+    "use_cases": [
+      "Open-source projects generating recurring revenue from supporters",
+      "Selling digital products and merchandise directly to users",
+      "Managing sponsorship tiers with different benefit levels",
+      "Funding independent developers without creating closed-source forks"
+    ],
+    "used_by": [
+      "Astro",
+      "Zod",
+      "Trigger.dev"
+    ],
+    "docs": "https://docs.polar.sh",
+    "tutorial": "https://docs.polar.sh/getting-started",
+    "added": "2026-08-05"
+  },
+  {
+    "id": "temporal-cloud",
+    "name": "Temporal Cloud",
+    "category": "Platform",
+    "domain": "Backend",
+    "eli5": "It's like a reliable postal service for your code\u2014it guarantees your tasks get delivered and executed, even if things go wrong along the way.",
+    "description": "A fully managed SaaS platform for Temporal, an open-source workflow orchestration engine that ensures reliable, scalable execution of complex distributed workflows with built-in resilience and visibility. It eliminates the need to operate Temporal infrastructure while providing enterprise-grade reliability.",
+    "use_cases": [
+      "Long-running payment processing workflows that must complete reliably",
+      "Coordinating multi-step microservice interactions across teams",
+      "Building audit trails for critical business processes",
+      "Automatically retrying failed operations with exponential backoff"
+    ],
+    "used_by": [
+      "Datadog",
+      "Stripe",
+      "Figma"
+    ],
+    "docs": "https://docs.temporal.io/cloud",
+    "tutorial": "https://docs.temporal.io/cloud/get-started",
+    "added": "2026-08-05"
+  },
+  {
+    "id": "dspy",
+    "name": "DSPy",
+    "category": "Framework",
+    "domain": "AI/ML",
+    "eli5": "It's like teaching someone a recipe by showing them the ingredients and techniques, rather than just telling them the final dish\u2014you optimize the way to use AI models instead of hardcoding prompts.",
+    "description": "A framework by Stanford researchers that enables programmatic optimization of AI language model prompts and weights through automated techniques like in-context learning and finetuning. It treats prompt engineering as a compiler problem, allowing reproducible and maintainable AI applications.",
+    "use_cases": [
+      "Optimizing LLM prompts automatically rather than manual tuning",
+      "Building modular AI pipelines with learnable components",
+      "Creating RAG systems with automatic optimization of retrieval logic",
+      "Testing and validating LLM behaviors across different models systematically"
+    ],
+    "used_by": [
+      "Anthropic researchers",
+      "Academic institutions",
+      "AI-focused startups"
+    ],
+    "docs": "https://github.com/stanfordnlp/dspy",
+    "tutorial": "https://github.com/stanfordnlp/dspy/tree/main/examples",
+    "added": "2026-08-05"
   }
 ]

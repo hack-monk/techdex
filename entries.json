@@ -9749,5 +9749,120 @@
     "docs": "https://github.com/stanfordnlp/dspy",
     "tutorial": "https://github.com/stanfordnlp/dspy/tree/main/examples",
     "added": "2026-08-05"
+  },
+  {
+    "id": "esbuild",
+    "name": "esbuild",
+    "category": "Tool",
+    "domain": "Frontend",
+    "eli5": "It's like a super-fast photocopier that takes your JavaScript code and makes it smaller and faster, kind of like shrinking your toys to fit in a smaller box.",
+    "description": "An extremely fast JavaScript bundler and minifier written in Go that significantly reduces build times compared to traditional bundlers. It's widely adopted for its performance advantages and is integrated into popular frameworks like Vite and Next.js.",
+    "use_cases": [
+      "JavaScript and TypeScript application bundling",
+      "CSS and asset minification for production builds",
+      "Development server with hot module replacement",
+      "Building libraries and npm packages"
+    ],
+    "used_by": [
+      "Vercel",
+      "Shopify",
+      "Figma",
+      "Stripe"
+    ],
+    "docs": "https://esbuild.github.io/",
+    "tutorial": "https://esbuild.github.io/getting-started/",
+    "added": "2026-08-06"
+  },
+  {
+    "id": "clickhouse-cloud",
+    "name": "ClickHouse Cloud",
+    "category": "Platform",
+    "domain": "Database",
+    "eli5": "It's like having a super-organized library that can search through millions of books in seconds, specifically designed to find and count things really, really fast.",
+    "description": "A fully managed cloud analytics database optimized for OLAP (Online Analytical Processing) workloads with exceptional query performance on large datasets. ClickHouse excels at time-series data, log analysis, and real-time analytics at scale.",
+    "use_cases": [
+      "Real-time analytics dashboards and reporting",
+      "Log aggregation and analysis at petabyte scale",
+      "Time-series data storage and query",
+      "Ad-tech and monitoring data warehousing"
+    ],
+    "used_by": [
+      "Cloudflare",
+      "Uber",
+      "Yandex",
+      "GitLab"
+    ],
+    "docs": "https://clickhouse.com/docs/en/cloud",
+    "tutorial": "https://clickhouse.com/docs/en/getting-started/install",
+    "added": "2026-08-06"
+  },
+  {
+    "id": "budibase",
+    "name": "Budibase",
+    "category": "Platform",
+    "domain": "Backend",
+    "eli5": "It's like a magic LEGO set where you snap together blocks to build a working app without needing to write any code.",
+    "description": "An open-source low-code platform for rapidly building internal tools, dashboards, and CRUD applications with a visual builder and integrated database connectivity. It reduces development time for business applications by up to 10x compared to traditional coding.",
+    "use_cases": [
+      "Building internal admin panels and dashboards",
+      "Creating CRUD applications without coding",
+      "Database management interfaces",
+      "Rapid prototyping of business applications"
+    ],
+    "used_by": [
+      "Netflix",
+      "Deloitte",
+      "Accenture",
+      "Bupa"
+    ],
+    "docs": "https://docs.budibase.com/",
+    "tutorial": "https://docs.budibase.com/getting-started",
+    "added": "2026-08-06"
+  },
+  {
+    "id": "falco-security",
+    "name": "Falco Security Alerts",
+    "category": "Tool",
+    "domain": "Security",
+    "eli5": "It's like a guard dog that watches everything happening in your computer and barks loudly if something suspicious or dangerous starts to happen.",
+    "description": "A real-time container and system security monitoring tool that detects abnormal behavior and threats at runtime using dynamic instrumentation. Falco is widely used for detecting unauthorized process execution, privilege escalation, and suspicious network activity in cloud-native environments.",
+    "use_cases": [
+      "Runtime threat detection in Kubernetes clusters",
+      "Detecting unauthorized shell access and privilege escalation",
+      "Monitoring suspicious network connections and file access",
+      "Compliance auditing and forensic analysis"
+    ],
+    "used_by": [
+      "Google Cloud",
+      "Amazon Web Services",
+      "Sysdig",
+      "CloudBees"
+    ],
+    "docs": "https://falco.org/docs/",
+    "tutorial": "https://falco.org/docs/getting-started/",
+    "added": "2026-08-06"
+  },
+  {
+    "id": "hyperswitch",
+    "name": "Hyperswitch",
+    "category": "Platform",
+    "domain": "Other",
+    "eli5": "It's like a smart traffic director that sends your money payment to whichever payment processor will handle it best and fastest.",
+    "description": "An open-source payment orchestration platform that routes transactions across multiple payment processors to optimize success rates, reduce costs, and improve reliability. It abstracts the complexity of managing multiple payment gateways with a unified API.",
+    "use_cases": [
+      "Intelligent payment routing across multiple processors",
+      "Reducing payment failure rates through smart retry logic",
+      "Consolidating multiple payment gateway integrations",
+      "PCI compliance simplification and payment tokenization"
+    ],
+    "used_by": [
+      "Stripe",
+      "Adyen",
+      "Juspay",
+      "Wise"
+    ],
+    "docs": "https://hyperswitch.io/docs/",
+    "tutorial": "https://hyperswitch.io/docs/quickstart",
+    "added": "2026-08-06"
   }
 ]

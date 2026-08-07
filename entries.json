@@ -9864,5 +9864,115 @@
     "docs": "https://hyperswitch.io/docs/",
     "tutorial": "https://hyperswitch.io/docs/quickstart",
     "added": "2026-08-06"
+  },
+  {
+    "id": "anthropic-vision",
+    "name": "Anthropic Vision API",
+    "category": "Tool",
+    "domain": "AI/ML",
+    "eli5": "It's like giving Claude eyes so it can look at pictures and understand what's in them, just like you can recognize your mom in a photo.",
+    "description": "Claude's multimodal capability enabling image analysis, document understanding, and visual reasoning. It processes images alongside text to extract information, answer questions about visual content, and perform document intelligence tasks.",
+    "use_cases": [
+      "Document extraction and OCR from PDFs and images",
+      "Product catalog image tagging and classification",
+      "Visual quality assurance and defect detection",
+      "Chart and diagram interpretation for data analysis"
+    ],
+    "used_by": [
+      "Notion",
+      "DuckDuckGo",
+      "Zapier"
+    ],
+    "docs": "https://docs.anthropic.com/en/docs/vision/vision-beta",
+    "tutorial": "https://github.com/anthropics/cookbook/blob/main/vision/working_with_images.ipynb",
+    "added": "2026-08-07"
+  },
+  {
+    "id": "nats-jetstream",
+    "name": "NATS JetStream",
+    "category": "Platform",
+    "domain": "Messaging",
+    "eli5": "It's like a mailbox system where messages wait safely until someone picks them up, even if the recipient isn't home right now.",
+    "description": "NATS JetStream adds persistent message storage and replay capabilities to NATS, providing message streaming with exactly-once delivery semantics. It enables sophisticated event streaming patterns while maintaining NATS's core simplicity and performance.",
+    "use_cases": [
+      "Event sourcing and temporal event replay",
+      "Stream processing with delivery guarantees",
+      "Log aggregation and audit trails",
+      "Microservice choreography with replay capabilities"
+    ],
+    "used_by": [
+      "Synadia",
+      "Cloudflare",
+      "Dell Technologies"
+    ],
+    "docs": "https://docs.nats.io/nats-concepts/jetstream",
+    "tutorial": "https://docs.nats.io/using-nats/developer/develop_jetstream",
+    "added": "2026-08-07"
+  },
+  {
+    "id": "resend-email",
+    "name": "Resend Email Service",
+    "category": "Tool",
+    "domain": "Backend",
+    "eli5": "It's like hiring a mail carrier service specifically trained to deliver your digital letters and make sure they actually show up in people's inboxes.",
+    "description": "Resend is a modern email API platform built for developers, handling transactional emails with a focus on deliverability, reliability, and developer experience. It provides built-in templates, analytics, and integrations for sending emails from applications.",
+    "use_cases": [
+      "Transactional email delivery (password resets, confirmations)",
+      "Marketing email campaigns with analytics",
+      "Notification systems for user alerts",
+      "Invoice and receipt generation and delivery"
+    ],
+    "used_by": [
+      "Vercel",
+      "Stripe",
+      "Supabase"
+    ],
+    "docs": "https://resend.com/docs",
+    "tutorial": "https://resend.com/docs/send-with-nextjs",
+    "added": "2026-08-07"
+  },
+  {
+    "id": "benthos",
+    "name": "Benthos Stream Processing",
+    "category": "Tool",
+    "domain": "Data Engineering",
+    "eli5": "It's like a Swiss Army knife for moving data around\u2014it can read from anywhere, transform what it reads, and send it anywhere else, all in one tool.",
+    "description": "Benthos is a high-performance stream processing tool for building data pipelines with a simple YAML configuration. It connects multiple sources, applies transformations, and outputs to various destinations without requiring code compilation.",
+    "use_cases": [
+      "Real-time data pipeline orchestration",
+      "Multi-source data integration and normalization",
+      "Log and metric transformation before storage",
+      "Event stream filtering and enrichment"
+    ],
+    "used_by": [
+      "Meltwater",
+      "BentoML",
+      "Various fintech firms"
+    ],
+    "docs": "https://www.benthos.dev/docs/about",
+    "tutorial": "https://www.benthos.dev/docs/guides/getting_started",
+    "added": "2026-08-07"
+  },
+  {
+    "id": "authentik",
+    "name": "Authentik Identity Provider",
+    "category": "Platform",
+    "domain": "Identity",
+    "eli5": "It's like a security guard at the door of your applications who checks everyone's ID and decides who gets in and what they can do.",
+    "description": "Authentik is an open-source identity provider offering SSO, multi-factor authentication, and authorization without vendor lock-in. It provides modern authentication capabilities comparable to enterprise solutions while remaining self-hostable.",
+    "use_cases": [
+      "Single sign-on (SSO) for multiple applications",
+      "Multi-factor authentication enforcement",
+      "User provisioning and lifecycle management",
+      "SAML and OAuth2 protocol support for legacy integrations"
+    ],
+    "used_by": [
+      "Proxmox",
+      "Metabase",
+      "Various self-hosted enterprises"
+    ],
+    "docs": "https://goauthentik.io/docs/",
+    "tutorial": "https://goauthentik.io/docs/guides/basic-flows",
+    "added": "2026-08-07"
   }
 ]

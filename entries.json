@@ -9974,5 +9974,120 @@
     "docs": "https://goauthentik.io/docs/",
     "tutorial": "https://goauthentik.io/docs/guides/basic-flows",
     "added": "2026-08-07"
+  },
+  {
+    "id": "anthropic-mcp-claude-integration",
+    "name": "Claude MCP Integration",
+    "category": "Tool",
+    "domain": "AI/ML",
+    "eli5": "It's like giving Claude a bunch of tools to use, just like how a chef has different utensils to cook with.",
+    "description": "Model Context Protocol (MCP) integration that allows Claude to interact with external systems, databases, and APIs seamlessly. It enables developers to extend Claude's capabilities with custom tools and data sources while maintaining security.",
+    "use_cases": [
+      "Connecting Claude to private databases and knowledge bases",
+      "Building AI agents that can perform complex multi-step operations",
+      "Integrating Claude with internal company systems and APIs",
+      "Creating context-aware AI assistants with real-time data access"
+    ],
+    "used_by": [
+      "Anthropic",
+      "Scale AI",
+      "Notch",
+      "Klu"
+    ],
+    "docs": "https://modelcontextprotocol.io/introduction",
+    "tutorial": "https://modelcontextprotocol.io/quickstart",
+    "added": "2026-08-08"
+  },
+  {
+    "id": "dragonfly-redis",
+    "name": "Dragonfly",
+    "category": "Platform",
+    "domain": "Database",
+    "eli5": "It's like a faster, stronger version of Redis that can handle way more customers in a store at the same time without getting tired.",
+    "description": "A modern, high-performance in-memory data store designed as a drop-in replacement for Redis with significantly better throughput and lower latency. It supports Redis protocol compatibility while offering superior performance on modern hardware.",
+    "use_cases": [
+      "High-throughput caching for e-commerce platforms",
+      "Real-time leaderboards and gaming applications",
+      "Session management for large-scale web applications",
+      "Message queuing and pub/sub systems"
+    ],
+    "used_by": [
+      "Figma",
+      "Typeform",
+      "Discord",
+      "Fortnite"
+    ],
+    "docs": "https://www.dragonflydb.io/docs",
+    "tutorial": "https://www.dragonflydb.io/docs/getting-started",
+    "added": "2026-08-08"
+  },
+  {
+    "id": "stripe-test-clocks",
+    "name": "Stripe Test Clocks",
+    "category": "Tool",
+    "domain": "Backend",
+    "eli5": "It's like a time machine that lets you jump to any date in the future to test what happens when subscriptions expire or billing dates arrive.",
+    "description": "Stripe's testing feature that enables simulating time-dependent billing scenarios in test mode. Developers can accelerate billing cycles, test subscription renewals, and validate time-sensitive payment logic without waiting days or months.",
+    "use_cases": [
+      "Testing subscription renewal and cancellation flows",
+      "Validating trial period transitions and billing cycles",
+      "Testing dunning and retry logic for failed payments",
+      "Simulating invoice generation at specific future dates"
+    ],
+    "used_by": [
+      "Netflix",
+      "Slack",
+      "Figma",
+      "Notion"
+    ],
+    "docs": "https://stripe.com/docs/billing/testing",
+    "tutorial": "https://stripe.com/docs/billing/testing#test-clocks",
+    "added": "2026-08-08"
+  },
+  {
+    "id": "copier-project-generator",
+    "name": "Copier",
+    "category": "Tool",
+    "domain": "DevOps",
+    "eli5": "It's like a template maker that creates a whole project structure for you with one command, so you don't have to build everything from scratch.",
+    "description": "A robust project template generator and updater that allows teams to create, maintain, and distribute standardized project structures. It uses Jinja2 templating and can be updated dynamically as templates evolve.",
+    "use_cases": [
+      "Standardizing project structures across teams and organizations",
+      "Onboarding new microservices with consistent configurations",
+      "Maintaining cookiecutter templates with automatic updates",
+      "Enforcing organizational coding standards and best practices"
+    ],
+    "used_by": [
+      "Plone Foundation",
+      "PyMongo",
+      "FastAPI contributors",
+      "Open source projects"
+    ],
+    "docs": "https://copier.readthedocs.io/",
+    "tutorial": "https://copier.readthedocs.io/en/latest/tutorials/",
+    "added": "2026-08-08"
+  },
+  {
+    "id": "netmaker",
+    "name": "Netmaker",
+    "category": "Platform",
+    "domain": "Networking",
+    "eli5": "It's like a magic tunnel that connects all your computers and servers together securely, no matter where they are in the world.",
+    "description": "An open-source platform for creating and managing WireGuard-based virtual networks, enabling secure mesh networking across distributed infrastructure. It simplifies overlay network creation, management, and monitoring for zero-trust networking architectures.",
+    "use_cases": [
+      "Building zero-trust network architectures across cloud and on-premises",
+      "Creating secure VPNs for remote teams and distributed teams",
+      "Connecting Kubernetes clusters across multiple regions",
+      "Establishing private mesh networks for IoT and edge devices"
+    ],
+    "used_by": [
+      "HashiCorp",
+      "Canonical",
+      "various enterprises",
+      "open source projects"
+    ],
+    "docs": "https://docs.netmaker.io/",
+    "tutorial": "https://docs.netmaker.io/getting-started",
+    "added": "2026-08-08"
   }
 ]

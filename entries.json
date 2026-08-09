@@ -10089,5 +10089,51 @@
     "docs": "https://docs.netmaker.io/",
     "tutorial": "https://docs.netmaker.io/getting-started",
     "added": "2026-08-08"
+  },
+  {
+    "id": "resend-api",
+    "name": "Resend API",
+    "category": "Platform",
+    "domain": "Backend",
+    "eli5": "It's like a mailbox service that makes sure your emails get to people's inboxes instead of spam folders.",
+    "description": "Resend is a transactional email platform designed for developers, providing reliable email delivery with built-in templates, webhooks, and analytics. It simplifies sending application emails like password resets and notifications with a clean API.",
+    "use_cases": [
+      "Transactional email delivery for authentication and password resets",
+      "Marketing campaign emails and newsletters",
+      "Order confirmations and delivery notifications",
+      "User onboarding and engagement emails"
+    ],
+    "used_by": [
+      "Vercel",
+      "Supabase",
+      "Stripe",
+      "Linear"
+    ],
+    "docs": "https://resend.com/docs",
+    "tutorial": "https://resend.com/docs/quickstart",
+    "added": "2026-08-09"
+  },
+  {
+    "id": "semgrep-pro",
+    "name": "Semgrep Pro",
+    "category": "Tool",
+    "domain": "Security",
+    "eli5": "It's like a teacher that reads all your code and catches mistakes before you turn it in, finding bugs and security problems automatically.",
+    "description": "Semgrep is a fast, static analysis tool that finds bugs, security vulnerabilities, and anti-patterns in code across multiple languages. The Pro version adds enterprise features like triage, deduplication, and advanced policy management.",
+    "use_cases": [
+      "Finding security vulnerabilities in pull requests before merge",
+      "Enforcing code quality standards and best practices",
+      "Detecting OWASP Top 10 vulnerabilities automatically",
+      "Compliance scanning for regulated industries"
+    ],
+    "used_by": [
+      "Stripe",
+      "Databricks",
+      "Auth0",
+      "Figma"
+    ],
+    "docs": "https://semgrep.dev/docs/",
+    "tutorial": "https://semgrep.dev/r/",
+    "added": "2026-08-09"
   }
 ]

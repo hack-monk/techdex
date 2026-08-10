@@ -10135,5 +10135,120 @@
     "docs": "https://semgrep.dev/docs/",
     "tutorial": "https://semgrep.dev/r/",
     "added": "2026-08-09"
+  },
+  {
+    "id": "anthropic-claude-3-5-haiku",
+    "name": "Claude 3.5 Haiku",
+    "category": "Tool",
+    "domain": "AI/ML",
+    "eli5": "A super-smart robot that understands words and pictures really quickly, like having a fast helpful friend who remembers everything you tell it.",
+    "description": "Claude 3.5 Haiku is Anthropic's fastest and most compact large language model, designed for high-volume, latency-sensitive applications requiring real-time responses. It matches Claude 3 Opus performance while being significantly faster and cheaper.",
+    "use_cases": [
+      "Real-time chatbot responses for customer support",
+      "Batch processing of large document collections",
+      "Mobile and edge device AI inference",
+      "High-frequency API endpoints with strict latency budgets"
+    ],
+    "used_by": [
+      "Anthropic",
+      "Scale AI",
+      "Modal Labs",
+      "Replit"
+    ],
+    "docs": "https://docs.anthropic.com/claude/reference/getting-started-with-the-api",
+    "tutorial": "https://docs.anthropic.com/claude/tutorials/build-a-chatbot",
+    "added": "2026-08-10"
+  },
+  {
+    "id": "rustler",
+    "name": "Rustler",
+    "category": "Framework",
+    "domain": "Backend",
+    "eli5": "A bridge that lets Rust (the super-fast language) work inside Elixir programs, like connecting a speedy race car engine to a reliable truck.",
+    "description": "Rustler is an Elixir library that enables seamless integration of Rust code for performance-critical operations, allowing developers to write safe, concurrent Elixir applications with Rust's speed for compute-heavy tasks. It handles the FFI complexity automatically.",
+    "use_cases": [
+      "Image processing and computer vision in Elixir applications",
+      "Cryptographic operations requiring high performance",
+      "Real-time data processing in telecom and financial systems",
+      "CPU-intensive algorithms while maintaining Elixir's concurrency model"
+    ],
+    "used_by": [
+      "Discord",
+      "Mux",
+      "Qdrant",
+      "Akord"
+    ],
+    "docs": "https://hexdocs.pm/rustler/",
+    "tutorial": "https://github.com/rusterlium/rustler/blob/master/README.md",
+    "added": "2026-08-10"
+  },
+  {
+    "id": "frugal",
+    "name": "Frugal",
+    "category": "Tool",
+    "domain": "Data Engineering",
+    "eli5": "A smart tool that makes it super easy for different computer programs to talk to each other using a shared language they all understand.",
+    "description": "Frugal is a code generation tool that creates multi-language RPC clients and servers with message serialization, enabling efficient service-to-service communication across polyglot architectures. It extends Thrift with better code generation and modern language support.",
+    "use_cases": [
+      "Microservice communication in polyglot systems",
+      "Building consistent APIs across Python, Go, Java, and Rust services",
+      "Event-driven architecture message definitions",
+      "gRPC alternative with simpler code generation for legacy systems"
+    ],
+    "used_by": [
+      "Walmart Labs",
+      "Groupon",
+      "SeatGeek",
+      "DigitalOcean"
+    ],
+    "docs": "https://frugal.io/",
+    "tutorial": "https://frugal.io/docs/tutorial/",
+    "added": "2026-08-10"
+  },
+  {
+    "id": "neon-autoscaling",
+    "name": "Neon Autoscaling",
+    "category": "Platform",
+    "domain": "Database",
+    "eli5": "A database that automatically grows and shrinks like an accordion depending on how busy it is, so you only pay for what you use.",
+    "description": "Neon Autoscaling automatically adjusts compute resources based on demand, scaling database capacity up for traffic spikes and down during quiet periods. It enables cost-efficient PostgreSQL deployments with zero manual capacity planning.",
+    "use_cases": [
+      "SaaS applications with variable traffic patterns",
+      "Development and staging environments with unpredictable usage",
+      "Event-driven applications with bursty workloads",
+      "Multi-tenant systems with per-customer resource isolation"
+    ],
+    "used_by": [
+      "Vercel",
+      "Together AI",
+      "Retool",
+      "Twelve Labs"
+    ],
+    "docs": "https://neon.tech/docs/guides/autoscaling",
+    "tutorial": "https://neon.tech/docs/introduction",
+    "added": "2026-08-10"
+  },
+  {
+    "id": "par-parallel",
+    "name": "Par (Parallel Execution)",
+    "category": "Tool",
+    "domain": "DevOps",
+    "eli5": "A helper that runs many tasks at the same time on your computer instead of one at a time, like cooking multiple dishes on different burners instead of using just one.",
+    "description": "Par is a command-line tool for executing shell commands in parallel with dependency management, providing resource limits and organized output. It's used in build systems, data processing pipelines, and infrastructure automation to maximize throughput.",
+    "use_cases": [
+      "Parallel test execution across multiple workers",
+      "Distributed build systems with task dependency graphs",
+      "Batch processing with controlled concurrency limits",
+      "Infrastructure provisioning with parallel resource creation"
+    ],
+    "used_by": [
+      "Stripe",
+      "HashiCorp",
+      "CloudFlare",
+      "Databricks"
+    ],
+    "docs": "https://github.com/google/par",
+    "tutorial": "https://github.com/google/par/blob/master/README.md",
+    "added": "2026-08-10"
   }
 ]

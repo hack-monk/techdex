@@ -10250,5 +10250,28 @@
     "docs": "https://github.com/google/par",
     "tutorial": "https://github.com/google/par/blob/master/README.md",
     "added": "2026-08-10"
+  },
+  {
+    "id": "sentry-ai-powered-debugging",
+    "name": "Sentry AI-Powered Debugging",
+    "category": "Tool",
+    "domain": "SRE/Observability",
+    "eli5": "It's like having a detective who automatically finds and reports every time something breaks in your app, then explains why it happened.",
+    "description": "Sentry is an error tracking platform that captures, monitors, and analyzes exceptions and performance issues in real-time across web and mobile applications. It uses AI to automatically group related errors, suggest fixes, and predict where problems will occur.",
+    "use_cases": [
+      "Real-time crash detection and alerting for production applications",
+      "Performance monitoring and bottleneck identification across services",
+      "Session replay and user impact analysis for debugging issues",
+      "AI-powered root cause analysis and automatic error grouping"
+    ],
+    "used_by": [
+      "Airbnb",
+      "Uber",
+      "Spotify",
+      "Microsoft"
+    ],
+    "docs": "https://docs.sentry.io/",
+    "tutorial": "https://docs.sentry.io/product/getting-started/",
+    "added": "2026-08-11"
   }
 ]

@@ -10273,5 +10273,71 @@
     "docs": "https://docs.sentry.io/",
     "tutorial": "https://docs.sentry.io/product/getting-started/",
     "added": "2026-08-11"
+  },
+  {
+    "id": "nushell",
+    "name": "Nushell",
+    "category": "Language",
+    "domain": "DevOps",
+    "eli5": "It's a smarter way to talk to your computer that understands structured data like tables and lists, making it easier to find and organize things.",
+    "description": "Nushell is a modern shell and scripting language that treats data as structured objects rather than plain text streams, making it more intuitive for system administration and automation. It combines the power of traditional shells with modern language features and better error handling.",
+    "use_cases": [
+      "System administration and automation with structured data",
+      "Data processing pipelines without external tools like awk or sed",
+      "Cross-platform scripting for Windows, Linux, and macOS",
+      "Building maintainable DevOps automation workflows"
+    ],
+    "used_by": [
+      "Rust community members",
+      "Linux enthusiasts",
+      "DevOps practitioners"
+    ],
+    "docs": "https://www.nushell.sh/book/",
+    "tutorial": "https://www.nushell.sh/book/quick_tour.html",
+    "added": "2026-08-12"
+  },
+  {
+    "id": "parseable",
+    "name": "Parseable",
+    "category": "Tool",
+    "domain": "SRE/Observability",
+    "eli5": "It's a lightweight log storage and search tool that works like a notebook where you can quickly write down and find all the things that happen in your applications.",
+    "description": "Parseable is a lightweight, cost-effective log storage and analysis platform designed as an alternative to Elasticsearch, offering better performance and lower resource consumption. It provides full-text search, data retention policies, and integrations with popular observability stacks.",
+    "use_cases": [
+      "Cost-effective centralized logging for cloud applications",
+      "Real-time log aggregation and analysis from distributed systems",
+      "Compliance and audit logging with retention policies",
+      "Integration with existing monitoring stacks (Prometheus, Grafana)"
+    ],
+    "used_by": [
+      "Startups",
+      "Cloud-native teams",
+      "Organizations seeking Elasticsearch alternatives"
+    ],
+    "docs": "https://www.parseable.io/docs/",
+    "tutorial": "https://www.parseable.io/docs/getting-started",
+    "added": "2026-08-12"
+  },
+  {
+    "id": "zap",
+    "name": "Zap",
+    "category": "Tool",
+    "domain": "Security",
+    "eli5": "It's like a security guard that checks your website for hidden weak spots and tells you where someone could sneak in.",
+    "description": "OWASP ZAP (Zed Attack Proxy) is a free and open-source web application security scanner used to find vulnerabilities in web applications during development and testing. It supports both manual and automated testing, making it essential for secure development pipelines.",
+    "use_cases": [
+      "Automated security scanning in CI/CD pipelines",
+      "Dynamic application security testing (DAST) for web applications",
+      "Manual penetration testing and vulnerability assessment",
+      "Compliance scanning for security standards and regulations"
+    ],
+    "used_by": [
+      "OWASP Foundation",
+      "Enterprise security teams",
+      "DevSecOps practitioners"
+    ],
+    "docs": "https://www.zaproxy.org/docs/",
+    "tutorial": "https://www.zaproxy.org/getting-started/",
+    "added": "2026-08-12"
   }
 ]

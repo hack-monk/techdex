@@ -10339,5 +10339,74 @@
     "docs": "https://www.zaproxy.org/docs/",
     "tutorial": "https://www.zaproxy.org/getting-started/",
     "added": "2026-08-12"
+  },
+  {
+    "id": "vscode",
+    "name": "Visual Studio Code",
+    "category": "Tool",
+    "domain": "Other",
+    "eli5": "A smart notebook for writing code that helps you catch mistakes and find the right words, like autocorrect but way smarter.",
+    "description": "VS Code is a lightweight, extensible code editor built by Microsoft that dominates modern software development with its speed, debugging capabilities, and vast extension ecosystem. It supports virtually every programming language and framework through plugins, making it the most widely adopted editor in the industry.",
+    "use_cases": [
+      "Full-stack web development with Node.js, React, and Vue frameworks",
+      "Python development with linting, formatting, and debugging tools",
+      "Remote development and tunneling via VS Code Remote extensions",
+      "Infrastructure-as-Code editing with Terraform, CloudFormation, and Ansible support"
+    ],
+    "used_by": [
+      "Microsoft",
+      "Google",
+      "Netflix",
+      "Stripe"
+    ],
+    "docs": "https://code.visualstudio.com/docs",
+    "tutorial": "https://code.visualstudio.com/learn",
+    "added": "2026-08-13"
+  },
+  {
+    "id": "frida",
+    "name": "Frida",
+    "category": "Tool",
+    "domain": "Security",
+    "eli5": "A magic wand that lets you peek inside and control running programs without stopping them, like watching a video game and changing what happens while it's playing.",
+    "description": "Frida is a dynamic instrumentation framework that allows you to inject code into running processes on Windows, macOS, iOS, Android, and Linux for debugging, reverse engineering, and security research. It enables real-time inspection and modification of application behavior without source code access.",
+    "use_cases": [
+      "Reverse engineering and analyzing closed-source applications",
+      "Runtime code injection and patching for debugging and testing",
+      "Security research and vulnerability discovery in mobile apps",
+      "API hooking and monitoring of system calls in native applications"
+    ],
+    "used_by": [
+      "Google Security Team",
+      "Cybersecurity researchers",
+      "Mobile app developers",
+      "Penetration testing firms"
+    ],
+    "docs": "https://frida.re/docs/home/",
+    "tutorial": "https://frida.re/docs/tutorials/",
+    "added": "2026-08-13"
+  },
+  {
+    "id": "dapr",
+    "name": "Dapr (Distributed Application Runtime)",
+    "category": "Platform",
+    "domain": "Backend",
+    "eli5": "A universal translator that helps different parts of your application talk to each other without needing to learn each other's language, like a translator at the United Nations.",
+    "description": "Dapr is an open-source runtime that provides building blocks for distributed applications, including state management, pub/sub messaging, service invocation, and actor patterns. It abstracts away the complexity of microservices infrastructure and works with any language or framework, reducing boilerplate code significantly.",
+    "use_cases": [
+      "Microservices communication without tight coupling to specific messaging systems",
+      "Distributed state management across multiple services and languages",
+      "Building serverless and event-driven applications with consistent APIs",
+      "Multi-cloud and hybrid deployments with cloud-agnostic abstractions"
+    ],
+    "used_by": [
+      "Microsoft",
+      "Apache Foundation",
+      "Alibaba",
+      "BMW"
+    ],
+    "docs": "https://docs.dapr.io/",
+    "tutorial": "https://docs.dapr.io/getting-started/",
+    "added": "2026-08-13"
   }
 ]

@@ -10408,5 +10408,120 @@
     "docs": "https://docs.dapr.io/",
     "tutorial": "https://docs.dapr.io/getting-started/",
     "added": "2026-08-13"
+  },
+  {
+    "id": "perplexity-api",
+    "name": "Perplexity API",
+    "category": "Platform",
+    "domain": "AI/ML",
+    "eli5": "It's like having a smart librarian who can read the entire internet and answer your questions with current information in real-time.",
+    "description": "Perplexity API provides access to real-time search and reasoning capabilities with citations, allowing developers to build AI applications with current web information. It combines large language models with live internet search to provide accurate, up-to-date answers.",
+    "use_cases": [
+      "Building AI chatbots that need current information and news",
+      "Research assistants that verify facts against live web data",
+      "Real-time market analysis and trend monitoring",
+      "Knowledge retrieval systems with source attribution"
+    ],
+    "used_by": [
+      "Scale AI",
+      "Replit",
+      "Notion AI",
+      "Y Combinator startups"
+    ],
+    "docs": "https://docs.perplexity.ai/",
+    "tutorial": "https://docs.perplexity.ai/guides/getting-started",
+    "added": "2026-08-14"
+  },
+  {
+    "id": "mcp-server-stdlib",
+    "name": "MCP Server Stdlib",
+    "category": "Tool",
+    "domain": "Backend",
+    "eli5": "It's like a universal adapter that lets AI assistants safely use your computer's built-in tools like reading files, running code, and sending emails.",
+    "description": "MCP Server Stdlib provides official Model Context Protocol server implementations for common system operations, enabling safe and standardized integration between AI models and local system resources. It's part of the broader MCP ecosystem that provides interoperability standards for AI tool use.",
+    "use_cases": [
+      "Enabling Claude to safely read and write local files",
+      "Running shell commands through AI assistants with sandboxing",
+      "Creating standardized integrations between AI tools and applications",
+      "Building autonomous agents with controlled system access"
+    ],
+    "used_by": [
+      "Anthropic",
+      "Figma",
+      "Slack",
+      "Replit"
+    ],
+    "docs": "https://modelcontextprotocol.io/",
+    "tutorial": "https://github.com/modelcontextprotocol/servers/tree/main/src/stdlib",
+    "added": "2026-08-14"
+  },
+  {
+    "id": "xata",
+    "name": "Xata",
+    "category": "Platform",
+    "domain": "Database",
+    "eli5": "It's like a smart filing cabinet that organizes your data, lets you search it super fast, and automatically backs everything up for you.",
+    "description": "Xata is a serverless PostgreSQL platform with built-in vector search, full-text search, and file attachments, designed for developers who want database functionality without managing infrastructure. It combines relational data with modern search capabilities in a single managed service.",
+    "use_cases": [
+      "Building AI applications with integrated vector embeddings",
+      "Creating full-text searchable content platforms",
+      "Developing serverless applications without database ops overhead",
+      "Multi-tenant SaaS applications with instant global distribution"
+    ],
+    "used_by": [
+      "Vercel ecosystem",
+      "Netlify startups",
+      "Gumroad",
+      "Framer"
+    ],
+    "docs": "https://xata.io/docs",
+    "tutorial": "https://xata.io/docs/getting-started",
+    "added": "2026-08-14"
+  },
+  {
+    "id": "crowdsec",
+    "name": "CrowdSec",
+    "category": "Tool",
+    "domain": "Security",
+    "eli5": "It's like a neighborhood watch system where everyone shares information about bad actors trying to break into houses, so everyone stays safer together.",
+    "description": "CrowdSec is an open-source, collaborative security engine that detects and remedies cyber threats through crowdsourced threat intelligence and behavior analysis. It provides real-time protection against attacks by analyzing logs and sharing threat data across a global community.",
+    "use_cases": [
+      "Detecting and blocking brute force attacks and credential stuffing",
+      "Collaborative threat intelligence sharing across organizations",
+      "Automated response to suspicious behavior and DDoS patterns",
+      "Log analysis and intrusion detection for web applications and servers"
+    ],
+    "used_by": [
+      "OVH",
+      "AWS partners",
+      "Cloudflare customers",
+      "Enterprise security teams"
+    ],
+    "docs": "https://docs.crowdsec.net/",
+    "tutorial": "https://docs.crowdsec.net/docs/getting-started",
+    "added": "2026-08-14"
+  },
+  {
+    "id": "trigger-dev",
+    "name": "Trigger.dev",
+    "category": "Platform",
+    "domain": "Backend",
+    "eli5": "It's like hiring a reliable assistant who watches for specific events and automatically does tasks for you whenever those events happen.",
+    "description": "Trigger.dev is a platform for building, running, and monitoring background jobs and event-driven workflows with a developer-friendly SDK and built-in reliability features. It simplifies complex async operations, integrations, and long-running tasks without requiring infrastructure management.",
+    "use_cases": [
+      "Building webhook receivers and event-driven architectures",
+      "Creating scheduled jobs and cron tasks with retries",
+      "Integrating third-party APIs with automatic error handling",
+      "Processing background work at scale without managing queues"
+    ],
+    "used_by": [
+      "Vercel",
+      "Stripe ecosystem",
+      "Supabase partners",
+      "Resend"
+    ],
+    "docs": "https://trigger.dev/docs",
+    "tutorial": "https://trigger.dev/docs/tutorials",
+    "added": "2026-08-14"
   }
 ]

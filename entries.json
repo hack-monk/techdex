@@ -10523,5 +10523,74 @@
     "docs": "https://trigger.dev/docs",
     "tutorial": "https://trigger.dev/docs/tutorials",
     "added": "2026-08-14"
+  },
+  {
+    "id": "bigtable",
+    "name": "Google Cloud Bigtable",
+    "category": "Platform",
+    "domain": "Database",
+    "eli5": "It's like a giant spreadsheet that can handle millions of people writing to it at the same time without slowing down.",
+    "description": "Google Cloud Bigtable is a fully managed, scalable NoSQL database service designed for massive analytical and operational workloads. It powers real-time big data applications requiring high throughput and low latency across petabytes of data.",
+    "use_cases": [
+      "Time-series data storage for IoT sensor streams",
+      "Real-time analytics on clickstream and user behavior data",
+      "Financial trading systems and market data storage",
+      "Genomics research data processing and analysis"
+    ],
+    "used_by": [
+      "Google",
+      "Netflix",
+      "Spotify",
+      "Uber"
+    ],
+    "docs": "https://cloud.google.com/bigtable/docs",
+    "tutorial": "https://cloud.google.com/bigtable/docs/quickstart-cbt",
+    "added": "2026-08-16"
+  },
+  {
+    "id": "cohere-api",
+    "name": "Cohere API",
+    "category": "Platform",
+    "domain": "AI/ML",
+    "eli5": "It's like having a smart library assistant who can read, understand, and generate text about any topic you ask.",
+    "description": "Cohere provides a suite of large language models and APIs for natural language understanding and generation, designed for enterprise use cases with customization, fine-tuning, and production-grade reliability. It competes with OpenAI and Anthropic with focus on enterprise deployability.",
+    "use_cases": [
+      "Document summarization and information extraction",
+      "Customer support chatbots and semantic search",
+      "Content generation for marketing and email campaigns",
+      "Named entity recognition and text classification tasks"
+    ],
+    "used_by": [
+      "IBM",
+      "Mailchimp",
+      "ServiceTitan",
+      "Typeform"
+    ],
+    "docs": "https://docs.cohere.com",
+    "tutorial": "https://docs.cohere.com/docs/quickstart",
+    "added": "2026-08-16"
+  },
+  {
+    "id": "memcached",
+    "name": "Memcached",
+    "category": "Tool",
+    "domain": "Storage",
+    "eli5": "It's like a super-fast sticky note board that your computer uses to remember frequently used information so it doesn't have to look it up every time.",
+    "description": "Memcached is a distributed memory caching system widely used to speed up dynamic web applications by temporarily storing frequently accessed data in RAM. It reduces database load and improves response times through simple key-value storage.",
+    "use_cases": [
+      "Caching database query results to reduce load",
+      "Session storage for web applications",
+      "Rate limiting and throttling data",
+      "Leaderboard and scoring caches for gaming platforms"
+    ],
+    "used_by": [
+      "Facebook",
+      "Twitter",
+      "Airbnb",
+      "YouTube"
+    ],
+    "docs": "https://memcached.org/about",
+    "tutorial": "https://memcached.org/wiki/NewStart",
+    "added": "2026-08-16"
   }
 ]

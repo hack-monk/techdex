@@ -10592,5 +10592,51 @@
     "docs": "https://memcached.org/about",
     "tutorial": "https://memcached.org/wiki/NewStart",
     "added": "2026-08-16"
+  },
+  {
+    "id": "anthropic-sdk",
+    "name": "Anthropic SDK",
+    "category": "Tool",
+    "domain": "AI/ML",
+    "eli5": "It's like a translator that helps your code talk to Claude the AI robot in a structured way.",
+    "description": "Official SDK for integrating Claude AI models into applications with support for multiple programming languages including Python, Node.js, and others. Provides convenient abstractions for API calls, streaming, and file handling.",
+    "use_cases": [
+      "Building AI-powered chatbots and customer support systems",
+      "Integrating Claude into existing applications for content generation",
+      "Creating autonomous agents and multi-step workflows",
+      "Developing enterprise AI solutions with production-grade reliability"
+    ],
+    "used_by": [
+      "Anthropic",
+      "Scale AI",
+      "Replit",
+      "Quora"
+    ],
+    "docs": "https://github.com/anthropics/anthropic-sdk-python",
+    "tutorial": "https://docs.anthropic.com/claude/reference/getting-started-with-the-api",
+    "added": "2026-08-17"
+  },
+  {
+    "id": "bazel-build",
+    "name": "Bazel",
+    "category": "Tool",
+    "domain": "CI/CD",
+    "eli5": "It's like a smart construction manager that only rebuilds the exact parts of your house that actually changed.",
+    "description": "Build system that enables fast, incremental builds with hermetic, reproducible outputs across multiple languages and platforms. Used extensively in large monorepos to parallelize and cache build artifacts efficiently.",
+    "use_cases": [
+      "Managing builds in large monorepos with mixed languages and targets",
+      "Ensuring reproducible builds and deployment artifacts",
+      "Accelerating CI/CD pipelines through intelligent caching and parallelization",
+      "Enforcing dependency management and sandboxing across polyglot projects"
+    ],
+    "used_by": [
+      "Google",
+      "Stripe",
+      "Twitter",
+      "Databricks"
+    ],
+    "docs": "https://bazel.build/docs",
+    "tutorial": "https://bazel.build/start",
+    "added": "2026-08-17"
   }
 ]

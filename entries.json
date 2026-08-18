@@ -10638,5 +10638,51 @@
     "docs": "https://bazel.build/docs",
     "tutorial": "https://bazel.build/start",
     "added": "2026-08-17"
+  },
+  {
+    "id": "windmill-workflow",
+    "name": "Windmill",
+    "category": "Platform",
+    "domain": "Backend",
+    "eli5": "Windmill is like a visual flowchart maker for creating automated jobs that run tasks in sequence without writing traditional code.",
+    "description": "Windmill is an open-source workflow orchestration platform that enables rapid development of internal tools, APIs, and automated workflows using visual flows combined with Python, JavaScript, or SQL scripts. It provides instant UIs and APIs for data operations without boilerplate.",
+    "use_cases": [
+      "Building internal tools and dashboards for operations teams",
+      "Automating data pipelines and ETL workflows",
+      "Creating scheduled jobs for background processing",
+      "Rapid API development for business logic without frontend boilerplate"
+    ],
+    "used_by": [
+      "Airbnb",
+      "Notion",
+      "Zapier",
+      "Twilio"
+    ],
+    "docs": "https://docs.windmill.dev/",
+    "tutorial": "https://docs.windmill.dev/docs/getting_started/quickstart",
+    "added": "2026-08-18"
+  },
+  {
+    "id": "rocksdb",
+    "name": "RocksDB",
+    "category": "Tool",
+    "domain": "Database",
+    "eli5": "RocksDB is like a super-fast personal filing cabinet that stores and retrieves data at lightning speed, even when your computer has limited resources.",
+    "description": "RocksDB is a high-performance embedded key-value storage library developed by Meta, optimized for fast access patterns and high throughput on modern hardware. It's widely used as the foundation for databases and storage systems that need low-latency access to large datasets.",
+    "use_cases": [
+      "Embedded storage engine for distributed databases",
+      "High-performance caching layers in production systems",
+      "Time-series database backends requiring fast writes",
+      "State management in stream processing and blockchain systems"
+    ],
+    "used_by": [
+      "Meta",
+      "LinkedIn",
+      "MongoDB",
+      "CockroachDB"
+    ],
+    "docs": "https://rocksdb.org/docs/getting-started.html",
+    "tutorial": "https://rocksdb.org/docs/basic-operations.html",
+    "added": "2026-08-18"
   }
 ]

@@ -10684,5 +10684,93 @@
     "docs": "https://rocksdb.org/docs/getting-started.html",
     "tutorial": "https://rocksdb.org/docs/basic-operations.html",
     "added": "2026-08-18"
+  },
+  {
+    "id": "caddy-v2",
+    "name": "Caddy v2",
+    "category": "Tool",
+    "domain": "Networking",
+    "eli5": "Caddy is like a smart security guard at a building entrance who automatically gives everyone a special badge (HTTPS certificate) so nobody can spy on them.",
+    "description": "Caddy is a modern, open-source web server written in Go that automatically provisions and renews HTTPS certificates via Let's Encrypt. It simplifies deployment with its JSON or Caddyfile configuration format and built-in reverse proxy, load balancing, and API gateway capabilities.",
+    "use_cases": [
+      "Automatic HTTPS certificate management for web applications",
+      "Reverse proxy and API gateway for microservices",
+      "Load balancing across multiple backend servers",
+      "Quick deployment of static sites and web services"
+    ],
+    "used_by": [
+      "Cloudflare",
+      "Fastly",
+      "many enterprises using automatic TLS"
+    ],
+    "docs": "https://caddyserver.com/docs/",
+    "tutorial": "https://caddyserver.com/docs/getting-started",
+    "added": "2026-08-19"
+  },
+  {
+    "id": "meson-build",
+    "name": "Meson Build System",
+    "category": "Tool",
+    "domain": "DevOps",
+    "eli5": "Meson is like a recipe card that tells your computer exactly what ingredients (code files) to mix together and in what order to bake a working program.",
+    "description": "Meson is a modern build system written in Python that compiles code quickly and efficiently with native support for C, C++, Rust, and other languages. It emphasizes speed, simplicity, and correctness with clear error messages and dependency management.",
+    "use_cases": [
+      "Building large C/C++ projects with fast compilation times",
+      "Cross-platform compilation for embedded systems and Linux distributions",
+      "Dependency management and integration testing",
+      "GNOME and system software development"
+    ],
+    "used_by": [
+      "GNOME project",
+      "Mesa graphics library",
+      "systemd",
+      "GStreamer"
+    ],
+    "docs": "https://mesonbuild.com/",
+    "tutorial": "https://mesonbuild.com/Tutorial.html",
+    "added": "2026-08-19"
+  },
+  {
+    "id": "pydantic-ai",
+    "name": "Pydantic AI",
+    "category": "Framework",
+    "domain": "AI/ML",
+    "eli5": "Pydantic AI is like a smart clipboard that helps you ask AI assistants questions and makes sure their answers are in exactly the format you need.",
+    "description": "Pydantic AI is a Python framework for building production-ready applications powered by large language models with strong validation and structured outputs. It provides type-safe interactions with various LLM providers and reduces overhead compared to traditional LLM frameworks.",
+    "use_cases": [
+      "Building AI agents with structured tool use and reasoning",
+      "Ensuring validated outputs from language models",
+      "Multi-provider LLM applications with provider switching",
+      "Enterprise AI application development with type safety"
+    ],
+    "used_by": [
+      "Pydantic maintainers",
+      "enterprises building AI applications"
+    ],
+    "docs": "https://ai.pydantic.dev/",
+    "tutorial": "https://ai.pydantic.dev/latest/getting-started/",
+    "added": "2026-08-19"
+  },
+  {
+    "id": "axiom-cloud-analytics",
+    "name": "Axiom Cloud Analytics",
+    "category": "Platform",
+    "domain": "SRE/Observability",
+    "eli5": "Axiom is like a search engine for all the log messages and events from your application, letting you find problems super fast without needing huge expensive computers.",
+    "description": "Axiom is a serverless log analytics and monitoring platform that ingests, stores, and analyzes vast amounts of structured data with sub-second query performance. It eliminates the need for managing infrastructure like Elasticsearch while providing cost-effective observability at scale.",
+    "use_cases": [
+      "Real-time log aggregation and analysis from distributed systems",
+      "Cost-effective alternative to traditional centralized logging platforms",
+      "Event-driven debugging and root cause analysis",
+      "Compliance and audit logging at scale"
+    ],
+    "used_by": [
+      "B2B SaaS companies",
+      "DevOps teams managing microservices",
+      "enterprises using event-driven architectures"
+    ],
+    "docs": "https://axiom.co/docs",
+    "tutorial": "https://axiom.co/docs/getting-started",
+    "added": "2026-08-19"
   }
 ]

@@ -10772,5 +10772,116 @@
     "docs": "https://axiom.co/docs",
     "tutorial": "https://axiom.co/docs/getting-started",
     "added": "2026-08-19"
+  },
+  {
+    "id": "anthropic-prompt-caching",
+    "name": "Anthropic Prompt Caching",
+    "category": "Tool",
+    "domain": "AI/ML",
+    "eli5": "It's like remembering the beginning of a story so you don't have to read it again every time you ask a question about it.",
+    "description": "Anthropic's prompt caching feature reduces latency and costs by caching large context windows in Claude API calls, allowing reuse of repeated prompts without reprocessing. This significantly improves efficiency for applications with long documents, codebase analysis, or multi-turn conversations.",
+    "use_cases": [
+      "Reducing token costs for large document analysis workflows",
+      "Accelerating multi-turn conversations with consistent context",
+      "Improving performance for codebase analysis and refactoring tasks",
+      "Enabling real-time processing of large datasets with shared context"
+    ],
+    "used_by": [
+      "Scale AI",
+      "Retool",
+      "Cursor"
+    ],
+    "docs": "https://docs.anthropic.com/en/docs/build-a-bot/caching",
+    "tutorial": "https://www.anthropic.com/news/prompt-caching",
+    "added": "2026-08-20"
+  },
+  {
+    "id": "redis-search",
+    "name": "Redis Search",
+    "category": "Tool",
+    "domain": "Database",
+    "eli5": "It's like having a super-fast librarian who can instantly find books by any word in them, not just the title.",
+    "description": "Redis Search is a queryable secondary index module for Redis that enables full-text search, vector search, and real-time analytics over data stored in Redis. It combines the speed of Redis with advanced search capabilities without requiring separate search infrastructure.",
+    "use_cases": [
+      "Real-time full-text search on user-generated content",
+      "Vector similarity search for recommendation engines",
+      "Fast autocomplete and search-as-you-type functionality",
+      "Real-time analytics and aggregations on streaming data"
+    ],
+    "used_by": [
+      "Databricks",
+      "Okta",
+      "Adobe"
+    ],
+    "docs": "https://redis.io/docs/stack/search/",
+    "tutorial": "https://redis.io/docs/stack/search/tutorials/",
+    "added": "2026-08-20"
+  },
+  {
+    "id": "osquery",
+    "name": "osquery",
+    "category": "Tool",
+    "domain": "Security",
+    "eli5": "It's like having a detective that can instantly answer questions about everything happening inside your computer.",
+    "description": "osquery is an operating system instrumentation framework that exposes system data as SQL tables, enabling real-time visibility and monitoring of host security. It's widely used for endpoint detection, compliance monitoring, and incident response across Linux, macOS, and Windows systems.",
+    "use_cases": [
+      "Real-time endpoint threat detection and hunting",
+      "Compliance monitoring and audit logging",
+      "Incident response and forensics investigation",
+      "Inventory management and configuration auditing"
+    ],
+    "used_by": [
+      "Meta",
+      "Apple",
+      "Google",
+      "Uber"
+    ],
+    "docs": "https://osquery.io/docs/",
+    "tutorial": "https://osquery.io/docs/installation/install-linux/",
+    "added": "2026-08-20"
+  },
+  {
+    "id": "mux-video",
+    "name": "Mux Video API",
+    "category": "Platform",
+    "domain": "Backend",
+    "eli5": "It's like having a video production studio in the cloud that automatically makes your videos play perfectly on any device.",
+    "description": "Mux Video is a video infrastructure platform providing transcoding, streaming, and analytics APIs that abstract away video complexity. It handles encoding, delivery, and real-time quality monitoring so developers can focus on building video experiences without managing video servers.",
+    "use_cases": [
+      "Live and on-demand video streaming with adaptive bitrate",
+      "Real-time video quality monitoring and metrics",
+      "Automated video transcoding and format conversion",
+      "Video player analytics and user experience optimization"
+    ],
+    "used_by": [
+      "Vercel",
+      "Figma",
+      "Discord"
+    ],
+    "docs": "https://docs.mux.com/",
+    "tutorial": "https://docs.mux.com/guides/video/get-started-with-mux-video",
+    "added": "2026-08-20"
+  },
+  {
+    "id": "envoy-gateway",
+    "name": "Envoy Gateway",
+    "category": "Tool",
+    "domain": "Networking",
+    "eli5": "It's like a smart traffic director at the entrance of your building that routes visitors to the right room and keeps bad visitors out.",
+    "description": "Envoy Gateway is an open-source API gateway built on Envoy proxy that simplifies traffic routing, rate limiting, and observability for Kubernetes environments. It provides a declarative, standards-based approach to gateway management with advanced traffic control features.",
+    "use_cases": [
+      "API gateway and ingress control in Kubernetes clusters",
+      "Request routing, rate limiting, and circuit breaking",
+      "TLS termination and mutual authentication",
+      "Request/response transformation and traffic manipulation"
+    ],
+    "used_by": [
+      "Kubernetes community",
+      "Lyft",
+      "ServiceTitan"
+    ],
+    "docs": "https://gateway.envoyproxy.io/",
+    "tutorial": "https://gateway.envoyproxy.io/latest/tasks/traffic-management/",
+    "added": "2026-08-20"
   }
 ]

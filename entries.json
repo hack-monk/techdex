@@ -10883,5 +10883,93 @@
     "docs": "https://gateway.envoyproxy.io/",
     "tutorial": "https://gateway.envoyproxy.io/latest/tasks/traffic-management/",
     "added": "2026-08-20"
+  },
+  {
+    "id": "anthropic-ai-claude-vision",
+    "name": "Claude Vision API",
+    "category": "Tool",
+    "domain": "AI/ML",
+    "eli5": "It's like showing a robot a picture and asking it questions about what's in the photo, just like you'd ask a friend.",
+    "description": "Claude's multimodal API that processes images alongside text for analysis, extraction, and reasoning tasks. It enables applications to understand visual content and answer questions about images with high accuracy.",
+    "use_cases": [
+      "Document OCR and data extraction from PDFs and images",
+      "Product image analysis for e-commerce platforms",
+      "Medical imaging analysis and diagnostic support",
+      "Visual content moderation and classification"
+    ],
+    "used_by": [
+      "Notion",
+      "DuckDuckGo",
+      "Bridgewater Associates"
+    ],
+    "docs": "https://docs.anthropic.com/vision/vision-api",
+    "tutorial": "https://docs.anthropic.com/en/docs/vision/vision-getting-started",
+    "added": "2026-08-21"
+  },
+  {
+    "id": "risingwave",
+    "name": "RisingWave",
+    "category": "Platform",
+    "domain": "Data Engineering",
+    "eli5": "It's like a waiter who watches a stream of orders coming in and automatically tells you when patterns happen, without waiting for everything to stop.",
+    "description": "A distributed SQL streaming database built in Rust that enables real-time analytics and stream processing without the complexity of traditional stream processing frameworks. It uses PostgreSQL-compatible SQL syntax for data transformations.",
+    "use_cases": [
+      "Real-time event stream processing and analytics",
+      "Continuous ETL pipelines with incremental computing",
+      "Live dashboards and metrics aggregation",
+      "Anomaly detection and alerting systems"
+    ],
+    "used_by": [
+      "Uber",
+      "Airbnb",
+      "Shopify"
+    ],
+    "docs": "https://docs.risingwave.com/",
+    "tutorial": "https://docs.risingwave.com/docs/current/get-started/",
+    "added": "2026-08-21"
+  },
+  {
+    "id": "coraza",
+    "name": "Coraza",
+    "category": "Tool",
+    "domain": "Security",
+    "eli5": "It's like a smart security guard who reads rule books and stops bad people from entering your house before they can cause trouble.",
+    "description": "A Go-based Web Application Firewall (WAF) engine that implements OWASP ModSecurity rules and can be embedded in any application or proxy. It provides protection against common web exploits with minimal performance overhead.",
+    "use_cases": [
+      "Embedded WAF protection in Go applications",
+      "API gateway security enforcement",
+      "Reverse proxy protection against OWASP Top 10 attacks",
+      "Serverless function input validation and filtering"
+    ],
+    "used_by": [
+      "Cloudflare",
+      "Caddy",
+      "Various enterprise users"
+    ],
+    "docs": "https://coraza.io/",
+    "tutorial": "https://coraza.io/docs/tutorials/",
+    "added": "2026-08-21"
+  },
+  {
+    "id": "temporal-state-machines",
+    "name": "Temporal State Machines",
+    "category": "Framework",
+    "domain": "Backend",
+    "eli5": "It's like a flowchart that remembers where you are in a process and automatically knows what to do next, even if the computer crashes and restarts.",
+    "description": "An extension to Temporal.io that provides durable, fault-tolerant workflow orchestration using state machine patterns in TypeScript. It enables building reliable microservices workflows that survive failures and provide strong consistency guarantees.",
+    "use_cases": [
+      "Distributed saga transactions across microservices",
+      "Long-running business process orchestration",
+      "Order processing and fulfillment workflows",
+      "Payment processing and financial transaction pipelines"
+    ],
+    "used_by": [
+      "Stripe",
+      "Databricks",
+      "Figma"
+    ],
+    "docs": "https://docs.temporal.io/",
+    "tutorial": "https://learn.temporal.io/",
+    "added": "2026-08-21"
   }
 ]

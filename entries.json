@@ -10971,5 +10971,28 @@
     "docs": "https://docs.temporal.io/",
     "tutorial": "https://learn.temporal.io/",
     "added": "2026-08-21"
+  },
+  {
+    "id": "anthropic-sdk-ai",
+    "name": "Anthropic Python SDK",
+    "category": "Tool",
+    "domain": "AI/ML",
+    "eli5": "It's like a translator that helps your computer talk to Claude, an AI assistant, just like how you'd use a phone to call your friend.",
+    "description": "The official Python SDK for interacting with Anthropic's Claude models, providing developers with easy-to-use APIs for text generation, vision processing, and advanced features like prompt caching and batch processing.",
+    "use_cases": [
+      "Building AI-powered chatbots and conversational interfaces",
+      "Implementing document analysis and content extraction",
+      "Creating code generation and debugging assistants",
+      "Automating customer support and content moderation workflows"
+    ],
+    "used_by": [
+      "Replit",
+      "DuckDuckGo",
+      "Bridgewater Associates",
+      "Scale AI"
+    ],
+    "docs": "https://docs.anthropic.com/",
+    "tutorial": "https://github.com/anthropics/anthropic-sdk-python",
+    "added": "2026-08-22"
   }
 ]

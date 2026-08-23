@@ -10994,5 +10994,120 @@
     "docs": "https://docs.anthropic.com/",
     "tutorial": "https://github.com/anthropics/anthropic-sdk-python",
     "added": "2026-08-22"
+  },
+  {
+    "id": "bigtable-emulator",
+    "name": "Google Cloud Bigtable Emulator",
+    "category": "Tool",
+    "domain": "Database",
+    "eli5": "It's like a practice version of a giant filing cabinet that helps you organize and find billions of tiny pieces of data really fast.",
+    "description": "The Google Cloud Bigtable Emulator is a local development tool that mimics Google Cloud Bigtable's behavior for testing and development without incurring cloud costs. It allows developers to build and test NoSQL applications locally before deploying to production.",
+    "use_cases": [
+      "Local development and testing of Bigtable applications",
+      "CI/CD pipeline testing without cloud infrastructure costs",
+      "Learning Bigtable API and schema design patterns",
+      "Integration testing for time-series and analytical workloads"
+    ],
+    "used_by": [
+      "Google",
+      "Spotify",
+      "Twitter",
+      "Adobe"
+    ],
+    "docs": "https://cloud.google.com/bigtable/docs/emulator",
+    "tutorial": "https://cloud.google.com/bigtable/docs/emulator-quickstart",
+    "added": "2026-08-23"
+  },
+  {
+    "id": "mitmproxy-mitmdump",
+    "name": "mitmproxy (mitmdump)",
+    "category": "Tool",
+    "domain": "Security",
+    "eli5": "It's like a security guard who watches all the messages sent between your computer and the internet, and can show you exactly what they say.",
+    "description": "mitmproxy is an interactive HTTP and HTTPS proxy that allows developers and security professionals to inspect, modify, and replay web traffic. It's widely used for API testing, debugging, and security research.",
+    "use_cases": [
+      "Debugging mobile and web application network traffic",
+      "API integration testing and validation",
+      "Security vulnerability assessment and penetration testing",
+      "Request/response modification for testing edge cases"
+    ],
+    "used_by": [
+      "Uber",
+      "Slack",
+      "Square",
+      "Mozilla"
+    ],
+    "docs": "https://docs.mitmproxy.org/",
+    "tutorial": "https://docs.mitmproxy.org/stable/overview-getting-started/",
+    "added": "2026-08-23"
+  },
+  {
+    "id": "clickhouse-keeper",
+    "name": "ClickHouse Keeper",
+    "category": "Tool",
+    "domain": "Data Engineering",
+    "eli5": "It's like a referee who keeps track of who should talk to whom in a big network of computers that all store massive amounts of data together.",
+    "description": "ClickHouse Keeper is a coordination service that replaces ZooKeeper for ClickHouse clusters, providing consensus and metadata management with improved performance and reduced operational complexity. It enables ClickHouse deployments to manage distributed replicas and cluster state without external dependencies.",
+    "use_cases": [
+      "Distributed ClickHouse cluster coordination",
+      "Metadata management for replicated tables",
+      "Failover and high-availability orchestration",
+      "Reducing operational overhead vs. ZooKeeper deployments"
+    ],
+    "used_by": [
+      "Yandex",
+      "Cloudflare",
+      "Bing",
+      "Alibaba"
+    ],
+    "docs": "https://clickhouse.com/docs/en/operations/clickhouse-keeper",
+    "tutorial": "https://clickhouse.com/docs/en/operations/clickhouse-keeper/quickstart",
+    "added": "2026-08-23"
+  },
+  {
+    "id": "mise-version-manager",
+    "name": "mise (Tool Version Manager)",
+    "category": "Tool",
+    "domain": "DevOps",
+    "eli5": "It's like a magic toolbox that automatically picks the right version of every tool you need based on what folder you're working in.",
+    "description": "mise is a fast, simple tool version manager written in Rust that manages versions of programming languages, tools, and runtimes. It replaces tools like asdf, nvm, and pyenv with a unified, performant solution.",
+    "use_cases": [
+      "Managing multiple language versions (Python, Node.js, Go, Rust) across projects",
+      "Enforcing consistent tool versions across development teams",
+      "Automatic switching based on .mise.toml or .tool-versions files",
+      "Reducing setup time for new developers onboarding to projects"
+    ],
+    "used_by": [
+      "HashiCorp",
+      "Vercel",
+      "Linear",
+      "Anduril Industries"
+    ],
+    "docs": "https://mise.jdx.dev/",
+    "tutorial": "https://mise.jdx.dev/getting-started.html",
+    "added": "2026-08-23"
+  },
+  {
+    "id": "atmos-orchestration",
+    "name": "Atmos (Terraform Orchestration)",
+    "category": "Tool",
+    "domain": "DevOps",
+    "eli5": "It's like a conductor leading an orchestra of machines\u2014telling each part exactly when and how to play in perfect harmony.",
+    "description": "Atmos is an open-source framework for managing, orchestrating, and scaling Terraform and Helm deployments across multiple cloud environments and accounts. It provides structure, reusability, and consistency for Infrastructure-as-Code at enterprise scale.",
+    "use_cases": [
+      "Multi-environment and multi-account Terraform management",
+      "Infrastructure reusability across projects and teams",
+      "Complex dependency orchestration between infrastructure components",
+      "Centralized configuration management and validation for IaC"
+    ],
+    "used_by": [
+      "CloudPosse",
+      "Betterment",
+      "Datadog",
+      "Zappi"
+    ],
+    "docs": "https://atmos.tools/",
+    "tutorial": "https://atmos.tools/quick-start/",
+    "added": "2026-08-23"
   }
 ]

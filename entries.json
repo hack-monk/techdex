@@ -11109,5 +11109,97 @@
     "docs": "https://atmos.tools/",
     "tutorial": "https://atmos.tools/quick-start/",
     "added": "2026-08-23"
+  },
+  {
+    "id": "bitnami-sealed-secrets",
+    "name": "Bitnami Sealed Secrets",
+    "category": "Tool",
+    "domain": "Security",
+    "eli5": "It's like a locked treasure chest where only your Kubernetes cluster has the key to open and read your secrets.",
+    "description": "Sealed Secrets is a Kubernetes controller that encrypts secrets so they can be safely stored in Git repositories. It uses asymmetric cryptography to ensure only the intended Kubernetes cluster can decrypt the secrets.",
+    "use_cases": [
+      "GitOps workflows with sensitive configuration management",
+      "Storing encrypted secrets in version control systems",
+      "Securing credentials across multiple Kubernetes clusters",
+      "Automating secret rotation in CI/CD pipelines"
+    ],
+    "used_by": [
+      "Red Hat",
+      "Bitnami",
+      "Cloud Native Computing Foundation members",
+      "Enterprise Kubernetes users"
+    ],
+    "docs": "https://github.com/bitnami-labs/sealed-secrets",
+    "tutorial": "https://github.com/bitnami-labs/sealed-secrets#installation",
+    "added": "2026-08-24"
+  },
+  {
+    "id": "ollama-quantized-models",
+    "name": "Ollama Quantized Models",
+    "category": "Platform",
+    "domain": "AI/ML",
+    "eli5": "It's like running a smart brain on your own computer by using a compressed version that's faster and uses less memory than the full version.",
+    "description": "Ollama provides pre-quantized large language models that can run locally on consumer hardware without requiring cloud APIs or GPU servers. It enables private, offline AI inference with models like Llama, Mistral, and others.",
+    "use_cases": [
+      "Local LLM inference for privacy-sensitive applications",
+      "Running AI models offline without internet connectivity",
+      "Development and testing of AI applications before cloud deployment",
+      "Edge AI deployment on resource-constrained devices"
+    ],
+    "used_by": [
+      "Individual developers",
+      "Privacy-focused startups",
+      "Enterprise AI teams",
+      "Research institutions"
+    ],
+    "docs": "https://ollama.ai/",
+    "tutorial": "https://github.com/ollama/ollama#readme",
+    "added": "2026-08-24"
+  },
+  {
+    "id": "risc-v-specification",
+    "name": "RISC-V ISA",
+    "category": "Concept",
+    "domain": "Other",
+    "eli5": "It's like an open instruction manual that any company can use to build their own computer processors without paying licensing fees.",
+    "description": "RISC-V is an open-source instruction set architecture (ISA) that enables anyone to design, manufacture, and deploy processors without licensing restrictions. It's gaining adoption in embedded systems, IoT devices, and server processors.",
+    "use_cases": [
+      "Building custom processors for embedded systems and IoT",
+      "Reducing licensing costs for chip manufacturers",
+      "Academic research in computer architecture",
+      "Edge computing and specialized hardware acceleration"
+    ],
+    "used_by": [
+      "SiFive",
+      "Western Digital",
+      "Google",
+      "NVIDIA"
+    ],
+    "docs": "https://riscv.org/",
+    "tutorial": "https://riscv.org/technical/specifications/",
+    "added": "2026-08-24"
+  },
+  {
+    "id": "milvus-cloud-managed",
+    "name": "Milvus Cloud (Managed)",
+    "category": "Platform",
+    "domain": "Database",
+    "eli5": "It's like a library assistant that instantly finds books most similar to the one you're thinking of, but without needing to understand what the books are about.",
+    "description": "Milvus Cloud is a managed vector database service that specializes in similarity search and semantic understanding at scale. It powers AI applications requiring vector embeddings, semantic search, and retrieval-augmented generation (RAG).",
+    "use_cases": [
+      "Retrieval-augmented generation (RAG) systems",
+      "Semantic search across documents and images",
+      "Recommendation systems based on embeddings",
+      "AI-powered similarity matching for products or content"
+    ],
+    "used_by": [
+      "Databricks",
+      "Spotify",
+      "Alibaba",
+      "ByteDance"
+    ],
+    "docs": "https://docs.milvus.io/",
+    "tutorial": "https://milvus.io/docs/quickstart.md",
+    "added": "2026-08-24"
   }
 ]

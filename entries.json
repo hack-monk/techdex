@@ -11201,5 +11201,94 @@
     "docs": "https://docs.milvus.io/",
     "tutorial": "https://milvus.io/docs/quickstart.md",
     "added": "2026-08-24"
+  },
+  {
+    "id": "semantic-kernel",
+    "name": "Semantic Kernel",
+    "category": "Framework",
+    "domain": "AI/ML",
+    "eli5": "It's like a translator that helps your regular computer programs talk to AI models so they can work together.",
+    "description": "Microsoft's open-source SDK that enables developers to integrate large language models and AI services into their applications through a plugin-based architecture. It abstracts complexity of prompt engineering and function calling across multiple AI providers.",
+    "use_cases": [
+      "Building AI-augmented enterprise applications with LLM orchestration",
+      "Creating autonomous agents that combine multiple AI capabilities",
+      "Integrating OpenAI, Azure OpenAI, and other LLMs into existing codebases",
+      "Implementing retrieval-augmented generation (RAG) patterns"
+    ],
+    "used_by": [
+      "Microsoft",
+      "GitHub",
+      "Enterprise software teams"
+    ],
+    "docs": "https://learn.microsoft.com/en-us/semantic-kernel/overview/",
+    "tutorial": "https://github.com/microsoft/semantic-kernel/tree/main/samples",
+    "added": "2026-08-25"
+  },
+  {
+    "id": "teable",
+    "name": "Teable",
+    "category": "Platform",
+    "domain": "Data Engineering",
+    "eli5": "It's like a super-powered spreadsheet that acts like a database and lets multiple people collaborate in real-time.",
+    "description": "Open-source no-code database platform that combines spreadsheet UX with relational database power, offering real-time collaboration and API-first architecture. It serves as a modern alternative to traditional databases for teams that want database capabilities without complex SQL.",
+    "use_cases": [
+      "Managing project data and workflows without writing code",
+      "Building collaborative business applications with real-time synchronization",
+      "Creating internal tools and dashboards for non-technical teams",
+      "Rapid prototyping of data-driven applications"
+    ],
+    "used_by": [
+      "Startups",
+      "Enterprise teams",
+      "No-code advocates"
+    ],
+    "docs": "https://docs.teable.io/",
+    "tutorial": "https://github.com/teableio/teable#quick-start",
+    "added": "2026-08-25"
+  },
+  {
+    "id": "vault-secrets-operator",
+    "name": "Vault Secrets Operator",
+    "category": "Tool",
+    "domain": "Security",
+    "eli5": "It's like a security guard that automatically fetches secret passwords from a safe and gives them to your applications without anyone seeing them.",
+    "description": "Kubernetes operator that integrates HashiCorp Vault with Kubernetes to automatically inject and rotate secrets into applications through native Kubernetes resources. It eliminates manual secret management and reduces exposure of sensitive data in cluster configurations.",
+    "use_cases": [
+      "Automatic secret injection and rotation in Kubernetes deployments",
+      "Enforcing zero-trust security practices in containerized environments",
+      "Compliance with secrets management and audit requirements",
+      "Multi-environment secret management across cloud and on-premise"
+    ],
+    "used_by": [
+      "HashiCorp",
+      "Enterprise Kubernetes users",
+      "Fortune 500 companies"
+    ],
+    "docs": "https://developer.hashicorp.com/vault/docs/platform/k8s/vso",
+    "tutorial": "https://developer.hashicorp.com/vault/docs/platform/k8s/vso/installation",
+    "added": "2026-08-25"
+  },
+  {
+    "id": "k6-performance-testing",
+    "name": "k6",
+    "category": "Tool",
+    "domain": "SRE/Observability",
+    "eli5": "It's like a stress test machine that pretends to be thousands of users visiting your website at once to make sure it doesn't break.",
+    "description": "Developer-friendly load testing and performance testing platform that uses JavaScript for test scripting and provides cloud-based distributed load generation. It enables teams to catch performance bottlenecks early and validate system reliability under load.",
+    "use_cases": [
+      "Load testing APIs and web applications before production deployment",
+      "Continuous performance testing in CI/CD pipelines",
+      "Spike testing and stress testing to find breaking points",
+      "Monitoring production performance with synthetic transactions"
+    ],
+    "used_by": [
+      "Grafana Labs",
+      "Microsoft",
+      "GitHub",
+      "Stripe"
+    ],
+    "docs": "https://grafana.com/docs/k6/latest/",
+    "tutorial": "https://grafana.com/docs/k6/latest/get-started/",
+    "added": "2026-08-25"
   }
 ]

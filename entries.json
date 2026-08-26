@@ -11290,5 +11290,28 @@
     "docs": "https://grafana.com/docs/k6/latest/",
     "tutorial": "https://grafana.com/docs/k6/latest/get-started/",
     "added": "2026-08-25"
+  },
+  {
+    "id": "reverse-tunnel-ngrok",
+    "name": "ngrok",
+    "category": "Tool",
+    "domain": "Networking",
+    "eli5": "It's like creating a secret tunnel from your home computer to the internet so friends can visit without knowing your address.",
+    "description": "ngrok is a reverse tunneling platform that exposes local servers to the internet securely, enabling rapid development and testing of webhooks, APIs, and integrations. It provides public URLs, traffic inspection, and replay capabilities for developing against production-like conditions.",
+    "use_cases": [
+      "Testing webhooks from external services (Stripe, GitHub) locally",
+      "Exposing internal development servers for partner testing",
+      "Mobile app testing against local APIs",
+      "IoT device communication with cloud services"
+    ],
+    "used_by": [
+      "Twilio",
+      "Stripe",
+      "GitHub",
+      "Salesforce"
+    ],
+    "docs": "https://ngrok.com/docs",
+    "tutorial": "https://ngrok.com/docs/getting-started",
+    "added": "2026-08-26"
   }
 ]

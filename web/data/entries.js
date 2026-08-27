@@ -11613,6 +11613,30 @@ window.TECHDEX_ENTRIES = [
   "dex": 479
  },
  {
+  "id": "cal-com",
+  "name": "Cal.com",
+  "category": "Tool",
+  "domain": "Other",
+  "eli5": "It's like a smart calendar that automatically finds free time between you and someone else so you can schedule meetings without the back-and-forth.",
+  "description": "Cal.com is an open-source scheduling infrastructure and calendar tool that replaces Calendly, enabling customizable booking experiences and integrating directly with applications. It provides scheduling as a composable component.",
+  "use_cases": [
+   "SaaS product embedded scheduling and calendar booking",
+   "Sales and support team meeting coordination",
+   "Event and interview scheduling automation",
+   "White-label calendar solutions for platforms"
+  ],
+  "used_by": [
+   "Notion",
+   "Figma",
+   "OpenAI",
+   "Slack"
+  ],
+  "docs": "https://cal.com/docs",
+  "tutorial": "https://cal.com/docs/introduction",
+  "added": "2026-08-27",
+  "dex": 480
+ },
+ {
   "id": "hyperswitch",
   "name": "Hyperswitch",
   "category": "Platform",
@@ -11634,7 +11658,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://hyperswitch.io/docs/",
   "tutorial": "https://hyperswitch.io/docs/quickstart",
   "added": "2026-08-06",
-  "dex": 480
+  "dex": 481
  },
  {
   "id": "mattermost",
@@ -11658,7 +11682,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://docs.mattermost.com/",
   "tutorial": "https://docs.mattermost.com/guides/deployment.html",
   "added": "2026-07-01",
-  "dex": 481
+  "dex": 482
  },
  {
   "id": "mermaid",
@@ -11682,7 +11706,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://mermaid.js.org/",
   "tutorial": "https://mermaid.js.org/ecosystem/integrations.html",
   "added": "2026-06-14",
-  "dex": 482
+  "dex": 483
  },
  {
   "id": "mermaid-live",
@@ -11706,7 +11730,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://mermaid.js.org/",
   "tutorial": "https://mermaid.live/",
   "added": "2026-06-18",
-  "dex": 483
+  "dex": 484
  },
  {
   "id": "polar",
@@ -11729,7 +11753,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://docs.polar.sh",
   "tutorial": "https://docs.polar.sh/getting-started",
   "added": "2026-08-05",
-  "dex": 484
+  "dex": 485
  },
  {
   "id": "risc-v-specification",
@@ -11753,7 +11777,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://riscv.org/",
   "tutorial": "https://riscv.org/technical/specifications/",
   "added": "2026-08-24",
-  "dex": 485
+  "dex": 486
  },
  {
   "id": "sablier",
@@ -11776,7 +11800,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://docs.sablier.com",
   "tutorial": "https://github.com/sablier-labs/v2-core",
   "added": "2026-07-10",
-  "dex": 486
+  "dex": 487
  },
  {
   "id": "vscode",
@@ -11800,6 +11824,6 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://code.visualstudio.com/docs",
   "tutorial": "https://code.visualstudio.com/learn",
   "added": "2026-08-13",
-  "dex": 487
+  "dex": 488
  }
 ];

@@ -11313,5 +11313,28 @@
     "docs": "https://ngrok.com/docs",
     "tutorial": "https://ngrok.com/docs/getting-started",
     "added": "2026-08-26"
+  },
+  {
+    "id": "cal-com",
+    "name": "Cal.com",
+    "category": "Tool",
+    "domain": "Other",
+    "eli5": "It's like a smart calendar that automatically finds free time between you and someone else so you can schedule meetings without the back-and-forth.",
+    "description": "Cal.com is an open-source scheduling infrastructure and calendar tool that replaces Calendly, enabling customizable booking experiences and integrating directly with applications. It provides scheduling as a composable component.",
+    "use_cases": [
+      "SaaS product embedded scheduling and calendar booking",
+      "Sales and support team meeting coordination",
+      "Event and interview scheduling automation",
+      "White-label calendar solutions for platforms"
+    ],
+    "used_by": [
+      "Notion",
+      "Figma",
+      "OpenAI",
+      "Slack"
+    ],
+    "docs": "https://cal.com/docs",
+    "tutorial": "https://cal.com/docs/introduction",
+    "added": "2026-08-27"
   }
 ]

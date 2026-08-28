@@ -11336,5 +11336,28 @@
     "docs": "https://cal.com/docs",
     "tutorial": "https://cal.com/docs/introduction",
     "added": "2026-08-27"
+  },
+  {
+    "id": "postman-api-platform",
+    "name": "Postman",
+    "category": "Tool",
+    "domain": "Backend",
+    "eli5": "It's like a postal worker who helps you send and receive messages to buildings (servers) and shows you exactly what they reply with, so you can test if they're working right.",
+    "description": "A comprehensive API development and collaboration platform that simplifies testing, documenting, and monitoring APIs throughout their lifecycle. Postman is essential for backend developers and QA teams to streamline API development workflows and ensure API reliability.",
+    "use_cases": [
+      "Manual and automated API testing and validation",
+      "API documentation generation and sharing with team members",
+      "Integration testing and end-to-end testing workflows",
+      "API monitoring and performance testing in production"
+    ],
+    "used_by": [
+      "Microsoft",
+      "Shopify",
+      "Slack",
+      "Twitter"
+    ],
+    "docs": "https://learning.postman.com/docs/getting-started/overview/",
+    "tutorial": "https://learning.postman.com/docs/getting-started/sending-the-first-request/",
+    "added": "2026-08-28"
   }
 ]

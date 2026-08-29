@@ -11359,5 +11359,28 @@
     "docs": "https://learning.postman.com/docs/getting-started/overview/",
     "tutorial": "https://learning.postman.com/docs/getting-started/sending-the-first-request/",
     "added": "2026-08-28"
+  },
+  {
+    "id": "uv-pip",
+    "name": "uv (pip replacement)",
+    "category": "Tool",
+    "domain": "Backend",
+    "eli5": "It's like a super-fast delivery person for Python packages instead of the normal mailman - same job, way quicker.",
+    "description": "uv is an extremely fast Python package installer and resolver written in Rust that replaces pip and pip-tools. It provides 10-100x faster dependency resolution while maintaining compatibility with standard Python packaging.",
+    "use_cases": [
+      "Accelerating CI/CD pipelines for Python projects",
+      "Improving developer experience in large monorepos with many dependencies",
+      "Reducing container build times for Python applications",
+      "Managing complex dependency resolution in data science projects"
+    ],
+    "used_by": [
+      "Astral",
+      "GitHub",
+      "Meta",
+      "Google"
+    ],
+    "docs": "https://docs.astral.sh/uv/",
+    "tutorial": "https://docs.astral.sh/uv/getting-started/",
+    "added": "2026-08-29"
   }
 ]

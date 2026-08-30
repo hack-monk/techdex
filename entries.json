@@ -11382,5 +11382,71 @@
     "docs": "https://docs.astral.sh/uv/",
     "tutorial": "https://docs.astral.sh/uv/getting-started/",
     "added": "2026-08-29"
+  },
+  {
+    "id": "lefthook",
+    "name": "Lefthook",
+    "category": "Tool",
+    "domain": "DevOps",
+    "eli5": "Lefthook is like a bouncer at a club door who checks if your code is ready before you submit it to the team.",
+    "description": "Lefthook is a fast and language-agnostic Git hooks manager that runs tasks like linting and testing before commits are pushed. It's a modern replacement for husky with better performance and configuration flexibility.",
+    "use_cases": [
+      "Enforcing code quality standards before commits",
+      "Running automated tests on staged files",
+      "Preventing commits with security vulnerabilities",
+      "Multi-language project hook management"
+    ],
+    "used_by": [
+      "Shopify",
+      "Netflix",
+      "Figma"
+    ],
+    "docs": "https://github.com/evilmartians/lefthook",
+    "tutorial": "https://evilmartians.com/chronicles/lefthook-new-generation-git-hooks",
+    "added": "2026-08-30"
+  },
+  {
+    "id": "valkey",
+    "name": "Valkey",
+    "category": "Platform",
+    "domain": "Database",
+    "eli5": "Valkey is like a really fast notebook that remembers things temporarily, helping your app get quick answers without asking the slow book library every time.",
+    "description": "Valkey is an open-source, high-performance data structure server that maintains Redis protocol compatibility while adding community-driven enhancements. It's a production-ready alternative to Redis for caching, sessions, and real-time analytics.",
+    "use_cases": [
+      "High-speed session management in web applications",
+      "Real-time leaderboards and counters",
+      "Distributed caching across microservices",
+      "Pub/sub messaging and event streaming"
+    ],
+    "used_by": [
+      "AWS",
+      "Snap",
+      "Samsung"
+    ],
+    "docs": "https://valkey.io/",
+    "tutorial": "https://github.com/valkey-io/valkey/wiki/Getting-Started",
+    "added": "2026-08-30"
+  },
+  {
+    "id": "airbyte",
+    "name": "Airbyte",
+    "category": "Platform",
+    "domain": "Data Engineering",
+    "eli5": "Airbyte is like a smart mail carrier that automatically moves data packages from one building to another without you having to carry them yourself.",
+    "description": "Airbyte is an open-source data integration platform that provides pre-built connectors to move data between hundreds of sources and destinations with minimal configuration. It simplifies ETL/ELT workflows for data warehousing and analytics pipelines.",
+    "use_cases": [
+      "Syncing data from SaaS applications to data warehouses",
+      "Real-time CDC (Change Data Capture) replication",
+      "Building modular data pipelines without coding",
+      "Data lake ingestion from multiple sources"
+    ],
+    "used_by": [
+      "Notion",
+      "Figma",
+      "Dashbird"
+    ],
+    "docs": "https://docs.airbyte.com/",
+    "tutorial": "https://docs.airbyte.com/using-airbyte/getting-started",
+    "added": "2026-08-30"
   }
 ]

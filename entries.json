@@ -11448,5 +11448,28 @@
     "docs": "https://docs.airbyte.com/",
     "tutorial": "https://docs.airbyte.com/using-airbyte/getting-started",
     "added": "2026-08-30"
+  },
+  {
+    "id": "anthropic-ai",
+    "name": "Anthropic AI",
+    "category": "Platform",
+    "domain": "AI/ML",
+    "eli5": "It's like having a super smart robot assistant that can read, write, and think through problems just like a person would.",
+    "description": "Anthropic is an AI safety company that develops Claude, a family of large language models designed with constitutional AI principles to be helpful, harmless, and honest. Claude powers conversational AI applications and is widely integrated into enterprise software and developer tools.",
+    "use_cases": [
+      "Building AI-powered chatbots and customer support systems",
+      "Code generation and software development assistance",
+      "Content analysis and document processing",
+      "Research and knowledge synthesis tasks"
+    ],
+    "used_by": [
+      "Notion",
+      "DuckDuckGo",
+      "Perplexity",
+      "Scale AI"
+    ],
+    "docs": "https://docs.anthropic.com/",
+    "tutorial": "https://docs.anthropic.com/getting-started/overview",
+    "added": "2026-08-31"
   }
 ]

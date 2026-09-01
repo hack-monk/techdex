@@ -11471,5 +11471,97 @@
     "docs": "https://docs.anthropic.com/",
     "tutorial": "https://docs.anthropic.com/getting-started/overview",
     "added": "2026-08-31"
+  },
+  {
+    "id": "opensearch-neural",
+    "name": "OpenSearch Neural Search",
+    "category": "Tool",
+    "domain": "Database",
+    "eli5": "It's like having a really smart librarian who understands what you mean, not just the exact words you use, to find the best books.",
+    "description": "OpenSearch Neural Search enables semantic and vector search capabilities within OpenSearch, allowing similarity-based queries powered by machine learning models. It bridges traditional full-text search with modern AI-driven vector embeddings for more intelligent retrieval.",
+    "use_cases": [
+      "Building semantic search engines for e-commerce product discovery",
+      "Implementing vector-based document retrieval for RAG systems",
+      "Creating intelligent recommendation systems based on content similarity",
+      "Enabling cross-lingual search without translation"
+    ],
+    "used_by": [
+      "AWS",
+      "Lyft",
+      "eBay",
+      "Salesforce"
+    ],
+    "docs": "https://opensearch.org/docs/latest/search-plugins/neural-search/",
+    "tutorial": "https://opensearch.org/docs/latest/search-plugins/neural-search/neural-search-intro/",
+    "added": "2026-09-01"
+  },
+  {
+    "id": "voxel51",
+    "name": "Voxel51 FiftyOne",
+    "category": "Platform",
+    "domain": "AI/ML",
+    "eli5": "It's like a quality inspector for AI training data\u2014you can see what pictures your AI learned from and spot mistakes before they cause problems.",
+    "description": "FiftyOne is an open-source platform for curating, analyzing, and improving computer vision datasets and models. It provides interactive tools to detect label errors, visualize model predictions, and manage data at scale for machine learning workflows.",
+    "use_cases": [
+      "Detecting and correcting labeling errors in vision datasets before training",
+      "Analyzing model failure modes and finding edge cases",
+      "Managing and versioning large-scale image and video datasets",
+      "Validating autonomous vehicle perception datasets"
+    ],
+    "used_by": [
+      "Google",
+      "Tesla",
+      "Cruise",
+      "Roboflow"
+    ],
+    "docs": "https://docs.voxel51.com/",
+    "tutorial": "https://docs.voxel51.com/getting_started/index.html",
+    "added": "2026-09-01"
+  },
+  {
+    "id": "chainguard-images",
+    "name": "Chainguard Images",
+    "category": "Platform",
+    "domain": "Security",
+    "eli5": "It's like getting pre-made, ultra-safe containers that have been thoroughly checked so hackers can't hide inside them.",
+    "description": "Chainguard Images provides minimal, distroless container images that are continuously scanned and updated for vulnerabilities. They significantly reduce attack surface by removing unnecessary packages while maintaining compatibility with existing applications.",
+    "use_cases": [
+      "Building secure supply chains with SLSA-compliant artifacts",
+      "Reducing container image size and vulnerability footprint",
+      "Running production workloads with minimal attack surface",
+      "Meeting compliance requirements with verified, auditable container images"
+    ],
+    "used_by": [
+      "Kubernetes",
+      "CNCF",
+      "Google Cloud",
+      "GitHub"
+    ],
+    "docs": "https://images.chainguard.dev/",
+    "tutorial": "https://edu.chainguard.dev/chainguard-images/getting-started/",
+    "added": "2026-09-01"
+  },
+  {
+    "id": "medplum",
+    "name": "Medplum",
+    "category": "Platform",
+    "domain": "Backend",
+    "eli5": "It's like a special filing cabinet built just for doctors and hospitals to store and share patient information safely and legally.",
+    "description": "Medplum is an open-source platform for building healthcare applications with built-in compliance for HIPAA, HL7 FHIR standards, and healthcare workflows. It provides APIs, hosting, and tools specifically designed for healthcare software development.",
+    "use_cases": [
+      "Building HIPAA-compliant patient management systems",
+      "Implementing electronic health record (EHR) integrations",
+      "Creating telemedicine platforms with secure messaging",
+      "Developing healthcare interoperability solutions using FHIR standards"
+    ],
+    "used_by": [
+      "Ro",
+      "Devoted Health",
+      "Amazon Healthcare Innovation",
+      "Google Health"
+    ],
+    "docs": "https://www.medplum.com/docs",
+    "tutorial": "https://www.medplum.com/docs/tutorials",
+    "added": "2026-09-01"
   }
 ]

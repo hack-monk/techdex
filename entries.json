@@ -11563,5 +11563,74 @@
     "docs": "https://www.medplum.com/docs",
     "tutorial": "https://www.medplum.com/docs/tutorials",
     "added": "2026-09-01"
+  },
+  {
+    "id": "opengl",
+    "name": "OpenGL",
+    "category": "Platform",
+    "domain": "Frontend",
+    "eli5": "OpenGL is like a universal instruction manual that tells your computer's graphics card how to draw 3D pictures and games on your screen.",
+    "description": "OpenGL is a cross-platform graphics API that enables developers to create 2D and 3D graphics applications by communicating directly with GPU hardware. It's the industry standard for rendering in games, scientific visualization, and graphics-intensive applications.",
+    "use_cases": [
+      "Video game rendering and graphics pipelines",
+      "CAD software and 3D modeling applications",
+      "Scientific visualization and computational graphics",
+      "VR/AR content creation and real-time rendering"
+    ],
+    "used_by": [
+      "Blender",
+      "Unity Engine",
+      "Unreal Engine",
+      "Autodesk"
+    ],
+    "docs": "https://www.opengl.org/",
+    "tutorial": "https://learnopengl.com/",
+    "added": "2026-09-02"
+  },
+  {
+    "id": "grpcurl",
+    "name": "grpcurl",
+    "category": "Tool",
+    "domain": "Backend",
+    "eli5": "grpcurl is like a telephone for talking to backend services using a special modern language they understand, instead of the old-fashioned HTTP way.",
+    "description": "grpcurl is a command-line tool for interacting with gRPC services, similar to curl for HTTP APIs. It allows developers to call gRPC methods, inspect service definitions, and debug gRPC servers without writing client code.",
+    "use_cases": [
+      "Testing and debugging gRPC service endpoints",
+      "Inspecting gRPC service definitions and capabilities",
+      "Scripting gRPC calls in CI/CD pipelines",
+      "Troubleshooting gRPC communication issues"
+    ],
+    "used_by": [
+      "Google Cloud",
+      "Netflix",
+      "Uber",
+      "Square"
+    ],
+    "docs": "https://github.com/fullstorydev/grpcurl",
+    "tutorial": "https://github.com/fullstorydev/grpcurl/blob/master/README.md",
+    "added": "2026-09-02"
+  },
+  {
+    "id": "fal-serverless-gpu",
+    "name": "Fal.ai",
+    "category": "Platform",
+    "domain": "AI/ML",
+    "eli5": "Fal.ai is like renting a super-powerful computer with fancy AI brains just for a few seconds when you need them, instead of buying your own.",
+    "description": "Fal.ai is a serverless GPU platform for running AI models and machine learning workloads without managing infrastructure. It provides on-demand access to GPUs for inference, fine-tuning, and batch processing of AI models.",
+    "use_cases": [
+      "Serverless inference for LLMs and generative models",
+      "Image generation and computer vision tasks",
+      "Real-time AI API endpoints for applications",
+      "Batch processing and fine-tuning of AI models"
+    ],
+    "used_by": [
+      "Replicate",
+      "Hugging Face",
+      "scale.com",
+      "Runway"
+    ],
+    "docs": "https://fal.ai/docs/",
+    "tutorial": "https://fal.ai/docs/quickstart/",
+    "added": "2026-09-02"
   }
 ]

@@ -11632,5 +11632,120 @@
     "docs": "https://fal.ai/docs/",
     "tutorial": "https://fal.ai/docs/quickstart/",
     "added": "2026-09-02"
+  },
+  {
+    "id": "supertokens",
+    "name": "SuperTokens",
+    "category": "Platform",
+    "domain": "Identity",
+    "eli5": "It's like a bouncer at a club who checks your ID and remembers you so you don't have to show it every time you enter a room.",
+    "description": "SuperTokens is an open-source authentication and session management platform that provides secure user login, signup, and multi-factor authentication capabilities. It eliminates the need to build authentication from scratch with pre-built SDKs for web and mobile applications.",
+    "use_cases": [
+      "Implementing passwordless authentication flows",
+      "Managing user sessions and refresh tokens securely",
+      "Adding multi-factor authentication to applications",
+      "Handling complex OAuth integrations with social providers"
+    ],
+    "used_by": [
+      "Hasura",
+      "Supabase",
+      "Auth0 competitors",
+      "Enterprise SaaS platforms"
+    ],
+    "docs": "https://supertokens.com/docs",
+    "tutorial": "https://supertokens.com/docs/guides",
+    "added": "2026-09-03"
+  },
+  {
+    "id": "mux-streaming",
+    "name": "Mux Stream",
+    "category": "Platform",
+    "domain": "Storage",
+    "eli5": "It's like having a professional video store that automatically makes your videos play smoothly whether someone's watching on a phone over Wi-Fi or on a TV with fast internet.",
+    "description": "Mux is a video infrastructure platform that handles transcoding, delivery, and streaming at scale with built-in analytics and quality monitoring. It abstracts away the complexity of video processing and CDN management for developers.",
+    "use_cases": [
+      "Live streaming video content with adaptive bitrate",
+      "On-demand video delivery with automatic format optimization",
+      "Real-time video analytics and performance monitoring",
+      "Building video platforms with playback insights"
+    ],
+    "used_by": [
+      "Discord",
+      "Figma",
+      "Webflow",
+      "Slack"
+    ],
+    "docs": "https://docs.mux.com",
+    "tutorial": "https://docs.mux.com/guides",
+    "added": "2026-09-03"
+  },
+  {
+    "id": "langbase",
+    "name": "Langbase",
+    "category": "Platform",
+    "domain": "AI/ML",
+    "eli5": "It's like a workshop where you can build and test recipes for AI assistants without needing to be a chef yourself.",
+    "description": "Langbase is a platform for building, deploying, and managing LLM-powered applications with features like prompt management, fine-tuning, and API endpoints. It streamlines the workflow of turning LLM experiments into production applications.",
+    "use_cases": [
+      "Building and versioning AI chatbots and assistants",
+      "Managing and testing multiple LLM prompts in production",
+      "Fine-tuning open-source models with proprietary data",
+      "Creating API endpoints for LLM inference at scale"
+    ],
+    "used_by": [
+      "Vercel ecosystem",
+      "Y Combinator startups",
+      "AI-first SaaS companies",
+      "Enterprise AI teams"
+    ],
+    "docs": "https://docs.langbase.com",
+    "tutorial": "https://langbase.com/guides",
+    "added": "2026-09-03"
+  },
+  {
+    "id": "wunderbucket",
+    "name": "Wunderbucket",
+    "category": "Tool",
+    "domain": "DevOps",
+    "eli5": "It's like a smart assistant that watches your cloud storage and automatically organizes files based on rules you set up.",
+    "description": "Wunderbucket is a cloud data management tool that automates data lifecycle policies, archival, and optimization across S3, Azure Blob, and GCS with intelligent tiering and cost management. It reduces cloud storage costs through automated policy enforcement and data movement.",
+    "use_cases": [
+      "Implementing automated data archival and retention policies",
+      "Optimizing cloud storage costs through intelligent tiering",
+      "Managing compliance-driven data lifecycle requirements",
+      "Automating backup rotation and disaster recovery workflows"
+    ],
+    "used_by": [
+      "Scale AI",
+      "SambaNova",
+      "Figma",
+      "financial services firms"
+    ],
+    "docs": "https://docs.wunderbucket.com",
+    "tutorial": "https://wunderbucket.com/docs/getting-started",
+    "added": "2026-09-03"
+  },
+  {
+    "id": "framer-motion",
+    "name": "Framer Motion",
+    "category": "Framework",
+    "domain": "Frontend",
+    "eli5": "It's like a magic wand for making objects on a web page move and dance smoothly without you having to do all the difficult math.",
+    "description": "Framer Motion is a React animation library that simplifies creating fluid, declarative animations and gestures with GPU-accelerated rendering. It provides an intuitive API for complex motion design without requiring advanced animation knowledge.",
+    "use_cases": [
+      "Building smooth page transitions and component animations",
+      "Creating gesture-driven interfaces with drag, pan, and tap interactions",
+      "Implementing advanced scroll-triggered animations",
+      "Designing interactive data visualizations and micro-interactions"
+    ],
+    "used_by": [
+      "Vercel",
+      "Stripe",
+      "Figma",
+      "Twitter/X"
+    ],
+    "docs": "https://www.framer.com/motion/",
+    "tutorial": "https://www.framer.com/motion/tutorials/",
+    "added": "2026-09-03"
   }
 ]

@@ -11747,5 +11747,97 @@
     "docs": "https://www.framer.com/motion/",
     "tutorial": "https://www.framer.com/motion/tutorials/",
     "added": "2026-09-03"
+  },
+  {
+    "id": "sentry-relay",
+    "name": "Sentry Relay",
+    "category": "Tool",
+    "domain": "SRE/Observability",
+    "eli5": "It's like a security guard that checks and filters error reports before they reach the main office, stopping sensitive data from leaking out.",
+    "description": "Sentry Relay is a service that acts as a proxy between your applications and Sentry's error tracking platform, allowing you to filter, sample, and redact sensitive data before it's sent. It enables on-premise deployment of Sentry's data processing pipeline with improved security and compliance.",
+    "use_cases": [
+      "Filtering personally identifiable information (PII) before sending error data to cloud services",
+      "Rate limiting and sampling error events to reduce data ingestion costs",
+      "Running Sentry infrastructure in air-gapped or regulated environments",
+      "Processing and transforming error data with custom rules before storage"
+    ],
+    "used_by": [
+      "Shopify",
+      "Uber",
+      "Twilio",
+      "Segment"
+    ],
+    "docs": "https://develop.sentry.dev/relay/",
+    "tutorial": "https://docs.sentry.io/product/relay/",
+    "added": "2026-09-04"
+  },
+  {
+    "id": "dbt-core-metrics",
+    "name": "dbt Metrics",
+    "category": "Framework",
+    "domain": "Data Engineering",
+    "eli5": "It's like a recipe book where you write down how to calculate important business numbers so everyone uses the same recipe.",
+    "description": "dbt Metrics is a framework for defining business metrics in dbt projects that ensures consistency across analytics and reporting. It allows data teams to centrally define metrics once and reference them across multiple tools and dashboards.",
+    "use_cases": [
+      "Defining and maintaining consistent KPIs across organization dashboards",
+      "Enabling seamless metric sharing between dbt, BI tools, and downstream applications",
+      "Creating a single source of truth for business metrics definitions",
+      "Automating metric calculations and dependencies in the transformation workflow"
+    ],
+    "used_by": [
+      "Gitlab",
+      "Atlan",
+      "Fivetran",
+      "Mode Analytics"
+    ],
+    "docs": "https://docs.getdbt.com/docs/build/metrics",
+    "tutorial": "https://docs.getdbt.com/guides/use-metricflow",
+    "added": "2026-09-04"
+  },
+  {
+    "id": "go-migrate",
+    "name": "golang-migrate",
+    "category": "Tool",
+    "domain": "Database",
+    "eli5": "It's like a checklist that tracks every change you make to a database so you can undo or redo them in the right order.",
+    "description": "golang-migrate is a database migration tool written in Go that supports multiple databases and provides CLI and library interfaces for version control of database schemas. It's widely used in production systems for managing database changes across environments.",
+    "use_cases": [
+      "Managing schema migrations in microservices architectures",
+      "Automating database versioning in CI/CD pipelines",
+      "Supporting multiple database backends (PostgreSQL, MySQL, SQLite, etc.) with single codebase",
+      "Rolling back and replaying database changes safely in production"
+    ],
+    "used_by": [
+      "Kubernetes",
+      "Docker",
+      "HashiCorp",
+      "Atlassian"
+    ],
+    "docs": "https://github.com/golang-migrate/migrate",
+    "tutorial": "https://github.com/golang-migrate/migrate/tree/master/cmd/migrate",
+    "added": "2026-09-04"
+  },
+  {
+    "id": "vscode-copilot",
+    "name": "GitHub Copilot",
+    "category": "Tool",
+    "domain": "Frontend",
+    "eli5": "It's like having a helpful coding partner sitting next to you who suggests the next lines of code as you type.",
+    "description": "GitHub Copilot is an AI-powered code completion tool that uses OpenAI's Codex model to suggest code snippets, functions, and entire blocks based on context and comments. It integrates with VS Code and other editors to accelerate development workflows.",
+    "use_cases": [
+      "Accelerating boilerplate code generation and routine implementations",
+      "Suggesting test cases and documentation based on function signatures",
+      "Learning new languages and frameworks through intelligent code suggestions",
+      "Reducing time-to-productivity for developers working with unfamiliar codebases"
+    ],
+    "used_by": [
+      "Microsoft",
+      "Spotify",
+      "AWS",
+      "Adobe"
+    ],
+    "docs": "https://github.com/features/copilot",
+    "tutorial": "https://docs.github.com/en/copilot/quickstart",
+    "added": "2026-09-04"
   }
 ]

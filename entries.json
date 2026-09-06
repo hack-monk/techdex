@@ -11839,5 +11839,28 @@
     "docs": "https://github.com/features/copilot",
     "tutorial": "https://docs.github.com/en/copilot/quickstart",
     "added": "2026-09-04"
+  },
+  {
+    "id": "mistral-ai",
+    "name": "Mistral AI",
+    "category": "Platform",
+    "domain": "AI/ML",
+    "eli5": "Mistral AI is like a smart robot that can read and write, similar to ChatGPT, but it's made by a different company and runs really fast.",
+    "description": "Mistral AI is a French AI company providing open-source and commercial large language models optimized for performance and efficiency. Their models power enterprise applications with lower latency and cost compared to larger alternatives.",
+    "use_cases": [
+      "Building conversational AI chatbots and customer support systems",
+      "Code generation and software development assistance",
+      "Document analysis and summarization for enterprises",
+      "Real-time inference in production environments with resource constraints"
+    ],
+    "used_by": [
+      "Mistral AI",
+      "Hugging Face",
+      "Together AI",
+      "Scaleway"
+    ],
+    "docs": "https://docs.mistral.ai/",
+    "tutorial": "https://docs.mistral.ai/getting-started/quickstart/",
+    "added": "2026-09-06"
   }
 ]

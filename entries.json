@@ -11862,5 +11862,97 @@
     "docs": "https://docs.mistral.ai/",
     "tutorial": "https://docs.mistral.ai/getting-started/quickstart/",
     "added": "2026-09-06"
+  },
+  {
+    "id": "pydantic-core",
+    "name": "Pydantic Core",
+    "category": "Tool",
+    "domain": "Backend",
+    "eli5": "It's like a bouncer at a club who checks that everyone coming in matches the dress code before letting them through the door.",
+    "description": "Pydantic Core is a high-performance data validation library written in Rust that powers Pydantic v2, providing type checking and serialization for Python applications. It's essential for building robust APIs and data processing pipelines that need strong guarantees about data shape and types.",
+    "use_cases": [
+      "FastAPI request/response validation",
+      "Data ETL pipeline schema enforcement",
+      "ML model input validation before inference",
+      "Configuration file parsing and validation"
+    ],
+    "used_by": [
+      "OpenAI",
+      "Shopify",
+      "Uber",
+      "Stripe"
+    ],
+    "docs": "https://docs.pydantic.dev/latest/",
+    "tutorial": "https://docs.pydantic.dev/latest/usage/getting-started/",
+    "added": "2026-09-07"
+  },
+  {
+    "id": "tailon",
+    "name": "Tailon",
+    "category": "Tool",
+    "domain": "SRE/Observability",
+    "eli5": "It's like having a window into your computer's brain that shows you everything it's thinking in real-time.",
+    "description": "Tailon is a web UI for tailing and analyzing log files in real-time across multiple servers and sources. It provides a unified interface for log aggregation without requiring external infrastructure like ELK or Loki.",
+    "use_cases": [
+      "Development environment log monitoring",
+      "On-premise log aggregation without external services",
+      "Real-time log filtering and searching",
+      "Multiple server log streaming in one interface"
+    ],
+    "used_by": [
+      "DevOps teams",
+      "System administrators",
+      "Smaller startups",
+      "Internal tools teams"
+    ],
+    "docs": "https://github.com/ggreer/tail-f",
+    "tutorial": "https://github.com/ggreer/tail-f#readme",
+    "added": "2026-09-07"
+  },
+  {
+    "id": "anthropic-sdk-go",
+    "name": "Anthropic Go SDK",
+    "category": "Tool",
+    "domain": "AI/ML",
+    "eli5": "It's like a translator that lets your Go program talk to Claude AI without learning a foreign language.",
+    "description": "The official Go SDK for Anthropic's Claude API, providing native integration for building AI-powered applications in Go. It handles streaming, tool use, and vision capabilities with idiomatic Go patterns.",
+    "use_cases": [
+      "Building CLI tools powered by Claude",
+      "Backend services that integrate AI reasoning",
+      "Real-time streaming AI responses in Go servers",
+      "Vision-based document processing applications"
+    ],
+    "used_by": [
+      "Go ecosystem developers",
+      "Backend engineers at scale",
+      "Infrastructure teams",
+      "DevOps tool builders"
+    ],
+    "docs": "https://pkg.go.dev/github.com/anthropics/anthropic-sdk-go",
+    "tutorial": "https://github.com/anthropics/anthropic-sdk-go#readme",
+    "added": "2026-09-07"
+  },
+  {
+    "id": "gotenberg",
+    "name": "Gotenberg",
+    "category": "Tool",
+    "domain": "Backend",
+    "eli5": "It's like a printing wizard that magically turns web pages into PDF files or images without needing a real printer.",
+    "description": "Gotenberg is a stateless API for converting HTML, Markdown, and Office documents to PDF and images using headless browsers. It simplifies document generation for applications without managing browser instances or complex dependencies.",
+    "use_cases": [
+      "Invoice and receipt PDF generation",
+      "Report generation from dynamic content",
+      "HTML to PDF conversion at scale",
+      "Screenshot generation from web content"
+    ],
+    "used_by": [
+      "Invoice platforms",
+      "SaaS document generators",
+      "Report automation systems",
+      "Healthcare document platforms"
+    ],
+    "docs": "https://gotenberg.dev/docs/about",
+    "tutorial": "https://gotenberg.dev/docs/getting-started/installation",
+    "added": "2026-09-07"
   }
 ]

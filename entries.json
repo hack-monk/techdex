@@ -11954,5 +11954,28 @@
     "docs": "https://gotenberg.dev/docs/about",
     "tutorial": "https://gotenberg.dev/docs/getting-started/installation",
     "added": "2026-09-07"
+  },
+  {
+    "id": "uv-python-package-manager",
+    "name": "uv (Python Package Manager)",
+    "category": "Tool",
+    "domain": "Backend",
+    "eli5": "uv is like a super-fast librarian that finds and organizes all the books your Python project needs, much faster than the old librarian.",
+    "description": "uv is an extremely fast Python package installer and resolver written in Rust, designed as a drop-in replacement for pip and pip-tools. It dramatically reduces dependency resolution time and installation overhead for Python projects.",
+    "use_cases": [
+      "Accelerating CI/CD pipelines for Python projects",
+      "Local development with faster dependency installation",
+      "Managing complex monorepo Python dependencies",
+      "Building Python applications with strict performance requirements"
+    ],
+    "used_by": [
+      "Astral",
+      "GitHub",
+      "Meta",
+      "Google"
+    ],
+    "docs": "https://docs.astral.sh/uv/",
+    "tutorial": "https://docs.astral.sh/uv/getting-started/",
+    "added": "2026-09-08"
   }
 ]

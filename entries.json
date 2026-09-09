@@ -11977,5 +11977,120 @@
     "docs": "https://docs.astral.sh/uv/",
     "tutorial": "https://docs.astral.sh/uv/getting-started/",
     "added": "2026-09-08"
+  },
+  {
+    "id": "tailscale-funnel",
+    "name": "Tailscale Funnel",
+    "category": "Tool",
+    "domain": "Networking",
+    "eli5": "It's like having a secret tunnel that lets your friends visit your treehouse without knowing your home address.",
+    "description": "Tailscale Funnel is a feature that allows you to share services on your private Tailscale network with the public internet without exposing your infrastructure or running a traditional reverse proxy. It provides encrypted, authenticated access with minimal configuration overhead.",
+    "use_cases": [
+      "Sharing development environments with stakeholders without VPN setup",
+      "Exposing internal services to external partners or customers temporarily",
+      "Creating public-facing webhooks from private backend services",
+      "Demo access to internal tools without complex firewall rules"
+    ],
+    "used_by": [
+      "Figma",
+      "HashiCorp",
+      "Vercel",
+      "Stripe"
+    ],
+    "docs": "https://tailscale.com/kb/1312/funnel/",
+    "tutorial": "https://tailscale.com/blog/tailscale-funnel/",
+    "added": "2026-09-09"
+  },
+  {
+    "id": "llamafile",
+    "name": "LlamaFile",
+    "category": "Tool",
+    "domain": "AI/ML",
+    "eli5": "It's like putting a whole library into one magic book you can carry anywhere and read without an internet connection.",
+    "description": "LlamaFile is a single-file executable that packages open-source large language models with an embedded HTTP server, allowing you to run inference locally without external dependencies. Created by Jart and Mozilla, it simplifies deployment of LLMs to any machine.",
+    "use_cases": [
+      "Running private LLMs on laptops and edge devices without cloud dependencies",
+      "Deploying models to air-gapped or offline environments",
+      "Creating self-contained AI-powered applications for distribution",
+      "Testing and prototyping LLM applications with zero infrastructure"
+    ],
+    "used_by": [
+      "Mozilla",
+      "Anthropic community",
+      "LocalAI community",
+      "Individual developers"
+    ],
+    "docs": "https://github.com/Mozilla-Ocho/llamafile",
+    "tutorial": "https://github.com/Mozilla-Ocho/llamafile/blob/main/README.md",
+    "added": "2026-09-09"
+  },
+  {
+    "id": "astro-content-collections",
+    "name": "Astro Content Collections",
+    "category": "Framework",
+    "domain": "Frontend",
+    "eli5": "It's like having a filing cabinet that automatically organizes all your documents and makes sure they're formatted correctly before you use them.",
+    "description": "Astro Content Collections is a feature for managing structured content with type-safe frontmatter validation and querying capabilities. It integrates with Astro's build system to provide compile-time validation of content schemas.",
+    "use_cases": [
+      "Building type-safe documentation sites with validated markdown frontmatter",
+      "Creating content-driven websites with runtime guarantees on content structure",
+      "Managing blog posts and collections with automatic schema validation",
+      "Building multi-language content platforms with consistent structure"
+    ],
+    "used_by": [
+      "Astro documentation",
+      "Parity.io",
+      "Librarians",
+      "Technical bloggers"
+    ],
+    "docs": "https://docs.astro.build/en/guides/content-collections/",
+    "tutorial": "https://docs.astro.build/en/tutorials/add-content-collections/",
+    "added": "2026-09-09"
+  },
+  {
+    "id": "neon-pooler",
+    "name": "Neon Pooler",
+    "category": "Tool",
+    "domain": "Database",
+    "eli5": "It's like a receptionist who groups visitors into elevators instead of sending each person up separately, saving everyone time.",
+    "description": "Neon Pooler is a serverless PostgreSQL connection pooler that reduces connection overhead for high-concurrency workloads. It abstracts the complexity of managing database connections across serverless functions and microservices.",
+    "use_cases": [
+      "Handling thousands of concurrent serverless function connections to PostgreSQL",
+      "Reducing latency and cost of serverless database access",
+      "Auto-scaling applications without hitting connection limits",
+      "Multi-tenant applications with isolated connection pools per tenant"
+    ],
+    "used_by": [
+      "Vercel",
+      "Replit",
+      "Supabase partners",
+      "Serverless startups"
+    ],
+    "docs": "https://neon.tech/docs/guides/connection-pooling/",
+    "tutorial": "https://neon.tech/blog/how-to-use-pooling-with-serverless-functions/",
+    "added": "2026-09-09"
+  },
+  {
+    "id": "oxide-helios",
+    "name": "Oxide Helios",
+    "category": "Platform",
+    "domain": "DevOps",
+    "eli5": "It's like having a smart power strip that manages all your computer's cables and makes sure everything is plugged in correctly and safely.",
+    "description": "Oxide Helios is the control plane software that manages Oxide Computer's modular servers and provides unified infrastructure-as-code management across hardware and virtualization. It combines system firmware, hypervisor, and orchestration into a cohesive platform.",
+    "use_cases": [
+      "Building private cloud infrastructure with modern resource management",
+      "Managing hybrid environments combining bare metal and virtualized workloads",
+      "Providing infrastructure operators with unified control across hardware and software",
+      "Running containerized and traditional workloads on the same physical platform"
+    ],
+    "used_by": [
+      "Oxide Computer customers",
+      "Fortune 500 enterprises",
+      "Cloud infrastructure teams",
+      "On-premises datacenters"
+    ],
+    "docs": "https://oxide.computer/docs/",
+    "tutorial": "https://oxide.computer/blog/introducing-helios/",
+    "added": "2026-09-09"
   }
 ]

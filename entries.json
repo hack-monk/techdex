@@ -12092,5 +12092,51 @@
     "docs": "https://oxide.computer/docs/",
     "tutorial": "https://oxide.computer/blog/introducing-helios/",
     "added": "2026-09-09"
+  },
+  {
+    "id": "semver",
+    "name": "Semantic Versioning",
+    "category": "Concept",
+    "domain": "DevOps",
+    "eli5": "A system that labels software versions like recipe versions\u2014if you add an ingredient it's a small change, if you completely remake it that's a big change.",
+    "description": "Semantic Versioning (SemVer) is a versioning scheme that uses MAJOR.MINOR.PATCH to communicate the nature and impact of code changes. It enables developers and automated systems to understand breaking changes, new features, and patches at a glance.",
+    "use_cases": [
+      "Dependency management in package managers like npm and pip",
+      "API versioning to signal backward compatibility",
+      "Release automation and CI/CD pipelines",
+      "Library stability communication to downstream consumers"
+    ],
+    "used_by": [
+      "GitHub",
+      "npm Inc.",
+      "Python Software Foundation",
+      "Kubernetes"
+    ],
+    "docs": "https://semver.org/",
+    "tutorial": "https://semver.org/",
+    "added": "2026-09-10"
+  },
+  {
+    "id": "grype",
+    "name": "Grype",
+    "category": "Tool",
+    "domain": "Security",
+    "eli5": "A tool that scans your software like a security guard checking IDs to catch known bad software packages before they get installed.",
+    "description": "Grype is a vulnerability scanner that detects known security vulnerabilities in container images, filesystems, and software artifacts by analyzing SBOMs. It integrates seamlessly into CI/CD pipelines to prevent vulnerable dependencies from reaching production.",
+    "use_cases": [
+      "Container image scanning in CI/CD pipelines",
+      "Supply chain security scanning and compliance",
+      "Software composition analysis (SCA) for vulnerability detection",
+      "Automated SBOM analysis and reporting"
+    ],
+    "used_by": [
+      "Anchore",
+      "GitHub",
+      "VMware",
+      "Red Hat"
+    ],
+    "docs": "https://github.com/anchore/grype",
+    "tutorial": "https://github.com/anchore/grype#getting-started",
+    "added": "2026-09-10"
   }
 ]

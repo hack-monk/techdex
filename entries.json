@@ -12138,5 +12138,28 @@
     "docs": "https://github.com/anchore/grype",
     "tutorial": "https://github.com/anchore/grype#getting-started",
     "added": "2026-09-10"
+  },
+  {
+    "id": "elyra-ml-orchestration",
+    "name": "Elyra ML Orchestration",
+    "category": "Tool",
+    "domain": "AI/ML",
+    "eli5": "It's like a recipe card manager for machine learning experiments that lets you drag-and-drop ingredients instead of writing code.",
+    "description": "An open-source extension for Jupyter that provides a visual pipeline editor for building, running, and monitoring ML workflows with support for multiple orchestration backends like Apache Airflow and Kubeflow. It bridges notebook-based development with production orchestration.",
+    "use_cases": [
+      "Visual ML pipeline design without deep orchestration knowledge",
+      "Converting Jupyter notebooks to production workflows",
+      "Multi-step model training and hyperparameter tuning pipelines",
+      "Collaboration on ML experiments with non-technical stakeholders"
+    ],
+    "used_by": [
+      "IBM",
+      "Red Hat",
+      "Kubernetes community",
+      "enterprise ML teams"
+    ],
+    "docs": "https://elyra.readthedocs.io",
+    "tutorial": "https://elyra.readthedocs.io/en/latest/getting-started/intro.html",
+    "added": "2026-09-11"
   }
 ]

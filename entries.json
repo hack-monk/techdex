@@ -12161,5 +12161,118 @@
     "docs": "https://elyra.readthedocs.io",
     "tutorial": "https://elyra.readthedocs.io/en/latest/getting-started/intro.html",
     "added": "2026-09-11"
+  },
+  {
+    "id": "firestore-realtime-database",
+    "name": "Cloud Firestore",
+    "category": "Platform",
+    "domain": "Database",
+    "eli5": "It's like a magical notebook that everyone can read and write to at the same time, and it automatically tells everyone when something changes.",
+    "description": "Cloud Firestore is Google's fully managed, serverless NoSQL document database that syncs data in real-time across all connected clients. It scales automatically and integrates seamlessly with Firebase for mobile and web applications.",
+    "use_cases": [
+      "Real-time collaborative applications like Figma or Google Docs",
+      "Mobile apps requiring offline-first synchronization",
+      "Chat applications and messaging platforms",
+      "IoT data collection and live dashboards"
+    ],
+    "used_by": [
+      "Google",
+      "Duolingo",
+      "Slack",
+      "Spotify"
+    ],
+    "docs": "https://cloud.google.com/firestore/docs",
+    "tutorial": "https://firebase.google.com/docs/firestore/quickstart",
+    "added": "2026-09-12"
+  },
+  {
+    "id": "axon-framework",
+    "name": "Axon Framework",
+    "category": "Framework",
+    "domain": "Backend",
+    "eli5": "It's like a detailed diary that records every decision you make, so you can always replay what happened and fix mistakes.",
+    "description": "Axon Framework is a Java framework for building event-driven microservices using Command Query Responsibility Segregation (CQRS) and event sourcing patterns. It simplifies distributed system development by treating events as the source of truth.",
+    "use_cases": [
+      "Financial transaction systems requiring audit trails",
+      "Order management and e-commerce platforms",
+      "Event-driven microservices architectures",
+      "Systems requiring temporal data reconstruction"
+    ],
+    "used_by": [
+      "ABN AMRO Bank",
+      "ING",
+      "PUMA",
+      "Commerzbank"
+    ],
+    "docs": "https://docs.axoniq.io/reference-guide/",
+    "tutorial": "https://docs.axoniq.io/getting-started/",
+    "added": "2026-09-12"
+  },
+  {
+    "id": "oxide-cloud-computer",
+    "name": "Oxide Cloud Computer",
+    "category": "Platform",
+    "domain": "Cloud",
+    "eli5": "It's like building your own mini cloud provider in a box\u2014all the powerful cloud computing stuff, but you own the hardware.",
+    "description": "Oxide Cloud Computer is a purpose-built rack computer that brings cloud-native infrastructure management to on-premises data centers. It provides seamless cloud-like experiences (orchestration, networking, storage) without requiring cloud vendor lock-in.",
+    "use_cases": [
+      "Regulated industries requiring on-premises infrastructure",
+      "Hybrid cloud deployments with consistent management",
+      "Organizations seeking cloud-native experience in private data centers",
+      "Edge computing at scale"
+    ],
+    "used_by": [
+      "Oxide Systems",
+      "Various Fortune 500 enterprises in confidential deployments"
+    ],
+    "docs": "https://oxide.computer/docs",
+    "tutorial": "https://oxide.computer/blog/introducing-oxide",
+    "added": "2026-09-12"
+  },
+  {
+    "id": "opa-gatekeeper",
+    "name": "OPA Gatekeeper",
+    "category": "Tool",
+    "domain": "Security",
+    "eli5": "It's like a security guard at the gate who checks every rule before letting anyone in or doing anything.",
+    "description": "Gatekeeper is a policy engine for Kubernetes that uses Open Policy Agent (OPA) to enforce custom policies through admission webhooks. It enables organizations to implement fine-grained access control and compliance requirements across their clusters.",
+    "use_cases": [
+      "Enforcing security policies in Kubernetes deployments",
+      "Compliance validation for regulatory requirements",
+      "Container image scanning and vulnerability prevention",
+      "Resource quotas and cost optimization policies"
+    ],
+    "used_by": [
+      "Google Cloud",
+      "Microsoft Azure",
+      "Styra",
+      "Capital One"
+    ],
+    "docs": "https://open-policy-agent.github.io/gatekeeper/",
+    "tutorial": "https://open-policy-agent.github.io/gatekeeper/website/docs/getting-started",
+    "added": "2026-09-12"
+  },
+  {
+    "id": "apache-druid",
+    "name": "Apache Druid",
+    "category": "Platform",
+    "domain": "Data Engineering",
+    "eli5": "It's like having a super-fast encyclopedia that can answer billions of questions about your data in just a blink.",
+    "description": "Apache Druid is a real-time OLAP datastore designed for fast analytical queries on large datasets with sub-second latencies. It's optimized for time-series data and powers interactive dashboards and exploratory analytics.",
+    "use_cases": [
+      "Real-time analytics dashboards and monitoring",
+      "Ad-tech and marketing analytics platforms",
+      "Network and security analytics",
+      "Financial market and trading data analysis"
+    ],
+    "used_by": [
+      "Airbnb",
+      "Lyft",
+      "Cisco",
+      "Alibaba"
+    ],
+    "docs": "https://druid.apache.org/docs/latest/",
+    "tutorial": "https://druid.apache.org/docs/latest/tutorials/index.html",
+    "added": "2026-09-12"
   }
 ]

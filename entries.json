@@ -12274,5 +12274,97 @@
     "docs": "https://druid.apache.org/docs/latest/",
     "tutorial": "https://druid.apache.org/docs/latest/tutorials/index.html",
     "added": "2026-09-12"
+  },
+  {
+    "id": "stripe-elements",
+    "name": "Stripe Elements",
+    "category": "Framework",
+    "domain": "Backend",
+    "eli5": "It's like a pre-built payment checkout form that you can drop into your website, so you don't have to build it from scratch.",
+    "description": "Stripe Elements is a set of pre-built UI components for collecting payment information securely without handling raw card data. It simplifies PCI compliance and payment integration for web and mobile applications.",
+    "use_cases": [
+      "Building custom checkout experiences while maintaining PCI compliance",
+      "Integrating payment processing into SaaS platforms",
+      "Creating mobile payment flows with tokenized card handling",
+      "Reducing fraud through Stripe's built-in security features"
+    ],
+    "used_by": [
+      "Shopify",
+      "DoorDash",
+      "Figma",
+      "Notion"
+    ],
+    "docs": "https://stripe.com/docs/stripe-js/elements/payment-element",
+    "tutorial": "https://stripe.com/docs/payments/payment-element",
+    "added": "2026-09-13"
+  },
+  {
+    "id": "vscode-dev-containers",
+    "name": "VS Code Dev Containers",
+    "category": "Tool",
+    "domain": "DevOps",
+    "eli5": "It's like having a portable computer setup inside a box that you can ship to anyone, and when they open it, their VS Code looks exactly like yours with all the tools already installed.",
+    "description": "VS Code Dev Containers allows developers to use a Docker container as a complete development environment, ensuring consistent development setups across teams and reducing 'works on my machine' problems. The container configuration is version-controlled and shareable.",
+    "use_cases": [
+      "Onboarding new developers with zero setup time",
+      "Ensuring identical development environments across teams",
+      "Isolating project dependencies and avoiding conflicts",
+      "Supporting multiple language stacks in a single organization"
+    ],
+    "used_by": [
+      "Microsoft",
+      "GitHub",
+      "Google",
+      "AWS"
+    ],
+    "docs": "https://code.visualstudio.com/docs/devcontainers/containers",
+    "tutorial": "https://code.visualstudio.com/docs/devcontainers/tutorial",
+    "added": "2026-09-13"
+  },
+  {
+    "id": "pagerduty-event-intelligence",
+    "name": "PagerDuty Event Intelligence",
+    "category": "Tool",
+    "domain": "SRE/Observability",
+    "eli5": "It's like having a smart alarm system that listens to all your house sensors and groups similar warnings together instead of waking you up for every little thing.",
+    "description": "PagerDuty Event Intelligence uses machine learning to intelligently group, correlate, and deduplicate alerts from multiple monitoring systems, reducing alert noise and helping teams respond faster to real incidents. It learns from incident history to improve noise reduction over time.",
+    "use_cases": [
+      "Reducing alert fatigue and false positives in large-scale systems",
+      "Automating incident correlation across multiple monitoring tools",
+      "Improving mean time to resolution (MTTR) through intelligent routing",
+      "Learning incident patterns to predict and prevent outages"
+    ],
+    "used_by": [
+      "Uber",
+      "Twitch",
+      "GitHub",
+      "Adobe"
+    ],
+    "docs": "https://support.pagerduty.com/docs/event-intelligence",
+    "tutorial": "https://support.pagerduty.com/docs/event-intelligence-getting-started",
+    "added": "2026-09-13"
+  },
+  {
+    "id": "svix-webhooks",
+    "name": "Svix Webhooks",
+    "category": "Tool",
+    "domain": "Backend",
+    "eli5": "It's like having a mailman who guarantees your messages get delivered to your neighbors, and if they're not home, he keeps trying until they pick up.",
+    "description": "Svix is a webhook-as-a-service platform that handles reliable event delivery, retries, and webhook management for applications, eliminating the complexity of building robust webhook infrastructure. It provides built-in security, monitoring, and developer tools for webhook operations.",
+    "use_cases": [
+      "Delivering real-time notifications from SaaS platforms to customers",
+      "Building event-driven architectures with guaranteed delivery",
+      "Testing webhooks in development without complex setup",
+      "Monitoring webhook health and debugging delivery failures"
+    ],
+    "used_by": [
+      "Supabase",
+      "Zapier",
+      "Retool",
+      "Plane"
+    ],
+    "docs": "https://docs.svix.com/",
+    "tutorial": "https://docs.svix.com/getting-started",
+    "added": "2026-09-13"
   }
 ]

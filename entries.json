@@ -12366,5 +12366,28 @@
     "docs": "https://docs.svix.com/",
     "tutorial": "https://docs.svix.com/getting-started",
     "added": "2026-09-13"
+  },
+  {
+    "id": "pagefind",
+    "name": "Pagefind",
+    "category": "Tool",
+    "domain": "Frontend",
+    "eli5": "Pagefind is like a tiny librarian built into your website that can search through all the words on every page instantly, without needing to ask a server for help.",
+    "description": "Pagefind is a fully static search library for static sites that requires zero server infrastructure, built with Rust and compiled to WebAssembly. It automatically indexes your entire site and provides instant full-text search with filtering capabilities entirely in the browser.",
+    "use_cases": [
+      "Adding search functionality to static documentation sites without backend servers",
+      "Building searchable blog archives and knowledge bases for static sites",
+      "Improving user experience on Astro, Hugo, Jekyll, or other static site generators",
+      "Creating offline-capable search for progressive web applications"
+    ],
+    "used_by": [
+      "Astro documentation",
+      "Pocketbase docs",
+      "Meilisearch docs",
+      "Nuxt Labs"
+    ],
+    "docs": "https://pagefind.app/docs/",
+    "tutorial": "https://pagefind.app/docs/installation/",
+    "added": "2026-09-14"
   }
 ]

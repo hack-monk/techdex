@@ -12389,5 +12389,74 @@
     "docs": "https://pagefind.app/docs/",
     "tutorial": "https://pagefind.app/docs/installation/",
     "added": "2026-09-14"
+  },
+  {
+    "id": "mcp-servers",
+    "name": "Model Context Protocol (MCP)",
+    "category": "Framework",
+    "domain": "AI/ML",
+    "eli5": "MCP is like a universal translator that lets AI assistants talk to any tool or system on your computer, the same way USB lets devices talk to your computer.",
+    "description": "The Model Context Protocol is an open standard that enables AI models and applications to seamlessly interact with external tools, databases, and services. It provides a standardized interface for connecting LLMs to real-world data sources and capabilities.",
+    "use_cases": [
+      "Enabling Claude and other AI models to access local file systems and databases",
+      "Building AI agents that interact with enterprise systems and APIs",
+      "Creating IDE integrations for AI-assisted code generation and analysis",
+      "Connecting language models to custom business logic and tools"
+    ],
+    "used_by": [
+      "Anthropic",
+      "Cline AI",
+      "Continue",
+      "Various Enterprise AI Teams"
+    ],
+    "docs": "https://modelcontextprotocol.io/",
+    "tutorial": "https://modelcontextprotocol.io/quickstart/server",
+    "added": "2026-09-15"
+  },
+  {
+    "id": "pipecat",
+    "name": "Pipecat",
+    "category": "Framework",
+    "domain": "AI/ML",
+    "eli5": "Pipecat is like a conveyor belt in a factory that moves different types of stuff (voice, video, AI) down the line in the right order to build voice and video applications.",
+    "description": "Pipecat is an open-source framework for building real-time, multi-modal AI applications with low-latency voice, video, and text processing. It abstracts away the complexity of coordinating multiple AI/ML models and managing real-time media streams.",
+    "use_cases": [
+      "Building conversational AI voice agents",
+      "Creating real-time video conferencing applications with AI features",
+      "Developing intelligent meeting assistants and transcription services",
+      "Building interactive voice response (IVR) systems with natural language understanding"
+    ],
+    "used_by": [
+      "Daily",
+      "Anthropic",
+      "Various AI Startups",
+      "Enterprise Contact Centers"
+    ],
+    "docs": "https://docs.pipecat.ai/",
+    "tutorial": "https://docs.pipecat.ai/get-started",
+    "added": "2026-09-15"
+  },
+  {
+    "id": "corellium",
+    "name": "Corellium",
+    "category": "Platform",
+    "domain": "Security",
+    "eli5": "Corellium is like a virtual phone or iPad that runs on computers, so security researchers can test apps without needing real devices.",
+    "description": "Corellium provides cloud-hosted virtualization of iOS and Android devices for security research, mobile app testing, and threat analysis. It enables organizations to run authentic mobile operating systems in the cloud for dynamic analysis and penetration testing.",
+    "use_cases": [
+      "Mobile security vulnerability research and penetration testing",
+      "Sandbox environment for analyzing malware on iOS and Android",
+      "Automated security testing for mobile application development",
+      "Compliance and forensic analysis of mobile platforms"
+    ],
+    "used_by": [
+      "Apple",
+      "Google",
+      "Microsoft",
+      "Fortune 500 Security Teams"
+    ],
+    "docs": "https://corellium.com/documentation",
+    "tutorial": "https://corellium.com/tutorials",
+    "added": "2026-09-15"
   }
 ]

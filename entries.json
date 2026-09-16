@@ -12458,5 +12458,97 @@
     "docs": "https://corellium.com/documentation",
     "tutorial": "https://corellium.com/tutorials",
     "added": "2026-09-15"
+  },
+  {
+    "id": "sentry-replays",
+    "name": "Sentry Session Replays",
+    "category": "Tool",
+    "domain": "SRE/Observability",
+    "eli5": "It's like a security camera for your website that records exactly what users did right before something broke, so you can rewatch and see what went wrong.",
+    "description": "Sentry Session Replays captures user interactions and browser state to provide video-like playback of sessions leading up to errors. This enables developers to see exactly what users were doing when issues occurred, dramatically reducing debugging time.",
+    "use_cases": [
+      "Investigating frontend errors by replaying user sessions",
+      "Understanding user experience issues and pain points",
+      "Reproducing hard-to-diagnose bugs in production environments",
+      "Analyzing performance issues in real user scenarios"
+    ],
+    "used_by": [
+      "Shopify",
+      "Airbnb",
+      "Figma",
+      "Discord"
+    ],
+    "docs": "https://docs.sentry.io/product/session-replay/",
+    "tutorial": "https://docs.sentry.io/product/session-replay/getting-started/",
+    "added": "2026-09-16"
+  },
+  {
+    "id": "vapi-voice-ai",
+    "name": "Vapi Voice AI",
+    "category": "Platform",
+    "domain": "AI/ML",
+    "eli5": "It's like a robot receptionist you can hire instantly that answers phone calls and talks to customers using artificial intelligence, no training required.",
+    "description": "Vapi is a platform for building, deploying, and managing voice AI agents that can handle phone calls, handle customer conversations, and integrate with business systems. It abstracts away the complexity of speech recognition, LLM processing, and text-to-speech synthesis.",
+    "use_cases": [
+      "Building AI customer support phone agents",
+      "Automating appointment scheduling and confirmations",
+      "Creating voice-based lead qualification systems",
+      "Building multilingual voice assistants for sales teams"
+    ],
+    "used_by": [
+      "Redfin",
+      "Blank",
+      "Helix",
+      "Wellness Coach"
+    ],
+    "docs": "https://docs.vapi.ai/",
+    "tutorial": "https://docs.vapi.ai/introduction",
+    "added": "2026-09-16"
+  },
+  {
+    "id": "retool",
+    "name": "Retool",
+    "category": "Platform",
+    "domain": "Frontend",
+    "eli5": "It's like a LEGO builder for dashboards and admin panels where you snap together pre-made blocks to create apps without writing code.",
+    "description": "Retool is a low-code platform for building internal tools, dashboards, and applications by visually connecting UI components to databases and APIs. It significantly reduces development time for business applications that previously required weeks of custom coding.",
+    "use_cases": [
+      "Building internal admin panels and CRUD applications",
+      "Creating data dashboards for operations teams",
+      "Automating business processes with form-based workflows",
+      "Building customer-facing applications with fast iteration"
+    ],
+    "used_by": [
+      "Amazon",
+      "Slack",
+      "Microsoft",
+      "Vimeo"
+    ],
+    "docs": "https://docs.retool.com/",
+    "tutorial": "https://docs.retool.com/docs/tutorial",
+    "added": "2026-09-16"
+  },
+  {
+    "id": "ultralytics-yolo",
+    "name": "Ultralytics YOLOv8",
+    "category": "Framework",
+    "domain": "AI/ML",
+    "eli5": "It's like giving a computer the ability to instantly point out and identify every object in a photo, like finding all the cats in a room full of animals.",
+    "description": "YOLOv8 is a state-of-the-art object detection framework that can identify, locate, and classify objects in images and videos with real-time performance. It's widely adopted for computer vision tasks and provides a user-friendly Python API with pre-trained models.",
+    "use_cases": [
+      "Real-time object detection in video surveillance systems",
+      "Automated quality inspection in manufacturing",
+      "Autonomous vehicle perception systems",
+      "Retail shelf monitoring and inventory tracking"
+    ],
+    "used_by": [
+      "Tesla",
+      "Meta",
+      "Amazon",
+      "Microsoft"
+    ],
+    "docs": "https://docs.ultralytics.com/",
+    "tutorial": "https://docs.ultralytics.com/quickstart/",
+    "added": "2026-09-16"
   }
 ]

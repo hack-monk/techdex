@@ -12550,5 +12550,94 @@
     "docs": "https://docs.ultralytics.com/",
     "tutorial": "https://docs.ultralytics.com/quickstart/",
     "added": "2026-09-16"
+  },
+  {
+    "id": "cline",
+    "name": "Cline",
+    "category": "Tool",
+    "domain": "AI/ML",
+    "eli5": "It's like having a robot assistant that can read your code and help you build software by understanding what you want and making changes automatically.",
+    "description": "Cline is an AI-powered autonomous coding agent that integrates with VS Code to understand codebases and perform complex development tasks. It leverages large language models to write, test, and refactor code with minimal human intervention.",
+    "use_cases": [
+      "Automating routine code refactoring and modernization tasks",
+      "Accelerating feature development and bug fixes in large codebases",
+      "Generating boilerplate code and project scaffolding",
+      "Cross-file code generation with context awareness"
+    ],
+    "used_by": [
+      "Anthropic",
+      "various startups",
+      "enterprise development teams"
+    ],
+    "docs": "https://github.com/cline/cline",
+    "tutorial": "https://github.com/cline/cline#quick-start",
+    "added": "2026-09-17"
+  },
+  {
+    "id": "wiz-cloud-security",
+    "name": "Wiz Cloud Security",
+    "category": "Platform",
+    "domain": "Security",
+    "eli5": "It's like a security guard that walks around your entire cloud building and tells you which doors are unlocked and which rooms have problems.",
+    "description": "Wiz is a cloud security platform that provides runtime threat detection, vulnerability management, and misconfiguration remediation across multi-cloud environments. It correlates data from multiple sources to provide context-aware security insights.",
+    "use_cases": [
+      "Identifying and remediating misconfigurations in AWS, Azure, and GCP",
+      "Runtime threat detection and response in containerized workloads",
+      "Supply chain security and software bill of materials (SBOM) analysis",
+      "Compliance monitoring and audit trail management"
+    ],
+    "used_by": [
+      "Stripe",
+      "Databricks",
+      "Figma",
+      "SailPoint"
+    ],
+    "docs": "https://docs.wiz.io",
+    "tutorial": "https://www.wiz.io/lp/quick-start",
+    "added": "2026-09-17"
+  },
+  {
+    "id": "hydra-config-framework",
+    "name": "Hydra Configuration Framework",
+    "category": "Framework",
+    "domain": "Backend",
+    "eli5": "It's like a recipe card system that lets you organize and switch between different configurations for your programs without rewriting anything.",
+    "description": "Hydra is a Python framework for configuring complex applications through composable configuration files and command-line overrides. It simplifies managing hyperparameters, environment-specific settings, and application lifecycle in data science and ML workflows.",
+    "use_cases": [
+      "Managing machine learning experiment configurations and hyperparameters",
+      "Multi-environment application deployment with environment-specific configs",
+      "Complex data pipeline orchestration with composable config structures",
+      "Parameter optimization and grid search automation"
+    ],
+    "used_by": [
+      "Meta",
+      "research institutions",
+      "ML engineering teams"
+    ],
+    "docs": "https://hydra.cc/",
+    "tutorial": "https://hydra.cc/docs/tutorials/basic/your_first_hydra_app/",
+    "added": "2026-09-17"
+  },
+  {
+    "id": "qdrant-vector-db",
+    "name": "Qdrant Vector Database",
+    "category": "Platform",
+    "domain": "Database",
+    "eli5": "It's like a library that's organized by meaning instead of alphabetical order, so you can find things that are similar to what you're looking for.",
+    "description": "Qdrant is a vector database optimized for similarity search and AI applications, offering high-throughput nearest neighbor search with payload filtering and real-time updates. It's built in Rust and supports both in-memory and disk-based storage modes.",
+    "use_cases": [
+      "Semantic search and recommendation engines for AI applications",
+      "Embedding storage and retrieval for LLM-powered chatbots",
+      "Image and multimodal similarity search applications",
+      "Real-time personalization and content discovery systems"
+    ],
+    "used_by": [
+      "Y Combinator companies",
+      "enterprise AI teams",
+      "research organizations"
+    ],
+    "docs": "https://qdrant.tech/documentation/",
+    "tutorial": "https://qdrant.tech/documentation/quick-start/",
+    "added": "2026-09-17"
   }
 ]

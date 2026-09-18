@@ -12639,5 +12639,95 @@
     "docs": "https://qdrant.tech/documentation/",
     "tutorial": "https://qdrant.tech/documentation/quick-start/",
     "added": "2026-09-17"
+  },
+  {
+    "id": "uv-workspace",
+    "name": "uv Workspace",
+    "category": "Tool",
+    "domain": "Backend",
+    "eli5": "It's like a shared notebook where multiple Python projects can work together and share their pencils (dependencies) without getting in each other's way.",
+    "description": "uv workspace is a monorepo tool for Python that manages multiple interdependent packages with unified dependency resolution and optimized build caching. It enables teams to organize large Python codebases with shared dependencies while maintaining isolation and reproducibility.",
+    "use_cases": [
+      "Managing large Python monorepos with multiple interdependent services",
+      "Organizing machine learning projects with shared model and utility libraries",
+      "Building plugin ecosystems where core library and plugins share versions",
+      "Coordinating dependencies across data engineering pipelines"
+    ],
+    "used_by": [
+      "Astral",
+      "Fast.ai",
+      "Hugging Face"
+    ],
+    "docs": "https://docs.astral.sh/uv/concepts/workspaces/",
+    "tutorial": "https://docs.astral.sh/uv/guides/workspaces/",
+    "added": "2026-09-18"
+  },
+  {
+    "id": "vald-distributed-vector-db",
+    "name": "Vald",
+    "category": "Platform",
+    "domain": "Database",
+    "eli5": "It's like a librarian who can instantly find the book most similar to the one you're reading, even when searching through millions of books spread across many buildings.",
+    "description": "Vald is a distributed vector database optimized for large-scale similarity search with high throughput and low latency, designed for production AI applications. It provides scalable nearest neighbor search across distributed nodes with automatic sharding and replication.",
+    "use_cases": [
+      "Large-scale image and video retrieval systems",
+      "Real-time recommendation engines serving millions of users",
+      "Semantic search in enterprise knowledge management systems",
+      "Face recognition and biometric matching in security applications"
+    ],
+    "used_by": [
+      "LINE",
+      "Yahoo Japan",
+      "Twitter (X)"
+    ],
+    "docs": "https://vald.readthedocs.io/",
+    "tutorial": "https://vald.readthedocs.io/en/latest/tutorial/",
+    "added": "2026-09-18"
+  },
+  {
+    "id": "tailscale-ssh",
+    "name": "Tailscale SSH",
+    "category": "Tool",
+    "domain": "Security",
+    "eli5": "It's like having a magic door in your bedroom that lets you walk directly into any of your friend's rooms without needing to know the house address or climb through windows.",
+    "description": "Tailscale SSH is a native SSH implementation built on Tailscale's mesh VPN that provides automatic key management, device-based access control, and zero-trust connections without managing SSH keys or jump hosts. It simplifies remote access while maintaining enterprise security standards.",
+    "use_cases": [
+      "Secure remote server access for distributed DevOps teams",
+      "Zero-trust access to production infrastructure without VPN",
+      "Automated SSH authentication across multiple devices and environments",
+      "Compliance-friendly access logging and audit trails"
+    ],
+    "used_by": [
+      "DuckDuckGo",
+      "Vercel",
+      "Segment",
+      "Figma"
+    ],
+    "docs": "https://tailscale.com/kb/1193/tailscale-ssh/",
+    "tutorial": "https://tailscale.com/kb/1282/ssh-setup/",
+    "added": "2026-09-18"
+  },
+  {
+    "id": "buf-breaking-changes",
+    "name": "Buf Breaking Change Detection",
+    "category": "Tool",
+    "domain": "CI/CD",
+    "eli5": "It's like a spell-checker that catches when you accidentally change the shape of messages your programs send to each other, before anyone's code breaks.",
+    "description": "Buf breaking change detection automatically identifies backward-incompatible changes in Protocol Buffers and gRPC service definitions before they're deployed, preventing runtime failures in distributed systems. It integrates into CI/CD pipelines to enforce API compatibility standards.",
+    "use_cases": [
+      "Preventing breaking changes in microservices API contracts",
+      "Enforcing semantic versioning for gRPC service upgrades",
+      "Automating API compatibility checks in CI/CD workflows",
+      "Detecting protobuf schema changes that would break client applications"
+    ],
+    "used_by": [
+      "Google Cloud",
+      "Stripe",
+      "Figma",
+      "Twilio"
+    ],
+    "docs": "https://buf.build/docs/breaking/overview",
+    "tutorial": "https://buf.build/docs/breaking/configuration",
+    "added": "2026-09-18"
   }
 ]

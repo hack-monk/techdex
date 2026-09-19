@@ -12729,5 +12729,51 @@
     "docs": "https://buf.build/docs/breaking/overview",
     "tutorial": "https://buf.build/docs/breaking/configuration",
     "added": "2026-09-18"
+  },
+  {
+    "id": "tailwindui",
+    "name": "Tailwind UI",
+    "category": "Framework",
+    "domain": "Frontend",
+    "eli5": "Pre-made beautiful website building blocks that you can drop into your project, like using LEGO pieces instead of painting your own.",
+    "description": "A comprehensive library of professionally designed, fully responsive UI components built with Tailwind CSS. It accelerates frontend development by providing production-ready component patterns with copy-paste code examples.",
+    "use_cases": [
+      "Building marketing websites and landing pages quickly",
+      "Creating consistent UI patterns across SaaS applications",
+      "Prototyping dashboard layouts and admin interfaces",
+      "Accelerating design-to-code handoff with pre-built components"
+    ],
+    "used_by": [
+      "Vercel",
+      "Stripe",
+      "GitHub",
+      "Figma"
+    ],
+    "docs": "https://tailwindui.com/documentation",
+    "tutorial": "https://tailwindui.com/components",
+    "added": "2026-09-19"
+  },
+  {
+    "id": "medusa",
+    "name": "Medusa",
+    "category": "Framework",
+    "domain": "Backend",
+    "eli5": "A ready-made shopping store engine for the internet, like getting a fully stocked retail shop that you just need to customize and connect to your website.",
+    "description": "An open-source headless commerce platform built with Node.js that provides APIs for building scalable e-commerce applications. It decouples the commerce logic from the frontend, enabling flexible storefront implementations across web, mobile, and other channels.",
+    "use_cases": [
+      "Building custom e-commerce storefronts with modern tech stacks",
+      "Creating multi-vendor marketplaces with complex fulfillment logic",
+      "Implementing B2B commerce platforms with subscription and bulk ordering",
+      "Developing mobile-first shopping experiences with native apps"
+    ],
+    "used_by": [
+      "ComfortDelGro",
+      "Tekion",
+      "Rask",
+      "LanceDB"
+    ],
+    "docs": "https://docs.medusajs.com",
+    "tutorial": "https://docs.medusajs.com/quickstart/quick-start",
+    "added": "2026-09-19"
   }
 ]

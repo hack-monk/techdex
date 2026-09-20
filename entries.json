@@ -12775,5 +12775,93 @@
     "docs": "https://docs.medusajs.com",
     "tutorial": "https://docs.medusajs.com/quickstart/quick-start",
     "added": "2026-09-19"
+  },
+  {
+    "id": "uv-builder",
+    "name": "uv Builder",
+    "category": "Tool",
+    "domain": "Backend",
+    "eli5": "It's like a super-fast assembly line that packages your Python code and all its ingredients into a box that other people can use.",
+    "description": "uv is an extremely fast Python package installer and resolver written in Rust that replaces pip and pip-tools. It dramatically accelerates dependency resolution and installation while maintaining compatibility with the Python packaging ecosystem.",
+    "use_cases": [
+      "Speeding up CI/CD pipelines for Python projects",
+      "Managing monorepo dependencies across multiple Python packages",
+      "Local development with instant package installation",
+      "Building isolated Python environments for data science workflows"
+    ],
+    "used_by": [
+      "Anthropic",
+      "Hugging Face",
+      "FastAPI community"
+    ],
+    "docs": "https://docs.astral.sh/uv/",
+    "tutorial": "https://docs.astral.sh/uv/getting-started/",
+    "added": "2026-09-20"
+  },
+  {
+    "id": "oryx-data-plane",
+    "name": "Oryx Data Plane",
+    "category": "Tool",
+    "domain": "Data Engineering",
+    "eli5": "It's like a conveyor belt system that moves data from one place to another really fast, and can transform it along the way without needing to stop.",
+    "description": "Oryx is a real-time machine learning platform that enables continuous feature computation and model serving with millisecond latency. It unifies data pipelines, feature engineering, and model deployment in a single scalable system.",
+    "use_cases": [
+      "Real-time fraud detection and anomaly detection",
+      "Online machine learning model serving",
+      "Continuous feature engineering for recommendation systems",
+      "Low-latency prediction serving in financial trading applications"
+    ],
+    "used_by": [
+      "Yahoo",
+      "Alibaba",
+      "LinkedIn"
+    ],
+    "docs": "https://oryxonline.github.io/",
+    "tutorial": "https://oryxonline.github.io/docs/quickstart/",
+    "added": "2026-09-20"
+  },
+  {
+    "id": "encore-backend-framework",
+    "name": "Encore Backend Framework",
+    "category": "Framework",
+    "domain": "Backend",
+    "eli5": "It's like a magic blueprint that automatically builds the invisible infrastructure your app needs, so you only have to write the important business logic.",
+    "description": "Encore is an open-source backend framework that automatically provisions cloud infrastructure and handles DevOps concerns like API gateways, databases, and authentication. Developers define their backend using Go with minimal configuration while Encore handles deployment, scaling, and observability.",
+    "use_cases": [
+      "Rapid API backend development without infrastructure setup",
+      "Automatic OpenAPI and GraphQL schema generation",
+      "Built-in tracing and monitoring for all services",
+      "Multi-cloud deployment with automatic infrastructure provisioning"
+    ],
+    "used_by": [
+      "Stripe",
+      "Vercel ecosystem partners",
+      "Y Combinator startups"
+    ],
+    "docs": "https://encore.dev/docs",
+    "tutorial": "https://encore.dev/docs/tutorial",
+    "added": "2026-09-20"
+  },
+  {
+    "id": "driftctl",
+    "name": "driftctl Infrastructure Drift Detection",
+    "category": "Tool",
+    "domain": "DevOps",
+    "eli5": "It's like a security camera that watches your cloud infrastructure and alerts you if someone manually changed something that was supposed to be automated.",
+    "description": "driftctl is an open-source CLI tool that detects and tracks infrastructure drift by comparing the actual state of cloud resources against their Infrastructure-as-Code (IaC) definitions. It supports Terraform, Cloudformation, and other IaC tools across AWS, GCP, and Azure.",
+    "use_cases": [
+      "Preventing configuration drift in production environments",
+      "Automating cloud governance and compliance checking",
+      "Reconciling manual changes with Infrastructure-as-Code definitions",
+      "Cost optimization by identifying unused resources created outside IaC"
+    ],
+    "used_by": [
+      "Scaleway",
+      "Cloud providers",
+      "Enterprise DevOps teams"
+    ],
+    "docs": "https://docs.driftctl.com/",
+    "tutorial": "https://docs.driftctl.com/intro/getting-started/",
+    "added": "2026-09-20"
   }
 ]

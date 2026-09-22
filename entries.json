@@ -12863,5 +12863,120 @@
     "docs": "https://docs.driftctl.com/",
     "tutorial": "https://docs.driftctl.com/intro/getting-started/",
     "added": "2026-09-20"
+  },
+  {
+    "id": "pydantic-settings",
+    "name": "Pydantic Settings",
+    "category": "Tool",
+    "domain": "Backend",
+    "eli5": "It's like a checklist that makes sure all the settings your application needs are correct before it starts running.",
+    "description": "Pydantic Settings is a library for managing application configuration with automatic validation and type checking. It simplifies loading and validating settings from environment variables, .env files, and other sources.",
+    "use_cases": [
+      "Loading environment-specific configurations in FastAPI applications",
+      "Validating database connection strings and credentials",
+      "Managing feature flags and service configuration",
+      "Multi-environment deployments (dev, staging, production)"
+    ],
+    "used_by": [
+      "Uber",
+      "Netflix",
+      "Microsoft",
+      "Spotify"
+    ],
+    "docs": "https://docs.pydantic.dev/latest/concepts/pydantic_settings/",
+    "tutorial": "https://docs.pydantic.dev/latest/concepts/pydantic_settings/",
+    "added": "2026-09-22"
+  },
+  {
+    "id": "vscode-extension-marketplace",
+    "name": "VS Code Extension Marketplace",
+    "category": "Platform",
+    "domain": "Other",
+    "eli5": "It's like an app store for your text editor where you can download add-ons that give it superpowers.",
+    "description": "VS Code's official marketplace hosting thousands of extensions that enhance code editing, debugging, and development workflows. It's a critical ecosystem that extends VS Code's functionality for virtually every programming language and framework.",
+    "use_cases": [
+      "Installing language support extensions (Python, Go, Rust, etc.)",
+      "Integrating Git workflows and version control tools",
+      "Adding cloud provider tooling (AWS, Azure, GCP)",
+      "Enhancing productivity with formatters, linters, and testing frameworks"
+    ],
+    "used_by": [
+      "GitHub",
+      "Microsoft",
+      "Google",
+      "Amazon"
+    ],
+    "docs": "https://marketplace.visualstudio.com/",
+    "tutorial": "https://code.visualstudio.com/docs/editor/extension-marketplace",
+    "added": "2026-09-22"
+  },
+  {
+    "id": "opensearch-ai-powered-search",
+    "name": "OpenSearch with AI-Powered Search",
+    "category": "Tool",
+    "domain": "Database",
+    "eli5": "It's like a super-smart search engine that understands what you mean, not just the exact words you type.",
+    "description": "OpenSearch integrates vector search and neural search capabilities for semantic understanding of queries and documents. It combines traditional full-text search with machine learning models for more intelligent search results.",
+    "use_cases": [
+      "Implementing semantic search on documentation and knowledge bases",
+      "Building recommendation systems using vector embeddings",
+      "Enhancing e-commerce product search with AI understanding",
+      "Log analysis and anomaly detection with neural search"
+    ],
+    "used_by": [
+      "Amazon",
+      "Netflix",
+      "Workiva",
+      "JPMorgan Chase"
+    ],
+    "docs": "https://opensearch.org/docs/latest/search-plugins/neural-search/",
+    "tutorial": "https://opensearch.org/docs/latest/search-plugins/neural-search/",
+    "added": "2026-09-22"
+  },
+  {
+    "id": "earthly-ci-cd-containerization",
+    "name": "Earthly CI/CD",
+    "category": "Tool",
+    "domain": "CI/CD",
+    "eli5": "It's like a recipe card that tells computers exactly how to build your software in the exact same way every single time, no matter where they build it.",
+    "description": "Earthly is a containerized CI/CD framework that uses a language similar to Dockerfile and Makefile to define reproducible builds. It ensures consistent build outputs across local machines and CI/CD pipelines.",
+    "use_cases": [
+      "Running identical builds locally and in CI/CD pipelines",
+      "Building multi-language projects with complex dependencies",
+      "Creating reproducible Docker image builds",
+      "Parallelizing build tasks across containers"
+    ],
+    "used_by": [
+      "Datadog",
+      "Notion",
+      "Twitch",
+      "Segment"
+    ],
+    "docs": "https://docs.earthly.dev/",
+    "tutorial": "https://docs.earthly.dev/basics/overview",
+    "added": "2026-09-22"
+  },
+  {
+    "id": "thrift-rpc-framework",
+    "name": "Thrift RPC Framework",
+    "category": "Framework",
+    "domain": "Networking",
+    "eli5": "It's like a translator that lets different programs written in different languages talk to each other really fast over a network.",
+    "description": "Thrift is an RPC framework developed by Apache for building scalable cross-language services with efficient binary serialization. It's widely used in distributed systems for service-to-service communication and has proven critical in high-performance environments.",
+    "use_cases": [
+      "Building microservices that communicate across different programming languages",
+      "High-performance inter-service communication in large-scale systems",
+      "Efficient data serialization for distributed databases",
+      "Real-time data streaming between backend services"
+    ],
+    "used_by": [
+      "Meta",
+      "Twitter",
+      "Uber",
+      "Airbnb"
+    ],
+    "docs": "https://thrift.apache.org/",
+    "tutorial": "https://thrift.apache.org/tutorial/",
+    "added": "2026-09-22"
   }
 ]

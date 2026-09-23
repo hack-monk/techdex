@@ -12978,5 +12978,120 @@
     "docs": "https://thrift.apache.org/",
     "tutorial": "https://thrift.apache.org/tutorial/",
     "added": "2026-09-22"
+  },
+  {
+    "id": "cadence-ai-code-generation",
+    "name": "Continue",
+    "category": "Tool",
+    "domain": "AI/ML",
+    "eli5": "Continue is like having a smart coding buddy sitting next to you who suggests what to type next, similar to autocomplete on your phone but way smarter for writing programs.",
+    "description": "Continue is an open-source AI code completion and generation tool that integrates directly into IDEs like VS Code and JetBrains, allowing developers to use local or cloud-based LLMs for coding assistance. It enables seamless AI-powered autocomplete, code refactoring, and documentation generation without leaving the editor.",
+    "use_cases": [
+      "Real-time code autocompletion with local or remote LLMs",
+      "AI-assisted code refactoring and debugging",
+      "Automatic documentation and comment generation",
+      "Context-aware code suggestions based on project structure"
+    ],
+    "used_by": [
+      "Anthropic",
+      "Scale AI",
+      "Individual developers",
+      "Open-source projects"
+    ],
+    "docs": "https://docs.continue.dev",
+    "tutorial": "https://docs.continue.dev/getting-started/quick-start",
+    "added": "2026-09-23"
+  },
+  {
+    "id": "earthly-container-build",
+    "name": "Nixpack",
+    "category": "Tool",
+    "domain": "DevOps",
+    "eli5": "Nixpack is like a magic recipe that automatically figures out how to turn your code into a runnable container, without you having to write the instructions yourself.",
+    "description": "Nixpack is a language-agnostic builder that automatically detects project structure and dependencies to create optimized OCI container images without requiring a Dockerfile. It's widely used in platforms like Railway and Render to simplify containerization.",
+    "use_cases": [
+      "Automatic Dockerfile generation for diverse tech stacks",
+      "Zero-configuration deployment to container registries",
+      "Building optimized multi-stage images without manual configuration",
+      "CI/CD pipeline integration for rapid container builds"
+    ],
+    "used_by": [
+      "Railway",
+      "Render",
+      "Fly.io",
+      "Individual developers"
+    ],
+    "docs": "https://nixpacks.com/docs",
+    "tutorial": "https://nixpacks.com/docs/getting-started",
+    "added": "2026-09-23"
+  },
+  {
+    "id": "veilid-decentralized-network",
+    "name": "Veilid",
+    "category": "Platform",
+    "domain": "Networking",
+    "eli5": "Veilid is like a secret underground postal system where messages are passed through many untraceable hands, so no one can see who's sending what to whom.",
+    "description": "Veilid is a decentralized network and privacy-preserving platform that enables peer-to-peer communication with built-in routing and privacy guarantees. It provides infrastructure for applications requiring strong privacy, content distribution, and resilient networking without central authority.",
+    "use_cases": [
+      "Private decentralized messaging and communication applications",
+      "Content distribution networks resistant to censorship",
+      "Peer-to-peer file sharing with privacy protections",
+      "Building resilient applications for unstable network conditions"
+    ],
+    "used_by": [
+      "Cult of the Dead Cow",
+      "Privacy-focused startups",
+      "Open-source communities",
+      "Decentralized application developers"
+    ],
+    "docs": "https://veilid.com/docs",
+    "tutorial": "https://veilid.com/guide",
+    "added": "2026-09-23"
+  },
+  {
+    "id": "gleam-programming-language",
+    "name": "Gleam",
+    "category": "Language",
+    "domain": "Backend",
+    "eli5": "Gleam is a programming language that catches your mistakes before you run your code, like a spellchecker that stops you from sending a message with typos.",
+    "description": "Gleam is a statically-typed, garbage-collected language that compiles to both JavaScript and Erlang/OTP, combining the safety of strong typing with the performance and reliability of the BEAM VM. It's designed for building scalable, fault-tolerant backend systems with minimal runtime errors.",
+    "use_cases": [
+      "Building concurrent backend services with strong guarantees",
+      "Full-stack applications using JavaScript target for frontend",
+      "Telecom and real-time systems leveraging BEAM runtime",
+      "Type-safe distributed systems and microservices"
+    ],
+    "used_by": [
+      "Mojeek search engine",
+      "Fly.io infrastructure",
+      "PagerDuty infrastructure teams",
+      "Open-source projects"
+    ],
+    "docs": "https://gleam.run/book",
+    "tutorial": "https://gleam.run/start",
+    "added": "2026-09-23"
+  },
+  {
+    "id": "evidence-data-analytics",
+    "name": "Evidence",
+    "category": "Tool",
+    "domain": "Data Engineering",
+    "eli5": "Evidence is like turning your SQL questions into beautiful reports automatically, so you ask a question about your data and it creates a nice dashboard you can share.",
+    "description": "Evidence is an open-source framework that transforms SQL queries and Python scripts into interactive, version-controlled analytics reports using markdown-like syntax. It enables data teams to build and deploy analytics without learning BI tool interfaces, integrating with SQL and Python for dynamic dashboards.",
+    "use_cases": [
+      "Creating self-service analytics dashboards from SQL queries",
+      "Building data-driven documents version-controlled in Git",
+      "Automating report generation and distribution",
+      "Embedding analytics into documentation and wikis"
+    ],
+    "used_by": [
+      "Databricks",
+      "Seed Analytics",
+      "Data-driven startups",
+      "Enterprise analytics teams"
+    ],
+    "docs": "https://docs.evidence.dev",
+    "tutorial": "https://docs.evidence.dev/getting-started/start-here",
+    "added": "2026-09-23"
   }
 ]

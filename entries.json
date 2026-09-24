@@ -13093,5 +13093,97 @@
     "docs": "https://docs.evidence.dev",
     "tutorial": "https://docs.evidence.dev/getting-started/start-here",
     "added": "2026-09-23"
+  },
+  {
+    "id": "earthly-build-system",
+    "name": "Earthly Build System",
+    "category": "Tool",
+    "domain": "CI/CD",
+    "eli5": "Earthly is like a recipe book for building software that works the same way on your computer and on a server, so nothing breaks when you switch places.",
+    "description": "Earthly is a build automation tool that uses containerization to create reproducible builds across different environments. It combines the power of Docker and Makefiles to provide consistent build results whether running locally or in CI/CD pipelines.",
+    "use_cases": [
+      "Creating reproducible builds that work identically across developer machines and CI systems",
+      "Building multi-language projects with complex dependencies in a single unified pipeline",
+      "Caching build artifacts and dependencies efficiently using container layers",
+      "Integrating with existing CI/CD systems like GitHub Actions, GitLab CI, and Jenkins"
+    ],
+    "used_by": [
+      "Stripe",
+      "Segment",
+      "Twilio",
+      "Auth0"
+    ],
+    "docs": "https://earthly.dev/",
+    "tutorial": "https://earthly.dev/doc/basic",
+    "added": "2026-09-24"
+  },
+  {
+    "id": "wix-velo",
+    "name": "Wix Velo",
+    "category": "Framework",
+    "domain": "Frontend",
+    "eli5": "Wix Velo is like having a magical toolbox that lets you add smart behavior to a website builder without needing to code everything from scratch.",
+    "description": "Wix Velo is a full-stack development platform that allows developers to build web applications with JavaScript/TypeScript on the Wix platform, providing backend APIs, databases, and frontend components. It enables rapid application development with built-in hosting, authentication, and CMS capabilities.",
+    "use_cases": [
+      "Building custom business applications and dashboards on the Wix platform",
+      "Creating e-commerce sites with advanced personalization and custom workflows",
+      "Developing appointment booking and scheduling systems with real-time updates",
+      "Building CRM and data management applications with built-in user authentication"
+    ],
+    "used_by": [
+      "Wix customers",
+      "Small business owners",
+      "Agencies",
+      "Freelancers"
+    ],
+    "docs": "https://www.wix.com/velo/reference/",
+    "tutorial": "https://www.wix.com/velo/learn",
+    "added": "2026-09-24"
+  },
+  {
+    "id": "airbyte-connector",
+    "name": "Airbyte ELT Platform",
+    "category": "Tool",
+    "domain": "Data Engineering",
+    "eli5": "Airbyte is like a postal service for data that automatically picks up information from one place and delivers it to another place, and you don't have to manually carry each piece yourself.",
+    "description": "Airbyte is an open-source ELT (Extract, Load, Transform) platform that simplifies data integration by providing pre-built connectors for hundreds of data sources and destinations. It enables non-technical users and engineers to build and manage data pipelines without writing custom code.",
+    "use_cases": [
+      "Syncing data from SaaS applications like Salesforce, HubSpot, and Stripe to data warehouses",
+      "Building real-time data pipelines between operational databases and analytics platforms",
+      "Creating backup and disaster recovery pipelines across multiple cloud storage systems",
+      "Consolidating data from multiple sources into a central repository for analytics and ML"
+    ],
+    "used_by": [
+      "Coursera",
+      "Typeform",
+      "Notion",
+      "Figma"
+    ],
+    "docs": "https://docs.airbyte.com/",
+    "tutorial": "https://docs.airbyte.com/connector-development/",
+    "added": "2026-09-24"
+  },
+  {
+    "id": "bun-javascript-runtime",
+    "name": "Bun JavaScript Runtime",
+    "category": "Platform",
+    "domain": "Backend",
+    "eli5": "Bun is like a super-fast engine for running JavaScript code that starts up quicker and runs much speedier than older engines, like upgrading from a bicycle to a sports car.",
+    "description": "Bun is a fast, all-in-one JavaScript runtime and toolkit built in Zig that serves as a drop-in replacement for Node.js. It includes a bundler, transpiler, package manager, and test runner, significantly improving development experience and application performance.",
+    "use_cases": [
+      "Building fast backend servers and APIs with significantly lower latency than Node.js",
+      "Running existing Node.js applications and npm packages with improved performance",
+      "Creating CLI tools and scripts with rapid startup times and minimal resource usage",
+      "Development workflow acceleration with built-in bundling, transpilation, and testing capabilities"
+    ],
+    "used_by": [
+      "Figma",
+      "Stripe",
+      "Vercel",
+      "Discord"
+    ],
+    "docs": "https://bun.sh/docs",
+    "tutorial": "https://bun.sh/docs/quickstart",
+    "added": "2026-09-24"
   }
 ]

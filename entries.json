@@ -13185,5 +13185,71 @@
     "docs": "https://bun.sh/docs",
     "tutorial": "https://bun.sh/docs/quickstart",
     "added": "2026-09-24"
+  },
+  {
+    "id": "seaorm",
+    "name": "SeaORM",
+    "category": "Framework",
+    "domain": "Backend",
+    "eli5": "SeaORM is like a translator that lets you talk to databases using Rust instead of learning database languages.",
+    "description": "SeaORM is an async Object-Relational Mapping (ORM) library for Rust that provides a safe, ergonomic way to interact with SQL databases. It supports multiple databases including PostgreSQL, MySQL, and SQLite with compile-time query validation.",
+    "use_cases": [
+      "Building type-safe backend APIs in Rust with minimal boilerplate",
+      "Database schema migrations and management in async Rust applications",
+      "Creating production web services with guaranteed compile-time database safety",
+      "Rapid development of microservices that need concurrent database access"
+    ],
+    "used_by": [
+      "Toggl Track",
+      "Navi",
+      "Shuttle"
+    ],
+    "docs": "https://www.sea-orm.io/docs",
+    "tutorial": "https://www.sea-orm.io/docs/tutorials",
+    "added": "2026-09-25"
+  },
+  {
+    "id": "pglast",
+    "name": "Pglast",
+    "category": "Tool",
+    "domain": "Backend",
+    "eli5": "Pglast is like a tool that helps you understand and transform SQL queries by breaking them into pieces you can work with.",
+    "description": "Pglast is a Python library that provides a parser and object model for PostgreSQL SQL statements using libpg_query. It allows developers to inspect, analyze, and manipulate SQL queries programmatically with full AST (Abstract Syntax Tree) support.",
+    "use_cases": [
+      "Query analysis and optimization tools for PostgreSQL databases",
+      "SQL linting and validation in development pipelines",
+      "Building database access control layers that inspect queries",
+      "Generating documentation from SQL schema and query patterns"
+    ],
+    "used_by": [
+      "Hasura",
+      "pgAdmin",
+      "Supabase"
+    ],
+    "docs": "https://docs.pglast.org",
+    "tutorial": "https://docs.pglast.org/en/latest/quickstart.html",
+    "added": "2026-09-25"
+  },
+  {
+    "id": "typos",
+    "name": "Typos",
+    "category": "Tool",
+    "domain": "Security",
+    "eli5": "Typos is like a spell-checker for your code that catches common spelling mistakes in variable names and comments that could be security problems.",
+    "description": "Typos is a fast, configurable source code spell checker written in Rust that catches misspellings in code, comments, and documentation. It's designed to prevent typos from becoming security vulnerabilities and runs efficiently across large codebases.",
+    "use_cases": [
+      "CI/CD pipeline integration to catch typos before code merge",
+      "Pre-commit hooks for preventing misspellings in source code",
+      "Security scanning for common misspellings that could enable vulnerabilities",
+      "Documentation quality assurance across multiple repositories"
+    ],
+    "used_by": [
+      "Servo",
+      "Cryptography.io",
+      "Microsoft"
+    ],
+    "docs": "https://github.com/crate-ci/typos",
+    "tutorial": "https://github.com/crate-ci/typos#getting-started",
+    "added": "2026-09-25"
   }
 ]

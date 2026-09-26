@@ -13251,5 +13251,120 @@
     "docs": "https://github.com/crate-ci/typos",
     "tutorial": "https://github.com/crate-ci/typos#getting-started",
     "added": "2026-09-25"
+  },
+  {
+    "id": "sqlserver",
+    "name": "Microsoft SQL Server",
+    "category": "Platform",
+    "domain": "Database",
+    "eli5": "SQL Server is like a giant organized filing cabinet that lets you ask questions about all your files and get answers super fast.",
+    "description": "Microsoft SQL Server is a relational database management system that stores structured data and supports complex queries, transactions, and analytics at scale. It's widely used in enterprise environments for mission-critical applications and data warehousing.",
+    "use_cases": [
+      "Enterprise transactional systems and OLTP workloads",
+      "Business intelligence and data warehouse analytics",
+      "Financial services and banking applications",
+      "Healthcare and medical records management"
+    ],
+    "used_by": [
+      "Microsoft",
+      "Bank of America",
+      "Wells Fargo",
+      "IBM"
+    ],
+    "docs": "https://learn.microsoft.com/en-us/sql/sql-server/",
+    "tutorial": "https://learn.microsoft.com/en-us/sql/t-sql/tutorial-writing-transact-sql-statements",
+    "added": "2026-09-26"
+  },
+  {
+    "id": "rabbitmq-amqp",
+    "name": "RabbitMQ AMQP",
+    "category": "Platform",
+    "domain": "Messaging",
+    "eli5": "RabbitMQ is like a postal service that delivers messages between different parts of your application, making sure nothing gets lost.",
+    "description": "RabbitMQ is an open-source message broker that implements the Advanced Message Queuing Protocol (AMQP) to enable reliable, asynchronous communication between distributed systems. It's a foundational tool for building event-driven architectures and decoupling microservices.",
+    "use_cases": [
+      "Asynchronous task processing and job queues",
+      "Event streaming between microservices",
+      "Log aggregation and metrics collection",
+      "Request-response patterns with message routing"
+    ],
+    "used_by": [
+      "Cloudflare",
+      "Zalando",
+      "Mozilla",
+      "WeChat"
+    ],
+    "docs": "https://www.rabbitmq.com/documentation.html",
+    "tutorial": "https://www.rabbitmq.com/tutorials/tutorial-one-python.html",
+    "added": "2026-09-26"
+  },
+  {
+    "id": "libvirt-hypervisor",
+    "name": "libvirt",
+    "category": "Tool",
+    "domain": "Networking",
+    "eli5": "libvirt is like a remote control that lets you manage many virtual computers on a single physical computer.",
+    "description": "libvirt is an open-source API and daemon for managing platform virtualization, supporting KVM, QEMU, Xen, and other hypervisors. It's the foundation for infrastructure-as-code tools like Terraform and is widely used in cloud and edge computing environments.",
+    "use_cases": [
+      "Hypervisor management across heterogeneous platforms",
+      "Virtual machine provisioning and orchestration",
+      "Cloud infrastructure automation and IaC",
+      "Edge computing and on-premises virtualization"
+    ],
+    "used_by": [
+      "Red Hat",
+      "OpenStack Foundation",
+      "Proxmox",
+      "Canonical"
+    ],
+    "docs": "https://libvirt.org/docs.html",
+    "tutorial": "https://libvirt.org/goals.html",
+    "added": "2026-09-26"
+  },
+  {
+    "id": "netbox-ipam",
+    "name": "NetBox",
+    "category": "Tool",
+    "domain": "Networking",
+    "eli5": "NetBox is like a detailed map of your entire network that tracks every computer, cable, and connection.",
+    "description": "NetBox is an open-source infrastructure resource modeling (IRM) and IP address management (IPAM) platform designed for network operations teams to track and document datacenter infrastructure. It serves as the source of truth for network topology, device inventory, and IP allocations.",
+    "use_cases": [
+      "IP address management (IPAM) and DNS integration",
+      "Datacenter asset and equipment tracking",
+      "Network topology documentation and visualization",
+      "Capacity planning and infrastructure reporting"
+    ],
+    "used_by": [
+      "DigitalOcean",
+      "Equinix",
+      "Fastly",
+      "CoreWeave"
+    ],
+    "docs": "https://docs.netbox.dev/",
+    "tutorial": "https://docs.netbox.dev/en/stable/getting-started/",
+    "added": "2026-09-26"
+  },
+  {
+    "id": "jmeter-load-testing",
+    "name": "Apache JMeter",
+    "category": "Tool",
+    "domain": "SRE/Observability",
+    "eli5": "JMeter is like a stress-test machine that pretends to be thousands of people using your website at the same time to see if it breaks.",
+    "description": "Apache JMeter is an open-source Java application designed for load testing and performance measurement of web applications, APIs, and databases. It simulates heavy user loads to identify performance bottlenecks and verify system capacity.",
+    "use_cases": [
+      "Load testing and stress testing web applications",
+      "API performance and reliability testing",
+      "Database and backend performance benchmarking",
+      "Capacity planning and scalability validation"
+    ],
+    "used_by": [
+      "Netflix",
+      "Twitter",
+      "Spotify",
+      "Adobe"
+    ],
+    "docs": "https://jmeter.apache.org/usermanual/index.html",
+    "tutorial": "https://jmeter.apache.org/usermanual/get-started.html",
+    "added": "2026-09-26"
   }
 ]

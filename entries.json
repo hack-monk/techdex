@@ -13366,5 +13366,120 @@
     "docs": "https://jmeter.apache.org/usermanual/index.html",
     "tutorial": "https://jmeter.apache.org/usermanual/get-started.html",
     "added": "2026-09-26"
+  },
+  {
+    "id": "prom2teams",
+    "name": "Prom2Teams",
+    "category": "Tool",
+    "domain": "SRE/Observability",
+    "eli5": "It's like a translator that takes alarm messages from your monitoring system and sends them to your team's chat app so everyone knows what's broken.",
+    "description": "Prom2Teams is a webhook receiver that converts Prometheus AlertManager notifications into formatted messages for Microsoft Teams, Slack, and other chat platforms. It enables real-time alert delivery with rich formatting, templating, and routing capabilities for incident response workflows.",
+    "use_cases": [
+      "Sending Prometheus alerts to Microsoft Teams channels for on-call teams",
+      "Routing critical alerts to different team channels based on severity or service",
+      "Formatting complex alert data with custom templates and rich card layouts",
+      "Integrating AlertManager notifications into existing ChatOps workflows"
+    ],
+    "used_by": [
+      "Volkswagen",
+      "Deutsche Telekom",
+      "Siemens",
+      "SAP"
+    ],
+    "docs": "https://github.com/prometheus-community/prom2teams",
+    "tutorial": "https://github.com/prometheus-community/prom2teams/wiki/Getting-Started",
+    "added": "2026-09-27"
+  },
+  {
+    "id": "milvus-operator",
+    "name": "Milvus Operator",
+    "category": "Tool",
+    "domain": "Database",
+    "eli5": "It's like a manager that automatically sets up, scales, and maintains a smart storage system for similarity searching in Kubernetes, so you don't have to do it manually.",
+    "description": "Milvus Operator is a Kubernetes operator that automates the deployment, scaling, and lifecycle management of Milvus vector database clusters. It simplifies running Milvus in production Kubernetes environments with declarative configuration and automatic resource management.",
+    "use_cases": [
+      "Deploying production-grade Milvus clusters on Kubernetes",
+      "Auto-scaling vector database instances based on load and query patterns",
+      "Managing high-availability Milvus deployments with automated failover",
+      "Running multi-tenant vector database environments on shared Kubernetes clusters"
+    ],
+    "used_by": [
+      "Meituan",
+      "ByteDance",
+      "Alibaba Cloud",
+      "TencentCloud"
+    ],
+    "docs": "https://milvus.io/docs/install_cluster.md",
+    "tutorial": "https://milvus.io/docs/install_cluster-milvusoperator.md",
+    "added": "2026-09-27"
+  },
+  {
+    "id": "teleport-access-plane",
+    "name": "Teleport Access Plane",
+    "category": "Platform",
+    "domain": "Security",
+    "eli5": "It's like a security checkpoint that lets your team access servers, databases, and apps from anywhere while keeping a detailed log of who accessed what and when.",
+    "description": "Teleport Access Plane is a unified zero-trust access platform that provides secure, audited access to servers, Kubernetes clusters, databases, and web applications without exposing them to the public internet. It replaces SSH keys, bastion hosts, and VPNs with certificate-based access and session recording.",
+    "use_cases": [
+      "Replacing SSH and RDP with zero-trust certificate-based access",
+      "Providing secure access to production databases without exposed credentials",
+      "Recording and auditing all terminal sessions and database queries for compliance",
+      "Enabling contractors and remote teams to access infrastructure safely"
+    ],
+    "used_by": [
+      "Slack",
+      "Figma",
+      "SumoLogic",
+      "Elastic"
+    ],
+    "docs": "https://goteleport.com/docs/",
+    "tutorial": "https://goteleport.com/docs/getting-started/",
+    "added": "2026-09-27"
+  },
+  {
+    "id": "wunderpilot",
+    "name": "WunderPilot",
+    "category": "Framework",
+    "domain": "AI/ML",
+    "eli5": "It's like a toolkit that helps you teach a computer to understand and talk about images the way humans do, using powerful AI models.",
+    "description": "WunderPilot is a multimodal AI framework that simplifies building applications with vision and language models, supporting multiple model providers and inference backends. It provides abstractions for handling image processing, prompt engineering, and structured outputs in vision-language workflows.",
+    "use_cases": [
+      "Building document understanding and OCR applications with vision models",
+      "Creating image analysis and computer vision pipelines with LLM integration",
+      "Developing multimodal chatbots that can discuss images and documents",
+      "Automating visual inspection and quality control workflows"
+    ],
+    "used_by": [
+      "Wunderman Thompson",
+      "Publicis",
+      "ServiceTitan",
+      "Zappi"
+    ],
+    "docs": "https://github.com/wunderpilot/wunderpilot",
+    "tutorial": "https://github.com/wunderpilot/wunderpilot/blob/main/README.md",
+    "added": "2026-09-27"
+  },
+  {
+    "id": "carvel-kapp-controller",
+    "name": "Carvel kapp-controller",
+    "category": "Tool",
+    "domain": "DevOps",
+    "eli5": "It's like a librarian that automatically keeps your Kubernetes apps in sync with your code repositories, making sure the running version always matches what you want.",
+    "description": "Carvel kapp-controller is a Kubernetes-native declarative continuous delivery tool that manages app deployments by reconciling desired state from Git, Helm, Kustomize, or custom sources. It provides GitOps-style deployment automation without requiring separate CI/CD systems.",
+    "use_cases": [
+      "Implementing GitOps workflows natively in Kubernetes without external controllers",
+      "Automatically deploying configuration changes from Git repositories",
+      "Managing Helm charts and Kustomize overlays with reconciliation",
+      "Enabling multi-cluster deployments with synchronized app versions"
+    ],
+    "used_by": [
+      "VMware",
+      "Pivotal",
+      "Spotify",
+      "Twilio"
+    ],
+    "docs": "https://carvel.dev/kapp-controller/",
+    "tutorial": "https://carvel.dev/kapp-controller/docs/latest/getting-started/",
+    "added": "2026-09-27"
   }
 ]

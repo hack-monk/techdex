@@ -13481,5 +13481,49 @@
     "docs": "https://carvel.dev/kapp-controller/",
     "tutorial": "https://carvel.dev/kapp-controller/docs/latest/getting-started/",
     "added": "2026-09-27"
+  },
+  {
+    "id": "anthropic-bedrock-runtime",
+    "name": "AWS Bedrock Claude Runtime",
+    "category": "Platform",
+    "domain": "AI/ML",
+    "eli5": "It's like having Claude in a box that Amazon keeps safe and runs for you, so you don't have to worry about keeping the computer on.",
+    "description": "AWS Bedrock is a fully managed service that provides access to Claude and other foundational models through a simple API, eliminating the need to manage infrastructure. It handles scaling, security, and model updates automatically.",
+    "use_cases": [
+      "Building AI applications without managing model infrastructure",
+      "Enterprise adoption of Claude with compliance and security controls",
+      "Multi-model applications switching between Claude and other providers",
+      "Organizations requiring VPC isolation and private endpoints"
+    ],
+    "used_by": [
+      "Amazon",
+      "AWS Enterprise Customers",
+      "Anthropic Partners"
+    ],
+    "docs": "https://docs.aws.amazon.com/bedrock/",
+    "tutorial": "https://docs.aws.amazon.com/bedrock/latest/userguide/getting-started.html",
+    "added": "2026-09-28"
+  },
+  {
+    "id": "moonwalk",
+    "name": "Moonwalk",
+    "category": "Tool",
+    "domain": "DevOps",
+    "eli5": "It's like a time machine for your code that lets you go back and see exactly what changed and who changed it, even if someone tries to hide it.",
+    "description": "Moonwalk is an open-source covering tool that covers your tracks in AWS logs and CloudTrail by removing or modifying evidence of an intrusion. It's designed for security researchers and penetration testers to understand AWS audit limitations.",
+    "use_cases": [
+      "Security auditing and penetration testing",
+      "Understanding CloudTrail detection gaps",
+      "Testing security monitoring effectiveness",
+      "Red team exercises and AWS security assessments"
+    ],
+    "used_by": [
+      "Security researchers",
+      "AWS penetration testers",
+      "Enterprise security teams"
+    ],
+    "docs": "https://github.com/optiv/moonwalk",
+    "tutorial": "https://github.com/optiv/moonwalk#usage",
+    "added": "2026-09-28"
   }
 ]

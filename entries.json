@@ -13525,5 +13525,71 @@
     "docs": "https://github.com/optiv/moonwalk",
     "tutorial": "https://github.com/optiv/moonwalk#usage",
     "added": "2026-09-28"
+  },
+  {
+    "id": "bun-test",
+    "name": "Bun Test",
+    "category": "Tool",
+    "domain": "Frontend",
+    "eli5": "A super-fast way to check if your JavaScript code works correctly, like a spell-checker for code that runs tests in milliseconds instead of seconds.",
+    "description": "Bun's integrated test runner provides native testing capabilities with zero-config setup, TypeScript support, and exceptional speed. It's built into the Bun runtime and eliminates the need for separate testing frameworks in many projects.",
+    "use_cases": [
+      "Unit testing TypeScript and JavaScript applications",
+      "Integration testing web services and APIs",
+      "Performance testing with built-in benchmarking",
+      "Snapshot testing and assertion validation"
+    ],
+    "used_by": [
+      "Vercel",
+      "Figma",
+      "Stripe"
+    ],
+    "docs": "https://bun.sh/docs/test/overview",
+    "tutorial": "https://bun.sh/docs/test/writing",
+    "added": "2026-09-29"
+  },
+  {
+    "id": "roapi",
+    "name": "ROAPI",
+    "category": "Tool",
+    "domain": "Data Engineering",
+    "eli5": "A magic converter that turns your data files like Excel sheets into a restaurant menu you can order from using web requests, without writing any code.",
+    "description": "ROAPI (Rust OData API) is a lightweight tool that automatically generates REST APIs from static or streaming datasets like CSV, JSON, and Parquet files. It requires minimal configuration and provides instant queryable access to data.",
+    "use_cases": [
+      "Rapid prototyping of data APIs without backend development",
+      "Publishing analytical datasets as queryable endpoints",
+      "Creating ETL pipeline APIs for data integration",
+      "Building dashboards with auto-generated data APIs"
+    ],
+    "used_by": [
+      "data teams at startups",
+      "research institutions",
+      "analytics-first organizations"
+    ],
+    "docs": "https://roapi.github.io/docs/",
+    "tutorial": "https://roapi.github.io/docs/getting-started",
+    "added": "2026-09-29"
+  },
+  {
+    "id": "mcp-servers-ecosystem",
+    "name": "MCP Servers Ecosystem",
+    "category": "Other",
+    "domain": "AI/ML",
+    "eli5": "A universal plug-and-play system that lets AI assistants connect to and use any tool or service\u2014like giving an AI employee access to your entire toolbox and filing cabinet.",
+    "description": "The Model Context Protocol (MCP) ecosystem provides standardized server implementations that enable Claude and other AI models to interact with various tools, databases, and services. Official MCP servers provide production-ready integrations for common platforms.",
+    "use_cases": [
+      "Integrating AI assistants with business software and databases",
+      "Building custom AI agents with tool access",
+      "Enabling AI-driven automation across enterprise systems",
+      "Creating AI-powered development assistants with IDE integration"
+    ],
+    "used_by": [
+      "Anthropic",
+      "Figma",
+      "GitHub"
+    ],
+    "docs": "https://modelcontextprotocol.io/docs",
+    "tutorial": "https://modelcontextprotocol.io/quickstart",
+    "added": "2026-09-29"
   }
 ]

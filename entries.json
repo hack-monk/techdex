@@ -13591,5 +13591,72 @@
     "docs": "https://modelcontextprotocol.io/docs",
     "tutorial": "https://modelcontextprotocol.io/quickstart",
     "added": "2026-09-29"
+  },
+  {
+    "id": "uniswap-v4",
+    "name": "Uniswap V4",
+    "category": "Framework",
+    "domain": "Other",
+    "eli5": "It's like a playground where anyone can build their own custom game rules for swapping toys with other kids.",
+    "description": "Uniswap V4 is a next-generation automated market maker (AMM) protocol that enables developers to create custom liquidity pools with programmable hooks. It democratizes DEX functionality by allowing arbitrary smart contract logic within pool operations.",
+    "use_cases": [
+      "Building specialized decentralized exchanges for specific trading pairs",
+      "Creating custom fee structures and dynamic pricing mechanisms",
+      "Implementing concentrated liquidity strategies programmatically",
+      "Developing cross-chain liquidity aggregation services"
+    ],
+    "used_by": [
+      "Uniswap Labs",
+      "1inch Network",
+      "OpenOcean"
+    ],
+    "docs": "https://docs.uniswap.org/contracts/v4/overview",
+    "tutorial": "https://docs.uniswap.org/contracts/v4/guides/swaps",
+    "added": "2026-09-30"
+  },
+  {
+    "id": "pigsty",
+    "name": "Pigsty",
+    "category": "Platform",
+    "domain": "DevOps",
+    "eli5": "It's like having a robot butler that automatically sets up and runs your entire database mansion with all the servants and security you need.",
+    "description": "Pigsty is an infrastructure-as-code solution for deploying and managing PostgreSQL clusters at scale with automated provisioning, high availability, monitoring, and backup capabilities. It simplifies the operational complexity of running PostgreSQL in production environments.",
+    "use_cases": [
+      "Deploying multi-node PostgreSQL clusters with automatic failover",
+      "Managing database backups and disaster recovery procedures",
+      "Setting up comprehensive database monitoring and alerting",
+      "Provisioning read replicas for scaling read-heavy workloads"
+    ],
+    "used_by": [
+      "Alibaba Cloud",
+      "PingCAP",
+      "Meituan"
+    ],
+    "docs": "https://pigsty.cc/",
+    "tutorial": "https://pigsty.cc/doc/getting-started/",
+    "added": "2026-09-30"
+  },
+  {
+    "id": "hardhat",
+    "name": "Hardhat",
+    "category": "Framework",
+    "domain": "Backend",
+    "eli5": "It's like a Swiss Army knife for building and testing smart contracts\u2014it gives you all the tools to write, check, and deploy code that runs on the blockchain.",
+    "description": "Hardhat is a development environment for Ethereum smart contracts that provides compilation, testing, debugging, and deployment tools. It's widely adopted by blockchain developers for building, testing, and deploying decentralized applications.",
+    "use_cases": [
+      "Developing and testing Solidity smart contracts for DeFi applications",
+      "Debugging transaction execution on local networks before mainnet deployment",
+      "Automating smart contract deployment across multiple blockchain networks",
+      "Writing comprehensive test suites for complex contract interactions"
+    ],
+    "used_by": [
+      "Aave",
+      "OpenZeppelin",
+      "Lido Finance",
+      "MakerDAO"
+    ],
+    "docs": "https://hardhat.org/docs",
+    "tutorial": "https://hardhat.org/tutorial",
+    "added": "2026-09-30"
   }
 ]

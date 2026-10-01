@@ -13658,5 +13658,27 @@
     "docs": "https://hardhat.org/docs",
     "tutorial": "https://hardhat.org/tutorial",
     "added": "2026-09-30"
+  },
+  {
+    "id": "nixpack",
+    "name": "Nixpacks",
+    "category": "Tool",
+    "domain": "DevOps",
+    "eli5": "It's like a smart recipe that automatically figures out how to package and run your code as a container without you having to write a Dockerfile.",
+    "description": "A source-to-container tool that automatically detects your application type and generates optimized container images without requiring Dockerfiles. It uses Nix to provide reproducible builds and minimal image sizes.",
+    "use_cases": [
+      "Rapid containerization of polyglot applications",
+      "Zero-config deployment to container registries",
+      "Reducing container image sizes through Nix optimization",
+      "Improving build reproducibility and caching"
+    ],
+    "used_by": [
+      "Railway.app",
+      "Render",
+      "Various deployment platforms"
+    ],
+    "docs": "https://nixpacks.com/docs",
+    "tutorial": "https://nixpacks.com/docs/getting-started",
+    "added": "2026-10-01"
   }
 ]

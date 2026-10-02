@@ -13680,5 +13680,74 @@
     "docs": "https://nixpacks.com/docs",
     "tutorial": "https://nixpacks.com/docs/getting-started",
     "added": "2026-10-01"
+  },
+  {
+    "id": "huggingface-hub",
+    "name": "Hugging Face Hub",
+    "category": "Platform",
+    "domain": "AI/ML",
+    "eli5": "Hugging Face Hub is like a giant library where people share pre-trained AI brains that you can borrow and use instead of training from scratch.",
+    "description": "Hugging Face Hub is a central repository for pre-trained machine learning models, datasets, and spaces that enable developers to discover, share, and use state-of-the-art AI models with minimal setup. It's become the de facto standard for accessing transformer models and other foundation models.",
+    "use_cases": [
+      "Fine-tuning language models for domain-specific tasks",
+      "Deploying inference endpoints for NLP applications",
+      "Sharing and discovering open-source ML models",
+      "Building chatbots and text generation applications"
+    ],
+    "used_by": [
+      "Meta",
+      "Google",
+      "Amazon",
+      "Microsoft"
+    ],
+    "docs": "https://huggingface.co/docs/hub/index",
+    "tutorial": "https://huggingface.co/docs/hub/getting-started",
+    "added": "2026-10-02"
+  },
+  {
+    "id": "open-policy-agent-conftest",
+    "name": "Conftest",
+    "category": "Tool",
+    "domain": "Security",
+    "eli5": "Conftest is like a security guard that checks your configuration files to make sure they follow all the safety rules before they go into production.",
+    "description": "Conftest is a policy engine that enables you to write tests for your configuration files using the Rego policy language, built on Open Policy Agent. It's essential for infrastructure-as-code validation and compliance checking in CI/CD pipelines.",
+    "use_cases": [
+      "Validating Kubernetes manifests for security best practices",
+      "Testing Dockerfile configurations for compliance",
+      "Enforcing organizational policies on Terraform files",
+      "Scanning container image configurations for vulnerabilities"
+    ],
+    "used_by": [
+      "Mastercard",
+      "Shopify",
+      "Bloomberg",
+      "Goldman Sachs"
+    ],
+    "docs": "https://www.conftest.dev/",
+    "tutorial": "https://www.conftest.dev/install/",
+    "added": "2026-10-02"
+  },
+  {
+    "id": "apollo-router",
+    "name": "Apollo Router",
+    "category": "Tool",
+    "domain": "Backend",
+    "eli5": "Apollo Router is like a smart traffic director that connects multiple restaurant menus into one combined menu for customers to order from.",
+    "description": "Apollo Router is a high-performance, lightweight GraphQL gateway written in Rust that enables federated GraphQL architecture, composing multiple GraphQL services into a unified API. It handles request routing, caching, and performance optimization for distributed GraphQL systems.",
+    "use_cases": [
+      "Composing microservices into a unified GraphQL API",
+      "Implementing advanced caching strategies for GraphQL",
+      "Managing authentication and authorization across federated graphs",
+      "Monitoring and tracing requests in distributed systems"
+    ],
+    "used_by": [
+      "Expedia",
+      "WePay",
+      "PayPal",
+      "KPMG"
+    ],
+    "docs": "https://www.apollographql.com/docs/router/",
+    "tutorial": "https://www.apollographql.com/docs/router/getting-started/",
+    "added": "2026-10-02"
   }
 ]

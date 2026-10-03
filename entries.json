@@ -13749,5 +13749,27 @@
     "docs": "https://www.apollographql.com/docs/router/",
     "tutorial": "https://www.apollographql.com/docs/router/getting-started/",
     "added": "2026-10-02"
+  },
+  {
+    "id": "shadowing-observability",
+    "name": "Shadowing",
+    "category": "Tool",
+    "domain": "SRE/Observability",
+    "eli5": "Shadowing is like having a security guard watch and record what happens in your application in the background so you can review it later without stopping anything.",
+    "description": "Shadowing is an advanced observability technique and toolset that captures and analyzes production traffic in real-time without impacting user experience, allowing teams to detect anomalies and validate changes before they break production. It records entire request-response cycles for detailed analysis, debugging, and testing.",
+    "use_cases": [
+      "Validating new service deployments by shadowing live traffic before routing users",
+      "Detecting performance regressions by comparing shadowed traffic against baseline metrics",
+      "Debugging complex production issues by capturing and replaying exact user interactions",
+      "Testing infrastructure changes safely by running experiments against copied production traffic"
+    ],
+    "used_by": [
+      "Uber",
+      "Netflix",
+      "LinkedIn"
+    ],
+    "docs": "https://en.wikipedia.org/wiki/Service_mesh#Traffic_shadowing",
+    "tutorial": "https://istio.io/latest/docs/tasks/traffic-management/mirroring/",
+    "added": "2026-10-03"
   }
 ]

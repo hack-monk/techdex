@@ -13771,5 +13771,51 @@
     "docs": "https://en.wikipedia.org/wiki/Service_mesh#Traffic_shadowing",
     "tutorial": "https://istio.io/latest/docs/tasks/traffic-management/mirroring/",
     "added": "2026-10-03"
+  },
+  {
+    "id": "esbuild-minifier",
+    "name": "esbuild minifier",
+    "category": "Tool",
+    "domain": "Frontend",
+    "eli5": "It's like a shrink-wrap machine for your code that makes it much smaller so websites load faster.",
+    "description": "An extremely fast JavaScript/TypeScript bundler and minifier written in Go that significantly outperforms traditional bundlers like Webpack. It's become the backbone of modern tooling for frontend development due to its sub-100ms build times.",
+    "use_cases": [
+      "Bundling JavaScript and TypeScript for production deployment",
+      "Minifying CSS and JavaScript to reduce bundle sizes",
+      "Fast development builds with hot module reloading",
+      "Transforming JSX and TypeScript into compatible JavaScript"
+    ],
+    "used_by": [
+      "Vercel",
+      "Figma",
+      "Stripe",
+      "Shopify"
+    ],
+    "docs": "https://esbuild.github.io/",
+    "tutorial": "https://esbuild.github.io/getting-started/",
+    "added": "2026-10-04"
+  },
+  {
+    "id": "jq-json-processor",
+    "name": "jq",
+    "category": "Tool",
+    "domain": "Other",
+    "eli5": "It's like a magic filter for JSON that lets you pick out exactly the pieces you want from a pile of data.",
+    "description": "A lightweight, powerful command-line JSON processor that enables filtering, transforming, and manipulating JSON data with a simple query language. It's become essential for DevOps engineers, SREs, and backend developers for processing API responses and configuration files.",
+    "use_cases": [
+      "Extracting specific fields from API responses and logs",
+      "Transforming and reshaping JSON structures for data processing",
+      "Filtering and aggregating JSON data in shell scripts and pipelines",
+      "Debugging and inspecting complex nested JSON structures"
+    ],
+    "used_by": [
+      "Kubernetes ecosystem",
+      "AWS CLI users",
+      "CloudFlare",
+      "GitHub"
+    ],
+    "docs": "https://jqlang.github.io/jq/",
+    "tutorial": "https://jqlang.github.io/jq/tutorial/",
+    "added": "2026-10-04"
   }
 ]

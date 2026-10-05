@@ -13817,5 +13817,97 @@
     "docs": "https://jqlang.github.io/jq/",
     "tutorial": "https://jqlang.github.io/jq/tutorial/",
     "added": "2026-10-04"
+  },
+  {
+    "id": "prisma",
+    "name": "Prisma",
+    "category": "Tool",
+    "domain": "Backend",
+    "eli5": "Prisma is like a translator that helps your code talk to databases in a way that's easy to understand, instead of writing confusing database language.",
+    "description": "Prisma is an open-source ORM (Object-Relational Mapping) that provides a type-safe database client for Node.js and TypeScript applications. It simplifies database access with an intuitive schema definition language and auto-generated query builder.",
+    "use_cases": [
+      "Building type-safe REST and GraphQL APIs",
+      "Rapid prototyping with schema-first development",
+      "Managing complex database migrations",
+      "Full-stack TypeScript application development"
+    ],
+    "used_by": [
+      "Stripe",
+      "GitHub",
+      "Figma",
+      "Notion"
+    ],
+    "docs": "https://www.prisma.io/docs/",
+    "tutorial": "https://www.prisma.io/docs/getting-started/quickstart",
+    "added": "2026-10-05"
+  },
+  {
+    "id": "rclone",
+    "name": "rclone",
+    "category": "Tool",
+    "domain": "Storage",
+    "eli5": "rclone is like a universal remote control that lets you move and manage files across any cloud storage (Google Drive, S3, Dropbox) from your computer.",
+    "description": "rclone is a command-line tool that synchronizes files and directories to and from cloud storage providers like AWS S3, Google Cloud Storage, Azure Blob, and 50+ other backends. It handles large-scale data transfers efficiently with built-in encryption and bandwidth controls.",
+    "use_cases": [
+      "Cloud storage backups and disaster recovery",
+      "Multi-cloud data migration and synchronization",
+      "Automated data pipelines between storage providers",
+      "Encrypted backup solutions for sensitive data"
+    ],
+    "used_by": [
+      "Backblaze",
+      "Nextcloud",
+      "Wasabi",
+      "ProtonMail"
+    ],
+    "docs": "https://rclone.org/",
+    "tutorial": "https://rclone.org/docs/",
+    "added": "2026-10-05"
+  },
+  {
+    "id": "frrouting",
+    "name": "FRRouting",
+    "category": "Tool",
+    "domain": "Networking",
+    "eli5": "FRRouting is like a smart mail carrier for network packets that decides the best path to deliver data through an internet network.",
+    "description": "FRRouting is a free, open-source IP routing protocol suite that implements BGP, OSPF, RIP, IS-IS, and other routing protocols for Linux and Unix systems. It powers mission-critical network infrastructure at scale.",
+    "use_cases": [
+      "Building software-defined networking (SDN) solutions",
+      "Enterprise network routing and failover",
+      "Kubernetes cluster networking and load balancing",
+      "ISP and data center network operations"
+    ],
+    "used_by": [
+      "Cisco",
+      "Cumulus Networks",
+      "Netflix",
+      "Facebook"
+    ],
+    "docs": "https://frrouting.org/",
+    "tutorial": "https://frrouting.org/user-guide/",
+    "added": "2026-10-05"
+  },
+  {
+    "id": "huey",
+    "name": "Huey",
+    "category": "Framework",
+    "domain": "Backend",
+    "eli5": "Huey is like a task scheduler for your computer that remembers to do jobs later, like reminding you to finish your homework after dinner.",
+    "description": "Huey is a lightweight task queue and job scheduler for Python that makes it easy to execute tasks asynchronously and periodically. It integrates seamlessly with existing Python applications with minimal configuration.",
+    "use_cases": [
+      "Scheduled background jobs and cron-like tasks",
+      "Asynchronous email delivery and notifications",
+      "Data processing and ETL pipelines",
+      "Real-time task retry logic with exponential backoff"
+    ],
+    "used_by": [
+      "DuckDuckGo",
+      "Disqus",
+      "Zapier",
+      "DigitalOcean"
+    ],
+    "docs": "https://huey.readthedocs.io/",
+    "tutorial": "https://huey.readthedocs.io/en/latest/getting-started.html",
+    "added": "2026-10-05"
   }
 ]

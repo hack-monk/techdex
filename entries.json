@@ -13909,5 +13909,74 @@
     "docs": "https://huey.readthedocs.io/",
     "tutorial": "https://huey.readthedocs.io/en/latest/getting-started.html",
     "added": "2026-10-05"
+  },
+  {
+    "id": "webassembly-wasm",
+    "name": "WebAssembly (WASM)",
+    "category": "Platform",
+    "domain": "Frontend",
+    "eli5": "WebAssembly is like a universal instruction manual that computers understand, so programs written in different languages can run super fast in your web browser without translation delays.",
+    "description": "WebAssembly is a binary instruction format that runs at near-native speed in web browsers and serverless environments. It enables developers to write performance-critical applications in languages like Rust, C++, and Go, then run them safely in sandboxed environments.",
+    "use_cases": [
+      "Running computationally intensive graphics and game engines in browsers",
+      "Executing scientific computing workloads with high performance",
+      "Porting desktop applications to web platforms without rewriting",
+      "Building edge computing functions that run on serverless platforms"
+    ],
+    "used_by": [
+      "Figma",
+      "AutoCAD",
+      "Google Earth",
+      "Mozilla Firefox"
+    ],
+    "docs": "https://webassembly.org/",
+    "tutorial": "https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts",
+    "added": "2026-10-06"
+  },
+  {
+    "id": "zk-sync-layer2",
+    "name": "zkSync",
+    "category": "Platform",
+    "domain": "Other",
+    "eli5": "zkSync is like a speedy checkout lane at a grocery store where multiple customers pay at once with proof they're legit, instead of paying one-by-one at the main register.",
+    "description": "zkSync is a Layer 2 scaling solution for Ethereum that uses zero-knowledge proofs to bundle transactions off-chain and settle them on-chain, enabling fast and cheap transactions. It maintains Ethereum's security while improving throughput and reducing gas fees.",
+    "use_cases": [
+      "Enabling high-frequency DeFi trading with minimal gas costs",
+      "Processing payments and transfers at scale on blockchain networks",
+      "Building NFT marketplaces with fast transaction confirmation",
+      "Deploying Ethereum-compatible smart contracts with lower costs"
+    ],
+    "used_by": [
+      "1inch Exchange",
+      "Curve Finance",
+      "Balancer",
+      "SushiSwap"
+    ],
+    "docs": "https://docs.zksync.io/",
+    "tutorial": "https://docs.zksync.io/build/start-coding",
+    "added": "2026-10-06"
+  },
+  {
+    "id": "dagster-orchestration",
+    "name": "Dagster",
+    "category": "Framework",
+    "domain": "Data Engineering",
+    "eli5": "Dagster is like a chef's kitchen where recipes (data pipelines) are organized so ingredients are automatically prepared in the right order, and you can see exactly what's cooking at each step.",
+    "description": "Dagster is an orchestration platform for data pipelines that combines asset-oriented programming with powerful monitoring and debugging capabilities. It enables data engineers to build, test, and deploy production-grade data workflows with clear lineage and dependency management.",
+    "use_cases": [
+      "Orchestrating complex ETL pipelines with multiple data sources and transformations",
+      "Monitoring data asset health and quality across the organization",
+      "Building data lakehouses with clear lineage and versioning",
+      "Integrating machine learning training pipelines with data preparation workflows"
+    ],
+    "used_by": [
+      "Anduril",
+      "Elementus",
+      "Wistia",
+      "Airtable"
+    ],
+    "docs": "https://docs.dagster.io/",
+    "tutorial": "https://docs.dagster.io/tutorial",
+    "added": "2026-10-06"
   }
 ]

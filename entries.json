@@ -13978,5 +13978,28 @@
     "docs": "https://docs.dagster.io/",
     "tutorial": "https://docs.dagster.io/tutorial",
     "added": "2026-10-06"
+  },
+  {
+    "id": "vapi-voice-ai-platform",
+    "name": "Vapi",
+    "category": "Platform",
+    "domain": "AI/ML",
+    "eli5": "It's like having an AI receptionist who can answer phone calls, understand what people want, and handle conversations naturally without making callers feel like they're talking to a robot.",
+    "description": "Vapi is a voice AI platform that enables developers to build conversational AI agents for phone calls and voice interactions with low latency and high quality. It abstracts away infrastructure complexity for building production-grade voice AI applications.",
+    "use_cases": [
+      "Building AI-powered customer support hotlines and helpdesks",
+      "Automating appointment scheduling and booking systems",
+      "Conducting voice-based surveys and feedback collection",
+      "Creating outbound calling systems for notifications and follow-ups"
+    ],
+    "used_by": [
+      "Brex",
+      "Guidepoint",
+      "Mercury",
+      "Zapier"
+    ],
+    "docs": "https://docs.vapi.ai/",
+    "tutorial": "https://docs.vapi.ai/introduction",
+    "added": "2026-10-07"
   }
 ]

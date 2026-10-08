@@ -14001,5 +14001,74 @@
     "docs": "https://docs.vapi.ai/",
     "tutorial": "https://docs.vapi.ai/introduction",
     "added": "2026-10-07"
+  },
+  {
+    "id": "uv-sync",
+    "name": "uv sync",
+    "category": "Tool",
+    "domain": "Backend",
+    "eli5": "It's like a magic wand that instantly makes sure everyone on your team has the exact same Python tools and libraries, so your code works the same way for everyone.",
+    "description": "uv sync is a fast, reliable Python project synchronization tool that ensures reproducible environments across developers and CI/CD pipelines. It locks dependencies and syncs virtual environments in seconds, replacing traditional pip and venv workflows.",
+    "use_cases": [
+      "Ensuring consistent Python environments across dev teams",
+      "Speeding up CI/CD pipeline dependency installation",
+      "Managing monorepo Python projects with shared dependencies",
+      "Eliminating 'works on my machine' environment issues"
+    ],
+    "used_by": [
+      "Anthropic",
+      "FastAPI maintainers",
+      "Pydantic team",
+      "Hugging Face"
+    ],
+    "docs": "https://docs.astral.sh/uv/concepts/sync/",
+    "tutorial": "https://docs.astral.sh/uv/guides/projects/",
+    "added": "2026-10-08"
+  },
+  {
+    "id": "pocketbase-realtime",
+    "name": "PocketBase Realtime Extensions",
+    "category": "Platform",
+    "domain": "Backend",
+    "eli5": "It's like having a tiny, complete post office in your app that handles emails, packages, and even lets you watch when new mail arrives in real-time.",
+    "description": "PocketBase is a lightweight, self-hostable backend-as-a-service that combines a database, file storage, authentication, and real-time capabilities in a single Go binary. It eliminates the need for complex backend infrastructure for small to medium applications.",
+    "use_cases": [
+      "Building rapid prototypes and MVPs without backend infrastructure",
+      "Real-time collaborative applications with live updates",
+      "Self-hosted alternatives to Firebase or Supabase",
+      "Running full-stack applications on edge infrastructure"
+    ],
+    "used_by": [
+      "Indie developers and startups",
+      "Educational institutions",
+      "Privacy-focused projects",
+      "Self-hosted deployment communities"
+    ],
+    "docs": "https://pocketbase.io/docs/",
+    "tutorial": "https://pocketbase.io/docs/getting-started/",
+    "added": "2026-10-08"
+  },
+  {
+    "id": "ollama-embedding",
+    "name": "Ollama Embedding Models",
+    "category": "Tool",
+    "domain": "AI/ML",
+    "eli5": "It's like giving your computer a magical translator that turns words and sentences into secret codes that help it understand what things are similar to each other.",
+    "description": "Ollama Embedding Models enable running open-source text embedding and semantic search models locally without cloud dependencies. These models convert text into high-dimensional vectors for similarity matching, semantic search, and RAG applications.",
+    "use_cases": [
+      "Local semantic search without external API calls",
+      "Retrieval-augmented generation (RAG) with private data",
+      "Building recommendation systems with locally-run embeddings",
+      "Similarity detection in documents and customer support queries"
+    ],
+    "used_by": [
+      "Privacy-focused AI applications",
+      "Enterprise knowledge management systems",
+      "Open-source RAG projects",
+      "Offline-first AI startups"
+    ],
+    "docs": "https://github.com/ollama/ollama/blob/main/docs/embedding.md",
+    "tutorial": "https://ollama.ai/blog/embedding-models",
+    "added": "2026-10-08"
   }
 ]

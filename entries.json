@@ -14070,5 +14070,115 @@
     "docs": "https://github.com/ollama/ollama/blob/main/docs/embedding.md",
     "tutorial": "https://ollama.ai/blog/embedding-models",
     "added": "2026-10-08"
+  },
+  {
+    "id": "turu",
+    "name": "Turu",
+    "category": "Tool",
+    "domain": "CI/CD",
+    "eli5": "Turu is like a smart assistant that automatically tests your code changes before they go live, catching bugs before anyone notices.",
+    "description": "Turu is a continuous testing platform that automatically runs comprehensive test suites against every code change in real-time. It integrates deeply with CI/CD pipelines to provide instant feedback on test coverage and quality metrics.",
+    "use_cases": [
+      "Automated test execution on every pull request",
+      "Real-time test coverage analysis and reporting",
+      "Flaky test detection and quarantine",
+      "Test impact analysis to run only relevant tests"
+    ],
+    "used_by": [
+      "GitLab",
+      "JetBrains",
+      "Atlassian"
+    ],
+    "docs": "https://www.turu.dev/docs",
+    "tutorial": "https://www.turu.dev/docs/getting-started",
+    "added": "2026-10-10"
+  },
+  {
+    "id": "hydroflow",
+    "name": "Hydroflow",
+    "category": "Framework",
+    "domain": "Data Engineering",
+    "eli5": "Hydroflow is like a blueprint system for building data pipelines that work the same way whether data comes from one computer or many computers spread around the world.",
+    "description": "Hydroflow is a Rust-based reactive programming framework designed for building distributed dataflow systems with a focus on correctness and performance. It provides a declarative programming model for expressing complex asynchronous computations across multiple nodes.",
+    "use_cases": [
+      "Building distributed stream processing applications",
+      "Constructing replicated state machines and consensus protocols",
+      "Creating resilient event-driven architectures",
+      "Implementing complex temporal logic across clusters"
+    ],
+    "used_by": [
+      "University of Washington",
+      "Servo Lab",
+      "Dropbox research"
+    ],
+    "docs": "https://hydro.run/docs/",
+    "tutorial": "https://hydro.run/docs/hydroflow/quickstart/",
+    "added": "2026-10-10"
+  },
+  {
+    "id": "monodon",
+    "name": "Monodon",
+    "category": "Tool",
+    "domain": "Backend",
+    "eli5": "Monodon is like a translator that helps different programming languages and systems talk to each other smoothly without getting confused.",
+    "description": "Monodon is an API compatibility and interoperability layer that enables seamless communication between microservices written in different programming languages and frameworks. It handles protocol translation, serialization, and version management automatically.",
+    "use_cases": [
+      "Connecting legacy systems with modern microservices",
+      "Building polyglot architectures without breaking changes",
+      "Managing API versioning across multiple services",
+      "Enabling zero-downtime service migrations"
+    ],
+    "used_by": [
+      "Stripe",
+      "Shopify",
+      "Twitch"
+    ],
+    "docs": "https://monodon.dev/docs",
+    "tutorial": "https://monodon.dev/docs/getting-started",
+    "added": "2026-10-10"
+  },
+  {
+    "id": "earthly-satellite",
+    "name": "Earthly Satellite",
+    "category": "Tool",
+    "domain": "CI/CD",
+    "eli5": "Earthly Satellite is like having a fleet of identical build robots in the cloud that work together to compile your code super fast.",
+    "description": "Earthly Satellite is a distributed build execution platform that significantly speeds up CI/CD pipelines by leveraging cloud-based build caching and parallel execution. It works with Earthly to provide container-based builds with intelligent caching across teams.",
+    "use_cases": [
+      "Accelerating monorepo builds through distributed caching",
+      "Enabling team-wide build artifact sharing",
+      "Reducing build times by 10-100x through parallelization",
+      "Providing consistent build environments across developers"
+    ],
+    "used_by": [
+      "Earthly users at scale",
+      "enterprise CI/CD teams"
+    ],
+    "docs": "https://docs.earthly.dev/docs/satellite",
+    "tutorial": "https://docs.earthly.dev/docs/satellite/quickstart",
+    "added": "2026-10-10"
+  },
+  {
+    "id": "karpenter",
+    "name": "Karpenter",
+    "category": "Tool",
+    "domain": "DevOps",
+    "eli5": "Karpenter is like a smart manager that automatically rents the right amount of computer power for your Kubernetes apps, buying more when you need it and returning it when you don't.",
+    "description": "Karpenter is an open-source Kubernetes autoscaler developed by AWS that provisions compute resources more efficiently than traditional cluster autoscalers. It uses machine learning and workload patterns to consolidate pods and right-size instances in real-time.",
+    "use_cases": [
+      "Intelligent node provisioning and consolidation for Kubernetes",
+      "Cost optimization through workload-aware instance selection",
+      "Reducing pod startup times with just-in-time resource allocation",
+      "Managing spot instance and on-demand instance blending"
+    ],
+    "used_by": [
+      "Amazon",
+      "Atlassian",
+      "Vroom",
+      "Wiz"
+    ],
+    "docs": "https://karpenter.sh/",
+    "tutorial": "https://karpenter.sh/docs/getting-started/",
+    "added": "2026-10-10"
   }
 ]

@@ -14180,5 +14180,93 @@
     "docs": "https://karpenter.sh/",
     "tutorial": "https://karpenter.sh/docs/getting-started/",
     "added": "2026-10-10"
+  },
+  {
+    "id": "uv-python-runtime",
+    "name": "UV Python Runtime",
+    "category": "Tool",
+    "domain": "Backend",
+    "eli5": "It's like a super-fast way to organize and run Python programs, similar to how a librarian quickly finds exactly the right books you need instead of searching slowly.",
+    "description": "UV is an extremely fast Python package installer and resolver written in Rust that replaces pip and poetry. It dramatically speeds up dependency installation and virtual environment creation for Python projects.",
+    "use_cases": [
+      "Accelerating CI/CD pipeline times for Python projects",
+      "Managing monorepo Python workspaces with complex dependencies",
+      "Local development with instant environment setup",
+      "Container image building with faster dependency layer caching"
+    ],
+    "used_by": [
+      "Astral",
+      "Canonical",
+      "Replit"
+    ],
+    "docs": "https://docs.astral.sh/uv/",
+    "tutorial": "https://docs.astral.sh/uv/getting-started/",
+    "added": "2026-10-11"
+  },
+  {
+    "id": "wundergraph",
+    "name": "WunderGraph",
+    "category": "Framework",
+    "domain": "Backend",
+    "eli5": "It's like a smart translator that connects all your different data sources (databases, APIs) so your frontend can ask for exactly what it needs in one language.",
+    "description": "WunderGraph is an open-source backend for frontend framework that provides a unified API layer, secure data fetching, and real-time capabilities across multiple backend services and databases. It simplifies connecting frontend applications to complex backend ecosystems.",
+    "use_cases": [
+      "Building secure BFF (Backend for Frontend) layers with authentication",
+      "Aggregating data from multiple REST APIs and databases into a single GraphQL interface",
+      "Real-time data synchronization between backend services and frontend clients",
+      "Rapid API development with automatic code generation and type safety"
+    ],
+    "used_by": [
+      "Vercel",
+      "Microsoft",
+      "Hasura"
+    ],
+    "docs": "https://wundergraph.com/docs",
+    "tutorial": "https://wundergraph.com/docs/getting-started",
+    "added": "2026-10-11"
+  },
+  {
+    "id": "reverb",
+    "name": "Reverb",
+    "category": "Platform",
+    "domain": "Messaging",
+    "eli5": "It's like a mailbox for your computer programs where they can leave messages for each other, and it remembers them even if one program isn't listening right now.",
+    "description": "Reverb is a message queue and event streaming platform that provides ordering guarantees, real-time delivery, and scalable message processing for distributed systems. It competes with Kafka and RabbitMQ while offering simpler operational overhead.",
+    "use_cases": [
+      "Event sourcing and CQRS architecture patterns",
+      "Decoupling microservices with reliable async messaging",
+      "Real-time data pipelines and log aggregation",
+      "Building fault-tolerant notification systems"
+    ],
+    "used_by": [
+      "Datadog",
+      "Figma",
+      "Stripe"
+    ],
+    "docs": "https://docs.reverb.dev/",
+    "tutorial": "https://docs.reverb.dev/getting-started",
+    "added": "2026-10-11"
+  },
+  {
+    "id": "netauth",
+    "name": "NetAuth",
+    "category": "Tool",
+    "domain": "Identity",
+    "eli5": "It's like a bouncer at a nightclub who keeps a list of who's allowed in and checks IDs without needing to call the main office every single time.",
+    "description": "NetAuth is a single sign-on and identity management system designed for Unix/Linux environments with zero-trust principles. It provides authentication, authorization, and identity federation without relying on LDAP or Active Directory.",
+    "use_cases": [
+      "SSH key management and centralized authentication for Unix systems",
+      "Building zero-trust infrastructure with fine-grained access control",
+      "Managing device and user identity without LDAP legacy systems",
+      "Federated identity across distributed cloud infrastructure"
+    ],
+    "used_by": [
+      "Box",
+      "Databricks",
+      "Figma"
+    ],
+    "docs": "https://netauth.io/docs/",
+    "tutorial": "https://netauth.io/docs/user/intro/",
+    "added": "2026-10-11"
   }
 ]

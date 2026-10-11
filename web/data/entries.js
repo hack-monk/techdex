@@ -12976,6 +12976,29 @@ window.TECHDEX_ENTRIES = [
   "dex": 538
  },
  {
+  "id": "uv-python-runtime",
+  "name": "UV Python Runtime",
+  "category": "Tool",
+  "domain": "Backend",
+  "eli5": "It's like a super-fast way to organize and run Python programs, similar to how a librarian quickly finds exactly the right books you need instead of searching slowly.",
+  "description": "UV is an extremely fast Python package installer and resolver written in Rust that replaces pip and poetry. It dramatically speeds up dependency installation and virtual environment creation for Python projects.",
+  "use_cases": [
+   "Accelerating CI/CD pipeline times for Python projects",
+   "Managing monorepo Python workspaces with complex dependencies",
+   "Local development with instant environment setup",
+   "Container image building with faster dependency layer caching"
+  ],
+  "used_by": [
+   "Astral",
+   "Canonical",
+   "Replit"
+  ],
+  "docs": "https://docs.astral.sh/uv/",
+  "tutorial": "https://docs.astral.sh/uv/getting-started/",
+  "added": "2026-10-11",
+  "dex": 539
+ },
+ {
   "id": "uv-sync",
   "name": "uv sync",
   "category": "Tool",
@@ -12997,7 +13020,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://docs.astral.sh/uv/concepts/sync/",
   "tutorial": "https://docs.astral.sh/uv/guides/projects/",
   "added": "2026-10-08",
-  "dex": 539
+  "dex": 540
  },
  {
   "id": "uv-workspace",
@@ -13020,7 +13043,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://docs.astral.sh/uv/concepts/workspaces/",
   "tutorial": "https://docs.astral.sh/uv/guides/workspaces/",
   "added": "2026-09-18",
-  "dex": 540
+  "dex": 541
  },
  {
   "id": "windmill-workflow",
@@ -13044,7 +13067,30 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://docs.windmill.dev/",
   "tutorial": "https://docs.windmill.dev/docs/getting_started/quickstart",
   "added": "2026-08-18",
-  "dex": 541
+  "dex": 542
+ },
+ {
+  "id": "wundergraph",
+  "name": "WunderGraph",
+  "category": "Framework",
+  "domain": "Backend",
+  "eli5": "It's like a smart translator that connects all your different data sources (databases, APIs) so your frontend can ask for exactly what it needs in one language.",
+  "description": "WunderGraph is an open-source backend for frontend framework that provides a unified API layer, secure data fetching, and real-time capabilities across multiple backend services and databases. It simplifies connecting frontend applications to complex backend ecosystems.",
+  "use_cases": [
+   "Building secure BFF (Backend for Frontend) layers with authentication",
+   "Aggregating data from multiple REST APIs and databases into a single GraphQL interface",
+   "Real-time data synchronization between backend services and frontend clients",
+   "Rapid API development with automatic code generation and type safety"
+  ],
+  "used_by": [
+   "Vercel",
+   "Microsoft",
+   "Hasura"
+  ],
+  "docs": "https://wundergraph.com/docs",
+  "tutorial": "https://wundergraph.com/docs/getting-started",
+  "added": "2026-10-11",
+  "dex": 543
  },
  {
   "id": "apache-kafka",
@@ -13072,7 +13118,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://kafka.apache.org/quickstart",
   "added": "2026-06-08",
   "eli5": "A conveyor belt that carries messages between apps without dropping any.",
-  "dex": 542
+  "dex": 544
  },
  {
   "id": "apache-pulsar",
@@ -13096,7 +13142,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://pulsar.apache.org/docs/",
   "tutorial": "https://pulsar.apache.org/docs/getting-started-standalone/",
   "added": "2026-06-12",
-  "dex": 543
+  "dex": 545
  },
  {
   "id": "zookeeper",
@@ -13120,7 +13166,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://zookeeper.apache.org/",
   "tutorial": "https://zookeeper.apache.org/doc/current/zookeeperStarted.html",
   "added": "2026-06-16",
-  "dex": 544
+  "dex": 546
  },
  {
   "id": "celery",
@@ -13144,7 +13190,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://docs.celeryq.dev/",
   "tutorial": "https://docs.celeryq.dev/en/stable/getting-started/first-steps-with-celery.html",
   "added": "2026-06-12",
-  "dex": 545
+  "dex": 547
  },
  {
   "id": "cloud-pubsub",
@@ -13170,7 +13216,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://cloud.google.com/pubsub/docs",
   "tutorial": "https://cloud.google.com/pubsub/docs/publish-receive-messages-console",
   "added": "2026-06-08",
-  "dex": 546
+  "dex": 548
  },
  {
   "id": "nats",
@@ -13194,7 +13240,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://docs.nats.io/",
   "tutorial": "https://docs.nats.io/nats-concepts/overview",
   "added": "2026-06-11",
-  "dex": 547
+  "dex": 549
  },
  {
   "id": "nats-jetstream",
@@ -13217,7 +13263,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://docs.nats.io/nats-concepts/jetstream",
   "tutorial": "https://docs.nats.io/using-nats/developer/develop_jetstream",
   "added": "2026-08-07",
-  "dex": 548
+  "dex": 550
  },
  {
   "id": "rabbitmq",
@@ -13243,7 +13289,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://www.rabbitmq.com/tutorials",
   "added": "2026-06-08",
   "eli5": "A post office — apps drop letters in, other apps pick them up later.",
-  "dex": 549
+  "dex": 551
  },
  {
   "id": "rabbitmq-amqp",
@@ -13267,7 +13313,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://www.rabbitmq.com/documentation.html",
   "tutorial": "https://www.rabbitmq.com/tutorials/tutorial-one-python.html",
   "added": "2026-09-26",
-  "dex": 550
+  "dex": 552
  },
  {
   "id": "redpanda",
@@ -13291,7 +13337,30 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://docs.redpanda.com/",
   "tutorial": "https://docs.redpanda.com/current/get-started/quick-start/",
   "added": "2026-06-12",
-  "dex": 551
+  "dex": 553
+ },
+ {
+  "id": "reverb",
+  "name": "Reverb",
+  "category": "Platform",
+  "domain": "Messaging",
+  "eli5": "It's like a mailbox for your computer programs where they can leave messages for each other, and it remembers them even if one program isn't listening right now.",
+  "description": "Reverb is a message queue and event streaming platform that provides ordering guarantees, real-time delivery, and scalable message processing for distributed systems. It competes with Kafka and RabbitMQ while offering simpler operational overhead.",
+  "use_cases": [
+   "Event sourcing and CQRS architecture patterns",
+   "Decoupling microservices with reliable async messaging",
+   "Real-time data pipelines and log aggregation",
+   "Building fault-tolerant notification systems"
+  ],
+  "used_by": [
+   "Datadog",
+   "Figma",
+   "Stripe"
+  ],
+  "docs": "https://docs.reverb.dev/",
+  "tutorial": "https://docs.reverb.dev/getting-started",
+  "added": "2026-10-11",
+  "dex": 554
  },
  {
   "id": "aws-s3",
@@ -13317,7 +13386,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://docs.aws.amazon.com/AmazonS3/latest/userguide/GetStartedWithS3.html",
   "added": "2026-06-08",
   "eli5": "A magic box that holds unlimited files and never loses them.",
-  "dex": 552
+  "dex": 555
  },
  {
   "id": "azure-blob",
@@ -13343,7 +13412,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://learn.microsoft.com/en-us/azure/storage/blobs/",
   "tutorial": "https://learn.microsoft.com/en-us/azure/storage/blobs/storage-quickstart-blobs-portal",
   "added": "2026-06-08",
-  "dex": 553
+  "dex": 556
  },
  {
   "id": "cadaver",
@@ -13367,7 +13436,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://www.webdav.org/cadaver/",
   "tutorial": "http://www.webdav.org/cadaver/guide/using.html",
   "added": "2026-07-28",
-  "dex": 554
+  "dex": 557
  },
  {
   "id": "ceph",
@@ -13391,7 +13460,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://docs.ceph.com/",
   "tutorial": "https://docs.ceph.com/en/latest/install/",
   "added": "2026-06-12",
-  "dex": 555
+  "dex": 558
  },
  {
   "id": "gcs",
@@ -13417,7 +13486,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://cloud.google.com/storage/docs",
   "tutorial": "https://cloud.google.com/storage/docs/quickstart-console",
   "added": "2026-06-08",
-  "dex": 556
+  "dex": 559
  },
  {
   "id": "memcached",
@@ -13441,7 +13510,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://memcached.org/about",
   "tutorial": "https://memcached.org/wiki/NewStart",
   "added": "2026-08-16",
-  "dex": 557
+  "dex": 560
  },
  {
   "id": "minio",
@@ -13465,7 +13534,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://min.io/docs/minio/",
   "tutorial": "https://min.io/docs/minio/linux/operations/install-deploy-manage/deploy-minio-single-node-single-drive.html",
   "added": "2026-06-11",
-  "dex": 558
+  "dex": 561
  },
  {
   "id": "mux-streaming",
@@ -13489,7 +13558,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://docs.mux.com",
   "tutorial": "https://docs.mux.com/guides",
   "added": "2026-09-03",
-  "dex": 559
+  "dex": 562
  },
  {
   "id": "rclone",
@@ -13513,7 +13582,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://rclone.org/",
   "tutorial": "https://rclone.org/docs/",
   "added": "2026-10-05",
-  "dex": 560
+  "dex": 563
  },
  {
   "id": "restic",
@@ -13537,7 +13606,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://restic.readthedocs.io/",
   "tutorial": "https://restic.readthedocs.io/en/stable/030_preparing_a_new_repo.html",
   "added": "2026-07-19",
-  "dex": 561
+  "dex": 564
  },
  {
   "id": "rook",
@@ -13561,7 +13630,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://rook.io/docs/rook/latest-release/",
   "tutorial": "https://rook.io/docs/rook/latest-release/Getting-Started/intro/",
   "added": "2026-06-14",
-  "dex": 562
+  "dex": 565
  },
  {
   "id": "seaweedfs",
@@ -13585,7 +13654,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://github.com/seaweedfs/seaweedfs/wiki",
   "tutorial": "https://github.com/seaweedfs/seaweedfs/wiki/Getting-Started",
   "added": "2026-06-19",
-  "dex": 563
+  "dex": 566
  },
  {
   "id": "argo-workflows",
@@ -13611,7 +13680,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://argo-workflows.readthedocs.io/en/latest/quick-start/",
   "added": "2026-06-08",
   "eli5": "A flowchart that runs jobs on Kubernetes in the right order, automatically.",
-  "dex": 564
+  "dex": 567
  },
  {
   "id": "argocd",
@@ -13637,7 +13706,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://argo-cd.readthedocs.io/en/stable/getting_started/",
   "added": "2026-06-08",
   "eli5": "A robot that watches Git and keeps your cluster looking exactly like the blueprint.",
-  "dex": 565
+  "dex": 568
  },
  {
   "id": "azure-devops",
@@ -13663,7 +13732,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://learn.microsoft.com/en-us/azure/devops/",
   "tutorial": "https://learn.microsoft.com/en-us/azure/devops/pipelines/get-started/pipelines-get-started",
   "added": "2026-06-08",
-  "dex": 566
+  "dex": 569
  },
  {
   "id": "bazel-build",
@@ -13687,7 +13756,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://bazel.build/docs",
   "tutorial": "https://bazel.build/start",
   "added": "2026-08-17",
-  "dex": 567
+  "dex": 570
  },
  {
   "id": "buf-breaking-changes",
@@ -13711,7 +13780,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://buf.build/docs/breaking/overview",
   "tutorial": "https://buf.build/docs/breaking/configuration",
   "added": "2026-09-18",
-  "dex": 568
+  "dex": 571
  },
  {
   "id": "buildkite",
@@ -13735,7 +13804,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://buildkite.com/docs/",
   "tutorial": "https://buildkite.com/docs/tutorials/getting-started",
   "added": "2026-06-12",
-  "dex": 569
+  "dex": 572
  },
  {
   "id": "circleci",
@@ -13761,7 +13830,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://circleci.com/docs/",
   "tutorial": "https://circleci.com/docs/getting-started/",
   "added": "2026-06-08",
-  "dex": 570
+  "dex": 573
  },
  {
   "id": "earthly",
@@ -13784,7 +13853,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://docs.earthly.dev/",
   "tutorial": "https://docs.earthly.dev/basics/part-1-a-simple-earthfile",
   "added": "2026-06-15",
-  "dex": 571
+  "dex": 574
  },
  {
   "id": "earthly-build-system",
@@ -13808,7 +13877,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://earthly.dev/",
   "tutorial": "https://earthly.dev/doc/basic",
   "added": "2026-09-24",
-  "dex": 572
+  "dex": 575
  },
  {
   "id": "earthly-ci-cd-containerization",
@@ -13832,7 +13901,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://docs.earthly.dev/",
   "tutorial": "https://docs.earthly.dev/basics/overview",
   "added": "2026-09-22",
-  "dex": 573
+  "dex": 576
  },
  {
   "id": "earthly-satellite",
@@ -13854,7 +13923,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://docs.earthly.dev/docs/satellite",
   "tutorial": "https://docs.earthly.dev/docs/satellite/quickstart",
   "added": "2026-10-10",
-  "dex": 574
+  "dex": 577
  },
  {
   "id": "flux-cd",
@@ -13880,7 +13949,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://fluxcd.io/flux/",
   "tutorial": "https://fluxcd.io/flux/get-started/",
   "added": "2026-06-08",
-  "dex": 575
+  "dex": 578
  },
  {
   "id": "forgejo",
@@ -13903,7 +13972,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://forgejo.org/docs",
   "tutorial": "https://forgejo.org/docs/latest/admin/",
   "added": "2026-06-19",
-  "dex": 576
+  "dex": 579
  },
  {
   "id": "github-actions",
@@ -13929,7 +13998,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://docs.github.com/en/actions/quickstart",
   "added": "2026-06-08",
   "eli5": "A helper that automatically does chores (tests, deploys) whenever you push code.",
-  "dex": 577
+  "dex": 580
  },
  {
   "id": "gitlab-ci",
@@ -13955,7 +14024,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://docs.gitlab.com/ee/ci/",
   "tutorial": "https://docs.gitlab.com/ee/ci/quick_start/",
   "added": "2026-06-08",
-  "dex": 578
+  "dex": 581
  },
  {
   "id": "goreleaser",
@@ -13979,7 +14048,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://goreleaser.com/intro/",
   "tutorial": "https://goreleaser.com/quick-start/",
   "added": "2026-08-02",
-  "dex": 579
+  "dex": 582
  },
  {
   "id": "jenkins",
@@ -14005,7 +14074,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://www.jenkins.io/doc/pipeline/tour/getting-started/",
   "added": "2026-06-08",
   "eli5": "A robot that builds and tests your code every time you save a change.",
-  "dex": 580
+  "dex": 583
  },
  {
   "id": "moto",
@@ -14029,7 +14098,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://docs.getmoto.org/",
   "tutorial": "https://docs.getmoto.org/en/latest/docs/getting_started.html",
   "added": "2026-06-26",
-  "dex": 581
+  "dex": 584
  },
  {
   "id": "renovate",
@@ -14053,7 +14122,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://docs.renovatebot.com/",
   "tutorial": "https://docs.renovatebot.com/getting-started/installing-onboarding/",
   "added": "2026-06-12",
-  "dex": 582
+  "dex": 585
  },
  {
   "id": "tekton",
@@ -14079,7 +14148,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://tekton.dev/docs/",
   "tutorial": "https://tekton.dev/docs/getting-started/",
   "added": "2026-06-08",
-  "dex": 583
+  "dex": 586
  },
  {
   "id": "turu",
@@ -14102,7 +14171,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://www.turu.dev/docs",
   "tutorial": "https://www.turu.dev/docs/getting-started",
   "added": "2026-10-10",
-  "dex": 584
+  "dex": 587
  },
  {
   "id": "auth0",
@@ -14126,7 +14195,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://auth0.com/docs/",
   "tutorial": "https://auth0.com/docs/quickstarts",
   "added": "2026-06-12",
-  "dex": 585
+  "dex": 588
  },
  {
   "id": "authelia",
@@ -14150,7 +14219,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://www.authelia.com/",
   "tutorial": "https://www.authelia.com/integration/deployment/supported-proxies/nginx/",
   "added": "2026-07-31",
-  "dex": 586
+  "dex": 589
  },
  {
   "id": "authentik",
@@ -14173,7 +14242,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://goauthentik.io/docs/",
   "tutorial": "https://goauthentik.io/docs/guides/basic-flows",
   "added": "2026-08-07",
-  "dex": 587
+  "dex": 590
  },
  {
   "id": "aws-iam",
@@ -14195,7 +14264,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://docs.aws.amazon.com/IAM/latest/UserGuide/getting-started.html",
   "added": "2026-06-08",
   "eli5": "The bouncer who checks IDs and decides who gets into which room.",
-  "dex": 588
+  "dex": 591
  },
  {
   "id": "azure-entra-id",
@@ -14220,7 +14289,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://learn.microsoft.com/en-us/entra/identity/",
   "tutorial": "https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-web-app-sign-in",
   "added": "2026-06-08",
-  "dex": 589
+  "dex": 592
  },
  {
   "id": "dex",
@@ -14243,7 +14312,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://dexidp.io/docs/",
   "tutorial": "https://dexidp.io/docs/getting-started/",
   "added": "2026-06-14",
-  "dex": 590
+  "dex": 593
  },
  {
   "id": "keto",
@@ -14266,7 +14335,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://docs.ory.sh/keto/",
   "tutorial": "https://docs.ory.sh/keto/quickstart",
   "added": "2026-07-25",
-  "dex": 591
+  "dex": 594
  },
  {
   "id": "keycloak",
@@ -14292,7 +14361,30 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://www.keycloak.org/getting-started/getting-started-docker",
   "added": "2026-06-08",
   "eli5": "One front door for all your apps — log in once, get into everything.",
-  "dex": 592
+  "dex": 595
+ },
+ {
+  "id": "netauth",
+  "name": "NetAuth",
+  "category": "Tool",
+  "domain": "Identity",
+  "eli5": "It's like a bouncer at a nightclub who keeps a list of who's allowed in and checks IDs without needing to call the main office every single time.",
+  "description": "NetAuth is a single sign-on and identity management system designed for Unix/Linux environments with zero-trust principles. It provides authentication, authorization, and identity federation without relying on LDAP or Active Directory.",
+  "use_cases": [
+   "SSH key management and centralized authentication for Unix systems",
+   "Building zero-trust infrastructure with fine-grained access control",
+   "Managing device and user identity without LDAP legacy systems",
+   "Federated identity across distributed cloud infrastructure"
+  ],
+  "used_by": [
+   "Box",
+   "Databricks",
+   "Figma"
+  ],
+  "docs": "https://netauth.io/docs/",
+  "tutorial": "https://netauth.io/docs/user/intro/",
+  "added": "2026-10-11",
+  "dex": 596
  },
  {
   "id": "okta",
@@ -14316,7 +14408,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://developer.okta.com/docs/",
   "tutorial": "https://developer.okta.com/docs/guides/",
   "added": "2026-06-12",
-  "dex": 593
+  "dex": 597
  },
  {
   "id": "openfga",
@@ -14340,7 +14432,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://openfga.dev/docs",
   "tutorial": "https://openfga.dev/docs/getting-started",
   "added": "2026-07-12",
-  "dex": 594
+  "dex": 598
  },
  {
   "id": "ory",
@@ -14363,7 +14455,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://www.ory.sh/docs/",
   "tutorial": "https://www.ory.sh/docs/getting-started/overview",
   "added": "2026-06-12",
-  "dex": 595
+  "dex": 599
  },
  {
   "id": "spicedb",
@@ -14387,7 +14479,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://docs.authzed.com/",
   "tutorial": "https://docs.authzed.com/getting-started",
   "added": "2026-08-03",
-  "dex": 596
+  "dex": 600
  },
  {
   "id": "spiffe",
@@ -14413,7 +14505,7 @@ window.TECHDEX_ENTRIES = [
   "tutorial": "https://spiffe.io/docs/latest/try/getting-started-linux-macos-x/",
   "added": "2026-06-08",
   "eli5": "An ID card factory that gives every microservice a passport so they trust each other.",
-  "dex": 597
+  "dex": 601
  },
  {
   "id": "supabase-auth",
@@ -14436,7 +14528,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://supabase.com/docs/guides/auth",
   "tutorial": "https://supabase.com/docs/guides/auth/quickstarts",
   "added": "2026-06-27",
-  "dex": 598
+  "dex": 602
  },
  {
   "id": "supertokens",
@@ -14460,7 +14552,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://supertokens.com/docs",
   "tutorial": "https://supertokens.com/docs/guides",
   "added": "2026-09-03",
-  "dex": 599
+  "dex": 603
  },
  {
   "id": "zitadel",
@@ -14484,7 +14576,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://zitadel.com/docs",
   "tutorial": "https://zitadel.com/docs/quickstarts/start-coding",
   "added": "2026-06-17",
-  "dex": 600
+  "dex": 604
  },
  {
   "id": "cal-com",
@@ -14508,7 +14600,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://cal.com/docs",
   "tutorial": "https://cal.com/docs/introduction",
   "added": "2026-08-27",
-  "dex": 601
+  "dex": 605
  },
  {
   "id": "hyperswitch",
@@ -14532,7 +14624,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://hyperswitch.io/docs/",
   "tutorial": "https://hyperswitch.io/docs/quickstart",
   "added": "2026-08-06",
-  "dex": 602
+  "dex": 606
  },
  {
   "id": "jq-json-processor",
@@ -14556,7 +14648,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://jqlang.github.io/jq/",
   "tutorial": "https://jqlang.github.io/jq/tutorial/",
   "added": "2026-10-04",
-  "dex": 603
+  "dex": 607
  },
  {
   "id": "mattermost",
@@ -14580,7 +14672,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://docs.mattermost.com/",
   "tutorial": "https://docs.mattermost.com/guides/deployment.html",
   "added": "2026-07-01",
-  "dex": 604
+  "dex": 608
  },
  {
   "id": "mermaid",
@@ -14604,7 +14696,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://mermaid.js.org/",
   "tutorial": "https://mermaid.js.org/ecosystem/integrations.html",
   "added": "2026-06-14",
-  "dex": 605
+  "dex": 609
  },
  {
   "id": "mermaid-live",
@@ -14628,7 +14720,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://mermaid.js.org/",
   "tutorial": "https://mermaid.live/",
   "added": "2026-06-18",
-  "dex": 606
+  "dex": 610
  },
  {
   "id": "polar",
@@ -14651,7 +14743,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://docs.polar.sh",
   "tutorial": "https://docs.polar.sh/getting-started",
   "added": "2026-08-05",
-  "dex": 607
+  "dex": 611
  },
  {
   "id": "risc-v-specification",
@@ -14675,7 +14767,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://riscv.org/",
   "tutorial": "https://riscv.org/technical/specifications/",
   "added": "2026-08-24",
-  "dex": 608
+  "dex": 612
  },
  {
   "id": "sablier",
@@ -14698,7 +14790,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://docs.sablier.com",
   "tutorial": "https://github.com/sablier-labs/v2-core",
   "added": "2026-07-10",
-  "dex": 609
+  "dex": 613
  },
  {
   "id": "uniswap-v4",
@@ -14721,7 +14813,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://docs.uniswap.org/contracts/v4/overview",
   "tutorial": "https://docs.uniswap.org/contracts/v4/guides/swaps",
   "added": "2026-09-30",
-  "dex": 610
+  "dex": 614
  },
  {
   "id": "vscode",
@@ -14745,7 +14837,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://code.visualstudio.com/docs",
   "tutorial": "https://code.visualstudio.com/learn",
   "added": "2026-08-13",
-  "dex": 611
+  "dex": 615
  },
  {
   "id": "vscode-extension-marketplace",
@@ -14769,7 +14861,7 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://marketplace.visualstudio.com/",
   "tutorial": "https://code.visualstudio.com/docs/editor/extension-marketplace",
   "added": "2026-09-22",
-  "dex": 612
+  "dex": 616
  },
  {
   "id": "zk-sync-layer2",
@@ -14793,6 +14885,6 @@ window.TECHDEX_ENTRIES = [
   "docs": "https://docs.zksync.io/",
   "tutorial": "https://docs.zksync.io/build/start-coding",
   "added": "2026-10-06",
-  "dex": 613
+  "dex": 617
  }
 ];

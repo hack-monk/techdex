@@ -14268,5 +14268,97 @@
     "docs": "https://netauth.io/docs/",
     "tutorial": "https://netauth.io/docs/user/intro/",
     "added": "2026-10-11"
+  },
+  {
+    "id": "pydantic-v1",
+    "name": "Pydantic V1",
+    "category": "Framework",
+    "domain": "Backend",
+    "eli5": "Pydantic is like a bouncer at a club who checks that everyone coming in has the right ID and outfit before letting them past the door.",
+    "description": "Pydantic is a data validation and serialization library for Python that uses type hints to enforce data structure validation at runtime. It's essential for building robust APIs and data pipelines by catching invalid data before it causes problems.",
+    "use_cases": [
+      "API request/response validation in FastAPI applications",
+      "Configuration management with type-safe settings",
+      "Data serialization and deserialization for databases",
+      "JSON schema generation for API documentation"
+    ],
+    "used_by": [
+      "Uber",
+      "Netflix",
+      "Microsoft",
+      "Google"
+    ],
+    "docs": "https://docs.pydantic.dev/latest/",
+    "tutorial": "https://docs.pydantic.dev/latest/concepts/models/",
+    "added": "2026-10-12"
+  },
+  {
+    "id": "grpc-web",
+    "name": "gRPC-Web",
+    "category": "Framework",
+    "domain": "Backend",
+    "eli5": "gRPC-Web is like a super-fast telephone line between your web browser and a server that's way quicker than normal internet calls.",
+    "description": "gRPC-Web enables gRPC clients to run in web browsers and communicate with gRPC servers over HTTP/1.1 or HTTP/2. It provides high-performance, strongly-typed communication for modern web applications with excellent developer tooling.",
+    "use_cases": [
+      "Building real-time collaborative web applications",
+      "Creating responsive dashboards with bidirectional streaming",
+      "Implementing type-safe RPC calls in browser applications",
+      "Reducing latency in high-frequency data updates"
+    ],
+    "used_by": [
+      "Google",
+      "Improbable",
+      "Buffet",
+      "Square"
+    ],
+    "docs": "https://grpc.io/docs/platforms/web/",
+    "tutorial": "https://grpc.io/docs/platforms/web/quickstart/",
+    "added": "2026-10-12"
+  },
+  {
+    "id": "redis-enterprise",
+    "name": "Redis Enterprise",
+    "category": "Platform",
+    "domain": "Database",
+    "eli5": "Redis Enterprise is like having a super-fast memory storage system in your computer that remembers everything instantly and can handle millions of questions at the same time.",
+    "description": "Redis Enterprise is a managed, highly-available, scalable version of Redis that provides additional features like auto-sharding, active-passive replication, and module support. It powers real-time applications requiring sub-millisecond latency and extreme throughput.",
+    "use_cases": [
+      "Session management and real-time user state tracking",
+      "High-performance caching layer for databases",
+      "Real-time analytics and time-series data ingestion",
+      "Real-time messaging and pub/sub systems"
+    ],
+    "used_by": [
+      "Uber",
+      "Pinterest",
+      "Twitter",
+      "Samsung"
+    ],
+    "docs": "https://redis.io/docs/latest/",
+    "tutorial": "https://redis.io/docs/latest/develop/get-started/",
+    "added": "2026-10-12"
+  },
+  {
+    "id": "falco-runtime-security",
+    "name": "Falco Runtime Security",
+    "category": "Tool",
+    "domain": "Security",
+    "eli5": "Falco is like a security camera for your computer that watches everything programs do and alerts you if something dangerous or suspicious happens.",
+    "description": "Falco is a runtime security and forensics engine that uses eBPF and system calls to detect anomalous behavior and security threats in real-time. It's essential for detecting insider threats, container escapes, and malicious activities in production environments.",
+    "use_cases": [
+      "Detecting container breakout attempts and privilege escalation",
+      "Monitoring for unauthorized file access and network connections",
+      "Tracking malicious process execution and command patterns",
+      "Compliance auditing and forensic investigation in Kubernetes clusters"
+    ],
+    "used_by": [
+      "Sysdig",
+      "AWS",
+      "Google Cloud",
+      "Shopify"
+    ],
+    "docs": "https://falco.org/docs/",
+    "tutorial": "https://falco.org/docs/getting-started/",
+    "added": "2026-10-12"
   }
 ]

@@ -14360,5 +14360,71 @@
     "docs": "https://falco.org/docs/",
     "tutorial": "https://falco.org/docs/getting-started/",
     "added": "2026-10-12"
+  },
+  {
+    "id": "uv-package-resolver",
+    "name": "uv Package Resolver",
+    "category": "Tool",
+    "domain": "Backend",
+    "eli5": "It's like a super-fast librarian that finds and organizes all the books (code libraries) your Python project needs, way quicker than the old librarian.",
+    "description": "uv is an extremely fast Python package installer and resolver written in Rust that replaces pip and pipenv. It handles dependency resolution, virtual environment management, and package installation with dramatically improved performance.",
+    "use_cases": [
+      "Fast CI/CD pipeline builds for Python projects",
+      "Local development with instant dependency installation",
+      "Monorepo Python workspace management",
+      "Migration from pip to a modern package manager"
+    ],
+    "used_by": [
+      "Anthropic",
+      "Astral",
+      "various Fortune 500 tech companies"
+    ],
+    "docs": "https://docs.astral.sh/uv/",
+    "tutorial": "https://docs.astral.sh/uv/getting-started/",
+    "added": "2026-10-13"
+  },
+  {
+    "id": "mitmproxy-extended",
+    "name": "mitmproxy (Extended)",
+    "category": "Tool",
+    "domain": "Security",
+    "eli5": "It's like a spy that sits between your computer and the internet, reading and even changing the messages before they go through, to help you understand what's happening.",
+    "description": "mitmproxy is an interactive HTTPS proxy that allows developers and security engineers to inspect, modify, and replay HTTP/HTTPS traffic in real-time with a powerful Python scripting API. It's essential for API debugging, security testing, and understanding application behavior.",
+    "use_cases": [
+      "Debugging API integrations and client-server communication",
+      "Security testing and penetration testing of web applications",
+      "Modifying requests/responses for testing edge cases",
+      "Network traffic analysis and protocol reverse engineering"
+    ],
+    "used_by": [
+      "security researchers",
+      "enterprise development teams",
+      "API integration engineers"
+    ],
+    "docs": "https://docs.mitmproxy.org/",
+    "tutorial": "https://docs.mitmproxy.org/stable/getting-started/",
+    "added": "2026-10-13"
+  },
+  {
+    "id": "corellium-mobile-virt",
+    "name": "Corellium Mobile Virtualization",
+    "category": "Platform",
+    "domain": "DevOps",
+    "eli5": "It's like having a fake iPhone or Android phone running on a computer, so developers can test apps without needing to buy real phones.",
+    "description": "Corellium provides hypervisor-based virtualization of iOS and Android devices, enabling security researchers and mobile developers to run real mobile OS kernels in virtualized environments. It supports automation, vulnerability research, and mobile app testing at scale.",
+    "use_cases": [
+      "Mobile app security testing and vulnerability research",
+      "Automated mobile testing in CI/CD pipelines",
+      "Malware analysis and reverse engineering",
+      "Large-scale mobile device testing without hardware"
+    ],
+    "used_by": [
+      "security researchers",
+      "Fortune 500 mobile teams",
+      "independent security auditors"
+    ],
+    "docs": "https://corellium.com/",
+    "tutorial": "https://corellium.com/getting-started/",
+    "added": "2026-10-13"
   }
 ]

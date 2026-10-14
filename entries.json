@@ -14426,5 +14426,120 @@
     "docs": "https://corellium.com/",
     "tutorial": "https://corellium.com/getting-started/",
     "added": "2026-10-13"
+  },
+  {
+    "id": "anthropic-sonnet",
+    "name": "Anthropic Claude Sonnet",
+    "category": "Tool",
+    "domain": "AI/ML",
+    "eli5": "Claude Sonnet is like a super-smart robot that can read and understand text really fast, kind of like a librarian who reads books incredibly quickly and remembers everything.",
+    "description": "Claude Sonnet is Anthropic's fast and capable mid-tier language model designed for high-volume, latency-sensitive applications. It balances speed and intelligence, making it ideal for real-time customer interactions and production workloads at scale.",
+    "use_cases": [
+      "Real-time customer support chatbots",
+      "Content moderation and classification",
+      "High-throughput API services",
+      "Document analysis and summarization"
+    ],
+    "used_by": [
+      "DuckDuckGo",
+      "Notion",
+      "Bridgewater Associates",
+      "IBM"
+    ],
+    "docs": "https://docs.anthropic.com/en/docs/about-claude/models/overview",
+    "tutorial": "https://docs.anthropic.com/en/docs/quickstart",
+    "added": "2026-10-14"
+  },
+  {
+    "id": "aws-amplify",
+    "name": "AWS Amplify",
+    "category": "Framework",
+    "domain": "Frontend",
+    "eli5": "AWS Amplify is like a magic toolbox that helps you build websites and apps with all the popular tools already inside, so you don't have to search for each piece separately.",
+    "description": "AWS Amplify is a comprehensive development platform that simplifies building full-stack web and mobile applications with AWS services. It provides CLI tools, UI libraries, and backend resources to accelerate development with authentication, APIs, storage, and more.",
+    "use_cases": [
+      "Building full-stack React/Vue/Angular applications",
+      "Rapid prototyping of mobile apps",
+      "Adding authentication and authorization to web apps",
+      "Setting up real-time data synchronization"
+    ],
+    "used_by": [
+      "Expedia",
+      "Accenture",
+      "Siemens",
+      "GE Digital"
+    ],
+    "docs": "https://docs.amplify.aws/",
+    "tutorial": "https://docs.amplify.aws/start/getting-started/installation/q/integration/react/",
+    "added": "2026-10-14"
+  },
+  {
+    "id": "scylla-nosql",
+    "name": "ScyllaDB NoSQL Database",
+    "category": "Platform",
+    "domain": "Database",
+    "eli5": "ScyllaDB is like a super-fast filing cabinet that can store millions of pieces of information and find them instantly, much faster than regular filing systems.",
+    "description": "ScyllaDB is a high-performance NoSQL database that's API-compatible with Apache Cassandra but written in C++ for dramatically faster performance and lower latency. It's designed for ultra-high throughput, distributed systems at scale.",
+    "use_cases": [
+      "Real-time analytics and time-series data",
+      "High-frequency trading and financial systems",
+      "IoT data collection and processing",
+      "Gaming leaderboards and user state management"
+    ],
+    "used_by": [
+      "Discord",
+      "Samsung",
+      "Wix",
+      "Cisco"
+    ],
+    "docs": "https://docs.scylladb.com/",
+    "tutorial": "https://docs.scylladb.com/stable/getting-started/",
+    "added": "2026-10-14"
+  },
+  {
+    "id": "gitpod-cloud-ide",
+    "name": "Gitpod Cloud IDE",
+    "category": "Platform",
+    "domain": "DevOps",
+    "eli5": "Gitpod is like having a computer inside the cloud that's already set up with everything you need to write code, so you don't have to set up your own computer.",
+    "description": "Gitpod is a cloud-based IDE that provides instant, pre-configured development environments from any Git repository. It eliminates setup friction by providing containerized workspaces with all necessary tools pre-installed and accessible from any browser.",
+    "use_cases": [
+      "Onboarding new developers without setup overhead",
+      "Reviewing and testing pull requests in live environments",
+      "Contributing to open-source projects",
+      "Pair programming and remote collaboration"
+    ],
+    "used_by": [
+      "Google",
+      "Meta",
+      "GitLab",
+      "Uber"
+    ],
+    "docs": "https://www.gitpod.io/docs",
+    "tutorial": "https://www.gitpod.io/docs/introduction",
+    "added": "2026-10-14"
+  },
+  {
+    "id": "openobserve-analytics",
+    "name": "OpenObserve Log Analytics",
+    "category": "Tool",
+    "domain": "SRE/Observability",
+    "eli5": "OpenObserve is like a super-organized librarian that keeps track of everything happening in your computer system and helps you quickly find problems when something goes wrong.",
+    "description": "OpenObserve is a cloud-native observability platform for logs, metrics, and traces with 10x better compression and performance than traditional solutions. It's designed to handle petabyte-scale data ingestion with minimal infrastructure costs while providing real-time insights.",
+    "use_cases": [
+      "Centralized log aggregation and analysis",
+      "Distributed tracing across microservices",
+      "Security event monitoring and threat detection",
+      "Cost-effective observability for high-volume applications"
+    ],
+    "used_by": [
+      "Yahoo",
+      "Flipkart",
+      "Dailymotion",
+      "Zoho"
+    ],
+    "docs": "https://openobserve.ai/docs/",
+    "tutorial": "https://openobserve.ai/docs/quickstart/",
+    "added": "2026-10-14"
   }
 ]

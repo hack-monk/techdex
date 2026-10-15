@@ -14541,5 +14541,28 @@
     "docs": "https://openobserve.ai/docs/",
     "tutorial": "https://openobserve.ai/docs/quickstart/",
     "added": "2026-10-14"
+  },
+  {
+    "id": "witness-artifact-attestation",
+    "name": "Witness (Artifact Attestation)",
+    "category": "Tool",
+    "domain": "Security",
+    "eli5": "It's like a digital notary that stamps and signs each step of building your software to prove nobody tampered with it.",
+    "description": "A framework for recording and verifying the provenance of software artifacts throughout the build pipeline using cryptographic attestations. It provides supply chain security by creating tamper-proof records of build steps.",
+    "use_cases": [
+      "Software supply chain security and artifact provenance",
+      "Compliance with SLSA framework requirements",
+      "Build pipeline transparency and auditability",
+      "Detection of unauthorized modifications in CI/CD workflows"
+    ],
+    "used_by": [
+      "Linux Foundation",
+      "Purdue University",
+      "IBM",
+      "Chainguard"
+    ],
+    "docs": "https://github.com/testifysec/witness",
+    "tutorial": "https://docs.testifysec.com/witness/",
+    "added": "2026-10-15"
   }
 ]

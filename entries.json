@@ -14564,5 +14564,51 @@
     "docs": "https://github.com/testifysec/witness",
     "tutorial": "https://docs.testifysec.com/witness/",
     "added": "2026-10-15"
+  },
+  {
+    "id": "go-task",
+    "name": "Task",
+    "category": "Tool",
+    "domain": "DevOps",
+    "eli5": "Task is like a to-do list for your computer that knows how to do complex chores by breaking them into smaller steps and doing them in the right order.",
+    "description": "Task is a task runner / build tool written in Go that provides a simpler and more intuitive alternative to Make. It uses YAML configuration for defining and running development tasks and scripts.",
+    "use_cases": [
+      "Automating build, test, and deployment workflows in development projects",
+      "Creating consistent development environments across team members",
+      "Running database migrations and data processing pipelines",
+      "Defining and executing complex multi-step CI/CD tasks locally"
+    ],
+    "used_by": [
+      "Go projects",
+      "Development teams",
+      "DevOps engineers",
+      "Open-source projects"
+    ],
+    "docs": "https://taskfile.dev/",
+    "tutorial": "https://taskfile.dev/usage/",
+    "added": "2026-10-16"
+  },
+  {
+    "id": "codeium",
+    "name": "Codeium",
+    "category": "Tool",
+    "domain": "AI/ML",
+    "eli5": "Codeium is like having a helpful coding buddy who sits next to you and suggests the next few lines of code as you type, for free.",
+    "description": "Codeium is a free AI-powered code completion platform that integrates with IDEs and supports multiple languages. It offers fast, privacy-respecting code suggestions without requiring account sign-ups for core features.",
+    "use_cases": [
+      "Accelerating coding velocity with intelligent code suggestions and autocompletion",
+      "Learning programming patterns and best practices through AI recommendations",
+      "Self-hosted deployment for enterprises requiring data privacy and security",
+      "Reducing boilerplate and repetitive code generation across projects"
+    ],
+    "used_by": [
+      "Individual developers",
+      "Small teams",
+      "Enterprises",
+      "Educational institutions"
+    ],
+    "docs": "https://codeium.com/docs",
+    "tutorial": "https://codeium.com/docs/quickstart/",
+    "added": "2026-10-16"
   }
 ]

@@ -14610,5 +14610,120 @@
     "docs": "https://codeium.com/docs",
     "tutorial": "https://codeium.com/docs/quickstart/",
     "added": "2026-10-16"
+  },
+  {
+    "id": "anthropic-ai-bedrock",
+    "name": "Amazon Bedrock Claude Integration",
+    "category": "Platform",
+    "domain": "AI/ML",
+    "eli5": "It's like having Claude thinking inside Amazon's cloud instead of talking to him through the internet.",
+    "description": "Amazon Bedrock provides managed access to Anthropic Claude models alongside other foundational models, enabling serverless inference without managing infrastructure. Organizations can run Claude directly within AWS with native integrations for security, compliance, and cost optimization.",
+    "use_cases": [
+      "Enterprise document analysis and content generation",
+      "Building RAG systems with AWS knowledge bases",
+      "Multi-model evaluation and comparison workflows",
+      "Compliance-heavy applications requiring AWS-hosted AI"
+    ],
+    "used_by": [
+      "AWS",
+      "Accenture",
+      "Deloitte",
+      "Enterprise customers"
+    ],
+    "docs": "https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html",
+    "tutorial": "https://aws.amazon.com/bedrock/claude/",
+    "added": "2026-10-17"
+  },
+  {
+    "id": "exa",
+    "name": "Exa (Search Index API)",
+    "category": "Tool",
+    "domain": "Data Engineering",
+    "eli5": "It's like having a super-fast librarian who can search through the entire internet and give you exactly what you need in milliseconds.",
+    "description": "Exa is a semantic search index API that enables programmatic search over the internet's content with neural embedding-based relevance ranking. It's designed for AI applications that need high-quality web search results without web scraping complexity.",
+    "use_cases": [
+      "Retrieval-augmented generation (RAG) with live web data",
+      "AI agents that need current information synthesis",
+      "Competitive intelligence and market research automation",
+      "Content discovery for recommendation systems"
+    ],
+    "used_by": [
+      "Perplexity AI",
+      "Anthropic research",
+      "Y Combinator startups",
+      "Reasoning AI applications"
+    ],
+    "docs": "https://docs.exa.ai/",
+    "tutorial": "https://docs.exa.ai/getting-started",
+    "added": "2026-10-17"
+  },
+  {
+    "id": "bazel-remote-execution",
+    "name": "Bazel Remote Execution (BuildBarn)",
+    "category": "Tool",
+    "domain": "CI/CD",
+    "eli5": "Instead of building your code on your laptop, you send it to powerful computers in the cloud who build it super fast in parallel.",
+    "description": "Bazel Remote Execution enables distributed build and test execution across multiple machines, dramatically reducing build times for large monorepos. BuildBarn and similar RE implementations provide open-source infrastructure for scaling CI/CD pipelines horizontally.",
+    "use_cases": [
+      "Massive monorepo builds with thousands of targets",
+      "Parallelized test execution across distributed agents",
+      "Cost-efficient CI/CD scaling without vendor lock-in",
+      "Deterministic builds with caching across teams"
+    ],
+    "used_by": [
+      "Google",
+      "Twitter",
+      "Stripe",
+      "Databricks"
+    ],
+    "docs": "https://bazel.build/remote/rbe",
+    "tutorial": "https://github.com/buchgr/bazel-remote-execution",
+    "added": "2026-10-17"
+  },
+  {
+    "id": "forgejo-forge",
+    "name": "Forgejo (Git Forge)",
+    "category": "Platform",
+    "domain": "DevOps",
+    "eli5": "It's like GitHub but you can install it on your own computer and own all your code completely.",
+    "description": "Forgejo is a lightweight, self-hosted git forge (Gitea fork) that provides a complete alternative to GitHub for teams wanting full control over their repositories and workflows. It emphasizes simplicity, performance, and being genuinely open source with no corporate backing.",
+    "use_cases": [
+      "Self-hosted git repositories for organizations with data sovereignty requirements",
+      "Enterprise git infrastructure without GitHub/GitLab cost overhead",
+      "Teams wanting vendor-independent DevOps infrastructure",
+      "Integration with on-premise CI/CD and security systems"
+    ],
+    "used_by": [
+      "Open source communities",
+      "European enterprises",
+      "Government agencies",
+      "Privacy-conscious organizations"
+    ],
+    "docs": "https://forgejo.org/docs/",
+    "tutorial": "https://forgejo.org/docs/latest/admin/installation/",
+    "added": "2026-10-17"
+  },
+  {
+    "id": "headscale-wireguard",
+    "name": "Headscale (Tailscale Controller)",
+    "category": "Tool",
+    "domain": "Networking",
+    "eli5": "It's like Tailscale but you run the control center yourself instead of using Tailscale's cloud.",
+    "description": "Headscale is an open-source implementation of the Tailscale control plane, allowing organizations to run a self-hosted mesh VPN without relying on Tailscale's cloud infrastructure. It maintains protocol compatibility with Tailscale clients while providing complete autonomy over network control.",
+    "use_cases": [
+      "Zero-trust networking for self-hosted infrastructure",
+      "Organizations with air-gapped or on-premise requirements",
+      "Cost reduction for teams already using Tailscale clients",
+      "Integration with existing identity and access management systems"
+    ],
+    "used_by": [
+      "Open source projects",
+      "Privacy-focused organizations",
+      "Enterprise DevOps teams",
+      "Research institutions"
+    ],
+    "docs": "https://headscale.net/",
+    "tutorial": "https://headscale.net/getting-started/",
+    "added": "2026-10-17"
   }
 ]

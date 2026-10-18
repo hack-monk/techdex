@@ -14725,5 +14725,28 @@
     "docs": "https://headscale.net/",
     "tutorial": "https://headscale.net/getting-started/",
     "added": "2026-10-17"
+  },
+  {
+    "id": "anthropic-batch-processing-api",
+    "name": "Anthropic Batch Processing API",
+    "category": "Tool",
+    "domain": "AI/ML",
+    "eli5": "It's like dropping off a bunch of homework assignments at school all at once and picking them all up the next day, instead of doing them one at a time.",
+    "description": "The Anthropic Batch Processing API allows developers to submit multiple API requests in bulk and process them asynchronously at lower cost. It's ideal for non-time-sensitive workloads like data processing, content generation, and analysis at scale.",
+    "use_cases": [
+      "Processing large datasets with Claude for classification or extraction tasks",
+      "Cost-effective content generation for batch document processing",
+      "Analyzing historical data or logs in bulk without time constraints",
+      "Training data generation and synthetic data creation"
+    ],
+    "used_by": [
+      "Scale AI",
+      "Jasper",
+      "Copy.ai",
+      "Writer"
+    ],
+    "docs": "https://docs.anthropic.com/en/docs/build/batch-processing-guide",
+    "tutorial": "https://docs.anthropic.com/en/docs/build/batch-processing-guide",
+    "added": "2026-10-18"
   }
 ]

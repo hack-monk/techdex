@@ -14748,5 +14748,49 @@
     "docs": "https://docs.anthropic.com/en/docs/build/batch-processing-guide",
     "tutorial": "https://docs.anthropic.com/en/docs/build/batch-processing-guide",
     "added": "2026-10-18"
+  },
+  {
+    "id": "libsql",
+    "name": "LibSQL",
+    "category": "Platform",
+    "domain": "Database",
+    "eli5": "It's like SQLite but with superpowers that let you use it over the internet just like you would on your computer.",
+    "description": "LibSQL is an open-source SQL database engine that extends SQLite with replication, distributed capabilities, and network access while maintaining compatibility. It enables developers to use SQLite-like simplicity with production-grade features for edge computing and serverless applications.",
+    "use_cases": [
+      "Building serverless applications with local-first databases",
+      "Edge computing and distributed database deployments",
+      "Replicating databases across multiple regions",
+      "Running SQLite with remote sync in web applications"
+    ],
+    "used_by": [
+      "Turso",
+      "Cloudflare",
+      "Edge computing platforms"
+    ],
+    "docs": "https://github.com/libsql/libsql",
+    "tutorial": "https://docs.turso.tech/libsql",
+    "added": "2026-10-19"
+  },
+  {
+    "id": "supabase-vectors",
+    "name": "Supabase Vectors (pgvector)",
+    "category": "Tool",
+    "domain": "Database",
+    "eli5": "It's like a librarian who can find books that are similar to another book by comparing their meanings, not just keywords.",
+    "description": "Supabase Vectors leverages pgvector to provide native vector search capabilities within PostgreSQL, enabling semantic search and similarity matching directly in your database. This eliminates the need for separate vector databases while keeping all data in one place with full SQL compatibility.",
+    "use_cases": [
+      "Semantic search and similarity recommendations in applications",
+      "Building RAG (Retrieval Augmented Generation) systems",
+      "Implementing AI-powered search features",
+      "Storing and querying embeddings alongside relational data"
+    ],
+    "used_by": [
+      "LLM application startups",
+      "Search-focused products",
+      "AI SaaS platforms"
+    ],
+    "docs": "https://supabase.com/docs/guides/database/extensions/pgvector",
+    "tutorial": "https://supabase.com/docs/guides/ai",
+    "added": "2026-10-19"
   }
 ]

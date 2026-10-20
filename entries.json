@@ -14792,5 +14792,120 @@
     "docs": "https://supabase.com/docs/guides/database/extensions/pgvector",
     "tutorial": "https://supabase.com/docs/guides/ai",
     "added": "2026-10-19"
+  },
+  {
+    "id": "axway-api-gateway",
+    "name": "Axway API Gateway",
+    "category": "Tool",
+    "domain": "Backend",
+    "eli5": "It's like a security guard at a theme park entrance who checks tickets and makes sure only the right people get in and out.",
+    "description": "Axway API Gateway is an enterprise API management platform that provides traffic management, security policies, and API lifecycle governance. It enables organizations to securely expose, manage, and monetize APIs across hybrid and multi-cloud environments.",
+    "use_cases": [
+      "API traffic management and rate limiting for high-scale microservices",
+      "OAuth 2.0 and API key authentication enforcement",
+      "API versioning and deprecation management",
+      "Real-time API performance monitoring and analytics"
+    ],
+    "used_by": [
+      "Axway",
+      "Fortune 500 financial institutions",
+      "Global telecommunications providers",
+      "Automotive manufacturers"
+    ],
+    "docs": "https://docs.axway.com/bundle/APIGateway_7.7_AdminGuide_allOS_en_HTML5/page/Content/AdminGuideTopics/Overview.htm",
+    "tutorial": "https://docs.axway.com/bundle/APIGateway_77_GettingStartedGuide_allOS_en_HTML5/page/Content/GettingStartedTopics/Introduction.htm",
+    "added": "2026-10-20"
+  },
+  {
+    "id": "datadog-synthetic-monitoring",
+    "name": "Datadog Synthetic Monitoring",
+    "category": "Tool",
+    "domain": "SRE/Observability",
+    "eli5": "It's like having a robot that constantly tries to use your website to make sure everything works, like a quality control inspector.",
+    "description": "Datadog Synthetic Monitoring provides proactive testing of applications and APIs across the world using simulated user journeys and API tests. It enables teams to detect performance issues and outages before they impact real users.",
+    "use_cases": [
+      "End-to-end user journey testing across global locations",
+      "API endpoint health checks and SLA monitoring",
+      "Synthetic traffic generation for performance baselines",
+      "Multi-step browser automation for critical business flows"
+    ],
+    "used_by": [
+      "Datadog",
+      "Airbnb",
+      "PagerDuty",
+      "Slack"
+    ],
+    "docs": "https://docs.datadoghq.com/synthetics/",
+    "tutorial": "https://docs.datadoghq.com/synthetics/getting_started/",
+    "added": "2026-10-20"
+  },
+  {
+    "id": "sumo-logic-analytics",
+    "name": "Sumo Logic",
+    "category": "Tool",
+    "domain": "SRE/Observability",
+    "eli5": "It's like a giant diary that records everything happening in your computer systems and helps you find patterns when something goes wrong.",
+    "description": "Sumo Logic is a cloud-native observability platform for machine data analytics that ingests, searches, and visualizes logs, metrics, and traces at scale. It provides real-time insights into application and infrastructure performance.",
+    "use_cases": [
+      "Log aggregation and full-text search across distributed systems",
+      "Security information and event management (SIEM) for threat detection",
+      "Application performance monitoring with distributed tracing",
+      "Cloud cost optimization and resource utilization analysis"
+    ],
+    "used_by": [
+      "Sumo Logic",
+      "Adobe",
+      "Salesforce",
+      "Accenture"
+    ],
+    "docs": "https://help.sumologic.com/",
+    "tutorial": "https://help.sumologic.com/docs/get-started/",
+    "added": "2026-10-20"
+  },
+  {
+    "id": "kong-api-gateway",
+    "name": "Kong API Gateway",
+    "category": "Tool",
+    "domain": "Backend",
+    "eli5": "It's like a smart traffic director for your API requests, deciding which lane each request takes and keeping track of who's using it.",
+    "description": "Kong is an open-source API gateway and service connectivity platform built on top of Nginx that provides plugins for authentication, rate limiting, logging, and traffic control. It enables organizations to manage and secure API traffic in microservice architectures.",
+    "use_cases": [
+      "API gateway for microservices architecture",
+      "Authentication and authorization for APIs (OAuth, JWT, LDAP)",
+      "Request/response transformation and logging",
+      "Plugin ecosystem for custom middleware and integrations"
+    ],
+    "used_by": [
+      "Kong",
+      "Spotify",
+      "Netflix",
+      "IBM"
+    ],
+    "docs": "https://docs.kong.org/",
+    "tutorial": "https://docs.kong.org/latest/getting-started/",
+    "added": "2026-10-20"
+  },
+  {
+    "id": "wiz-cloud-security-posture",
+    "name": "Wiz Cloud Security Platform",
+    "category": "Tool",
+    "domain": "Security",
+    "eli5": "It's like a security camera system for your cloud that watches everything and tells you if anything looks suspicious or broken.",
+    "description": "Wiz is a cloud security platform that provides real-time threat detection, vulnerability management, and compliance monitoring across multi-cloud environments using agentless scanning. It helps organizations identify and remediate security risks before they can be exploited.",
+    "use_cases": [
+      "Real-time cloud infrastructure risk prioritization and remediation",
+      "Vulnerability scanning and exposure management in multi-cloud",
+      "Compliance monitoring for regulatory standards (SOC2, HIPAA, PCI-DSS)",
+      "Container and Kubernetes security posture assessment"
+    ],
+    "used_by": [
+      "Wiz",
+      "Slack",
+      "Databricks",
+      "SailPoint"
+    ],
+    "docs": "https://docs.wiz.io/",
+    "tutorial": "https://docs.wiz.io/wiz-docs/docs/getting-started",
+    "added": "2026-10-20"
   }
 ]

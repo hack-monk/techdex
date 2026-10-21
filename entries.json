@@ -14907,5 +14907,71 @@
     "docs": "https://docs.wiz.io/",
     "tutorial": "https://docs.wiz.io/wiz-docs/docs/getting-started",
     "added": "2026-10-20"
+  },
+  {
+    "id": "anthropic-computer-use",
+    "name": "Anthropic Computer Use",
+    "category": "Tool",
+    "domain": "AI/ML",
+    "eli5": "It's like giving Claude eyes and hands so it can see your screen and click buttons to do tasks for you, just like a helpful robot assistant.",
+    "description": "An extension to Claude that enables AI to interact with computer interfaces through vision and action capabilities, allowing autonomous task execution like web browsing, form filling, and application control. This extends Claude's abilities beyond text to perform end-user workflows programmatically.",
+    "use_cases": [
+      "Automating web scraping and data extraction from dynamic websites",
+      "Autonomous testing and quality assurance across web applications",
+      "Workflow automation for business processes requiring UI interaction",
+      "Customer support automation through ticket system navigation and response"
+    ],
+    "used_by": [
+      "Anthropic",
+      "Automation service providers",
+      "Enterprise software vendors"
+    ],
+    "docs": "https://www.anthropic.com/news/3-5-models-and-computer-use",
+    "tutorial": "https://docs.anthropic.com/en/docs/build-a-prototype#computer-use-beta",
+    "added": "2026-10-21"
+  },
+  {
+    "id": "evals-cloud-testing",
+    "name": "Evals (OpenAI Evals)",
+    "category": "Tool",
+    "domain": "AI/ML",
+    "eli5": "It's like a report card for AI models that grades them on whether they give good answers to test questions, so you know if they're smart enough for your job.",
+    "description": "OpenAI's framework for evaluating large language models on custom criteria and benchmarks, enabling systematic assessment of model quality before production deployment. It provides standardized evaluation patterns and scoring mechanisms for AI applications.",
+    "use_cases": [
+      "Benchmarking LLM performance before production deployment",
+      "Creating custom evaluation datasets for domain-specific tasks",
+      "Comparing different models or prompts objectively",
+      "Monitoring model quality regression across versions"
+    ],
+    "used_by": [
+      "OpenAI",
+      "Anthropic",
+      "Scale AI"
+    ],
+    "docs": "https://github.com/openai/evals",
+    "tutorial": "https://github.com/openai/evals/blob/main/docs/tutorial.md",
+    "added": "2026-10-21"
+  },
+  {
+    "id": "seafowl-olap-engine",
+    "name": "Seafowl",
+    "category": "Tool",
+    "domain": "Data Engineering",
+    "eli5": "It's like a super-fast librarian who can find and organize millions of pieces of paper in seconds so you can ask questions about your data instantly.",
+    "description": "A lightweight OLAP (online analytical processing) database engine built in Rust that enables SQL analytics on data stored in cloud object storage without requiring ETL pipelines. It combines the speed of columnar databases with the flexibility of cloud-native architecture.",
+    "use_cases": [
+      "Real-time analytics on data lakes without expensive data warehouses",
+      "Interactive SQL queries on petabyte-scale datasets",
+      "Analytics-on-object-storage for cost-effective data exploration",
+      "Building analytics features into applications without separate infrastructure"
+    ],
+    "used_by": [
+      "Splitgraph",
+      "Analytics-focused startups",
+      "Enterprise data teams"
+    ],
+    "docs": "https://seafowl.io/docs",
+    "tutorial": "https://seafowl.io/docs/guides/getting-started",
+    "added": "2026-10-21"
   }
 ]

@@ -14973,5 +14973,97 @@
     "docs": "https://seafowl.io/docs",
     "tutorial": "https://seafowl.io/docs/guides/getting-started",
     "added": "2026-10-21"
+  },
+  {
+    "id": "stripe-webhooks",
+    "name": "Stripe Webhooks",
+    "category": "Tool",
+    "domain": "Backend",
+    "eli5": "Webhooks are like a doorbell for your application that rings whenever something important happens with your payments.",
+    "description": "Stripe Webhooks enable real-time event notifications for payment and subscription activities, allowing applications to react instantly to payment status changes, charges, disputes, and customer events. Essential for building reliable payment workflows and automated billing systems.",
+    "use_cases": [
+      "Automated invoice generation on successful payments",
+      "Subscription management and renewal notifications",
+      "Fraud detection and dispute handling",
+      "Revenue recognition and financial reporting"
+    ],
+    "used_by": [
+      "Slack",
+      "Figma",
+      "Shopify",
+      "Twilio"
+    ],
+    "docs": "https://stripe.com/docs/webhooks",
+    "tutorial": "https://stripe.com/docs/webhooks/quickstart",
+    "added": "2026-10-22"
+  },
+  {
+    "id": "crowdstrike-falcon",
+    "name": "CrowdStrike Falcon",
+    "category": "Platform",
+    "domain": "Security",
+    "eli5": "Falcon is like a security guard for your computer that watches for bad guys trying to break in and stops them before they can cause trouble.",
+    "description": "CrowdStrike Falcon is a cloud-native endpoint protection platform that uses behavioral AI and machine learning to detect and prevent cyberattacks in real-time. It's the industry-leading solution for endpoint detection and response (EDR) with extensive threat intelligence capabilities.",
+    "use_cases": [
+      "Real-time detection of malware and ransomware attacks",
+      "Threat hunting and incident response automation",
+      "Compliance monitoring and regulatory reporting",
+      "Vulnerability assessment and patch management"
+    ],
+    "used_by": [
+      "Microsoft",
+      "Adobe",
+      "Goldman Sachs",
+      "Coca-Cola"
+    ],
+    "docs": "https://falcon.crowdstrike.com/documentation/",
+    "tutorial": "https://falcon.crowdstrike.com/learn/",
+    "added": "2026-10-22"
+  },
+  {
+    "id": "clickhouse-vector-db",
+    "name": "ClickHouse for Vector Search",
+    "category": "Tool",
+    "domain": "Database",
+    "eli5": "ClickHouse is like a super-fast filing cabinet that can instantly find similar things by remembering what they're like, not just searching for exact matches.",
+    "description": "ClickHouse is a columnar OLAP database that now supports vector similarity search, enabling high-performance semantic search and AI-powered applications alongside traditional analytics. It's designed for storing billions of embeddings and running real-time vector queries at scale.",
+    "use_cases": [
+      "Semantic search and recommendation systems",
+      "Real-time vector similarity search on large datasets",
+      "Hybrid search combining vector and keyword matching",
+      "Time-series data with embedding analysis"
+    ],
+    "used_by": [
+      "Yandex",
+      "Bloomberg",
+      "Instana",
+      "Alibaba"
+    ],
+    "docs": "https://clickhouse.com/docs/",
+    "tutorial": "https://clickhouse.com/docs/en/vector-search-tutorial",
+    "added": "2026-10-22"
+  },
+  {
+    "id": "fly-io",
+    "name": "Fly.io",
+    "category": "Platform",
+    "domain": "Cloud",
+    "eli5": "Fly.io is like having a network of mailboxes around the world where you can put your app, so people everywhere can get to it super fast.",
+    "description": "Fly.io is a platform that allows developers to deploy and run full-stack applications globally with automatic scaling, persistent storage, and edge computing capabilities. It simplifies deployment with Docker containers and provides low-latency access through distributed infrastructure.",
+    "use_cases": [
+      "Full-stack application deployment with global distribution",
+      "Low-latency edge computing and serverless functions",
+      "Database and persistent storage deployment",
+      "WebSocket and real-time application hosting"
+    ],
+    "used_by": [
+      "Vercel",
+      "Hashicorp",
+      "Prisma",
+      "Auth0"
+    ],
+    "docs": "https://fly.io/docs/",
+    "tutorial": "https://fly.io/docs/getting-started/",
+    "added": "2026-10-22"
   }
 ]

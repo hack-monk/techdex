@@ -15065,5 +15065,51 @@
     "docs": "https://fly.io/docs/",
     "tutorial": "https://fly.io/docs/getting-started/",
     "added": "2026-10-22"
+  },
+  {
+    "id": "zed-editor",
+    "name": "Zed",
+    "category": "Tool",
+    "domain": "Frontend",
+    "eli5": "It's like a race car version of a text editor\u2014built from scratch to be lightning-fast and designed for multiple people to code together in real-time.",
+    "description": "Zed is a high-performance code editor written in Rust that emphasizes speed, collaboration, and modern developer experience. It features built-in collaborative editing, AI integration, and GPU-accelerated rendering.",
+    "use_cases": [
+      "Real-time collaborative coding sessions with team members",
+      "High-performance local code editing with minimal latency",
+      "Integrating AI assistants directly into the editor workflow",
+      "Remote pair programming and mob programming sessions"
+    ],
+    "used_by": [
+      "Anthropic",
+      "Figma",
+      "Notion",
+      "Databricks"
+    ],
+    "docs": "https://zed.dev/docs/",
+    "tutorial": "https://zed.dev/docs/getting-started",
+    "added": "2026-10-23"
+  },
+  {
+    "id": "wasp-framework",
+    "name": "Wasp",
+    "category": "Framework",
+    "domain": "Backend",
+    "eli5": "It's like a blueprint system that lets you draw a simple diagram of your app, and magic machines build all the boring repetitive parts for you.",
+    "description": "Wasp is a full-stack web framework that uses a domain-specific language to define apps, automatically generating type-safe client-server code and handling authentication, database, and deployment boilerplate. It bridges the gap between frontend and backend with minimal configuration.",
+    "use_cases": [
+      "Building full-stack SaaS applications with minimal boilerplate",
+      "Rapidly prototyping web applications with built-in auth and database",
+      "Creating type-safe client-server communication automatically",
+      "Deploying applications to production with one command"
+    ],
+    "used_by": [
+      "HashiCorp",
+      "Y Combinator startups",
+      "Fortune 500 tech divisions",
+      "Open source contributors"
+    ],
+    "docs": "https://wasp-lang.dev/docs/",
+    "tutorial": "https://wasp-lang.dev/docs/quick-start",
+    "added": "2026-10-23"
   }
 ]

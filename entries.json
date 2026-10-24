@@ -15111,5 +15111,50 @@
     "docs": "https://wasp-lang.dev/docs/",
     "tutorial": "https://wasp-lang.dev/docs/quick-start",
     "added": "2026-10-23"
+  },
+  {
+    "id": "tailwindlabs-v4",
+    "name": "Tailwind CSS v4",
+    "category": "Framework",
+    "domain": "Frontend",
+    "eli5": "It's like a box of pre-made LEGO pieces for styling your websites so you don't have to paint each brick yourself.",
+    "description": "Tailwind CSS v4 is a utility-first CSS framework that enables rapid UI development by composing pre-built utility classes directly in HTML. It reduces the need to write custom CSS while maintaining design consistency and performance.",
+    "use_cases": [
+      "Building responsive web applications with minimal custom CSS",
+      "Rapid prototyping and MVP development for startups",
+      "Maintaining consistent design systems across large teams",
+      "Creating dark mode and theme variants efficiently"
+    ],
+    "used_by": [
+      "Vercel",
+      "GitHub",
+      "Shopify",
+      "Figma"
+    ],
+    "docs": "https://tailwindcss.com/docs",
+    "tutorial": "https://tailwindcss.com/docs/installation",
+    "added": "2026-10-24"
+  },
+  {
+    "id": "ix-data-fabric",
+    "name": "IX Data Fabric",
+    "category": "Platform",
+    "domain": "Data Engineering",
+    "eli5": "It's like having a smart librarian who instantly knows where every book is stored and can fetch exactly the pages you need, whether they're in your local library or across the country.",
+    "description": "IX (formerly Infosphere) is an open data fabric platform that abstracts data sources and enables unified access to distributed data across clouds, on-premises, and edge systems. It simplifies data discovery, integration, and governance without requiring data movement.",
+    "use_cases": [
+      "Unified data access across hybrid and multi-cloud environments",
+      "Data governance and lineage tracking across organizations",
+      "Federated query execution across heterogeneous data sources",
+      "Data virtualization for real-time analytics without ETL"
+    ],
+    "used_by": [
+      "IBM",
+      "Deloitte",
+      "Enterprise organizations"
+    ],
+    "docs": "https://cloud.ibm.com/docs/data-fabric",
+    "tutorial": "https://cloud.ibm.com/docs/data-fabric?topic=data-fabric-getting-started",
+    "added": "2026-10-24"
   }
 ]

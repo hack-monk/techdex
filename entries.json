@@ -15156,5 +15156,51 @@
     "docs": "https://cloud.ibm.com/docs/data-fabric",
     "tutorial": "https://cloud.ibm.com/docs/data-fabric?topic=data-fabric-getting-started",
     "added": "2026-10-24"
+  },
+  {
+    "id": "paxos",
+    "name": "Paxos",
+    "category": "Concept",
+    "domain": "Messaging",
+    "eli5": "Paxos is like a group of people voting on a decision, where they keep talking until everyone agrees on the same answer, even if some people aren't paying attention.",
+    "description": "Paxos is a consensus algorithm that enables distributed systems to agree on a single value despite network delays and node failures. It's fundamental to building reliable distributed databases and coordination services.",
+    "use_cases": [
+      "State machine replication in distributed databases",
+      "Leader election in clustered systems",
+      "Coordinating distributed transactions across multiple data centers",
+      "Building fault-tolerant consensus protocols"
+    ],
+    "used_by": [
+      "Google",
+      "Meta",
+      "Amazon",
+      "Microsoft"
+    ],
+    "docs": "https://lamport.azurewebsites.net/paxos/paxos.pdf",
+    "tutorial": "https://en.wikipedia.org/wiki/Paxos_(computer_science)",
+    "added": "2026-10-25"
+  },
+  {
+    "id": "temporal-io",
+    "name": "Temporal.io",
+    "category": "Platform",
+    "domain": "Backend",
+    "eli5": "Temporal.io is like a super-reliable to-do list that never loses your tasks, automatically retries them if they fail, and remembers exactly where you left off.",
+    "description": "Temporal is an open-source platform for building reliable, scalable distributed workflows with built-in fault tolerance, automatic retries, and state management. It simplifies building complex business logic that spans multiple services and handling failures gracefully.",
+    "use_cases": [
+      "Orchestrating microservice workflows with automatic retries",
+      "Processing long-running asynchronous operations",
+      "Building resilient payment and order processing systems",
+      "Implementing complex multi-step business processes"
+    ],
+    "used_by": [
+      "Stripe",
+      "Datadog",
+      "Snap",
+      "Notion"
+    ],
+    "docs": "https://docs.temporal.io/",
+    "tutorial": "https://learn.temporal.io/",
+    "added": "2026-10-25"
   }
 ]

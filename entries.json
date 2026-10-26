@@ -15202,5 +15202,74 @@
     "docs": "https://docs.temporal.io/",
     "tutorial": "https://learn.temporal.io/",
     "added": "2026-10-25"
+  },
+  {
+    "id": "stripe-payments-api",
+    "name": "Stripe Payments API",
+    "category": "Platform",
+    "domain": "Other",
+    "eli5": "Stripe is like a payment cashier that handles all the money stuff for your online store so you don't have to worry about it.",
+    "description": "Stripe Payments API is a comprehensive payment processing platform handling credit cards, digital wallets, and alternative payment methods globally. It provides fraud detection, subscription billing, and financial reporting in a developer-friendly API.",
+    "use_cases": [
+      "E-commerce checkout and subscription billing",
+      "Marketplace and multi-vendor payment splits",
+      "Invoice generation and payment tracking",
+      "Fraud detection and compliance reporting"
+    ],
+    "used_by": [
+      "Shopify",
+      "DoorDash",
+      "Pinterest",
+      "Figma"
+    ],
+    "docs": "https://stripe.com/docs/api",
+    "tutorial": "https://stripe.com/docs/checkout/quickstart",
+    "added": "2026-10-26"
+  },
+  {
+    "id": "qwak-mlops",
+    "name": "Qwak MLOps Platform",
+    "category": "Platform",
+    "domain": "AI/ML",
+    "eli5": "Qwak is like a factory manager for AI models, making sure they work smoothly in production and keeping them healthy and fast.",
+    "description": "Qwak is an end-to-end MLOps platform that simplifies model deployment, monitoring, and scaling in production environments. It handles infrastructure management, A/B testing, and model versioning with minimal engineering overhead.",
+    "use_cases": [
+      "Production model deployment and serving at scale",
+      "A/B testing and canary deployments for ML models",
+      "Real-time model monitoring and performance tracking",
+      "Automated retraining pipelines and model governance"
+    ],
+    "used_by": [
+      "Intuit",
+      "Wix",
+      "SailPoint",
+      "Outbrain"
+    ],
+    "docs": "https://docs.qwak.com/",
+    "tutorial": "https://docs.qwak.com/quickstart/deploy-your-model",
+    "added": "2026-10-26"
+  },
+  {
+    "id": "permify-authorization",
+    "name": "Permify Authorization Engine",
+    "category": "Platform",
+    "domain": "Identity",
+    "eli5": "Permify is like a bouncer at a club who instantly checks if someone is allowed to do something, based on complicated rules.",
+    "description": "Permify is an open-source authorization engine that manages fine-grained access control using relationship-based permissions. It provides real-time permission evaluation with support for complex organizational hierarchies and role-based access patterns.",
+    "use_cases": [
+      "Fine-grained access control in SaaS applications",
+      "Hierarchical permission management for enterprise systems",
+      "Multi-tenant resource authorization",
+      "Real-time permission updates and audit logging"
+    ],
+    "used_by": [
+      "Superlist",
+      "Hyperise",
+      "Evercam",
+      "Brex"
+    ],
+    "docs": "https://docs.permify.co/",
+    "tutorial": "https://docs.permify.co/getting-started/quickstart",
+    "added": "2026-10-26"
   }
 ]

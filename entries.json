@@ -15271,5 +15271,28 @@
     "docs": "https://docs.permify.co/",
     "tutorial": "https://docs.permify.co/getting-started/quickstart",
     "added": "2026-10-26"
+  },
+  {
+    "id": "cloudflare-warp",
+    "name": "Cloudflare Warp",
+    "category": "Tool",
+    "domain": "Networking",
+    "eli5": "It's like putting on a magic cloak that hides where you're really located and speeds up your internet all at once.",
+    "description": "Cloudflare Warp is a lightweight VPN and network optimization tool that replaces traditional VPN clients with a faster, more privacy-focused alternative. It routes traffic through Cloudflare's global network to improve performance and security.",
+    "use_cases": [
+      "Secure remote workforce access without traditional VPN overhead",
+      "Network performance optimization for globally distributed teams",
+      "Privacy protection on public Wi-Fi networks",
+      "Zero-trust security implementation for enterprise access"
+    ],
+    "used_by": [
+      "Cloudflare customers",
+      "Enterprise organizations",
+      "Remote-first companies",
+      "Security-conscious users"
+    ],
+    "docs": "https://developers.cloudflare.com/warp-client/",
+    "tutorial": "https://developers.cloudflare.com/warp-client/get-started/",
+    "added": "2026-10-27"
   }
 ]

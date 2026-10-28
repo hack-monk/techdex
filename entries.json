@@ -15294,5 +15294,51 @@
     "docs": "https://developers.cloudflare.com/warp-client/",
     "tutorial": "https://developers.cloudflare.com/warp-client/get-started/",
     "added": "2026-10-27"
+  },
+  {
+    "id": "sourcegraph",
+    "name": "Sourcegraph",
+    "category": "Tool",
+    "domain": "DevOps",
+    "eli5": "Sourcegraph is like a super-smart search engine for your code that can find and understand anything across all your projects at once.",
+    "description": "Sourcegraph is a code intelligence platform that provides AI-powered code search, navigation, and insights across large codebases. It enables teams to understand, fix, and automate large-scale code changes.",
+    "use_cases": [
+      "Finding and refactoring code patterns across entire repositories",
+      "Understanding API usage and dependencies at scale",
+      "Automating mass code migrations and dependency upgrades",
+      "Enforcing code standards and security policies organization-wide"
+    ],
+    "used_by": [
+      "Uber",
+      "Stripe",
+      "Lyft",
+      "Shopify"
+    ],
+    "docs": "https://sourcegraph.com/docs",
+    "tutorial": "https://sourcegraph.com/docs/getting-started",
+    "added": "2026-10-28"
+  },
+  {
+    "id": "node-red",
+    "name": "Node-RED",
+    "category": "Platform",
+    "domain": "Backend",
+    "eli5": "Node-RED is like building with LEGO blocks\u2014you connect different pieces together to make your apps and IoT devices talk to each other without writing much code.",
+    "description": "Node-RED is a low-code programming tool for connecting hardware devices, APIs, and online services using a flow-based visual interface. It runs on Node.js and is widely used for IoT, automation, and integration workflows.",
+    "use_cases": [
+      "Building IoT applications that connect sensors and devices",
+      "Creating serverless automation workflows and integrations",
+      "Prototyping and experimenting with APIs quickly",
+      "Real-time data processing and event-driven applications"
+    ],
+    "used_by": [
+      "IBM",
+      "Bosch",
+      "Siemens",
+      "Cisco"
+    ],
+    "docs": "https://nodered.org/docs",
+    "tutorial": "https://nodered.org/docs/getting-started",
+    "added": "2026-10-28"
   }
 ]

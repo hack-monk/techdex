@@ -15340,5 +15340,97 @@
     "docs": "https://nodered.org/docs",
     "tutorial": "https://nodered.org/docs/getting-started",
     "added": "2026-10-28"
+  },
+  {
+    "id": "gitpod-alternative-codespaceship",
+    "name": "Codespaceship",
+    "category": "Platform",
+    "domain": "DevOps",
+    "eli5": "Codespaceship is like a fully-stocked workshop in the cloud that you can access from anywhere without installing anything on your computer.",
+    "description": "Codespaceship (formerly known as code-server web IDE hosting) provides cloud-based development environments that can be launched instantly from any repository. It enables remote development with full IDE functionality accessible through a browser.",
+    "use_cases": [
+      "Onboarding new developers without local setup time",
+      "Pair programming and remote collaboration workflows",
+      "Teaching coding in classrooms and bootcamps",
+      "Secure development environments for regulated industries"
+    ],
+    "used_by": [
+      "GitHub",
+      "GitLab",
+      "various enterprises",
+      "educational institutions"
+    ],
+    "docs": "https://code.visualstudio.com/docs/remote/remote-overview",
+    "tutorial": "https://github.com/coder/code-server",
+    "added": "2026-10-29"
+  },
+  {
+    "id": "runwayml-alternative-stability",
+    "name": "Stability AI",
+    "category": "Platform",
+    "domain": "AI/ML",
+    "eli5": "Stability AI is like a magical art studio in the cloud that can create pictures, videos, and music from your descriptions.",
+    "description": "Stability AI provides open-source and proprietary generative AI models including Stable Diffusion for image generation, Stable Video Diffusion, and audio generation capabilities. It democratizes access to powerful generative models through APIs and open releases.",
+    "use_cases": [
+      "Generating product images and marketing assets for e-commerce",
+      "Creating video content from text descriptions",
+      "Building creative tools and applications with generative capabilities",
+      "Prototyping visual designs at scale"
+    ],
+    "used_by": [
+      "Adobe",
+      "Canva",
+      "Runway",
+      "DreamStudio users"
+    ],
+    "docs": "https://platform.stability.ai/docs/",
+    "tutorial": "https://github.com/stability-ai/stable-diffusion",
+    "added": "2026-10-29"
+  },
+  {
+    "id": "supabase-alternative-pocketbase-postgres",
+    "name": "Nhost",
+    "category": "Platform",
+    "domain": "Backend",
+    "eli5": "Nhost is like a backend restaurant that serves you a complete meal (database, authentication, storage, APIs) instead of making you cook each ingredient separately.",
+    "description": "Nhost is an open-source backend-as-a-service platform built on PostgreSQL that provides instant GraphQL APIs, authentication, file storage, and serverless functions. It combines the power of PostgreSQL with modern developer tooling for rapid application development.",
+    "use_cases": [
+      "Building full-stack applications without writing backend code",
+      "Real-time GraphQL subscriptions for live data updates",
+      "Multi-tenant SaaS applications with built-in auth",
+      "Rapid prototyping and MVP development"
+    ],
+    "used_by": [
+      "Startups using GraphQL",
+      "mobile app developers",
+      "full-stack teams",
+      "enterprise prototyping"
+    ],
+    "docs": "https://docs.nhost.io/",
+    "tutorial": "https://docs.nhost.io/quickstarts",
+    "added": "2026-10-29"
+  },
+  {
+    "id": "oslo-crypto-library",
+    "name": "Oslo",
+    "category": "Tool",
+    "domain": "Security",
+    "eli5": "Oslo is like a security vault that helps you safely lock away passwords and secrets using math that's impossible to break.",
+    "description": "Oslo is a collection of cryptographic utilities and password hashing libraries (including Argon2 and Scrypt) designed for building secure applications. It provides easy-to-use APIs for password hashing, encryption, and token generation with sensible defaults.",
+    "use_cases": [
+      "Hashing and verifying user passwords securely",
+      "Generating secure session tokens and API keys",
+      "Implementing encryption for sensitive data at rest",
+      "Building authentication systems with modern cryptography"
+    ],
+    "used_by": [
+      "Lucia Auth",
+      "SvelteKit projects",
+      "Node.js applications",
+      "web framework ecosystems"
+    ],
+    "docs": "https://oslo.js.org/",
+    "tutorial": "https://oslo.js.org/reference",
+    "added": "2026-10-29"
   }
 ]

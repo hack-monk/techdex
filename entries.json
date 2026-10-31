@@ -15432,5 +15432,28 @@
     "docs": "https://oslo.js.org/",
     "tutorial": "https://oslo.js.org/reference",
     "added": "2026-10-29"
+  },
+  {
+    "id": "frpc-reverse-proxy",
+    "name": "frp",
+    "category": "Tool",
+    "domain": "Networking",
+    "eli5": "frp is like a secret tunnel that lets you access your home computer from anywhere in the world, even if it's behind your router.",
+    "description": "frp (Fast Reverse Proxy) is a lightweight, high-performance reverse proxy written in Go that securely exposes local servers running behind firewalls or NAT to the public internet. It's widely used for remote access, load balancing, and exposing internal services.",
+    "use_cases": [
+      "Exposing local development servers to the internet without a public IP",
+      "Creating secure tunnels for remote access to internal services",
+      "Running game servers and IoT devices behind NAT",
+      "Load balancing and traffic forwarding for microservices"
+    ],
+    "used_by": [
+      "Alibaba Cloud",
+      "QQ.com",
+      "Netease",
+      "Jd.com"
+    ],
+    "docs": "https://github.com/fatedier/frp",
+    "tutorial": "https://github.com/fatedier/frp/blob/dev/README.md",
+    "added": "2026-10-31"
   }
 ]

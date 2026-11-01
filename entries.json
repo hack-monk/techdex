@@ -15455,5 +15455,51 @@
     "docs": "https://github.com/fatedier/frp",
     "tutorial": "https://github.com/fatedier/frp/blob/dev/README.md",
     "added": "2026-10-31"
+  },
+  {
+    "id": "uv-rust",
+    "name": "uv (Rust implementation)",
+    "category": "Tool",
+    "domain": "Data Engineering",
+    "eli5": "It's like a super-fast delivery truck that brings all the ingredients your Python recipe needs, but it's built to be much quicker than the old trucks.",
+    "description": "uv is an extremely fast Python package installer and resolver written in Rust, designed to replace pip and pip-tools with dramatically improved performance. It handles dependency resolution, virtual environment management, and project building with significantly reduced installation times.",
+    "use_cases": [
+      "Accelerating CI/CD pipelines for Python projects with large dependency trees",
+      "Managing reproducible Python environments across development teams",
+      "Speeding up local development workflows with instant package installation",
+      "Handling complex monorepo Python workspaces with workspace-level dependency management"
+    ],
+    "used_by": [
+      "Astral",
+      "Meta",
+      "Google",
+      "Anthropic"
+    ],
+    "docs": "https://docs.astral.sh/uv/",
+    "tutorial": "https://docs.astral.sh/uv/getting-started/",
+    "added": "2026-11-01"
+  },
+  {
+    "id": "nitro",
+    "name": "Nitro",
+    "category": "Platform",
+    "domain": "Cloud",
+    "eli5": "It's like renting a super-powered computer from the cloud that starts up instantly and costs you money only while you're actually using it, with no waiting time.",
+    "description": "Nitro is a cloud platform providing instant, on-demand GPU access for AI/ML workloads without long startup times or expensive pre-provisioning. It abstracts infrastructure complexity and enables pay-per-second billing for scalable AI model inference and training.",
+    "use_cases": [
+      "Running inference on large language models without maintaining GPU infrastructure",
+      "Scaling AI workloads dynamically based on demand with automatic resource allocation",
+      "Cost-efficient experimentation with various model architectures and sizes",
+      "Building serverless AI endpoints for production applications"
+    ],
+    "used_by": [
+      "Together AI",
+      "Anthropic API consumers",
+      "AI startups",
+      "Enterprise ML teams"
+    ],
+    "docs": "https://www.nitro.cloud/",
+    "tutorial": "https://docs.together.ai/",
+    "added": "2026-11-01"
   }
 ]

@@ -15501,5 +15501,97 @@
     "docs": "https://www.nitro.cloud/",
     "tutorial": "https://docs.together.ai/",
     "added": "2026-11-01"
+  },
+  {
+    "id": "gVisor",
+    "name": "gVisor",
+    "category": "Tool",
+    "domain": "Security",
+    "eli5": "It's like a super-strict security guard that sits between your program and the computer, catching anything dangerous before it can happen.",
+    "description": "gVisor is a lightweight container runtime sandbox that provides strong isolation between applications and the host kernel using a user-space kernel. It reduces the attack surface of containerized workloads while maintaining compatibility with standard container images.",
+    "use_cases": [
+      "Running untrusted code in multi-tenant environments",
+      "Protecting against kernel vulnerabilities in containerized applications",
+      "Providing additional isolation layer for microservices architectures",
+      "Securing serverless function execution platforms"
+    ],
+    "used_by": [
+      "Google Cloud Run",
+      "Google Cloud Functions",
+      "Cloudflare",
+      "Shopify"
+    ],
+    "docs": "https://gvisor.dev/docs/",
+    "tutorial": "https://gvisor.dev/docs/user_guide/quick_start/",
+    "added": "2026-11-02"
+  },
+  {
+    "id": "minio-s3-gateway",
+    "name": "MinIO Object Storage",
+    "category": "Tool",
+    "domain": "Storage",
+    "eli5": "It's like a giant digital filing cabinet that stores files exactly like Amazon's S3, but you can run it on your own computers.",
+    "description": "MinIO is a high-performance, S3-compatible object storage system built for cloud-native applications. It provides scalable, encrypted object storage with enterprise-grade reliability and can be deployed on-premises or in hybrid cloud environments.",
+    "use_cases": [
+      "On-premises data lake and data warehouse storage",
+      "Backup and disaster recovery systems",
+      "Machine learning training data management",
+      "Video and media file storage with high throughput requirements"
+    ],
+    "used_by": [
+      "Uber",
+      "Alibaba",
+      "Kafka",
+      "Dell Technologies"
+    ],
+    "docs": "https://docs.min.io/",
+    "tutorial": "https://docs.min.io/minio/baremetal/quickstart/quickstart.html",
+    "added": "2026-11-02"
+  },
+  {
+    "id": "tailscale-network",
+    "name": "Tailscale Zero Trust Networking",
+    "category": "Platform",
+    "domain": "Networking",
+    "eli5": "It's like creating a secret private network between your devices without needing to open any doors in your firewall.",
+    "description": "Tailscale is a zero-trust networking platform that uses WireGuard to create secure, private networks between devices regardless of location. It eliminates the need for VPNs and firewall rules by establishing direct encrypted connections between authorized devices.",
+    "use_cases": [
+      "Secure remote team access to internal infrastructure",
+      "Connecting on-premises and cloud environments securely",
+      "Building zero-trust security posture",
+      "Private networking for IoT and edge devices"
+    ],
+    "used_by": [
+      "Deloitte",
+      "Sourcegraph",
+      "Supabase",
+      "Figma"
+    ],
+    "docs": "https://tailscale.com/docs/",
+    "tutorial": "https://tailscale.com/kb/1017/install-linux/",
+    "added": "2026-11-02"
+  },
+  {
+    "id": "netbird-zero-trust",
+    "name": "Netbird Open Source Network",
+    "category": "Tool",
+    "domain": "Networking",
+    "eli5": "It's like building your own secret VPN network that automatically connects all your devices without complicated setup.",
+    "description": "Netbird is an open-source zero-trust networking platform that uses WireGuard and peer-to-peer connections to create secure private networks. It provides a self-hostable alternative to commercial VPN solutions with automatic peer discovery and centralized management.",
+    "use_cases": [
+      "Building private networks for distributed teams",
+      "Securing device-to-device communication across networks",
+      "Zero-trust access control for infrastructure",
+      "Managing IoT and edge device connectivity"
+    ],
+    "used_by": [
+      "Elastic",
+      "GitHub",
+      "Mozilla",
+      "HashiCorp"
+    ],
+    "docs": "https://docs.netbird.io/",
+    "tutorial": "https://docs.netbird.io/getting-started",
+    "added": "2026-11-02"
   }
 ]

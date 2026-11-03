@@ -15593,5 +15593,28 @@
     "docs": "https://docs.netbird.io/",
     "tutorial": "https://docs.netbird.io/getting-started",
     "added": "2026-11-02"
+  },
+  {
+    "id": "uv-astral",
+    "name": "uv by Astral",
+    "category": "Tool",
+    "domain": "Backend",
+    "eli5": "It's like a super-fast librarian that organizes all your Python books and finds exactly what you need in seconds instead of minutes.",
+    "description": "uv is an extremely fast Python package installer and resolver written in Rust, designed to replace pip and pip-tools with blazing performance. It handles dependency resolution, virtual environments, and script execution with orders of magnitude faster speeds than traditional Python tooling.",
+    "use_cases": [
+      "Accelerating CI/CD pipelines for Python projects",
+      "Managing complex Python dependencies in monorepos",
+      "Running Python scripts with automatic dependency management",
+      "Replacing traditional pip-based workflows in high-volume environments"
+    ],
+    "used_by": [
+      "Astral",
+      "FastAPI",
+      "Pydantic",
+      "SQLAlchemy"
+    ],
+    "docs": "https://docs.astral.sh/uv/",
+    "tutorial": "https://docs.astral.sh/uv/getting-started/",
+    "added": "2026-11-03"
   }
 ]

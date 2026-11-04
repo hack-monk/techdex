@@ -15616,5 +15616,49 @@
     "docs": "https://docs.astral.sh/uv/",
     "tutorial": "https://docs.astral.sh/uv/getting-started/",
     "added": "2026-11-03"
+  },
+  {
+    "id": "buildpacks-cloud-native",
+    "name": "Cloud Native Buildpacks",
+    "category": "Tool",
+    "domain": "DevOps",
+    "eli5": "Buildpacks are like instruction cards that automatically turn your source code into a ready-to-run container, so you don't have to write complicated Dockerfiles yourself.",
+    "description": "Cloud Native Buildpacks (CNB) is an open standard for converting application source code into container images without requiring Dockerfiles. It separates application logic from infrastructure concerns and enables reproducible, secure, and efficient image building.",
+    "use_cases": [
+      "Enabling developers to deploy code without learning Docker or container concepts",
+      "Automating security patching and base image updates across applications",
+      "Building consistent container images across multiple programming languages",
+      "Integrating with CI/CD platforms for streamlined deployment workflows"
+    ],
+    "used_by": [
+      "Heroku",
+      "Google Cloud",
+      "Pivotal Cloud Foundry"
+    ],
+    "docs": "https://buildpacks.io/",
+    "tutorial": "https://buildpacks.io/docs/app-journey/",
+    "added": "2026-11-04"
+  },
+  {
+    "id": "replicache-sync-engine",
+    "name": "Replicache",
+    "category": "Framework",
+    "domain": "Frontend",
+    "eli5": "Replicache is like a smart notebook that keeps your offline work safe and automatically syncs it to the cloud when you get internet again, without conflicts.",
+    "description": "Replicache is a JavaScript library that enables local-first and collaborative applications by managing state synchronization between clients and servers with automatic conflict resolution. It allows apps to work offline and sync seamlessly when connectivity is restored.",
+    "use_cases": [
+      "Building collaborative document editors with offline support",
+      "Creating multiplayer applications with real-time synchronization",
+      "Developing mobile apps that work reliably with poor connectivity",
+      "Implementing optimistic UI updates with conflict-free data synchronization"
+    ],
+    "used_by": [
+      "Google",
+      "Firebase users",
+      "various startups"
+    ],
+    "docs": "https://doc.replicache.dev/",
+    "tutorial": "https://doc.replicache.dev/guide/",
+    "added": "2026-11-04"
   }
 ]

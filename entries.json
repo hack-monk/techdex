@@ -15660,5 +15660,49 @@
     "docs": "https://doc.replicache.dev/",
     "tutorial": "https://doc.replicache.dev/guide/",
     "added": "2026-11-04"
+  },
+  {
+    "id": "ollama-multimodal",
+    "name": "Ollama Multimodal Models",
+    "category": "Platform",
+    "domain": "AI/ML",
+    "eli5": "It's like having a smart friend on your computer who can read documents, look at pictures, and answer questions about them without needing the internet.",
+    "description": "Ollama enables running open-source multimodal language models (text + vision) locally on consumer hardware without cloud dependencies. It supports models like LLaVA and Bakllava that can process both text and images for reasoning tasks.",
+    "use_cases": [
+      "Document analysis and OCR from local files",
+      "Image captioning and visual Q&A without cloud calls",
+      "Building AI features into desktop applications",
+      "Processing sensitive images without external APIs"
+    ],
+    "used_by": [
+      "Hugging Face",
+      "Perplexity",
+      "Open WebUI"
+    ],
+    "docs": "https://ollama.ai",
+    "tutorial": "https://github.com/ollama/ollama/tree/main/examples",
+    "added": "2026-11-05"
+  },
+  {
+    "id": "zola-static-generator",
+    "name": "Zola",
+    "category": "Tool",
+    "domain": "Frontend",
+    "eli5": "It's like a recipe book that takes your ingredients (content) and automatically cooks them into a finished meal (a website) with no extra steps needed.",
+    "description": "Zola is a fast, modern static site generator written in Rust that compiles Markdown content into static HTML with zero external dependencies. It's significantly faster than Jekyll and Hugo while providing a simpler, more intuitive setup.",
+    "use_cases": [
+      "Building documentation sites and knowledge bases",
+      "Creating blogs with automatic pagination and taxonomy",
+      "Generating marketing websites with Sass preprocessing",
+      "Publishing technical portfolios and project showcases"
+    ],
+    "used_by": [
+      "Cloudflare Docs",
+      "Mozilla",
+      "Rust Foundation"
+    ],
+    "docs": "https://www.getzola.org/documentation/",
+    "tutorial": "https://www.getzola.org/documentation/getting-started/installation/",
+    "added": "2026-11-05"
   }
 ]

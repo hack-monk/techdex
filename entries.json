@@ -15704,5 +15704,97 @@
     "docs": "https://www.getzola.org/documentation/",
     "tutorial": "https://www.getzola.org/documentation/getting-started/installation/",
     "added": "2026-11-05"
+  },
+  {
+    "id": "anthropic-models-api",
+    "name": "Anthropic Models API",
+    "category": "Platform",
+    "domain": "AI/ML",
+    "eli5": "It's like having a smart robot assistant you can talk to through your computer, and it understands what you're asking and helps you with it.",
+    "description": "Anthropic's API provides access to Claude language models for building AI-powered applications. It enables developers to integrate advanced natural language processing capabilities into their products with features like vision, function calling, and prompt caching.",
+    "use_cases": [
+      "Building conversational AI assistants and chatbots",
+      "Automated content generation and summarization",
+      "Code analysis and generation for developer tools",
+      "Customer support automation and document processing"
+    ],
+    "used_by": [
+      "DuckDuckGo",
+      "Notion",
+      "Figma",
+      "Scale AI"
+    ],
+    "docs": "https://docs.anthropic.com/",
+    "tutorial": "https://docs.anthropic.com/en/docs/quickstart",
+    "added": "2026-11-06"
+  },
+  {
+    "id": "open-router-llm-gateway",
+    "name": "OpenRouter LLM Gateway",
+    "category": "Tool",
+    "domain": "AI/ML",
+    "eli5": "It's like a travel agent that helps you pick the best flight by comparing all the airlines, but for AI models\u2014it finds the cheapest and fastest AI to solve your problem.",
+    "description": "OpenRouter is an LLM gateway that provides unified access to multiple language models from different providers with automatic failover, usage analytics, and competitive routing. Developers can switch between models without changing code, and the platform optimizes for cost and latency.",
+    "use_cases": [
+      "Multi-model AI applications with automatic provider selection",
+      "Cost optimization across different LLM providers",
+      "Fallback routing for high-availability AI services",
+      "Experimentation with multiple models for comparison"
+    ],
+    "used_by": [
+      "Perplexity",
+      "Cursor",
+      "Scale AI",
+      "Anthropic Partners"
+    ],
+    "docs": "https://openrouter.ai/docs",
+    "tutorial": "https://openrouter.ai/docs/quickstart",
+    "added": "2026-11-06"
+  },
+  {
+    "id": "supaglue-unified-api",
+    "name": "Supaglue Unified API",
+    "category": "Platform",
+    "domain": "Backend",
+    "eli5": "It's like having a translator that speaks every language, so your app can talk to any other company's software without learning each one's unique way of talking.",
+    "description": "Supaglue provides unified APIs for CRM, ATS, and ERP integrations, abstracting away the complexity of multiple third-party APIs. It standardizes data models and authentication across providers, allowing applications to integrate with different platforms through a single interface.",
+    "use_cases": [
+      "SaaS platforms supporting multiple CRM integrations",
+      "Unified customer data synchronization across vendors",
+      "Recruitment tools integrating with different ATS systems",
+      "Financial applications connecting to multiple ERP systems"
+    ],
+    "used_by": [
+      "Bento",
+      "Retool",
+      "Plane",
+      "Loom"
+    ],
+    "docs": "https://docs.supaglue.com/",
+    "tutorial": "https://docs.supaglue.com/getting-started",
+    "added": "2026-11-06"
+  },
+  {
+    "id": "axiom-serverless-analytics",
+    "name": "Axiom Serverless Analytics",
+    "category": "Platform",
+    "domain": "SRE/Observability",
+    "eli5": "It's like having a security camera that watches everything happening in your app and automatically saves the footage so you can watch it later to see what went wrong.",
+    "description": "Axiom is a serverless analytics platform for logs, traces, and events with built-in queryable state for application telemetry. It provides high-volume data ingestion without infrastructure management, enabling developers to ingest, query, and analyze observability data at scale.",
+    "use_cases": [
+      "High-volume log ingestion and real-time querying",
+      "Distributed tracing for microservices debugging",
+      "Event analytics and user behavior tracking",
+      "Cost-effective telemetry for serverless applications"
+    ],
+    "used_by": [
+      "Vercel",
+      "Replicate",
+      "Anthropic",
+      "Together AI"
+    ],
+    "docs": "https://axiom.co/docs",
+    "tutorial": "https://axiom.co/docs/getting-started",
+    "added": "2026-11-06"
   }
 ]

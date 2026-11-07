@@ -15796,5 +15796,74 @@
     "docs": "https://axiom.co/docs",
     "tutorial": "https://axiom.co/docs/getting-started",
     "added": "2026-11-06"
+  },
+  {
+    "id": "buoyant-linkerd",
+    "name": "Linkerd Service Mesh",
+    "category": "Platform",
+    "domain": "Networking",
+    "eli5": "It's like a traffic controller for messages between different applications, making sure they talk to each other safely and keeping track of how fast they're communicating.",
+    "description": "Linkerd is a lightweight, open-source service mesh that adds observability, reliability, and security to Kubernetes applications without requiring code changes. It's designed for simplicity with minimal CPU and memory overhead compared to alternatives.",
+    "use_cases": [
+      "Adding automatic mTLS encryption between microservices",
+      "Implementing distributed tracing and metrics collection",
+      "Canary deployments and traffic management",
+      "Automatic retries and timeout management for service calls"
+    ],
+    "used_by": [
+      "Buoyant",
+      "Microsoft",
+      "JP Morgan",
+      "Soci\u00e9t\u00e9 G\u00e9n\u00e9rale"
+    ],
+    "docs": "https://linkerd.io/2.14/overview/",
+    "tutorial": "https://linkerd.io/2.14/getting-started/",
+    "added": "2026-11-07"
+  },
+  {
+    "id": "hugging-face-inference-endpoints",
+    "name": "Hugging Face Inference Endpoints",
+    "category": "Platform",
+    "domain": "AI/ML",
+    "eli5": "It's like renting a powerful computer in the cloud specifically trained to answer questions or generate text using AI models, without you having to set it all up yourself.",
+    "description": "Hugging Face Inference Endpoints provides a managed, production-ready API service for deploying and running transformer models at scale with automatic scaling, monitoring, and security. It simplifies serving state-of-the-art NLP and vision models without infrastructure management.",
+    "use_cases": [
+      "Deploying custom fine-tuned language models for business applications",
+      "Running inference at scale without managing GPU infrastructure",
+      "Building chatbots and text generation applications",
+      "Vision model inference for image classification and object detection"
+    ],
+    "used_by": [
+      "Hugging Face",
+      "Mistral AI",
+      "Runway ML",
+      "Stability AI"
+    ],
+    "docs": "https://huggingface.co/docs/inference-endpoints/index",
+    "tutorial": "https://huggingface.co/docs/inference-endpoints/guides/getting_started",
+    "added": "2026-11-07"
+  },
+  {
+    "id": "groundcover-observability",
+    "name": "Groundcover Observability",
+    "category": "Tool",
+    "domain": "SRE/Observability",
+    "eli5": "It's like a health monitor for your applications that watches everything happening inside them and tells you immediately when something goes wrong or gets slow.",
+    "description": "Groundcover provides eBPF-based observability for containerized applications with zero-instrumentation code profiling, tracing, and metrics collection. It offers deep visibility into application performance with minimal overhead and no code modifications.",
+    "use_cases": [
+      "Continuous profiling of production applications in Kubernetes",
+      "Distributed tracing without code instrumentation",
+      "Performance bottleneck identification in microservices",
+      "Cost optimization by identifying resource-hungry services"
+    ],
+    "used_by": [
+      "Notion",
+      "Cazoo",
+      "SailPoint",
+      "Outbrain"
+    ],
+    "docs": "https://groundcover.com/docs",
+    "tutorial": "https://groundcover.com/blog/profiling-java-microservices",
+    "added": "2026-11-07"
   }
 ]

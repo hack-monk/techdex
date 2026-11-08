@@ -15865,5 +15865,51 @@
     "docs": "https://groundcover.com/docs",
     "tutorial": "https://groundcover.com/blog/profiling-java-microservices",
     "added": "2026-11-07"
+  },
+  {
+    "id": "doppler-secrets-manager",
+    "name": "Doppler",
+    "category": "Platform",
+    "domain": "Security",
+    "eli5": "It's like a vault that keeps all your passwords and API keys safe and automatically gives them to your apps when they need them, so you never have to type them in.",
+    "description": "Doppler is a secrets management platform that centralizes environment variables and secrets across teams and environments with seamless CI/CD integration. It provides role-based access control, audit logging, and real-time secret rotation for applications across development, staging, and production.",
+    "use_cases": [
+      "Managing API keys and database credentials across microservices",
+      "Environment-specific configuration for dev, staging, and production",
+      "Automated secret rotation and compliance auditing",
+      "Team collaboration with granular permission controls"
+    ],
+    "used_by": [
+      "Vercel",
+      "Notion",
+      "Figma",
+      "Notion"
+    ],
+    "docs": "https://docs.doppler.com/",
+    "tutorial": "https://docs.doppler.com/docs/quickstart",
+    "added": "2026-11-08"
+  },
+  {
+    "id": "warpstream-kafka-alternative",
+    "name": "WarpStream",
+    "category": "Platform",
+    "domain": "Messaging",
+    "eli5": "It's like a super-fast mail sorting system that handles billions of messages without needing separate machines like Kafka does, saving you money and complexity.",
+    "description": "WarpStream is a Kafka-compatible event streaming platform built on object storage that eliminates the need for Kafka brokers and ZooKeeper. It provides the same API as Kafka while being more cost-efficient, easier to operate, and automatically scalable through cloud object storage backends.",
+    "use_cases": [
+      "High-volume event streaming without managing Kafka clusters",
+      "Cost-optimized data pipelines using cloud object storage",
+      "Replaying historical event data for reprocessing or debugging",
+      "Multi-tenant event streaming with isolated namespaces"
+    ],
+    "used_by": [
+      "Stripe",
+      "Figma",
+      "Segment",
+      "Intercom"
+    ],
+    "docs": "https://docs.warpstream.com/",
+    "tutorial": "https://docs.warpstream.com/docs/quickstart",
+    "added": "2026-11-08"
   }
 ]

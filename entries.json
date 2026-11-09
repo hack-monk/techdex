@@ -15911,5 +15911,51 @@
     "docs": "https://docs.warpstream.com/",
     "tutorial": "https://docs.warpstream.com/docs/quickstart",
     "added": "2026-11-08"
+  },
+  {
+    "id": "novu",
+    "name": "Novu",
+    "category": "Platform",
+    "domain": "Backend",
+    "eli5": "It's like a universal mail sorting center that takes your messages and delivers them by email, SMS, or push notifications automatically.",
+    "description": "An open-source notification infrastructure platform that enables developers to send multi-channel notifications (email, SMS, push, in-app, Slack) through a single API with workflow orchestration and template management. It abstracts away the complexity of managing multiple notification providers.",
+    "use_cases": [
+      "Multi-channel transactional notifications (order confirmations, password resets)",
+      "User engagement campaigns across email and push channels",
+      "Alert routing and escalation workflows",
+      "Notification preference management and frequency capping"
+    ],
+    "used_by": [
+      "Stripe",
+      "Figma",
+      "Coursera",
+      "Notion"
+    ],
+    "docs": "https://docs.novu.co/",
+    "tutorial": "https://docs.novu.co/quickstarts/",
+    "added": "2026-11-09"
+  },
+  {
+    "id": "inngest",
+    "name": "Inngest",
+    "category": "Platform",
+    "domain": "Backend",
+    "eli5": "It's like a smart task scheduler that remembers what you need to do, when to do it, and automatically does it even if something breaks in the middle.",
+    "description": "A serverless queueing and workflow orchestration platform that enables developers to build reliable, scalable background jobs and event-driven workflows without managing infrastructure. It provides built-in retry logic, rate limiting, throttling, and observability for long-running tasks.",
+    "use_cases": [
+      "Reliable async job processing with automatic retries and exponential backoff",
+      "Event-driven workflows triggered by application events or webhooks",
+      "Scheduled tasks and cron jobs with monitoring and alerting",
+      "Fan-out/fan-in patterns for parallel processing and aggregation"
+    ],
+    "used_by": [
+      "Cal.com",
+      "Supabase",
+      "Segment",
+      "Retool"
+    ],
+    "docs": "https://inngest.com/docs",
+    "tutorial": "https://inngest.com/docs/getting-started",
+    "added": "2026-11-09"
   }
 ]

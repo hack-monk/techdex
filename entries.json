@@ -15957,5 +15957,118 @@
     "docs": "https://inngest.com/docs",
     "tutorial": "https://inngest.com/docs/getting-started",
     "added": "2026-11-09"
+  },
+  {
+    "id": "opensearch-ai",
+    "name": "OpenSearch AI Connector Framework",
+    "category": "Framework",
+    "domain": "AI/ML",
+    "eli5": "It's like a translator that lets your search engine talk to AI models so it can understand what you're really looking for, not just matching words.",
+    "description": "OpenSearch AI Connector Framework enables seamless integration of machine learning models and AI services directly into OpenSearch, allowing developers to build intelligent search applications with semantic understanding and generative capabilities.",
+    "use_cases": [
+      "Building semantic search applications using embedding models",
+      "Implementing retrieval-augmented generation (RAG) pipelines",
+      "Creating AI-powered recommendation engines",
+      "Enabling neural search with multimodal queries"
+    ],
+    "used_by": [
+      "Netflix",
+      "Shopify",
+      "Zillow",
+      "DoorDash"
+    ],
+    "docs": "https://opensearch.org/docs/latest/ml-commons-plugin/index/",
+    "tutorial": "https://opensearch.org/docs/latest/ml-commons-plugin/tutorials/",
+    "added": "2026-11-10"
+  },
+  {
+    "id": "speedb",
+    "name": "SpeedB",
+    "category": "Tool",
+    "domain": "Database",
+    "eli5": "It's a super-fast filing cabinet that's based on RocksDB but organized in a smarter way, so you can find things much quicker.",
+    "description": "SpeedB is a high-performance embedded key-value store optimized for throughput and latency, built as a fork and enhancement of RocksDB with improved algorithms and architecture for modern hardware.",
+    "use_cases": [
+      "High-frequency trading and financial systems requiring sub-millisecond latency",
+      "Real-time analytics and metrics collection",
+      "Cache layers for distributed systems",
+      "Local embedded storage for edge computing applications"
+    ],
+    "used_by": [
+      "Various fintech startups",
+      "High-performance computing firms",
+      "Real-time analytics platforms"
+    ],
+    "docs": "https://www.speedb.io/docs/",
+    "tutorial": "https://www.speedb.io/blog/",
+    "added": "2026-11-10"
+  },
+  {
+    "id": "coderabbit",
+    "name": "CodeRabbit",
+    "category": "Tool",
+    "domain": "CI/CD",
+    "eli5": "It's like a very smart teacher who reads your code changes and gives you instant feedback on whether you made mistakes before your teammates see it.",
+    "description": "CodeRabbit is an AI-powered code review platform that provides real-time, contextual feedback on pull requests using large language models to identify bugs, security issues, and suggest improvements before human review.",
+    "use_cases": [
+      "Accelerating code review cycles in high-velocity development teams",
+      "Detecting security vulnerabilities and code smells automatically",
+      "Mentoring junior developers through intelligent feedback",
+      "Enforcing coding standards and best practices consistently"
+    ],
+    "used_by": [
+      "GitLab",
+      "Segment",
+      "Rippling",
+      "various startup accelerators"
+    ],
+    "docs": "https://coderabbit.ai/docs",
+    "tutorial": "https://coderabbit.ai/blog/guides",
+    "added": "2026-11-10"
+  },
+  {
+    "id": "scarf-gateway",
+    "name": "Scarf Gateway",
+    "category": "Tool",
+    "domain": "Networking",
+    "eli5": "It's like a smart toll booth that watches traffic going to your website or service and collects insights about who's using it and how.",
+    "description": "Scarf Gateway is a CDN and observability layer that provides analytics and metrics collection for software distribution, package downloads, and container image pulls without requiring code changes.",
+    "use_cases": [
+      "Collecting anonymous telemetry on open-source package adoption",
+      "Understanding geographic distribution of users",
+      "Tracking container image pulls and package manager downloads",
+      "Identifying high-value customer segments for OSS sustainability"
+    ],
+    "used_by": [
+      "HashiCorp",
+      "Kong",
+      "Datadog",
+      "numerous open-source projects"
+    ],
+    "docs": "https://scarf.sh/docs/",
+    "tutorial": "https://scarf.sh/blog/",
+    "added": "2026-11-10"
+  },
+  {
+    "id": "paradedb",
+    "name": "ParadeDB",
+    "category": "Platform",
+    "domain": "Database",
+    "eli5": "It's PostgreSQL wearing a superhero cape that lets you search through tons of text super fast, like having a library with instant search built in.",
+    "description": "ParadeDB is a PostgreSQL distribution that integrates full-text and hybrid search capabilities using BM25 ranking and vector search, enabling fast semantic and keyword search without separate search infrastructure.",
+    "use_cases": [
+      "Building search functionality into existing PostgreSQL applications",
+      "Implementing hybrid keyword and semantic search",
+      "Reducing infrastructure complexity by eliminating dedicated search engines",
+      "Real-time analytics with full-text search on large datasets"
+    ],
+    "used_by": [
+      "Retool",
+      "various enterprise PostgreSQL users",
+      "search-heavy startups"
+    ],
+    "docs": "https://docs.paradedb.com/",
+    "tutorial": "https://docs.paradedb.com/getting-started",
+    "added": "2026-11-10"
   }
 ]

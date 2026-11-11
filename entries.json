@@ -16070,5 +16070,116 @@
     "docs": "https://docs.paradedb.com/",
     "tutorial": "https://docs.paradedb.com/getting-started",
     "added": "2026-11-10"
+  },
+  {
+    "id": "pocketbase-auth",
+    "name": "PocketBase Auth",
+    "category": "Platform",
+    "domain": "Identity",
+    "eli5": "It's like a ready-made security guard for your app that checks who people are and lets them log in, all without needing to hire someone else to do it.",
+    "description": "PocketBase is an open-source backend-as-a-service that includes built-in authentication, real-time database, and file storage in a single executable. It eliminates the need for separate auth services by providing SQLite-backed persistence with OAuth2 and email/password authentication out of the box.",
+    "use_cases": [
+      "Rapid prototyping of full-stack applications with embedded auth",
+      "Self-hosted alternative to Firebase or Supabase for teams wanting control",
+      "Building mobile apps with offline-first sync and authentication",
+      "Serverless single-binary deployments with minimal infrastructure"
+    ],
+    "used_by": [
+      "Indie developers and startups",
+      "Enterprise teams using self-hosted solutions",
+      "Mobile app developers"
+    ],
+    "docs": "https://pocketbase.io/docs/",
+    "tutorial": "https://pocketbase.io/docs/quick-start/",
+    "added": "2026-11-11"
+  },
+  {
+    "id": "nix-flakes",
+    "name": "Nix Flakes",
+    "category": "Tool",
+    "domain": "DevOps",
+    "eli5": "It's like a magical recipe card that tells your computer exactly how to build and run a project the same way every single time, no matter who uses it.",
+    "description": "Nix Flakes is an extension to the Nix package manager that provides reproducible builds, development environments, and system configurations through declarative lock files. It ensures bit-for-bit reproducibility across development, CI/CD, and production environments.",
+    "use_cases": [
+      "Creating reproducible development environments shared across teams",
+      "Managing complex multi-language project dependencies declaratively",
+      "Building system configurations as code with full reproducibility",
+      "Eliminating 'works on my machine' problems in distributed teams"
+    ],
+    "used_by": [
+      "Tweag",
+      "Determinate Systems",
+      "Various open-source projects"
+    ],
+    "docs": "https://nixos.wiki/wiki/Flakes",
+    "tutorial": "https://nixos.org/guides/nix-flakes/",
+    "added": "2026-11-11"
+  },
+  {
+    "id": "valtown",
+    "name": "Val Town",
+    "category": "Platform",
+    "domain": "Backend",
+    "eli5": "It's like a notebook where you can write tiny JavaScript programs and they automatically run on the internet for you without needing to rent a computer.",
+    "description": "Val Town is a social platform for writing and hosting small JavaScript functions as APIs, scheduled jobs, and web pages. It provides a collaborative, shareable environment for serverless computing with built-in version control and persistent storage.",
+    "use_cases": [
+      "Quickly prototyping and deploying API endpoints without infrastructure setup",
+      "Building web scrapers and scheduled jobs for data collection",
+      "Creating webhook handlers and integrations between services",
+      "Learning and sharing small, reusable code snippets as executable programs"
+    ],
+    "used_by": [
+      "Individual developers",
+      "Startups building integrations",
+      "Technical communities and learners"
+    ],
+    "docs": "https://www.val.town/docs",
+    "tutorial": "https://www.val.town/guides/quickstart",
+    "added": "2026-11-11"
+  },
+  {
+    "id": "firecrawl",
+    "name": "Firecrawl",
+    "category": "Tool",
+    "domain": "Data Engineering",
+    "eli5": "It's like a smart web page reader that can understand what's on a website and turn it into organized data your programs can use.",
+    "description": "Firecrawl is an API that crawls websites and converts dynamic web content into clean, structured markdown and JSON. It handles JavaScript rendering, pagination, and site navigation to extract data that traditional scrapers cannot access.",
+    "use_cases": [
+      "Converting website content into training data for AI/ML models",
+      "Extracting structured data from dynamic e-commerce and SaaS platforms",
+      "Building data pipelines that monitor competitor websites for changes",
+      "Feeding content-heavy websites into RAG (retrieval-augmented generation) systems"
+    ],
+    "used_by": [
+      "AI/ML startups building training datasets",
+      "Data engineering teams",
+      "Web scraping and automation services"
+    ],
+    "docs": "https://docs.firecrawl.dev",
+    "tutorial": "https://docs.firecrawl.dev/quickstart",
+    "added": "2026-11-11"
+  },
+  {
+    "id": "runwayml-gen3",
+    "name": "Runway Gen-3",
+    "category": "Tool",
+    "domain": "AI/ML",
+    "eli5": "It's like a movie director that can create realistic videos from your descriptions or by watching other videos, without needing cameras or actors.",
+    "description": "Runway Gen-3 is an advanced generative AI model for creating, editing, and enhancing video content using text prompts and image-to-video synthesis. It powers production-grade video generation for filmmakers, content creators, and enterprises.",
+    "use_cases": [
+      "Generating marketing and social media video content from text descriptions",
+      "Creating visual effects and video editing without traditional production workflows",
+      "Producing synthetic training data for computer vision models",
+      "Rapid prototyping of video concepts and storyboarding for film and TV"
+    ],
+    "used_by": [
+      "Adobe",
+      "Content creators and digital agencies",
+      "Film production studios",
+      "Enterprise media companies"
+    ],
+    "docs": "https://docs.runwayml.com",
+    "tutorial": "https://runwayml.com/gen-3",
+    "added": "2026-11-11"
   }
 ]

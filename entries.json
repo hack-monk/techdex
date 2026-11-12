@@ -16181,5 +16181,28 @@
     "docs": "https://docs.runwayml.com",
     "tutorial": "https://runwayml.com/gen-3",
     "added": "2026-11-11"
+  },
+  {
+    "id": "buf-cli",
+    "name": "Buf CLI",
+    "category": "Tool",
+    "domain": "Backend",
+    "eli5": "It's like a grammar checker for computer languages that talk to each other, making sure everyone is speaking the same way.",
+    "description": "Buf is a modern CLI and SaaS platform for working with Protocol Buffers, providing linting, breaking change detection, code generation, and managed registries. It standardizes protobuf workflows across teams and enables better API evolution practices.",
+    "use_cases": [
+      "Detecting breaking changes in API schemas before deployment",
+      "Linting and validating protobuf definitions across repositories",
+      "Managing and versioning protobuf schemas in a central registry",
+      "Generating client and server code from protobuf definitions"
+    ],
+    "used_by": [
+      "Stripe",
+      "Uber",
+      "Discord",
+      "Figma"
+    ],
+    "docs": "https://buf.build/docs/introduction",
+    "tutorial": "https://buf.build/docs/tutorials/getting-started",
+    "added": "2026-11-12"
   }
 ]

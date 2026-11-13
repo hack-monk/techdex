@@ -16204,5 +16204,51 @@
     "docs": "https://buf.build/docs/introduction",
     "tutorial": "https://buf.build/docs/tutorials/getting-started",
     "added": "2026-11-12"
+  },
+  {
+    "id": "openbao-vault-alternative",
+    "name": "OpenBao",
+    "category": "Tool",
+    "domain": "Security",
+    "eli5": "It's like a super-secure vault that keeps all your passwords and secret keys locked up and only gives them to the right people at the right time.",
+    "description": "OpenBao is an open-source secrets management and identity platform forked from HashiCorp Vault, providing encryption, access control, and audit logging for sensitive credentials across infrastructure. It enables zero-trust security models in distributed systems.",
+    "use_cases": [
+      "Centralized secrets management for APIs and databases",
+      "Certificate and PKI management at scale",
+      "Dynamic credential generation for applications",
+      "Multi-cloud identity and access governance"
+    ],
+    "used_by": [
+      "HashiCorp",
+      "Cloud.gov",
+      "Enterprise customers using Vault",
+      "Government agencies"
+    ],
+    "docs": "https://openbao.org/docs/",
+    "tutorial": "https://openbao.org/docs/get-started/",
+    "added": "2026-11-13"
+  },
+  {
+    "id": "glide-no-code-platform",
+    "name": "Glide",
+    "category": "Platform",
+    "domain": "Frontend",
+    "eli5": "It's like building with digital Lego blocks where you snap pieces together to create working apps without having to write code.",
+    "description": "Glide is a no-code platform for building mobile and web apps that connect to spreadsheets, databases, and APIs without writing code. It enables rapid prototyping and production deployment of business applications.",
+    "use_cases": [
+      "Internal business process automation apps",
+      "Customer-facing mobile applications",
+      "Field service and mobile workforce tools",
+      "Rapid prototyping for non-technical teams"
+    ],
+    "used_by": [
+      "Forbes",
+      "Coca-Cola",
+      "Pepsico",
+      "Enterprise organizations across industries"
+    ],
+    "docs": "https://www.glideapps.com/docs",
+    "tutorial": "https://www.glideapps.com/docs/tutorials",
+    "added": "2026-11-13"
   }
 ]
